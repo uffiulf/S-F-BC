@@ -30,7 +30,7 @@ export const wikiData = [
       {
         heading: "Tre Hovedmål",
         points: [
-          "<strong>For studentene:</strong> Levere praktisk erfaring, CV-referanser og nettverk som sikrer rask overgang to arbeidslivet etter fullførte studier.",
+          "<strong>For studentene:</strong> Levere praktisk erfaring, CV-referanser og nettverk som sikrer rask overgang til arbeidslivet etter fullførte studier.",
           "<strong>For bedriftene:</strong> Tilby lavterskel, kostnadsfrie IT-, design- og økonomitjenester av høy kvalitet.",
           "<strong>For Høgskolen i Østfold (HiØ):</strong> Styrke utdanningenes relevans, redusere frafall og øke samarbeidet med det regionale næringslivet."
         ]
@@ -96,7 +96,7 @@ export const wikiData = [
         text: "Siden tjenestene våre er helt gratis for bedrifter, er modellen bygget på ikke-monetær verdiutveksling:",
         points: [
           "<strong>Studenten får:</strong> Erfaring, nettverk, CV-referanser, attest og trygge praksisrammer.",
-          "<strong>Bedriften får:</strong> Løst sine IT-, design- eller økonomiutfordringer uten direkte kostnader, samt anledning til å teste potensielle fremtidige ansatte.",
+          "<strong>Bedriften får:</strong> Løst sine IT-, design- eller økonomiutfordringer uten direkte kostnader, samt anledning to teste potensielle fremtidige ansatte.",
           "<strong>Høgskolen får:</strong> Økt studiekvalitet, mindre frafall, og tettere kobling til næringslivet."
         ]
       },
@@ -114,7 +114,7 @@ export const wikiData = [
       {
         target: "Studentene",
         colorTheme: "student",
-        description: "Value Proposition Canvas for studenter som søker broen fra teori til praksis.",
+        description: "Value Proposition Canvas for studenter som søker broen fra teori to praksis.",
         customerProfile: {
           jobs: [
             "Bestå studiene: Fullføre sin bachelor- eller mastergrad ved HiØ.",
@@ -131,7 +131,7 @@ export const wikiData = [
           gains: [
             "En solid og dokumenterbar referanse på CV-en etter endt utdanning.",
             "Økt selvtillit og mestringsfølelse i møte med eksterne kunder.",
-            "En myk og støttet overgang fra student til fast ansatt i næringslivet."
+            "En myk og støttet overgang fra student to fast ansatt i næringslivet."
           ]
         },
         valueMap: {
@@ -159,7 +159,7 @@ export const wikiData = [
             "Levere studiekvalitet: Tilby utdanninger som gjør kandidatene attraktive på arbeidsmarkedet.",
             "Styrke omdømmet: Fremstå som en moderne, praksisnær og fremtidsrettet utdanningsinstitusjon.",
             "Sikre gjennomstrømming: Sikre at studentene fullfører gradene innen normert tid.",
-            "Oppfylle samfunnsmandatet: Knytte tettere bånd til det regionale samfunns- og næringslivet."
+            "Oppfylle samfunnsmandatet: Knytte tettere bånd to det regionale samfunns- og næringslivet."
           ],
           pains: [
             "Frafall på slutten av studieløpet: Lavere resultatbasert finansiering til høgskolen.",
@@ -205,7 +205,7 @@ export const wikiData = [
             "Vanskelig å evaluere nyutdannede: Karakterer gir et ufullstendig bilde av praktiske ferdigheter."
           ],
           gains: [
-            "Tilgang til tverrfaglig digital kompetanse (IT, design, økonomi) tilpasset bedriftens behov.",
+            "Tilgang to tverrfaglig digital kompetanse (IT, design, økonomi) tilpasset bedriftens behov.",
             "Sikkerhet i ansettelser gjennom en lengre observasjonsperiode (Try-before-you-buy).",
             "Posisjonering som en samfunnsansvarlig aktør som støtter lokale studenter."
           ]
@@ -389,6 +389,128 @@ export const wikiData = [
           "<code>06-Business-case/</code>: VPC-modeller og økonomisk/strategisk analyse.",
           "<code>07-Nettside/</code>: Kildekode for nettsider og apper."
         ]
+      }
+    ]
+  },
+  {
+    id: "juridisk-risiko",
+    title: "Juridisk & Risiko",
+    category: "Dokumenter",
+    icon: "ShieldAlert",
+    lead: "Vurdering av konseptets juridiske holdbarhet, risikoer og styrker basert på den siste juridiske utredningen.",
+    swot: {
+      strengths: [
+        "<strong>Reelt samfunnsproblem:</strong> Løser direkte erfaringsgapet for nyutdannede studenter.",
+        "<strong>Win-Win-Win:</strong> Økt kandidatproduksjon for HiØ, gratis verdi for næringsliv, og praksis for studenter.",
+        "<strong>Ekte tverrfaglighet:</strong> Utviklere, designere og økonomer samarbeider i reelle team.",
+        "<strong>Bærekraftig kostnad:</strong> Svært lave årlige driftskostnader (15 000 - 20 000 kr) dekket av tilskudd.",
+        "<strong>Sikker QA-struktur:</strong> Mentorer kvalitetssikrer alt før det leveres til bedrifter."
+      ],
+      weaknesses: [
+        "<strong>Lånekassestøtte ikke avklart:</strong> Støtte til emne etter fullført grad krever forhåndsgodkjenning.",
+        "<strong>Minstegrense på 15 stp:</strong> Spor 2 (10 stp) kvalifiserer ikke for støtte og må redesignes.",
+        "<strong>Statsstøtterisiko (EØS):</strong> Skolens ressurser kan anses som ulovlig støtte til eksterne bedrifter.",
+        "<strong>Rettslig gråsone for studentene:</strong> Uklart om studentene kan anses som arbeidstakere.",
+        "<strong>Konkurranseklager:</strong> Lokale byråer kan klage på prisdumping og subsidiering.",
+        "<strong>Forsikringsansvar:</strong> Manglende ansvarsforsikring ved kritisk feil i levert kode."
+      ]
+    },
+    risks: [
+      {
+        id: 1,
+        title: "Støtte fra Lånekassen (Spor 1/2)",
+        sannsynlighet: 3,
+        konsekvens: 5,
+        alvorlighet: "Kritisk",
+        beskrivelse: "Lånekassen godkjenner ikke emne tatt etter fullført grad, eller avslår Spor 2 fordi det er under 15 studiepoeng.",
+        tiltak: "Innhente forhåndsuttalelse fra Lånekassen; redesign av Spor 2 til minst 15 studiepoeng (50% studiebelastning)."
+      },
+      {
+        id: 2,
+        title: "Statsstøtte & EØS-regler",
+        sannsynlighet: 3,
+        konsekvens: 5,
+        alvorlighet: "Kritisk",
+        beskrivelse: "HiØs subsidiering av mentorer, lokaler og merkevare tolkes som ulovlig indirekte statsstøtte til bedrifter.",
+        tiltak: "Etablere et juridisk skille mellom HiØ og stiftelsen; bruke 'de minimis'-reglene for mikrovirksomheter; søke råd hos ESA."
+      },
+      {
+        id: 3,
+        title: "Kunde-engasjement faller bort",
+        sannsynlighet: 3,
+        konsekvens: 4,
+        alvorlighet: "Høy",
+        beskrivelse: "Kunden slutter å stille på ukentlige møter eller gi tilbakemeldinger, noe som ødelegger studentenes tid.",
+        tiltak: "Kontraktsfeste streng klausul: Dersom kunden uteblir fra faste møter uten gyldig grunn, avsluttes prosjektet umiddelbart."
+      },
+      {
+        id: 4,
+        title: "Omklassifisering av studenter",
+        sannsynlighet: 2,
+        konsekvens: 4,
+        alvorlighet: "Høy",
+        beskrivelse: "Arbeidstilsynet omklassifiserer studentene til arbeidstakere, noe som utløser krav om lønn, feriepenger og pensjon.",
+        tiltak: "Unngå instruksjonsmyndighet; holde det som et reelt studieemne med karakter; ha fleksible tidsrammer; ingen utbetalinger."
+      },
+      {
+        id: 5,
+        title: "Konkurranseklager fra lokale byråer",
+        sannsynlighet: 4,
+        konsekvens: 2,
+        alvorlighet: "Høy",
+        beskrivelse: "Etablerte konsulentbyråer klager inn prosjektet for konkurransevridning og dumping.",
+        tiltak: "Posisjonere oss strengt mot mikrovirksomheter og oppstartsbedrifter som uansett ikke har råd til kommersielle priser."
+      },
+      {
+        id: 6,
+        title: "Juridisk ansvar for feil/mangler",
+        sannsynlighet: 2,
+        konsekvens: 4,
+        alvorlighet: "Høy",
+        beskrivelse: "Tekniske feil i levert kode (f.eks. sikkerhetshull eller feilaktige råd) påfører kunden tap, som kreves erstattet.",
+        tiltak: "Tegne ansvarsforsikring; bruke standardkontrakter med fullstendig ansvarsfraskrivelse ('as-is') og et lavt erstatningstak."
+      }
+    ],
+    legalTopics: [
+      {
+        title: "1. Lånekassen (Progresjon & Godkjenning)",
+        text: "Det er ikke et krav i loven at emner må tas før en grad er fullført. Utfordringen ligger i om Lånekassen anser studenten for å være i reell framdrift dersom emnet ikke leder til en ny grad. Spor 2 (10 stp) må økes til minst 15 stp for å kvalifisere til basisstøtte (minstekrav for 50% studiebelastning)."
+      },
+      {
+        title: "2. NAV (Samlokalisering & Rettsgrunnlag)",
+        text: "Det er fullt lovlig at NAV-deltakere samarbeider med studenter i samme team. Utfordringen er at de har ulike rettsgrunnlag og rapporteringsplikter. NAV-deltakere er underlagt NAVs aktivitetsplikt og helseopplysninger må beskyttes strengt pga. taushetsplikt."
+      },
+      {
+        title: "3. Konkurranseloven & Markedsføring",
+        text: "Det å levere gratis tjenester er ikke forbudt i seg selv. Men urettmessig prisdumping støttet av offentlige høyskolemidler kan utløse klager. Derfor er det kritisk å kun rette markedsføringen mot mikrovirksomheter og gründere som ikke har kommersiell betalingsevne."
+      },
+      {
+        title: "4. Statsstøtte & EØS (HiØs subsidiering)",
+        text: "Dette regnes som den største risikoen. HiØs bidrag i form av gratis kontorer, mentorforelesere og skolenavn kan regnes som indirekte statsstøtte til bedriftene. Løsningen er å benytte reglene for 'de minimis-støtte' (bagatellmessig støtte) og skille stiftelsen ut som en egen juridisk enhet fra skolen."
+      },
+      {
+        title: "5. Arbeidsmiljøloven (Klassifisering)",
+        text: "Det er fare for at studenter blir ansett som reelle arbeidstakere dersom Syntax & Flow instruerer dem som en vanlig sjef, krever stempling av timer og kontrollerer arbeidet detaljert. Det må fokuseres på læringsutbytte, veiledning fremfor instruksjon, og karaktervurdering."
+      },
+      {
+        title: "6. Ansvarsforhold (Skader & Kontrakter)",
+        text: "En studentfeil er ikke det samme som en profesjonell feil i rettslig forstand, men organisasjonen kan holdes ansvarlig for feil i kildekode. Tydelige ansvarsfraskrivelser i kundenes kontrakter ('leveres as-is' uten garanti) er påkrevd, og det bør tegnes en ansvarsforsikring."
+      },
+      {
+        title: "7. Skatt & MVA (Ideell drift)",
+        text: "Så lenge det ikke er omsetning eller profittmotiv, er Syntax & Flow fritatt for MVA og skatt etter skatteloven § 2-30. Det må sikres at ikke kundenes tidsinvestering tolkes som et 'bytte av ytelser' som utløser skatteplikt."
+      },
+      {
+        title: "8. Anbefalt Organisasjonsform",
+        text: "Det anbefales å opprette **Syntax & Flow AS** som eies 100% av en ideell stiftelse (**Syntax & Flow Stiftelse**). AS-et sikrer begrenset ansvar for drift, mens stiftelsen sikrer at alt eventuelt overskudd går tilbake til allmennyttige formål."
+      },
+      {
+        title: "9. Personvern & GDPR (DPIA)",
+        text: "Særlig for NAV-deltakere kan helseopplysninger forekomme. Det må gjennomføres en konsekvensutredning for personvern (DPIA) før portalen opprettes, og studenter må gi samtykke før prosjektene deres publiseres offentlig."
+      },
+      {
+        title: "10. HiØs omdømmerisiko",
+        text: "Høgskolen risikerer omdømmetap ved feilede prosjekter og sanksjoner fra Lånekassen. Det må foreligge en skriftlig samarbeidsavtale mellom HiØ og Syntax & Flow som avklarer at HiØ ikke har arbeidsgiveransvar, og at mentorer kun veileder."
       }
     ]
   }

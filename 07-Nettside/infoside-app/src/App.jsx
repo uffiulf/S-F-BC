@@ -8,6 +8,8 @@ export default function App() {
   const [searchOpen, setSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const [activeVpcTab, setActiveVpcTab] = useState(0);
+  const [selectedRiskId, setSelectedRiskId] = useState(1);
+  const [openAccordionIdx, setOpenAccordionIdx] = useState(null);
   const searchInputRef = useRef(null);
 
   // Sync theme to <html> element
@@ -104,6 +106,21 @@ export default function App() {
           }
         });
       }
+
+      // Check Legal details
+      if (page.legalTopics) {
+        page.legalTopics.forEach((topic) => {
+          if (topic.title.toLowerCase().includes(query) || topic.text.toLowerCase().includes(query)) {
+            results.push({
+              pageId: page.id,
+              pageTitle: `${page.title} - ${topic.title}`,
+              category: page.category,
+              icon: page.icon,
+              snippet: topic.text
+            });
+          }
+        });
+      }
     });
 
     // Remove duplicates by pageId to keep it clean
@@ -129,6 +146,15 @@ export default function App() {
 
   // Find currently active page content
   const currentPage = wikiData.find((p) => p.id === activePage) || wikiData[0];
+
+  // Helper for rendering matrix cell color class
+  const getMatrixCellColor = (s, k) => {
+    const r = s * k;
+    if (r >= 15) return "cell-critical";
+    if (r >= 10) return "cell-high";
+    if (r >= 5) return "cell-medium";
+    return "cell-low";
+  };
 
   return (
     <div className="app-layout">
@@ -226,7 +252,7 @@ export default function App() {
           {/* Render Sections */}
           <div className="wiki-content">
             {/* Standard sections */}
-            {currentPage.sections.map((sec, idx) => (
+            {currentPage.sections && currentPage.sections.map((sec, idx) => (
               <div key={idx} className="wiki-section">
                 <h2>{sec.heading}</h2>
                 {sec.text && <p dangerouslySetInnerHTML={{ __html: sec.text }} />}
@@ -404,6 +430,167 @@ export default function App() {
                 })}
               </div>
             )}
+
+            {/* Custom: Juridisk & Risiko Page Visual Render */}
+            {currentPage.id === "juridisk-risiko" && (
+              <div className="legal-risk-dashboard">
+                
+                {/* 1. SWOT SECTION */}
+                <div className="wiki-section">
+                  <h2>Konseptets Styrker & Svakheter (SWOT)</h2>
+                  <div className="grid-2">
+                    <div className="swot-card strength">
+                      <div className="swot-card-header">
+                        <Icons.CheckCircle2 className="w-5 h-5 text-green-500" />
+                        <span>Styrker</span>
+                      </div>
+                      <ul>
+                        {currentPage.swot.strengths.map((str, idx) => (
+                          <li key={idx} dangerouslySetInnerHTML={{ __html: str }} />
+                        ))}
+                      </ul>
+                    </div>
+
+                    <div className="swot-card weakness">
+                      <div className="swot-card-header">
+                        <Icons.AlertTriangle className="w-5 h-5 text-amber-500" />
+                        <span>Svakheter / Sårbarheter</span>
+                      </div>
+                      <ul>
+                        {currentPage.swot.weaknesses.map((weak, idx) => (
+                          <li key={idx} dangerouslySetInnerHTML={{ __html: weak }} />
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                {/* 2. RISK MATRIX SECTION */}
+                <div className="wiki-section">
+                  <h2>Interaktiv 5x5 Risikomatrise</h2>
+                  <p className="text-secondary mb-6">
+                    Hver identifiserte risiko er plottet inn basert på <strong>Sannsynlighet (1–5)</strong> og <strong>Konsekvens (1–5)</strong>. Klikk på et av tallene/risikoene i matrisen eller i listen for å lese de spesifikke forebyggende tiltakene.
+                  </p>
+
+                  <div className="matrix-layout">
+                    {/* Matrix Grid */}
+                    <div className="matrix-container">
+                      <div className="matrix-title-y">Sannsynlighet →</div>
+                      <div className="matrix-grid-wrapper">
+                        <div className="matrix-axis-y">
+                          <span>5</span>
+                          <span>4</span>
+                          <span>3</span>
+                          <span>2</span>
+                          <span>1</span>
+                        </div>
+                        
+                        <div className="matrix-board">
+                          {[5, 4, 3, 2, 1].map((s) => (
+                            <div key={s} className="matrix-row">
+                              {[1, 2, 3, 4, 5].map((k) => {
+                                // Find risks mapped to this coordinate
+                                const cellRisks = currentPage.risks.filter(
+                                  (r) => r.sannsynlighet === s && r.konsekvens === k
+                                );
+                                return (
+                                  <div
+                                    key={k}
+                                    className={`matrix-cell ${getMatrixCellColor(s, k)}`}
+                                  >
+                                    {cellRisks.map((risk) => (
+                                      <button
+                                        key={risk.id}
+                                        onClick={() => setSelectedRiskId(risk.id)}
+                                        className={`matrix-risk-dot ${selectedRiskId === risk.id ? "active" : ""}`}
+                                        title={risk.title}
+                                      >
+                                        {risk.id}
+                                      </button>
+                                    ))}
+                                  </div>
+                                );
+                              })}
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                      
+                      <div className="matrix-axis-x">
+                        <div className="empty-space"></div>
+                        <div className="axis-x-labels">
+                          <span>1</span>
+                          <span>2</span>
+                          <span>3</span>
+                          <span>4</span>
+                          <span>5</span>
+                        </div>
+                      </div>
+                      <div className="matrix-title-x">Konsekvens →</div>
+                    </div>
+
+                    {/* Selected Risk Mitigation Card */}
+                    <div className="risk-details-panel">
+                      {currentPage.risks.map((risk) => {
+                        if (risk.id !== selectedRiskId) return null;
+                        return (
+                          <div key={risk.id} className="risk-detail-card glass-card">
+                            <div className="risk-header-row">
+                              <span className={`risk-badge badge-${risk.alvorlighet.toLowerCase()}`}>
+                                R{risk.id} - {risk.alvorlighet}
+                              </span>
+                              <span className="risk-score">
+                                S: {risk.sannsynlighet} × K: {risk.konsekvens} = R: {risk.sannsynlighet * risk.konsekvens}
+                              </span>
+                            </div>
+                            <h3>{risk.title}</h3>
+                            <p className="risk-desc">{risk.beskrivelse}</p>
+                            
+                            <div className="mitigation-block">
+                              <strong>💡 Forebyggende Tiltak:</strong>
+                              <p>{risk.tiltak}</p>
+                            </div>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
+                </div>
+
+                {/* 3. DETAILED LEGAL TOPICS ACCORDION */}
+                <div className="wiki-section">
+                  <h2>Juridisk Dypdykk (De 10 Rettsområdene)</h2>
+                  <p className="text-secondary mb-6">
+                    Velg et av rettsområdene under for å lese den fulle utredningen og vurderingen:
+                  </p>
+
+                  <div className="accordion">
+                    {currentPage.legalTopics.map((topic, idx) => {
+                      const isOpen = openAccordionIdx === idx;
+                      return (
+                        <div key={idx} className="accordion-item glass-card">
+                          <button
+                            onClick={() => setOpenAccordionIdx(isOpen ? null : idx)}
+                            className="accordion-header"
+                          >
+                            <span>{topic.title}</span>
+                            <Icons.ChevronDown className={`w-5 h-5 transition-transform ${isOpen ? "rotate-180" : ""}`} />
+                          </button>
+                          
+                          {isOpen && (
+                            <div className="accordion-content">
+                              <p>{topic.text}</p>
+                            </div>
+                          )}
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+
+              </div>
+            )}
+
           </div>
         </div>
       </main>

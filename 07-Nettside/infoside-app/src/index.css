@@ -1022,3 +1022,332 @@ mark.highlight {
   color: var(--vpc-accent, var(--accent-color));
   font-weight: 700;
 }
+
+/* SWOT Card Panels */
+.swot-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.swot-card.strength {
+  border-left: 4px solid #10b981;
+}
+
+.swot-card.weakness {
+  border-left: 4px solid #f59e0b;
+}
+
+.swot-card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 10px;
+}
+
+.swot-card ul {
+  list-style: none !important;
+  padding-left: 0 !important;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.swot-card li {
+  position: relative;
+  padding-left: 20px;
+  font-size: 0.925rem;
+  line-height: 1.5;
+  color: var(--text-secondary);
+}
+
+.swot-card.strength li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #10b981;
+  font-weight: bold;
+}
+
+.swot-card.weakness li::before {
+  content: "⚠";
+  position: absolute;
+  left: 0;
+  color: #f59e0b;
+  font-weight: bold;
+}
+
+/* Interactive 5x5 Risk Matrix Layout */
+.matrix-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+@media (min-width: 1024px) {
+  .matrix-layout {
+    grid-template-columns: 1.2fr 1fr;
+    align-items: start;
+  }
+}
+
+.matrix-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.matrix-title-y {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  align-self: flex-start;
+}
+
+.matrix-grid-wrapper {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+}
+
+.matrix-axis-y {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-weight: 700;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  height: 250px;
+}
+
+.matrix-board {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  border-left: 2px solid var(--border-color);
+  border-bottom: 2px solid var(--border-color);
+}
+
+.matrix-row {
+  flex: 1;
+  display: flex;
+}
+
+.matrix-cell {
+  flex: 1;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  position: relative;
+  transition: background-color 0.2s ease;
+}
+
+/* 5x5 risk levels */
+.cell-low {
+  background-color: rgba(16, 185, 129, 0.08);
+}
+.cell-medium {
+  background-color: rgba(234, 179, 8, 0.08);
+}
+.cell-high {
+  background-color: rgba(249, 115, 22, 0.1);
+}
+.cell-critical {
+  background-color: rgba(239, 68, 68, 0.12);
+}
+
+.matrix-cell:hover {
+  filter: brightness(1.1);
+}
+
+.matrix-axis-x {
+  display: flex;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.matrix-axis-x .empty-space {
+  width: 20px; /* Width matching the Y-axis label spacing */
+}
+
+.axis-x-labels {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  font-weight: 700;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.matrix-title-x {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  margin-top: 8px;
+}
+
+/* Clicking risk indicators (risk dots) */
+.matrix-risk-dot {
+  background-color: var(--accent-color);
+  color: white;
+  border: 2px solid var(--bg-secondary);
+  font-weight: 800;
+  font-size: 0.8rem;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: all 0.2s ease;
+  z-index: 5;
+}
+
+.matrix-risk-dot:hover, .matrix-risk-dot.active {
+  transform: scale(1.25);
+  box-shadow: 0 0 12px var(--accent-light);
+  border-color: white;
+}
+
+/* Selected Risk Mitigation Card Panel */
+.risk-details-panel {
+  display: flex;
+  flex-direction: column;
+}
+
+.risk-detail-card {
+  padding: 24px;
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  animation: fadeIn 0.25s ease-out;
+}
+
+.risk-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.risk-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.badge-kritisk {
+  background-color: rgba(239, 68, 68, 0.15);
+  color: #ef4444;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.badge-høy {
+  background-color: rgba(249, 115, 22, 0.15);
+  color: #f97316;
+  border: 1px solid rgba(249, 115, 22, 0.3);
+}
+
+.risk-score {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.risk-desc {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.mitigation-block {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.mitigation-block strong {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.mitigation-block p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+/* Accordion (Legal Topics) */
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.accordion-item {
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+
+.accordion-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 24px;
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 1.025rem;
+  text-align: left;
+  cursor: pointer;
+}
+
+.accordion-header:hover {
+  background-color: var(--bg-card-hover);
+}
+
+.accordion-content {
+  padding: 0 24px 24px;
+  border-top: 1px solid transparent;
+  animation: slideDown 0.2s ease-out;
+}
+
+.accordion-content p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 0;
+}
