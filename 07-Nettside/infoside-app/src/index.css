@@ -1514,3 +1514,123 @@ mark.highlight {
   line-height: 1.6;
   margin-bottom: 0;
 }
+
+/* Accordion Detailed view button */
+.accordion-details-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-card);
+  color: var(--accent-light);
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.accordion-details-btn:hover {
+  background-color: var(--bg-card-hover);
+  border-color: var(--accent-color);
+  color: var(--text-primary);
+}
+
+.accordion-details-btn svg {
+  transition: transform 0.2s ease;
+}
+
+.accordion-details-btn:hover svg {
+  transform: translate(2px, -2px);
+}
+
+/* Back Button */
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-secondary);
+  color: var(--text-secondary);
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-bottom: 24px;
+}
+
+.back-btn:hover {
+  color: var(--text-primary);
+  border-color: var(--border-color-active);
+  background-color: var(--bg-card-hover);
+}
+
+.back-btn svg {
+  transition: transform 0.2s ease;
+}
+
+.back-btn:hover svg {
+  transform: translateX(-4px);
+}
+
+/* Legal Detail View Layout */
+.legal-detail-view {
+  animation: fadeIn 0.3s ease-out;
+}
+
+.legal-detail-lead {
+  font-size: 1.05rem;
+  margin-bottom: 24px;
+  font-style: italic;
+}
+
+.legal-detail-sections {
+  margin-top: 16px;
+}
+
+.legal-detail-section {
+  margin-top: 32px;
+  border-top: 1px solid var(--border-color);
+  padding-top: 24px;
+}
+
+.legal-detail-section:first-of-type {
+  margin-top: 16px;
+  border-top: none;
+  padding-top: 0;
+}
+
+.legal-detail-section h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+
+.legal-detail-section p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.legal-detail-section ul {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+  list-style: disc;
+}
+
+.legal-detail-section li {
+  font-size: 0.925rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
