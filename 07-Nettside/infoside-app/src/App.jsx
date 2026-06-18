@@ -351,53 +351,60 @@ export default function App() {
                       <p className="vpc-canvas-desc">{vpc.description}</p>
                       
                       <div className="vpc-canvas">
-                        {/* 1. VERDITILBUD (Square / Value Map) */}
-                        <div className="vpc-panel value-map">
-                          <div className="panel-header">
-                            <Icons.Gift className="w-5 h-5" />
-                            <span>Verditilbud (Value Map)</span>
-                          </div>
-                          
-                          <div className="panel-grid">
-                            <div className="vpc-box gain-creators">
-                              <div className="box-title">⚡ Gevinstskapere (Gain Creators)</div>
-                              <ul>
-                                {vpc.valueMap.gainCreators.map((item, iIdx) => (
-                                  <li key={iIdx}>{item}</li>
-                                ))}
-                              </ul>
-                            </div>
-                            
-                            <div className="vpc-box pain-relievers">
-                              <div className="box-title">💊 Smertelindrere (Pain Relievers)</div>
-                              <ul>
-                                {vpc.valueMap.painRelievers.map((item, iIdx) => (
-                                  <li key={iIdx}>{item}</li>
-                                ))}
-                              </ul>
-                            </div>
-
-                            <div className="vpc-box products">
-                              <div className="box-title">📦 Produkter & Tjenester</div>
+                        {/* 1. VERDITILBUD (Strategyzer Square / Value Map) */}
+                        <div className="vpc-square-canvas">
+                          <div className="vpc-square-grid">
+                            {/* Left part: Products & Services */}
+                            <div className="vpc-box products full-height">
+                              <div className="box-title">
+                                📦 Produkter & Tjenester
+                              </div>
                               <ul>
                                 {vpc.valueMap.products.map((item, iIdx) => (
                                   <li key={iIdx}>{item}</li>
                                 ))}
                               </ul>
                             </div>
+
+                            {/* Right top: Gain Creators */}
+                            <div className="vpc-box gain-creators">
+                              <div className="box-title">
+                                ⚡ Gevinstskapere (Gain Creators)
+                              </div>
+                              <ul>
+                                {vpc.valueMap.gainCreators.map((item, iIdx) => (
+                                  <li key={iIdx}>{item}</li>
+                                ))}
+                              </ul>
+                            </div>
+
+                            {/* Right bottom: Pain Relievers */}
+                            <div className="vpc-box pain-relievers">
+                              <div className="box-title">
+                                💊 Smertelindrere (Pain Relievers)
+                              </div>
+                              <ul>
+                                {vpc.valueMap.painRelievers.map((item, iIdx) => (
+                                  <li key={iIdx}>{item}</li>
+                                ))}
+                              </ul>
+                            </div>
+                          </div>
+
+                          {/* Central Gift Square */}
+                          <div className="vpc-square-center-gift">
+                            <Icons.Gift className="w-6 h-6" />
                           </div>
                         </div>
 
-                        {/* 2. KUNDEPROFIL (Circle / Customer Profile) */}
-                        <div className="vpc-panel customer-profile">
-                          <div className="panel-header">
-                            <Icons.User className="w-5 h-5" />
-                            <span>Kundeprofil (Customer Segment)</span>
-                          </div>
-
-                          <div className="panel-grid">
+                        {/* 2. KUNDEPROFIL (Strategyzer Circle / Customer Profile) */}
+                        <div className="vpc-circle-canvas">
+                          <div className="vpc-circle-grid">
+                            {/* Top left/mid: Gains */}
                             <div className="vpc-box gains">
-                              <div className="box-title">💎 Gevinster (Gains)</div>
+                              <div className="box-title">
+                                💎 Gevinster (Gains)
+                              </div>
                               <ul>
                                 {vpc.customerProfile.gains.map((item, iIdx) => (
                                   <li key={iIdx}>{item}</li>
@@ -405,8 +412,11 @@ export default function App() {
                               </ul>
                             </div>
 
+                            {/* Bottom left/mid: Pains */}
                             <div className="vpc-box pains">
-                              <div className="box-title">⚡ Smertepunkter (Pains)</div>
+                              <div className="box-title">
+                                ⚡ Smertepunkter (Pains)
+                              </div>
                               <ul>
                                 {vpc.customerProfile.pains.map((item, iIdx) => (
                                   <li key={iIdx}>{item}</li>
@@ -414,8 +424,11 @@ export default function App() {
                               </ul>
                             </div>
 
-                            <div className="vpc-box jobs">
-                              <div className="box-title">🎯 Kundens Oppgaver (Jobs)</div>
+                            {/* Right: Customer Jobs */}
+                            <div className="vpc-box jobs full-height">
+                              <div className="box-title">
+                                🎯 Kundens Oppgaver (Jobs)
+                              </div>
                               <ul>
                                 {vpc.customerProfile.jobs.map((item, iIdx) => (
                                   <li key={iIdx}>{item}</li>
@@ -423,8 +436,14 @@ export default function App() {
                               </ul>
                             </div>
                           </div>
+
+                          {/* Central Head Circle */}
+                          <div className="vpc-circle-center-head">
+                            <Icons.User className="w-6 h-6" />
+                          </div>
                         </div>
                       </div>
+
                     </div>
                   );
                 })}
