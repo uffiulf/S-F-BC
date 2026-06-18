@@ -11,12 +11,14 @@ export default function App() {
   const [selectedRiskId, setSelectedRiskId] = useState(1);
   const [openAccordionIdx, setOpenAccordionIdx] = useState(null);
   const [activeLegalTopicIdx, setActiveLegalTopicIdx] = useState(null);
+  const [activeAdjustmentIdx, setActiveAdjustmentIdx] = useState(0);
   const searchInputRef = useRef(null);
 
   // Reset detailed view when changing page
   useEffect(() => {
     setActiveLegalTopicIdx(null);
     setOpenAccordionIdx(null);
+    setActiveAdjustmentIdx(0);
   }, [activePage]);
 
   // Sync theme to <html> element
@@ -63,32 +65,37 @@ export default function App() {
 
     wikiData.forEach((page) => {
       // Check page title
-      if (page.title.toLowerCase().includes(query) || page.category.toLowerCase().includes(query) || page.lead.toLowerCase().includes(query)) {
+      const matchesTitle = page.title && page.title.toLowerCase().includes(query);
+      const matchesCategory = page.category && page.category.toLowerCase().includes(query);
+      const matchesLead = page.lead && page.lead.toLowerCase().includes(query);
+      if (matchesTitle || matchesCategory || matchesLead) {
         results.push({
           pageId: page.id,
           pageTitle: page.title,
           category: page.category,
           icon: page.icon,
-          snippet: page.lead
+          snippet: page.lead || page.title
         });
       }
 
       // Check sections
-      page.sections.forEach((sec) => {
-        const hasHeading = sec.heading && sec.heading.toLowerCase().includes(query);
-        const hasText = sec.text && sec.text.toLowerCase().includes(query);
-        const hasPoints = sec.points && sec.points.some(p => p.toLowerCase().includes(query));
-        
-        if (hasHeading || hasText || hasPoints) {
-          results.push({
-            pageId: page.id,
-            pageTitle: page.title,
-            category: page.category,
-            icon: page.icon,
-            snippet: sec.heading || sec.text || (sec.points && sec.points[0])
-          });
-        }
-      });
+      if (page.sections) {
+        page.sections.forEach((sec) => {
+          const hasHeading = sec.heading && sec.heading.toLowerCase().includes(query);
+          const hasText = sec.text && sec.text.toLowerCase().includes(query);
+          const hasPoints = sec.points && sec.points.some(p => p.toLowerCase().includes(query));
+          
+          if (hasHeading || hasText || hasPoints) {
+            results.push({
+              pageId: page.id,
+              pageTitle: page.title,
+              category: page.category,
+              icon: page.icon,
+              snippet: sec.heading || sec.text || (sec.points && sec.points[0])
+            });
+          }
+        });
+      }
 
       // Check VPC data
       if (page.vpcs) {
@@ -117,13 +124,40 @@ export default function App() {
       // Check Legal details
       if (page.legalTopics) {
         page.legalTopics.forEach((topic) => {
-          if (topic.title.toLowerCase().includes(query) || topic.text.toLowerCase().includes(query)) {
+          const hasTitle = topic.title && topic.title.toLowerCase().includes(query);
+          const hasText = topic.text && topic.text.toLowerCase().includes(query);
+          if (hasTitle || hasText) {
             results.push({
               pageId: page.id,
               pageTitle: `${page.title} - ${topic.title}`,
               category: page.category,
               icon: page.icon,
-              snippet: topic.text
+              snippet: topic.text || topic.title
+            });
+          }
+        });
+      }
+
+      // Check Adjustments data
+      if (page.adjustments) {
+        page.adjustments.forEach((adj) => {
+          const matchedText = [
+            adj.title,
+            ...(adj.subAdjustments ? adj.subAdjustments.flatMap(sub => [
+              sub.title,
+              ...(Array.isArray(sub.konkret) ? sub.konkret : []),
+              sub.hvorfor,
+              ...(Array.isArray(sub.motstand) ? sub.motstand : [])
+            ]) : [])
+          ].find(t => t && typeof t === "string" && t.toLowerCase().includes(query));
+
+          if (matchedText) {
+            results.push({
+              pageId: page.id,
+              pageTitle: `${page.title} - ${adj.title}`,
+              category: page.category,
+              icon: page.icon,
+              snippet: matchedText
             });
           }
         });
@@ -713,6 +747,151 @@ export default function App() {
                             </div>
                           );
                         })}
+                      </div>
+                    </div>
+
+                  </div>
+                )}
+
+                {/* Custom: Forslag på utførelse Page Visual Render */}
+                {currentPage.id === "forslag-utforelse" && (
+                  <div className="proposal-dashboard animate-fade-in">
+                    
+                    {/* Hovedbudskap / Callout */}
+                    <div className="proposal-callout-card glass-card">
+                      <div className="callout-header">
+                        <Icons.Compass className="w-6 h-6 text-blue-500 animate-pulse" />
+                        <span>Det Viktigste Budskapet</span>
+                      </div>
+                      <p className="callout-text">
+                        <strong>"Én strukturell endring løser flere problemer samtidig:</strong> Stift et AS, betal HiØ markedspris, ha et formelt emne med læringsmål. Dette alene reduserer statsstøtterisikoen, arbeidstakerrisikoen, ansvarsrisikoen og konkurranseklagerisikoen.<strong>"</strong>
+                      </p>
+                    </div>
+
+                    {/* Interactive 9 Adjustments Grid & Detail View */}
+                    <div className="wiki-section">
+                      <h2>De 9 Tilpasningsområdene</h2>
+                      <p className="text-secondary mb-6">
+                        Velg et av tilpasningsområdene under for å lese konkrete endringer, hvorfor det vil fungere, og mulige utfordringer.
+                      </p>
+
+                      <div className="proposal-interactive-layout">
+                        {/* Left sidebar with the 9 buttons */}
+                        <div className="proposal-menu">
+                          {currentPage.adjustments.map((adj, idx) => (
+                            <button
+                              key={adj.id}
+                              onClick={() => setActiveAdjustmentIdx(idx)}
+                              className={`proposal-menu-btn ${activeAdjustmentIdx === idx ? "active" : ""}`}
+                            >
+                              <span className="adj-number">{adj.id}</span>
+                              <span className="adj-title">{adj.title.replace(/^\d+\.\s*/, "")}</span>
+                              <Icons.ChevronRight className="w-4 h-4 ml-auto arrow-icon" />
+                            </button>
+                          ))}
+                        </div>
+
+                        {/* Right details panel */}
+                        <div className="proposal-details-panel">
+                          {currentPage.adjustments.map((adj, idx) => {
+                            if (idx !== activeAdjustmentIdx) return null;
+                            return (
+                              <div key={adj.id} className="proposal-details-card glass-card animate-fade-in">
+                                <div className="card-header">
+                                  <span className="proposal-badge">Område {adj.id}</span>
+                                  <h2>{adj.title}</h2>
+                                </div>
+
+                                {/* Custom table if organsasjonsform */}
+                                {adj.table && (
+                                  <div className="table-container mb-6 mt-4">
+                                    <table className="wiki-table">
+                                      <thead>
+                                        <tr>
+                                          {adj.table.headers.map((h, hIdx) => (
+                                            <th key={hIdx}>{h}</th>
+                                          ))}
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        {adj.table.rows.map((row, rIdx) => (
+                                          <tr key={rIdx}>
+                                            {row.map((cell, cIdx) => (
+                                              <td key={cIdx} dangerouslySetInnerHTML={{ __html: cell }} />
+                                            ))}
+                                          </tr>
+                                        ))}
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                )}
+
+                                {/* Sub-adjustments list */}
+                                <div className="sub-adjustments-list mt-4">
+                                  {adj.subAdjustments.map((sub, sIdx) => (
+                                    <div key={sIdx} className="sub-adjustment-item">
+                                      {adj.subAdjustments.length > 1 && (
+                                        <h3 className="sub-adj-title">{sub.title}</h3>
+                                      )}
+                                      
+                                      <div className="detail-section konkret">
+                                        <strong>🎯 Konkret Tilpasning:</strong>
+                                        <ul>
+                                          {sub.konkret.map((k, kIdx) => (
+                                            <li key={kIdx} dangerouslySetInnerHTML={{ __html: k }} />
+                                          ))}
+                                        </ul>
+                                      </div>
+
+                                      <div className="detail-section function-box">
+                                        <strong>✅ Hvorfor dette vil fungere:</strong>
+                                        <p dangerouslySetInnerHTML={{ __html: sub.hvorfor }} />
+                                      </div>
+
+                                      <div className="detail-section challenge-box">
+                                        <strong>⚠️ Mulig motstand og utfordringer:</strong>
+                                        <ul>
+                                          {sub.motstand.map((m, mIdx) => (
+                                            <li key={mIdx} dangerouslySetInnerHTML={{ __html: m }} />
+                                          ))}
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  ))}
+                                </div>
+                              </div>
+                            );
+                          })}
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Prioritised table */}
+                    <div className="wiki-section">
+                      <h2>Prioriterte Tiltak i Rekkefølge</h2>
+                      <p className="text-secondary mb-6">
+                        Anbefalt veikart for implementering av tilpasningsforslagene.
+                      </p>
+                      <div className="table-container">
+                        <table className="wiki-table prioritized-table">
+                          <thead>
+                            <tr>
+                              {currentPage.prioritizedTasks.headers.map((h, hIdx) => (
+                                <th key={hIdx}>{h}</th>
+                              ))}
+                            </tr>
+                          </thead>
+                          <tbody>
+                            {currentPage.prioritizedTasks.rows.map((row, rIdx) => (
+                              <tr key={rIdx}>
+                                <td><span className="priority-badge">{row[0]}</span></td>
+                                <td className="task-title"><strong>{row[1]}</strong></td>
+                                <td><span className="theme-badge">{row[2]}</span></td>
+                                <td><span className="cost-tag">{row[3]}</span></td>
+                              </tr>
+                            ))}
+                          </tbody>
+                        </table>
                       </div>
                     </div>
 

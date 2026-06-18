@@ -857,5 +857,430 @@ export const wikiData = [
         ]
       }
     ]
+  },
+  {
+    id: "forslag-utforelse",
+    title: "Forslag på utførelse",
+    category: "Dokumenter",
+    icon: "Lightbulb",
+    lead: "Hvordan justere modellen for å unngå juridiske hindringer innenfor dagens regelverk, uten lovendringer eller politisk påvirkning. Hver tilpasning følges av en vurdering av hvorfor det vil fungere og hvilken motstand/utfordringer som kan oppstå.",
+    mainMessage: "Stift et AS, betal HiØ markedspris, ha et formelt emne med læringsmål. Dette alene reduserer statsstøtterisikoen, arbeidstakerrisikoen, ansvarsrisikoen og konkurranseklagerisikoen.",
+    adjustments: [
+      {
+        id: 1,
+        title: "1. Organisasjonsform",
+        table: {
+          headers: ["Aspekt", "Dagens modell", "Tilpasning"],
+          rows: [
+            ["Status", "Uavklart", "<strong>AS eid av ideell stiftelse</strong>"]
+          ]
+        },
+        subAdjustments: [
+          {
+            title: "Konkret tilpasning av organisasjonsform",
+            konkret: [
+              "Stift <strong>Syntax & Flow AS</strong> med aksjekapital på 30 000 kr. Den operative enheten som inngår avtaler, tegner forsikring og bærer ansvaret.",
+              "La en <strong>ideell stiftelse</strong> eie aksjene. Stiftelsen har utdanningsformål, kan søke skattefritak, og overskudd går til allmennyttige formål.",
+              "Styret: 1 fra HiØ (observatør), 2 fra næringslivet, 2 studenter. HiØ skal <strong>ikke</strong> ha styreflertall."
+            ],
+            hvorfor: "Juridisk skille mellom HiØ og den operative virksomheten gjør det vanskeligere for ESA å påvise at HiØs ressurser er «statlige midler» som kanaliseres til næringslivet. AS gir full ansvarsbegrensning for studentene — de kan ikke tape mer enn aksjekapitalen. Aksjeloven er godt regulert og forutsigbar, i motsetning til ulovfestet foreningsrett hvor medlemmer i noen tilfeller kan holdes personlig ansvarlige. Stiftelsen som eier kan søke skattefritak (skatteloven § 2-30).",
+            motstand: [
+              "<strong>Kapitalkravet:</strong> 30 000 kr i aksjekapital må skaffes. HiØ kan ikke skyte inn kapital uten at det oppstår statsstøtte-spørsmål. Løsning: studentsamskipnaden (SiØ), lokale næringsstiftelser eller crowd-funding.",
+              "<strong>HiØ kan motsette seg å stå utenfor styret:</strong> HiØ vil trolig ønske kontroll. Løsning: gi HiØ observatørstatus med talerett, og la HiØs jurister godkjenne samarbeidsavtalen.",
+              "<strong>Administrativ byrde:</strong> AS krever årsoppgjør, revisjon (ved omsetning > 5 MNOK) og regnskapsførsel. Dette kan løses av økonomistudentene som en del av læringen."
+            ]
+          }
+        ]
+      },
+      {
+        id: 2,
+        title: "2. Lånekassen — Spor 1 og 2",
+        subAdjustments: [
+          {
+            title: "Spor 1 (30 stp) - Tilpasning 1A: Emnebeskrivelse med reelle akademiske læringsmål",
+            konkret: [
+              "Ikke nok med «arbeidspraksis». Må ha:",
+              "Læringsutbytter: kunnskap, ferdigheter, generell kompetanse",
+              "Vurderingsform: mappe + prosjektrapport + refleksjonsnotat",
+              "Pensum: minimum 300–400 sider relevant litteratur"
+            ],
+            hvorfor: "Lånekassen stiller krav om reell studieprogresjon. Et emne med tydelige læringsmål, vurdering og pensum oppfyller dette. HiØ har allerede tilsvarende praksisemner (f.eks. praksis i ingeniørutdanningene) som kan brukes som mal.",
+            motstand: [
+              "Det kan være uenighet internt på HiØ om hva som er «reelle nok» læringsmål for et praksisemne. Løsning: bruk eksisterende emner som mal og involver studieutvalget tidlig."
+            ]
+          },
+          {
+            title: "Spor 1 (30 stp) - Tilpasning 1B: Vurder å integrere emnet i graden (siste semester)",
+            konkret: [
+              "Hvis Lånekassen sier nei til støtte <em>etter</em> fullført grad: legg «Bedriftspraksis» inn som siste semester i bachelor/master (30 stp valgemne). Da er støtte uproblematisk."
+            ],
+            hvorfor: "Emnet blir en ordinær del av graden. Lånekassen-støtte er automatisk. HiØ trenger ikke søke om særskilt godkjenning.",
+            motstand: [
+              "Dette endrer kjernen i konseptet — «broen mellom studier og jobb» blir borte. Studentene tar praksis før de er ferdige, ikke etter. Rekrutteringsargumentet «få betalt for å bygge CV etter endt utdanning» forsvinner. Likevel: funksjonelt kan emnet være det samme, det er bare plasseringen i tid som endres."
+            ]
+          },
+          {
+            title: "Spor 1 (30 stp) - Tilpasning 1C: Avklar samlet støttetid før rekruttering",
+            konkret: [
+              "Studenter med 5 års brukt støttetid (3+2) har normalt ikke mer igjen. Målrett rekruttering mot de som har støttetid gjenstående."
+            ],
+            hvorfor: "Enkelt å sjekke — Lånekassen har klare regler for maksimal støttetid. Bare rekrutter studenter som har støttetid igjen.",
+            motstand: [
+              "Dette begrenser rekrutteringsbasen. Mange masterstudenter har brukt 5 år. Løsning: markedsfør primært mot bachelorstudenter (3 år brukt, har 5 år igjen) og de som har tatt kortere utdanning."
+            ]
+          },
+          {
+            title: "Spor 2 - Tilpasning 2A: Minimum 15 stp",
+            konkret: [
+              "10 stp kvalifiserer <strong>ikke</strong> for Lånekassen. To veier:",
+              "(a) Øk til 15 stp (50 % stilling, ca. 18–20 timer/uke)",
+              "(b) Kombiner 10 stp + annet emne (5 stp) = 15 stp totalt",
+              "Anbefaling: (a) — enklest."
+            ],
+            hvorfor: "15 stp er Lånekassens minimum for gradert støtte. Med 15 stp får studentene ca. 50 % av full støtte, noe som er betydelig. HiØ kan administrere dette som et deltidsemne.",
+            motstand: [
+              "15 stp (18–20 timer/uke) er mer krevende for studenter som tar andre fag parallelt. Målgruppen for Spor 2 var de som ønsker lavere belastning. Løsning: kommuniser tydelig at 15 stp er minimum, og at studenter som ikke trenger Lånekassen kan delta på lavere belastning uten støtte."
+            ]
+          },
+          {
+            title: "Spor 2 - Tilpasning 2B: Alternativ uten Lånekassen",
+            konkret: [
+              "Gjør Spor 2 om til sertifikat-/vitnemålsprogram uten Lånekassen-støtte. Da faller kravet bort, men studentene må finansiere seg selv."
+            ],
+            hvorfor: "Ingen avhengighet av Lånekassen. Kan tilbys fleksibelt. Passer for studenter som har deltidsjobb ved siden av.",
+            motstand: [
+              "Uten Lånekassen-støtte er ordningen mindre attraktiv. Risiko for lav søkermasse. Løsning: kombiner med andre insentiver (sertifikat, portefølje, referanse)."
+            ]
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "3. Statsstøtte (HiØs bidrag)",
+        subAdjustments: [
+          {
+            title: "Tilpasning 3A — Markedspris for alle HiØ-bidrag (viktigste enkelttiltak)",
+            konkret: [
+              "<strong>Mentortimer:</strong> Syntax & Flow betaler HiØ markedspris (f.eks. 1 000 kr/time). Kan dekkes av innovasjonsmidler — poenget er synlig markedsbasert transaksjon.",
+              "<strong>Lokaler:</strong> Betal markedsleie (f.eks. 2 000–3 000 kr/mnd).",
+              "<strong>Alternativ:</strong> Hvis HiØ avviser markedspris: definer mentorordningen som integrert del av HiØs utdanningstilbud (ordinær undervisning). Da faller statsstøttereglene bort (Humboldt-Universität zu Berlin-doktrinen)."
+            ],
+            hvorfor: "Når HiØs bidrag prises til markedspris, er det ikke lenger et «statlig bidrag» — det er en ordinær kommersiell transaksjon. EØS-avtalen art. 61(1) krever statlige midler; hvis Syntax & Flow betaler for tjenestene, faller dette elementet bort. Alternativet (utdanningsformål) er forankret i EU-domstolens praksis (Humboldt-Universität zu Berlin, C-147/03).",
+            motstand: [
+              "HiØ kan nekte å ta betalt («vi tar ikke betalt for undervisning»). Løsning: forklar at dette er en ren formalitet for å unngå statsstøtte, og at midlene kan settes av til et felles utviklingsfond.",
+              "Markedspris for mentorer koster 260 000–520 000 kr/år. Dette må dekkes av eksterne midler (innovasjonsmidler, SIVA, næringsstiftelser). Løsning: start sakte — pilotfasen krever færre mentortimer.",
+              "Mentorer kan oppleve dobbeltrolle (både veileder og fakturerbar ressurs). Løsning: tydelig rollebeskrivelse."
+            ]
+          },
+          {
+            title: "Tilpasning 3B — Fakturer markedspris, gi utdanningsrabatt",
+            konkret: [
+              "Fastsett markedspris (f.eks. 800 kr/time)",
+              "Fakturer kunden",
+              "Gi dokumentert utdanningsrabatt (f.eks. 90 %)",
+              "Kunden betaler 80 kr/time i stedet for 0 kr",
+              "Dette gjør støtteelementet mindre og dokumenterbart."
+            ],
+            hvorfor: "Rabatten er dokumenterbar og kan begrunnes med studentenes læringskurve. Støtteelementet blir en brøkdel av markedsverdien og faller lettere inn under de minimis. Kunden har en reell (liten) økonomisk forpliktelse, noe som øker seriøsiteten.",
+            motstand: [
+              "Kunden betaler noe, ikke ingenting. Dette kan redusere antall søkere. Rabattmodellen kan også oppfattes som kunstig. Løsning: sett rabatten høyt nok til at den fortsatt er attraktiv for mikrovirksomheter (90–95 %)."
+            ]
+          },
+          {
+            title: "Tilpasning 3C — Støtteregister per kunde (de minimis-kontroll)",
+            konkret: [
+              "Loggfør markedsverdi, faktisk betalt, differanse og akkumulert over 3 år. Må holde seg under 300 000 EUR per kunde."
+            ],
+            hvorfor: "De minimis-forordningen (EU 2023/2831) gir et klart rettslig unntak for støtte under 300 000 EUR over 3 år per foretak. Med et støtteregister kan dere dokumentere at hver kunde holder seg under denne grensen.",
+            motstand: [
+              "Krever disiplin og kontinuerlig oppfølging. Uten automatisert system vil det bli feil. Løsning: bygg støtteregisteret inn i portalen fra dag én."
+            ]
+          },
+          {
+            title: "Tilpasning 3D — Objektiv kundeutvelgelse",
+            konkret: [
+              "Bruk førstemann til mølla eller loddtrekning. Publiser objektive kriterier. Unngå skjønnsbasert plukking."
+            ],
+            hvorfor: "Selektivitet er et av vilkårene i EØS art. 61(1). Objektive, ikke-diskriminerende kriterier gjør det vanskeligere å påvise selektivitet.",
+            motstand: [
+              "Førstemann til mølla gir mindre kontroll over hvilke prosjekter som passer studentenes læringsmål. Løsning: publiser kriterier for hvilke prosjekter som kvalifiserer (f.eks. enkel nettside, logo-design, markedsanalyse) og la kundene søke innenfor disse rammene."
+            ]
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "4. Arbeidstakerrisiko (studentstatus)",
+        subAdjustments: [
+          {
+            title: "Tilpasning 4A — Emnet som klassifiseringsverktøy",
+            konkret: [
+              "Studenter må være formelt opptatt i et emne med læringsmål, karaktervurdering, faglig veiledning og skriftlige kriterier."
+            ],
+            hvorfor: "Høyesterett (Rt. 2013 s. 1024) har lagt vekt på at studenter i praksisemner normalt ikke er arbeidstakere. Et formelt emne med vurdering er det sterkeste argumentet for studentstatus — det viser at deltakelsen har et utdanningsformål, ikke et arbeidsformål.",
+            motstand: [
+              "Jo mer praksisen ligner ordinært arbeid (faste oppgaver, kundestyring, resultatkrav), desto vanskeligere blir det å forsvare studentstatus. Løsning: sørg for at læringsmålene er reelle og at vurderingen vektlegger refleksjon og læring, ikke bare leveranse."
+            ]
+          },
+          {
+            title: "Tilpasning 4B — Mentorrollen: veiledning, ikke instruksjon",
+            konkret: [
+              "Mentorer skal: ✅ være tilgjengelige for råd, ✅ kvalitetssikre leveranser, ❌ ikke detaljstyre arbeid, ❌ ikke ha personalansvar. Dokumenteres i egen rollebeskrivelse."
+            ],
+            hvorfor: "Arbeidstakerstatus forutsetter at noen har instruksjonsmyndighet. Hvis mentorer kun veileder, har ingen instruksjonsmyndighet, og studentene har frihet til å organisere eget arbeid, er arbeidstakerstatus lite sannsynlig.",
+            motstand: [
+              "Kunder kan forvente mer styring og oppfølging enn mentorrollen tillater. Løsning: tydelig kommunikasjon i kundeavtalen om at prosjektet ledes av studentene selv, med veiledning fra HiØ."
+            ]
+          },
+          {
+            title: "Tilpasning 4C — Skriftlig avtale med hver student",
+            konkret: [
+              "Presiser: deltakelse er studieemne, ikke arbeidsforhold; studenten får Lånekassen, ikke lønn; ingen plikter etter arbeidsmiljøloven; kan si opp når som helst innenfor emnets rammer."
+            ],
+            hvorfor: "En skriftlig avtale skaper bevis for partenes intensjon. Hvis partene er enige om at det ikke er et ansettelsesforhold, skal mye til for å omklassifisere det.",
+            motstand: [
+              "En avtale kan ikke fravike ufravikelige lover. Hvis realiteten er et ansettelsesforhold, hjelper ikke en avtale. Løsning: sørg for at realiteten samsvarer med avtalen — fleksible tider, ingen instruksjon, fokus på læring."
+            ]
+          },
+          {
+            title: "Tilpasning 4D — Fleksible tidsrammer",
+            konkret: [
+              "Spor 1: mål om 37,5 t/uke, men ingen oppmøteplikt kl. 08:00.",
+              "Spor 2: mål om 15 t/uke, fleksibelt.",
+              "Ingen stemplingsklokke."
+            ],
+            hvorfor: "Arbeidstakerstatus krever en viss grad av underordning og plikt til å møte. Uten faste oppmøtetider og uten stemplingsklokke svekkes argumentet for arbeidstakerstatus betydelig.",
+            motstand: [
+              "Kunder kan oppleve det som uprofesjonelt hvis studentene ikke har faste møtetider. Løsning: avtal faste ukentlige statusmøter med kunden, men la studentene selv bestemme når de jobber utover disse møtene."
+            ]
+          }
+        ]
+      },
+      {
+        id: 5,
+        title: "5. Kunder (målgruppe)",
+        subAdjustments: [
+          {
+            title: "Tilpasning 5A — Streng definisjon av mikrovirksomhet",
+            konkret: [
+              "Maks 5 ansatte, omsetning under 5 MNOK, ikke konkurrent til etablerte byråer. Kunden bekrefter skriftlig at de ikke har budsjett til profesjonelle tjenester."
+            ],
+            hvorfor: "Jo mindre kunden er, desto lettere er det å argumentere for at tjenesten ikke påvirker konkurransen i markedet. Mikrovirksomheter med under 5 ansatte har sjelden budsjett til profesjonelle konsulenttjenester — dermed fortrenger Syntax & Flow ingen kommersielle aktører. Kundenes bekreftelse dokumenterer dette.",
+            motstand: [
+              "Streng definisjon begrenser kundegrunnlaget dramatisk. Mange potensielt interessante prosjekter faller utenfor. Løsning: start med denne strenge definisjonen i pilotfasen, utvid gradvis etter hvert som risikobildet blir klarere."
+            ]
+          },
+          {
+            title: "Tilpasning 5B — Prioriter kunder som ikke er foretak",
+            konkret: [
+              "Statsstøttereglene gjelder bare for foretak. Ved å rette seg mot privatpersoner (ENK), ideelle organisasjoner og HiØs interne avdelinger, reduseres risikoen betydelig."
+            ],
+            hvorfor: "EU-domstolen (C-222/04) har slått fast at statsstøttereglene bare gjelder foretak som driver økonomisk aktivitet. Privatpersoner og rene ideelle organisasjoner uten økonomisk aktivitet faller utenfor. Dette er den enkleste måten å unngå statsstøtteproblemet helt.",
+            motstand: [
+              "Ideelle organisasjoner og HiØs interne avdelinger har ofte mindre spennende prosjekter. Gir mindre portefølje-verdi for studentene. Løsning: bland — ha 50 % ideelle/private og 50 % mikrovirksomheter for å balansere risiko og læringsverdi."
+            ]
+          },
+          {
+            title: "Tilpasning 5C — «Time for time»-bytte",
+            konkret: [
+              "Kunden betaler med dokumentert tidsinvestering (2–4 timer/uke). Hvis uteblir: prosjektet avsluttes. Kan argumenteres som bytteforhold, ikke gave."
+            ],
+            hvorfor: "Et bytte (tjenester mot tid) kan i noen tilfeller anses som et gjensidig bebyrdende forhold, ikke en gave. Dette svekker argumentet om at kunden mottar en ren «økonomisk fordel» uten motytelse. I tillegg sikrer det kundeengasjement.",
+            motstand: [
+              "Skattemyndighetene kan omklassifisere «time for time»-byttet som et naturalytelsesbytte med avgiftsmessig verdi. Kundens tidsbruk har en alternativverdi. Løsning: dokumentér at kundens tidsinvestering er en reell forutsetning for prosjektet, ikke en symbolsk gest."
+            ]
+          }
+        ]
+      },
+      {
+        id: 6,
+        title: "6. Konkurranse (posisjonering og markedsføring)",
+        subAdjustments: [
+          {
+            title: "Tilpasning 6A — Posisjonér som utdanning, ikke konsulentvirksomhet",
+            konkret: [
+              "Unngå ord som «konsulent», «byrå», «profesjonelle tjenester», «SLA». Bruk: «læringsprosjekt», «studentpraksis», «utdanningssamarbeid»."
+            ],
+            hvorfor: "Konkurranseklager forutsetter at dere oppfattes som en konkurrent. Hvis dere posisjonerer dere som et utdanningstiltak (ikke et konsulentbyrå), svekkes grunnlaget for klage. Markedsføringsloven § 6 (god forretningsskikk) rammer bare villedende markedsføring — hvis dere er ærlige om at dette er studentarbeid, er det ikke villedende.",
+            motstand: [
+              "Det er fristende å bruke profesjonelle termer for å tiltrekke kunder. Motstå denne fristelsen — det er akkurat det som utløser klager. Løsning: lag en «tone of voice»-guide for all kommunikasjon."
+            ]
+          },
+          {
+            title: "Tilpasning 6B — Forbered «defense pack» før klage kommer",
+            konkret: [
+              "Inneholder: emnebeskrivelse, samarbeidsavtale med HiØ, kundeliste med de minimis-verdier, evalueringsrapport, utvelgelseskriterier, standard kundeavtale."
+            ],
+            hvorfor: "Når klagen kommer (sannsynlig innen 6–12 måneder), is det kritisk å kunne svare raskt og profesjonelt. En forberedt «defense pack» viser at dere har tatt juridiske forholdsregler, noe som gjør det vanskeligere for klageren å få medhold.",
+            motstand: [
+              "Å forberede seg på en klage kan oppleves som unødvendig byråkrati før noe har skjedd. Løsning: se det som en forsikring — du håper du aldri trenger den, men du vil angre hvis du ikke har den."
+            ]
+          },
+          {
+            title: "Tilpasning 6C — Dokumenter avviste oppdrag",
+            konkret: [
+              "Bevis at dere ikke tar oppdrag som kommersielle aktører normalt ville tatt."
+            ],
+            hvorfor: "En liste over avviste oppdrag er konkret bevis på at dere ikke konkurrerer i det ordinære markedet. Hvis dere kan vise at dere har takket nei to oppdrag fra bedrifter som har budsjett, svekker det argumentet om konkurransevridning betydelig.",
+            motstand: [
+              "Krever disiplin å dokumentere avvisninger. Løsning: enkel logg i portalen — hvem, hvorfor avvist, dato."
+            ]
+          },
+          {
+            title: "Tilpasning 6D — Unngå profesjonell markedsføring",
+            konkret: [
+              "Ingen prissammenligning, ingen garantier. Tydelig forbehold på alt materiell."
+            ],
+            hvorfor: "Forebygger klager ved å ikke fremstå som en konkurrent. Klager fra etablerte byråer er ofte basert på at de føler seg fortrengt — hvis dere ikke markedsfører dere som et alternativ til dem, reduseres sannsynligheten for at de reagerer.",
+            motstand: [
+              "Mindre slagkraftig markedsføring. Færre kunder. Løsning: la porteføljen tale for seg selv — resultater fra pilotprosjekter er den beste markedsføringen."
+            ]
+          }
+        ]
+      },
+      {
+        id: 7,
+        title: "7. NAV / Spor 3",
+        subAdjustments: [
+          {
+            title: "Tilpasning 7A — Utsett NAV-sporet til Fase 4 (tidligst 12 måneder)",
+            konkret: [
+              "NAV kompliserer alt: helseopplysninger, ulik finansiering, taushetsplikt, arbeidsgiveransvar, rapportering. Start kun med Spor 1 og 2."
+            ],
+            hvorfor: "Ved å utsette NAV-sporet reduseres kompleksiteten i oppstartsfasen dramatisk. Dere slipper å forholde dere til GDPR art. 9 (helseopplysninger), forvaltningsloven § 13 (taushetsplikt) og NAVs tiltaksregelverk samtidig som dere bygger resten av modellen.",
+            motstand: [
+              "NAV-deltakere er en viktig målgruppe for sosial bærekraft. Å utsette dem kan oppleves som å prioritere vekk de som trenger det mest. Løsning: kommuniser tydelig at Spor 3 kommer, men først når grunnmodellen er trygg. Involver NAV i dialog underveis."
+            ]
+          },
+          {
+            title: "Tilpasning 7B — Start som vertsvirksomhet, ikke tiltaksarrangør",
+            konkret: [
+              "Syntax & Flow stiller praksisplass. NAV har oppfølgingsansvar. Bruk Arbeidstrening-tiltaket, ikke lønnstilskudd."
+            ],
+            hvorfor: "Vertsvirksomhet har betydelig lavere krav enn tiltaksarrangør. Dere trenger ikke godkjenning, rapporteringsplikt eller kvalitetssystem. NAV beholder ansvaret for deltakeren. Arbeidstrening (tidligere «praksisplass») er det enkleste tiltaket å administrere.",
+            motstand: [
+              "Noen NAV-deltakere trenger mer oppfølging enn vertsvirksomhet kan gi. Løsning: avklar med NAV at deltakeren har en NAV-veileder som følger opp, og at Syntax & Flow kun bidrar med faglig veiledning."
+            ]
+          },
+          {
+            title: "Tilpasning 7C — Separat avtaleverk for NAV-deltakere",
+            konkret: [
+              "Én avtale for Lånekassen-studenter, en annen for NAV-deltakere. Aldri bland i samme avtale."
+            ],
+            hvorfor: "Ulike rettsgrunnlag (utdanningslov vs. folketrygdlov) krever ulike avtaler. Å blande dem skaper rettsusikkerhet for begge parter. Separate avtaler gir klarhet og forutsigbarhet.",
+            motstand: [
+              "Mer administrativt arbeid å vedlikeholde to avtaleverk. Løsning: lag maler som kan gjenbrukes."
+            ]
+          }
+        ]
+      },
+      {
+        id: 8,
+        title: "8. Ansvarsforhold",
+        subAdjustments: [
+          {
+            title: "Tilpasning 8A — Tegn yrkesansvarsforsikring før første kundeleveranse",
+            konkret: [
+              "Dekker: profesjonelle tjenester, dataansvar, styreansvar. Kostnad: 5 000–15 000 kr/år."
+            ],
+            hvorfor: "Forsikringen beskytter både studentene og organisasjonen mot erstatningskrav. Uten forsikring står studentene personlig ansvarlig for feil — en uakseptabel risiko. Forsikringsselskapene har standardprodukter for små konsulentvirksomheter som passer Syntax & Flow.",
+            motstand: [
+              "Forsikring koster penger og kan være vanskelig å få for en studentorganisasjon uten driftshistorikk. Løsning: kontakt flere selskaper (If, Gjensidige, Tryg) og forklar modellen. Start med en enklere og billigere styreansvarsforsikring, utvid etter hvert."
+            ]
+          },
+          {
+            title: "Tilpasning 8B — Standard kundeavtale med fire lag beskyttelse",
+            konkret: [
+              "Ansvarsfraskrivelser: (1) Ansvarsfraskrivelser («as-is, with all faults»), (2) Ansvarsbegrensning (maks 10 000 NOK), (3) Kundeerklæring (forstår at det er studentarbeid), og (4) Avbestillingsklausul (ved uteblivelse fra møter)."
+            ],
+            hvorfor: "Ansvarsfraskrivelser i pro bono-avtaler har godt vern i norsk rett, særlig når tjenesten er gratis og mottakeren er en virksomhet (ikke forbruker). Avtaleloven § 36 (lemping) kan sette urimelige vilkår til side, men en fraskrivelse i en gratis studenttjeneste vil normalt stå seg. Fire lag gir redundant beskyttelse.",
+            motstand: [
+              "Ansvarsfraskrivelser kan fremstå som useriøse og skremme potensielle kunder. Løsning: formuler dem i et tilgjengelig språk, ikke tung juridisk sjargong. Forklar hvorfor de er der (studentopplæring, ikke profesjonelt byrå)."
+            ]
+          },
+          {
+            title: "Tilpasning 8C — Betinget SLA kun som unntak",
+            konkret: [
+              "Kun når teamet har erfaren student/NAV-deltaker. Strengt avgrenset. Aldri uten forsikringsdekning."
+            ],
+            hvorfor: "En betinget SLA gir mulighet til å ta mer avanserte oppdrag når teamet har riktig kompetanse, samtidig som standardmodellen (uten SLA) gir trygghet for de fleste prosjekter. Ved å kreve forsikringsdekning sikrer dere at SLA-en er reell.",
+            motstand: [
+              "Vanskelig å vurdere når teamet er «erfarne nok» for SLA. Løsning: sett klare kriterier (f.eks. minst én student med 2+ års relevant erfaring eller en NAV-deltaker med tidligere konsulenterfaring)."
+            ]
+          }
+        ]
+      },
+      {
+        id: 9,
+        title: "9. Personvern (portal)",
+        subAdjustments: [
+          {
+            title: "Tilpasning 9A — Utpek DPO internt eller via HiØ",
+            konkret: [
+              "Utpeke DPO (personvernombud) enten internt (f.eks. et styremedlem) eller eksternt via en avtale med HiØs DPO."
+            ],
+            hvorfor: "GDPR art. 37 krever DPO hvis kjerneaktiviteten innebærer systematisk overvåkning eller behandling av særlige kategorier. En intern DPO eller en avtale med HiØs DPO is enkle løsninger.",
+            motstand: [
+              "HiØs DPO har begrenset kapasitet. Løsning: utpek en student som DPO og la vedkommende ta et GDPR-kurs (gratis, f.eks. via Datatilsynet)."
+            ]
+          },
+          {
+            title: "Tilpasning 9B — Gjennomfør DPIA før portalen bygges",
+            konkret: [
+              "Gjennomføre en personvernvurdering (DPIA) for portalen."
+            ],
+            hvorfor: "DPIA er påkrevd (GDPR art. 35) når behandlingen innebærer særlige kategorier eller profilering av sårbare grupper. En DPIA beskytter også Syntax & Flow ved å dokumentere at dere har vurdert risikoene.",
+            motstand: [
+              "DPIA oppleves som tungvint og byråkratisk for et lite prosjekt. Løsning: bruk Datatilsynets mal — den er gratis og tar 1–2 uker å fylle ut."
+            ]
+          },
+          {
+            title: "Tilpasning 9C — Samtykkebasert porteføljepublisering med anonymisering",
+            konkret: [
+              "Innhent skriftlig samtykke og anonymiser data før publisering på portalen."
+            ],
+            hvorfor: "Samtykke (GDPR art. 6) er et gyldig behandlingsgrunnlag. Anonymisering fjerner personopplysninger og gjør at GDPR ikke lenger gjelder. Kombinasjonen gir høy grad av beskyttelse.",
+            motstand: [
+              "Anonymisering gjør porteføljen mindre slagkraftig (ingen navn, ingen spesifikke detaljer). Noen kunder/studenter kan nekte samtykke. Løsning: la samtykke være en del av deltakelsesvilkårene, men gi mulighet til å reservere seg mot enkeltdeler."
+            ]
+          },
+          {
+            title: "Tilpasning 9D — Databehandleravtale med Supabase/Vercel",
+            konkret: [
+              "Opprette og signere databehandleravtale (GDPR art. 28) med skyleverandører som Supabase og Vercel."
+            ],
+            hvorfor: "GDPR art. 28 krever databehandleravtale med alle leverandører som behandler personopplysninger på vegne av Syntax & Flow. Både Supabase og Vercel tilbyr standardavtaler.",
+            motstand: [
+              "Vercel lagrer data i USA (Privacy Shield). Løsning: velg norske/EU-leverandører for ekstra trygghet, eller bruk Vercels EU-region og godkjenn Privacy Shield."
+            ]
+          },
+          {
+            title: "Tilpasning 9E — Skill NAV-data fra studentdata fysisk",
+            konkret: [
+              "Sørg for at helseopplysninger eller andre sensitive data fra NAV-deltakere lagres helt separat fra ordinære studentdata."
+            ],
+            hvorfor: "NAV-deltakeres helseopplysninger er særlige kategorier (GDPR art. 9) og krever strengere beskyttelse enn studentdata. Fysisk separasjon (egen database eller separate tabeller) gjør det enklere å kontrollere tilgang og oppfylle kravene.",
+            motstand: [
+              "Mer komplekst databasesystem, mer utviklingsarbeid. Løsning: i starten, unngå NAV-data helt (utsett Spor 3). Når NAV kommer, bygg separate systemer."
+            ]
+          }
+        ]
+      }
+    ],
+    prioritizedTasks: {
+      headers: ["#", "Tiltak", "Tema", "Kostnad"],
+      rows: [
+        ["1", "Stift AS eid av ideell stiftelse", "Org.form", "30 000–40 000 kr"],
+        ["2", "Utarbeid emnebeskrivelse (30 stp) med læringsmål", "Lånekassen", "Gratis"],
+        ["3", "Spor 2 redesignes til 15 stp minimum", "Lånekassen", "Gratis"],
+        ["4", "Inngå samarbeidsavtale HiØ med markedspris", "Statsstøtte", "20 000–50 000 kr"],
+        ["5", "Søk forhåndsuttalelse Lånekassen", "Lånekassen", "Gratis"],
+        ["6", "Tegn ansvarsforsikring", "Ansvar", "5 000–15 000 kr/år"],
+        ["7", "Utarbeid standard kundeavtale + studentavtale", "Ansvar/arbeidstaker", "10 000–20 000 kr"],
+        ["8", "Gjennomfør DPIA", "Personvern", "Gratis"],
+        ["9", "Etabler støtteregister (de minimis)", "Statsstøtte", "1 dag"],
+        ["10", "Utsett NAV/Spor 3 til fase 4", "NAV", "—"]
+      ]
+    }
   }
 ];
