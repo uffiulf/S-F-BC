@@ -474,10 +474,14 @@ export const wikiData = [
       {
         title: "1. Lånekassen (Progresjon & Godkjenning)",
         text: "Det er ikke et krav i loven at emner må tas før en grad er fullført. Utfordringen ligger i om Lånekassen anser studenten for å være i reell framdrift dersom emnet ikke leder til en ny grad. Spor 2 (10 stp) må økes til minst 15 stp for å kvalifisere til basisstøtte (minstekrav for 50% studiebelastning).",
+        sources: [
+          { name: "Lov om utdanningsstøtte § 4", url: "https://lovdata.no/lov/2005-06-03-37" },
+          { name: "Forskrift om utdanningsstøtte", url: "https://lovdata.no/forskrift/2014-12-19-1742" }
+        ],
         details: [
           {
             heading: "1.1 Kan studenter motta Lånekassestøtte for «Bedriftspraksis» etter fullført grad?",
-            text: "<strong>Utgangspunkt:</strong> Lånekassen yter støtte til godkjente utdanninger ved godkjente læresteder, jf. lov om utdanningsstøtte § 4 med tilhørende forskrift. Det er ikke noe vilkår i loven at emnet må tas <em>før</em> graden er fullført. Hovedregelen er at støtte gis til ordinære studieløp — grunn-, etter- og videreutdanning.<br/><br/><strong>Spor 1 (30 stp/semester fulltid):</strong> Etter Lånekassens regler må en student normalt oppnå minst 30 studiepoeng per semester for å beholde retten til støtte. Dersom «Bedriftspraksis» er et godkjent emne ved HiØ med 30 stp per semester, vil Spor 1 i utgangspunktet oppfylle dette kravet. Det avgjørende er at HiØ oppretter emnet og at det <strong>formelt inngår i HiØs emnetilbud</strong> — ikke at det er en del av en bestemt grad.<br/><br/><strong>Utfordring:</strong> Lånekassen krever at støttemottakeren er en <strong>«reell student»</strong> og har <strong>framdrift i utdanningen</strong>. Dersom studenten allerede har fullført en grad, og det nye emnet ikke leder frem til en ny grad, kan Lånekassen stille spørsmål ved emnets reelle utdanningsformål. Særlig risiko knytter seg til:",
+            text: "<strong>Utgangspunkt:</strong> Lånekassen yter støtte to godkjente utdanninger ved godkjente læresteder, jf. lov om utdanningsstøtte § 4 med tilhørende forskrift. Det er ikke noe vilkår i loven at emnet må tas <em>før</em> graden er fullført. Hovedregelen er at støtte gis til ordinære studieløp — grunn-, etter- og videreutdanning.<br/><br/><strong>Spor 1 (30 stp/semester fulltid):</strong> Etter Lånekassens regler må en student normalt oppnå minst 30 studiepoeng per semester for å beholde retten til støtte. Dersom «Bedriftspraksis» er et godkjent emne ved HiØ med 30 stp per semester, vil Spor 1 i utgangspunktet oppfylle dette kravet. Det avgjørende er at HiØ oppretter emnet og at det <strong>formelt inngår i HiØs emnetilbud</strong> — ikke at det er en del av en bestemt grad.<br/><br/><strong>Utfordring:</strong> Lånekassen krever at støttemottakeren er en <strong>«reell student»</strong> og har <strong>framdrift i utdanningen</strong>. Dersom studenten allerede har fullført en grad, og det nye emnet ikke leder frem til en ny grad, kan Lånekassen stille spørsmål ved emnets reelle utdanningsformål. Særlig risiko knytter seg til:",
             points: [
               "<strong>Fordypningskravet:</strong> Lånekassen kan kreve at emnet må være en naturlig faglig fordypning eller et strukturert påbygningsstudium.",
               "<strong>Samlet støttetid:</strong> Studenter som allerede har brukt opp sin ordinære støtteperiode (f.eks. 3 år bachelor + 2 år master = 5 år), vil normalt ikke få mer støtte med mindre de tar en ny grad eller et strukturert etter-/videreutdanningsløp."
@@ -520,6 +524,10 @@ export const wikiData = [
       {
         title: "2. NAV (Samlokalisering & Rettsgrunnlag)",
         text: "Det er fullt lovlig at NAV-deltakere samarbeider med studenter i samme team. Utfordringen er at de har ulike rettsgrunnlag og rapporteringsplikter. NAV-deltakere er underlagt NAVs aktivitetsplikt og helseopplysninger må beskyttes strengt pga. taushetsplikt.",
+        sources: [
+          { name: "Lov om arbeidsmarkedstjenester § 12", url: "https://lovdata.no/lov/2004-12-10-76" },
+          { name: "Forskrift om arbeidsrettede tiltak", url: "https://lovdata.no/forskrift/2015-12-11-1598" }
+        ],
         details: [
           {
             heading: "2.1 Kan NAV-deltakere være i samme bedrift som Lånekassen-studenter?",
@@ -527,7 +535,7 @@ export const wikiData = [
           },
           {
             heading: "2.2 Sentrale rettslige hensyn",
-            text: "<strong>Ulike rettsgrunnlag:</strong><br/>- Lånekassen-studenter er underlagt <strong>utdanningslovgivningen</strong> (studiekrav, progresjon, emnebeskrivelse)<br/>- NAV-deltakere er underlagt <strong>NAVs regelverk</strong> (tiltaksplan, oppfølgingsvedtak, aktivitetsplikt)<br/><br/><strong>Krav til NAV-tiltak:</strong> Arbeidstrening etter arbeidsmarkedsloven § 12 og forskrift om arbeidsrettede tiltak krever at tiltaket er <strong>meningsfullt</strong> og <strong>kvalifiserende</strong>. Deltakeren må ha en kontaktperson som følger opp. Dersom Syntax & Flow skal være en <strong>tiltaksarrangør</strong> (enhet som gjennomfører tiltak på vegne av NAV), må organisasjonen godkjennes av NAV og oppfylle krav til rapportering, kvalitetssikring og taushetsplikt.<br/><br/><strong>Tiltaksarrangør eller vertsvirksomhet?</strong><br/>- Hvis Syntax & Flow kun stiller med praksisplass, er NAV ansvarlig for tiltaket, og Syntax & Flow er vertsvirksomhet.<br/>- Hvis Syntax & Flow har detaljert styring og oppfølging, kan de anses som tiltaksarrangør og må oppfylle strengere krav.<br/><br/><strong>Særlig om lønnstilskudd (Spor 3):</strong> Hvis NAV gir lønnstilskudd til Syntax & Flow for å ansette deltakeren, blir Syntax & Flow <strong>arbeidsgiver</strong> med fulle arbeidsgiverforpliktelser (arbeidsavtale, HMS, pensjon, sykepenger)."
+            text: "<strong>Ulike rettsgrunnlag:</strong><br/>- Lånekassen-studenter er underlagt <strong>utdanningslovgivningen</strong> (studiekrav, progresjon, emnebeskrivelse)<br/>- NAV-deltakere er underlagt <strong>NAVs regelverk</strong> (tiltaksplan, oppfølgingsvedtak, aktivitetsplikt)<br/><br/><strong>Krav til NAV-tiltak:</strong> Arbeidstrening etter arbeidsmarkedsloven § 12 og forskrift om arbeidsrettede tiltak krever at tiltaket er <strong>meningsfullt</strong> og <strong>kvalifiserende</strong>. Deltakeren må ha en kontaktperson som følger opp. Dersom Syntax & Flow skal være en <strong>tiltaksarrangør</strong> (enhet som gjennomfører tiltak på vegne av NAV), må organisasjonen godkjennes av NAV og oppfylle krav til rapportering, kvalitetssikring og taushetsplikt.<br/><br/><strong>Tiltaksarrangør eller vertsvirksomhet?</strong><br/>- Hvis Syntax & Flow kun stiller med praksisplass, er NAV ansvarlig for tiltaket, og Syntax & Flow er vertsvirksomhet.<br/>- Hvis Syntax & Flow har detaljert styring og oppfølging, kan de anses som tiltaksarrangør og må oppfylle strengere krav.<br/><br/><strong>Særlig om lønnstilskudd (Spor 3):</strong> Hvis NAV crisis lønnstilskudd til Syntax & Flow for å ansette deltakeren, blir Syntax & Flow <strong>arbeidsgiver</strong> med fulke arbeidsgiverforpliktelser (arbeidsavtale, HMS, pensjon, sykepenger)."
           },
           {
             heading: "2.3 Risikoer ved samspill mellom spor",
@@ -553,6 +561,10 @@ export const wikiData = [
       {
         title: "3. Konkurranseloven & Markedsføring",
         text: "Det å levere gratis tjenester er ikke forbudt i seg selv. Men urettmessig prisdumping støttet av offentlige høyskolemidler kan utløse klager. Derfor er det kritisk å kun rette markedsføringen mot mikrovirksomheter og gründere som ikke har kommersiell betalingsevne.",
+        sources: [
+          { name: "Konkurranseloven", url: "https://lovdata.no/lov/2004-03-05-12" },
+          { name: "Markedsføringsloven § 6", url: "https://lovdata.no/lov/2009-01-09-2" }
+        ],
         details: [
           {
             heading: "3.1 Er det lovlig å tilby gratis konsulenttjenester til næringslivet?",
@@ -576,6 +588,9 @@ export const wikiData = [
       {
         title: "4. Statsstøtte & EØS (HiØs subsidiering)",
         text: "Dette regnes som den største risikoen. HiØs bidrag i form av gratis kontorer, mentorforelesere og skolenavn kan regnes som indirekte statsstøtte til bedriftene. Løsningen er å benytte reglene for 'de minimis-støtte' og skille stiftelsen ut som en egen juridisk enhet.",
+        sources: [
+          { name: "EØS-avtalen art. 61–64", url: "https://lovdata.no/traktat/1992-05-02-1/art/61" }
+        ],
         details: [
           {
             heading: "4.1 Hvorfor statsstøtte er verre enn de andre risikoene",
@@ -627,6 +642,10 @@ export const wikiData = [
       {
         title: "5. Arbeidsmiljøloven (Klassifisering)",
         text: "Det er fare for at studenter blir ansett som reelle arbeidstakere dersom Syntax & Flow instruerer dem detaljert, krever stempling av timer og kontrollerer arbeidet. Det må fokuseres på læringsutbytte, veiledning fremfor instruksjon, og karaktervurdering.",
+        sources: [
+          { name: "Arbeidsmiljøloven § 1-8", url: "https://lovdata.no/lov/2005-06-17-62" },
+          { name: "Universitets- og høyskoleloven", url: "https://lovdata.no/lov/2005-04-01-15" }
+        ],
         details: [
           {
             heading: "5.1 Klassifisering av studentene",
@@ -663,7 +682,11 @@ export const wikiData = [
       },
       {
         title: "6. Ansvarsforhold (Skader & Kontrakter)",
-        text: "En studentfeil er ikke det samme som en profesjonell feil i rettslig forstand, men organisasjonen kan holdes ansvarlig for feil i kildekode. Tydelige ansvarsfraskrivelser i kundenes kontrakter ('leveres as-is' uten garanti) er påkrevd, og det bør tegnes en ansvarsforsikring.",
+        text: "En studentfeil er ikke det samme som en profesjonell feil i rettslig forstand, men organisasjonen kan holdes ansvarlig for feil in kildekode. Tydelige ansvarsfraskrivelser i kundenes kontrakter ('leveres as-is' uten garanti) er påkrevd, og det bør tegnes en ansvarsforsikring.",
+        sources: [
+          { name: "Skadeserstatningsloven § 1-1 og § 2-1", url: "https://lovdata.no/lov/1969-06-13-26" },
+          { name: "Avtaleloven § 36", url: "https://lovdata.no/lov/1918-05-31-4" }
+        ],
         details: [
           {
             heading: "6.1 Hvem er ansvarlig for skade forårsaket av leveranser?",
@@ -691,6 +714,10 @@ export const wikiData = [
       {
         title: "7. Skatt & MVA (Ideell drift)",
         text: "Så lenge det ikke er omsetning eller profittmotiv, er Syntax & Flow fritatt for MVA og skatt etter skatteloven § 2-30. Det må sikres at ikke kundenes tidsinvestering tolkes som et 'bytte av ytelser' som utløser skatteplikt.",
+        sources: [
+          { name: "Merverdiavgiftsloven", url: "https://lovdata.no/lov/2009-06-19-58" },
+          { name: "Skatteloven § 2-30", url: "https://lovdata.no/lov/1999-03-26-14" }
+        ],
         details: [
           {
             heading: "7.1 Registrering i Brønnøysund",
@@ -709,6 +736,10 @@ export const wikiData = [
       {
         title: "8. Anbefalt Organisasjonsform",
         text: "Det anbefales å opprette **Syntax & Flow AS** som eies 100% av en ideell stiftelse (**Syntax & Flow Stiftelse**). AS-et sikrer begrenset ansvar for drift, mens stiftelsen sikrer at alt eventuelt overskudd går tilbake til allmennyttige formål.",
+        sources: [
+          { name: "Stiftelsesloven", url: "https://lovdata.no/lov/2001-06-15-59" },
+          { name: "Aksjeloven", url: "https://lovdata.no/lov/1997-06-13-44" }
+        ],
         details: [
           {
             heading: "8.1 Sammenligning av organisasjonsformer",
@@ -749,6 +780,9 @@ export const wikiData = [
       {
         title: "9. Personvern & GDPR (DPIA)",
         text: "Særlig for NAV-deltakere kan helseopplysninger forekomme. Det må gjennomføres en konsekvensutredning for personvern (DPIA) før portalen opprettes, og studenter må gi samtykke før prosjektene deres publiseres offentlig.",
+        sources: [
+          { name: "Personopplysningsloven (GDPR)", url: "https://lovdata.no/lov/2018-06-15-38" }
+        ],
         details: [
           {
             heading: "9.1 Behandlingsansvar",
@@ -787,6 +821,9 @@ export const wikiData = [
       {
         title: "10. HiØs omdømmerisiko",
         text: "Høgskolen risikerer omdømmetap ved feilede prosjekter og sanksjoner fra Lånekassen. Det må foreligge en skriftlig samarbeidsavtale mellom HiØ og Syntax & Flow som avklarer at HiØ ikke har arbeidsgiveransvar, og at mentorer kun veileder.",
+        sources: [
+          { name: "Universitets- og høyskoleloven", url: "https://lovdata.no/lov/2005-04-01-15" }
+        ],
         details: [
           {
             heading: "10.1 Risikobilde for HiØ",

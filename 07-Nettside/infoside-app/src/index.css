@@ -1634,3 +1634,55 @@ mark.highlight {
   color: var(--text-secondary);
   line-height: 1.5;
 }
+
+/* Legal Sources Section */
+.legal-sources-section {
+  margin-top: 40px;
+  border-top: 2px dashed var(--border-color);
+  padding-top: 28px;
+}
+
+.legal-sources-section h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+}
+
+.sources-list-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.source-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.source-chip:hover {
+  background-color: var(--bg-card-hover);
+  border-color: var(--accent-light);
+  color: var(--text-primary);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px var(--accent-glow);
+}
+
+.source-chip svg {
+  color: var(--text-muted);
+  transition: color 0.2s ease;
+}
+
+.source-chip:hover svg {
+  color: var(--accent-light);
+}

@@ -314,6 +314,27 @@ export default function App() {
                       </div>
                     ))}
                   </div>
+
+                  {currentPage.legalTopics[activeLegalTopicIdx].sources && (
+                    <div className="legal-sources-section">
+                      <h4>🔗 Rettslige kilder og lovverk:</h4>
+                      <div className="sources-list-row">
+                        {currentPage.legalTopics[activeLegalTopicIdx].sources.map((src, sIdx) => (
+                          <a
+                            key={sIdx}
+                            href={src.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="source-chip"
+                          >
+                            <Icons.BookOpen className="w-4 h-4" />
+                            <span>{src.name}</span>
+                            <Icons.ExternalLink className="w-3.5 h-3.5" />
+                          </a>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                 </div>
               </div>
             ) : (
