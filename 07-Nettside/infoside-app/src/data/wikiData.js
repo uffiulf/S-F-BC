@@ -282,6 +282,15 @@ export const wikiData = [
     lead: "Hva som er definert som IN scope og OUT of scope for Syntax & Flow for å sikre minst mulig motstand.",
     sections: [
       {
+        heading: "Kildedokument",
+        text: "Dette scopet er basert på det formelle bakgrunnsdokumentet. Trykk på knappen under for å åpne det originale dokumentet direkte i filsystemet:<br/>" +
+          "<div class=\"button-container\">" +
+          "  <a href=\"file:///Users/luffi/Library/Mobile Documents/com~apple~CloudDocs/Antigravity/Syntax&Flow/06-Business-case/Scope/scope_minst_motstand.md\" class=\"btn-primary\" target=\"_blank\">" +
+          "    📄 Åpne scope_minst_motstand.md" +
+          "  </a>" +
+          "</div>"
+      },
+      {
         heading: "1. Modell med to parallelle spor",
         text: "For å maksimere studentenes læringsutbytte og sikre drift gjennom hele året, opererer Syntax & Flow med to spor for prosjekter:",
         points: [
