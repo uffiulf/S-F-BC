@@ -1653,7 +1653,9 @@ export const wikiData = [
             ["<strong>DPIA</strong>", "Data Protection Impact Assessment. Konsekvensvurdering for personvern som må gjøres før behandling av personopplysninger."],
             ["<strong>DPO</strong>", "Data Protection Officer. Personvernansvarlig."],
             ["<strong>ESA</strong>", "EFTAs overvåkingsorgan. Overvåker at Norge følger EØS-avtalen, inkludert statsstøttereglene."],
-            ["<strong>Evighetsprosjekt</strong>", "Internt prosjekt som går over flere semestre. Hvert kull overtar der forrige slapp."]
+            ["<strong>Evighetsprosjekt</strong>", "Internt prosjekt som går over flere semestre. Hvert kull overtar der forrige slapp."],
+            ["<strong>Executive Summary</strong>", "Kort sammendrag av en forretningsplan eller rapport som gir leseren rask oversikt over hele innholdet."],
+            ["<strong>Justification</strong>", "Begrunnelse eller forsvaring av en beslutning, et prosjekt eller en investering — hvorfor noe er nødvendig eller lønnsomt."]
           ]
         }
       },
@@ -1664,6 +1666,7 @@ export const wikiData = [
           rows: [
             ["<strong>GDPR</strong>", "General Data Protection Regulation. EUs personvernforordning, innlemmet i norsk lov gjennom personopplysningsloven."],
             ["<strong>GTM</strong>", "Go-To-Market. Strategi for hvordan et produkt eller tjeneste lanseres i markedet."],
+            ["<strong>IP (Investor Proposal)</strong>", "Forslag eller presentasjon rettet mot investorer for å sikre finansiering."],
             ["<strong>IPR</strong>", "Intellectual Property Rights. Åndsverk og immaterielle rettigheter (kode, design, patenter)."]
           ]
         }
@@ -1673,10 +1676,9 @@ export const wikiData = [
         table: {
           headers: ["Begrep", "Forklaring"],
           rows: [
-            ["<strong>Lånekassen</strong>", "Statens lånekasse for utdanning. Gir utdanningsstøtte (lån og stipend) til studenter."],
             ["<strong>MVA</strong>", "Merverdiavgift. Avgift på omsetning av varer og tjenester. Grense for registrering: 50 000 kr/år."],
-            ["<strong>NPS</strong>", "Net Promoter Score. Måling av kundetilfredshet på en skala fra 0–10."],
-            ["<strong>NOKUT</strong>", "Nasjonalt organ for kvalitet i utdanningen. Fører tilsyn med høyere utdanning."]
+            ["<strong>NOKUT</strong>", "Nasjonalt organ for kvalitet i utdanningen. Fører tilsyn med høyere utdanning."],
+            ["<strong>NPS</strong>", "Net Promoter Score. Måling av kundetilfredshet på en skala fra 0–10."]
           ]
         }
       },
@@ -1686,6 +1688,7 @@ export const wikiData = [
           headers: ["Begrep", "Forklaring"],
           rows: [
             ["<strong>OTP</strong>", "Obligatorisk tjenestepensjon. Pensjonsordning som arbeidsgivere må tilby ansatte."],
+            ["<strong>Persona</strong>", "Fiktiv brukerprofil som representerer en målgruppe, brukt i design og markedsføring for å forstå behov og adferd."],
             ["<strong>Pro bono</strong>", "Latin for «det godes skyld». Tjenester som leveres gratis, ofte for ideelle formål."]
           ]
         }
@@ -1696,9 +1699,13 @@ export const wikiData = [
           headers: ["Begrep", "Forklaring"],
           rows: [
             ["<strong>Recovery</strong>", "Tilbakebetaling av ulovlig statsstøtte med renter. Pålegges av ESA når støtte er gitt i strid med EØS-avtalen."],
+            ["<strong>Risk Management</strong>", "Prosessen med å identifisere, vurdere og håndtere risikoer i et prosjekt eller en organisasjon."],
             ["<strong>ROI</strong>", "Return on Investment. Avkastning på investering. Måler hvor lønnsom en investering er."],
             ["<strong>Rubric</strong>", "Rubric (vurderingsmatrise). Strukturerte kriterier for vurdering, f.eks. 1–5 på definerte dimensjoner."],
-            ["<strong>SLA</strong>", "Service Level Agreement. Avtale om leveransenivå og garantier. Syntax & Flow tilbyr normalt ikke SLA."]
+            ["<strong>SLA</strong>", "Service Level Agreement. Avtale om leveransenivå og garantier. Syntax & Flow tilbyr normalt ikke SLA."],
+            ["<strong>Stakeholder</strong>", "Interessent. En person eller gruppe som har interesse i eller påvirkes av et prosjekt."],
+            ["<strong>Stakeholder Management</strong>", "Prosessen med å kartlegge, kommunisere med og håndtere forventningene til interessenter."],
+            ["<strong>Storyboard</strong>", "Visuell fremstilling av en brukerreise eller prosess, bilde for bilde, brukt i design og planlegging."]
           ]
         }
       },
@@ -1714,6 +1721,7 @@ export const wikiData = [
             ["<strong>Støtteregister</strong>", "Løpende logg over markedsverdi av tjenester per kunde. Brukes for å kontrollere de minimis-grensen."],
             ["<strong>TAM</strong>", "Total Addressable Market. Det totale markedet for et produkt eller tjeneste, altså maksimal inntekt hvis alle potensielle kunder kjøper."],
             ["<strong>Unfair Advantage</strong>", "En varig konkurransefordel som er vanskelig for andre å kopiere."],
+            ["<strong>User Journey</strong>", "Brukerreise. En trinnvis beskrivelse eller visualisering av hvordan en bruker opplever og samhandler med et produkt eller tjeneste over tid."],
             ["<strong>Value Proposition Canvas (VPC)</strong>", "Verktøy for å kartlegge verdien et produkt/tjeneste gir en målgruppe."],
             ["<strong>Verdiskapning / Value Creation</strong>", "Prosessen med å skape merverdi for kunder, studenter eller samfunnet gjennom produktet eller tjenesten."]
           ]

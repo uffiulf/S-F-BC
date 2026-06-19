@@ -19,6 +19,8 @@
 | **DPO** | Data Protection Officer. Personvernansvarlig. |
 | **ESA** | EFTAs overvåkingsorgan. Overvåker at Norge følger EØS-avtalen, inkludert statsstøttereglene. |
 | **Evighetsprosjekt** | Internt prosjekt som går over flere semestre. Hvert kull overtar der forrige slapp. |
+| **Executive Summary** | Kort sammendrag av en forretningsplan eller rapport som gir leseren rask oversikt over hele innholdet. |
+| **Justification** | Begrunnelse eller forsvaring av en beslutning, et prosjekt eller en investering — hvorfor noe er nødvendig eller lønnsomt. |
 
 ## G–L
 
@@ -26,6 +28,7 @@
 |--------|-----------|
 | **GDPR** | General Data Protection Regulation. EUs personvernforordning, innlemmet i norsk lov gjennom personopplysningsloven. |
 | **GTM** | Go-To-Market. Strategi for hvordan et produkt eller tjeneste lanseres i markedet. |
+| **IP** | Investor Proposal. Forslag eller presentasjon rettet mot investorer for å sikre finansiering. |
 | **IPR** | Intellectual Property Rights. Åndsverk og immaterielle rettigheter (kode, design, patenter). |
 
 ## L–P
@@ -42,6 +45,7 @@
 | Begrep | Forklaring |
 |--------|-----------|
 | **OTP** | Obligatorisk tjenestepensjon. Pensjonsordning som arbeidsgivere må tilby ansatte. |
+| **Persona** | Fiktiv brukerprofil som representerer en målgruppe, brukt i design og markedsføring for å forstå behov og adferd. |
 | **Pro bono** | Latin for «det godes skyld». Tjenester som leveres gratis, ofte for ideelle formål. |
 
 ## R–S
@@ -49,9 +53,13 @@
 | Begrep | Forklaring |
 |--------|-----------|
 | **Recovery** | Tilbakebetaling av ulovlig statsstøtte med renter. Pålegges av ESA når støtte er gitt i strid med EØS-avtalen. |
+| **Risk Management** | Prosessen med å identifisere, vurdere og håndtere risikoer i et prosjekt eller en organisasjon. |
 | **ROI** | Return on Investment. Avkastning på investering. Måler hvor lønnsom en investering er. |
 | **Rubric** | Rubric (vurderingsmatrise). Strukturerte kriterier for vurdering, f.eks. 1–5 på definerte dimensjoner. |
 | **SLA** | Service Level Agreement. Avtale om leveransenivå og garantier. Syntax & Flow tilbyr normalt ikke SLA. |
+| **Stakeholder** | Interessent. En person eller gruppe som har interesse i eller påvirkes av et prosjekt. |
+| **Stakeholder Management** | Prosessen med å kartlegge, kommunisere med og håndtere forventningene til interessenter. |
+| **Storyboard** | Visuell fremstilling av en brukerreise eller prosess, bilde for bilde, brukt i design og planlegging. |
 
 ## S–Å
 

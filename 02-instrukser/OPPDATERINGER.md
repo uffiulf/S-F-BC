@@ -66,6 +66,12 @@ Kilde: `06-Business-case/Scope/scope_tabell.md` og `06-Business-case/Scope/scope
 Hva: Oppdater eksisterende scope-side eller opprett ny på infosiden. Innholdet må gjenspeile den oppdaterte modellen: (1) eksterne oppdrag + interne evighetsprosjekter som to spor, (2) evighetsprosjekter som går over flere semestre med forelesere som kvalitetssikrere, (3) portalen som verifisert referansebase for rekruttering. In/out-scope-tabellene fra scope_tabell.md skal være hovedinnholdet.
 Hvor: Eksisterende eller ny side under kategorien "GTM & Utførelse" eller "Dokumenter"
 
+### 19.06.2026 — Oppdater ordlisten på infosiden med nye begreper
+Prioritet: Høy
+Kilde: `01-administrasjon/ordliste.md`
+Hva: Oppdater den eksisterende ordliste-siden på infosiden. Den er allerede opprettet, men må oppdateres med de nye begrepene som er lagt til: Executive Summary, Justification, Persona, Risk Management, Stakeholder, Stakeholder Management, Storyboard, User Journey, IP (Investor Proposal), TAM, Unfair Advantage. Fjern Lånekassen fra ordlisten. Sørg for at alle begreper er sortert alfabetisk under riktig bokstavseksjon.
+Hvor: Eksisterende side "Ordliste" under "Dokumenter & Referanser"
+
 ### 19.06.2026 — Legg til ordliste på infosiden
 Prioritet: Middels
 Kilde: `01-administrasjon/ordliste.md`
@@ -130,6 +136,7 @@ Hvor: Ny seksjon under "Analyser" eller "Guidelines"
 | 19.06.2026 | Oppdater Forretningsmodell & VPC med utdypende verdiskapningstekst | Utført |
 | 19.06.2026 | Oppdater scope-siden med ny evighetsprosjekt-modell og portalen som referansebase | Utført |
 | 19.06.2026 | Legg til ordliste på infosiden | Utført |
+| 19.06.2026 | Oppdater ordlisten på infosiden med nye begreper | Utført |
 | 19.06.2026 | Oppdater suksesskriteriene med utdypede forklaringer | Utført |
 | 19.06.2026 | Opprett ny seksjon "Business Case" i sidemenyen | Utført |
 | 19.06.2026 | Oppdater organisasjonsbeskrivelsen med stabilt driftsskille | Utført |
