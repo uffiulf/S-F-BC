@@ -24,8 +24,9 @@ Syntax & Flow er et selvstendig organ in-house på Høgskolen i Østfold (HiØ) 
 - Styret — uavhengige medlemmer + HiØ-observatør
 
 ### Studenter (utfører oppdragene)
-- Tilknyttet via ITD35014 Bedriftspraksis (10 stp)
+- Tilknyttet via **ITD35014 Bedriftspraksis (10 stp)** — et valgfritt emne på HiØ, emneansvarlig Stig Henning Johansen
 - Arbeider i tverrfaglige team under veiledning
+- **Mål:** Utvide ITD35014 til 15–30 stp over tid for å få mer tid med studentene
 
 ---
 
@@ -40,10 +41,9 @@ Syntax & Flow er et selvstendig organ in-house på Høgskolen i Østfold (HiØ) 
 Prioritet: 1) HiØ internt, 2) Ideelle organisasjoner, 3) Privatpersoner (ENK), 4) Mikrovirksomheter (1–5 ansatte) som bekrefter å ikke ha budsjett til kommersielle aktører.
 
 ### Studenter
-- **ITD35014 (10 stp)** — eksisterende emne, emneansvarlig Stig Henning Johansen
-- **Spor 1:** ITD35014 + 5 stp valgfritt emne = 15 stp (Lånekassen)
-- **Spor 2:** Kun ITD35014 (10 stp) — for studenter uten Lånekassen-behov
-- **Spor 3 (NAV):** Utsettes til piloten er gjennomført
+- **ITD35014 (10 stp)** — valgfritt emne på bachelor, emneansvarlig Stig Henning Johansen. Også obligatorisk for Bachelor i kommunikasjon.
+- **Mål:** Utvide ITD35014 til 15–30 stp over tid for å få mer tid med studentene
+- Uavklart: Det har vært uformelle samtaler om mulighet for enkeltemner utenom full grad, men dette må bekreftes med HiØs studieadministrasjon
 
 ### Portal som referansebase
 - Verifisert kandidatprofil med strukturerte vurderinger (rubric-basert)
@@ -82,7 +82,7 @@ Prioritet: 1) HiØ internt, 2) Ideelle organisasjoner, 3) Privatpersoner (ENK), 
 
 - ✅ Syntax & Flow er et selvstendig organ, ikke en studentforening
 - ✅ Stabil kjerne (daglig leder, fagansvarlige, forelesere) driver S&F — studenter utfører oppdrag
-- ✅ ITD35014 (10 stp) brukes som utgangspunkt — ikke nytt emne ennå
+- ✅ ITD35014 (10 stp) brukes som utgangspunkt — valgfritt emne på bachelor. Mål: utvide til 15–30 stp
 - ✅ Evighetsprosjekter som supplement til eksterne oppdrag (går over flere semestre)
 - ✅ Portal som verifisert referansebase for rekruttering (strukturerte vurderinger, samtykke, kontrollert tilgang)
 - ✅ AS eid av ideell stiftelse (anbefalt organisasjonsform)

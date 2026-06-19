@@ -72,6 +72,18 @@ Kilde: Ingen spesifikk fil — nytt innhold
 Hva: Nederst på Dashboard-siden, etter eksisterende seksjoner, legg til en forklarende boks med tittel "Hvordan henger business casen sammen?" som viser at Value Proposition (VP) er en integrert del av business casen, ikke noe separat. Vis rekkefølgen: Forretningsidé → Value Proposition → Forretningsmodell → Marked og konkurranse → Scope → Risiko og juss. Forklar kort at VPC-ene som finnes under "Forretningsmodell & VPC" er en visualisering av VP-en for hver målgruppe (studenter, HiØ, næringsliv). Alt dette samlet utgjør business casen.
 Hvor: Nederst på Dashboard-siden
 
+### 19.06.2026 — Rett opp tabellen over deltakerordninger på Organisasjon & Drift-siden
+Prioritet: Høy
+Kilde: `06-Business-case/Scope/scope_minst_motstand.md` og bekreftet fra HiØs emneside for ITD35014
+Hva: Tabellen "De Tre Deltakerordningene" på Organisasjon & Drift-siden må oppdateres. ITD35014 er et valgfritt emne på 10 stp for bachelorstudenter (også obligatorisk for Bachelor i kommunikasjon). Dagens situasjon er 10 stp. Målet er å utvide til 15–30 stp over tid. Spor 2 (deltid) og Spor 3 (NAV) kan beholdes som før. Legg til fotnote: "Mål: utvide til 15–30 stp over tid for å få mer tid med studentene."
+Hvor: Eksisterende side "Organisasjon & Drift" — tabellen "De Tre Deltakerordningene"
+
+### 19.06.2026 — Oppdater Dashboard med ny avklaring om ITD35014
+Prioritet: Middels
+Kilde: HiØs emneside for ITD35014 (bekreftet: 10 stp, valgfritt emne, emneansvarlig Stig Henning Johansen)
+Hva: På Dashboard-siden, under seksjonen om utgangspunkt, oppdater teksten slik at det fremgår at ITD35014 er bekreftet som 10 stp valgfritt emne. Målet er å utvide til 15–30 stp over tid. Når det gjelder enkeltemner utenom grad: dette er uavklart og kun uformelle samtaler — må ikke presenteres som fakta.
+Hvor: Dashboard-siden
+
 ### 19.06.2026 — Oppdater ordlisten på infosiden med nye begreper
 Prioritet: Høy
 Kilde: `01-administrasjon/ordliste.md`
@@ -149,4 +161,7 @@ Hvor: Ny seksjon under "Analyser" eller "Guidelines"
 | 19.06.2026 | Oppdater oversikten over alle nye maler i mal-og-utkast | Utført |
 | 19.06.2026 | Legg til nye maler og utkast i referanseseksjonen | Utført |
 | 19.06.2026 | Legg til forklaring av VP sin rolle i business casen på Dashboard | Utført |
+| 19.06.2026 | Rett opp tabellen over deltakerordninger på Organisasjon & Drift-siden | Utført |
+| 19.06.2026 | Oppdater Dashboard med ny avklaring om ITD35014 | Utført |
+
 

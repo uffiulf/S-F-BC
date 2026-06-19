@@ -25,7 +25,7 @@ export const wikiData = [
       },
       {
         heading: "Utgangspunkt: ITD35014 Bedriftspraksis",
-        text: "Syntax & Flow bygger på det eksisterende emnet <strong>ITD35014 Bedriftspraksis</strong> (10 stp) ved HiØ, Institutt for IT og kommunikasjon (ITK). Syntax & Flows rolle er å skaffe praksisplassene og organisere de tverrfaglige teamene — noe studentene i dag må gjøre selv.<br/><br/><strong>Emneinfo:</strong> ITD35014 — 10 stp — Emneansvarlig: Stig Henning Johansen."
+        text: "Syntax & Flow bygger på det eksisterende emnet <strong>ITD35014 Bedriftspraksis (10 stp)</strong> ved HiØ, Institutt for IT og kommunikasjon (ITK). Dette er bekreftet som et 10 stp valgfritt emne (emneansvarlig: Stig Henning Johansen). Målet er å utvide emnet til 15–30 stp over tid for å få mer tid med studentene. Når det gjelder enkeltemner utenom grad, er dette foreløpig uavklart og kun gjenstand for uformelle samtaler, og må ikke presenteres som fakta.<br/><br/>Syntax & Flows rolle er å skaffe praksisplassene og organisere de tverrfaglige teamene — noe studentene i dag må gjøre selv."
       },
       {
         heading: "Hvordan bruke denne Wikien",
@@ -141,15 +141,15 @@ export const wikiData = [
         table: {
           headers: ["Spor", "Omfang", "Målgruppe", "Finansiering"],
           rows: [
-            ["Spor 1: Bedriftspraksis (Fulltid)", "60 studiepoeng per år", "Nyutdannede bachelor/master-kandidater", "Fulltids utdanningsstøtte (Lånekassen)"],
-            ["Spor 2: Bedriftspraksis (Deltid)", "15 studiepoeng per semester (minimum for Lånekassen)*", "Aktive studenter underveis i studiet", "Lånekassen (gradert støtte)"],
+            ["Spor 1: ITD35014 Bedriftspraksis", "10 studiepoeng (valgfritt emne)*", "Bachelorstudenter (IT/Design/Økonomi, obligatorisk for Bachelor i kommunikasjon)", "Utdanningsstøtte (del av grad, krever 15 stp totalt per semester for gradert støtte)"],
+            ["Spor 2: Bedriftspraksis (Deltid)", "15 studiepoeng per semester (minimum for Lånekassen)", "Aktive studenter underveis i studiet", "Lånekassen (gradert støtte)"],
             ["Spor 3: Arbeidstrening via NAV", "20% - 100% stilling (individuell tiltaksplan)", "Personer utenfor arbeidsmarkedet med IT/Design/Økonomi-bakgrunn", "Tiltakspenger/dagpenger dekket av NAV"]
           ]
         }
       },
       {
-        heading: "*Merknad vedrørende studiepoeng for Spor 2",
-        text: "ITD35014 Bedriftspraksis gir i dag 10 stp ved HiØ. Syntax & Flow jobber aktivt for å øke dette til 15 stp (som er Lånekassens minstekrav for gradert støtte)."
+        heading: "*Merknad vedrørende studiepoeng",
+        text: "ITD35014 Bedriftspraksis gir i dag 10 stp ved HiØ, og er et valgfritt emne for bachelorstudenter (obligatorisk for Bachelor i kommunikasjon). Dagens situasjon er 10 stp. Mål: utvide til 15–30 stp over tid for å få mer tid med studentene."
       },
       {
         heading: "Tiltak for kunnskapsoverføring",
