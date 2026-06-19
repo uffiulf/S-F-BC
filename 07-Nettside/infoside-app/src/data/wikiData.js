@@ -294,9 +294,11 @@ export const wikiData = [
         table: {
           headers: ["Dimensjon", "In Scope", "Out of Scope"],
           rows: [
-            ["<strong>Formål</strong>", "Være en studentdrevet arbeidsplass som gir erfaring gjennom eksterne oppdrag og interne evighetsprosjekter", "Være et kommersielt konsulentbyrå som konkurrerer direkte med etablerte byråer"],
-            ["<strong>Studentens rolle</strong>", "Ansatt/deltaker i S&F som jobber i tverrfaglige team under veiledning", "Må selv skaffe og administrere praksisplass hos eksterne bedrifter"],
-            ["<strong>Fysisk tilholdssted</strong>", "In-house på HiØs lokaler med tilgang til foreleseres kompetanse", "Fysisk plassert hos eksterne bedrifter uten oppfølging fra skolen"]
+            ["<strong>Formål</strong>", "Være en selvstendig organisasjon in-house på HiØ som gir studenter en klar bane fra utdanning til fast ansatt, gjennom eksterne oppdrag og interne evighetsprosjekter", "Være et kommersielt konsulentbyrå som konkurrerer med etablerte aktører"],
+            ["<strong>Drift av S&F</strong>", "En stabil kjerne (daglig leder, fagansvarlige, forelesere ved behov) som sikrer kontinuitet og kvalitet uavhengig av studentutskifting", "Studentene driver organisasjonen"],
+            ["<strong>Studentens rolle</strong>", "Utfører oppdragene i tverrfaglige team under veiledning — mottaker av tilbudet", "Må selv skaffe praksisplass hos eksterne bedrifter"],
+            ["<strong>Foreleserens rolle</strong>", "Trukket inn ved behov for faglig ekspertise og kvalitetssikring", "Daglig drift eller detaljstyring av studentene"],
+            ["<strong>Sted</strong>", "In-house på HiØ med tilgang til foreleseres ekspertise", "Fysisk utenfor campus uten faglig oppfølging"]
           ]
         }
       },
