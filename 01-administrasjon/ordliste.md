@@ -81,9 +81,9 @@
 | Begrep | Forklaring |
 |--------|-----------|
 | **SiØ** | Studentsamskipnaden i Østfold. Tilbyr velferdstjenester til studenter ved HiØ. |
-| **Spor 1** | Fulltids praksisløp: ITD35014 (10 stp) + 5 stp valgfritt emne = 15 stp. Kvalifiserer for Lånekassen. |
-| **Spor 2** | Deltid: Kun ITD35014 (10 stp). Kvalifiserer ikke for Lånekassen. |
-| **Spor 3** | NAV-spor for personer utenfor arbeidsmarkedet. Utsettes til etter pilot. |
+| **Spor 1** | Dagens ordning basert på det eksisterende studieemnet ITD35014 Bedriftspraksis (10 stp). Målet på sikt er å utvide emnet til 15–30 stp for å sikre rett til støtte fra Lånekassen uten krav om andre emner ved siden av. |
+| **Spor 2** | Tidligere planlagt deltidssport (10 stp) som er fjernet fra modellen, da det ikke finnes et egnet 5 stp-emne ved HiØ å kombinere med for å nå 15 stp-grensen. |
+| **Spor 3** | NAV-samarbeid rettet mot deltakere utenfor det ordinære studieløpet. Sporet er utsatt til etter pilotfasen (Fase 4). |
 | **Støtteregister** | Løpende logg over markedsverdi av tjenester per kunde. Brukes for å kontrollere de minimis-grensen. |
 | **TAM (Total Addressable Market)** | Totalt marked for et produkt eller tjeneste, altså maksimal inntekt hvis alle potensielle kunder kjøper. |
 | **Top-down** | Markedsføringsstrategi som starter hos ledelsen/store aktører og jobber seg nedover i organisasjonen. |

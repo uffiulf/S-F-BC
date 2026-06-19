@@ -136,20 +136,19 @@ export const wikiData = [
         text: "<br/><strong>Viktig prinsipp:</strong> Studentene <em>utfører</em> arbeidet, men <em>driver ikke</em> Syntax & Flow. Dette er ikke en studentforening, men et selvstendig organ in-house på HiØ. Dette sikrer at bedrifter forholder seg to en profesjonell, stabil organisasjon over tid. Målet er å gi studentene en klar og strukturert bane fra utdanning til fast ansettelse ved hjelp av portalen, der bedrifter kan følge dem og verifisere deres kompetanse."
       },
       {
-        heading: "De Tre Deltakerordningene (Rekrutteringsspor)",
-        text: "Deltakerne rekrutteres inn i bedriften gjennom tre ulike spor:",
+        heading: "Deltakerordninger og rekruttering",
+        text: "Studentene deltar i piloten gjennom det eksisterende faget ved HiØ:",
         table: {
-          headers: ["Spor", "Omfang", "Målgruppe", "Finansiering"],
+          headers: ["Ordning", "Omfang", "Målgruppe", "Finansiering / Status"],
           rows: [
-            ["Spor 1: ITD35014 Bedriftspraksis", "10 studiepoeng (valgfritt emne)*", "Bachelorstudenter (IT/Design/Økonomi, obligatorisk for Bachelor i kommunikasjon)", "Utdanningsstøtte (del av grad, krever 15 stp totalt per semester for gradert støtte)"],
-            ["Spor 2: Bedriftspraksis (Deltid)", "15 studiepoeng per semester (minimum for Lånekassen)", "Aktive studenter underveis i studiet", "Lånekassen (gradert støtte)"],
-            ["Spor 3: Arbeidstrening via NAV", "20% - 100% stilling (individuell tiltaksplan)", "Personer utenfor arbeidsmarkedet med IT/Design/Økonomi-bakgrunn", "Tiltakspenger/dagpenger dekket av NAV"]
+            ["ITD35014 Bedriftspraksis", "10 studiepoeng (valgfritt emne)*", "Bachelorstudenter (IT/Design/Økonomi, obligatorisk for Bachelor i kommunikasjon) som har bestått min. 90 stp", "Utdanningsstøtte (inngår i ordinær grad, men krever 15 stp totalt per semester for gradert Lånekassestøtte)"],
+            ["NAV-samarbeid", "Individuell tiltaksplan", "Personer utenfor arbeidsmarkedet med IT/Design/Økonomi-bakgrunn", "Utsettes til etter piloten (tidligst Fase 4). Tiltakspenger/dagpenger dekket av NAV."]
           ]
         }
       },
       {
-        heading: "*Merknad vedrørende studiepoeng",
-        text: "ITD35014 Bedriftspraksis gir i dag 10 stp ved HiØ, og er et valgfritt emne for bachelorstudenter (obligatorisk for Bachelor i kommunikasjon). Dagens situasjon er 10 stp. Mål: utvide til 15–30 stp over tid for å få mer tid med studentene."
+        heading: "*Merknad vedrørende studiepoeng og Lånekassen",
+        text: "ITD35014 Bedriftspraksis gir i dag 10 stp ved HiØ. Det var tidligere planlagt et kombinasjonsløp for å nå Lånekassens minstekrav på 15 stp for gradert støtte, men dette er skrinlagt da det ikke finnes et egnet 5 stp-emne å kombinere med. Dagens ordning er derfor utelukkende ITD35014 på 10 stp. Det langsiktige målet er å utvide emnet til 15–30 stp over tid for å få mer tid med studentene og sikre rett til Lånekassestøtte."
       },
       {
         heading: "Tiltak for kunnskapsoverføring",
@@ -346,10 +345,10 @@ export const wikiData = [
           "2. Ideelle organisasjoner, lag og foreninger<br/>" +
           "3. Privatpersoner (ENK uten ansatte) og gründere i oppstartsfasen<br/>" +
           "4. Mikrovirksomheter (1–5 ansatte) som bekrefter at de ikke har budsjett til kommersielle aktører.<br/><br/>" +
-          "<h3>5. Rekrutteringsspor & Lånekassen</h3>" +
-          "• <strong>Spor 1 (Kombinert):</strong> ITD35014 (10 stp) + 5 stp valgfag = 15 stp (kvalifiserer for Lånekassen). Arbeidstid ca. 22–25 timer/uke.<br/>" +
-          "• <strong>Spor 2 (Kun emnet):</strong> 10 stp (for studenter som ikke trenger Lånekasse-støtte). Arbeidstid ca. 12–15 timer/uke.<br/>" +
-          "• <strong>Spor 3 (NAV-tiltak):</strong> Utsettes til etter pilotfasen (tidligst Fase 4).<br/><br/>" +
+          "<h3>5. Deltakelse & Lånekassen</h3>" +
+          "• <strong>ITD35014 Bedriftspraksis (10 stp):</strong> Dagens eneste studieløp. Arbeidstid ca. 12–15 timer/uke. Siden emnet er på 10 stp, gir det i seg selv ikke rett til Lånekassestøtte (minstekravet er 15 stp for gradert støtte). Det finnes ikke et egnet 5 stp-emne å kombinere med i dag.<br/>" +
+          "• <strong>NAV-samarbeid:</strong> Utsettes til etter pilotfasen (tidligst Fase 4).<br/>" +
+          "• <strong>Langsiktig mål:</strong> Utvide ITD35014 til 15–30 stp over tid for å gi studentene full rett til Lånekassestøtte.<br/><br/>" +
           "<h3>6. Portalen som verifisert referansebase</h3>" +
           "Portalen løser bedriftenes problem med informasjonsasymmetri ved rekruttering. I stedet for en selvrapportert CV, gir portalen dokumentert bevis på en kandidats faktiske arbeidsprestasjon over 3–6 måneder basert på rubric-vurderinger fra kunder og mentorer.<br/><br/>" +
           "<strong>Juridiske rammer:</strong> Fullstendig samtykkebasert (opt-in), strukturerte vurderingskriterier uten negativ fritekst, fullt innsyn og sletterett for studenten, samt begrenset tilgang for godkjente bedrifter.<br/><br/>" +
@@ -414,9 +413,9 @@ export const wikiData = [
           headers: ["Aspekt", "In Scope", "Out of Scope"],
           rows: [
             ["<strong>Studieemne</strong>", "Bruke det eksisterende emnet ITD35014 Bedriftspraksis (10 stp) som formell ramme", "Søke om å opprette helt nye emner før piloten er fullført"],
-            ["<strong>Spor 1 (Lånekassen)</strong>", "Kombinere ITD35014 (10 stp) med et 5 stp valgfag for å nå minstekravet på 15 stp", "Rekruttere studenter med under 90 stp bestått"],
-            ["<strong>Spor 2 (Kun emnet)</strong>", "Ta kun ITD35014 (10 stp) for studenter som ikke er avhengig av Lånekassestøtte", "Gjøre 10 stp-sporet til den generelle hovedmodellen"],
-            ["<strong>Spor 3 (NAV)</strong>", "Utsette NAV-samarbeidet til etter pilotfasen (tidligst Fase 4)", "Rekruttere NAV-deltakere uten separate avtaler fra dag én"]
+            ["<strong>Lånekassestøtte</strong>", "Utvide ITD35014 til 15–30 stp på sikt for å sikre Lånekassestøtte", "Kombinere med urealistiske 5 stp-emner som ikke finnes ved HiØ"],
+            ["<strong>Deltakelse i dag</strong>", "Tilby ITD35014 (10 stp) som eneste alternativ for studenter i pilotfasen", "Forvente Lånekassestøtte for 10 stp enkeltemne"],
+            ["<strong>NAV-samarbeid</strong>", "Utsette NAV-samarbeidet til etter pilotfasen (tidligst Fase 4)", "Rekruttere NAV-deltakere uten separate avtaler fra dag én"]
           ]
         }
       },
@@ -735,7 +734,7 @@ export const wikiData = [
             ["Rekrutter 2–3 nye team parallelt", "Skalere kapasiteten gradvis (ikke hopp fra 1 til 10 kunder direkte).", "Studentleder", "Løpende / Erfaring fra pilot"],
             ["Bygg og lanser referanseportalen (nettsiden)", "Sikre digital portefølje- og referansebase for studentene.", "IT- og designstudenter", "Gratis / GDPR-samtykke på plass"],
             ["Forbered 'defense pack' mot konkurranseklager", "Når klagen fra kommersielle byråer kommer, må svaret ligge klart.", "Styret, studentleder", "Gratis / Dokumenter fra Fase 2 & 3"],
-            ["Start Spor 3 (NAV) forsiktig med én deltaker", "NAV-deltakere har andre regler. Start med én for å lære systemet.", "NAV, studentleder", "Gratis / Separat avtaleverk klart"]
+            ["Start NAV-samarbeidet forsiktig med én deltaker", "NAV-deltakere har andre regler. Start med én for å lære systemet.", "NAV, studentleder", "Gratis / Separat avtaleverk klart"]
           ]
         }
       },
@@ -854,7 +853,7 @@ export const wikiData = [
       ],
       weaknesses: [
         "<strong>Lånekassestøtte ikke avklart:</strong> Støtte til emne etter fullført grad krever forhåndsgodkjenning.",
-        "<strong>Minstegrense på 15 stp:</strong> Spor 2 (10 stp) kvalifiserer ikke for støtte og må redesignes.",
+        "<strong>Minstekrav for Lånekassen:</strong> ITD35014 geeft kun 10 stp, som er under Lånekassens minstekrav på 15 stp for gradert støtte.",
         "<strong>Statsstøtterisiko (EØS):</strong> Skolens ressurser kan anses som ulovlig støtte til eksterne bedrifter.",
         "<strong>Rettslig gråsone for studentene:</strong> Uklart om studentene kan anses som arbeidstakere.",
         "<strong>Konkurranseklager:</strong> Lokale byråer kan klage på prisdumping og subsidiering.",
@@ -864,12 +863,12 @@ export const wikiData = [
     risks: [
       {
         id: 1,
-        title: "Støtte fra Lånekassen (Spor 1/2)",
-        sannsynlighet: 3,
-        konsekvens: 5,
-        alvorlighet: "Kritisk",
-        beskrivelse: "Lånekassen godkjenner ikke emne tatt etter fullført grad, eller avslår Spor 2 fordi det er under 15 studiepoeng.",
-        tiltak: "Innhente forhåndsuttalelse fra Lånekassen; redesign av Spor 2 til minst 15 studiepoeng (50% studiebelastning)."
+        title: "Manglende Lånekassestøtte for 10 stp enkeltemne",
+        sannsynlighet: 4,
+        konsekvens: 4,
+        alvorlighet: "Høy",
+        beskrivelse: "Studentene får ikke basisstøtte fordi ITD35014 er på 10 stp (Lånekassen krever min. 15 stp for gradert støtte). Det er også risiko for avslag hvis Lånekassen ikke anser enkeltemner utenom grad som reell studieprogresjon.",
+        tiltak: "Målrette rekruttering mot studenter som ikke er økonomisk avhengige av Lånekassen i piloten; jobbe for å utvide ITD35014 til 15–30 stp på sikt."
       },
       {
         id: 2,
@@ -919,7 +918,7 @@ export const wikiData = [
     legalTopics: [
       {
         title: "1. Lånekassen (Progresjon & Godkjenning)",
-        text: "Det er ikke et krav i loven at emner må tas før en grad er fullført. Utfordringen ligger i om Lånekassen anser studenten for å være i reell framdrift dersom emnet ikke leder til en ny grad. Spor 2 (10 stp) må økes til minst 15 stp for å kvalifisere til basisstøtte (minstekrav for 50% studiebelastning).",
+        text: "Det er ikke et krav i loven at emner må tas før en grad er fullført. Utfordringen ligger i om Lånekassen anser studenten for å være i reell framdrift dersom emnet ikke leder til en ny grad. Siden ITD35014 Bedriftspraksis er på 10 stp, er det i utgangspunktet under Lånekassens minstekrav på 15 stp for gradert basisstøtte (50 % studiebelastning).",
         sources: [
           { name: "Lov om utdanningsstøtte § 4", url: "https://lovdata.no/lov/2005-06-03-37" },
           { name: "Forskrift om utdanningsstøtte", url: "https://lovdata.no/forskrift/2014-12-19-1742" }
@@ -927,15 +926,15 @@ export const wikiData = [
         details: [
           {
             heading: "1.1 Kan studenter motta Lånekassestøtte for «Bedriftspraksis» etter fullført grad?",
-            text: "<strong>Utgangspunkt:</strong> Lånekassen yter støtte til godkjente utdanninger ved godkjente læresteder, jf. lov om utdanningsstøtte § 4 med tilhørende forskrift. Det er ikke noe vilkår i loven at emnet må tas <em>før</em> graden er fullført. Hovedregelen er at støtte gis til ordinære studieløp — grunn-, etter- og videreutdanning.<br/><br/><strong>Spor 1 (30 stp/semester fulltid):</strong> Etter Lånekassens regler må en student normalt oppnå minst 30 studiepoeng per semester for å beholde retten to støtte. Dersom «Bedriftspraksis» is et godkjent emne ved HiØ med 30 stp per semester, vil Spor 1 i utgangspunktet oppfylle dette kravet. Det avgjørende er at HiØ oppretter emnet og at det <strong>formelt inngår i HiØs emnetilbud</strong> — ikke at det er en del av en bestemt grad.<br/><br/><strong>Utfordring:</strong> Lånekassen krever at støttemottakeren er en <strong>«reell student»</strong> og har <strong>framdrift i utdanningen</strong>. Dersom studenten allerede har fullført en grad, og det nye emnet ikke leder frem til en ny grad, kan Lånekassen stille spørsmål ved emnets reelle utdanningsformål. Særlig risiko knytter seg til:",
+            text: "<strong>Utgangspunkt:</strong> Lånekassen yter støtte til godkjente utdanninger ved godkjente læresteder, jf. lov om utdanningsstøtte § 4 med tilhørende forskrift. Det er ikke noe vilkår i loven at emnet må tas <em>før</em> graden er fullført. Hovedregelen er at støtte gis til ordinære studieløp — grunn-, etter- og videreutdanning.<br/><br/><strong>Dagens ordning (ITD35014 - 10 stp):</strong> Dagens eneste emne er på 10 stp, som i seg selv ikke gir rett til basisstøtte ettersom Lånekassen krever minimum 15 stp per semester (50 % studiebelastning). Det finnes ikke et egnet 5 stp-emne ved HiØ å kombinere med.<br/><br/><strong>Utfordring:</strong> Lånekassen krever at støttemottakeren er en <strong>«reell student»</strong> og har <strong>framdrift i utdanningen</strong>. Dersom studenten allerede har fullført en grad, og det nye emnet ikke leder frem til en ny grad, kan Lånekassen stille spørsmål ved emnets reelle utdanningsformål. Særlig risiko knytter seg til:",
             points: [
               "<strong>Fordypningskravet:</strong> Lånekassen kan kreve at emnet må være en naturlig faglig fordypning eller et strukturert påbygningsstudium.",
               "<strong>Samlet støttetid:</strong> Studenter som allerede har brukt opp sin ordinære støtteperiode (f.eks. 3 år bachelor + 2 år master = 5 år), vil normalt ikke få mer støtte med mindre de tar en ny grad eller et strukturert etter-/videreutdanningsløp."
             ]
           },
           {
-            heading: "Spor 2 (10 stp/semester deltid):",
-            text: "Lånekassen gir forholdsmessig redusert støtte ved deltidsstudier. Minstekravet for støtte er normalt <strong>15 stp per semester</strong> (50 % studiebelastning). Spor 2 slik det er beskrevet (10 stp) vil <strong>ikke kvalifisere</strong> for Lånekassestøtte med mindre det gjøres unntak eller studenten kombinerer med andre emner."
+            heading: "Langsiktig mål (Utvidelse til 15–30 stp):",
+            text: "Målet på sikt er å søke HiØ om å utvide ITD35014 til 15 stp eller opprette et nytt 30 stp-emne for fulltids praksisår. 15 stp vil oppfylle Lånekassens minstekrav for gradert basisstøtte (50 % studiebelastning), og 30 stp vil gi rett til fulltidsstøtte."
           },
           {
             heading: "1.2 Konkrete krav for Lånekassens godkjenning",
@@ -949,7 +948,7 @@ export const wikiData = [
         ]
       },
       {
-        title: "2. NAV (Spor 3 og Samspill)",
+        title: "2. NAV (Samarbeid og Samspill)",
         text: "NAVs tiltaksordninger kan integreres i Syntax & Flow. Selskapet bør opptre som vertsvirksomhet (praksisplass) framfor tiltaksarrangør det første året for å redusere administrativ byrde og rapporteringskrav.",
         sources: [
           { name: "Arbeidsmarkedsloven § 12", url: "https://lovdata.no/lov/2004-12-10-76" },
@@ -1166,62 +1165,29 @@ export const wikiData = [
       },
       {
         id: 2,
-        title: "2. Lånekassen — Spor 1 og 2",
+        title: "2. Lånekassen — Finansiering og studiepoeng",
         subAdjustments: [
           {
-            title: "Spor 1 (30 stp) - Tilpasning 1A: Emnebeskrivelse med reelle akademiske læringsmål",
+            title: "Tilpasning 2A: Utvidelse til 15–30 stp på sikt for full Lånekassestøtte",
             konkret: [
-              "Ikke nok med «arbeidspraksis». Må ha:",
-              "Læringsutbytter: kunnskap, ferdigheter, generell kompetanse",
-              "Vurderingsform: mappe + prosjektrapport + refleksjonsnotat",
-              "Pensum: minimum 300–400 sider relevant litteratur"
+              "Søke HiØ om å utvide ITD35014 Bedriftspraksis fra 10 stp til 15 stp, eller opprette et nytt emne på 30 stp.",
+              "15 stp er Lånekassens minstekrav for gradert basisstøtte (50 % studiebelastning), og 30 stp gir fulltidsstøtte."
             ],
-            hvorfor: "Lånekassen stiller krav om reell studieprogresjon. Et emne med tydelige læringsmål, vurdering og pensum oppfyller dette. HiØ har allerede tilsvarende praksisemner (f.eks. praksis i ingeniørutdanningene) som kan brukes som mal.",
+            hvorfor: "Sikrer at studenter har tilstrekkelig finansiering under praksisperioden, noe som øker søkermassen.",
             motstand: [
-              "Det kan være uenighet internt på HiØ om hva som er «reelle nok» læringsmål for et praksisemne. Løsning: bruk eksisterende emner som mal og involver studieutvalget tidlig."
+              "Krav til studieplanendringer ved HiØ og lengre administrative prosesser."
             ]
           },
           {
-            title: "Spor 1 (30 stp) - Tilpasning 1B: Vurder å integrere emnet i graden (siste semester)",
+            title: "Tilpasning 2B: Deltakelse under dagens 10 stp-modell uten Lånekassestøtte",
             konkret: [
-              "Hvis Lånekassen sier nei til støtte <em>etter</em> fullført grad: legg «Bedriftspraksis» inn som siste semester i bachelor/master (30 stp valgemne). Da er støtte uproblematisk."
+              "Studenter deltar i dag kun gjennom ITD35014 (10 stp) uten særskilt Lånekassestøtte for praksisen.",
+              "Fokusere på verdien av referanseportalen, porteføljebygging og CV-referanser.",
+              "Det finnes ikke et egnet 5 stp-emne ved HiØ som kan kombineres med ITD35014 i dag."
             ],
-            hvorfor: "Emnet blir en ordinær del av graden. Lånekassen-støtte er automatisk. HiØ trenger ikke søke om særskilt godkjenning.",
+            hvorfor: "Lar oss komme i gang umiddelbart med piloten uten å måtte vente på lange godkjenningsprosesser hos NOKUT/HiØ.",
             motstand: [
-              "Dette endrer kjernen i konseptet — «broen mellom studier og jobb» blir borte. Studentene tar praksis før de er ferdige, ikke etter. Rekrutteringsargumentet «få betalt for å bygge CV etter endt utdanning» forsvinner. Likevel: funksjonelt kan emnet være det samme, det er bare plasseringen i tid som endres."
-            ]
-          },
-          {
-            title: "Spor 1 (30 stp) - Tilpasning 1C: Avklar samlet støttetid før rekruttering",
-            konkret: [
-              "Studenter med 5 års brukt støttetid (3+2) har normalt ikke mer igjen. Målrett rekruttering mot de som har støttetid gjenstående."
-            ],
-            hvorfor: "Enkelt å sjekke — Lånekassen har klare regler for maksimal støttetid. Bare rekrutter studenter som har støttetid igjen.",
-            motstand: [
-              "Dette begrenser rekrutteringsbasen. Mange masterstudenter har brukt 5 år. Løsning: markedsfør primært mot bachelorstudenter (3 år brukt, har 5 år igjen) og de som har tatt kortere utdanning."
-            ]
-          },
-          {
-            title: "Spor 2 - Tilpasning 2A: Minimum 15 stp",
-            konkret: [
-              "10 stp kvalifiserer <strong>ikke</strong> for Lånekassen. To veier:",
-              "(a) Øk til 15 stp (50 % stilling, ca. 18–20 timer/uke)",
-              "(b) Kombiner 10 stp + annet emne (5 stp) = 15 stp totalt",
-              "Anbefaling: (a) — enklest."
-            ],
-            hvorfor: "15 stp er Lånekassens minimum for gradert støtte. Med 15 stp får studentene ca. 50 % av full støtte, noe som er betydelig. HiØ kan administrere dette som et deltidsemne.",
-            motstand: [
-              "15 stp (18–20 timer/uke) er mer krevende for studenter som tar andre fag parallelt. Målgruppen for Spor 2 var de som ønsker lavere belastning. Løsning: kommuniser tydelig at 15 stp er minimum, og at studenter som ikke trenger Lånekassen kan delta på lavere belastning uten støtte."
-            ]
-          },
-          {
-            title: "Spor 2 - Tilpasning 2B: Alternativ uten Lånekassen",
-            konkret: [
-              "Gjør Spor 2 om til sertifikat-/vitnemålsprogram uten Lånekassen-støtte. Da faller kravet bort, men studentene må finansiere seg selv."
-            ],
-            hvorfor: "Ingen avhengighet av Lånekassen. Kan tilbys fleksibelt. Passer for studenter som har deltidsjobb ved siden av.",
-            motstand: [
-              "Uten Lånekassen-støtte er ordningen mindre attraktiv. Risiko for lav søkermasse. Løsning: kombiner med andre insentiver (sertifikat, portefølje, referanse)."
+              "Kan begrense søkermassen til studenter som ikke er avhengige av Lånekassestøtte i pilotsemesteret."
             ]
           }
         ]
@@ -1317,9 +1283,9 @@ export const wikiData = [
           {
             title: "Tilpasning 4D — Fleksible tidsrammer",
             konkret: [
-              "Spor 1: mål om 37,5 t/uke, men ingen oppmøteplikt kl. 08:00.",
-              "Spor 2: mål om 15 t/uke, fleksibelt.",
-              "Ingen stemplingsklokke."
+              "Dagens ordning (ITD35014, 10 stp): mål om ca. 12–15 timer per uke.",
+              "Fremtidig mål (15–30 stp): mål om opp mot full tid (30–37,5 timer per uke).",
+              "Ingen stemplingsklokke eller fast oppmøtetid kl. 08:00, full fleksibilitet."
             ],
             hvorfor: "Arbeidstakerstatus krever en viss grad av underordning og plikt til å møte. Uten faste oppmøtetider og uten stemplingsklokke svekkes argumentet for arbeidstakerstatus betydelig.",
             motstand: [
@@ -1417,7 +1383,7 @@ export const wikiData = [
           {
             title: "Tilpasning 7A — Utsett NAV-sporet til Fase 4 (tidligst 12 måneder)",
             konkret: [
-              "NAV kompliserer alt: helseopplysninger, ulik finansiering, taushetsplikt, arbeidsgiveransvar, rapportering. Start kun med Spor 1 og 2."
+              "NAV kompliserer alt: helseopplysninger, ulik finansiering, taushetsplikt, arbeidsgiveransvar, rapportering. Start kun med ordinære studieemner (ITD35014)."
             ],
             hvorfor: "Ved å utsette NAV-sporet reduseres kompleksiteten i oppstartsfasen dramatisk. Dere slipper å forholde dere til GDPR art. 9 (helseopplysninger), forvaltningsloven § 13 (taushetsplikt) og NAVs tiltaksregelverk samtidig som dere bygger resten av modellen.",
             motstand: [
@@ -1544,14 +1510,14 @@ export const wikiData = [
       rows: [
         ["1", "Stift AS eid av ideell stiftelse", "Org.form", "30 000–40 000 kr"],
         ["2", "Utarbeid emnebeskrivelse (30 stp) med læringsmål", "Lånekassen", "Gratis"],
-        ["3", "Spor 2 redesignes til 15 stp minimum", "Lånekassen", "Gratis"],
+        ["3", "Utred utvidelse av ITD35014 til 15–30 stp", "Lånekassen", "Gratis"],
         ["4", "Inngå samarbeidsavtale HiØ med markedspris", "Statsstøtte", "20 000–50 000 kr"],
         ["5", "Søk forhåndsuttalelse Lånekassen", "Lånekassen", "Gratis"],
         ["6", "Tegn ansvarsforsikring", "Ansvar", "5 000–15 000 kr/år"],
         ["7", "Utarbeid standard kundeavtale + studentavtale", "Ansvar/arbeidstaker", "10 000–20 000 kr"],
         ["8", "Gjennomfør DPIA", "Personvern", "Gratis"],
         ["9", "Etabler støtteregister (de minimis)", "Statsstøtte", "1 dag"],
-        ["10", "Utsett NAV/Spor 3 til fase 4", "NAV", "—"]
+        ["10", "Utsett NAV-samarbeidet til fase 4", "NAV", "—"]
       ]
     }
   },
@@ -1756,9 +1722,9 @@ export const wikiData = [
           headers: ["Begrep", "Forklaring"],
           rows: [
             ["<strong>SiØ</strong>", "Studentsamskipnaden i Østfold. Tilbyr velferdstjenester til studenter ved HiØ."],
-            ["<strong>Spor 1</strong>", "Fulltids praksisløp: ITD35014 (10 stp) + 5 stp valgfritt emne = 15 stp. Kvalifiserer for Lånekassen."],
-            ["<strong>Spor 2</strong>", "Deltid: Kun ITD35014 (10 stp). Kvalifiserer ikke for Lånekassen."],
-            ["<strong>Spor 3</strong>", "NAV-spor for personer utenfor arbeidsmarkedet. Utsettes til etter pilot."],
+            ["<strong>Spor 1</strong>", "Dagens ordning basert på det eksisterende studieemnet ITD35014 Bedriftspraksis (10 stp). Målet på sikt er å utvide emnet til 15–30 stp for å sikre rett til støtte fra Lånekassen uten krav om andre emner ved siden av."],
+            ["<strong>Spor 2</strong>", "Tidligere planlagt deltidssport (10 stp) som er fjernet fra modellen, da det ikke finnes et egnet 5 stp-emne ved HiØ å kombinere med for å nå 15 stp-grensen."],
+            ["<strong>Spor 3</strong>", "NAV-samarbeid rettet mot deltakere utenfor det ordinære studieløpet. Sporet er utsatt til etter pilotfasen (Fase 4)."],
             ["<strong>Støtteregister</strong>", "Løpende logg over markedsverdi av tjenester per kunde. Brukes for å kontrollere de minimis-grensen."],
             ["<strong>TAM (Total Addressable Market)</strong>", "Totalt marked for et produkt eller tjeneste, altså maksimal inntekt hvis alle potensielle kunder kjøper."],
             ["<strong>Top-down</strong>", "Markedsføringsstrategi som starter hos ledelsen/store aktører og jobber seg nedover i organisasjonen."],

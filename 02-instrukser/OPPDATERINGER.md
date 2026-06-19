@@ -72,17 +72,27 @@ Kilde: Ingen spesifikk fil — nytt innhold
 Hva: Nederst på Dashboard-siden, etter eksisterende seksjoner, legg til en forklarende boks med tittel "Hvordan henger business casen sammen?" som viser at Value Proposition (VP) er en integrert del av business casen, ikke noe separat. Vis rekkefølgen: Forretningsidé → Value Proposition → Forretningsmodell → Marked og konkurranse → Scope → Risiko og juss. Forklar kort at VPC-ene som finnes under "Forretningsmodell & VPC" er en visualisering av VP-en for hver målgruppe (studenter, HiØ, næringsliv). Alt dette samlet utgjør business casen.
 Hvor: Nederst på Dashboard-siden
 
-### 19.06.2026 — Rett opp tabellen over deltakerordninger på Organisasjon & Drift-siden
+### 19.06.2026 — Kvalitetssikring (QC) av hele infosiden — rett opp flere feil
 Prioritet: Høy
-Kilde: `06-Business-case/Scope/scope_minst_motstand.md` og bekreftet fra HiØs emneside for ITD35014
-Hva: Tabellen "De Tre Deltakerordningene" på Organisasjon & Drift-siden må oppdateres. ITD35014 er et valgfritt emne på 10 stp for bachelorstudenter (også obligatorisk for Bachelor i kommunikasjon). Dagens situasjon er 10 stp. Målet er å utvide til 15–30 stp over tid. Spor 2 (deltid) og Spor 3 (NAV) kan beholdes som før. Legg til fotnote: "Mål: utvide til 15–30 stp over tid for å få mer tid med studentene."
-Hvor: Eksisterende side "Organisasjon & Drift" — tabellen "De Tre Deltakerordningene"
+Kilde: Hele samtalen + `06-Business-case/Scope/scope_minst_motstand.md` + HiØs emneside for ITD35014
+Hva: Gå gjennom HELE wikiData.js og rett opp følgende feil som er identifisert:
 
-### 19.06.2026 — Oppdater Dashboard med ny avklaring om ITD35014
-Prioritet: Middels
-Kilde: HiØs emneside for ITD35014 (bekreftet: 10 stp, valgfritt emne, emneansvarlig Stig Henning Johansen)
-Hva: På Dashboard-siden, under seksjonen om utgangspunkt, oppdater teksten slik at det fremgår at ITD35014 er bekreftet som 10 stp valgfritt emne. Målet er å utvide til 15–30 stp over tid. Når det gjelder enkeltemner utenom grad: dette er uavklart og kun uformelle samtaler — må ikke presenteres som fakta.
-Hvor: Dashboard-siden
+1. **"De tre deltakerordningene" på Organisasjon & Drift:** Tabellen må oppdateres. Spor 1 = ITD35014 (10 stp). Spor 2 finnes ikke lenger som et eget spor — slett eller erstatt med en merknad. Spor 3 (NAV) utsettes. Det finnes IKKE et 5 stp-emne på HiØ som kan kombineres med ITD35014.
+
+2. **Scope-siden, linje med "Spor 1 (Kombinert): ITD35014 (10 stp) + 5 stp":** Fjern denne. Spor 1 er kun ITD35014 (10 stp). Målet er å utvide emnet til 15–30 stp på sikt, men det finnes ikke et 5 stp-emne å kombinere med i dag.
+
+3. **Alle steder på infosiden som refererer til "Spor 2 (15 stp)" eller "Spor 2 (deltid)"**: Dette sporet eksisterer ikke. Det finnes kun ITD35014 (10 stp). Hvis omtale av flere spor er nødvendig, skill mellom:
+   - **Dagens situasjon:** Kun ITD35014 (10 stp)
+   - **Mål på sikt:** Utvide til 15–30 stp
+
+4. **Område-setup (Tilpasningsforslag), under Lånekassen — Spor 2:** Oppdater. Spor 2 slik det var beskrevet (minimum 15 stp) finnes ikke. Erstatt med forklaring om at ITD35014 er 10 stp og målet er utvidelse.
+
+5. **Risikomatrisen på Juridisk & Risiko:** Oppdater risikobeskrivelser som refererer til "Spor 2 (10 stp)" — dette er nå dagens situasjon, ikke en risiko. Risikoen er heller at Lånekassen krever mer enn 10 stp for gradert støtte.
+
+6. **Ordlisten:** Oppdater Spor 1 og Spor 2 til å reflektere dagens situasjon. Spor 1 = ITD35014 (10 stp). Spor 2 = fjernes eller endres til "planlagt utvidelse".
+
+Gjennomgå ALL tekst på infosiden for konsistens. Ikke bare rett én tabell — rett alle forekomster.
+Hvor: Hele wikiData.js — alle sider som refererer til sporene
 
 ### 19.06.2026 — Oppdater ordlisten på infosiden med nye begreper
 Prioritet: Høy
@@ -163,5 +173,6 @@ Hvor: Ny seksjon under "Analyser" eller "Guidelines"
 | 19.06.2026 | Legg til forklaring av VP sin rolle i business casen på Dashboard | Utført |
 | 19.06.2026 | Rett opp tabellen over deltakerordninger på Organisasjon & Drift-siden | Utført |
 | 19.06.2026 | Oppdater Dashboard med ny avklaring om ITD35014 | Utført |
+| 19.06.2026 | Kvalitetssikring (QC) av hele infosiden — rett opp flere feil | Utført |
 
 
