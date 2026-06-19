@@ -7,8 +7,10 @@
 
 | | In Scope | Out of Scope |
 |---|---|---|
-| **Formål** | Være en studentdrevet arbeidsplass som gir relevant erfaring gjennom eksterne oppdrag og interne evighetsprosjekter | Være et kommersielt konsulentbyrå som konkurrerer med etablerte aktører |
-| **Studentens rolle** | Ansatt i Syntax & Flow — får tildelt oppgaver, jobber i team, får veiledning | Må selv skaffe praksisplass hos eksterne bedrifter |
+| **Formål** | Være en selvstendig organisasjon in-house på HiØ som gir studenter en klar bane fra utdanning til fast ansatt, gjennom eksterne oppdrag og interne evighetsprosjekter | Være et kommersielt konsulentbyrå som konkurrerer med etablerte aktører |
+| **Drift av S&F** | En stabil kjerne (daglig leder, fagansvarlige, forelesere ved behov) som sikrer kontinuitet og kvalitet uavhengig av studentutskifting | Studentene driver organisasjonen |
+| **Studentens rolle** | Utfører oppdragene i tverrfaglige team under veiledning — mottaker av tilbudet | Må selv skaffe praksisplass hos eksterne bedrifter |
+| **Foreleserens rolle** | Trekkes inn ved behov for faglig ekspertise og kvalitetssikring | Daglig drift eller detaljstyring av studentene |
 | **Sted** | In-house på HiØ med tilgang til foreleseres ekspertise | Fysisk utenfor campus uten faglig oppfølging |
 
 ---

@@ -8,7 +8,11 @@ export const wikiData = [
     sections: [
       {
         heading: "Hva er Syntax & Flow?",
-        text: "Syntax & Flow er et studentdrevet konsulentselskap som bygger broen mellom akademia og arbeidslivet ved Høgskolen i Østfold (HiØ). Her løser vi reelle problemer for lokale bedrifter gjennom tverrfaglige student-team innen IT, Design og Økonomi."
+        text: "Syntax & Flow er et selvstendig organ lokalisert in-house på Høgskolen i Østfold (HiØ). Vi bygger broen mellom akademia og arbeidslivet. Organisasjonen drives av en stabil kjerne, mens studentene utfører reelle oppdrag for lokale bedrifter gjennom tverrfaglige team innen IT, Design og Økonomi."
+      },
+      {
+        heading: "Driftsmodell: Stabil kjerne vs. Utførende studenter",
+        text: "For å sikre kontinuitet, profesjonalitet og høy kvalitet drives Syntax & Flow etter en modell med et tydelig skille mellom drift og utførelse:<br/><br/>• <strong>Den stabile kjernen (Driver organisasjonen):</strong> Består av daglig leder, fagansvarlige og forelesere ved HiØ. De sikrer den faglige standarden og kontinuiteten uavhengig av studentutskifting. Forelesere trekkes inn ved behov for spisskompetanse.<br/>• <strong>Studentene (Utfører oppdragene):</strong> Deltar gjennom emnet ITD35014 Bedriftspraksis (eller kombinerte ordninger) i tverrfaglige prosjektteam. De utfører selve oppgavene, men har ikke det administrative driftsansvaret for organisasjonen.<br/><br/>Syntax & Flow er et <strong>selvstendig organ in-house på HiØ</strong>, ikke en uforpliktende studentforening. Målet er å gi studentene en klar og forutsigbar bane fra utdanning til fast ansatt, der portalen fungerer som et verktøy for bedrifter til å følge deres arbeid og verifisere kompetanse."
       },
       {
         heading: "Utgangspunkt: ITD35014 Bedriftspraksis",
@@ -69,6 +73,33 @@ export const wikiData = [
           "<strong>Mentorordningen:</strong> Forelesere og fagansvarlige ved HiØ som kvalitetssikrer faglige leveranser innen IT, design og økonomi.",
           "<strong>Studentledelsen:</strong> Daglig leder og fagansvarlige studenter (seniorer/masterstudenter) som leder de operative avdelingene."
         ]
+      },
+      {
+        heading: "Drift vs. Utførelse: Organisatorisk oppsett",
+        text: "For å unngå sårbarhet ved at studenter uteksamineres og slutter hvert semester, skiller vi skarpt mellom den stabile kjernen som driver organisasjonen og studentene som utfører arbeidet:"
+      },
+      {
+        heading: "Den stabile kjernen (Drift av S&F)",
+        table: {
+          headers: ["Rolle", "Ansettelsesform", "Ansvarsområde"],
+          rows: [
+            ["<strong>Daglig leder</strong>", "Fast / lønnet (eller frivillig med stipend)", "Daglig drift, kundekontakt, strategi"],
+            ["<strong>Fagansvarlige (IT, design, økonomi)</strong>", "Fast / lønnet (eller HiØ-ansatte på deltid)", "Faglig kvalitetssikring, veiledning, oppdragsvurdering"],
+            ["<strong>Forelesere (HiØ-ansatte)</strong>", "Trukket inn ved behov for ekspertise", "Kvalitetssikring av komplekse leveranser, faglig rådgivning"],
+            ["<strong>Styret</strong>", "Uavhengige medlemmer + HiØ-observatør", "Strategisk retning, tilsyn, nettverk"]
+          ]
+        }
+      },
+      {
+        heading: "Studentene (Utfører oppdragene)",
+        table: {
+          headers: ["Rolle", "Tilknytning", "Ansvarsområde"],
+          rows: [
+            ["<strong>Teammedlem</strong>", "ITD35014 (10 stp)", "Utfører oppgaver i tverrfaglige team under veiledning"],
+            ["<strong>Teamleder</strong>", "ITD35014 + erfarent medlem", "Koordinerer teamet, holder kundekontakt, rapporterer til fagansvarlig"]
+          ]
+        },
+        text: "<br/><strong>Viktig prinsipp:</strong> Studentene <em>utfører</em> arbeidet, men <em>driver ikke</em> Syntax & Flow. Dette er ikke en studentforening, men et selvstendig organ in-house på HiØ. Dette sikrer at bedrifter forholder seg to en profesjonell, stabil organisasjon over tid. Målet er å gi studentene en klar og strukturert bane fra utdanning til fast ansettelse ved hjelp av portalen, der bedrifter kan følge dem og verifisere deres kompetanse."
       },
       {
         heading: "De Tre Deltakerordningene (Rekrutteringsspor)",
