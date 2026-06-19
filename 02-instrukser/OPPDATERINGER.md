@@ -66,6 +66,12 @@ Kilde: `06-Business-case/Scope/scope_tabell.md` og `06-Business-case/Scope/scope
 Hva: Oppdater eksisterende scope-side eller opprett ny på infosiden. Innholdet må gjenspeile den oppdaterte modellen: (1) eksterne oppdrag + interne evighetsprosjekter som to spor, (2) evighetsprosjekter som går over flere semestre med forelesere som kvalitetssikrere, (3) portalen som verifisert referansebase for rekruttering. In/out-scope-tabellene fra scope_tabell.md skal være hovedinnholdet.
 Hvor: Eksisterende eller ny side under kategorien "GTM & Utførelse" eller "Dokumenter"
 
+### 19.06.2026 — Legg til forklaring av VP sin rolle i business casen på Dashboard
+Prioritet: Høy
+Kilde: Ingen spesifikk fil — nytt innhold
+Hva: Nederst på Dashboard-siden, etter eksisterende seksjoner, legg til en forklarende boks med tittel "Hvordan henger business casen sammen?" som viser at Value Proposition (VP) er en integrert del av business casen, ikke noe separat. Vis rekkefølgen: Forretningsidé → Value Proposition → Forretningsmodell → Marked og konkurranse → Scope → Risiko og juss. Forklar kort at VPC-ene som finnes under "Forretningsmodell & VPC" er en visualisering av VP-en for hver målgruppe (studenter, HiØ, næringsliv). Alt dette samlet utgjør business casen.
+Hvor: Nederst på Dashboard-siden
+
 ### 19.06.2026 — Oppdater ordlisten på infosiden med nye begreper
 Prioritet: Høy
 Kilde: `01-administrasjon/ordliste.md`
@@ -142,3 +148,5 @@ Hvor: Ny seksjon under "Analyser" eller "Guidelines"
 | 19.06.2026 | Oppdater organisasjonsbeskrivelsen med stabilt driftsskille | Utført |
 | 19.06.2026 | Oppdater oversikten over alle nye maler i mal-og-utkast | Utført |
 | 19.06.2026 | Legg til nye maler og utkast i referanseseksjonen | Utført |
+| 19.06.2026 | Legg til forklaring av VP sin rolle i business casen på Dashboard | Utført |
+

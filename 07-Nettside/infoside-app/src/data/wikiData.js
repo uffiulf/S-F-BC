@@ -30,6 +30,31 @@ export const wikiData = [
       {
         heading: "Hvordan bruke denne Wikien",
         text: "Bruk sidemenyen til å navigere mellom de ulike kapitlene av prosjektet. Hvis du lurer på noe underveis i prosjektgjennomføringen – enten det gjelder retningslinjer, analyser som skal kjøres, eller hva som skal leveres til kunden – finner du det her. Trykk CMD+K (eller CTRL+K) for å søke på tvers av hele dokumentasjonen."
+      },
+      {
+        heading: "Hvordan henger business casen sammen?",
+        text: "<div class=\"info-box\" style=\"border-left-color: var(--accent-color); margin-top: 16px;\">" +
+          "  <p style=\"margin-bottom: 16px; color: var(--text-primary);\">" +
+          "    Value Proposition (VP) er ikke en separat del av prosjektet, men en <strong>integrert del av business casen</strong>. " +
+          "    VPC-ene (Value Proposition Canvas) under \"Forretningsmodell & VPC\" er en visualisering av VP-en for hver målgruppe (studenter, HiØ, næringsliv). Sammen utgjør alle disse elementene den helhetlige business casen for Syntax & Flow." +
+          "  </p>" +
+          "  <div style=\"display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-top: 16px; margin-bottom: 16px; justify-content: center; background: var(--bg-secondary); padding: 16px; border-radius: 8px; border: 1px solid var(--border-color);\">" +
+          "    <span style=\"font-weight: 600; padding: 6px 12px; background: rgba(37, 99, 235, 0.15); color: var(--accent-color); border-radius: 6px; font-size: 0.875rem;\">1. Forretningsidé</span>" +
+          "    <span style=\"color: var(--text-muted); font-weight: bold;\">&rarr;</span>" +
+          "    <span style=\"font-weight: 600; padding: 6px 12px; background: rgba(37, 99, 235, 0.15); color: var(--accent-color); border-radius: 6px; font-size: 0.875rem; border: 1px dashed var(--accent-color);\">2. Value Proposition (VP)</span>" +
+          "    <span style=\"color: var(--text-muted); font-weight: bold;\">&rarr;</span>" +
+          "    <span style=\"font-weight: 600; padding: 6px 12px; background: rgba(37, 99, 235, 0.15); color: var(--accent-color); border-radius: 6px; font-size: 0.875rem;\">3. Forretningsmodell</span>" +
+          "    <span style=\"color: var(--text-muted); font-weight: bold;\">&rarr;</span>" +
+          "    <span style=\"font-weight: 600; padding: 6px 12px; background: rgba(37, 99, 235, 0.15); color: var(--accent-color); border-radius: 6px; font-size: 0.875rem;\">4. Marked og konkurranse</span>" +
+          "    <span style=\"color: var(--text-muted); font-weight: bold;\">&rarr;</span>" +
+          "    <span style=\"font-weight: 600; padding: 6px 12px; background: rgba(37, 99, 235, 0.15); color: var(--accent-color); border-radius: 6px; font-size: 0.875rem;\">5. Scope</span>" +
+          "    <span style=\"color: var(--text-muted); font-weight: bold;\">&rarr;</span>" +
+          "    <span style=\"font-weight: 600; padding: 6px 12px; background: rgba(37, 99, 235, 0.15); color: var(--accent-color); border-radius: 6px; font-size: 0.875rem;\">6. Risiko og juss</span>" +
+          "  </div>" +
+          "  <p style=\"font-size: 0.875rem; color: var(--text-muted); line-height: 1.6; margin-top: 12px;\">" +
+          "    <strong>Hvordan det henger sammen:</strong> Forretningsidéen definerer retningen. Value Proposition tydeliggjør verdiskapningen (visualisert i våre VPC-er). Forretningsmodellen beskriver hvordan denne verdien leveres (gratis samarbeidsmodell med betinget SLA). Marked og konkurranse kartlegger eksterne krefter. Scope definerer rammene for hva vi skal gjøre (og ikke gjøre), og Risiko og juss sikrer at vi navigerer innenfor lovverk som statsstøttereglene og personvern." +
+          "  </p>" +
+          "</div>"
       }
     ]
   },
