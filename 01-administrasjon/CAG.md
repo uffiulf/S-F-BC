@@ -81,13 +81,14 @@ Prioritet: 1) HiØ internt, 2) Ideelle organisasjoner, 3) Privatpersoner (ENK), 
 ## Viktige beslutninger tatt
 
 - ✅ Syntax & Flow er et selvstendig organ, ikke en studentforening
-- ✅ Stabil kjerne driver organisasjonen, studenter utfører oppdrag
-- ✅ ITD35014 (10 stp) brukes som utgangspunkt — ikke nytt emne
-- ✅ Evighetsprosjekter som supplement til eksterne oppdrag
-- ✅ Portal som verifisert referansebase for rekruttering
+- ✅ Stabil kjerne (daglig leder, fagansvarlige, forelesere) driver S&F — studenter utfører oppdrag
+- ✅ ITD35014 (10 stp) brukes som utgangspunkt — ikke nytt emne ennå
+- ✅ Evighetsprosjekter som supplement til eksterne oppdrag (går over flere semestre)
+- ✅ Portal som verifisert referansebase for rekruttering (strukturerte vurderinger, samtykke, kontrollert tilgang)
 - ✅ AS eid av ideell stiftelse (anbefalt organisasjonsform)
 - ✅ NAV-sporet utsettes til etter pilot
 - ✅ Markedspris for HiØs bidrag (statsstøtte)
+- ✅ Ordliste opprettet i `01-administrasjon/ordliste.md` — skal holdes oppdatert
 
 ---
 
@@ -116,4 +117,6 @@ Prioritet: 1) HiØ internt, 2) Ideelle organisasjoner, 3) Privatpersoner (ENK), 
 | Forretningsmodell | `06-Business-case/forretningsmodell.md` |
 | Organisasjon og drift | `01-administrasjon/organisasjon_og_drift.md` |
 | Interessentanalyse | `01-administrasjon/interessentanalyse.md` |
-| Maler og utkast | `05-agent-forslag/Forslag/mal-og-utkast/` |
+| Ordliste | `01-administrasjon/ordliste.md` |
+| Verdiskapning VPC-tekst | `05-agent-forslag/Forslag/mal-og-utkast/verdiskapning_vpc_oppsummering.md` |
+| Maler og utkast (16 filer) | `05-agent-forslag/Forslag/mal-og-utkast/` |

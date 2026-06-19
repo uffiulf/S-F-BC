@@ -1664,8 +1664,18 @@ export const wikiData = [
         table: {
           headers: ["Begrep", "Forklaring"],
           rows: [
+            ["<strong>Adoption & Retention</strong>", "Strategier for å få kunder til å ta i bruk et produkt (adoption) og fortsette å bruke det over tid (retention)."],
+            ["<strong>Ambassadørprogram</strong>", "Ordning der fornøyde kunder eller partnere promoterer produktet/tjenesten frivillig, ofte i bytte mot fordeler."],
             ["<strong>AML</strong>", "Arbeidsmiljøloven. Regulerer arbeidstakeres rettigheter og arbeidsgivers plikter."],
-            ["<strong>Arbeidsmarkedstiltak</strong>", "Tiltak finansiert av NAV for å hjelpe personer inn i arbeid, f.eks. arbeidstrening."]
+            ["<strong>Arbeidsmarkedstiltak</strong>", "Tiltak finansiert av NAV for å hjelpe personer inn i arbeid, f.eks. arbeidstrening."],
+            ["<strong>B2G (Business-to-Government)</strong>", "Forretningsmodell der bedrifter leverer tjenester eller produkter to offentlig sektor (f.eks. høyskoler eller kommuner)."],
+            ["<strong>Bottom-up</strong>", "Markedsførings- eller implementeringsstrategi som starter på grasrotnivå (f.eks. hos studenter eller enkelte avdelinger) og beveger seg oppover i organisasjonen."],
+            ["<strong>CAC (Customer Acquisition Cost)</strong>", "Kostnaden ved å skaffe en ny kunde, inkludert markedsføring, salg og oppfølging."],
+            ["<strong>Change Management</strong>", "Strukturert tilnærming til å hjelpe mennesker og organisasjoner gjennom endringsprosesser."],
+            ["<strong>Churn Rate</strong>", "Andel kunder som slutter å bruke tjenesten over en gitt periode. Lav churn = høy kundelojalitet."],
+            ["<strong>CLTV / Customer Lifetime Value</strong>", "Hvor mye en kunde totalt forventes å innbringe i løpet av hele kundeforholdet."],
+            ["<strong>CLV (Customer Lifetime Value)</strong>", "Samme som CLTV. Total forventet verdi av et kundeforhold over hele levetiden."],
+            ["<strong>COS (Cost of Services)</strong>", "Kostnaden ved å levere en tjeneste — inkluderer timer, verktøy og eventuelle underleverandører."]
           ]
         }
       },
@@ -1677,10 +1687,10 @@ export const wikiData = [
             ["<strong>De minimis</strong>", "Bagatellmessig støtte. Statsstøtte under 300 000 EUR over 3 år per kunde — så lite at det ikke regnes som ulovlig og krever ikke ESA-godkjenning."],
             ["<strong>DPIA</strong>", "Data Protection Impact Assessment. Konsekvensvurdering for personvern som må gjøres før behandling av personopplysninger."],
             ["<strong>DPO</strong>", "Data Protection Officer. Personvernansvarlig."],
+            ["<strong>Early adopter</strong>", "En kunde som er tidlig ute med å ta i bruk et nytt produkt eller tjeneste, ofte avgjørende for markedsvalidering."],
             ["<strong>ESA</strong>", "EFTAs overvåkingsorgan. Overvåker at Norge følger EØS-avtalen, inkludert statsstøttereglene."],
             ["<strong>Evighetsprosjekt</strong>", "Internt prosjekt som går over flere semestre. Hvert kull overtar der forrige slapp."],
-            ["<strong>Executive Summary</strong>", "Kort sammendrag av en forretningsplan eller rapport som gir leseren rask oversikt over hele innholdet."],
-            ["<strong>Justification</strong>", "Begrunnelse eller forsvaring av en beslutning, et prosjekt eller en investering — hvorfor noe er nødvendig eller lønnsomt."]
+            ["<strong>Executive Summary</strong>", "Kort sammendrag av en forretningsplan eller rapport som gir leseren rask oversikt over hele innholdet."]
           ]
         }
       },
@@ -1691,8 +1701,10 @@ export const wikiData = [
           rows: [
             ["<strong>GDPR</strong>", "General Data Protection Regulation. EUs personvernforordning, innlemmet i norsk lov gjennom personopplysningsloven."],
             ["<strong>GTM</strong>", "Go-To-Market. Strategi for hvordan et produkt eller tjeneste lanseres i markedet."],
-            ["<strong>IP (Investor Proposal)</strong>", "Forslag eller presentasjon rettet mot investorer for å sikre finansiering."],
-            ["<strong>IPR</strong>", "Intellectual Property Rights. Åndsverk og immaterielle rettigheter (kode, design, patenter)."]
+            ["<strong>IP</strong>", "Investor Proposal. Forslag eller presentasjon rettet mot investorer for å sikre finansiering."],
+            ["<strong>IPR</strong>", "Intellectual Property Rights. Åndsverk og immaterielle rettigheter (kode, design, patenter)."],
+            ["<strong>Justification</strong>", "Begrunnelse eller forsvaring av en beslutning, et prosjekt eller en investering — hvorfor noe er nødvendig eller lønnsomt."],
+            ["<strong>LOI (Letter of Intent)</strong>", "Intensjonsavtale. Et ikke-bindende dokument som bekrefter at en part har til hensikt å inngå en avtale eller samarbeid."]
           ]
         }
       },
@@ -1714,7 +1726,10 @@ export const wikiData = [
           rows: [
             ["<strong>OTP</strong>", "Obligatorisk tjenestepensjon. Pensjonsordning som arbeidsgivere må tilby ansatte."],
             ["<strong>Persona</strong>", "Fiktiv brukerprofil som representerer en målgruppe, brukt i design og markedsføring for å forstå behov og adferd."],
-            ["<strong>Pro bono</strong>", "Latin for «det godes skyld». Tjenester som leveres gratis, ofte for ideelle formål."]
+            ["<strong>Prisstrategi</strong>", "Plan for hvordan et produkt eller tjeneste skal prises for å oppnå ønsket posisjonering og lønnsomhet."],
+            ["<strong>Pro bono</strong>", "Latin for «det godes skyld». Tjenester som leveres gratis, ofte for ideelle formål."],
+            ["<strong>Proof of Concept (PoC)</strong>", "En tidlig test eller prototype som viser at en idé eller løsning er gjennomførbar i praksis."],
+            ["<strong>Proof of Interest</strong>", "Dokumentasjon på at det finnes reell interesse eller etterspørsel fra potensielle kunder."]
           ]
         }
       },
@@ -1724,6 +1739,7 @@ export const wikiData = [
           headers: ["Begrep", "Forklaring"],
           rows: [
             ["<strong>Recovery</strong>", "Tilbakebetaling av ulovlig statsstøtte med renter. Pålegges av ESA når støtte er gitt i strid med EØS-avtalen."],
+            ["<strong>RGE (Residual Gross Earnings)</strong>", "Fortjeneste som gjenstår etter at direkte kostnader er trukket fra. Måler hvor lønnsom kjernedriften er før faste kostnader."],
             ["<strong>Risk Management</strong>", "Prosessen med å identifisere, vurdere og håndtere risikoer i et prosjekt eller en organisasjon."],
             ["<strong>ROI</strong>", "Return on Investment. Avkastning på investering. Måler hvor lønnsom en investering er."],
             ["<strong>Rubric</strong>", "Rubric (vurderingsmatrise). Strukturerte kriterier for vurdering, f.eks. 1–5 på definerte dimensjoner."],
@@ -1744,7 +1760,8 @@ export const wikiData = [
             ["<strong>Spor 2</strong>", "Deltid: Kun ITD35014 (10 stp). Kvalifiserer ikke for Lånekassen."],
             ["<strong>Spor 3</strong>", "NAV-spor for personer utenfor arbeidsmarkedet. Utsettes til etter pilot."],
             ["<strong>Støtteregister</strong>", "Løpende logg over markedsverdi av tjenester per kunde. Brukes for å kontrollere de minimis-grensen."],
-            ["<strong>TAM</strong>", "Total Addressable Market. Det totale markedet for et produkt eller tjeneste, altså maksimal inntekt hvis alle potensielle kunder kjøper."],
+            ["<strong>TAM (Total Addressable Market)</strong>", "Totalt marked for et produkt eller tjeneste, altså maksimal inntekt hvis alle potensielle kunder kjøper."],
+            ["<strong>Top-down</strong>", "Markedsføringsstrategi som starter hos ledelsen/store aktører og jobber seg nedover i organisasjonen."],
             ["<strong>Unfair Advantage</strong>", "En varig konkurransefordel som er vanskelig for andre å kopiere."],
             ["<strong>User Journey</strong>", "Brukerreise. En trinnvis beskrivelse eller visualisering av hvordan en bruker opplever og samhandler med et produkt eller tjeneste over tid."],
             ["<strong>Value Proposition Canvas (VPC)</strong>", "Verktøy for å kartlegge verdien et produkt/tjeneste gir en målgruppe."],

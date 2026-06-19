@@ -75,7 +75,7 @@ Hvor: Nederst på Dashboard-siden
 ### 19.06.2026 — Oppdater ordlisten på infosiden med nye begreper
 Prioritet: Høy
 Kilde: `01-administrasjon/ordliste.md`
-Hva: Oppdater den eksisterende ordliste-siden på infosiden. Den er allerede opprettet, men må oppdateres med de nye begrepene som er lagt til: Executive Summary, Justification, Persona, Risk Management, Stakeholder, Stakeholder Management, Storyboard, User Journey, IP (Investor Proposal), TAM, Unfair Advantage. Fjern Lånekassen fra ordlisten. Sørg for at alle begreper er sortert alfabetisk under riktig bokstavseksjon.
+Hva: Oppdater den eksisterende ordliste-siden på infosiden. Mange nye begreper er lagt til: Adoption & Retention, Ambassadørprogram, B2G, Bottom-up, CAC, Change Management, Churn Rate, CLTV, CLV, COS, Early adopter, LOI, PoC, Proof of Interest, Prisstrategi, RGE, Top-down. Fjern Lånekassen fra ordlisten. Sørg for at alle begreper er sortert alfabetisk under riktig bokstavseksjon. Hele ordlisten skal være oppdatert og komplett.
 Hvor: Eksisterende side "Ordliste" under "Dokumenter & Referanser"
 
 ### 19.06.2026 — Legg til ordliste på infosiden
