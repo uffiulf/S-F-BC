@@ -570,16 +570,6 @@ export default function App() {
                         <div key={idx} className={`vpc-canvas-wrapper theme-${vpc.colorTheme}`}>
                           <p className="vpc-canvas-desc">{vpc.description}</p>
                           
-                          {vpc.longDescription && (
-                            <div className="vpc-long-desc-card glass-card mb-6" style={{ padding: "16px", borderRadius: "8px", border: "1px solid var(--border-color)", background: "rgba(255,255,255,0.02)" }}>
-                              <h4 className="flex items-center gap-2 text-primary font-semibold mb-2" style={{ display: "flex", alignItems: "center", gap: "8px", margin: "0 0 8px 0" }}>
-                                <Icons.Lightbulb className="w-4 h-4 text-amber-500 animate-pulse" />
-                                <span>Utdypende verdiskapning:</span>
-                              </h4>
-                              <p className="text-secondary" style={{ margin: 0, fontSize: "0.95rem", lineHeight: "1.5" }} dangerouslySetInnerHTML={{ __html: vpc.longDescription }} />
-                            </div>
-                          )}
-                          
                           <div className="vpc-canvas">
                             {/* 1. VERDITILBUD (Strategyzer Square / Value Map) */}
                             <div className="vpc-canvas-card">
@@ -685,6 +675,16 @@ export default function App() {
                               </div>
                             </div>
                           </div>
+                          
+                          {vpc.longDescription && (
+                            <div className="vpc-long-desc-card glass-card" style={{ padding: "20px", borderRadius: "12px", border: "1px solid var(--border-color)", background: "var(--bg-card)", marginTop: "32px" }}>
+                              <h4 className="flex items-center gap-2 text-primary font-semibold mb-2.5" style={{ display: "flex", alignItems: "center", gap: "8px", margin: "0 0 10px 0" }}>
+                                <Icons.Lightbulb className="w-4 h-4 text-amber-500 animate-pulse" />
+                                <span>Utdypende verdiskapning:</span>
+                              </h4>
+                              <p className="text-secondary" style={{ margin: 0, fontSize: "0.95rem", lineHeight: "1.6" }} dangerouslySetInnerHTML={{ __html: vpc.longDescription }} />
+                            </div>
+                          )}
 
                         </div>
                       );
