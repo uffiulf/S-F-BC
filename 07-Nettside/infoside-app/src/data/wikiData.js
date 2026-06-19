@@ -415,7 +415,9 @@ export const wikiData = [
           "Kunden rapporterer høy tilfredshet (NPS > 7), eller intern faglig oppdragsgiver godkjenner evighetsprosjektets leveranse.",
           "Studentene rapporterer høyt læringsutbytte (> 4/5).",
           "Null klager fra konkurrenter eller juridiske hendelser knyttet til oppstarten.",
-          "Alt arbeid er dokumentert med timeføring, overleveringsplan og støtteregister."
+          "<strong>Timeføring:</strong> Hver student må dokumentere minimum 180 arbeidstimer (krav fra ITD35014). Timene føres i et felles system (f.eks. Google Sheets eller et enkelt verktøy) og signeres av mentor. Dette er også grunnlaget for Lånekassen-dokumentasjon og vurdering (Bestått/Ikke bestått).",
+          "<strong>Overleveringsplan:</strong> Et dokument som beskriver hva som overleveres til neste kull eller kunde ved prosjektslutt: kildekode (med repo-tilgang), dokumentasjon (arkitektur, brukerveiledning), passord og tilganger, Figma-filer, åpne punkter og status. Uten overleveringsplan stopper evighetsprosjektet opp ved semesterovergang.",
+          "<strong>Støtteregister:</strong> En løpende logg over hver kunde og hvilken markedsverdi tjenestene har hatt. Dette er kritisk for å holde seg under de minimis-grensen (300 000 EUR over 3 år per kunde) og unngå ESA-tilbakebetalingskrav. Registeret føres av økonomistudentene og kontrolleres av daglig leder."
         ]
       }
     ]

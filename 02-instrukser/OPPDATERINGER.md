@@ -66,6 +66,17 @@ Kilde: `06-Business-case/Scope/scope_tabell.md` og `06-Business-case/Scope/scope
 Hva: Oppdater eksisterende scope-side eller opprett ny på infosiden. Innholdet må gjenspeile den oppdaterte modellen: (1) eksterne oppdrag + interne evighetsprosjekter som to spor, (2) evighetsprosjekter som går over flere semestre med forelesere som kvalitetssikrere, (3) portalen som verifisert referansebase for rekruttering. In/out-scope-tabellene fra scope_tabell.md skal være hovedinnholdet.
 Hvor: Eksisterende eller ny side under kategorien "GTM & Utførelse" eller "Dokumenter"
 
+### 19.06.2026 — Oppdater suksesskriteriene med utdypede forklaringer
+Prioritet: Høy
+Kilde: `06-Business-case/Scope/scope_minst_motstand.md` (seksjon "6. Suksesskriterier for piloten") og `06-Business-case/Scope/scope_tabell.md`
+Hva: På scope-siden på infosiden, under "Suksesskriterier for piloten" — utdyp hvert punkt slik at teamet forstår hva som ligger i dem:
+- **Timeføring:** Hver student må dokumentere minimum 180 arbeidstimer (krav fra ITD35014). Timene føres i et felles system (f.eks. Google Sheets eller et enkelt verktøy) og signeres av mentor. Dette er også grunnlaget for Lånekassen-dokumentasjon og vurdering (Bestått/Ikke bestått).
+- **Overleveringsplan:** Et dokument som beskriver hva som overleveres til neste kull eller kunde ved prosjektslutt: kildekode (med repo-tilgang), dokumentasjon (arkitektur, brukerveiledning), passord og tilganger, Figma-filer, åpne punkter og status. Uten overleveringsplan stopper evighetsprosjektet opp ved semesterovergang.
+- **Støtteregister:** En løpende logg over hver kunde og hvilken markedsverdi tjenestene har hatt. Dette er kritisk for å holde seg under de minimis-grensen (300 000 EUR over 3 år per kunde) og unngå ESA-tilbakebetalingskrav. Registeret føres av økonomistudentene og kontrolleres av daglig leder.
+
+Erstatt den korte setningen "Alt arbeid er dokumentert med timeføring, overleveringsplan og støtteregister." med en utdypet forklaring av hvert element.
+Hvor: Scope-siden på infosiden, under "Suksesskriterier for piloten"
+
 ### 19.06.2026 — Oppdater organisasjonsbeskrivelsen med stabilt driftsskille
 Prioritet: Høy
 Kilde: `06-Business-case/Scope/scope_minst_motstand.md` (seksjon "Organisatorisk struktur")
@@ -112,6 +123,7 @@ Hvor: Ny seksjon under "Analyser" eller "Guidelines"
 | 19.06.2026 | Legg til ITD35014 som utgangspunkt (ikke nytt emne) | Utført |
 | 19.06.2026 | Oppdater Forretningsmodell & VPC med utdypende verdiskapningstekst | Utført |
 | 19.06.2026 | Oppdater scope-siden med ny evighetsprosjekt-modell og portalen som referansebase | Utført |
+| 19.06.2026 | Oppdater suksesskriteriene med utdypede forklaringer | Utført |
 | 19.06.2026 | Opprett ny seksjon "Business Case" i sidemenyen | Utført |
 | 19.06.2026 | Oppdater organisasjonsbeskrivelsen med stabilt driftsskille | Utført |
 | 19.06.2026 | Oppdater oversikten over alle nye maler i mal-og-utkast | Utført |
