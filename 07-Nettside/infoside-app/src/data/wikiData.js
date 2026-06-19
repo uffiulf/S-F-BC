@@ -282,13 +282,53 @@ export const wikiData = [
     lead: "Hva som er definert som IN scope og OUT of scope for Syntax & Flow for å sikre minst mulig motstand.",
     sections: [
       {
-        heading: "Kildedokument",
-        text: "Dette scopet er basert på det formelle bakgrunnsdokumentet. Trykk på knappen under for å åpne det originale dokumentet direkte i filsystemet:<br/>" +
-          "<div class=\"button-container\">" +
-          "  <a href=\"file:///Users/luffi/Library/Mobile Documents/com~apple~CloudDocs/Antigravity/Syntax&Flow/06-Business-case/Scope/scope_minst_motstand.md\" class=\"btn-primary\" target=\"_blank\">" +
-          "    📄 Åpne scope_minst_motstand.md" +
-          "  </a>" +
-          "</div>"
+        heading: "📄 Detaljert bakgrunnsdokument (scope_minst_motstand.md)",
+        isCollapsible: true,
+        text: "Dette er det fulle innholdet fra bakgrunnsdokumentet <em>scope_minst_motstand.md</em> som definerer premissene for piloten:<br/><br/>" +
+          "<h3>1. Organisatorisk struktur — et skille mellom drift og utførelse</h3>" +
+          "Syntax & Flow drives av en stabil kjerne, mens studentene utfører oppdragene. Dette er et selvstendig organ in-house på HiØ, ikke en studentforening.<br/><br/>" +
+          "<strong>Den stabile kjernen:</strong>" +
+          "<div class='table-container'><table class='wiki-table'><thead><tr><th>Rolle</th><th>Tilknytning</th><th>Ansvarsområde</th></tr></thead><tbody>" +
+          "<tr><td>Daglig leder</td><td>Fast / stipendiat</td><td>Daglig drift, kundekontakt, strategi</td></tr>" +
+          "<tr><td>Fagansvarlige</td><td>Lønnet / fagansatte</td><td>Faglig kvalitetssikring og veiledning</td></tr>" +
+          "<tr><td>Forelesere</td><td>Trukket inn ved behov</td><td>Kvalitetssikring av komplekse leveranser</td></tr>" +
+          "<tr><td>Styret</td><td>HiØ + uavhengige</td><td>Strategisk retning, tilsyn</td></tr>" +
+          "</tbody></table></div>" +
+          "<strong>Studentene (utfører oppdrag):</strong>" +
+          "<div class='table-container'><table class='wiki-table'><thead><tr><th>Rolle</th><th>Tilknytning</th><th>Ansvarsområde</th></tr></thead><tbody>" +
+          "<tr><td>Teammedlem</td><td>ITD35014 (10 stp)</td><td>Utfører oppgaver i tverrfaglige team</td></tr>" +
+          "<tr><td>Teamleder</td><td>ITD35014 + erfaren</td><td>Koordinerer teamet og kundekontakt</td></tr>" +
+          "</tbody></table></div>" +
+          "<h3>2. Utgangspunkt: Eksisterende emne ITD35014</h3>" +
+          "HiØ har allerede emnet ITD35014 Bedriftspraksis (10 stp) under Fakultet for IT, ingeniørfag og økonomi (IIO). S&Fs rolle er å skaffe praksisplasser, organisere tverrfaglige team og sørge for veiledning/kvalitetssikring. Dette løser studentenes problem med å måtte skaffe praksisplass selv.<br/><br/>" +
+          "<h3>3. Tjenester & Leveranser (Hva leveres)</h3>" +
+          "We skiller mellom to spor:<br/>" +
+          "• <strong>Spor A: Eksterne oppdrag (Kortsiktige):</strong> Enkle nettsider, logo/visuell profil, markedsanalyse, forretningsmodellering (BMC) for mikrovirksomheter.<br/>" +
+          "• <strong>Spor B: Interne evighetsprosjekter (Langsiktige):</strong> Tverrfaglige systemer (f.eks. internt ERP-system eller studentportal) som går over flere semestre med overlevering mellom kullene.<br/><br/>" +
+          "<strong>Hva vi bevisst UNNGÅR i starten:</strong> Applikasjoner med sensitive databaser/personopplysninger, IT-sikkerhetsrevisjon, ekstern regnskapsføring for andre, og oppdrag som krever SLA.<br/><br/>" +
+          "<h3>4. Kundekriterier (Hvem leverer vi til)</h3>" +
+          "For å unngå statsstøtteproblematikk og konkurranseklager leverer vi kun til:<br/>" +
+          "1. Interne avdelinger ved HiØ<br/>" +
+          "2. Ideelle organisasjoner, lag og foreninger<br/>" +
+          "3. Privatpersoner (ENK uten ansatte) og gründere i oppstartsfasen<br/>" +
+          "4. Mikrovirksomheter (1–5 ansatte) som bekrefter at de ikke har budsjett til kommersielle aktører.<br/><br/>" +
+          "<h3>5. Rekrutteringsspor & Lånekassen</h3>" +
+          "• <strong>Spor 1 (Kombinert):</strong> ITD35014 (10 stp) + 5 stp valgfag = 15 stp (kvalifiserer for Lånekassen). Arbeidstid ca. 22–25 timer/uke.<br/>" +
+          "• <strong>Spor 2 (Kun emnet):</strong> 10 stp (for studenter som ikke trenger Lånekasse-støtte). Arbeidstid ca. 12–15 timer/uke.<br/>" +
+          "• <strong>Spor 3 (NAV-tiltak):</strong> Utsettes til etter pilotfasen (tidligst Fase 4).<br/><br/>" +
+          "<h3>6. Portalen som verifisert referansebase</h3>" +
+          "Portalen løser bedriftenes problem med informasjonsasymmetri ved rekruttering. I stedet for en selvrapportert CV, gir portalen dokumentert bevis på en kandidats faktiske arbeidsprestasjon over 3–6 måneder basert på rubric-vurderinger fra kunder og mentorer.<br/><br/>" +
+          "<strong>Juridiske rammer:</strong> Fullstendig samtykkebasert (opt-in), strukturerte vurderingskriterier uten negativ fritekst, fullt innsyn og sletterett for studenten, samt begrenset tilgang for godkjente bedrifter.<br/><br/>" +
+          "<h3>7. Organisasjon, juss & forvaltning</h3>" +
+          "• <strong>Organisasjonsform:</strong> AS eid av ideell stiftelse for ansvarsbegrensning og ryddig statsstøtteskille.<br/>" +
+          "• <strong>Samarbeid med HiØ:</strong> Betale markedspris for lokaler/mentorer (eller definere det som ordinær undervisning) for å unngå ulovlig offentlig støtte.<br/>" +
+          "• <strong>Kundeavtale:</strong> Standard 'as-is'-avtale med ansvarsfraskrivelse, begrenset opptil 10 000 kr.<br/>" +
+          "• <strong>Støtteregister:</strong> Føre de minimis-register for alle kunder (maks 300 000 EUR over 3 år).<br/><br/>" +
+          "<h3>8. Suksesskriterier for piloten</h3>" +
+          "1. Ett team (3–5 studenter) gjennomfører ett prosjekt for én kunde (eller et internt evighetsprosjekt er påbegynt).<br/>" +
+          "2. Prosjektet fullføres innen 8–12 uker med god kundetilfredshet (NPS > 7).<br/>" +
+          "3. Godt rapportert læringsutbytte (> 4/5) og ingen juridiske klager eller hendelser.<br/>" +
+          "4. Alt er grundig dokumentert (timer, de minimis, vurderinger)."
       },
       {
         heading: "1. Modell med to parallelle spor",

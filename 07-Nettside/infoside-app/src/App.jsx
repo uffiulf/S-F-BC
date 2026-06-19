@@ -12,6 +12,7 @@ export default function App() {
   const [openAccordionIdx, setOpenAccordionIdx] = useState(null);
   const [activeLegalTopicIdx, setActiveLegalTopicIdx] = useState(null);
   const [activeAdjustmentIdx, setActiveAdjustmentIdx] = useState(0);
+  const [openSections, setOpenSections] = useState({});
   const searchInputRef = useRef(null);
 
   // Reset detailed view when changing page
@@ -19,7 +20,15 @@ export default function App() {
     setActiveLegalTopicIdx(null);
     setOpenAccordionIdx(null);
     setActiveAdjustmentIdx(0);
+    setOpenSections({});
   }, [activePage]);
+
+  const toggleSection = (sectionKey) => {
+    setOpenSections((prev) => ({
+      ...prev,
+      [sectionKey]: !prev[sectionKey]
+    }));
+  };
 
   // Sync theme to <html> element
   useEffect(() => {
@@ -386,43 +395,120 @@ export default function App() {
             ) : (
               <>
                 {/* Standard sections */}
-                {currentPage.sections && currentPage.sections.map((sec, idx) => (
-                  <div key={idx} className="wiki-section">
-                    <h2>{sec.heading}</h2>
-                    {sec.text && <p dangerouslySetInnerHTML={{ __html: sec.text }} />}
-                    
-                    {sec.points && (
-                      <ul>
-                        {sec.points.map((pt, pIdx) => (
-                          <li key={pIdx} dangerouslySetInnerHTML={{ __html: pt }} />
-                        ))}
-                      </ul>
-                    )}
+                {currentPage.sections && currentPage.sections.map((sec, idx) => {
+                  const isCollapsible = !!sec.isCollapsible;
+                  const sectionKey = `${currentPage.id}-${idx}`;
+                  const isOpen = !!openSections[sectionKey];
 
-                    {sec.table && (
-                      <div className="table-container">
-                        <table className="wiki-table">
-                          <thead>
-                            <tr>
-                              {sec.table.headers.map((h, hIdx) => (
-                                <th key={hIdx}>{h}</th>
+                  return (
+                    <div
+                      key={idx}
+                      className={`wiki-section ${isCollapsible ? "collapsible-section glass-card" : ""}`}
+                      style={isCollapsible ? { padding: "20px", marginBottom: "24px" } : {}}
+                    >
+                      {isCollapsible ? (
+                        <>
+                          <button
+                            onClick={() => toggleSection(sectionKey)}
+                            className="flex items-center justify-between w-full text-left"
+                            style={{
+                              display: "flex",
+                              width: "100%",
+                              justifyContent: "space-between",
+                              alignItems: "center",
+                              background: "none",
+                              border: "none",
+                              color: "inherit",
+                              cursor: "pointer",
+                              padding: 0
+                            }}
+                          >
+                            <h2 style={{ margin: 0, fontSize: "1.25rem", display: "flex", alignItems: "center", gap: "8px" }}>
+                              {sec.heading}
+                            </h2>
+                            <span style={{ display: "flex", alignItems: "center", gap: "6px", fontSize: "0.85rem", color: "var(--text-muted)", fontWeight: 500 }}>
+                              {isOpen ? "Skjul detaljer" : "Vis detaljer"}
+                              {isOpen ? <Icons.ChevronUp className="w-4 h-4" /> : <Icons.ChevronDown className="w-4 h-4" />}
+                            </span>
+                          </button>
+
+                          {isOpen && (
+                            <div className="collapsible-content animate-fade-in" style={{ marginTop: "16px", borderTop: "1px solid var(--border-color)", paddingTop: "16px" }}>
+                              {sec.text && <p dangerouslySetInnerHTML={{ __html: sec.text }} />}
+                              
+                              {sec.points && (
+                                <ul>
+                                  {sec.points.map((pt, pIdx) => (
+                                    <li key={pIdx} dangerouslySetInnerHTML={{ __html: pt }} />
+                                  ))}
+                                </ul>
+                              )}
+
+                              {sec.table && (
+                                <div className="table-container">
+                                  <table className="wiki-table">
+                                    <thead>
+                                      <tr>
+                                        {sec.table.headers.map((h, hIdx) => (
+                                          <th key={hIdx}>{h}</th>
+                                        ))}
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      {sec.table.rows.map((row, rIdx) => (
+                                        <tr key={rIdx}>
+                                          {row.map((cell, cIdx) => (
+                                            <td key={cIdx} dangerouslySetInnerHTML={{ __html: cell }} />
+                                          ))}
+                                        </tr>
+                                      ))}
+                                    </tbody>
+                                  </table>
+                                </div>
+                              )}
+                            </div>
+                          )}
+                        </>
+                      ) : (
+                        <>
+                          <h2>{sec.heading}</h2>
+                          {sec.text && <p dangerouslySetInnerHTML={{ __html: sec.text }} />}
+                          
+                          {sec.points && (
+                            <ul>
+                              {sec.points.map((pt, pIdx) => (
+                                <li key={pIdx} dangerouslySetInnerHTML={{ __html: pt }} />
                               ))}
-                            </tr>
-                          </thead>
-                          <tbody>
-                            {sec.table.rows.map((row, rIdx) => (
-                              <tr key={rIdx}>
-                                {row.map((cell, cIdx) => (
-                                  <td key={cIdx} dangerouslySetInnerHTML={{ __html: cell }} />
-                                ))}
-                              </tr>
-                            ))}
-                          </tbody>
-                        </table>
-                      </div>
-                    )}
-                  </div>
-                ))}
+                            </ul>
+                          )}
+
+                          {sec.table && (
+                            <div className="table-container">
+                              <table className="wiki-table">
+                                <thead>
+                                  <tr>
+                                    {sec.table.headers.map((h, hIdx) => (
+                                      <th key={hIdx}>{h}</th>
+                                    ))}
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  {sec.table.rows.map((row, rIdx) => (
+                                    <tr key={rIdx}>
+                                      {row.map((cell, cIdx) => (
+                                        <td key={cIdx} dangerouslySetInnerHTML={{ __html: cell }} />
+                                      ))}
+                                    </tr>
+                                  ))}
+                                </tbody>
+                              </table>
+                            </div>
+                          )}
+                        </>
+                      )}
+                    </div>
+                  );
+                })}
 
                 {/* Custom: Prosjektplan timeline rendering */}
                 {currentPage.id === "prosjektplan" && (
