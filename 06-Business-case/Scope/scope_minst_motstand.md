@@ -230,7 +230,7 @@ Se full juridisk vurdering: `05-agent-forslag/Forslag/mal-og-utkast/portal_refer
 
 **Kundeforhold:**
 - Fakturer markedspris, gi dokumentert utdanningsrabatt (f.eks. 90 %)
-- Før støtteregister per kunde (de minimis — maks 300 000 EUR over 3 år)
+- Før støtteregister per kunde (de minimis — bagatellmessig støtte under 300 000 EUR over 3 år per kunde. Dette er så lite at det ikke regnes som ulovlig statsstøtte og krever ikke ESA-godkjenning)
 - Standard kundeavtale med «as-is»-klausul, maks 10 000 kr i ansvar
 
 ---

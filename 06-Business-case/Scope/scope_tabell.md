@@ -88,7 +88,7 @@
 | **Styret** | HiØ har observatørstatus, ikke styreflertall | HiØ styrer Syntax & Flow |
 | **Forsikring** | Yrkesansvarsforsikring tegnes før første kundeleveranse | Drift uten forsikring |
 | **Kundeavtale** | Standardavtale med ansvarsfraskrivelse, maks 10 000 kr i ansvar, «as-is»-klausul | Betaling for tjenester, SLA |
-| **Støtteregister** | Føres per kunde (de minimis — maks 300 000 EUR over 3 år) | Ingen kontroll på støttebeløp |
+| **Støtteregister** | Føres per kunde (de minimis — bagatellmessig støtte under 300 000 EUR over 3 år per kunde. Så lite at det ikke regnes som ulovlig statsstøtte) | Ingen kontroll på støttebeløp |
 
 ---
 

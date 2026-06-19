@@ -66,6 +66,12 @@ Kilde: `06-Business-case/Scope/scope_tabell.md` og `06-Business-case/Scope/scope
 Hva: Oppdater eksisterende scope-side eller opprett ny på infosiden. Innholdet må gjenspeile den oppdaterte modellen: (1) eksterne oppdrag + interne evighetsprosjekter som to spor, (2) evighetsprosjekter som går over flere semestre med forelesere som kvalitetssikrere, (3) portalen som verifisert referansebase for rekruttering. In/out-scope-tabellene fra scope_tabell.md skal være hovedinnholdet.
 Hvor: Eksisterende eller ny side under kategorien "GTM & Utførelse" eller "Dokumenter"
 
+### 19.06.2026 — Legg til ordliste på infosiden
+Prioritet: Middels
+Kilde: `01-administrasjon/ordliste.md`
+Hva: Opprett ny side "Ordliste" under "Dokumenter & Referanser" med ikon "BookOpen". Innholdet er en alfabetisk oppslagsoversikt over fagbegreper og forkortelser som brukes i prosjektet (de minimis, GTM, VPC, ROI, SLA, ESA, m.fl.). Hvert begrep skal ha en kort, forståelig forklaring.
+Hvor: Ny side i navigasjonen under "Dokumenter & Referanser"
+
 ### 19.06.2026 — Oppdater suksesskriteriene med utdypede forklaringer
 Prioritet: Høy
 Kilde: `06-Business-case/Scope/scope_minst_motstand.md` (seksjon "6. Suksesskriterier for piloten") og `06-Business-case/Scope/scope_tabell.md`
@@ -123,6 +129,7 @@ Hvor: Ny seksjon under "Analyser" eller "Guidelines"
 | 19.06.2026 | Legg til ITD35014 som utgangspunkt (ikke nytt emne) | Utført |
 | 19.06.2026 | Oppdater Forretningsmodell & VPC med utdypende verdiskapningstekst | Utført |
 | 19.06.2026 | Oppdater scope-siden med ny evighetsprosjekt-modell og portalen som referansebase | Utført |
+| 19.06.2026 | Legg til ordliste på infosiden | Utført |
 | 19.06.2026 | Oppdater suksesskriteriene med utdypede forklaringer | Utført |
 | 19.06.2026 | Opprett ny seksjon "Business Case" i sidemenyen | Utført |
 | 19.06.2026 | Oppdater organisasjonsbeskrivelsen med stabilt driftsskille | Utført |

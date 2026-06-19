@@ -1626,5 +1626,99 @@ export const wikiData = [
         ]
       }
     ]
+  },
+  {
+    id: "ordliste",
+    title: "Ordliste",
+    category: "Dokumenter",
+    icon: "BookOpen",
+    lead: "Forklaring på fagbegreper og forkortelser som brukes i Syntax & Flow-prosjektet.",
+    sections: [
+      {
+        heading: "A–C",
+        table: {
+          headers: ["Begrep", "Forklaring"],
+          rows: [
+            ["<strong>AML</strong>", "Arbeidsmiljøloven. Regulerer arbeidstakeres rettigheter og arbeidsgivers plikter."],
+            ["<strong>Arbeidsmarkedstiltak</strong>", "Tiltak finansiert av NAV for å hjelpe personer inn i arbeid, f.eks. arbeidstrening."]
+          ]
+        }
+      },
+      {
+        heading: "D–G",
+        table: {
+          headers: ["Begrep", "Forklaring"],
+          rows: [
+            ["<strong>De minimis</strong>", "Bagatellmessig støtte. Statsstøtte under 300 000 EUR over 3 år per kunde — så lite at det ikke regnes som ulovlig og krever ikke ESA-godkjenning."],
+            ["<strong>DPIA</strong>", "Data Protection Impact Assessment. Konsekvensvurdering for personvern som må gjøres før behandling av personopplysninger."],
+            ["<strong>DPO</strong>", "Data Protection Officer. Personvernansvarlig."],
+            ["<strong>ESA</strong>", "EFTAs overvåkingsorgan. Overvåker at Norge følger EØS-avtalen, inkludert statsstøttereglene."],
+            ["<strong>Evighetsprosjekt</strong>", "Internt prosjekt som går over flere semestre. Hvert kull overtar der forrige slapp."]
+          ]
+        }
+      },
+      {
+        heading: "G–L",
+        table: {
+          headers: ["Begrep", "Forklaring"],
+          rows: [
+            ["<strong>GDPR</strong>", "General Data Protection Regulation. EUs personvernforordning, innlemmet i norsk lov gjennom personopplysningsloven."],
+            ["<strong>GTM</strong>", "Go-To-Market. Strategi for hvordan et produkt eller tjeneste lanseres i markedet."],
+            ["<strong>IPR</strong>", "Intellectual Property Rights. Åndsverk og immaterielle rettigheter (kode, design, patenter)."]
+          ]
+        }
+      },
+      {
+        heading: "L–P",
+        table: {
+          headers: ["Begrep", "Forklaring"],
+          rows: [
+            ["<strong>Lånekassen</strong>", "Statens lånekasse for utdanning. Gir utdanningsstøtte (lån og stipend) til studenter."],
+            ["<strong>MVA</strong>", "Merverdiavgift. Avgift på omsetning av varer og tjenester. Grense for registrering: 50 000 kr/år."],
+            ["<strong>NPS</strong>", "Net Promoter Score. Måling av kundetilfredshet på en skala fra 0–10."],
+            ["<strong>NOKUT</strong>", "Nasjonalt organ for kvalitet i utdanningen. Fører tilsyn med høyere utdanning."]
+          ]
+        }
+      },
+      {
+        heading: "O–R",
+        table: {
+          headers: ["Begrep", "Forklaring"],
+          rows: [
+            ["<strong>OTP</strong>", "Obligatorisk tjenestepensjon. Pensjonsordning som arbeidsgivere må tilby ansatte."],
+            ["<strong>Pro bono</strong>", "Latin for «det godes skyld». Tjenester som leveres gratis, ofte for ideelle formål."]
+          ]
+        }
+      },
+      {
+        heading: "R–S",
+        table: {
+          headers: ["Begrep", "Forklaring"],
+          rows: [
+            ["<strong>Recovery</strong>", "Tilbakebetaling av ulovlig statsstøtte med renter. Pålegges av ESA når støtte er gitt i strid med EØS-avtalen."],
+            ["<strong>ROI</strong>", "Return on Investment. Avkastning på investering. Måler hvor lønnsom en investering er."],
+            ["<strong>Rubric</strong>", "Rubric (vurderingsmatrise). Strukturerte kriterier for vurdering, f.eks. 1–5 på definerte dimensjoner."],
+            ["<strong>SLA</strong>", "Service Level Agreement. Avtale om leveransenivå og garantier. Syntax & Flow tilbyr normalt ikke SLA."]
+          ]
+        }
+      },
+      {
+        heading: "S–Å",
+        table: {
+          headers: ["Begrep", "Forklaring"],
+          rows: [
+            ["<strong>SiØ</strong>", "Studentsamskipnaden i Østfold. Tilbyr velferdstjenester til studenter ved HiØ."],
+            ["<strong>Spor 1</strong>", "Fulltids praksisløp: ITD35014 (10 stp) + 5 stp valgfritt emne = 15 stp. Kvalifiserer for Lånekassen."],
+            ["<strong>Spor 2</strong>", "Deltid: Kun ITD35014 (10 stp). Kvalifiserer ikke for Lånekassen."],
+            ["<strong>Spor 3</strong>", "NAV-spor for personer utenfor arbeidsmarkedet. Utsettes til etter pilot."],
+            ["<strong>Støtteregister</strong>", "Løpende logg over markedsverdi av tjenester per kunde. Brukes for å kontrollere de minimis-grensen."],
+            ["<strong>TAM</strong>", "Total Addressable Market. Det totale markedet for et produkt eller tjeneste, altså maksimal inntekt hvis alle potensielle kunder kjøper."],
+            ["<strong>Unfair Advantage</strong>", "En varig konkurransefordel som er vanskelig for andre å kopiere."],
+            ["<strong>Value Proposition Canvas (VPC)</strong>", "Verktøy for å kartlegge verdien et produkt/tjeneste gir en målgruppe."],
+            ["<strong>Verdiskapning / Value Creation</strong>", "Prosessen med å skape merverdi for kunder, studenter eller samfunnet gjennom produktet eller tjenesten."]
+          ]
+        }
+      }
+    ]
   }
 ];
