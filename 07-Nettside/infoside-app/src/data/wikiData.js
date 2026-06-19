@@ -11,6 +11,10 @@ export const wikiData = [
         text: "Syntax & Flow er et studentdrevet konsulentselskap som bygger broen mellom akademia og arbeidslivet ved Høgskolen i Østfold (HiØ). Her løser vi reelle problemer for lokale bedrifter gjennom tverrfaglige student-team innen IT, Design og Økonomi."
       },
       {
+        heading: "Utgangspunkt: ITD35014 Bedriftspraksis",
+        text: "Syntax & Flow bygger på det eksisterende emnet <strong>ITD35014 Bedriftspraksis</strong> (10 stp) ved HiØ, Institutt for IT og kommunikasjon (ITK). Syntax & Flows rolle er å skaffe praksisplassene og organisere de tverrfaglige teamene — noe studentene i dag må gjøre selv.<br/><br/><strong>Emneinfo:</strong> ITD35014 — 10 stp — Emneansvarlig: Stig Henning Johansen."
+      },
+      {
         heading: "Hvordan bruke denne Wikien",
         text: "Bruk sidemenyen til å navigere mellom de ulike kapitlene av prosjektet. Hvis du lurer på noe underveis i prosjektgjennomføringen – enten det gjelder retningslinjer, analyser som skal kjøres, eller hva som skal leveres til kunden – finner du det her. Trykk CMD+K (eller CTRL+K) for å søke på tvers av hele dokumentasjonen."
       }
@@ -28,9 +32,13 @@ export const wikiData = [
         text: "Vi ønsker å fjerne 'erfaringsgapet' for nyutdannede studenter ved å gi dem reell prosjekterfaring i et trygt, mentorstyrt miljø under studietiden. Vi forener studentenes behov for relevant erfaring med bedriftenes behov for digitalisering og forretningsutvikling."
       },
       {
+        heading: "Forankring i ITD35014 Bedriftspraksis",
+        text: "Syntax & Flow bygger på det eksisterende faget <strong>ITD35014 Bedriftspraksis (10 stp)</strong> ved HiØ. Vår rolle er å fungere som den tilretteleggende parten som kobler studenter sammen i team og skaffer oppdragene, slik at rammene rundt faget blir mer attraktive og operative."
+      },
+      {
         heading: "Tre Hovedmål",
         points: [
-          "<strong>For studentene:</strong> Levere praktisk erfaring, CV-referanser og nettverk som sikrer rask overgang til arbeidslivet etter fullførte studier.",
+          "<strong>For studentene:</strong> Levere praktisk erfaring, CV-referanser og nettverk som sikrer rask overgang to arbeidslivet etter fullførte studier.",
           "<strong>For bedriftene:</strong> Tilby lavterskel, kostnadsfrie IT-, design- og økonomitjenester av høy kvalitet.",
           "<strong>For Høgskolen i Østfold (HiØ):</strong> Styrke utdanningenes relevans, redusere frafall og øke samarbeidet med det regionale næringslivet."
         ]
@@ -69,10 +77,14 @@ export const wikiData = [
           headers: ["Spor", "Omfang", "Målgruppe", "Finansiering"],
           rows: [
             ["Spor 1: Bedriftspraksis (Fulltid)", "60 studiepoeng per år", "Nyutdannede bachelor/master-kandidater", "Fulltids utdanningsstøtte (Lånekassen)"],
-            ["Spor 2: Bedriftspraksis (Deltid)", "10 studiepoeng per semester (12.5 - 15t/uke)", "Aktive studenter underveis i studiet", "Lånekassen (gradert støtte)"],
+            ["Spor 2: Bedriftspraksis (Deltid)", "15 studiepoeng per semester (minimum for Lånekassen)*", "Aktive studenter underveis i studiet", "Lånekassen (gradert støtte)"],
             ["Spor 3: Arbeidstrening via NAV", "20% - 100% stilling (individuell tiltaksplan)", "Personer utenfor arbeidsmarkedet med IT/Design/Økonomi-bakgrunn", "Tiltakspenger/dagpenger dekket av NAV"]
           ]
         }
+      },
+      {
+        heading: "*Merknad vedrørende studiepoeng for Spor 2",
+        text: "ITD35014 Bedriftspraksis gir i dag 10 stp ved HiØ. Syntax & Flow jobber aktivt for å øke dette til 15 stp (som er Lånekassens minstekrav for gradert støtte)."
       },
       {
         heading: "Tiltak for kunnskapsoverføring",
@@ -87,7 +99,7 @@ export const wikiData = [
   {
     id: "forretningsmodell-og-vpc",
     title: "Forretningsmodell & VPC",
-    category: "Hovedsider",
+    category: "Business Case",
     icon: "BarChart3",
     lead: "Hvordan Syntax & Flow skaper verdi gjennom en unik pro-bono modell.",
     sections: [
@@ -96,7 +108,7 @@ export const wikiData = [
         text: "Siden tjenestene våre er helt gratis for bedrifter, er modellen bygget på ikke-monetær verdiutveksling:",
         points: [
           "<strong>Studenten får:</strong> Erfaring, nettverk, CV-referanser, attest og trygge praksisrammer.",
-          "<strong>Bedriften får:</strong> Løst sine IT-, design- eller økonomiutfordringer uten direkte kostnader, samt anledning to teste potensielle fremtidige ansatte.",
+          "<strong>Bedriften får:</strong> Løst sine IT-, design- eller økonomiutfordringer uten direkte kostnader, samt anledning til å teste potensielle fremtidige ansatte.",
           "<strong>Høgskolen får:</strong> Økt studiekvalitet, mindre frafall, og tettere kobling til næringslivet."
         ]
       },
@@ -106,7 +118,7 @@ export const wikiData = [
         points: [
           "<strong>Standard avtale (Best effort):</strong> Ingen formell leveransegaranti (SLA). Vi gjør vårt beste, men kunden har ingen juridisk reklamasjonsrett.",
           "<strong>Betinget SLA:</strong> Hvis teamet har seniorer/masterstudenter eller NAV-kandidater med solid bakgrunn, kan det skriftlig avtales en begrenset SLA på kritiske leveranser.",
-          "<strong>Kundeplikt:</strong> Kunden må delta på ukentlige statusmøter og brukertester, ellers avsluttes prosjektet umiddelbart."
+          "<strong>Kundeplikt:</strong> Kunden must delta på ukentlige statusmøter og brukertester, ellers avsluttes prosjektet umiddelbart."
         ]
       }
     ],
@@ -114,7 +126,8 @@ export const wikiData = [
       {
         target: "Studentene",
         colorTheme: "student",
-        description: "Value Proposition Canvas for studenter som søker broen fra teori to praksis.",
+        description: "Value Proposition Canvas for studenter som søker broen fra teori til praksis.",
+        longDescription: "Syntax & Flow gir studentene en <strong>betalbar bro mellom teori og praksis</strong>. I stedet for å bruke måneder på å søke jobb etter endt utdanning — og ofte måtte ta ufaglært arbeid for å få endene til å møtes — får studentene en strukturert overgang der de bygger erfaring mens de fremdeles har Lånekassen i ryggen.<br/><br/>Den største verdien ligger i at studentene slipper <strong>erfaringsparadokset</strong>: ingen vil ansette deg uten erfaring, men du får ikke erfaring uten å bli ansatt. Syntax & Flow bryter denne sirkelen ved å tilby reelle prosjekter for ekte kunder, med ekte krav og ekte resultater — men i et trygt læringsmiljø med veiledning fra fagansatte ved HiØ.<br/><br/>Gjennom tverrfaglige team lærer studentene å samarbeide på tvers av fagdisipliner, slik arbeidslivet faktisk fungerer. De får en dokumenterbar portefølje de kan vise frem på jobbintervjuer, referanser fra faktiske oppdragsgivere, og et nettverk i lokalt næringsliv — alt før de i det hele tatt begynner å søke jobb.<br/><br/>For studenter som sliter med å komme inn på arbeidsmarkedet, inkludert de som står utenfor via NAV, gir Syntax & Flow en verdig og strukturert vei tilbake.",
         customerProfile: {
           jobs: [
             "Bestå studiene: Fullføre sin bachelor- eller mastergrad ved HiØ.",
@@ -131,7 +144,7 @@ export const wikiData = [
           gains: [
             "En solid og dokumenterbar referanse på CV-en etter endt utdanning.",
             "Økt selvtillit og mestringsfølelse i møte med eksterne kunder.",
-            "En myk og støttet overgang fra student to fast ansatt i næringslivet."
+            "En myk og støttet overgang fra student til fast ansatt i næringslivet."
           ]
         },
         valueMap: {
@@ -154,12 +167,13 @@ export const wikiData = [
         target: "Høgskolen i Østfold (HiØ)",
         colorTheme: "hio",
         description: "Value Proposition Canvas som viser hvordan Syntax & Flow støtter HiØs samfunnsrolle og studiekvalitet.",
+        longDescription: "HiØ får et <strong>konkret verktøy for å øke studiekvaliteten og kandidatproduksjonen</strong>. Syntax & Flow løser flere av høgskolens strategiske utfordringer samtidig:<br/><br/>For det første <strong>reduseres frafall på slutten av studieløpet</strong>. Når studentene vet at emnet Bedriftspraksis gir dem en direkte inngang til arbeidslivet, øker motivasjonen for å fullføre graden. Hver fullført grad utløser resultatbasert finansiering fra Kunnskapsdepartementet.<br/><br/>For det andre får HiØ <strong>gratis markedsføring</strong> gjennom NAV-sporet. Når høgskolen aktivt hjelper nyutdannede og personer utenfor arbeidsmarkedet inn i jobb, skaper det positive oppslag i lokale medier og styrker HiØs omdømme som en samfunnsansvarlig institusjon.<br/><br/>For det tredje <strong>styrkes båndene til lokalt næringsliv</strong>. Gjennom Syntax & Flow får HiØ eine kanal for samarbeid med bedrifter i Østfold som ellers ikke ville hatt kontakt med høgskolen. Dette gir muligheter for fremtidige forskningssamarbeid, gjesteforelesere og praksisplasser.<br/><br/>For det fjerde avlaster Syntax & Flow <strong>HiØs administrasjon</strong>. Studentledelsen håndterer kundekontakt, prosjektkoordinering og daglig drift, mens høgskolens ansatte kun bidrar som faglige mentorer. Siden Syntax & Flow organiseres som en juridisk separat enhet, unngår HiØ også den juridiske og økonomiske risikoen knyttet til studentenes leveranser.",
         customerProfile: {
           jobs: [
             "Levere studiekvalitet: Tilby utdanninger som gjør kandidatene attraktive på arbeidsmarkedet.",
             "Styrke omdømmet: Fremstå som en moderne, praksisnær og fremtidsrettet utdanningsinstitusjon.",
             "Sikre gjennomstrømming: Sikre at studentene fullfører gradene innen normert tid.",
-            "Oppfylle samfunnsmandatet: Knytte tettere bånd to det regionale samfunns- og næringslivet."
+            "Oppfylle samfunnsmandatet: Knytte tettere bånd til det regionale samfunns- og næringslivet."
           ],
           pains: [
             "Frafall på slutten av studieløpet: Lavere resultatbasert finansiering til høgskolen.",
@@ -180,7 +194,7 @@ export const wikiData = [
           ],
           painRelievers: [
             "Insentiv for fullføring: Krav om bestått bachelor/master-grad for å delta i praksisåret hos oss.",
-            "Administrativ avlastning: Studentledelsen i Syntax & Flow håndterer prosjektene og kundekontakten.",
+            "Administrativ avlastning: Studentledelsen in Syntax & Flow håndterer prosjektene og kundekontakten.",
             "Juridisk separasjon: Organisering utenfor HiØs kjernesystem beskytter høgskolen mot risiko."
           ],
           gainCreators: [
@@ -193,6 +207,7 @@ export const wikiData = [
         target: "Næringslivet (Bedriftene)",
         colorTheme: "business",
         description: "Value Proposition Canvas for lokale SMBer og oppstartsbedrifter som søker lavrisiko digitalisering.",
+        longDescription: "Næringslivet får tilgang til <strong>tverrfaglig kompetanse uten økonomisk risiko</strong>. For en liten bedrift eller en gründer i oppstartsfasen er kommersielle konsulenttjenester ofte uoppnåelige med timepriser på 1 200–2 000 kr. Syntax & Flow fjerner denne barrieren fullstendig.<br/><br/>Den største verdien for bedriftene er likevel <strong>rekrutteringskanalen</strong>. Å ansette nyutdannede er en risiko: en CV og et 45-minutters intervju sier lite om hvordan en person faktisk fungerer i jobb. Gjennom Syntax & Flow får bedriftene en 3–6 måneders testperiode der de ser kandidaten i aksjon før de eventuelt tilbyr fast stilling. Dette er en tryggere og mer kostnadseffektiv rekrutteringsprosess enn tradisjonell headhunting.<br/><br/>Bedriftene slipper også å bruke tid på å finne og følge opp studenter individuelt. Syntax & Flow leverer et ferdig organisert team med prosjektledelse innebygd. Kunden stiller kun med sin egen tid til ukentlige statusmøter og tilbakemeldinger.<br/><br/>I tillegg får bedriftene eine <strong>positiv omdømmefordel</strong> ved å støtte et utdanningstiltak ved HiØ. De posisjonerer seg som en samfunnsansvarlig aktør som bidrar til lokal kompetansebygging.",
         customerProfile: {
           jobs: [
             "Løse operative oppgaver: Nettsider, designprofiler, eller markeds- og forretningsanalyser.",
@@ -205,7 +220,7 @@ export const wikiData = [
             "Vanskelig å evaluere nyutdannede: Karakterer gir et ufullstendig bilde av praktiske ferdigheter."
           ],
           gains: [
-            "Tilgang to tverrfaglig digital kompetanse (IT, design, økonomi) tilpasset bedriftens behov.",
+            "Tilgang til tverrfaglig digital kompetanse (IT, design, økonomi) tilpasset bedriftens behov.",
             "Sikkerhet i ansettelser gjennom en lengre observasjonsperiode (Try-before-you-buy).",
             "Posisjonering som en samfunnsansvarlig aktør som støtter lokale studenter."
           ]
@@ -229,9 +244,95 @@ export const wikiData = [
     ]
   },
   {
+    id: "scope",
+    title: "Scope & Omfang",
+    category: "Business Case",
+    icon: "Crosshair",
+    lead: "Hva som er definert som IN scope og OUT of scope for Syntax & Flow for å sikre minst mulig motstand.",
+    sections: [
+      {
+        heading: "1. Modell med to parallelle spor",
+        text: "For å maksimere studentenes læringsutbytte og sikre drift gjennom hele året, opererer Syntax & Flow med to spor for prosjekter:",
+        points: [
+          "<strong>Spor A: Eksterne oppdrag (Kortsiktige):</strong> Enkle nettsider, profiler og markedsrapporter for lokale mikrovirksomheter, lag og foreninger. Disse avsluttes og overleveres innenfor ett enkelt semester.",
+          "<strong>Spor B: Interne evighetsprosjekter (Langsiktige):</strong> Større tverrfaglige IT- og analysesystemer (f.eks. integrert timeføringsportal, ERP-system eller ressursplanlegger for campus). Disse går over flere semestre, der nye studentkull overtar og bygger videre på det forrige kullets arbeid."
+        ]
+      },
+      {
+        heading: "2. Overordnet Scope",
+        table: {
+          headers: ["Dimensjon", "In Scope", "Out of Scope"],
+          rows: [
+            ["<strong>Formål</strong>", "Være en studentdrevet arbeidsplass som gir erfaring gjennom eksterne oppdrag og interne evighetsprosjekter", "Være et kommersielt konsulentbyrå som konkurrerer direkte med etablerte byråer"],
+            ["<strong>Studentens rolle</strong>", "Ansatt/deltaker i S&F som jobber i tverrfaglige team under veiledning", "Må selv skaffe og administrere praksisplass hos eksterne bedrifter"],
+            ["<strong>Fysisk tilholdssted</strong>", "In-house på HiØs lokaler med tilgang til foreleseres kompetanse", "Fysisk plassert hos eksterne bedrifter uten oppfølging fra skolen"]
+          ]
+        }
+      },
+      {
+        heading: "3. Tjenester Scope",
+        table: {
+          headers: ["Tjenesteområde", "In Scope", "Out of Scope"],
+          rows: [
+            ["<strong>Eksterne oppdrag</strong>", "Enkle nettsider, landingssider, logo/visuell profil, markedsanalyser og forretningsmodellering (BMC)", "Avanserte apper med sensitive databaser, IT-sikkerhetsrevisjon, systemintegrasjoner (ERP/CRM)"],
+            ["<strong>Interne prosjekter</strong>", "Langsiktige evighetsprosjekter som går over flere semestre med fokus på systemarkitektur, database og API", "Kortsiktige ad-hoc-oppgaver uten dokumentasjon eller langsiktig verdi"],
+            ["<strong>Kvalitetssikring</strong>", "Veiledning og godkjenning av leveranser av faglige mentorer (HiØ-forelesere) før overlevering", "Levere løsninger direkte til kunden uten faglig kvalitetssikring"],
+            ["<strong>Portefølje</strong>", "Dokumentasjon av prosjektet og publisering av anonymiserte case-studier på portalen (med samtykke)", "Publisere detaljert kode eller bedriftsdata uten skriftlig samtykke"]
+          ]
+        }
+      },
+      {
+        heading: "4. Kunder & Oppdragsgivere",
+        table: {
+          headers: ["Kunde-type", "In Scope", "Out of Scope"],
+          rows: [
+            ["<strong>Prioritet 1 & 2</strong>", "Interne avdelinger ved Høgskolen i Østfold, samt lokale ideelle organisasjoner, idrettslag og frivillighet", "Bedrifter med mer enn 5 ansatte eller med egne utviklingsbudsjetter"],
+            ["<strong>Prioritet 3 & 4</strong>", "Etablerere/privatpersoner (ENK uten ansatte) og lokale mikrovirksomheter (1-5 ansatte) uten budsjett", "Offentlige anbudskonkurranser og etablerte selskaper med kommersiell kapasitet"],
+            ["<strong>Forpliktelser</strong>", "Kunden forplikter seg til aktiv deltakelse og ukentlige statusmøter med teamet", "Kommersielle betalingsavtaler og leveransegartanti (SLA)"]
+          ]
+        }
+      },
+      {
+        heading: "5. Studenter & Rekruttering",
+        table: {
+          headers: ["Aspekt", "In Scope", "Out of Scope"],
+          rows: [
+            ["<strong>Studieemne</strong>", "Bruke det eksisterende emnet ITD35014 Bedriftspraksis (10 stp) som formell ramme", "Søke om å opprette helt nye emner før piloten er fullført"],
+            ["<strong>Spor 1 (Lånekassen)</strong>", "Kombinere ITD35014 (10 stp) med et 5 stp valgfag for å nå minstekravet på 15 stp", "Rekruttere studenter med under 90 stp bestått"],
+            ["<strong>Spor 2 (Kun emnet)</strong>", "Ta kun ITD35014 (10 stp) for studenter som ikke er avhengig av Lånekassestøtte", "Gjøre 10 stp-sporet til den generelle hovedmodellen"],
+            ["<strong>Spor 3 (NAV)</strong>", "Utsette NAV-samarbeidet til etter pilotfasen (tidligst Fase 4)", "Rekruttere NAV-deltakere uten separate avtaler fra dag én"]
+          ]
+        }
+      },
+      {
+        heading: "6. Evighetsprosjekter (Detaljert)",
+        table: {
+          headers: ["Fagdisiplin", "In Scope-arbeid", "Out of Scope-arbeid"],
+          rows: [
+            ["<strong>UI/UX & Design</strong>", "Brukerreiser, klikkbare Figma-prototyper, designsystemer og brukervennlighetstesting", "Ad-hoc grafisk produksjon uten forankring i brukerinnsikt"],
+            ["<strong>Økonomi</strong>", "Budsjettering, prosjektkalkyler, kostnadsanalyser og gevinstrealiseringsplaner for systemene", "Ekstern regnskapsføring eller regnskapsrevisjon for andre bedrifter"],
+            ["<strong>Dataingeniør</strong>", "Systemarkitektur, databaseoppsett (Supabase/Postgres), backend og API-er", "Systemintegrasjon mot eksterne kommersielle databaser med personopplysninger"],
+            ["<strong>Informasjonssystemer</strong>", "Sikkerhetstesting, kvalitetssikring, integrasjonstester og intern IT-revisjon av systemene", "Utføre IT-sikkerhetsrevisjon for eksterne bedrifter"]
+          ]
+        }
+      },
+      {
+        heading: "7. Suksesskriterier for piloten",
+        points: [
+          "Ett tverrfaglig team (3-5 studenter) gjennomfører enten ett eksternt prosjekt for en mikrobedrift eller starter et internt evighetsprosjekt.",
+          "Prosjektet fullføres innenfor tidsrammen på 8–12 uker.",
+          "Kunden rapporterer høy tilfredshet (NPS > 7), eller intern faglig oppdragsgiver godkjenner evighetsprosjektets leveranse.",
+          "Studentene rapporterer høyt læringsutbytte (> 4/5).",
+          "Null klager fra konkurrenter eller juridiske hendelser knyttet til oppstarten.",
+          "Alt arbeid er dokumentert med timeføring, overleveringsplan og støtteregister."
+        ]
+      }
+    ]
+  },
+  {
     id: "tjenester-og-leveranser",
     title: "Tjenester & Leveranser",
-    category: "Hovedsider",
+    category: "Business Case",
     icon: "Briefcase",
     lead: "Vår faglige katalog og de konkrete leveransene vi tilbyr.",
     sections: [
@@ -246,11 +347,127 @@ export const wikiData = [
       },
       {
         heading: "Syntax & Flow Portalen",
-        text: "Alle fullførte prosjekter må publiseres digitalt på vår nettportal. Dette fungerer som:",
+        text: "Alle prosjekter som gjennomføres av Syntax & Flow må dokumenteres og publiseres digitalt på vår nettportal. Dette fungerer som:",
         points: [
           "<strong>Kompetanse-showcase:</strong> En offentlig portefølje der studentene viser frem kildekoden, Figma-skissene og de økonomiske analysene de har utført.",
           "<strong>Passiv markedsføring:</strong> Potensielle kunder ser hva vi har bygget gratis for andre, noe som tiltrekker nye søkere til ordningen."
         ]
+      },
+      {
+        heading: "Samarbeidsavtalen & Betinget SLA",
+        text: "Siden vi leverer gratis, inngår vi en samarbeidsavtale der kunden må kompensere med sin egen **tid**:",
+        points: [
+          "<strong>Standard avtale (Best effort):</strong> Ingen formell leveransegaranti (SLA). Vi gjør vårt beste, men kunden har ingen juridisk reklamasjonsrett.",
+          "<strong>Betinget SLA:</strong> Hvis teamet har seniorer/masterstudenter eller NAV-kandidater med solid bakgrunn, kan det skriftlig avtales en begrenset SLA på kritiske leveranser.",
+          "<strong>Kundeplikt:</strong> Kunden må delta på ukentlige statusmøter og brukertester, ellers avsluttes prosjektet umiddelbart."
+        ]
+      }
+    ]
+  },
+  {
+    id: "markeds-og-konkurranseanalyse",
+    title: "Markeds & Konkurranse",
+    category: "Business Case",
+    icon: "TrendingUp",
+    lead: "Analyse av markedsbehovet i Østfold, våre målgrupper, konkurrenter og posisjonering.",
+    sections: [
+      {
+        heading: "1. Behovsanalyse (Hvorfor trengs dette?)",
+        text: "Det eksisterer et gap i markedet som Syntax & Flow er posisjonert til å fylle:",
+        points: [
+          "<strong>Studentenes behov:</strong> Studenter mangler relevant erfaring (erfaringsparadokset) og tverrfaglig trening. Studiene skiller ofte IT, design og økonomi, mens arbeidslivet krever at de jobber sammen.",
+          "<strong>Næringslivets behov:</strong> Mindre SMBer og gründere i Østfold har ofte ikke råd til kommersielle konsulenter (timepriser på 1200-2000 kr), og de sliter med å rekruttere og holde på unge HiØ-talenter som flytter til Oslo."
+        ]
+      },
+      {
+        heading: "2. Målgrupper",
+        points: [
+          "<strong>Primærmarked:</strong> Lokale gründere, oppstartsbedrifter, og mikrovirksomheter (1-5 ansatte) i Halden, Fredrikstad, Sarpsborg og Moss.",
+          "<strong>Frivillighet:</strong> Lokale idrettslag, foreninger og frivilligsentraler med digitaliseringsbehov.",
+          "<strong>Internt marked:</strong> Fakulteter og administrative avdelinger på HiØ som trenger enkle nettsider eller analyser."
+        ]
+      },
+      {
+        heading: "3. Konkurranseanalyse",
+        text: "Sammenligning av Syntax & Flow mot andre eksisterende alternativer:",
+        table: {
+          headers: ["Alternativ", "Fordeler", "Ulemper", "S&Fs posisjon"],
+          rows: [
+            ["<strong>Vanlig praksis (Internship)</strong>", "Etablerte rammer, gir studiepoeng", "Begrenset antall plasser, lite tverrfaglighet, kunden må selv veilede", "Vi leverer ferdige tverrfaglige team og tar oss av prosjektledelsen"],
+            ["<strong>Frilansarbeid</strong>", "Studenten tjener penger direkte, fleksibelt", "Studenten står alene uten veiledning, høy risiko for prosjekthavari", "Vi tilbyr et trygt rammeverk med faglige mentorer (forelesere)"],
+            ["<strong>Kommersielle byråer</strong>", "Svært høy kvalitet, erfarne konsulenter", "Ekstremt dyrt for småbedrifter og oppstartsbedrifter", "Vi leverer gratis til de som uansett ikke har råd til profesjonelle byråer"]
+          ]
+        }
+      },
+      {
+        heading: "4. Unik Posisjonering",
+        text: "Syntax & Flow posisjonerer seg i skjæringspunktet mellom <strong>akademisk kvalitet</strong> (støttet av HiØ-mentorer) og <strong>praktisk utførelse</strong> til null kontantpris. Vi selger ikke bare en tjeneste, men et samfunnsbidrag der kunden er med på å bygge fremtidens arbeidstakere."
+      }
+    ]
+  },
+  {
+    id: "strategi-og-utforelse",
+    title: "Strategi & Utførelse",
+    category: "Business Case",
+    icon: "Workflow",
+    lead: "Strategi for lansering, rekruttering av studenter og bedrifter, samt vår prosjektmodell.",
+    sections: [
+      {
+        heading: "1. Go-To-Market (GTM) & Rekruttering",
+        points: [
+          "<strong>Studentrekruttering:</strong> Markedsføring via stands på campus, presentasjoner i avgangsklasser, anbefalinger fra forelesere, og studentorganisasjoner. Opptakskravet er bestått minimum 90 stp for å sikre faglig modenhet.",
+          "<strong>Bedriftsrekruttering:</strong> Pitching via lokale gründerinkubatorer (Blender Collective, Smart Innovation Norway) og frokostmøter i de lokale næringsforeningene i Halden og Fredrikstad.",
+          "<strong>Referanse-loop:</strong> Portalen viser frem suksessfulle case-studier (kildekode, designskisser, analyser) som passivt tiltrekker seg nye kunder."
+        ]
+      },
+      {
+        heading: "2. De 5 Prosjektfasene",
+        text: "Siden vi som hovedregel ikke garanterer leveranser, fokuserer modellen på strukturert læring fremfor leveransepress:",
+        points: [
+          "<strong>Fase 1: Avklaring & Kontrakt (Uke 1-2):</strong> Avklare prosjektets omfang og kundens tidsforpliktelse. Det signeres en standardavtale med ansvarsfraskrivelse.",
+          "<strong>Fase 2: Innsikt & Design (Uke 3-6):</strong> Økonomistudenter kartlegger forretningsmodellen og lokaliserer flaskehalser. Designstudenter lager brukerreiser og prototyper i Figma basert på denne innsikten.",
+          "<strong>Fase 3: Utvikling & Implementering (Uke 7-12):</strong> IT-studenter programmerer nettsiden/MVPen basert på Figma-designet. Økonomistudenter implementerer skyverktøy (CRM/regnskap) eller lager prosessforbedringsplaner.",
+          "<strong>Fase 4: Kvalitetssikring (QA) & Testing (Uke 13-14):</strong> Gjennomgang av kildekode og design med faglig mentor (HiØ-foreleser) for endelig godkjenning.",
+          "<strong>Fase 5: Overlevering & Portefølje (Uke 15-16):</strong> Kunden mottar løsningen. Prosjektet dokumenteres og publiseres (med samtykke) på portalen."
+        ]
+      }
+    ]
+  },
+  {
+    id: "risiko-og-kostnadsanalyse",
+    title: "Risiko & Kostnader",
+    category: "Business Case",
+    icon: "Coins",
+    lead: "Analyse av økonomiske rammer og identifisering av operasjonelle risikoer ved drift.",
+    sections: [
+      {
+        heading: "1. Kostnadsanalyse & Budsjett",
+        text: "Siden Syntax & Flow er et gratis tilbud, holdes driftskostnadene ekstremt lave og dekkes av HiØ-innovasjonsmidler, samskipnaden (SiØ) eller lokale stiftelser.",
+        table: {
+          headers: ["Kostnadstype", "Estimerte kostnader", "Fase", "Merknad"],
+          rows: [
+            ["Registrering i Brønnøysund", "Ca. 2 000 kr (engangs)", "Fase 2", "Registrering som ideell forening/stiftelse"],
+            ["Domene og hosting av portalen", "Ca. 1 000 kr/år", "Fase 4", "Hosting for referansebasen"],
+            ["Profilering på campus (stands/rollups)", "Ca. 3 000 kr (engangs)", "Fase 2", "Rekrutteringsmateriell"],
+            ["Programvarelisenser (Figma, GitHub, Slack)", "Ca. 10 000 - 15 000 kr/år", "Fase 3+", "Søkes om gratis/utdanningslisenser"],
+            ["Regnskaps- og banksystem", "Ca. 3 000 kr/år", "Fase 3+", "Drift av stiftelsen"],
+            ["<strong>Totalt behov</strong>", "<strong>~15 000 - 20 000 kr/år</strong>", "Løpende", "Dekkes over HiØs budsjett for Bedriftspraksis"]
+          ]
+        }
+      },
+      {
+        heading: "2. Operasjonell Risikomatrise",
+        text: "Risikoverdi (R) = Sannsynlighet (S) × Konsekvens (K) på en skala fra 1 til 5.",
+        table: {
+          headers: ["Scenario", "S (1-5)", "K (1-5)", "R (S×K)", "Forebyggende tiltak (Mitigation)"],
+          rows: [
+            ["<strong>Studenter faller fra underveis</strong>", "4", "2", "8", "Lav konsekvens pga. standardavtale: Kunden er informert om at det ikke foreligger noen leveransegaranti."],
+            ["<strong>Kunden engasjerer seg ikke</strong>", "3", "4", "12", "Kontraktsfestet tidsbruk: Dersom kunden uteblir fra ukentlige møter, avsluttes prosjektet umiddelbart."],
+            ["<strong>Brudd på Betinget SLA</strong>", "2", "4", "8", "Vi inngår KUN betinget SLA etter grundig screening og sikrer at en faglig mentor følger prosjektet tett."],
+            ["<strong>Leveransen holder ikke god kvalitet</strong>", "2", "3", "6", "Faglig mentor (HiØ-foreleser) går gjennom og godkjenner sluttproduktet før det kan overleveres."],
+            ["<strong>Juridisk ansvar for feil i kode/råd</strong>", "1", "4", "4", "Tydelig ansvarsfraskrivelse i kontrakten som signeres før oppstart. Tjenestene leveres 'som de er'."]
+          ]
+        }
       }
     ]
   },
@@ -267,7 +484,7 @@ export const wikiData = [
         points: [
           "<strong>Fysisk tilstedeværelse:</strong> Stands under studiestart og presentasjoner i klasserom for avgangsstudenter.",
           "<strong>Samarbeid med forelesere:</strong> Forelesere anbefaler Syntax & Flow som praksisplass for studenter i relevante fag.",
-          "<strong>Krav to progresjon:</strong> Kun studenter som har bestått alle fag og er i sitt siste år (eller nyutdannede) kvalifiseres."
+          "<strong>Krav til progresjon:</strong> Kun studenter som har bestått alle fag og er i sitt siste år (eller nyutdannede) kvalifiseres."
         ]
       },
       {
@@ -285,7 +502,7 @@ export const wikiData = [
     id: "prosjektplan",
     title: "Prosjektplan",
     category: "GTM & Utførelse",
-    icon: "Milestone",
+    icon: "Compass",
     lead: "Prosjektets livsløp fra oppstart til overlevering.",
     sections: [
       {
@@ -327,6 +544,95 @@ export const wikiData = [
           "<strong>Analyser:</strong> Sluttevaluering og evaluering av lærdommer.",
           "<strong>Leveranser:</strong> Overføring av kildekode og tilganger til kunden, og prosjektcase publisert på showcase-portalen."
         ]
+      }
+    ]
+  },
+  {
+    id: "gjennomforingsplan",
+    title: "Gjennomføringsplan",
+    category: "GTM & Utførelse",
+    icon: "Milestone",
+    lead: "Trinnvis fremdriftsplan (Fase 1–4) fra planlegging til skalering, strukturert for minst mulig motstand.",
+    sections: [
+      {
+        heading: "1. Overordnet sammenheng mellom risiko og faser",
+        text: "Prosjektet etableres trinnvis for å fange opp og eliminere de største risikoene før store ressurser forpliktes:",
+        table: {
+          headers: ["Fase", "Fokusområde", "Risikoer som løses i denne fasen", "Prinsipp"],
+          rows: [
+            ["Fase 1", "Planlegging & Konsept (Mnd 1-3)", "Ingen direkte risiko. Kartlegging av emner, samtaler med nøkkelpersoner på HiØ og partnere.", "Bare prat og planer — null risiko"],
+            ["Fase 2", "Juridisk & Org. oppsett (Mnd 3-6)", "Lånekassen-avklaring, statsstøtte/EØS, arbeidstakerklassifisering, forsikring, GDPR.", "Rydde alt juridisk før første kundeleveranse"],
+            ["Fase 3", "Pilot med sikkerhetsnett (Mnd 6-12)", "Faktisk kvalitet på leveranse, kunde-engasjement, tracking av de minimis-verdier.", "Ett pilotprosjekt — test og dokumenter alt"],
+            ["Fase 4", "Skalering med åpne øyne (Mnd 12-24)", "Konkurranseklager fra kommersielle byråer, automatisering av register, oppstart NAV-spor.", "Skaler gradvis med erfaringen fra piloten"]
+          ]
+        }
+      },
+      {
+        heading: "2. Fase 1: Lavthengende frukt (Måned 1–3)",
+        text: "Aktiviteter som kan gjøres uten risiko for å bygge grunnlaget:",
+        table: {
+          headers: ["Aktivitet", "Hvorfor", "Hvem", "Kostnad / Avhengigheter"],
+          rows: [
+            ["Kartlegg eksisterende emner ved HiØ (ITD35014)", "Unngå å opprette nye emner unødvendig. Bruk eksisterende mal.", "Studenter, studieveileder", "Gratis / Ingen"],
+            ["Identifiser forkjempere ved HiØ (dekaner, programledere)", "Sikre intern akademisk forankring og mentorressurser.", "Studenter (initiativtakere)", "Gratis / Ingen"],
+            ["Kartlegg lokale næringsforeninger og Blender Collective", "Skaffe døråpnere til de første kommersielle kundene.", "Studenter", "Gratis / Ingen"],
+            ["Forbered 1-pagers konseptskisse", "Gi alle interessenter samme informasjonsgrunnlag uten forpliktelser.", "Studenter", "Gratis / Ingen"]
+          ]
+        }
+      },
+      {
+        heading: "3. Fase 2: Etablering og juridisk rydding (Måned 3–6)",
+        text: "Kritiske avklaringer som MÅ være på plass før første kundeprosjekt starter:",
+        table: {
+          headers: ["Aktivitet", "Rettslig formål", "Hvem", "Kostnad / Status"],
+          rows: [
+            ["Stift Syntax & Flow AS eid av en ideell stiftelse", "Kritisk for statsstøtte: Sikrer juridisk skille fra HiØ. AS gir ansvarsbegrensning.", "Stiftere", "30 000 kr (aksjekapital) + stiftelseskostnad"],
+            ["Utarbeid formell emnebeskrivelse for Bedriftspraksis", "Lånekassen krever reelle læringsmål, ikke bare arbeid. Avverger også arbeidstakerstatus.", "HiØ programansvarlige", "Gratis / Utkast opprettet"],
+            ["Søk forhåndsuttalelse fra Lånekassen for emne etter grad", "Sikre studentenes finansiering. Gjør-eller-dø-punkt.", "HiØ studieadmin", "Gratis / Avventer emnegodkjenning"],
+            ["Inngå skriftlig samarbeidsavtale HiØ og Syntax & Flow AS", "Kritisk for statsstøtte: HiØ prises til markedspris for mentortimer/leie av lokaler.", "HiØ-jurister, styret", "Juristbistand / Prioritert tiltak"],
+            ["Tegn yrkesansvarsforsikring for Syntax & Flow AS", "Beskytte studentene personlig mot erstatningskrav ved feil i levert kode.", "Styreleder", "5 000–15 000 kr/år"],
+            ["Utarbeid standard kundeavtale med fire lag beskyttelse", "Ansvarsfraskrivelse ('as-is'), begrensning på maks 10k, erklæring fra kunde.", "Jurist, studenter", "10 000–20 000 kr / Utkast opprettet"]
+          ]
+        }
+      },
+      {
+        heading: "4. Fase 3: Pilot med sikkerhetsnett (Måned 6–12)",
+        text: "Ett enkelt prosjekt med begrenset omfang for å verifisere modellen i praksis:",
+        table: {
+          headers: ["Aktivitet", "Hvorfor", "Hvem", "Kostnad / Avhengigheter"],
+          rows: [
+            ["Rekrutter 3–5 studenter til pilot-team", "Etablere første operative team (minst 1 IT, 1 design, 1 økonomi).", "Studentleder", "Gratis / Lånekassestøtte godkjent"],
+            ["Finn én pilotkunde (lokal mikrovirksomhet < 5 ansatte)", "Kontrollert risiko. Enkelt oppdrag (f.eks. landingpage eller logo).", "Studentleder, næringsforening", "Gratis / Ingen kommersiell konkurranse"],
+            ["Dokumenter ALT (timer, roller, mentortid, de minimis)", "Dokumentasjon er bevis i eventuell ESA- eller Lånekassen-tilsyn.", "Hele teamet", "Gratis / Løpende arbeid"],
+            ["Evaluer piloten og mål faktisk statsstøtteverdi", "Lærdom før skalering. Sikre at verdi holder seg under de minimis-grensen.", "Økonomistudent, mentor", "Gratis / Fullført prosjekt"]
+          ]
+        }
+      },
+      {
+        heading: "5. Fase 4: Skalering med åpne øyne (Måned 12–24)",
+        text: "Gradvis opptrapping etter at modellen er verifisert:",
+        table: {
+          headers: ["Aktivitet", "Hvorfor", "Hvem", "Kostnad / Avhengigheter"],
+          rows: [
+            ["Rekrutter 2–3 nye team parallelt", "Skalere kapasiteten gradvis (ikke hopp fra 1 til 10 kunder direkte).", "Studentleder", "Løpende / Erfaring fra pilot"],
+            ["Bygg og lanser referanseportalen (nettsiden)", "Sikre digital portefølje- og referansebase for studentene.", "IT- og designstudenter", "Gratis / GDPR-samtykke på plass"],
+            ["Forbered 'defense pack' mot konkurranseklager", "Når klagen fra kommersielle byråer kommer, må svaret ligge klart.", "Styret, studentleder", "Gratis / Dokumenter fra Fase 2 & 3"],
+            ["Start Spor 3 (NAV) forsiktig med én deltaker", "NAV-deltakere har andre regler. Start med én for å lære systemet.", "NAV, studentleder", "Gratis / Separat avtaleverk klart"]
+          ]
+        }
+      },
+      {
+        heading: "6. Beredskapsplan: Hva gjør dere hvis...",
+        text: "Forberedte rutiner for de mest sannsynlige krisescenarioene under etableringen:",
+        table: {
+          headers: ["Scenario", "Handling", "Ansvarlig"],
+          rows: [
+            ["<strong>HiØ trekker seg fra samarbeidet</strong>", "Avklar om det skyldes juridisk risiko (vis frem defense pack), ressursmangel (tilby redusert mentorordning) eller politikk (involver StOr/næringsliv). Eventuelt fortsett som ren studentforening.", "Styret"],
+            ["<strong>ESA-klage eller granskning</strong>", "Svar innen fristen (2-4 uker). Bruk defense pack (samarbeidsavtale med markedspris, de minimis-register). Ikke kommenter offentlig uten godkjenning.", "Styret + HiØ-jurister"],
+            ["<strong>Lånekassen endrer eller avslår regler</strong>", "Vurder å flytte emnet Bedriftspraksis inn i graden som valgfag siste semester (30 stp). Alternativt rekrutter studenter med rest-støttetid.", "Studieutvalget + S&F-ledelsen"],
+            ["<strong>GDPR-brudd / datalekkasje</strong>", "Stopp lekkasjen umiddelbart. Varsle DPO innen 24 timer, og Datatilsynet innen 72 timer. Informer berørte studenter/kunder.", "DPO / Daglig leder"]
+          ]
+        }
       }
     ]
   },
@@ -388,6 +694,28 @@ export const wikiData = [
           "<code>05-agent-forslag/</code>: Konkrete utkast og forslag generert av agenter.",
           "<code>06-Business-case/</code>: VPC-modeller og økonomisk/strategisk analyse.",
           "<code>07-Nettside/</code>: Kildekode for nettsider og apper."
+        ]
+      },
+      {
+        heading: "4. Maler og utkast i referanseseksjonen",
+        text: "Følgende maler og utkast er etablert i mappen <code>05-agent-forslag/Forslag/mal-og-utkast/</code> (Sortert etter prioritet: Kritiske (K), Viktige (V), Nyttige (N)):",
+        points: [
+          "<strong>K1: Emnebeskrivelse Bedriftspraksis:</strong> Formelt utkast til studieemne på 30 stp med læringsmål og vurderingskriterier for Lånekassen-godkjenning.",
+          "<strong>K2: Pedagogisk plan:</strong> Strukturering av veiledningstimer, refleksjonsnotater og tiltak for å unngå 'billig arbeidskraft'-fellen.",
+          "<strong>K3: Finansieringsplan:</strong> Oppstartskostnader, faste driftsutgifter og en oversikt over eksterne søknadskilder (SIVA, Innovasjon Norge).",
+          "<strong>K5: Samtykkeskjemaer porteføljepublisering:</strong> Skriftlige opt-in samtykker for studenter og kunder for å overholde GDPR.",
+          "<strong>V1: Stillingsbeskrivelser:</strong> Tydelige roller og oppgaver for daglig leder, fagansvarlige og studentkonsulenter.",
+          "<strong>V2: Møtestruktur og beslutningsprosesser:</strong> Oppsett for ukentlige driftsmøter og månedlige styremøter.",
+          "<strong>V4–V5: Onboarding og offboarding-prosesser:</strong> Detaljerte sjekklister for mottak og avslutning av deltakere og kunder.",
+          "<strong>V7: Kundeonboarding og forventningsavklaring:</strong> Mal for oppstartsmøte og avklaring av kundens tidsmessige forpliktelse (møteplikt).",
+          "<strong>V9: Rettighetsavklaring (kode & design):</strong> Retningslinjer for opphavsrett og immateriell eiendom ved prosjektslutt.",
+          "<strong>V10–V11: Søknadsprosess og seleksjonskriterier:</strong> Rutiner for rekruttering, intervjuspørsmål og sammensetning av tverrfaglige team.",
+          "<strong>V13: Forpliktelsesavtale student:</strong> Skriftlig avtale som bekrefter at deltakelsen er en studieaktivitet uten ansettelsesforhold.",
+          "<strong>V14–V16: Klagebehandling og konfliktløsning:</strong> Prosedyrer for håndtering av misfornøyde kunder eller interne konflikter i teamet.",
+          "<strong>V17–V18: KPI-er og evalueringsrutiner:</strong> Måleparametere for suksess (NPS, fullføringsgrad) og læringsutbytte.",
+          "<strong>V19–V20: Beredskapsplan:</strong> Rutiner ved uforutsette kriser som ESA-klager, datalekkasjer eller at HiØ trekker seg.",
+          "<strong>V21–V25: Kommunikasjonsstrategi og kriseplan:</strong> PR, pressekontakt og krisekommunikasjon.",
+          "<strong>V26–V28: Porteføljestrategi og anonymisering:</strong> Retningslinjer for anonymisering og publisering av studentenes arbeid på portalen."
         ]
       }
     ]
@@ -458,7 +786,7 @@ export const wikiData = [
         sannsynlighet: 4,
         konsekvens: 2,
         alvorlighet: "Høy",
-        tiltak: "Posisjonere oss strengt mot mikrovirksomheter og oppstartsbedrifter som uansett ikke har råd til kommersielle priser."
+        tiltak: "Posisjonere oss strengt mot mikrovirksomheter og oppstartsbedrifter som uansett ikke har råd to kommersielle priser."
       },
       {
         id: 6,
@@ -481,7 +809,7 @@ export const wikiData = [
         details: [
           {
             heading: "1.1 Kan studenter motta Lånekassestøtte for «Bedriftspraksis» etter fullført grad?",
-            text: "<strong>Utgangspunkt:</strong> Lånekassen yter støtte to godkjente utdanninger ved godkjente læresteder, jf. lov om utdanningsstøtte § 4 med tilhørende forskrift. Det er ikke noe vilkår i loven at emnet må tas <em>før</em> graden er fullført. Hovedregelen er at støtte gis til ordinære studieløp — grunn-, etter- og videreutdanning.<br/><br/><strong>Spor 1 (30 stp/semester fulltid):</strong> Etter Lånekassens regler må en student normalt oppnå minst 30 studiepoeng per semester for å beholde retten til støtte. Dersom «Bedriftspraksis» er et godkjent emne ved HiØ med 30 stp per semester, vil Spor 1 i utgangspunktet oppfylle dette kravet. Det avgjørende er at HiØ oppretter emnet og at det <strong>formelt inngår i HiØs emnetilbud</strong> — ikke at det er en del av en bestemt grad.<br/><br/><strong>Utfordring:</strong> Lånekassen krever at støttemottakeren er en <strong>«reell student»</strong> og har <strong>framdrift i utdanningen</strong>. Dersom studenten allerede har fullført en grad, og det nye emnet ikke leder frem til en ny grad, kan Lånekassen stille spørsmål ved emnets reelle utdanningsformål. Særlig risiko knytter seg til:",
+            text: "<strong>Utgangspunkt:</strong> Lånekassen yter støtte til godkjente utdanninger ved godkjente læresteder, jf. lov om utdanningsstøtte § 4 med tilhørende forskrift. Det er ikke noe vilkår i loven at emnet må tas <em>før</em> graden er fullført. Hovedregelen er at støtte gis til ordinære studieløp — grunn-, etter- og videreutdanning.<br/><br/><strong>Spor 1 (30 stp/semester fulltid):</strong> Etter Lånekassens regler må en student normalt oppnå minst 30 studiepoeng per semester for å beholde retten to støtte. Dersom «Bedriftspraksis» is et godkjent emne ved HiØ med 30 stp per semester, vil Spor 1 i utgangspunktet oppfylle dette kravet. Det avgjørende er at HiØ oppretter emnet og at det <strong>formelt inngår i HiØs emnetilbud</strong> — ikke at det er en del av en bestemt grad.<br/><br/><strong>Utfordring:</strong> Lånekassen krever at støttemottakeren er en <strong>«reell student»</strong> og har <strong>framdrift i utdanningen</strong>. Dersom studenten allerede har fullført en grad, og det nye emnet ikke leder frem til en ny grad, kan Lånekassen stille spørsmål ved emnets reelle utdanningsformål. Særlig risiko knytter seg til:",
             points: [
               "<strong>Fordypningskravet:</strong> Lånekassen kan kreve at emnet må være en naturlig faglig fordypning eller et strukturert påbygningsstudium.",
               "<strong>Samlet støttetid:</strong> Studenter som allerede har brukt opp sin ordinære støtteperiode (f.eks. 3 år bachelor + 2 år master = 5 år), vil normalt ikke få mer støtte med mindre de tar en ny grad eller et strukturert etter-/videreutdanningsløp."
@@ -494,38 +822,19 @@ export const wikiData = [
           {
             heading: "1.2 Konkrete krav for Lånekassens godkjenning",
             points: [
-              "<strong>HiØ must opprette emnet formelt:</strong> Godkjent av høgskolestyret og registrert i FS (felles studentsystem) og DBH (Database for statistikk om høgre utdanning).",
+              "<strong>HiØ må opprette emnet formelt:</strong> Godkjent av høgskolestyret og registrert i FS (felles studentsystem) og DBH (Database for statistikk om høgre utdanning).",
               "<strong>Faglig begrunnelse og læringsmål:</strong> Emnet kan ikke bare være arbeidspraksis uten læringsmål. Det må ha formelle læringsutbyttebeskrivelser (kunnskap, ferdigheter, generell kompetanse), vurderingsformer (mappe, rapport, prosjektevaluering) og faglig veiledning/mentoring.",
               "<strong>Reelle studiepoeng:</strong> 30 stp skal tilsvare 800–900 timers arbeid (27 timer per stp). Dersom HiØ tildeler 30 stp for arbeid som i realiteten er fulltidsarbeid for en ekstern bedrift uten akademiske komponenter, kan Lånekassen og NOKUT stille spørsmål ved kvaliteten og realiteten i emnet.",
-              "<strong>Søknad til Lånekassen:</strong> Lærestedet må søke om å få emnet godkjent for støtte. Godkjenningen er ikke automatisk."
-            ]
-          },
-          {
-            heading: "1.3 Risikovurdering",
-            table: {
-              headers: ["Risiko", "Sannsynlighet", "Konsekvens"],
-              rows: [
-                ["Lånekassen avslår støtte for Spor 1 (fullført grad)", "Middels", "Kritisk — modellen faller"],
-                ["Lånekassen avslår støtte for Spor 2 (10 stp)", "Høy", "Spor 2 må redesignes"],
-                ["Lånekassen krever tilbakebetaling etter tilsyn", "Lav til middels", "Alvorlig for den enkelte student"]
-              ]
-            }
-          },
-          {
-            heading: "1.4 Anbefaling",
-            points: [
-              "Innhent en <strong>forhåndsuttalelse fra Lånekassen</strong> før oppstart.",
-              "Vurder å gjøre Spor 2 til 15 eller 30 stp for å sikre støtte.",
-              "Sikre at emnebeskrivelsen har tydelige faglige læringsmål, ikke bare «arbeidspraksis»."
+              "<strong>Søknad to Lånekassen:</strong> Lærestedet må søke om å få emnet godkjent for støtte. Godkjenningen er ikke automatisk."
             ]
           }
         ]
       },
       {
-        title: "2. NAV (Samlokalisering & Rettsgrunnlag)",
-        text: "Det er fullt lovlig at NAV-deltakere samarbeider med studenter i samme team. Utfordringen er at de har ulike rettsgrunnlag og rapporteringsplikter. NAV-deltakere er underlagt NAVs aktivitetsplikt og helseopplysninger må beskyttes strengt pga. taushetsplikt.",
+        title: "2. NAV (Spor 3 og Samspill)",
+        text: "NAVs tiltaksordninger kan integreres i Syntax & Flow. Selskapet bør opptre som vertsvirksomhet (praksisplass) framfor tiltaksarrangør det første året for å redusere administrativ byrde og rapporteringskrav.",
         sources: [
-          { name: "Lov om arbeidsmarkedstjenester § 12", url: "https://lovdata.no/lov/2004-12-10-76" },
+          { name: "Arbeidsmarkedsloven § 12", url: "https://lovdata.no/lov/2004-12-10-76" },
           { name: "Forskrift om arbeidsrettede tiltak", url: "https://lovdata.no/forskrift/2015-12-11-1598" }
         ],
         details: [
@@ -535,286 +844,135 @@ export const wikiData = [
           },
           {
             heading: "2.2 Sentrale rettslige hensyn",
-            text: "<strong>Ulike rettsgrunnlag:</strong><br/>- Lånekassen-studenter er underlagt <strong>utdanningslovgivningen</strong> (studiekrav, progresjon, emnebeskrivelse)<br/>- NAV-deltakere er underlagt <strong>NAVs regelverk</strong> (tiltaksplan, oppfølgingsvedtak, aktivitetsplikt)<br/><br/><strong>Krav til NAV-tiltak:</strong> Arbeidstrening etter arbeidsmarkedsloven § 12 og forskrift om arbeidsrettede tiltak krever at tiltaket er <strong>meningsfullt</strong> og <strong>kvalifiserende</strong>. Deltakeren må ha en kontaktperson som følger opp. Dersom Syntax & Flow skal være en <strong>tiltaksarrangør</strong> (enhet som gjennomfører tiltak på vegne av NAV), må organisasjonen godkjennes av NAV og oppfylle krav til rapportering, kvalitetssikring og taushetsplikt.<br/><br/><strong>Tiltaksarrangør eller vertsvirksomhet?</strong><br/>- Hvis Syntax & Flow kun stiller med praksisplass, er NAV ansvarlig for tiltaket, og Syntax & Flow er vertsvirksomhet.<br/>- Hvis Syntax & Flow har detaljert styring og oppfølging, kan de anses som tiltaksarrangør og må oppfylle strengere krav.<br/><br/><strong>Særlig om lønnstilskudd (Spor 3):</strong> Hvis NAV crisis lønnstilskudd til Syntax & Flow for å ansette deltakeren, blir Syntax & Flow <strong>arbeidsgiver</strong> med fulke arbeidsgiverforpliktelser (arbeidsavtale, HMS, pensjon, sykepenger)."
+            text: "<strong>Ulike rettsgrunnlag:</strong> Lånekassen-studenter er underlagt utdanningslovgivningen (studiekrav, progresjon, emnebeskrivelse), mens NAV-deltakere er underlagt NAVs regelverk (tiltaksplan, oppfølgingsvedtak, aktivitetsplikt).<br/><br/><strong>Krav til NAV-tiltak:</strong> Arbeidstrening etter arbeidsmarkedsloven § 12 og forskrift om arbeidsrettede tiltak krever at tiltaket er meningsfullt og kvalifiserende. Deltakeren må ha en kontaktperson som følger opp.<br/><br/><strong>Tiltaksarrangør eller vertsvirksomhet?</strong> Hvis Syntax & Flow kun stiller med praksisplass, er NAV ansvarlig for tiltaket, og Syntax & Flow er vertsvirksomhet. Hvis Syntax & Flow har detaljert styring og oppfølging, kan de anses som tiltaksarrangør og må oppfylle strengere krav."
           },
           {
             heading: "2.3 Risikoer ved samspill mellom spor",
-            table: {
-              headers: ["Problem", "Vurdering"],
-              rows: [
-                ["Ulik finansiering skaper ulik status", "Lånekassen-studenter får stipend/lån (ikke lønn), NAV-deltakere får tiltakspenger. Kan skape forskjellsbehandling i praksis."],
-                ["Arbeidstid", "Lånekassen krever progresjon mot 30 stp, NAV krever aktivitetsplan. Ulik rapporteringsplikt."],
-                ["Taushetsplikt", "NAV-deltakeres helseopplysninger er underlagt forvaltningsloven § 13 og helsepersonelloven, mens studentopplysninger er under universitets- og høyskoleloven."]
-              ]
-            }
-          },
-          {
-            heading: "2.4 Anbefaling",
             points: [
-              "Inngå skriftlig <strong>samarbeidsavtale med NAV</strong> før Spor 3 startes.",
-              "Vurder å kun benytte tiltaket Arbeidstrening (tidligere «praksisplass») fremfor lønnstilskudd første år, for å unngå arbeidsgiveransvar.",
-              "Ha <strong>adskilte avtaleverk</strong> for Lånekassen- og NAV-deltakere."
+              "<strong>Ulik finansiering:</strong> Lånekassen-studenter får stipend/lån (ikke lønn), NAV-deltakere får tiltakspenger. Kan skape opplevelse av forskjellsbehandling.",
+              "<strong>Arbeidstid:</strong> Lånekassen krever progresjon mot studiepoeng, NAV krever aktivitetsplan. Dette betyr ulik rapporteringsplikt.",
+              "<strong>Taushetsplikt:</strong> NAV-deltakeres helseopplysninger er underlagt forvaltningsloven § 13 og helsepersonelloven, mens studentopplysninger følger universitets- og høyskoleloven."
             ]
           }
         ]
       },
       {
-        title: "3. Konkurranseloven & Markedsføring",
-        text: "Det å levere gratis tjenester er ikke forbudt i seg selv. Men urettmessig prisdumping støttet av offentlige høyskolemidler kan utløse klager. Derfor er det kritisk å kun rette markedsføringen mot mikrovirksomheter og gründere som ikke har kommersiell betalingsevne.",
+        title: "3. Konkurranseloven & Dumping",
+        text: "Det er lovlig å tilby gratis tjenester under opplæringsformål. Lokale byråer vil sannsynligvis klage, og forebygging skjer via transparent markedsføring og bevisst posisjonering mot mikrobedrifter.",
         sources: [
-          { name: "Konkurranseloven", url: "https://lovdata.no/lov/2004-03-05-12" },
-          { name: "Markedsføringsloven § 6", url: "https://lovdata.no/lov/2009-01-09-2" }
+          { name: "Konkurranseloven § 11 (Misbruk av dom. stilling)", url: "https://lovdata.no/lov/2004-03-05-12" },
+          { name: "Markedsføringsloven § 6 (God forretningsskikk)", url: "https://lovdata.no/lov/2009-01-09-2" }
         ],
         details: [
           {
             heading: "3.1 Er det lovlig å tilby gratis konsulenttjenester til næringslivet?",
-            text: "Det er i utgangspunktet <strong>ikke ulovlig</strong> å tilby gratis tjenester. Verken konkurranseloven eller markedsføringsloven forbyr prissetting til kr 0. Problemstillingen oppstår først når gratistjenester fører til <strong>konkurransevridning</strong> i strid med EØS-avtalens statsstøtteregler (se punkt 4) eller markedsføringslovens generalklausul.<br/><br/><strong>Markedsføringsloven § 6 (god forretningsskikk):</strong> Gratistjenester kan være i strid med god forretningsskikk dersom de <em>fremstilles på en villedende måte</em> eller utnytter kundenes manglende forståelse. Dersom Syntax & Flow tydelig kommuniserer at tjenesten er gratis, at kvaliteten ikke er garantert, og at hensikten er opplæring, er dette neppe problematisk."
+            text: "Det er i utgangspunktet <strong>ikke ulovlig</strong> å tilby gratis tjenester. Verken konkurranseloven eller markedsføringsloven forbyr prissetting til kr 0. Problemstillingen oppstår først når gratistjenester fører til <strong>konkurransevridning</strong> i strid med EØS-avtalens statsstøtteregler, eller markedsføringslovens generalklausul om god forretningsskikk (§ 6)."
           },
           {
             heading: "3.2 Kan etablerte konsulentbyråer klage?",
-            text: "<strong>Ja, det er sannsynlig at etablerte aktører vil klage.</strong> Flere mulige grunnlag:<br/><br/>1. <strong>Urimelig konkurranse (markedsføringsloven § 6):</strong> Dersom gratistjenestene fremstilles som likeverdige med kommersielle tjenester uten tilstrekkelige forbehold.<br/>2. <strong>Statsstøtte (EØS-avtalen art. 61):</strong> Dersom HiØs ressurser (lokaler, mentorer, merkevare) utgjør ulovlig statsstøtte som gir Syntax & Flow en økonomisk fordel.<br/>3. <strong>Dumping / underprising:</strong> Det finnes ikke et generelt forbud mot å prise under kost i norsk rett, men EØS-reglene gjelder om vi driver virksomhet i markedet med offentlig støtte.<br/><br/><strong>Hvem kan klage:</strong> Lokale IT-konsulenthus, designbyråer, bransjeorganisasjoner (f.eks. Abelia) eller enkeltpersoner.<br/><strong>Hvor klagen går:</strong> Konkurransetilsynet, ESA (statsstøtte), Forbrukertilsynet eller lokalpressen.<br/><strong>Risiko for klage: Høy.</strong>"
-          },
-          {
-            heading: "3.3 Anbefaling",
-            points: [
-              "Vær <strong>transparent</strong> i all markedsføring: «Vi er studenter under opplæring — ingen garanti for leveransen».",
-              "<strong>Posisjoner dere riktig:</strong> Kommuniser at dere kun retter dere mot mikrovirksomheter og gründere som ikke har råd til kommersielle byråer.",
-              "Unngå å konkurrere direkte mot etablerte aktører.",
-              "Hold en liste over avviste oppdrag for å dokumentere at dere ikke tar oppdrag som kommersielle aktører normalt ville tatt."
-            ]
+            text: "<strong>Ja, det er sannsynlig at etablerte aktører vil klage.</strong> Grunner:<br/>1. Urimelig konkurranse (markedsføringsloven § 6): Dersom gratistjenestene fremstilles som likeverdige med kommersielle tjenester uten tilstrekkelige forbehold.<br/>2. Statsstøtte (EØS-avtalen art. 61): Dersom HiØs ressurser (lokaler, mentorer, merkevare) utgjør ulovlig statsstøtte som gir en økonomisk fordel.<br/><br/><strong>Hvem som kan klage:</strong> Lokale IT-konsulenthus og designbyråer som mister oppdrag til en gratis aktør, samt bransjeorganisasjoner (f.eks. Abelia, Tekna). Klagen går til Konkurransetilsynet, ESA (EFTAs overvåkingsorgan) eller Forbrukertilsynet."
           }
         ]
       },
       {
-        title: "4. Statsstøtte & EØS (HiØs subsidiering)",
-        text: "Dette regnes som den største risikoen. HiØs bidrag i form av gratis kontorer, mentorforelesere og skolenavn kan regnes som indirekte statsstøtte til bedriftene. Løsningen er å benytte reglene for 'de minimis-støtte' og skille stiftelsen ut som en egen juridisk enhet.",
+        title: "4. Statsstøtte & EØS-regler (Art 61)",
+        text: "Dette er den mest kritiske rettslige barrieren. Offentlige ressurser gitt til Syntax & Flow (forelesertid, campuslokaler) må reguleres strengt for å unngå sanksjoner fra ESA og tilbakebetalingskrav for bedriftene.",
         sources: [
-          { name: "EØS-avtalen art. 61–64", url: "https://lovdata.no/traktat/1992-05-02-1/art/61" }
+          { name: "EØS-avtalen Artikkel 61(1)", url: "https://lovdata.no/traktat/1992-05-02-1" }
         ],
         details: [
           {
-            heading: "4.1 Hvorfor statsstøtte er verre enn de andre risikoene",
-            text: "Statsstøtte/EØS kan føre til <strong>ubetinget tilbakebetalingsplikt (recovery)</strong> med renter for næringslivskundene, omdømmetap og strukturelle pålegg for HiØ. Det kan ikke fikses eller reverseres i ettertid.",
-            table: {
-              headers: ["Risikoområde", "Konsekvens ved brudd", "Hvem rammes?", "Kan det fikses?"],
-              rows: [
-                ["Lånekassen", "Mister støtte, emnet legges ned", "Studentene, prosjektet", "Ja — ny emnebeskrivelse"],
-                ["Arbeidsmiljøloven", "Lønnskrav, feriepenger", "Studentene, organisasjonen", "Ja — etterbetaling"],
-                ["Statsstøtte/EØS", "Tilbakebetaling med renter, omdømmetap", "HiØ, staten, næringslivskundene", "Nei — må tilbakebetales"]
-              ]
-            }
+            heading: "4.1 Hvorfor statsstøtte er det mest alvorlige problemet i modellen",
+            text: "Dersom ESA (EFTAs overvåkingsorgan) konkluderer med at det foreligger ulovlig statsstøtte, er hovedregelen at <strong>støttemottakerne (næringslivskundene) må betale tilbake hele fordelen med renter</strong>. Dette kan ikke reverseres eller dispenseres fra i ettertid. Kundene vil da kunne saksøke Syntax & Flow og/eller HiØ for tapet. Ulovlig statsstøtte har dessuten 10 års foreldelsesfrist."
           },
           {
             heading: "4.2 Konkret analyse av EØS-avtalen art. 61(1)",
-            text: "<strong>Vilkår 1: Statlige midler:</strong> HiØs bidrag (mentorer, lokaler, merkevare) har en anslått årlig verdi på 370 000–770 000 kr. Siden dette står under offentlig kontroll, er vilkåret oppfylt.<br/><strong>Vilkår 2: Økonomisk fordel:</strong> Kundene mottar gratis tjenester de ellers måtte betalt markedskostnad for. (Unntatt de minimis-støtte under 300 000 euro over 3 år).<br/><strong>Vilkår 3: Selektivitet:</strong> Støtten er geografisk og skjønnsmessig avgrenset.<br/><strong>Vilkår 4: Konkurransevridning:</strong> Terskelen er ekstremt lav; tjenestene kan påvirke samhandelen i EØS-området."
-          },
-          {
-            heading: "4.3 Tre scenarier",
             points: [
-              "<strong>Scenario A (Best case):</strong> Modellen faller inn under 'de minimis'-unntaket og drives som separat enhet (AS/Stiftelse).",
-              "<strong>Scenario B (Sannsynlig):</strong> En konkurrent klager, ESA gransker, og modellen må justeres (skille ut enhet, ta betalt).",
-              "<strong>Scenario C (Worst case):</strong> Pålegg om tilbakebetaling (recovery) fra kundene med renter, fulgt av erstatningssøksmål."
-            ]
-          },
-          {
-            heading: "4.4 Praktiske tiltak for å redusere risikoen",
-            points: [
-              "Etabler juridisk skille mellom HiØ og Syntax & Flow (AS eid av ideell stiftelse).",
-              "Inngå skriftlig samarbeidsavtale med markedspris for mentortimer og lokaler.",
-              "Før nøyaktig støtteregister per kunde og hold alle under de minimis-terskelen.",
-              "Søk forhåndsavklaring fra Kunnskapsdepartementet."
-            ]
-          },
-          {
-            heading: "4.5 Tidslinje og prosess",
-            table: {
-              headers: ["Fase", "Risiko", "Tiltak"],
-              rows: [
-                ["Forberedelse (nå → 3 mnd)", "Lav", "Inngå avtale med markedspris — kritisk vindu"],
-                ["Oppstart (3 → 6 mnd)", "Moderat", "Fakturer markedspris, dokumenter alt"],
-                ["Drift (6 → 18 mnd)", "Høy", "Overvåk de minimis-terskelen"],
-                ["Etablert (18+ mnd)", "Moderat til høy", "Vurder søknad til ESA om forenelighet"]
-              ]
-            }
-          }
-        ]
-      },
-      {
-        title: "5. Arbeidsmiljøloven (Klassifisering)",
-        text: "Det er fare for at studenter blir ansett som reelle arbeidstakere dersom Syntax & Flow instruerer dem detaljert, krever stempling av timer og kontrollerer arbeidet. Det må fokuseres på læringsutbytte, veiledning fremfor instruksjon, og karaktervurdering.",
-        sources: [
-          { name: "Arbeidsmiljøloven § 1-8", url: "https://lovdata.no/lov/2005-06-17-62" },
-          { name: "Universitets- og høyskoleloven", url: "https://lovdata.no/lov/2005-04-01-15" }
-        ],
-        details: [
-          {
-            heading: "5.1 Klassifisering av studentene",
-            text: "Feilklassifisering kan føre til krav om lønn, feriepenger, OTP (tjenestepensjon) og sykepenger. Vi må vurdere tre mulige klassifiseringer:<br/><br/><strong>Alternativ A: Student (utdanning):</strong> Regulert av emnebeskrivelse med læringsmål. Mottar Lånekassestøtte, ikke lønn. Normalt unntatt aml. jf. Høyesterett (Rt. 2013 s. 1024).<br/><strong>Alternativ B: Arbeidstaker:</strong> Utfører arbeid i virksomhetens tjeneste mot lønn/vederlag. Fullt aml-ansvar.<br/><strong>Alternativ C: Frivillig:</strong> Utføres uten vederlag utenfor næringsvirksomhet (dårlig egnet for denne modellen).",
-            table: {
-              headers: ["Faktor", "Student", "Arbeidstaker", "Frivillig"],
-              rows: [
-                ["Økonomisk kompensasjon", "Ja (Lånekassen)", "Ja (lønn)", "Nei"],
-                ["Møteplikt", "Via emnet", "Ja", "Nei"],
-                ["Detaljstyrt arbeid", "Delvis / veiledning", "Ja", "Nei"],
-                ["Driver næringsvirksomhet", "Nei", "Ja", "Nei"]
-              ]
-            }
-          },
-          {
-            heading: "5.2 Rettigheter studentene faktisk har krav på",
-            points: [
-              "Retten til et forsvarlig læringsmiljø etter universitets- og høyskoleloven.",
-              "Velferdstjenester via studentsamskipnaden (SiØ).",
-              "Likestillings- og diskrimineringsloven gjelder uansett status."
-            ]
-          },
-          {
-            heading: "5.3 Anbefaling for å unngå arbeidstakerklassifisering",
-            points: [
-              "Ikke ha faste arbeidstider, men <strong>fleksible tidsrammer</strong>.",
-              "Ikke gi instrukser om <em>hvordan</em> arbeidet skal utføres, kun faglig veiledning.",
-              "Hold det som et formelt emne med læringsmål og <strong>karaktervurdering</strong>.",
-              "Ingen direkte utbetalinger fra Syntax & Flow — all finansiering går via Lånekassen/NAV.",
-              "Tegn ansvars-/ulykkesforsikring og inngå en skriftlig avtale med studenten om at det er et studieemne."
+              "<strong>Statlige midler:</strong> HiØs forelesere (mentortimer) og kontorlokaler er finansiert av staten og står under offentlig kontroll. Årlig verdi er anslått til 370 000 – 770 000 kr.",
+              "<strong>Økonomisk fordel:</strong> Næringslivskundene mottar gratis kvalitetssikrede konsulenttjenester (verdi 50k - 300k per oppdrag) de ikke ville fått på markedsvilkår.",
+              "<strong>Selektivitet:</strong> Fordelen er selektiv fordi den kun tilbys et begrenset utvalg mikrovirksomheter i Østfold etter skjønnsmessig utvelgelse.",
+              "<strong>Konkurransevridning:</strong> Det at en bedrift mottar gratis tjenester frigjør kapital og vrir konkurransen til fordel for mottakeren."
             ]
           }
         ]
       },
       {
-        title: "6. Ansvarsforhold (Skader & Kontrakter)",
-        text: "En studentfeil er ikke det samme som en profesjonell feil i rettslig forstand, men organisasjonen kan holdes ansvarlig for feil in kildekode. Tydelige ansvarsfraskrivelser i kundenes kontrakter ('leveres as-is' uten garanti) er påkrevd, og det bør tegnes en ansvarsforsikring.",
+        title: "5. Arbeidsrett & Klassifisering",
+        text: "For å unngå at studentene omklassifiseres til arbeidstakere (med krav om lønn, feriepenger og pensjon), må deltakelsen være tydelig forankret som en akademisk studieaktivitet uten instruksjonsmyndighet.",
         sources: [
-          { name: "Skadeserstatningsloven § 1-1 og § 2-1", url: "https://lovdata.no/lov/1969-06-13-26" },
-          { name: "Avtaleloven § 36", url: "https://lovdata.no/lov/1918-05-31-4" }
+          { name: "Arbeidsmiljøloven § 1-8 (Arbeidstakerbegrepet)", url: "https://lovdata.no/lov/2005-06-17-62" },
+          { name: "Høyesterettspraksis (Rt. 2013 s. 1024)", url: "https://lovdata.no/avgjorelse/hr-2013-1255-a" }
         ],
         details: [
           {
-            heading: "6.1 Hvem er ansvarlig for skade forårsaket av leveranser?",
-            points: [
-              "<strong>Studentene personlig:</strong> Kun ansvarlige ved grov uaktsomhet (f.eks. bevisst ignorere personvern/sikkerhet). En vanlig kodefeil utløser normalt ikke erstatningsansvar.",
-              "<strong>Syntax & Flow (organisasjonen):</strong> Kan holdes ansvarlig på kontraktsrettslig grunnlag.",
-              "<strong>Høgskolen i Østfold (HiØ):</strong> Kan bli medansvarlig hvis mentorer formelt har godkjent den skadevoldende leveransen.",
-              "<strong>Kunden:</strong> Medvirkningsansvar dersom de har gitt feil opplysninger eller ikke fulgt opp testing."
-            ]
+            heading: "5.1 Risikobildet for arbeidstakerstatus",
+            text: "Dersom studentene utfører ordinært arbeid for eksterne kunder og er underlagt tett styring og kontroll, kan de etter arbeidsmiljøloven § 1-8 anses som arbeidstakere. Kontrakter som kaller det 'praksis' eller 'frivillighet' settes til side av domstolene dersom realiteten er et ansettelsesforhold."
           },
           {
-            heading: "6.2 Kan ansvarsfraskrivelser stå seg i retten?",
-            text: "Avtaleloven § 36 (lemping) kan sette til side urimelige vilkår. Men en ansvarsfraskrivelse står sterkt her fordi:<br/>- Tjenesten ytes gratis (pro bono).<br/>- Kunden er en næringsdrivende virksomhet, ikke forbruker.<br/>- Kunden er informert om at arbeidet utføres av studenter under opplæring.<br/><br/><em>Fraskrivelsen beskytter imidlertid aldri mot grov uaktsomhet, personskade eller GDPR-brudd.</em>"
-          },
-          {
-            heading: "6.3 Konkrete tiltak",
-            points: [
-              "Bruk en standardavtale som definerer tjenesten som pro bono, levert «as-is», med et lavt erstatningstak (f.eks. maks 10 000 kr).",
-              "Tegn en yrkesansvarsforsikring for stiftelsen/AS-et (anslått kostnad: 5 000–15 000 kr/år).",
-              "Sørg for at HiØs rammeavtale tydelig fraskriver HiØ ansvar for studentenes leveranser."
-            ]
+            heading: "5.2 Hvorfor studenter i praksis normalt ikke er arbeidstakere",
+            text: "Høyesterett har lagt vekt på at praksis som ledd i en utdanning har et <strong>pedagogisk formål</strong> framfor et produksjonsformål. For at dette skal holde, må emnet ha formelle læringsmål, pensum, vurderingsformer og mentorveiledning (ikke sjefsinstruksjon)."
           }
         ]
       },
       {
-        title: "7. Skatt & MVA (Ideell drift)",
-        text: "Så lenge det ikke er omsetning eller profittmotiv, er Syntax & Flow fritatt for MVA og skatt etter skatteloven § 2-30. Det må sikres at ikke kundenes tidsinvestering tolkes som et 'bytte av ytelser' som utløser skatteplikt.",
+        title: "6. MVA & Skatterett",
+        text: "Selskapsformen må velges for å unngå skatteplikt. En ideell stiftelse som eier et AS som ikke deler ut utbytte, gir det beste utgangspunktet for skattefritak.",
         sources: [
-          { name: "Merverdiavgiftsloven", url: "https://lovdata.no/lov/2009-06-19-58" },
-          { name: "Skatteloven § 2-30", url: "https://lovdata.no/lov/1999-03-26-14" }
+          { name: "Skatteloven § 2-30 (Skattefrie institusjoner)", url: "https://lovdata.no/lov/1999-03-26-14" },
+          { name: "Merverdiavgiftsloven § 3-1 (Avgiftsplikt)", url: "https://lovdata.no/lov/2009-06-19-58" }
         ],
         details: [
           {
-            heading: "7.1 Registrering i Brønnøysund",
-            text: "Plikt til registrering i Foretaksregisteret gjelder foretak som driver <em>næringsvirksomhet</em>. Siden Syntax & Flow tilbyr tjenester gratis og uten profittmotiv, er det ikke næringsvirksomhet i skatterettslig forstand. Vi anbefaler likevel registrering (som forening/AS) for å oppnå legitimitet og juridisk status."
+            heading: "6.1 Skatteplikt for ideelle organisasjoner",
+            text: "En forening eller stiftelse som har et allmennyttig formål (som utdanning og arbeidserfaring) er fritatt for skatt på formue og inntekt etter skatteloven § 2-30. Dersom virksomheten driver økonomisk aktivitet som går utover formålet, kan denne delen bli skattepliktig."
           },
           {
-            heading: "7.2 MVA-plikt",
-            text: "MVA-plikt inntrer når omsetningen overstiger 50 000 kr på 12 måneder. Siden Syntax & Flow tar kr 0 for sine tjenester, oppstår ingen MVA-plikt. <strong>Obs:</strong> Det må sikres at ikke kundenes tidsinvestering tolkes som et 'bytte av ytelser' (naturalytelser) av skattemyndighetene."
-          },
-          {
-            heading: "7.3 Skatteplikt for organisasjonen",
-            text: "Foreninger og stiftelser som ikke har erverv til formål er skattefrie etter skatteloven § 2-30 og § 2-32. Overskudd kan ikke tilfalle medlemmene. Syntax & Flow bør formelt søke om status som skattefri organisasjon."
+            heading: "6.2 MVA-plikt ved gratistjenester",
+            text: "MVA utløses ved omsetning av varer og tjenester mot vederlag. Siden Syntax & Flow leverer gratis til bedriftene (kr 0), foreligger det ikke MVA-plikt for oppdragene. Dersom det innføres rabatterte priser (f.eks. symbolsk betaling), må det vurderes om omsetningen overstiger grensen på 50 000 kr, som utløser registreringsplikt."
           }
         ]
       },
       {
-        title: "8. Anbefalt Organisasjonsform",
-        text: "Det anbefales å opprette **Syntax & Flow AS** som eies 100% av en ideell stiftelse (**Syntax & Flow Stiftelse**). AS-et sikrer begrenset ansvar for drift, mens stiftelsen sikrer at alt eventuelt overskudd går tilbake til allmennyttige formål.",
+        title: "7. Selskapsrett & Organisering",
+        text: "Det juridiske ansvaret må begrenses slik at studentene ikke risikerer personlig ansvar. Aksjeselskap (AS) eid av en stiftelse er den sikreste organiseringen.",
         sources: [
-          { name: "Stiftelsesloven", url: "https://lovdata.no/lov/2001-06-15-59" },
-          { name: "Aksjeloven", url: "https://lovdata.no/lov/1997-06-13-44" }
+          { name: "Aksjeloven § 1-1 (Ansvarsbegrensning)", url: "https://lovdata.no/lov/1997-06-13-44" },
+          { name: "Stiftelsesloven § 2 (Opprettelse)", url: "https://lovdata.no/lov/2001-06-15-59" }
         ],
         details: [
           {
-            heading: "8.1 Sammenligning av organisasjonsformer",
-            table: {
-              headers: ["Form", "Ansvarsgrense", "Etableringspris", "Skatteplikt", "Egnethet"],
-              rows: [
-                ["Forening", "Delvis / uklart", "Lav (~2 000 kr)", "Fritatt hvis ideell", "Middels"],
-                ["Stiftelse", "Delvis", "Lav", "Fritatt hvis ideell", "Best for eierskap"],
-                ["Aksjeselskap (AS)", "Full", "30 000 kr (kapital)", "Full (22 %)", "Best for drift"],
-                ["ANS / DA", "Ingen (personlig)", "Lav", "Full", "Ikke egnet"]
-              ]
-            }
-          },
-          {
-            heading: "8.2 Hvorfor AS eid av ideell stiftelse er best",
-            points: [
-              "<strong>AS-et</strong> håndterer den operative driften og beskytter deltakere/styremedlemmer med full ansvarsbegrensning.",
-              "<strong>Stiftelsen</strong> (som eier AS-et) sikrer det ideelle formålet: Eventuelt overskudd går uavkortet tilbake til studenttiltak, og stiftelsen kan motta gaver og støtte skattefritt."
-            ]
-          },
-          {
-            heading: "8.3 Former som IKKE bør velges",
-            table: {
-              headers: ["Form", "Begrunnelse"],
-              rows: [
-                ["ANS / DA", "Deltakerne hefter personlig. Uakseptabel risiko for studenter."],
-                ["Enkeltpersonforetak", "Ikke aktuelt for et felles prosjekt."],
-                ["Ren forening", "Foreningsretten er ulovfestet; kan i verste fall utløse personlig styreansvar."]
-              ]
-            }
-          },
-          {
-            heading: "8.4 Konkret anbefalt løsning",
-            text: "Stift et <strong>AS</strong> med aksjekapital på 30 000 kr. La HiØs studentsamskipnad (SiØ) eller en ideell stiftelse eie aksjene. Dette gir full ansvarsbegrensning for studentene, forutsigbare rammer, og mulighet for å tegne yrkesansvarsforsikring."
+            heading: "7.1 Aksjeselskap vs. Forening",
+            text: "I en forening kan medlemmene under visse omstendigheter holdes personlig ansvarlige for foreningens forpliktelser dersom driften er uforsvarlig. Et AS gir full ansvarsbegrensning til aksjekapitalen (30 000 kr). For å sikre det ideelle formålet, bør aksjene eies av en ideell stiftelse."
           }
         ]
       },
       {
-        title: "9. Personvern & GDPR (DPIA)",
-        text: "Særlig for NAV-deltakere kan helseopplysninger forekomme. Det må gjennomføres en konsekvensutredning for personvern (DPIA) før portalen opprettes, og studenter må gi samtykke før prosjektene deres publiseres offentlig.",
+        title: "8. Avtalerett & SLA",
+        text: "Samarbeidsavtalene må inneholde absolutte ansvarsfraskrivelser ('as-is') og et lavt erstatningstak for å beskytte stiftelsen og studentene mot økonomiske krav.",
         sources: [
-          { name: "Personopplysningsloven (GDPR)", url: "https://lovdata.no/lov/2018-06-15-38" }
+          { name: "Avtalesijen § 36 (Urimelige avtaler)", url: "https://lovdata.no/lov/1918-05-31-4" }
         ],
         details: [
           {
-            heading: "9.1 Behandlingsansvar",
-            text: "Syntax & Flow er behandlingsansvarlig for data om studenter (navn, studie, progresjon), NAV-deltakere (helse- og tiltaksopplysninger) og kunder. Helseopplysninger er <strong>særlige kategorier av personopplysninger</strong> (GDPR art. 9) og krever eksplisitt samtykke, konsekvensutredning (DPIA) og sterke sikkerhetstiltak."
+            heading: "8.1 Ansvarsfraskrivelse i pro-bono oppdrag",
+            text: "Avtalerettens utgangspunkt er avtalefrihet. Vi kan avtale at tjenestene leveres uten noen form for garanti for funksjonalitet, feil eller økonomiske konsekvenser. Avtalesijen § 36 kan sensurere urimelige klausuler, men overfor næringsdrivende kunder i en gratis tjeneste vil ansvarsfraskrivelsen normalt stå seg sterkt."
+          }
+        ]
+      },
+      {
+        title: "9. Personopplysningsloven (GDPR)",
+        text: "Opprettelse av referanseportalen krever samtykkebasert publisering, rubric-baserte (1-5) objektive vurderinger, og innsyns-/sletterett for studentene.",
+        sources: [
+          { name: "Personopplysningsloven § 1 (GDPR)", url: "https://lovdata.no/lov/2018-06-15-38" }
+        ],
+        details: [
+          {
+            heading: "9.1 Rettslig grunnlag for portalen",
+            text: "Portalen inneholder personopplysninger (navn, bilde, prosjekthistorikk, kompetansevurdering). Behandlingen må baseres på studentens **samtykke** (GDPR art. 6 nr. 1(a)). Samtykket må være frivillig; studenten må kunne ta emnet uten å måtte godkjenne offentlig profil."
           },
           {
-            heading: "9.2 Sentrale krav etter GDPR",
-            table: {
-              headers: ["Krav", "Status / Tiltak i Syntax & Flow"],
-              rows: [
-                ["Informasjonsplikt", "Må utarbeides skriftlig til alle deltakere."],
-                ["Samtykke", "Kreves for publisering av studentkode og design på portalen."],
-                ["Dataminimering", "Kun samle inn det som er strengt nødvendig for prosjektet."],
-                ["DPIA (art. 35)", "Må gjennomføres grunnet NAV-data og offentlig portefølje."]
-              ]
-            }
-          },
-          {
-            heading: "9.3 Portefølje-publisering",
-            points: [
-              "Innhent skriftlig samtykke fra alle studenter og kunder før publisering.",
-              "Anonymiser alle sensitive data eller spesifikke bedriftstall i publiserte rapporter.",
-              "Gi studentene rett til å reservere seg uten at det påvirker karakter eller emneopptak."
-            ]
-          },
-          {
-            heading: "9.4 Anbefaling",
-            points: [
-              "Utpek et styremedlem som personvernansvarlig.",
-              "Inngå databehandleravtale med IT-leverandører (f.eks. Supabase/Vercel) og host fortrinnsvis innenfor EØS.",
-              "Etabler faste rutiner for sletting av personopplysninger ved prosjektavslutning."
-            ]
+            heading: "9.2 Svarteliste-problematikk og negative vurderinger",
+            text: "Dersom portalen lagrer og viser negative fritekstvurderinger fra kunder som hindrer studenten i å få jobb senere, kan den i praksis fungere som en ulovlig svarteliste. **Tiltak:** Unngå negative fritekstvurderinger helt. Bruk utelukkende strukturerte, positive rubric-kriterier, og la studenten godkjenne/se vurderingen før publisering."
           }
         ]
       },
@@ -849,10 +1007,6 @@ export const wikiData = [
               "Mentorer skal kun ha en rådgivende og veiledende rolle, ikke instruksjonsmyndighet.",
               "Skriv en tydelig samarbeidsavtale som definerer at HiØ ikke garanterer for kvaliteten eller har arbeidsgiveransvar."
             ]
-          },
-          {
-            heading: "10.4 Anbefalt samarbeidsavtale-utkast",
-            text: "<strong>SAMARBEIDSAVTALE — HØGSKOLEN I ØSTFOLD OG SYNTAX & FLOW AS</strong><br/><br/><strong>§ 1 Formål:</strong> Avtalen regulerer HiØs støtte til Syntax & Flow som utdanningstiltak.<br/><strong>§ 2 Mentorordning:</strong> HiØ stiller faglige mentorer til rådighet. Mentorordningen anses som en integrert del av HiØs utdanningstilbud (emnet Bedriftspraksis).<br/><strong>§ 3 Lokaler:</strong> Syntax & Flow leier kontorlokaler på HiØs campus til markedspris.<br/><strong>§ 4 Merkevarebruk:</strong> Syntax & Flow kan opplyse om samarbeidet med HiØ, uten at dette innebærer en garanti eller anbefaling fra HiØs side.<br/><strong>§ 5 Ansvarsforhold:</strong> HiØ påtar seg intet ansvar for Syntax & Flows leveranser til kunder. Syntax & Flow er et selvstendig rettssubjekt med eget ansvar."
           }
         ]
       }
@@ -883,7 +1037,7 @@ export const wikiData = [
               "La en <strong>ideell stiftelse</strong> eie aksjene. Stiftelsen har utdanningsformål, kan søke skattefritak, og overskudd går til allmennyttige formål.",
               "Styret: 1 fra HiØ (observatør), 2 fra næringslivet, 2 studenter. HiØ skal <strong>ikke</strong> ha styreflertall."
             ],
-            hvorfor: "Juridisk skille mellom HiØ og den operative virksomheten gjør det vanskeligere for ESA å påvise at HiØs ressurser er «statlige midler» som kanaliseres til næringslivet. AS gir full ansvarsbegrensning for studentene — de kan ikke tape mer enn aksjekapitalen. Aksjeloven er godt regulert og forutsigbar, i motsetning til ulovfestet foreningsrett hvor medlemmer i noen tilfeller kan holdes personlig ansvarlige. Stiftelsen som eier kan søke skattefritak (skatteloven § 2-30).",
+            hvorfor: "Juridisk skille mellom HiØ og den operative virksomheten gjør det vanskeligere for ESA å påvise at HiØs ressurser er «statlige midler» som kanaliseres to næringslivet. AS gir full ansvarsbegrensning for studentene — de kan ikke tape mer enn aksjekapitalen. Aksjeloven er godt regulert og forutsigbar, i motsetning til ulovfestet foreningsrett hvor medlemmer i noen tilfeller kan holdes personlig ansvarlige. Stiftelsen som eier kan søke skattefritak (skatteloven § 2-30).",
             motstand: [
               "<strong>Kapitalkravet:</strong> 30 000 kr i aksjekapital må skaffes. HiØ kan ikke skyte inn kapital uten at det oppstår statsstøtte-spørsmål. Løsning: studentsamskipnaden (SiØ), lokale næringsstiftelser eller crowd-funding.",
               "<strong>HiØ kan motsette seg å stå utenfor styret:</strong> HiØ vil trolig ønske kontroll. Løsning: gi HiØ observatørstatus med talerett, og la HiØs jurister godkjenne samarbeidsavtalen.",
@@ -1075,7 +1229,7 @@ export const wikiData = [
             konkret: [
               "Statsstøttereglene gjelder bare for foretak. Ved å rette seg mot privatpersoner (ENK), ideelle organisasjoner og HiØs interne avdelinger, reduseres risikoen betydelig."
             ],
-            hvorfor: "EU-domstolen (C-222/04) har slått fast at statsstøttereglene bare gjelder foretak som driver økonomisk aktivitet. Privatpersoner og rene ideelle organisasjoner uten økonomisk aktivitet faller utenfor. Dette er den enkleste måten å unngå statsstøtteproblemet helt.",
+            hvorfor: "EU-domstolen (C-222/04) has slått fast at statsstøttereglene bare gjelder foretak som driver økonomisk aktivitet. Privatpersoner og rene ideelle organisasjoner uten økonomisk aktivitet faller utenfor. Dette er den enkleste måten å unngå statsstøtteproblemet helt.",
             motstand: [
               "Ideelle organisasjoner og HiØs interne avdelinger har ofte mindre spennende prosjekter. Gir mindre portefølje-verdi for studentene. Løsning: bland — ha 50 % ideelle/private og 50 % mikrovirksomheter for å balansere risiko og læringsverdi."
             ]
@@ -1111,7 +1265,7 @@ export const wikiData = [
             konkret: [
               "Inneholder: emnebeskrivelse, samarbeidsavtale med HiØ, kundeliste med de minimis-verdier, evalueringsrapport, utvelgelseskriterier, standard kundeavtale."
             ],
-            hvorfor: "Når klagen kommer (sannsynlig innen 6–12 måneder), is det kritisk å kunne svare raskt og profesjonelt. En forberedt «defense pack» viser at dere har tatt juridiske forholdsregler, noe som gjør det vanskeligere for klageren å få medhold.",
+            hvorfor: "Når klagen kommer (sannsynlig innen 6–12 måneder), er det kritisk å kunne svare raskt og profesjonelt. En forberedt «defense pack» viser at dere har tatt juridiske forholdsregler, noe som gjør det vanskeligere for klageren å få medhold.",
             motstand: [
               "Å forberede seg på en klage kan oppleves som unødvendig byråkrati før noe har skjedd. Løsning: se det som en forsikring — du håper du aldri trenger den, men du vil angre hvis du ikke har den."
             ]
@@ -1121,7 +1275,7 @@ export const wikiData = [
             konkret: [
               "Bevis at dere ikke tar oppdrag som kommersielle aktører normalt ville tatt."
             ],
-            hvorfor: "En liste over avviste oppdrag er konkret bevis på at dere ikke konkurrerer i det ordinære markedet. Hvis dere kan vise at dere har takket nei to oppdrag fra bedrifter som har budsjett, svekker det argumentet om konkurransevridning betydelig.",
+            hvorfor: "En liste over avviste oppdrag er konkret bevis på at dere ikke konkurrerer i det ordinære markedet. Hvis dere kan vise at dere har takket nei til oppdrag fra bedrifter som har budsjett, svekker det argumentet om konkurransevridning betydelig.",
             motstand: [
               "Krever disiplin å dokumentere avvisninger. Løsning: enkel logg i portalen — hvem, hvorfor avvist, dato."
             ]
@@ -1185,11 +1339,11 @@ export const wikiData = [
             ],
             hvorfor: "Forsikringen beskytter både studentene og organisasjonen mot erstatningskrav. Uten forsikring står studentene personlig ansvarlig for feil — en uakseptabel risiko. Forsikringsselskapene har standardprodukter for små konsulentvirksomheter som passer Syntax & Flow.",
             motstand: [
-              "Forsikring koster penger og kan være vanskelig å få for en studentorganisasjon uten driftshistorikk. Løsning: kontakt flere selskaper (If, Gjensidige, Tryg) og forklar modellen. Start med en enklere og billigere styreansvarsforsikring, utvid etter hvert."
+              "Forsikring koster penger og kan være vanskelig å få for en studentorganisasjon uten driftshistorikk. Løsning: kontakt flere selskaper (If, Gjensidige, Tryg) og forklar modellen. Start med eine enklere og billigere styreansvarsforsikring, utvid etter hvert."
             ]
           },
           {
-            title: "Tilpasning 8B — Standard kundeavtale med fire lag beskyttelse",
+            title: "Tilpasning 8B — Kundeavtale med fire lag beskyttelse",
             konkret: [
               "Ansvarsfraskrivelser: (1) Ansvarsfraskrivelser («as-is, with all faults»), (2) Ansvarsbegrensning (maks 10 000 NOK), (3) Kundeerklæring (forstår at det er studentarbeid), og (4) Avbestillingsklausul (ved uteblivelse fra møter)."
             ],
@@ -1219,7 +1373,7 @@ export const wikiData = [
             konkret: [
               "Utpeke DPO (personvernombud) enten internt (f.eks. et styremedlem) eller eksternt via en avtale med HiØs DPO."
             ],
-            hvorfor: "GDPR art. 37 krever DPO hvis kjerneaktiviteten innebærer systematisk overvåkning eller behandling av særlige kategorier. En intern DPO eller en avtale med HiØs DPO is enkle løsninger.",
+            hvorfor: "GDPR art. 37 krever DPO hvis kjerneaktiviteten innebærer systematisk overvåkning eller behandling av særlige kategorier. En intern DPO eller en avtale med HiØs DPO er enkle løsninger.",
             motstand: [
               "HiØs DPO har begrenset kapasitet. Løsning: utpek en student som DPO og la vedkommende ta et GDPR-kurs (gratis, f.eks. via Datatilsynet)."
             ]
@@ -1227,7 +1381,7 @@ export const wikiData = [
           {
             title: "Tilpasning 9B — Gjennomfør DPIA før portalen bygges",
             konkret: [
-              "Gjennomføre en personvernvurdering (DPIA) for portalen."
+              "Gjenomføre en personvernvurdering (DPIA) for portalen."
             ],
             hvorfor: "DPIA er påkrevd (GDPR art. 35) når behandlingen innebærer særlige kategorier eller profilering av sårbare grupper. En DPIA beskytter også Syntax & Flow ved å dokumentere at dere har vurdert risikoene.",
             motstand: [
@@ -1282,5 +1436,102 @@ export const wikiData = [
         ["10", "Utsett NAV/Spor 3 til fase 4", "NAV", "—"]
       ]
     }
+  },
+  {
+    id: "portal-referansebase",
+    title: "Portal som referansebase",
+    category: "Dokumenter",
+    icon: "UserCheck",
+    lead: "Hvordan Syntax & Flow-portalen fungerer som en verifisert referansebase, og de juridiske rammene for personvern, arbeidsrett, ansvar og diskriminering.",
+    sections: [
+      {
+        heading: "1. Problemet med tradisjonell rekruttering",
+        text: "Dagens rekrutteringsmetoder er preget av høy risiko og mangelfull informasjon:",
+        table: {
+          headers: ["Metode", "Problem", "Syntax & Flow løsning"],
+          rows: [
+            ["<strong>CV-screening</strong>", "CV-er er selvrapporterte og kan være pyntet på. Vanskelig å verifisere reelt nivå.", "Dokumentert og verifisert arbeidshistorikk fra reelle prosjekter."],
+            ["<strong>Intervjuer</strong>", "Et kort møte (45-60 min) gir et overfladisk inntrykk. Lav korrelasjon med jobbprestasjon.", "Observasjon av kandidaten over en periode på 3–6 måneder."],
+            ["<strong>Referansesjekk</strong>", "Tidligere arbeidsgivere er forsiktige og gir sjelden nyanserte eller negative opplysninger.", "Strukturerte, objektive poengvurderinger basert på faktiske leveranser."],
+            ["<strong>Feilansettelse</strong>", "Å ansette feil person koster anslagsvis 1–3 ganger årslønn.", "Risikofri 'test-run' der kunden kjenner kandidatens kompetanse før ansettelse."]
+          ]
+        }
+      },
+      {
+        heading: "2. Verdiskapning: Tradisjonell ansettelse vs. S&F",
+        text: "Sammenligning av ansettelsesrisiko:",
+        table: {
+          headers: ["Faktor", "Tradisjonell ansettelsesprosess", "Syntax & Flow-modellen"],
+          rows: [
+            ["<strong>Varighet på test</strong>", "45-60 minutter intervju", "3–6 måneders aktivt prosjektsamarbeid"],
+            ["<strong>Datagrunnlag</strong>", "Søknadsbrev og CV", "Faktiske nettsider, Figmaskisser og markedsrapporter på portalen"],
+            ["<strong>Kostnad</strong>", "Headhunter koster 20-30% av årslønn. Annonsering er dyrt.", "Gratis (betales med tidsinvestering i prosjektet)"],
+            ["<strong>Kvalitetsgaranti</strong>", "Ingen, karakterer sier lite om team-evner", "Verifisert historikk kvalitetssikret av HiØ-mentorer"]
+          ]
+        }
+      },
+      {
+        heading: "3. Juridisk vurdering: Personvern & GDPR",
+        text: "En vurdering på portalen er en behandling av personopplysninger (GDPR art. 4 nr. 2) og krever strenge rammer:",
+        table: {
+          headers: ["Vurderingstype", "Klassifisering under GDPR", "Rettslig krav / Forbehold"],
+          rows: [
+            ["<strong>Strukturerte kriterier</strong> (1-5 på samarbeid, faglig nivå)", "Alminnelige personopplysninger", "Krever klart behandlingsgrunnlag. Bør baseres på **frivillig samtykke** (art. 6 nr. 1(a))."],
+            ["<strong>Fritekstkommentarer</strong> (negative påstander)", "Svært inngripende for studentens karriere", "<strong>Bør unngås helt.</strong> Høy risiko for uriktighet, ærekrenkelse og krav om sletting."],
+            ["<strong>Helse/fraværsdata</strong>", "Særlige kategorier av personopplysninger (art. 9)", "<strong>Strengt forbudt</strong> å behandle på portalen uten eksplisitte samtykke- og sikkerhetsvilkår."]
+          ]
+        }
+      },
+      {
+        heading: "4. Studentens Rettigheter",
+        text: "Siden studentene vurderes på en offentlig plattform, må de ha sterke rettigheter for å ivareta personvernet:",
+        table: {
+          headers: ["Rettighet", "GDPR Artikkel", "Funksjonelt krav i portalen"],
+          rows: [
+            ["<strong>Innsynsrett</strong>", "Artikkel 15", "Studenten skal ha full tilgang til å se alle vurderinger og logger lagret om seg selv."],
+            ["<strong>Sletterett (Right to be forgotten)</strong>", "Artikkel 17", "Studenten kan når som helst kreve profil og vurderinger slettet (utføres innen 30 dager)."],
+            ["<strong>Rettingsrett</strong>", "Artikkel 16", "Studenten kan kreve at uriktige eller villedende opplysninger rettes umiddelbart."],
+            ["<strong>Begrensningsrett</strong>", "Artikkel 18", "Mulighet for studenten til å skjule profilen midlertidig dersom det oppstår tvist om en vurdering."]
+          ]
+        }
+      },
+      {
+        heading: "5. Forskjellen fra tradisjonelle referanser",
+        text: "Tabellen viser hvorfor portalen krever strengere jus enn en vanlig referanseperson på en CV:",
+        table: {
+          headers: ["Faktor", "Tradisjonell referanse", "Syntax & Flow-portal"],
+          rows: [
+            ["<strong>Mottaker</strong>", "Sendes til én spesifikk potensiell arbeidsgiver av gangen", "Synlig for alle godkjente bedrifter registrert i portalen"],
+            ["<strong>Konfidensialitet</strong>", "Høy grad av konfidensialitet (muntlig samtale)", "Elektronisk lagret og tilgjengelig i database"],
+            ["<strong>Rettslig grunnlag</strong>", "Ulovfestet sedvane, unntatt taushetsplikt", "Skriftlig avtalt samtykke etter GDPR"],
+            ["<strong>Studentens status</strong>", "Arbeidstaker (vernet av arbeidsmiljøloven)", "Student under utdanning (krever kompensatoriske rettigheter i portalen)"]
+          ]
+        }
+      },
+      {
+        heading: "6. Design: Rubric-basert vurdering (1-5)",
+        text: "For å sikre objektive og ikke-diskriminerende tilbakemeldinger, brukes en fast definert rubric-skala i stedet for fritekst:",
+        table: {
+          headers: ["Kriterium", "Nivå 1-2 (Tilstrekkelig / God)", "Nivå 3-4 (Selvstendig / Meget god)", "Nivå 5 (Fremragende)"],
+          rows: [
+            ["<strong>Faglig kompetanse</strong>", "Kunne utføre enkle oppgaver under veiledning", "Selvstendig i kjente oppgaver og nye områder", "Ekspertnivå. Har veiledet andre i teamet."],
+            ["<strong>Samarbeid</strong>", "Fungerte i teamet, men bidro i liten grad selvstendig", "God lagspiller som bidrar aktivt til teamdynamikken", "Løftet hele teamet og løste interne utfordringer."],
+            ["<strong>Kommunikasjon</strong>", "Kommuniserte greit, men trengte støtte ved kundemøter", "Tydelig og presis kommunikasjon tilpasset mottakeren", "Fremragende formidlingsevne og forhandlingsteknikk."],
+            ["<strong>Gjennomføring</strong>", "Leverte oppgaver etter purring eller noe forsinket", "Leverte oppgaver til avtalt tid med god kvalitet", "Ekstraordinær planlegging og leveranse før fristen."],
+            ["<strong>Kundeforståelse</strong>", "Forsto kundens behov etter grundig forklaring", "Forsto og tolket behovene til funksjonelle krav", "Identifiserte underliggende behov og overgikk forventninger."]
+          ]
+        }
+      },
+      {
+        heading: "7. Tilgangsstyring & Designprinsipper",
+        points: [
+          "<strong>Opt-in:</strong> Det er 100 % frivillig å ha en synlig profil på portalen. Studenten kan velge bare å ta emnet.",
+          "<strong>Tilgangskontroll:</strong> Kun bedrifter registrert i Brønnøysund og som har signert en brukeravtale får tilgang til å søke i studentprofilene.",
+          "<strong>Kvalitetssikring:</strong> Faglig mentor (HiØ-ansatt) gjennomgår og godkjenner alle vurderinger før de blir synlige for eksterne.",
+          "<strong>Ingen rangering:</strong> Portalen skal ikke rangere studentene i en liste (f.eks. 'beste studenter'), for å unngå usunt press og juks.",
+          "<strong>Diskrimineringsovervåkning:</strong> Stiftelsens styre skal årlig gå gjennom statistikk for å sikre at det ikke forekommer kjønnsmessige eller etniske skjevheter i kundenes vurderinger."
+        ]
+      }
+    ]
   }
 ];

@@ -217,7 +217,7 @@ export default function App() {
 
         <nav className="nav-menu">
           <div className="nav-section-title">Oversikt & Hovedsider</div>
-          {wikiData.slice(0, 5).map((page) => (
+          {wikiData.filter(page => page.category === "Oversikt" || page.category === "Hovedsider").map((page) => (
             <button
               key={page.id}
               onClick={() => setActivePage(page.id)}
@@ -229,7 +229,19 @@ export default function App() {
           ))}
 
           <div className="nav-section-title">GTM & Utførelse</div>
-          {wikiData.slice(5, 7).map((page) => (
+          {wikiData.filter(page => page.category === "GTM & Utførelse").map((page) => (
+            <button
+              key={page.id}
+              onClick={() => setActivePage(page.id)}
+              className={`nav-item ${activePage === page.id ? "active" : ""}`}
+            >
+              <span className="nav-icon">{renderIcon(page.icon, "w-4 h-4")}</span>
+              {page.title}
+            </button>
+          ))}
+
+          <div className="nav-section-title">Business Case</div>
+          {wikiData.filter(page => page.category === "Business Case").map((page) => (
             <button
               key={page.id}
               onClick={() => setActivePage(page.id)}
@@ -241,7 +253,7 @@ export default function App() {
           ))}
 
           <div className="nav-section-title">Dokumenter & Referanser</div>
-          {wikiData.slice(7).map((page) => (
+          {wikiData.filter(page => page.category === "Dokumenter").map((page) => (
             <button
               key={page.id}
               onClick={() => setActivePage(page.id)}
@@ -401,7 +413,7 @@ export default function App() {
                             {sec.table.rows.map((row, rIdx) => (
                               <tr key={rIdx}>
                                 {row.map((cell, cIdx) => (
-                                  <td key={cIdx}>{cell}</td>
+                                  <td key={cIdx} dangerouslySetInnerHTML={{ __html: cell }} />
                                 ))}
                               </tr>
                             ))}
@@ -471,6 +483,16 @@ export default function App() {
                       return (
                         <div key={idx} className={`vpc-canvas-wrapper theme-${vpc.colorTheme}`}>
                           <p className="vpc-canvas-desc">{vpc.description}</p>
+                          
+                          {vpc.longDescription && (
+                            <div className="vpc-long-desc-card glass-card mb-6" style={{ padding: "16px", borderRadius: "8px", border: "1px solid var(--border-color)", background: "rgba(255,255,255,0.02)" }}>
+                              <h4 className="flex items-center gap-2 text-primary font-semibold mb-2" style={{ display: "flex", alignItems: "center", gap: "8px", margin: "0 0 8px 0" }}>
+                                <Icons.Lightbulb className="w-4 h-4 text-amber-500 animate-pulse" />
+                                <span>Utdypende verdiskapning:</span>
+                              </h4>
+                              <p className="text-secondary" style={{ margin: 0, fontSize: "0.95rem", lineHeight: "1.5" }} dangerouslySetInnerHTML={{ __html: vpc.longDescription }} />
+                            </div>
+                          )}
                           
                           <div className="vpc-canvas">
                             {/* 1. VERDITILBUD (Strategyzer Square / Value Map) */}
