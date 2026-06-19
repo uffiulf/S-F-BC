@@ -677,7 +677,7 @@ export default function App() {
                           </div>
                           
                           {vpc.longDescription && (
-                            <div className="vpc-long-desc-card glass-card" style={{ padding: "20px", borderRadius: "12px", border: "1px solid var(--border-color)", background: "var(--bg-card)", marginTop: "32px" }}>
+                            <div className="vpc-long-desc-card glass-card" style={{ padding: "20px", borderRadius: "12px", border: "1px solid var(--border-color)", background: "var(--bg-card)", marginTop: "48px" }}>
                               <h4 className="flex items-center gap-2 text-primary font-semibold mb-2.5" style={{ display: "flex", alignItems: "center", gap: "8px", margin: "0 0 10px 0" }}>
                                 <Icons.Lightbulb className="w-4 h-4 text-amber-500 animate-pulse" />
                                 <span>Utdypende verdiskapning:</span>
