@@ -141,14 +141,14 @@ export const wikiData = [
         table: {
           headers: ["Ordning", "Omfang", "Målgruppe", "Finansiering / Status"],
           rows: [
-            ["ITD35014 Bedriftspraksis", "10 studiepoeng (valgfritt emne)*", "Bachelorstudenter (IT/Design/Økonomi, obligatorisk for Bachelor i kommunikasjon) som har bestått min. 90 stp", "Utdanningsstøtte (inngår i ordinær grad, men krever 15 stp totalt per semester for gradert Lånekassestøtte)"],
+            ["ITD35014 Bedriftspraksis", "10 studiepoeng (valgfritt emne)*", "Bachelorstudenter (IT/Design/Økonomi, obligatorisk for Bachelor i kommunikasjon) som har bestått min. 90 stp", "Utdanningsstøtte (inngår i ordinær grad der studenten normalt tar 30 stp totalt per semester og får full støtte. Lånekassens minstekrav på 15 stp gjelder kun ved enkeltemnestudier)"],
             ["NAV-samarbeid", "Individuell tiltaksplan", "Personer utenfor arbeidsmarkedet med IT/Design/Økonomi-bakgrunn", "Utsettes til etter piloten (tidligst Fase 4). Tiltakspenger/dagpenger dekket av NAV."]
           ]
         }
       },
       {
         heading: "*Merknad vedrørende studiepoeng og Lånekassen",
-        text: "ITD35014 Bedriftspraksis gir i dag 10 stp ved HiØ. Det var tidligere planlagt et kombinasjonsløp for å nå Lånekassens minstekrav på 15 stp for gradert støtte, men dette er skrinlagt da det ikke finnes et egnet 5 stp-emne å kombinere med. Dagens ordning er derfor utelukkende ITD35014 på 10 stp. Det langsiktige målet er å utvide emnet til 15–30 stp over tid for å få mer tid med studentene og sikre rett til Lånekassestøtte."
+        text: "ITD35014 Bedriftspraksis gir i dag 10 stp ved HiØ. Siden programstudenter normalt følger et fulltids bachelorløp (30 stp per semester), får de full basisstøtte fra Lånekassen der ITD35014 inngår som en del av graden. Lånekassens minstekrav på 15 stp for gradert basisstøtte gjelder kun dersom emnet tas som et frittstående enkeltemne utenom et studieprogram. Prosjektet fokuserer på å avklare rammene for enkeltemnestudenter vs. ordinære programstudenter for å sikre at alle deltakere har stabil finansiering."
       },
       {
         heading: "Tiltak for kunnskapsoverføring",
@@ -217,7 +217,7 @@ export const wikiData = [
             "Arbeid i et tverrfaglig in-house konsulentmiljø med IT, design og økonomi samlet under ett tak."
           ],
           painRelievers: [
-            "Økonomisk forutsigbarhet: Finansiering via Lånekassen (støtte/lønn) gjør at studenten kan jobbe med relevant praksis.",
+            "Økonomisk forutsigbarhet: Finansiering via Lånekassen (støtte/lån/stipend) gjør at studenten kan jobbe med relevant praksis.",
             "Trygg læringssone: Veiledning og kvalitetssikring fra faglige mentorer fjerner redselen for å gjøre kritiske feil.",
             "Erfaringsgaranti: Direkte tilgang på reelle prosjekter som fyller erfaringsgapet."
           ],
@@ -346,9 +346,9 @@ export const wikiData = [
           "3. Privatpersoner (ENK uten ansatte) og gründere i oppstartsfasen<br/>" +
           "4. Mikrovirksomheter (1–5 ansatte) som bekrefter at de ikke har budsjett til kommersielle aktører.<br/><br/>" +
           "<h3>5. Deltakelse & Lånekassen</h3>" +
-          "• <strong>ITD35014 Bedriftspraksis (10 stp):</strong> Dagens eneste studieløp. Arbeidstid ca. 12–15 timer/uke. Siden emnet er på 10 stp, gir det i seg selv ikke rett til Lånekassestøtte (minstekravet er 15 stp for gradert støtte). Det finnes ikke et egnet 5 stp-emne å kombinere med i dag.<br/>" +
+          "• <strong>ITD35014 Bedriftspraksis (10 stp):</strong> Dagens eneste studieløp. Arbeidstid ca. 12–15 timer/uke. Siden programstudenter normalt tar 30 stp totalt per semester (hvor ITD35014 inngår), beholder de full basisstøtte fra Lånekassen. Lånekassens minstekrav på 15 stp gjelder kun dersom emnet tas som et frittstående enkeltemne utenom et studieprogram.<br/>" +
           "• <strong>NAV-samarbeid:</strong> Utsettes til etter pilotfasen (tidligst Fase 4).<br/>" +
-          "• <strong>Langsiktig mål:</strong> Utvide ITD35014 til 15–30 stp over tid for å gi studentene full rett til Lånekassestøtte.<br/><br/>" +
+          "• <strong>Langsiktig mål:</strong> Avklare rammene for enkeltemnestudenter vs. programstudenter for å sikre stabile rammer, samt utrede eventuell fremtidig utvidelse av ITD35014.<br/><br/>" +
           "<h3>6. Portalen som verifisert referansebase</h3>" +
           "Portalen løser bedriftenes problem med informasjonsasymmetri ved rekruttering. I stedet for en selvrapportert CV, gir portalen dokumentert bevis på en kandidats faktiske arbeidsprestasjon over 3–6 måneder basert på rubric-vurderinger fra kunder og mentorer.<br/><br/>" +
           "<strong>Juridiske rammer:</strong> Fullstendig samtykkebasert (opt-in), strukturerte vurderingskriterier uten negativ fritekst, fullt innsyn og sletterett for studenten, samt begrenset tilgang for godkjente bedrifter.<br/><br/>" +
@@ -852,8 +852,8 @@ export const wikiData = [
         "<strong>Sikker QA-struktur:</strong> Mentorer kvalitetssikrer alt før det leveres til bedrifter."
       ],
       weaknesses: [
-        "<strong>Lånekassestøtte ikke avklart:</strong> Støtte til emne etter fullført grad krever forhåndsgodkjenning.",
-        "<strong>Minstekrav for Lånekassen:</strong> ITD35014 geeft kun 10 stp, som er under Lånekassens minstekrav på 15 stp for gradert støtte.",
+        "<strong>Lånekassestøtte for enkeltemner:</strong> Støtte til emnet etter fullført grad eller som frittstående enkeltemne krever forhåndsgodkjenning.",
+        "<strong>Minstekrav for enkeltemner:</strong> Siden ITD35014 gir 10 stp, krever det at enkeltemnestudenter tar andre emner ved siden av for å nå Lånekassens minstekrav på 15 stp (programstudenter får full støtte da de tar 30 stp totalt).",
         "<strong>Statsstøtterisiko (EØS):</strong> Skolens ressurser kan anses som ulovlig støtte til eksterne bedrifter.",
         "<strong>Rettslig gråsone for studentene:</strong> Uklart om studentene kan anses som arbeidstakere.",
         "<strong>Konkurranseklager:</strong> Lokale byråer kan klage på prisdumping og subsidiering.",
@@ -863,12 +863,12 @@ export const wikiData = [
     risks: [
       {
         id: 1,
-        title: "Manglende Lånekassestøtte for 10 stp enkeltemne",
+        title: "Manglende Lånekassestøtte for frittstående enkeltemnestudenter",
         sannsynlighet: 4,
         konsekvens: 4,
         alvorlighet: "Høy",
-        beskrivelse: "Studentene får ikke basisstøtte fordi ITD35014 er på 10 stp (Lånekassen krever min. 15 stp for gradert støtte). Det er også risiko for avslag hvis Lånekassen ikke anser enkeltemner utenom grad som reell studieprogresjon.",
-        tiltak: "Målrette rekruttering mot studenter som ikke er økonomisk avhengige av Lånekassen i piloten; jobbe for å utvide ITD35014 til 15–30 stp på sikt."
+        beskrivelse: "Ordinære bachelorstudenter tar 30 stp per semester og beholder full basisstøtte. Imidlertid får ikke studenter som tar ITD35014 (10 stp) som et frittstående enkeltemne basisstøtte, fordi det er under Lånekassens minstekrav på 15 stp per semester. Det er også risiko for avslag dersom enkeltemnet ikke ansees som ledd i en grad eller planlagt påbygning.",
+        tiltak: "Avklare studentenes studie- og enkeltemnestatus før opptak; sikre at enkeltemnestudenter tar andre emner parallelt eller har annen finansiering; etablere veiledning for Lånekassen-søknad."
       },
       {
         id: 2,
@@ -918,7 +918,7 @@ export const wikiData = [
     legalTopics: [
       {
         title: "1. Lånekassen (Progresjon & Godkjenning)",
-        text: "Det er ikke et krav i loven at emner må tas før en grad er fullført. Utfordringen ligger i om Lånekassen anser studenten for å være i reell framdrift dersom emnet ikke leder til en ny grad. Siden ITD35014 Bedriftspraksis er på 10 stp, er det i utgangspunktet under Lånekassens minstekrav på 15 stp for gradert basisstøtte (50 % studiebelastning).",
+        text: "Det er ikke et krav i loven at emner må tas før en grad er fullført. For bachelorstudenter i et løp inngår ITD35014 Bedriftspraksis (10 stp) som ett av flere emner (totalt 30 stp per semester), og de mottar full Lånekassen-støtte. Minstekravet på 15 stp for gradert støtte gjelder kun dersom emnet tas som et frittstående enkeltemne utenom et studieprogram, der progresjon og finansiering må avklares.",
         sources: [
           { name: "Lov om utdanningsstøtte § 4", url: "https://lovdata.no/lov/2005-06-03-37" },
           { name: "Forskrift om utdanningsstøtte", url: "https://lovdata.no/forskrift/2014-12-19-1742" }
@@ -926,15 +926,15 @@ export const wikiData = [
         details: [
           {
             heading: "1.1 Kan studenter motta Lånekassestøtte for «Bedriftspraksis» etter fullført grad?",
-            text: "<strong>Utgangspunkt:</strong> Lånekassen yter støtte til godkjente utdanninger ved godkjente læresteder, jf. lov om utdanningsstøtte § 4 med tilhørende forskrift. Det er ikke noe vilkår i loven at emnet må tas <em>før</em> graden er fullført. Hovedregelen er at støtte gis til ordinære studieløp — grunn-, etter- og videreutdanning.<br/><br/><strong>Dagens ordning (ITD35014 - 10 stp):</strong> Dagens eneste emne er på 10 stp, som i seg selv ikke gir rett til basisstøtte ettersom Lånekassen krever minimum 15 stp per semester (50 % studiebelastning). Det finnes ikke et egnet 5 stp-emne ved HiØ å kombinere med.<br/><br/><strong>Utfordring:</strong> Lånekassen krever at støttemottakeren er en <strong>«reell student»</strong> og har <strong>framdrift i utdanningen</strong>. Dersom studenten allerede har fullført en grad, og det nye emnet ikke leder frem til en ny grad, kan Lånekassen stille spørsmål ved emnets reelle utdanningsformål. Særlig risiko knytter seg til:",
+            text: "<strong>Utgangspunkt:</strong> Lånekassen yter støtte til godkjente utdanninger ved godkjente læresteder, jf. lov om utdanningsstøtte § 4 med tilhørende forskrift. Det er ikke noe vilkår i loven at emnet må tas <em>før</em> graden er fullført. Hovedregelen er at støtte gis til ordinære studieløp (grunn-, etter- og videreutdanning).<br/><br/><strong>Dagens ordning (ITD35014 - 10 stp):</strong> Siden programstudenter normalt tar 30 stp totalt per semester (hvor ITD35014 inngår), beholder de full basisstøtte. Lånekassens minstekrav på 15 stp per semester for gradert basisstøtte gjelder kun dersom emnet tas som et frittstående enkeltemne utenom et studieprogram.<br/><br/><strong>Utfordring:</strong> For enkeltemnestudenter (utenom grad) er det en utfordring at 10 stp er under Lånekassens minstekrav på 15 stp for gradert støtte. I tillegg krever Lånekassen at støttemottakeren er en <strong>«reell student»</strong> med <strong>framdrift i utdanningen</strong>. Dersom studenten allerede har fullført en grad og tar emnet som enkeltemne utenom et nytt studieprogram, kan Lånekassen stille spørsmål ved det reelle utdanningsformålet. Særlig risiko knytter seg til:",
             points: [
               "<strong>Fordypningskravet:</strong> Lånekassen kan kreve at emnet må være en naturlig faglig fordypning eller et strukturert påbygningsstudium.",
               "<strong>Samlet støttetid:</strong> Studenter som allerede har brukt opp sin ordinære støtteperiode (f.eks. 3 år bachelor + 2 år master = 5 år), vil normalt ikke få mer støtte med mindre de tar en ny grad eller et strukturert etter-/videreutdanningsløp."
             ]
           },
           {
-            heading: "Langsiktig mål (Utvidelse til 15–30 stp):",
-            text: "Målet på sikt er å søke HiØ om å utvide ITD35014 til 15 stp eller opprette et nytt 30 stp-emne for fulltids praksisår. 15 stp vil oppfylle Lånekassens minstekrav for gradert basisstøtte (50 % studiebelastning), og 30 stp vil gi rett til fulltidsstøtte."
+            heading: "Forebyggende tiltak og mål:",
+            text: "Tiltaket er primært å avklare om deltakere er ordinære programstudenter (som er fullt finansiert) eller enkeltemnestudenter. For enkeltemnestudenter må det verifiseres at de tar andre emner parallelt for å nå 15 stp-grensen, eller har annen finansiering. På lengre sikt utredes en eventuell utvidelse av ITD35014 til 15–30 stp for å styrke det faglige omfanget."
           },
           {
             heading: "1.2 Konkrete krav for Lånekassens godkjenning",
@@ -1095,7 +1095,7 @@ export const wikiData = [
       },
       {
         title: "10. HiØs omdømmerisiko",
-        text: "Høgskolen risikerer omdømmetap ved feilede prosjekter og sanksjoner fra Lånekassen. Det må foreligge en skriftlig samarbeidsavtale mellom HiØ og Syntax & Flow som avklarer at HiØ ikke har arbeidsgiveransvar, og at mentorer kun veileder.",
+        text: "Høgskolen risikerer omdømmetap ved feilede prosjekter og Lånekassen-avslag for enkeltemnestudenter. Det må foreligge en skriftlig samarbeidsavtale mellom HiØ og Syntax & Flow som avklarer at HiØ ikke har arbeidsgiveransvar, og at mentorer kun veileder.",
         sources: [
           { name: "Universitets- og høyskoleloven", url: "https://lovdata.no/lov/2005-04-01-15" }
         ],
@@ -1107,7 +1107,7 @@ export const wikiData = [
               rows: [
                 ["Omdømmetap ved feilet prosjekt", "Middels", "Betydelig lokalt"],
                 ["Statsstøtte-granskning fra ESA", "Lav til middels", "Kan tvinge frem modellendring"],
-                ["Lånekassen-sanksjoner", "Lav til middels", "Alvorlig for studentene"],
+                ["Lånekassen-avslag for enkeltemner", "Lav til middels", "Alvorlig for studentene"],
                 ["Erstatningskrav fra tredjepart", "Lav", "Kan trekke inn høgskolen"]
               ]
             }
@@ -1168,26 +1168,27 @@ export const wikiData = [
         title: "2. Lånekassen — Finansiering og studiepoeng",
         subAdjustments: [
           {
-            title: "Tilpasning 2A: Utvidelse til 15–30 stp på sikt for full Lånekassestøtte",
+            title: "Tilpasning 2A: Avklaring av studiestatus (program- vs. enkeltemnestudenter)",
             konkret: [
-              "Søke HiØ om å utvide ITD35014 Bedriftspraksis fra 10 stp til 15 stp, eller opprette et nytt emne på 30 stp.",
-              "15 stp er Lånekassens minstekrav for gradert basisstøtte (50 % studiebelastning), og 30 stp gir fulltidsstøtte."
+              "Avklare om studenten er opptatt på et ordinært bachelorprogram eller tar ITD35014 som enkeltemne.",
+              "Programstudenter tar normalt 30 stp totalt per semester og får full Lånekassestøtte.",
+              "Enkeltemnestudenter som kun tar ITD35014 (10 stp) må ta andre emner parallelt for å nå 15 stp-grensen for gradert støtte."
             ],
-            hvorfor: "Sikrer at studenter har tilstrekkelig finansiering under praksisperioden, noe som øker søkermassen.",
+            hvorfor: "Sikrer at vi unngår uforutsette økonomiske utfordringer for studentene ved å kartlegge deres totale studiebelastning før opptak.",
             motstand: [
-              "Krav til studieplanendringer ved HiØ og lengre administrative prosesser."
+              "Krever tettere administrativ oppfølging og kartlegging under rekrutteringen. Løsning: legg inn spørsmål om studiestatus i søknadsskjemaet."
             ]
           },
           {
-            title: "Tilpasning 2B: Deltakelse under dagens 10 stp-modell uten Lånekassestøtte",
+            title: "Tilpasning 2B: Langsiktig utredning av emneutvidelse",
             konkret: [
-              "Studenter deltar i dag kun gjennom ITD35014 (10 stp) uten særskilt Lånekassestøtte for praksisen.",
-              "Fokusere på verdien av referanseportalen, porteføljebygging og CV-referanser.",
-              "Det finnes ikke et egnet 5 stp-emne ved HiØ som kan kombineres med ITD35014 i dag."
+              "Utrede mulighet for å utvide ITD35014 Bedriftspraksis til 15–30 stp på lengre sikt.",
+              "Dette vil styrke det faglige omfanget og gi enkeltemnestudenter mulighet til støtte uten sideemner.",
+              "Det finnes ikke et egnet 5 stp-emne ved HiØ å kombinere med i dag."
             ],
-            hvorfor: "Lar oss komme i gang umiddelbart med piloten uten å måtte vente på lange godkjenningsprosesser hos NOKUT/HiØ.",
+            hvorfor: "Gir mulighet for mer omfattende praksisløp og gjør enkeltemnet mer attraktivt for eksterne deltakere over tid.",
             motstand: [
-              "Kan begrense søkermassen til studenter som ikke er avhengige av Lånekassestøtte i pilotsemesteret."
+              "Krav til formelle studieplanendringer ved HiØ og lengre administrative prosesser. Løsning: start med dagens 10 stp-modell for programstudenter."
             ]
           }
         ]

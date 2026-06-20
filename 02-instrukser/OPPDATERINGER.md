@@ -72,6 +72,17 @@ Kilde: Ingen spesifikk fil — nytt innhold
 Hva: Nederst på Dashboard-siden, etter eksisterende seksjoner, legg til en forklarende boks med tittel "Hvordan henger business casen sammen?" som viser at Value Proposition (VP) er en integrert del av business casen, ikke noe separat. Vis rekkefølgen: Forretningsidé → Value Proposition → Forretningsmodell → Marked og konkurranse → Scope → Risiko og juss. Forklar kort at VPC-ene som finnes under "Forretningsmodell & VPC" er en visualisering av VP-en for hver målgruppe (studenter, HiØ, næringsliv). Alt dette samlet utgjør business casen.
 Hvor: Nederst på Dashboard-siden
 
+### 19.06.2026 — QC Runde 2: Rett opp feil om Lånekassen på infosiden
+Prioritet: Høy
+Kilde: Avklaring fra prosjekteier
+Hva: Flere steder på infosiden beskriver ITD35014 som om det står alene som et enkeltemne som ikke kvalifiserer for Lånekassen. Dette er feil. ITD35014 er et valgfritt emne innenfor et bachelorløp. Studenten tar normalt 3-4 fag per semester (30 stp totalt), der ITD35014 er ett av dem. Studenten får derfor full Lånekassen-støtte for hele semesteret — ikke bare for ITD35014. Risikoen for Lånekassen-støtte gjelder kun hvis studenten tar ITD35014 som et frittstående enkeltemne utenom et bachelorløp.
+
+Søk opp ALLE steder på infosiden som sier noe om Lånekassen-problematikk knyttet til 10 stp, og rett opp:
+- Der det står at "10 stp ikke kvalifiserer for Lånekassen" uten kontekst — legg til at dette gjelder for enkeltemner, IKKE for studenter som følger et bachelorløp
+- Der risikobeskrivelser sier noe om manglende støtte — presiser at risikoen kun gjelder hvis ITD35014 tas som enkeltemne utenom et bachelorløp
+- Skriv om "Forebyggende tiltak" til å handle om å avklare enkeltemne-sitasjonen, ikke om å utvide emnet
+Hvor: Hele wikiData.js — spesielt på Juridisk & Risiko-siden og der Lånekassen omtales
+
 ### 19.06.2026 — Kvalitetssikring (QC) av hele infosiden — rett opp flere feil
 Prioritet: Høy
 Kilde: Hele samtalen + `06-Business-case/Scope/scope_minst_motstand.md` + HiØs emneside for ITD35014
@@ -174,5 +185,6 @@ Hvor: Ny seksjon under "Analyser" eller "Guidelines"
 | 19.06.2026 | Rett opp tabellen over deltakerordninger på Organisasjon & Drift-siden | Utført |
 | 19.06.2026 | Oppdater Dashboard med ny avklaring om ITD35014 | Utført |
 | 19.06.2026 | Kvalitetssikring (QC) av hele infosiden — rett opp flere feil | Utført |
+| 19.06.2026 | QC Runde 2: Rett opp feil om Lånekassen på infosiden | Utført |
 
 
