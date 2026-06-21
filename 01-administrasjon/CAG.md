@@ -42,7 +42,8 @@ Prioritet: 1) HiØ internt, 2) Ideelle organisasjoner, 3) Privatpersoner (ENK), 
 
 ### Studenter
 - **ITD35014 (10 stp)** — valgfritt emne på bachelor, emneansvarlig Stig Henning Johansen. Også obligatorisk for Bachelor i kommunikasjon.
-- **Mål:** Utvide ITD35014 til 15–30 stp over tid for å få mer tid med studentene
+- **Mål:** Utvide ITD35014 til 15–30 stp over tid for å få mer tid med studentene (det finnes ikke 5 stp-emner på HiØ som kan kombineres i dag)
+- **Lånekassen:** ITD35014 er innenfor et bachelorløp (30 stp/semester) — studenten får full støtte. Risiko gjelder kun ved enkeltemner utenom grad
 - Uavklart: Det har vært uformelle samtaler om mulighet for enkeltemner utenom full grad, men dette må bekreftes med HiØs studieadministrasjon
 
 ### Portal som referansebase
@@ -57,7 +58,7 @@ Prioritet: 1) HiØ internt, 2) Ideelle organisasjoner, 3) Privatpersoner (ENK), 
 
 | Område | Status | Viktigste tiltak |
 |--------|--------|------------------|
-| Lånekassen | ITD35014 (10 stp) er innenfor graden — fungerer. Spor 1 må kombineres til 15 stp | Søk om økning til 15 stp etter pilot |
+| Lånekassen | ITD35014 (10 stp) er innenfor bachelorløp — fungerer. Studenten får full støtte. Risiko kun ved enkeltemner utenom grad | Mål: utvide ITD35014 til 15–30 stp |
 | Statsstøtte/EØS | **Største risiko.** HiØs ressurser kan anses som ulovlig støtte | AS eid av stiftelse, markedspris for HiØ-bidrag, støtteregister, de minimis |
 | Arbeidstaker | Studentene er i en gråsone | Formelt emne med læringsmål, fleksible tider, veiledning ikke instruksjon |
 | Konkurranse | Høy risiko for klager fra etablerte byråer | Posisjonér som utdanningstiltak, kun mikrovirksomheter, «defense pack» |
@@ -71,7 +72,7 @@ Prioritet: 1) HiØ internt, 2) Ideelle organisasjoner, 3) Privatpersoner (ENK), 
 
 | Fase | Tidsrom | Hovedaktivitet |
 |------|---------|----------------|
-| 1 — Lavthengende frukt | Mnd 1–3 | Samtaler, kartlegging, team-building. Null risiko. |
+| 1 — Lavthengende frukt | Mnd 1–3 | Samtaler, kartlegging, team-building. Null risiko. ✅ Første team-møte gjennomført |
 | 2 — Bygg broen | Mnd 3–6 | Stift AS, Lånekassen-uttalelse, HiØ-avtale, forsikring, avtaleverk |
 | 3 — Pilot | Mnd 6–12 | Ett team, ett prosjekt, dokumentér alt |
 | 4 — Skalering | Mnd 12–24 | Flere team, portal, evt. NAV, ESA-forberedelse |
