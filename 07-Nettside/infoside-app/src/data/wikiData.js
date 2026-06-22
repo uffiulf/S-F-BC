@@ -1962,7 +1962,7 @@ export const wikiData = [
               "Gratis / Ingen"
             ],
             [
-              "Kartlegg lokale næringsforeninger og Blender Collective",
+              "Kartlegg lokale næringsforeninger og Blender Collective (gründerinkubator og kontorfellesskap i Fredrikstad for oppstartsbedrifter, frilansere og kreative)",
               "Skaffe døråpnere til de første kommersielle kundene.",
               "Studenter",
               "Gratis / Ingen"
@@ -2221,7 +2221,7 @@ export const wikiData = [
         "heading": "Rekruttering av Bedrifter",
         "text": "Bedrifter og kunder tiltrekkes gjennom lave barrierer og strategiske partnerskap:",
         "points": [
-          "<strong>Inkubatornettverk:</strong> Vi pitcher ordningen direkte til gründere i Blender Collective og Smart Innovation Norway.",
+          "<strong>Inkubatornettverk:</strong> Vi pitcher ordningen direkte til gründere i Blender Collective (gründerinkubator og kontorfellesskap i Fredrikstad) og Smart Innovation Norway (regional innovasjonsaktør som støtter gründere og næringsutvikling i Østfold).",
           "<strong>Næringsforeninger:</strong> Presentasjoner på frokostmøter i Halden og Fredrikstad næringsforening.",
           "<strong>Ingen økonomisk risiko:</strong> Markedsføringen fokuserer på at tjenestene er gratis, mot at de investerer tid i oppfølging av studentene."
         ]
@@ -2229,7 +2229,7 @@ export const wikiData = [
     ],
     "tldr": [
       "Studenter rekrutteres via stands på campus og forelesere. Opptakskravet er bestått minimum 90 stp for faglig tyngde.",
-      "Bedrifter rekrutteres gjennom tette koblinger til Blender Collective, Smart Innovation Norway og lokale næringsforeninger.",
+      "Bedrifter rekrutteres gjennom tette koblinger til Blender Collective (gründerinkubator i Fredrikstad), Smart Innovation Norway (regional innovasjonsaktør i Østfold) og lokale næringsforeninger.",
       "Referanse-loopen på portalen tiltrekker passivt nye oppdragsgivere ved å vise frem fullførte prosjekter."
     ]
   },
@@ -2595,7 +2595,7 @@ export const wikiData = [
           "<strong>Tverrfaglighet er en styrke:</strong> Syntax & Flow has en fordel med IT + design + økonomi.",
           "<strong>Kvalitetssikring bygger tillit:</strong> Felles karakter + individuell vurdering motiverer studentene.",
           "<strong>UEs rammeverk kan brukes:</strong> Maler for forretningsplan, IPR og struktur gir trygghet.",
-          "<strong>Bygg bro til inkubatormiljøene:</strong> Koble oss på lokale næringshager og Blender Collective."
+          "<strong>Bygg bro til inkubatormiljøene (støtteprogrammer for oppstartsbedrifter):</strong> Koble oss på lokale næringshager (fysiske miljøer med kontorplass, veiledning og nettverk) og Blender Collective (gründerinkubator og kontorfellesskap)."
         ],
         "isCollapsible": true
       }

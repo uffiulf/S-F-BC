@@ -72,6 +72,18 @@ Kilde: Ingen spesifikk fil — nytt innhold
 Hva: Nederst på Dashboard-siden, etter eksisterende seksjoner, legg til en forklarende boks med tittel "Hvordan henger business casen sammen?" som viser at Value Proposition (VP) er en integrert del av business casen, ikke noe separat. Vis rekkefølgen: Forretningsidé → Value Proposition → Forretningsmodell → Marked og konkurranse → Scope → Risiko og juss. Forklar kort at VPC-ene som finnes under "Forretningsmodell & VPC" er en visualisering av VP-en for hver målgruppe (studenter, HiØ, næringsliv). Alt dette samlet utgjør business casen.
 Hvor: Nederst på Dashboard-siden
 
+### 19.06.2026 — Forklar begreper som Blender Collective og næringshager på infosiden
+Prioritet: Høy
+Kilde: Infosiden wikiData.js — flere steder nevnes "Blender Collective", "Smart Innovation Norway", "næringshager", "inkubatorer" uten forklaring
+Hva: Gå gjennom HELE wikiData.js og finn alle steder der disse begrepene brukes. For hvert sted, legg til en kort forklaring i parentes eller som fotnote:
+- **Blender Collective:** Gründerinkubator og kontorfellesskap i Fredrikstad for oppstartsbedrifter, frilansere og kreative.
+- **Smart Innovation Norway:** Regional innovasjonsaktør som støtter gründere og næringsutvikling i Østfold.
+- **Næringshage:** Et fysisk miljø (ofte SIVA-eid) der gründere og småbedrifter får kontorplass, veiledning og tilgang til nettverk.
+- **Inkubator:** Et støtteprogram for oppstartsbedrifter som tilbyr veiledning, kontorplass og finansieringshjelp.
+
+Målet er at hvem som helst skal forstå hva disse aktørene er uten å måtte slå opp.
+Hvor: Hele wikiData.js — alle sider som refererer til disse begrepene
+
 ### 19.06.2026 — Omstrukturer menyen på infosiden for bedre oversikt
 Prioritet: Høy
 Kilde: Tilbakemelding fra prosjekteier
@@ -220,5 +232,6 @@ Hvor: Ny seksjon under "Analyser" eller "Guidelines"
 | 19.06.2026 | Kvalitetssikring (QC) av hele infosiden — rett opp flere feil | Utført |
 | 19.06.2026 | QC Runde 2: Rett opp feil om Lånekassen på infosiden | Utført |
 | 19.06.2026 | Omstrukturer menyen på infosiden for bedre oversikt | Utført |
+| 19.06.2026 | Forklar begreper som Blender Collective og næringshager på infosiden | Utført |
 
 
