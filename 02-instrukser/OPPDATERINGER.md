@@ -321,8 +321,4 @@ Hvor: Ny seksjon under "Analyser" eller "Guidelines"
 | 22.06.2026 | Ryddeopp runde 2: gjenværende SLA, Spor 2 og foreningsreferanser | Utført |
 | 22.06.2026 | Oppdater Trelagsmodellen på infosiden | Utført |
 | 22.06.2026 | Forbedre grafisk fremstilling på infosiden | Utført |
-
-
-
-
-
+| 23.06.2026 | Legg til piler og øk avstand i business case-flyt | Utført |

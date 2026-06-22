@@ -539,7 +539,7 @@ export default function App() {
                           <h2>{sec.heading}</h2>
                           {sec.heading === "Hvordan henger business casen sammen?" && currentPage.id === "dashboard" ? (
                             <div className="business-case-flow-container mt-6 animate-fade-in">
-                              <div className="flow-steps-grid">
+                              <div className="flow-steps-flex">
                                 {[
                                   { num: 1, title: "Forretningsidé", icon: "Lightbulb", color: "blue", desc: "Formålet og retningen for Syntax & Flow." },
                                   { num: 2, title: "Value Proposition", icon: "Compass", color: "amber", desc: "Verdien vi skaper for studenter, HiØ og bedrifter.", highlight: true },
@@ -547,17 +547,24 @@ export default function App() {
                                   { num: 4, title: "Marked & Konkurranse", icon: "TrendingUp", color: "indigo", desc: "Hvem vi hjelper og posisjonering." },
                                   { num: 5, title: "Scope", icon: "Crosshair", color: "purple", desc: "Hva som er in/out of scope for prosjektet." },
                                   { num: 6, title: "Risiko & Juss", icon: "Shield", color: "rose", desc: "Sikrer statsstøtteskille, GDPR og ansvarsfraskrivelse." }
-                                ].map((step) => {
+                                ].map((step, idx, arr) => {
                                   const IconComponent = Icons[step.icon];
                                   return (
-                                    <div key={step.num} className={`flow-step-card ${step.highlight ? 'highlighted' : ''}`}>
-                                      <div className={`step-badge bg-${step.color}`}>{step.num}</div>
-                                      <div className="step-icon-wrapper">
-                                        {IconComponent && <IconComponent className={`w-6 h-6 text-${step.color}-icon`} />}
+                                    <React.Fragment key={step.num}>
+                                      <div className={`flow-step-card ${step.highlight ? 'highlighted' : ''}`}>
+                                        <div className={`step-badge bg-${step.color}`}>{step.num}</div>
+                                        <div className="step-icon-wrapper">
+                                          {IconComponent && <IconComponent className={`w-6 h-6 text-${step.color}-icon`} />}
+                                        </div>
+                                        <h3>{step.title}</h3>
+                                        <p>{step.desc}</p>
                                       </div>
-                                      <h3>{step.title}</h3>
-                                      <p>{step.desc}</p>
-                                    </div>
+                                      {idx < arr.length - 1 && (
+                                        <div className="flow-step-arrow">
+                                          <Icons.ArrowRight className="w-5 h-5" />
+                                        </div>
+                                      )}
+                                    </React.Fragment>
                                   );
                                 })}
                               </div>
