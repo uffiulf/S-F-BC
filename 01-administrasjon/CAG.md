@@ -59,7 +59,7 @@ Prioritet: 1) HiØ internt, 2) Ideelle organisasjoner, 3) Privatpersoner (ENK), 
 | Område | Status | Viktigste tiltak |
 |--------|--------|------------------|
 | Lånekassen | ITD35014 (10 stp) er innenfor bachelorløp — fungerer. Studenten får full støtte. Risiko kun ved enkeltemner utenom grad | Mål: utvide ITD35014 til 15–30 stp |
-| Statsstøtte/EØS | **Største risiko.** HiØs ressurser kan anses som ulovlig støtte | AS eid av stiftelse, markedspris for HiØ-bidrag, støtteregister, de minimis |
+| Statsstøtte/EØS | **Redusert risiko etter forskning.** Ingen ESA-sak har stanset lignende modeller. Offentlig utdanning = ikke-økonomisk aktivitet (*Humbel*-doktrinen). Risiko kun ved kommersielle kunder i stor skala | AS eid av stiftelse, markedspris for HiØ-bidrag, støtteregister, de minimis. Se `04-kilde/esa_statsstotte_universiteter.md` |
 | Arbeidstaker | Studentene er i en gråsone | Formelt emne med læringsmål, fleksible tider, veiledning ikke instruksjon |
 | Konkurranse | Høy risiko for klager fra etablerte byråer | Posisjonér som utdanningstiltak, kun mikrovirksomheter, «defense pack» |
 | Ansvarsforhold | Uten forsikring står studentene ubeskyttet | Yrkesansvarsforsikring, standardavtale med «as-is»-klausul |
@@ -128,3 +128,5 @@ Prioritet: 1) HiØ internt, 2) Ideelle organisasjoner, 3) Privatpersoner (ENK), 
 | NAV arbeidstrening | `04-kilde/nav_arbeidstrening.md` |
 | NTNU referanseemner | `04-kilde/ntnu_referanseemner.md` |
 | Business Case Utkast | `06-Business-case/Business-Case-Utkast.md` |
+| ESA statsstøtte forskning | `04-kilde/esa_statsstotte_universiteter.md` |
+| Interessentanalyse (oppdatert) | `01-administrasjon/interessentanalyse.md` |

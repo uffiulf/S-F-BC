@@ -510,9 +510,21 @@ export default function App() {
                                     <tbody>
                                       {sec.table.rows.map((row, rIdx) => (
                                         <tr key={rIdx}>
-                                          {row.map((cell, cIdx) => (
-                                            <td key={cIdx} dangerouslySetInnerHTML={{ __html: cell }} />
-                                          ))}
+                                          {row.map((cell, cIdx) => {
+                                            let cellClassName = "";
+                                            if (sec.table.headers[cIdx] === "In Scope") {
+                                              cellClassName = "scope-in-cell";
+                                            } else if (sec.table.headers[cIdx] === "Out of Scope") {
+                                              cellClassName = "scope-out-cell";
+                                            }
+                                            return (
+                                              <td
+                                                key={cIdx}
+                                                className={cellClassName}
+                                                dangerouslySetInnerHTML={{ __html: cell }}
+                                              />
+                                            );
+                                          })}
                                         </tr>
                                       ))}
                                     </tbody>
@@ -525,7 +537,130 @@ export default function App() {
                       ) : (
                         <>
                           <h2>{sec.heading}</h2>
-                          {sec.text && <p dangerouslySetInnerHTML={{ __html: sec.text }} />}
+                          {sec.heading === "Hvordan henger business casen sammen?" && currentPage.id === "dashboard" ? (
+                            <div className="business-case-flow-container mt-6 animate-fade-in">
+                              <div className="flow-steps-grid">
+                                {[
+                                  { num: 1, title: "Forretningsidé", icon: "Lightbulb", color: "blue", desc: "Formålet og retningen for Syntax & Flow." },
+                                  { num: 2, title: "Value Proposition", icon: "Compass", color: "amber", desc: "Verdien vi skaper for studenter, HiØ og bedrifter.", highlight: true },
+                                  { num: 3, title: "Forretningsmodell", icon: "Briefcase", color: "emerald", desc: "Hvordan verdien leveres pro-bono." },
+                                  { num: 4, title: "Marked & Konkurranse", icon: "TrendingUp", color: "indigo", desc: "Hvem vi hjelper og posisjonering." },
+                                  { num: 5, title: "Scope", icon: "Crosshair", color: "purple", desc: "Hva som er in/out of scope for prosjektet." },
+                                  { num: 6, title: "Risiko & Juss", icon: "Shield", color: "rose", desc: "Sikrer statsstøtteskille, GDPR og ansvarsfraskrivelse." }
+                                ].map((step) => {
+                                  const IconComponent = Icons[step.icon];
+                                  return (
+                                    <div key={step.num} className={`flow-step-card ${step.highlight ? 'highlighted' : ''}`}>
+                                      <div className={`step-badge bg-${step.color}`}>{step.num}</div>
+                                      <div className="step-icon-wrapper">
+                                        {IconComponent && <IconComponent className={`w-6 h-6 text-${step.color}-icon`} />}
+                                      </div>
+                                      <h3>{step.title}</h3>
+                                      <p>{step.desc}</p>
+                                    </div>
+                                  );
+                                })}
+                              </div>
+                              <p className="flow-footer text-secondary mt-6 text-sm" style={{ marginTop: '24px', fontSize: '0.875rem', color: 'var(--text-secondary)', lineHeight: '1.6' }}>
+                                <strong>Hvordan det henger sammen:</strong> Forretningsidéen definerer retningen. Value Proposition (VP) tydeliggjør verdiskapningen (visualisert i våre VPC-er). Forretningsmodellen beskriver hvordan denne verdien leveres (gratis samarbeidsmodell med en forpliktende milepælsplan). Marked og konkurranse kartlegger eksterne krefter. Scope definerer rammene for hva vi skal gjøre (og ikke gjøre), og Risiko og juss sikrer at vi navigerer innenfor lovverk som statsstøttereglene og personvern.
+                              </p>
+                            </div>
+                          ) : (
+                            sec.text && <p dangerouslySetInnerHTML={{ __html: sec.text }} />
+                          )}
+
+                          {sec.heading === "1. Modell med to parallelle spor" && currentPage.id === "scope" && (
+                            <div className="evighetsprosjekt-timeline mt-6 animate-fade-in">
+                              <h3>🔄 Livssyklus for et evighetsprosjekt (Semesterovergang)</h3>
+                              <p className="text-secondary mb-4" style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '16px' }}>
+                                Hvordan prosjektene videreføres kontinuerlig uten kunnskapstap når studentkull uteksamineres:
+                              </p>
+                              <div className="semester-flow">
+                                <div className="semester-box">
+                                  <div className="sem-badge">Semester 1</div>
+                                  <h4>Kull A (Oppstart)</h4>
+                                  <p>Etablerer krav, database-skjema, basis arkitektur og kjerne-MVP.</p>
+                                </div>
+                                <div className="sem-arrow">
+                                  <Icons.ArrowRight className="w-5 h-5 text-accent" />
+                                </div>
+                                <div className="semester-box">
+                                  <div className="sem-badge">Semester 2</div>
+                                  <h4>Kull B (Overlapp)</h4>
+                                  <p>Overtar repokode via overleveringsplan, bygger API og integrerer nye funksjoner.</p>
+                                </div>
+                                <div className="sem-arrow">
+                                  <Icons.ArrowRight className="w-5 h-5 text-accent" />
+                                </div>
+                                <div className="semester-box">
+                                  <div className="sem-badge">Semester 3</div>
+                                  <h4>Kull C (Polering)</h4>
+                                  <p>Lansering, feilretting, traineer læres opp og klargjøring for neste kull.</p>
+                                </div>
+                              </div>
+                            </div>
+                          )}
+
+                          {sec.heading === "Trelagsmodellen" && currentPage.id === "organisasjon-og-drift" && (
+                            <div className="org-chart-visualization mb-8 mt-6 animate-fade-in">
+                              <div className="org-chart-container">
+                                <div className="org-node styret">
+                                  <div className="font-semibold text-accent mb-1 flex items-center justify-center gap-2" style={{ fontWeight: 600, color: 'var(--accent-color)', marginBottom: '4px', display: 'flex', alignItems: 'center', justify: 'center', gap: '8px' }}>
+                                    <Icons.Shield className="w-5 h-5" />
+                                    <span>1. Styret (HiØ / Næringsliv)</span>
+                                  </div>
+                                  <div className="text-xs text-muted" style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>Strategi, rammer og godkjenning</div>
+                                </div>
+
+                                <div className="org-connector"></div>
+
+                                <div className="org-node kjerne">
+                                  <div className="font-semibold text-emerald-500 mb-1 flex items-center justify-center gap-2" style={{ fontWeight: 600, color: '#10b981', marginBottom: '4px', display: 'flex', alignItems: 'center', justify: 'center', gap: '8px' }}>
+                                    <Icons.Cpu className="w-5 h-5 animate-pulse" />
+                                    <span>2. Stabil kjerne (Drift)</span>
+                                  </div>
+                                  <div className="text-sm font-medium mb-1" style={{ fontSize: '0.875rem', fontWeight: 500, marginBottom: '4px' }}>Daglig leder + fagansvarlige</div>
+                                  <div className="text-xs text-muted" style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>Skaffer oppdrag, kvalitetssikrer &amp; følger opp</div>
+                                </div>
+
+                                <div className="org-connector"></div>
+
+                                {/* Split connector */}
+                                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%' }}>
+                                  <div style={{ width: '66%', height: '2px', background: 'var(--border-color)' }}></div>
+                                  <div style={{ display: 'flex', justifyContent: 'space-between', width: '66%', height: '16px' }}>
+                                    <div style={{ width: '2px', height: '100%', background: 'var(--border-color)' }}></div>
+                                    <div style={{ width: '2px', height: '100%', background: 'var(--border-color)' }}></div>
+                                    <div style={{ width: '2px', height: '100%', background: 'var(--border-color)' }}></div>
+                                  </div>
+                                </div>
+
+                                <div className="org-row-students">
+                                  <div className="org-node student-node">
+                                    <div className="font-semibold text-amber-500 mb-1 flex items-center justify-center gap-1.5" style={{ fontWeight: 600, color: '#f59e0b', marginBottom: '4px', display: 'flex', alignItems: 'center', justify: 'center', gap: '6px' }}>
+                                      <Icons.Code className="w-4 h-4" />
+                                      <span>Studenter (IT)</span>
+                                    </div>
+                                    <div className="text-xs text-muted" style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>Utvikler MVP, nettsider, systemer</div>
+                                  </div>
+                                  <div className="org-node student-node">
+                                    <div className="font-semibold text-amber-500 mb-1 flex items-center justify-center gap-1.5" style={{ fontWeight: 600, color: '#f59e0b', marginBottom: '4px', display: 'flex', alignItems: 'center', justify: 'center', gap: '6px' }}>
+                                      <Icons.Palette className="w-4 h-4" />
+                                      <span>Studenter (Design)</span>
+                                    </div>
+                                    <div className="text-xs text-muted" style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>Profil, Figmaskisser, UI/UX</div>
+                                  </div>
+                                  <div className="org-node student-node">
+                                    <div className="font-semibold text-amber-500 mb-1 flex items-center justify-center gap-1.5" style={{ fontWeight: 600, color: '#f59e0b', marginBottom: '4px', display: 'flex', alignItems: 'center', justify: 'center', gap: '6px' }}>
+                                      <Icons.TrendingUp className="w-4 h-4" />
+                                      <span>Studenter (Økonomi)</span>
+                                    </div>
+                                    <div className="text-xs text-muted" style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>BMC, marked, regnskap</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          )}
                           
                           {sec.points && (
                             <ul>
@@ -563,9 +698,21 @@ export default function App() {
                                 <tbody>
                                   {sec.table.rows.map((row, rIdx) => (
                                     <tr key={rIdx}>
-                                      {row.map((cell, cIdx) => (
-                                        <td key={cIdx} dangerouslySetInnerHTML={{ __html: cell }} />
-                                      ))}
+                                      {row.map((cell, cIdx) => {
+                                        let cellClassName = "";
+                                        if (sec.table.headers[cIdx] === "In Scope") {
+                                          cellClassName = "scope-in-cell";
+                                        } else if (sec.table.headers[cIdx] === "Out of Scope") {
+                                          cellClassName = "scope-out-cell";
+                                        }
+                                        return (
+                                          <td
+                                            key={cIdx}
+                                            className={cellClassName}
+                                            dangerouslySetInnerHTML={{ __html: cell }}
+                                          />
+                                        );
+                                      })}
                                     </tr>
                                   ))}
                                 </tbody>
@@ -676,13 +823,20 @@ export default function App() {
                       <div className="phase-stepper">
                         {currentPage.sections[0].table.rows.map((row, idx) => {
                           const isActive = activeGjennomforingPhase === idx;
+                          const isCompleted = idx < activeGjennomforingPhase;
                           return (
                             <button
                               key={idx}
                               onClick={() => setActiveGjennomforingPhase(idx)}
-                              className={`phase-step-btn ${isActive ? "active" : ""}`}
+                              className={`phase-step-btn ${isActive ? "active" : ""} ${isCompleted ? "completed" : ""}`}
                             >
-                              <div className="step-circle">{idx + 1}</div>
+                              <div className="step-circle">
+                                {isCompleted ? (
+                                  <Icons.Check className="w-4 h-4 text-emerald-500 animate-fade-in" />
+                                ) : (
+                                  idx + 1
+                                )}
+                              </div>
                               <div className="step-label">
                                 <span className="step-phase">{row[0]}</span>
                                 <span className="step-title">{row[1].split('(')[0].trim()}</span>

@@ -16,33 +16,25 @@ For å sikre profesjonell drift foreslås en modell med tre nivåer:
                                 │
                                 ▼
                   ┌───────────────────────────┐
-                  │  2. Mentorordning (HiØ)   │ -> Kvalitetssikring, faglig støtte
-                  └─────────────┬─────────────┘
-                                │
-                                ▼
-                  ┌───────────────────────────┐
-                  │ 3. Studentledelse (Drift) │ -> Daglig leder, fagansvarlige
+                  │  2. Stabil kjerne (Drift) │ -> Daglig leder, fagansvarlige
                   └─────────────┬─────────────┘
                                 │
          ┌──────────────────────┼──────────────────────┐
          ▼                      ▼                      ▼
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│  IT-Avdeling    │    │ Design-Avdeling │    │ Økonomi-Avd.    │
+│    Studenter    │    │    Studenter    │    │    Studenter    │
+│      (IT)       │    │   (Design)      │    │  (Økonomi)      │
 └─────────────────┘    └─────────────────┘    └─────────────────┘
 ```
 
 ### A. Styret
-*   **Sammensetning:** Representanter fra HiØ-ledelsen, fagansvarlige forelesere, lokale næringslivsaktører og studentrepresentanter.
+*   **Sammensetning:** Representanter fra HiØ-ledelsen, uavhengige medlemmer fra næringslivet, daglig leder (observatør).
 *   **Rolle:** Møtes kvartalsvis for å sikre at bedriften følger retningslinjer, godkjenne årsrapport, og hjelpe med strategisk retning og nettverksbygging.
 
-### B. Mentorordningen (HiØ-Ansatte)
-*   **Faglige mentorer:** Forelesere eller vitenskapelig ansatte innen IT, design og økonomi som kan avsette noen timer i måneden til å kvalitetssikre leveranser.
-*   **Rolle:** Sikre at kvaliteten på det som leveres til kunder holder et profesjonelt nivå, og gi studentene faglig støtte når de møter utfordringer.
-
-### C. Stabil kjerne (drift av Syntax & Flow)
-Syntax & Flow drives av en stabil kjerne som ikke er avhengig av studentutskifting:
+### B. Stabil kjerne (drift av Syntax & Flow)
+Syntax & Flow drives av en stabil kjerne som ikke er avhengig av studentutskifting. Den stabile kjernen finner relevante oppdrag (både in-house og eksternt), kvalitetssikrer leveranser og følger opp studentene. Studenter har ikke driftsansvar for organisasjonen:
 *   **Daglig Leder:** Ansvarlig for daglig drift, kundekontakt, strategi. Kan være lønnet eller stipendbasert.
-*   **Fagansvarlige (IT, Design, Økonomi):** Kvalitetssikrer faglige leveranser, designer oppdrag og veileder studenter. Kan være HiØ-ansatte på deltid eller erfarne konsulenter.
+*   **Fagansvarlige (IT, Design, Økonomi):** Kvalitetssikrer faglige leveranser, designer oppdrag (både in-house evighetsprosjekter og eksterne kundeoppdrag) og veileder studenter. Kan være HiØ-ansatte på deltid eller erfarne konsulenter.
 *   **Forelesere (HiØ-ansatte):** Trekkes inn ved behov for spisskompetanse og kvalitetssikring.
 
 ---
@@ -68,13 +60,13 @@ Syntax & Flow rekrutterer studenter gjennom det eksisterende emnet **ITD35014 Be
 ## 3. Løsning på Kontinuitetsutfordringen (Kunnskapsoverføring)
 For å unngå at bedriften kollapser når nøkkelpersoner uteksamineres, må følgende tiltak etableres:
 
-1.  **Overlappsperioder:** Ledelsesroller bør ha en overlapp på 3–6 måneder der den pågående lederen lærer opp arvtakeren.
-2.  **Omfattende dokumentasjon (Wiki/Handbok):** Alle rutiner, maler, tilganger og prosjektfiler må dokumenteres grundig i et felles system (f.eks. Notion, GitHub Enterprise eller Confluence).
-3.  **Trainee-ordning:** Første- og andreårsstudenter rekrutteres som "trainees" eller junior-utviklere/designere, slik at de kan vokse inn i tyngre roller i sitt 3. studieår.
+1.  **Overlappsperioder:** Roller i den stabile kjernen bør ha en overlapp på 3–6 måneder der den pågående lederen lærer opp arvtakeren.
+2.  **Omfattende dokumentasjon (Wiki/Handbok):** Alle rutiner, maler, tilganger og prosjektfiler må dokumenteres grundig i et felles system.
+3.  **Kunnskapsoverføring mellom studentkull:** Evighetsprosjekter har overleveringsplan som sikrer at neste kull kan ta over uten å starte fra bunnen.
 
 ---
 
 ## 4. Kvalitetssikring (QA)
 For å beskytte HiØs rykte og sikre fornøyde kunder:
-*   Ingen leveranse til ekstern kunde skal godkjennes uten at en **faglig mentor (HiØ-ansatt)** eller en senior studentleder har gjennomgått og godkjent produktet.
+*   Ingen leveranse til ekstern kunde skal godkjennes uten at en **faglig mentor (HiØ-ansatt)** eller fagansvarlig har gjennomgått og godkjent produktet.
 *   Det skal brukes standardiserte kontrakter for alle oppdrag (utarbeidet i samarbeid med økonomistudenter og eventuelt juridisk rådgiver ved HiØ).

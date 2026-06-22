@@ -72,6 +72,70 @@ Kilde: Ingen spesifikk fil — nytt innhold
 Hva: Nederst på Dashboard-siden, etter eksisterende seksjoner, legg til en forklarende boks med tittel "Hvordan henger business casen sammen?" som viser at Value Proposition (VP) er en integrert del av business casen, ikke noe separat. Vis rekkefølgen: Forretningsidé → Value Proposition → Forretningsmodell → Marked og konkurranse → Scope → Risiko og juss. Forklar kort at VPC-ene som finnes under "Forretningsmodell & VPC" er en visualisering av VP-en for hver målgruppe (studenter, HiØ, næringsliv). Alt dette samlet utgjør business casen.
 Hvor: Nederst på Dashboard-siden
 
+### 22.06.2026 — Oppdater Trelagsmodellen på infosiden
+Prioritet: Høy
+Kilde: Avklaring fra prosjekteier
+Hva: To steder på infosiden må oppdateres:
+
+1. **"Organisasjon & Drift"-siden, under "Trelagsmodellen":** 
+   - Linje 88: "Studentledelsen: Daglig leder og fagansvarlige studenter (seniorer/masterstudenter) som leder de operative avdelingene." — Erstatt med: "Stabil kjerne: Daglig leder og fagansvarlige som driver Syntax & Flow. De finner oppdrag (både in-house og eksternt), kvalitetssikrer leveranser og følger opp studentene. Dette er lønnete stillinger, ikke studenter."
+   - Hele trelagsmodellen skal vise: Styret → Stabil kjerne → Studenter (utfører oppdrag)
+
+2. **"Forretningsmodell & VPC"-siden, under HiØs verdi:**
+   - Linje 565: "Studentledelsen håndterer kundekontakt..." — Endre til: "Den stabile kjernen i Syntax & Flow håndterer kundekontakt..."
+   - Linje 592: "Studentledelsen in Syntax & Flow håndterer..." — Endre til: "Den stabile kjernen i Syntax & Flow håndterer..."
+
+Fjern ALLE referanser til "Studentledelsen" — S&F har ikke studenter i ledelsen.
+Hvor: "Organisasjon & Drift" og "Forretningsmodell & VPC"
+
+3. **Oppdater organisasjonskartet på "Organisasjon & Drift":**
+   I tillegg til teksten, oppdater den visuelle fremstillingen av organisasjonsstrukturen slik at den matcher den oppdaterte `organisasjon_og_drift.md` i mappe 01. Strukturen skal være:
+   ```
+                   Styret (HiØ/Næring)
+                          │
+                          ▼
+                  Stabil kjerne (Drift)
+                   Daglig leder + fagansvarlige
+                          │
+          ┌────────────────┼────────────────┐
+          ▼                ▼                ▼
+    Studenter (IT)   Studenter (Design)  Studenter (Økonomi)
+   ```
+   Altså: Styret → Stabil kjerne → Studenter. Ikke noe "studentledelse"-nivå.
+Hvor: "Organisasjon & Drift"-siden
+
+### 22.06.2026 — Oppdater studentbeskrivelser i trelagsmodellen
+Prioritet: Høy
+Kilde: Bekreftet fra HiØs studieprogramsider for BA økonomi og administrasjon og BA innovasjon og prosjektledelse
+Hva: På "Organisasjon & Drift"-siden, under trelagsmodellen: De fagspesifikke oppgavene under hver studentgruppe må justeres basert på hva studentene faktisk lærer på HiØ:
+
+- Studenter (IT): Systemutvikling, programmering, nettsider
+- Studenter (Design): Profil, Figmaskisser, UI/UX
+- Studenter (Økonomi): Økonomisk analyse, regnskap, strategi
+
+BA økonomi og administrasjon har fagområder som samfunnsøkonomi, bedriftsøkonomi, regnskap, finans, strategi, markedsføring og bærekraft. BA innovasjon og prosjektledelse har innovasjonsprosesser, prosjektstyring og organisasjonsutvikling. BMC er ikke et standard emne for økonomistudenter ved HiØ.
+
+Hold beskrivelsene korte og nøytrale. Tjenestekatalogen er stedet for detaljerte oppgaver.
+Hvor: "Organisasjon & Drift"-siden, trelagsmodellen
+
+### 22.06.2026 — Forbedre grafisk fremstilling på infosiden
+Prioritet: Middels
+Kilde: Tilbakemelding fra prosjekteier
+Hva: Gjennomgå infosiden og forbedre den visuelle fremstillingen der det er mulig. Fokuser på:
+
+1. **Organisasjonskartet** — gjør det mer visuelt med tydelige bokser, piler og fargekoding. Bruk CSS-klasser som allerede finnes i App.css.
+
+2. **Dashboard / Business Case-flyt** — "Hvordan henger business casen sammen?"-seksjonen kan få en mer visuell fremstilling med ikoner og farger i stedet for bare tekst.
+
+3. **Scope in/out** — vurder om in/out-tabellene kan visualiseres med fargekoder (grønn for in scope, rød for out of scope) i stedet for bare tabellceller.
+
+4. **Evighetsprosjekter** — vis hvordan et prosjekt går over flere semestre med en tidslinje eller pil som viser kull 1 → kull 2 → kull 3.
+
+5. **Faser (gjennomføringsplan)** — gjør fasetabellen mer visuell med fremdriftsindikator eller tidslinje.
+
+Målet er å gjøre informasjonen lettere å forstå ved første øyekast, uten å måtte lese lang tekst. Bruk eksisterende CSS-klasser og ikoner (lucide-react) som allerede er tilgjengelig i prosjektet. Ikke legg til nye avhengigheter.
+Hvor: Hele wikiData.js — flere sider
+
 ### 22.06.2026 — Ryddeopp runde 2: gjenværende SLA, Spor 2 og foreningsreferanser
 Prioritet: Høy
 Kilde: Gjennomgang av wikiData.js
@@ -255,6 +319,9 @@ Hvor: Ny seksjon under "Analyser" eller "Guidelines"
 | 19.06.2026 | Forklar begreper som Blender Collective og næringshager på infosiden | Utført |
 | 22.06.2026 | Rett opp to inkonsistenser på infosiden: Selskapsform og SLA | Utført |
 | 22.06.2026 | Ryddeopp runde 2: gjenværende SLA, Spor 2 og foreningsreferanser | Utført |
+| 22.06.2026 | Oppdater Trelagsmodellen på infosiden | Utført |
+| 22.06.2026 | Forbedre grafisk fremstilling på infosiden | Utført |
+
 
 
 

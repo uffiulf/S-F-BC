@@ -84,8 +84,8 @@ export const wikiData = [
         "text": "For å sikre at bedriften opprettholder kvalitet og kontinuitet når studenter uteksamineres, styres Syntax & Flow etter en trelagsmodell:",
         "points": [
           "<strong>Styret:</strong> Består av HiØ-ledelse, dekaner, forelesere, lokale bedrifter og studenter. Ansvarlig for strategiske rammer.",
-          "<strong>Mentorordningen:</strong> Forelesere og fagansvarlige ved HiØ som kvalitetssikrer faglige leveranser innen IT, design og økonomi.",
-          "<strong>Studentledelsen:</strong> Daglig leder og fagansvarlige studenter (seniorer/masterstudenter) som leder de operative avdelingene."
+          "<strong>Stabil kjerne:</strong> Daglig leder og fagansvarlige som driver Syntax & Flow. De finner oppdrag (både in-house og eksternt), kvalitetssikrer leveranser og følger opp studentene. Dette er lønnete stillinger, ikke studenter.",
+          "<strong>Studenter (utfører oppdrag):</strong> Deltar gjennom emnet ITD35014 Bedriftspraksis i tverrfaglige prosjektteam (IT, design og økonomi) og utfører de konkrete oppdragene for kundene."
         ]
       },
       {
@@ -562,7 +562,7 @@ export const wikiData = [
         "target": "Høgskolen i Østfold (HiØ)",
         "colorTheme": "hio",
         "description": "Value Proposition Canvas som viser hvordan Syntax & Flow støtter HiØs samfunnsrolle og studiekvalitet.",
-        "longDescription": "HiØ får et <strong>konkret verktøy for å øke studiekvaliteten og kandidatproduksjonen</strong>. Syntax & Flow løser flere av høgskolens strategiske utfordringer samtidig:<br/><br/>For det første <strong>reduseres frafall på slutten av studieløpet</strong>. Når studentene vet at emnet Bedriftspraksis gir dem en direkte inngang til arbeidslivet, øker motivasjonen for å fullføre graden. Hver fullført grad utløser resultatbasert finansiering fra Kunnskapsdepartementet.<br/><br/>For det andre får HiØ <strong>gratis markedsføring</strong> gjennom NAV-sporet. Når høgskolen aktivt hjelper nyutdannede og personer utenfor arbeidsmarkedet inn i jobb, skaper det positive oppslag i lokale medier og styrker HiØs omdømme som en samfunnsansvarlig institusjon.<br/><br/>For det tredje <strong>styrkes båndene til lokalt næringsliv</strong>. Gjennom Syntax & Flow får HiØ eine kanal for samarbeid med bedrifter i Østfold som ellers ikke ville hatt kontakt med høgskolen. Dette gir muligheter for fremtidige forskningssamarbeid, gjesteforelesere og praksisplasser.<br/><br/>For det fjerde avlaster Syntax & Flow <strong>HiØs administrasjon</strong>. Studentledelsen håndterer kundekontakt, prosjektkoordinering og daglig drift, mens høgskolens ansatte kun bidrar som faglige mentorer. Siden Syntax & Flow organiseres som en juridisk separat enhet, unngår HiØ også den juridiske og økonomiske risikoen knyttet til studentenes leveranser.",
+        "longDescription": "HiØ får et <strong>konkret verktøy for å øke studiekvaliteten og kandidatproduksjonen</strong>. Syntax & Flow løser flere av høgskolens strategiske utfordringer samtidig:<br/><br/>For det første <strong>reduseres frafall på slutten av studieløpet</strong>. Når studentene vet at emnet Bedriftspraksis gir dem en direkte inngang til arbeidslivet, øker motivasjonen for å fullføre graden. Hver fullført grad utløser resultatbasert finansiering fra Kunnskapsdepartementet.<br/><br/>For det andre får HiØ <strong>gratis markedsføring</strong> gjennom NAV-sporet. Når høgskolen aktivt hjelper nyutdannede og personer utenfor arbeidsmarkedet inn i jobb, skaper det positive oppslag i lokale medier og styrker HiØs omdømme som en samfunnsansvarlig institusjon.<br/><br/>For det tredje <strong>styrkes båndene til lokalt næringsliv</strong>. Gjennom Syntax & Flow får HiØ eine kanal for samarbeid med bedrifter i Østfold som ellers ikke ville hatt kontakt med høgskolen. Dette gir muligheter for fremtidige forskningssamarbeid, gjesteforelesere og praksisplasser.<br/><br/>For det fjerde avlaster Syntax & Flow <strong>HiØs administrasjon</strong>. Den stabile kjernen i Syntax & Flow håndterer kundekontakt, prosjektkoordinering og daglig drift, mens høgskolens ansatte kun bidrar som faglige mentorer. Siden Syntax & Flow organiseres som en juridisk separat enhet, unngår HiØ også den juridiske og økonomiske risikoen knyttet til studentenes leveranser.",
         "customerProfile": {
           "jobs": [
             "Levere studiekvalitet: Tilby utdanninger som gjør kandidatene attraktive på arbeidsmarkedet.",
@@ -589,7 +589,7 @@ export const wikiData = [
           ],
           "painRelievers": [
             "Insentiv for fullføring: Krav om bestått bachelor/master-grad for å delta i praksisåret hos oss.",
-            "Administrativ avlastning: Studentledelsen in Syntax & Flow håndterer prosjektene og kundekontakten.",
+            "Administrativ avlastning: Den stabile kjernen i Syntax & Flow håndterer prosjektene og kundekontakten.",
             "Juridisk separasjon: Organisering utenfor HiØs kjernesystem beskytter høgskolen mot risiko."
           ],
           "gainCreators": [

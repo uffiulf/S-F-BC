@@ -2632,5 +2632,263 @@ mark.highlight {
   overflow-wrap: break-word;
 }
 
+/* Custom Visual Elements - Added 22.06.2026 */
 
+/* 1. Organisasjonskart */
+.org-chart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin: 24px 0;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  backdrop-filter: blur(12px);
+  width: 100%;
+}
+.org-node {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 14px 20px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  position: relative;
+  min-width: 220px;
+}
+.org-node:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent-color);
+  box-shadow: 0 8px 25px rgba(37, 99, 235, 0.15);
+}
+.org-node.styret {
+  background: rgba(37, 99, 235, 0.03);
+  border-color: rgba(37, 99, 235, 0.2);
+}
+.org-node.kjerne {
+  background: rgba(16, 185, 129, 0.03);
+  border-color: rgba(16, 185, 129, 0.2);
+}
+.org-node.student-node {
+  background: rgba(245, 158, 11, 0.03);
+  border-color: rgba(245, 158, 11, 0.2);
+  min-width: 160px;
+}
+.org-connector {
+  width: 2px;
+  height: 20px;
+  background: var(--border-color);
+}
+.org-row-students {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
 
+/* 2. Business Case Flow on Dashboard */
+.business-case-flow-container {
+  background: rgba(255, 255, 255, 0.01);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 24px;
+}
+.flow-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 16px;
+  position: relative;
+}
+.flow-step-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 16px;
+  position: relative;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+.flow-step-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent-color);
+  box-shadow: 0 8px 25px rgba(37, 99, 235, 0.1);
+}
+.flow-step-card.highlighted {
+  border-color: var(--accent-color);
+  background: rgba(37, 99, 235, 0.03);
+  box-shadow: 0 0 15px rgba(37, 99, 235, 0.08);
+}
+.step-badge {
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 0.72rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.bg-blue { background-color: #3b82f6; }
+.bg-amber { background-color: #f59e0b; }
+.bg-emerald { background-color: #10b981; }
+.bg-indigo { background-color: #6366f1; }
+.bg-purple { background-color: #a855f7; }
+.bg-rose { background-color: #f43f5e; }
+
+.text-blue-icon { color: #3b82f6; }
+.text-amber-icon { color: #f59e0b; }
+.text-emerald-icon { color: #10b981; }
+.text-indigo-icon { color: #6366f1; }
+.text-purple-icon { color: #a855f7; }
+.text-rose-icon { color: #f43f5e; }
+
+.step-icon-wrapper {
+  margin-bottom: 12px;
+  padding: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.04);
+}
+.flow-step-card h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+  color: var(--text-primary);
+}
+.flow-step-card p {
+  font-size: 0.775rem;
+  color: var(--text-muted);
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* 3. Scope Color Coding */
+.scope-in-cell {
+  background: rgba(16, 185, 129, 0.04) !important;
+  color: #10b981 !important;
+  border-left: 4px solid #10b981 !important;
+}
+.scope-out-cell {
+  background: rgba(244, 63, 94, 0.04) !important;
+  color: #f43f5e !important;
+  border-left: 4px solid #f43f5e !important;
+}
+
+/* 4. Evighetsprosjekt Semester Flow */
+.evighetsprosjekt-timeline {
+  background: rgba(255, 255, 255, 0.01);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 24px;
+  margin-top: 24px;
+  width: 100%;
+}
+.semester-flow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 16px;
+  width: 100%;
+}
+.semester-box {
+  flex: 1;
+  min-width: 160px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 16px;
+  position: relative;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15 rgba(0, 0, 0, 0.03);
+}
+.semester-box:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent-color);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.08);
+}
+.sem-badge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--accent-color);
+  background: var(--accent-glow);
+  border: 1px solid var(--accent-border);
+  padding: 2px 6px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+.semester-box h4 {
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin: 0 0 6px 0;
+  color: var(--text-primary);
+}
+.semester-box p {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin: 0;
+  line-height: 1.4;
+}
+.sem-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* 5. Stepper Completed State & Progress Line */
+.phase-stepper-progress {
+  position: absolute;
+  top: 36px;
+  left: 30px;
+  right: 30px;
+  height: 4px;
+  background-color: var(--border-color);
+  z-index: 1;
+  border-radius: 2px;
+}
+.progress-line-fill {
+  height: 100%;
+  background-color: var(--accent-color);
+  transition: width 0.3s ease;
+  border-radius: 2px;
+  box-shadow: 0 0 8px var(--accent-color);
+}
+.phase-step-btn.completed {
+  border-color: rgba(16, 185, 129, 0.3);
+}
+.phase-step-btn.completed:hover {
+  border-color: #10b981;
+}
+.phase-step-btn.completed .step-circle {
+  border-color: #10b981;
+  background: rgba(16, 185, 129, 0.05);
+}
+.phase-step-btn.completed .step-phase {
+  color: #10b981;
+}
+
+@media (max-width: 992px) {
+  .semester-flow {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+  }
+  .sem-arrow {
+    transform: rotate(90deg);
+    margin: 4px 0;
+  }
+}

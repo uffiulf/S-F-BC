@@ -170,13 +170,15 @@ Syntax & Flow retter seg primært mot mikrovirksomheter og gründere i Østfold-
 | Område | Status | Viktigste tiltak |
 |--------|--------|------------------|
 | **Lånekassen** | ITD35014 er innenfor bachelorløp — fungerer. Risiko kun ved enkeltemner utenom grad | Mål: utvide til 15–30 stp |
-| **Statsstøtte/EØS** | **Største risiko.** HiØs ressurser kan anses som ulovlig støtte | AS eid av stiftelse, markedspris for HiØ-bidrag, støtteregister |
+| **Statsstøtte/EØS** | **Redusert risiko.** Ingen ESA-sak har stanset lignende modeller. Offentlig utdanning = ikke-økonomisk aktivitet (*Humbel*-doktrinen). Risiko kun ved kommersielle kunder i stor skala | AS eid av stiftelse, markedspris for HiØ-bidrag, støtteregister. Se `04-kilde/esa_statsstotte_universiteter.md` |
 | **Arbeidstaker** | Studentene er i en gråsone | Formelt emne, fleksible tider, veiledning ikke instruksjon |
 | **Konkurranse** | Høy risiko for klager | Posisjonér som utdanningstiltak, kun mikrovirksomheter |
 | **Ansvarsforhold** | Uten forsikring står studentene ubeskyttet | Yrkesansvarsforsikring, «as-is»-avtale |
 | **GDPR** | Portal krever samtykke og kontroll | DPIA, samtykkeskjemaer, rubric-basert vurdering |
 
 > [MANGLER: DPIA ikke gjennomført. Ansvarsforsikring ikke tegnet. Juridisk gjennomgang av ekstern jurist mangler.]
+
+**Ny forskning:** Se `04-kilde/esa_statsstotte_universiteter.md` for gjennomgang av ESA-saker. Hovedfunn: Ingen ESA-sak har noen gang stanset en lignende modell. Offentlig utdanning er ikke-økonomisk aktivitet etter *Humbel*-doktrinen.
 
 Se `05-agent-forslag/motstand/` for full juridisk vurdering.
 
