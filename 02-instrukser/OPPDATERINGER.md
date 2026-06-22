@@ -72,22 +72,25 @@ Kilde: Ingen spesifikk fil — nytt innhold
 Hva: Nederst på Dashboard-siden, etter eksisterende seksjoner, legg til en forklarende boks med tittel "Hvordan henger business casen sammen?" som viser at Value Proposition (VP) er en integrert del av business casen, ikke noe separat. Vis rekkefølgen: Forretningsidé → Value Proposition → Forretningsmodell → Marked og konkurranse → Scope → Risiko og juss. Forklar kort at VPC-ene som finnes under "Forretningsmodell & VPC" er en visualisering av VP-en for hver målgruppe (studenter, HiØ, næringsliv). Alt dette samlet utgjør business casen.
 Hvor: Nederst på Dashboard-siden
 
-### 22.06.2026 — Rett opp to inkonsistenser på infosiden: Selskapsform og SLA
+### 22.06.2026 — Ryddeopp runde 2: gjenværende SLA, Spor 2 og foreningsreferanser
 Prioritet: Høy
-Kilde: Tilbakemelding fra Gemini via Antigravity CLI
-Hva: Gå gjennom HELE wikiData.js og rett opp følgende:
+Kilde: Gjennomgang av wikiData.js
+Hva: Gå gjennom HELE wikiData.js og rett opp følgende gjenværende feil:
 
-1. **Selskapsform — fjern referanser til "forening" som alternativ:**
-   - Anbefalt modell er AS eid av ideell stiftelse. Alle steder som refererer til "forening" som et likeverdig eller billigere alternativ må fjernes eller endres.
-   - Spesielt: steder som sier "registrering som ideell forening er rimeligere enn AS" må oppdateres til å reflektere at AS er valgt modell.
-   - "Studentforening" kan brukes for å beskrive hva S&F IKKE er, men ikke som et alternativ.
+1. **SLA-referanser som ikke er byttet:**
+   - Linje 517: "(SLA)" i parentes etter "leveransegaranti" — fjern parentesen. Skal kun stå "Ingen formell leveransegaranti."
+   - Linje 761: "leveransegartanti (SLA)" — skrivefeil OG SLA. Rett til "leveransegaranti" uten SLA.
+   - Linje 1659: "Unngå ord som ... «SLA»" — denne kan stå, siden den sier at SLA skal unngås. Men sjekk at SLA faktisk er fjernet alle andre steder.
 
-2. **"Betinget SLA" → "Forpliktende milepælsplan":**
-   - Begrepet "SLA" (Service Level Agreement) signaliserer profesjonell tjenesteleveranse som kan utløse konkurranseklager. Selv med "Betinget" foran.
-   - Erstatt "Betinget SLA" med "Forpliktende milepælsplan" på alle steder. Dette beskriver samme funksjon (skriftlig avtale om leveranse ved spesielle anledninger) uten å signalisere profesjonell markedsposisjonering.
-   - Oppdater også forklaringsteksten: "I stedet for SLA, kan det ved erfarne team inngås en forpliktende milepælsplan som beskriver konkrete leveranser og tidsfrister."
+2. **Spor 2 — fjern omtale helt:**
+   - Linje 449–457: Spor 2-seksjonen under "Viktige prinsipper / Scope-tabell (in/out)" — fjern hele "Spor 2"-linjen. Spor 2 finnes ikke. Kun spor 1 (ITD35014) og spor 3 (NAV, utsatt) skal omtales.
 
-Hvor: Hele wikiData.js — alle sider som refererer til forening eller SLA
+3. **Forening som alternativ:**
+   - Linje 1314: "En forening eller stiftelse..." — endre til "En ideell stiftelse som eier AS-et..." slik at forening ikke fremstår som et alternativ.
+   - Linje 1338: "I en forening kan medlemmene..." — endre til "I et AS er ansvaret begrenset til aksjekapitalen (30 000 kr). For å sikre det ideelle formålet, bør aksjene eies av en ideell stiftelse."
+
+Gå gjennom ALL tekst og fjern siste rest av SLA, Spor 2 som aktivt spor, og forening som organisasjonsalternativ.
+Hvor: Hele wikiData.js
 
 ### 19.06.2026 — Forklar begreper som Blender Collective og næringshager på infosiden
 Prioritet: Høy
@@ -251,6 +254,8 @@ Hvor: Ny seksjon under "Analyser" eller "Guidelines"
 | 19.06.2026 | Omstrukturer menyen på infosiden for bedre oversikt | Utført |
 | 19.06.2026 | Forklar begreper som Blender Collective og næringshager på infosiden | Utført |
 | 22.06.2026 | Rett opp to inkonsistenser på infosiden: Selskapsform og SLA | Utført |
+| 22.06.2026 | Ryddeopp runde 2: gjenværende SLA, Spor 2 og foreningsreferanser | Utført |
+
 
 
 

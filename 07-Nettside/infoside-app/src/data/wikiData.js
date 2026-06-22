@@ -450,10 +450,6 @@ export const wikiData = [
               "Dagens ordning basert på det eksisterende studieemnet ITD35014 Bedriftspraksis (10 stp). Målet på sikt er å utvide emnet til 15–30 stp for å sikre rett til støtte fra Lånekassen uten krav om andre emner ved siden av."
             ],
             [
-              "<strong>Spor 2</strong>",
-              "Tidligere planlagt deltidssport (10 stp) som er fjernet fra modellen, da det ikke finnes et egnet 5 stp-emne ved HiØ å kombinere med for å nå 15 stp-grensen."
-            ],
-            [
               "<strong>Spor 3</strong>",
               "NAV-samarbeid rettet mot deltakere utenfor det ordinære studieløpet. Sporet er utsatt til etter pilotfasen (Fase 4)."
             ],
@@ -514,9 +510,9 @@ export const wikiData = [
         "heading": "Samarbeidsavtalen & Forpliktende milepælsplan",
         "text": "Siden vi leverer gratis, inngår vi en samarbeidsavtale der kunden må kompensere med sin egen **tid**:",
         "points": [
-          "<strong>Standard avtale (Best effort):</strong> Ingen formell leveransegaranti (SLA). Vi gjør vårt beste, men kunden har ingen juridisk reklamasjonsrett.",
+          "<strong>Standard avtale (Best effort):</strong> Ingen formell leveransegaranti. Vi gjør vårt beste, men kunden har ingen juridisk reklamasjonsrett.",
           "<strong>Forpliktende milepælsplan:</strong> Hvis teamet har seniorer/masterstudenter eller NAV-kandidater med solid bakgrunn, kan det skriftlig avtales en forpliktende milepælsplan på kritiske leveranser.",
-          "<strong>Kundeplikt:</strong> Kunden must delta på ukentlige statusmøter og brukertester, ellers avsluttes prosjektet umiddelbart."
+          "<strong>Kundeplikt:</strong> Kunden må delta på ukentlige statusmøter og brukertester, ellers avsluttes prosjektet umiddelbart."
         ],
         "isCollapsible": true
       }
@@ -758,7 +754,7 @@ export const wikiData = [
             [
               "<strong>Forpliktelser</strong>",
               "Kunden forplikter seg til aktiv deltakelse og ukentlige statusmøter med teamet",
-              "Kommersielle betalingsavtaler og leveransegartanti (SLA)"
+              "Kommersielle betalingsavtaler og leveransegaranti"
             ]
           ]
         }
@@ -1311,7 +1307,7 @@ export const wikiData = [
         "details": [
           {
             "heading": "6.1 Skatteplikt for ideelle organisasjoner",
-            "text": "En forening eller stiftelse som har et allmennyttig formål (som utdanning og arbeidserfaring) er fritatt for skatt på formue og inntekt etter skatteloven § 2-30. Dersom virksomheten driver økonomisk aktivitet som går utover formålet, kan denne delen bli skattepliktig."
+            "text": "En ideell stiftelse som eier AS-et og har et allmennyttig formål (som utdanning og arbeidserfaring) er fritatt for skatt på formue og inntekt etter skatteloven § 2-30. Dersom virksomheten driver økonomisk aktivitet som går utover formålet, kan denne delen bli skattepliktig."
           },
           {
             "heading": "6.2 MVA-plikt ved gratistjenester",
@@ -1334,8 +1330,8 @@ export const wikiData = [
         ],
         "details": [
           {
-            "heading": "7.1 Aksjeselskap vs. Forening",
-            "text": "I en forening kan medlemmene under visse omstendigheter holdes personlig ansvarlige for foreningens forpliktelser dersom driften er uforsvarlig. Et AS gir full ansvarsbegrensning til aksjekapitalen (30 000 kr). For å sikre det ideelle formålet, bør aksjene eies av en ideell stiftelse."
+            "heading": "7.1 Aksjeselskap og ansvarsbegrensning",
+            "text": "I et AS er ansvaret begrenset til aksjekapitalen (30 000 kr). For å sikre det ideelle formålet, bør aksjene eies av en ideell stiftelse."
           }
         ]
       },
