@@ -512,9 +512,9 @@ export default function App() {
                                         <tr key={rIdx}>
                                           {row.map((cell, cIdx) => {
                                             let cellClassName = "";
-                                            if (sec.table.headers[cIdx] === "In Scope") {
+                                            if (sec.table.headers[cIdx] && sec.table.headers[cIdx].includes("In Scope")) {
                                               cellClassName = "scope-in-cell";
-                                            } else if (sec.table.headers[cIdx] === "Out of Scope") {
+                                            } else if (sec.table.headers[cIdx] && sec.table.headers[cIdx].includes("Out of Scope")) {
                                               cellClassName = "scope-out-cell";
                                             }
                                             return (
@@ -700,9 +700,9 @@ export default function App() {
                                     <tr key={rIdx}>
                                       {row.map((cell, cIdx) => {
                                         let cellClassName = "";
-                                        if (sec.table.headers[cIdx] === "In Scope") {
+                                        if (sec.table.headers[cIdx] && sec.table.headers[cIdx].includes("In Scope")) {
                                           cellClassName = "scope-in-cell";
-                                        } else if (sec.table.headers[cIdx] === "Out of Scope") {
+                                        } else if (sec.table.headers[cIdx] && sec.table.headers[cIdx].includes("Out of Scope")) {
                                           cellClassName = "scope-out-cell";
                                         }
                                         return (
