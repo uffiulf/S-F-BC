@@ -35,14 +35,14 @@ Syntax & Flow er et selvstendig organ in-house på Høgskolen i Østfold (HiØ) 
 ### Tjenester
 - **Eksterne oppdrag:** Enkle nettsider, visuell profil, markedsanalyse, forretningsmodellkartlegging
 - **Interne evighetsprosjekter:** Store prosjekter som går over flere semestre (f.eks. ERP-system, studentportal). Hvert kull overtar fra forrige.
-- **UNNGÅ:** Applikasjonsutvikling med personopplysninger, IT-sikkerhet, regnskapsføring, systemintegrasjon, SLA
+- **UNNGÅ:** Applikasjonsutvikling med personopplysninger (før DPIA), IT-sikkerhet, regnskapsføring, systemintegrasjon
 
 ### Kunder
 Prioritet: 1) HiØ internt, 2) Ideelle organisasjoner, 3) Privatpersoner (ENK), 4) Mikrovirksomheter (1–5 ansatte) som bekrefter å ikke ha budsjett til kommersielle aktører.
 
 ### Studenter
 - **ITD35014 (10 stp)** — obligatorisk for Bachelor i kommunikasjon. Valgfritt for: Digitale medier og design, Informasjonssystemer, Informatikk - design og utvikling av IT-systemer, Dataingeniør, Internasjonal kommunikasjon (politisk kommunikasjon), BA økonomi og administrasjon (profilering økonomi og ledelse). Emneansvarlig: Stig Henning Johansen.
-- **Mål:** Utvide ITD35014 til 15–30 stp over tid for å få mer tid med studentene (det finnes ikke 5 stp-emner på HiØ som kan kombineres i dag)
+- **Mål:** Utvide ITD35014 til 15–30 stp over tid for å få mer tid med studentene
 - **Lånekassen:** ITD35014 er innenfor et bachelorløp (30 stp/semester) — studenten får full støtte. Risiko gjelder kun ved enkeltemner utenom grad
 - Uavklart: Det har vært uformelle samtaler om mulighet for enkeltemner utenom full grad, men dette må bekreftes med HiØs studieadministrasjon
 
@@ -115,9 +115,16 @@ Prioritet: 1) HiØ internt, 2) Ideelle organisasjoner, 3) Privatpersoner (ENK), 
 | Scope (minst motstand) | `06-Business-case/Scope/scope_minst_motstand.md` |
 | Scope-tabell (in/out) | `06-Business-case/Scope/scope_tabell.md` |
 | Portal som referansebase | `05-agent-forslag/Forslag/mal-og-utkast/portal_referansebase_verdi_og_jus.md` |
-| Forretningsmodell | `06-Business-case/forretningsmodell.md` |
+| Forretningsmodell | `06-Business-case/Forretningsmodell/forretningsmodell.md` |
 | Organisasjon og drift | `01-administrasjon/organisasjon_og_drift.md` |
 | Interessentanalyse | `01-administrasjon/interessentanalyse.md` |
 | Ordliste | `01-administrasjon/ordliste.md` |
 | Verdiskapning VPC-tekst | `05-agent-forslag/Forslag/mal-og-utkast/verdiskapning_vpc_oppsummering.md` |
-| Maler og utkast (16 filer) | `05-agent-forslag/Forslag/mal-og-utkast/` |
+| Maler og utkast (18 filer) | `05-agent-forslag/Forslag/mal-og-utkast/` |
+| Lånekassen forskning | `04-kilde/lanekassen_forskning.md` |
+| HiØ innovasjonsmidler | `04-kilde/hio_innovasjonsmidler.md` |
+| Blender Collective/Smart Innovation | `04-kilde/blender_smartinnovation.md` |
+| SIVA støtteordninger | `04-kilde/siva_stotteordninger.md` |
+| NAV arbeidstrening | `04-kilde/nav_arbeidstrening.md` |
+| NTNU referanseemner | `04-kilde/ntnu_referanseemner.md` |
+| Business Case Utkast | `06-Business-case/Business-Case-Utkast.md` |

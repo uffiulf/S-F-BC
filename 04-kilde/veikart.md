@@ -7,15 +7,17 @@ Veikartet er delt inn i fire faser, fra innledende planlegging til fullskala dri
 
 ## Fase 1: Planlegging og Konseptutvikling (Nåværende fase)
 *   [x] Utarbeide innledende rammeverk og visjon.
-*   [ ] Detaljere forretnings- og driftsmodell.
-*   [ ] Kartlegge relevante emner ved HiØ som kan knyttes til bedriften (f.eks. praksisemner eller bacheloroppgaver).
+*   [x] Detaljere forretnings- og driftsmodell.
+*   [x] Kartlegge relevante emner ved HiØ som kan knyttes til bedriften (f.eks. praksisemner eller bacheloroppgaver).
 *   [ ] Utarbeide en presentasjon/pitch for HiØ-ledelsen.
+*   [x] **Forskning fullført:** Lånekassen, HiØ innovasjonsmidler, Blender Collective/Smart Innovation Norway, SIVA, NAV arbeidstrening, NTNU-referanseemner (se `04-kilde/`).
 
 ---
 
 ## Fase 2: Forankring og Etablering
 *   [ ] **Møter med HiØ-ledelsen:** Presentere konseptet for dekaner og studieprogramansvarlige for å sikre akademisk støtte og mentorressurser.
-*   [ ] **Finansieringssøk:** Søke om oppstartsmidler (Siva, Innovasjon Norge, regionale midler eller HiØ-innovasjonsmidler).
+*   [ ] **Finansieringssøk:** Søke om oppstartsmidler (Siva, Innovasjon Norge, regionale midler eller HiØ-innovasjonsmidler).  
+    *Se forskning i `04-kilde/siva_stotteordninger.md` og `04-kilde/hio_innovasjonsmidler.md`*
 *   [ ] **Styre og nettverk:** Etablere styret med representanter fra HiØ og lokalt næringsliv.
 *   [ ] **Juridisk oppsett:** Definere selskapsform (f.eks. Forening/Stiftelse eller AS eid av en stiftelse tilknyttet HiØ/studentsamskipnaden).
 

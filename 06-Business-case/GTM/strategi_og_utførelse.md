@@ -28,7 +28,7 @@ Siden vi som hovedregel ikke garanterer en leveranse, er prosjektmodellen design
 *   **Mål:** Definere prosjektets omfang og avklare kundens tidsmessige forpliktelser.
 *   **Kontrakt:** Kunden signerer samarbeidsavtalen som fastslår:
     1.  At arbeidet gjøres av studenter.
-    2.  At det ikke foreligger noen leveransegaranti (SLA) med mindre en Betinget SLA er avtalt.
+     2.  At det ikke foreligger noen leveransegaranti med mindre en forpliktende milepælsplan er avtalt.
     3.  At kunden må delta på ukentlige møter, ellers avsluttes prosjektet.
 
 ### 🎨 Fase 2: Tverrfaglig Innsikt & Design

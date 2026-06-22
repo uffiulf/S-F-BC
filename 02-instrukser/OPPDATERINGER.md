@@ -72,6 +72,23 @@ Kilde: Ingen spesifikk fil — nytt innhold
 Hva: Nederst på Dashboard-siden, etter eksisterende seksjoner, legg til en forklarende boks med tittel "Hvordan henger business casen sammen?" som viser at Value Proposition (VP) er en integrert del av business casen, ikke noe separat. Vis rekkefølgen: Forretningsidé → Value Proposition → Forretningsmodell → Marked og konkurranse → Scope → Risiko og juss. Forklar kort at VPC-ene som finnes under "Forretningsmodell & VPC" er en visualisering av VP-en for hver målgruppe (studenter, HiØ, næringsliv). Alt dette samlet utgjør business casen.
 Hvor: Nederst på Dashboard-siden
 
+### 22.06.2026 — Rett opp to inkonsistenser på infosiden: Selskapsform og SLA
+Prioritet: Høy
+Kilde: Tilbakemelding fra Gemini via Antigravity CLI
+Hva: Gå gjennom HELE wikiData.js og rett opp følgende:
+
+1. **Selskapsform — fjern referanser til "forening" som alternativ:**
+   - Anbefalt modell er AS eid av ideell stiftelse. Alle steder som refererer til "forening" som et likeverdig eller billigere alternativ må fjernes eller endres.
+   - Spesielt: steder som sier "registrering som ideell forening er rimeligere enn AS" må oppdateres til å reflektere at AS er valgt modell.
+   - "Studentforening" kan brukes for å beskrive hva S&F IKKE er, men ikke som et alternativ.
+
+2. **"Betinget SLA" → "Forpliktende milepælsplan":**
+   - Begrepet "SLA" (Service Level Agreement) signaliserer profesjonell tjenesteleveranse som kan utløse konkurranseklager. Selv med "Betinget" foran.
+   - Erstatt "Betinget SLA" med "Forpliktende milepælsplan" på alle steder. Dette beskriver samme funksjon (skriftlig avtale om leveranse ved spesielle anledninger) uten å signalisere profesjonell markedsposisjonering.
+   - Oppdater også forklaringsteksten: "I stedet for SLA, kan det ved erfarne team inngås en forpliktende milepælsplan som beskriver konkrete leveranser og tidsfrister."
+
+Hvor: Hele wikiData.js — alle sider som refererer til forening eller SLA
+
 ### 19.06.2026 — Forklar begreper som Blender Collective og næringshager på infosiden
 Prioritet: Høy
 Kilde: Infosiden wikiData.js — flere steder nevnes "Blender Collective", "Smart Innovation Norway", "næringshager", "inkubatorer" uten forklaring

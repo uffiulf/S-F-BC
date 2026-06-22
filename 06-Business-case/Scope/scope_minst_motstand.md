@@ -156,24 +156,21 @@ Syntax & Flow kobler studentene til ferdig opparbeidede oppdrag hos lokale bedri
 
 | Spor | Studiepoeng | Lånekassen | Hvordan det fungerer i praksis |
 |------|-------------|------------|-------------------------------|
-| **ITD35014 som valgemne** | 10 stp innenfor bachelor (30 stp/semester) | ✅ **Ja** — full støtte gjennom bachelorløpet | Studenten tar ITD35014 som ett av flere emner i et ordinært bachelorsemester. |
+| **ITD35014 (dagens situasjon)** | 10 stp innenfor bachelor (30 stp/semester) | ✅ **Ja** — full støtte gjennom bachelorløpet | Studenten tar ITD35014 som ett av flere emner i et ordinært bachelorsemester. |
 | **Fremtidig mål** | Utvide til 15–30 stp | ✅ **Ja** | Flere timer med studentene. Krever godkjenning fra HiØs studieutvalg. |
-| **Spor 3 — Fremtidig fulltid** | Nytt 30 stp-emne eller utvidelse av ITD35014 | ✅ **Ja** | Etter piloten. Giøres ved å søke HiØ om å opprette et nytt emne eller utvide ITD35014. |
+| **Fremtidig mål** | Utvide ITD35014 til 15–30 stp | ✅ **Ja** | Etter piloten. Krever godkjenning fra HiØs studieutvalg. |
 
-### Hvordan Spor 1 fungerer i detalj
+### Hvordan ITD35014 fungerer i detalj
 
 1. **Studenten melder seg på Syntax & Flow** og oppgir hvilket studieprogram de tilhører
 2. **Syntax & Flow sjekker** at studenten har minst 90 stp bestått (kravet for ITD35014)
 3. **Studenten melder seg opp til ITD35014** via HiØs vanlige emneoppmelding
 4. **Syntax & Flow finner et passende oppdrag** og setter sammen et team
-5. **Studenten kombinerer med et 5 stp emne** (veiledning fra Syntax & Flow om hvilke emner som egner seg)
-6. **Syntax & Flow følger opp** timeføring, veiledning og vurdering gjennom semesteret
+5. **Syntax & Flow følger opp** timeføring, veiledning og vurdering gjennom semesteret
 
 ### Etter piloten
 
-Målet er å søke HiØ om én av følgende:
-- **Øke ITD35014 til 15 stp** (enklest — krever studieutvalgets godkjenning)
-- **Opprette et nytt 30 stp-emne** for fulltids praksisår (mer arbeid, men gir rom for større oppdrag)
+Målet er å søke HiØs studieutvalg om å utvide ITD35014 til 15–30 stp.
 
 **Spor 3 (NAV):**
 - Utsettes til modellen er bevist (tidligst Fase 4)

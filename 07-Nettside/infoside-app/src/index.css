@@ -985,7 +985,7 @@ mark.highlight {
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
   aspect-ratio: 1.1 / 1;
-  min-height: 480px;
+  min-height: 760px;
   transition: border-color 0.3s ease;
 }
 
@@ -1030,7 +1030,7 @@ mark.highlight {
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
   aspect-ratio: 1.1 / 1;
-  min-height: 480px;
+  min-height: 760px;
   transition: border-color 0.3s ease;
 }
 
@@ -1096,7 +1096,7 @@ mark.highlight {
 
 /* VPC Grid Box styling (Unified Segment appearance) */
 .vpc-box {
-  padding: 24px;
+  padding: 16px;
   transition: all 0.25s ease;
   overflow-y: auto;
   display: flex;
@@ -1991,4 +1991,646 @@ mark.highlight {
   display: flex;
   gap: 12px;
 }
+
+/* 1. Risk Redirect Button */
+.risk-redirect-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 12px 16px;
+  background: rgba(37, 99, 235, 0.1);
+  border: 1px solid rgba(37, 99, 235, 0.2);
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 0.85rem;
+  border-radius: 8px;
+  margin-top: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+[data-theme="dark"] .risk-redirect-btn {
+  background: rgba(59, 130, 246, 0.15);
+  border-color: rgba(59, 130, 246, 0.3);
+}
+
+.risk-redirect-btn:hover {
+  background: var(--accent-color);
+  color: white !important;
+  border-color: var(--accent-color);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+  transform: translateY(-1px);
+}
+
+/* 2. Whiteboard Post-it styles for VPC */
+.post-it-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+  padding: 2px;
+  justify-content: flex-start;
+}
+
+.post-it {
+  position: relative;
+  flex: 1 1 160px;
+  min-height: 85px;
+  padding: 10px 12px;
+  font-family: inherit;
+  font-size: 0.78rem;
+  line-height: 1.35;
+  color: #1a1a20 !important;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.18);
+  border-radius: 2px;
+  transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.25s ease;
+  cursor: default;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 600;
+  border-bottom-right-radius: 12px 2px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+.post-it-yellow {
+  background: linear-gradient(135deg, #fff9ae 0%, #fef38b 100%);
+  border-left: 1px solid rgba(0,0,0,0.06);
+}
+
+.post-it-green {
+  background: linear-gradient(135deg, #caf6ca 0%, #a7eea1 100%);
+  border-left: 1px solid rgba(0,0,0,0.06);
+}
+
+.post-it-pink {
+  background: linear-gradient(135deg, #ffcbd8 0%, #ffa5ba 100%);
+  border-left: 1px solid rgba(0,0,0,0.06);
+}
+
+.post-it::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.post-it:nth-child(4n+1) { transform: rotate(-1.5deg); }
+.post-it:nth-child(4n+2) { transform: rotate(1.2deg); }
+.post-it:nth-child(4n+3) { transform: rotate(-0.8deg); }
+.post-it:nth-child(4n) { transform: rotate(1.8deg); }
+
+.post-it:hover {
+  transform: scale(1.18) rotate(0deg) !important;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+  z-index: 10;
+  cursor: pointer;
+}
+
+/* 3. Prosjektplan Timeline updates */
+.project-timeline-container {
+  margin-top: 10px;
+}
+
+.weeks-progress-bar-wrapper {
+  overflow-x: auto;
+  padding: 10px 0 20px 0;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 30px;
+}
+
+.weeks-progress-bar {
+  display: flex;
+  gap: 16px;
+  min-width: 600px;
+  justify-content: space-between;
+}
+
+.week-step-btn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  padding: 0;
+  text-align: center;
+}
+
+.week-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--border-color);
+  border: 2px solid var(--bg-primary);
+  z-index: 2;
+  margin-bottom: 8px;
+  transition: all 0.3s ease;
+}
+
+.week-step-btn::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  width: 100%;
+  height: 2px;
+  background-color: var(--border-color);
+  z-index: 1;
+}
+
+.week-step-btn:last-child::after {
+  display: none;
+}
+
+.week-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  margin-bottom: 2px;
+  transition: all 0.3s ease;
+}
+
+.phase-title-lbl {
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+  max-width: 100px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: all 0.3s ease;
+}
+
+.week-step-btn.active .week-dot {
+  background-color: var(--accent-color);
+  box-shadow: 0 0 10px var(--accent-color);
+  transform: scale(1.2);
+}
+
+.week-step-btn.active .week-label {
+  color: var(--accent-color);
+}
+
+.week-step-btn.active .phase-title-lbl {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.timeline-flow {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.timeline-flow::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 29px;
+  width: 2px;
+  background-color: var(--border-color);
+}
+
+.timeline-item.focused-phase .timeline-badge {
+  background-color: var(--accent-color);
+  color: white !important;
+  box-shadow: 0 0 12px var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.timeline-item.focused-phase .timeline-content {
+  border-color: var(--accent-color);
+  box-shadow: 0 4px 20px rgba(37, 99, 235, 0.15);
+  transform: translateY(-2px);
+}
+
+.timeline-weeks-tag {
+  background-color: var(--accent-glow);
+  border: 1px solid var(--accent-border);
+  color: var(--accent-color);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 20px;
+}
+
+.hover-glow {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.hover-glow:hover {
+  border-color: var(--accent-border);
+  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.08);
+}
+
+/* 4. Gjennomføringsplan Stepper & Timeline */
+.implementation-timeline-container {
+  margin-top: 10px;
+}
+
+.phase-stepper-wrapper {
+  position: relative;
+  margin-bottom: 30px;
+  padding: 10px 0;
+}
+
+.phase-stepper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  gap: 12px;
+}
+
+.phase-step-btn {
+  flex: 1;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.phase-step-btn:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent-border);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+.step-circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--bg-secondary);
+  border: 2px solid var(--border-color);
+  color: var(--text-secondary);
+  font-weight: 700;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.step-label {
+  display: flex;
+  flex-direction: column;
+}
+
+.step-phase {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+}
+
+.step-title {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.step-duration {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  margin-top: 1px;
+}
+
+.phase-step-btn.active {
+  background-color: var(--bg-secondary);
+  border-color: var(--accent-color);
+  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.12);
+}
+
+.phase-step-btn.active .step-circle {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: white;
+  box-shadow: 0 0 8px var(--accent-color);
+}
+
+.phase-step-btn.active .step-phase {
+  color: var(--accent-color);
+}
+
+.phase-summary-card {
+  padding: 24px;
+  border-radius: 16px;
+  margin-bottom: 35px;
+  border: 1px solid var(--accent-border);
+  background: linear-gradient(to right bottom, var(--bg-card), var(--accent-glow));
+}
+
+.summary-card-header {
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 12px;
+}
+
+.phase-badge {
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  letter-spacing: 0.08em;
+  background: var(--accent-glow);
+  padding: 3px 8px;
+  border-radius: 4px;
+  border: 1px solid var(--accent-border);
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.summary-card-header h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: var(--text-primary);
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .summary-grid {
+    grid-template-columns: 1fr;
+  }
+  .phase-stepper {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+.summary-box {
+  padding: 16px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-color);
+}
+
+.summary-box-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+  letter-spacing: 0.02em;
+}
+
+.summary-box p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  color: var(--text-secondary);
+}
+
+.activities-section-title {
+  margin-bottom: 20px;
+}
+
+.activities-section-title h2 {
+  margin: 0 0 6px 0;
+}
+
+.activity-cards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.activity-cards-list::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 31px;
+  width: 2px;
+  background-color: var(--border-color);
+  z-index: 1;
+}
+
+.activity-timeline-card {
+  display: flex;
+  gap: 20px;
+  position: relative;
+  z-index: 2;
+  padding: 0 !important;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.activity-card-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  padding-left: 20px;
+  flex-shrink: 0;
+}
+
+.activity-number-badge {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--bg-primary);
+  box-shadow: 0 0 6px var(--accent-border);
+}
+
+.activity-card-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.activity-card-content h4 {
+  margin: 0 0 14px 0;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.activity-meta-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  border-top: 1px solid var(--border-color);
+  padding-top: 14px;
+}
+
+@media (min-width: 992px) {
+  .activity-meta-grid {
+    grid-template-columns: 1.2fr 1fr 1fr;
+  }
+}
+
+.meta-item {
+  display: flex;
+  gap: 8px;
+  font-size: 0.82rem;
+  line-height: 1.4;
+  color: var(--text-secondary);
+}
+
+.meta-item svg {
+  margin-top: 2px;
+}
+
+.meta-item strong {
+  color: var(--text-primary);
+  display: block;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  margin-bottom: 2px;
+}
+
+.meta-item .status-badge {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-color);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.78rem;
+  font-weight: 550;
+  color: var(--text-secondary);
+  margin-top: 2px;
+}
+
+.contingency-card.border-red {
+  border-left: 4px solid var(--accent-color);
+  transition: all 0.3s ease;
+}
+
+.contingency-card.border-red:hover {
+  border-color: #ef4444;
+  box-shadow: 0 6px 18px rgba(239, 68, 68, 0.08);
+}
+
+.ansvarlig-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-color);
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+}
+
+/* 5. Post-it Zoom Modal Styles */
+.post-it-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(5px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.post-it-zoom-card {
+  position: relative;
+  width: 100%;
+  max-width: 460px;
+  min-height: 280px;
+  padding: 40px 30px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-bottom-right-radius: 30px 4px;
+}
+
+.post-it-zoom-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 12px;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.post-it-modal-tape {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-2deg);
+  width: 120px;
+  height: 35px;
+  background-color: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(1px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  z-index: 3;
+}
+
+.post-it-modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #1a1a20;
+  opacity: 0.5;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  z-index: 4;
+}
+
+.post-it-modal-close:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.post-it-modal-text {
+  font-size: 1.15rem;
+  line-height: 1.5;
+  color: #1a1a20 !important;
+  font-weight: 700;
+  margin: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+
 

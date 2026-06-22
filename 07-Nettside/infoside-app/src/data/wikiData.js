@@ -1098,7 +1098,8 @@ export const wikiData = [
         "konsekvens": 4,
         "alvorlighet": "Høy",
         "beskrivelse": "Ordinære bachelorstudenter tar 30 stp per semester og beholder full basisstøtte. Imidlertid får ikke studenter som tar ITD35014 (10 stp) som et frittstående enkeltemne basisstøtte, fordi det er under Lånekassens minstekrav på 15 stp per semester. Det er også risiko for avslag dersom enkeltemnet ikke ansees som ledd i en grad eller planlagt påbygning.",
-        "tiltak": "Avklare studentenes studie- og enkeltemnestatus før opptak; sikre at enkeltemnestudenter tar andre emner parallelt eller har annen finansiering; etablere veiledning for Lånekassen-søknad."
+        "tiltak": "Avklare studentenes studie- og enkeltemnestatus før opptak; sikre at enkeltemnestudenter tar andre emner parallelt eller har annen finansiering; etablere veiledning for Lånekassen-søknad.",
+        "adjustmentId": 2
       },
       {
         "id": 2,
@@ -1106,8 +1107,9 @@ export const wikiData = [
         "sannsynlighet": 3,
         "konsekvens": 5,
         "alvorlighet": "Kritisk",
-        "beskrivelse": "HiØs subsidiering av mentorer, lokaler og merkevare tolkes som ulovlig indirekte statsstøtte til bedrifter.",
-        "tiltak": "Etablere et juridisk skille mellom HiØ og stiftelsen; bruke 'de minimis'-reglene for mikrovirksomheter; søke råd hos ESA."
+        "beskrivelse": "HiØs subsidiering av mentorer, lokaler og merkevare tolkes som ulovlig indirekte statsstøtte to bedrifter.",
+        "tiltak": "Etablere et juridisk skille mellom HiØ og stiftelsen; bruke 'de minimis'-reglene for mikrovirksomheter; søke råd hos ESA.",
+        "adjustmentId": 3
       },
       {
         "id": 3,
@@ -1115,8 +1117,9 @@ export const wikiData = [
         "sannsynlighet": 3,
         "konsekvens": 4,
         "alvorlighet": "Høy",
-        "beskrivelse": "Kunden slutter å stille på ukentlige møter eller gi tilbakemeldinger, noe som ødelegger studentenes tid.",
-        "tiltak": "Kontraktsfeste streng klausul: Dersom kunden uteblir fra faste møter uten gyldig grunn, avsluttes prosjektet umiddelbart."
+        "beskrivelse": "Kunden slutter å stille på ukentlige møter eller give tilbakemeldinger, noe som ødelegger studentenes tid.",
+        "tiltak": "Kontraktsfeste streng klausul: Dersom kunden uteblir fra faste møter uten gyldig grunn, avsluttes prosjektet umiddelbart.",
+        "adjustmentId": 8
       },
       {
         "id": 4,
@@ -1125,7 +1128,8 @@ export const wikiData = [
         "konsekvens": 4,
         "alvorlighet": "Høy",
         "beskrivelse": "Arbeidstilsynet omklassifiserer studentene til arbeidstakere, noe som utløser krav om lønn, feriepenger og pensjon.",
-        "tiltak": "Unngå instruksjonsmyndighet; holde det som et reelt studieemne med karakter; ha fleksible tidsrammer; ingen utbetalinger."
+        "tiltak": "Unngå instruksjonsmyndighet; holde det som et reelt studieemne med karakter; ha fleksible tidsrammer; ingen utbetalinger.",
+        "adjustmentId": 4
       },
       {
         "id": 5,
@@ -1133,7 +1137,8 @@ export const wikiData = [
         "sannsynlighet": 4,
         "konsekvens": 2,
         "alvorlighet": "Høy",
-        "tiltak": "Posisjonere oss strengt mot mikrovirksomheter og oppstartsbedrifter som uansett ikke har råd to kommersielle priser."
+        "tiltak": "Posisjonere oss strengt mot mikrovirksomheter og oppstartsbedrifter som uansett ikke har råd to kommersielle priser.",
+        "adjustmentId": 6
       },
       {
         "id": 6,
@@ -1142,7 +1147,8 @@ export const wikiData = [
         "konsekvens": 4,
         "alvorlighet": "Høy",
         "beskrivelse": "Tekniske feil i levert kode (f.eks. sikkerhetshull eller feilaktige råd) påfører kunden tap, som kreves erstattet.",
-        "tiltak": "Tegne ansvarsforsikring; bruke standardkontrakter med fullstendig ansvarsfraskrivelse ('as-is') og et lavt erstatningstak."
+        "tiltak": "Tegne ansvarsforsikring; bruke standardkontrakter med fullstendig ansvarsfraskrivelse ('as-is') og et lavt erstatningstak.",
+        "adjustmentId": 8
       }
     ],
     "legalTopics": [

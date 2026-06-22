@@ -12,17 +12,32 @@ export default function App() {
   const [openAccordionIdx, setOpenAccordionIdx] = useState(null);
   const [activeLegalTopicIdx, setActiveLegalTopicIdx] = useState(null);
   const [activeAdjustmentIdx, setActiveAdjustmentIdx] = useState(0);
+  const [activeGjennomforingPhase, setActiveGjennomforingPhase] = useState(0);
+  const [activePostIt, setActivePostIt] = useState(null);
   const [openSections, setOpenSections] = useState({});
   const searchInputRef = useRef(null);
+  const skipResetRef = useRef(false);
 
   // Reset detailed view when changing page
   useEffect(() => {
     setActiveLegalTopicIdx(null);
     setOpenAccordionIdx(null);
-    setActiveAdjustmentIdx(0);
+    setActiveGjennomforingPhase(0);
+    setActivePostIt(null);
+    if (!skipResetRef.current) {
+      setActiveAdjustmentIdx(0);
+    } else {
+      skipResetRef.current = false;
+    }
     setOpenSections({});
     window.scrollTo(0, 0);
   }, [activePage]);
+
+  const navigateToAdjustment = (adjId) => {
+    skipResetRef.current = true;
+    setActivePage("forslag-utforelse");
+    setActiveAdjustmentIdx(adjId - 1);
+  };
 
   const toggleSection = (sectionKey) => {
     setOpenSections((prev) => ({
@@ -418,7 +433,7 @@ export default function App() {
                 )}
 
                 {/* Standard sections */}
-                {currentPage.sections && currentPage.sections.map((sec, idx) => {
+                {currentPage.sections && currentPage.id !== "prosjektplan" && currentPage.id !== "gjennomforingsplan" && currentPage.sections.map((sec, idx) => {
                   const isCollapsible = !!sec.isCollapsible;
                   const sectionKey = `${currentPage.id}-${idx}`;
                   const isOpen = !!openSections[sectionKey];
@@ -565,33 +580,234 @@ export default function App() {
 
                 {/* Custom: Prosjektplan timeline rendering */}
                 {currentPage.id === "prosjektplan" && (
-                  <div className="timeline">
-                    {currentPage.sections.map((sec, idx) => (
-                      <div key={idx} className="timeline-item">
-                        <div className="timeline-badge">Fase {idx + 1}</div>
-                        <div className="timeline-content glass-card">
-                          <h2>{sec.heading}</h2>
-                          <div
-                            className="timeline-desc"
-                            dangerouslySetInnerHTML={{ __html: sec.text }}
-                          />
-                          <div className="timeline-grid">
-                            <div className="timeline-col">
-                              <span className="col-title">📋 Nødvendige Analyser</span>
-                              <ul>
-                                <li dangerouslySetInnerHTML={{ __html: sec.points[0].replace("Analyser:", "").trim() }} />
-                              </ul>
+                  <div className="project-timeline-container animate-fade-in">
+                    {/* Horizontal Weeks Progress Bar */}
+                    <div className="weeks-progress-bar-wrapper">
+                      <div className="weeks-progress-bar">
+                        {currentPage.sections.map((sec, idx) => {
+                          const phaseWeeks = [
+                            "Uke 1-3",
+                            "Uke 4-7",
+                            "Uke 8-11",
+                            "Uke 12-14",
+                            "Uke 15-16"
+                          ];
+                          const isActive = activeGjennomforingPhase === idx;
+                          return (
+                            <button
+                              key={idx}
+                              onClick={() => {
+                                setActiveGjennomforingPhase(idx);
+                                // Smooth scroll to selected phase card
+                                const target = document.getElementById(`project-phase-${idx}`);
+                                if (target) {
+                                  target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                                }
+                              }}
+                              className={`week-step-btn ${isActive ? "active" : ""}`}
+                            >
+                              <div className="week-dot"></div>
+                              <span className="week-label">{phaseWeeks[idx]}</span>
+                              <span className="phase-title-lbl">{sec.heading.split(':')[1]?.trim() || sec.heading}</span>
+                            </button>
+                          );
+                        })}
+                      </div>
+                    </div>
+
+                    {/* Timeline Node Flow */}
+                    <div className="timeline-flow">
+                      {currentPage.sections.map((sec, idx) => {
+                        const isActive = activeGjennomforingPhase === idx;
+                        return (
+                          <div 
+                            key={idx} 
+                            id={`project-phase-${idx}`}
+                            className={`timeline-item ${isActive ? "focused-phase" : ""}`}
+                            style={{ transition: 'all 0.3s ease' }}
+                          >
+                            <div className="timeline-badge-wrapper">
+                              <div className="timeline-badge">Fase {idx + 1}</div>
+                              <div className="timeline-badge-line"></div>
                             </div>
-                            <div className="timeline-col">
-                              <span className="col-title">📦 Konkrete Leveranser</span>
-                              <ul>
-                                <li dangerouslySetInnerHTML={{ __html: sec.points[1].replace("Leveranser:", "").trim() }} />
-                              </ul>
+                            <div className="timeline-content glass-card hover-glow" onClick={() => setActiveGjennomforingPhase(idx)}>
+                              <div className="flex justify-between items-start" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '10px' }}>
+                                <h2 className="m-0 text-primary">{sec.heading}</h2>
+                                <span className="timeline-weeks-tag">
+                                  {idx === 0 && "Uke 1-3"}
+                                  {idx === 1 && "Uke 4-7"}
+                                  {idx === 2 && "Uke 8-11"}
+                                  {idx === 3 && "Uke 12-14"}
+                                  {idx === 4 && "Uke 15-16"}
+                                </span>
+                              </div>
+                              <div
+                                className="timeline-desc mt-3"
+                                dangerouslySetInnerHTML={{ __html: sec.text }}
+                              />
+                              <div className="timeline-grid mt-4">
+                                <div className="timeline-col">
+                                  <span className="col-title">📋 Nødvendige Analyser</span>
+                                  <ul>
+                                    <li dangerouslySetInnerHTML={{ __html: sec.points[0].replace("Analyser:", "").trim() }} />
+                                  </ul>
+                                </div>
+                                <div className="timeline-col">
+                                  <span className="col-title">📦 Konkrete Leveranser</span>
+                                  <ul>
+                                    <li dangerouslySetInnerHTML={{ __html: sec.points[1].replace("Leveranser:", "").trim() }} />
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
+                )}
+
+                {/* Custom: Gjennomføringsplan visual timeline & stepper */}
+                {currentPage.id === "gjennomforingsplan" && (
+                  <div className="implementation-timeline-container animate-fade-in">
+                    
+                    {/* Horizontal Phase Stepper */}
+                    <div className="phase-stepper-wrapper">
+                      <div className="phase-stepper">
+                        {currentPage.sections[0].table.rows.map((row, idx) => {
+                          const isActive = activeGjennomforingPhase === idx;
+                          return (
+                            <button
+                              key={idx}
+                              onClick={() => setActiveGjennomforingPhase(idx)}
+                              className={`phase-step-btn ${isActive ? "active" : ""}`}
+                            >
+                              <div className="step-circle">{idx + 1}</div>
+                              <div className="step-label">
+                                <span className="step-phase">{row[0]}</span>
+                                <span className="step-title">{row[1].split('(')[0].trim()}</span>
+                                <span className="step-duration">{row[1].includes('(') ? `(${row[1].split('(')[1]}` : ''}</span>
+                              </div>
+                            </button>
+                          );
+                        })}
+                      </div>
+                      <div className="phase-stepper-progress">
+                        <div 
+                          className="progress-line-fill" 
+                          style={{ width: `${(activeGjennomforingPhase / 3) * 100}%` }}
+                        />
+                      </div>
+                    </div>
+
+                    {/* Phase Summary Card */}
+                    {(() => {
+                      const selectedRow = currentPage.sections[0].table.rows[activeGjennomforingPhase];
+                      return (
+                        <div className="phase-summary-card glass-card animate-fade-in">
+                          <div className="summary-card-header">
+                            <span className="phase-badge">Status & Oversikt</span>
+                            <h3>{selectedRow[0]}: {selectedRow[1]}</h3>
+                          </div>
+                          <div className="summary-grid">
+                            <div className="summary-box principle">
+                              <div className="summary-box-title">
+                                <Icons.Compass className="w-4 h-4 text-blue-500" />
+                                <span>Kjerne-prinsipp</span>
+                              </div>
+                              <p>{selectedRow[3]}</p>
+                            </div>
+                            <div className="summary-box risks-solved">
+                              <div className="summary-box-title">
+                                <Icons.ShieldCheck className="w-4 h-4 text-green-500" />
+                                <span>Risikoer som løses her</span>
+                              </div>
+                              <p dangerouslySetInnerHTML={{ __html: selectedRow[2] }} />
                             </div>
                           </div>
                         </div>
+                      );
+                    })()}
+
+                    {/* Phase Activities Timeline Cards */}
+                    <div className="activities-section-title">
+                      <h2>Aktiviteter i {currentPage.sections[activeGjennomforingPhase + 1].heading.replace(/^\d+\.\s*/, "")}</h2>
+                      <p className="text-secondary">{currentPage.sections[activeGjennomforingPhase + 1].text}</p>
+                    </div>
+
+                    <div className="activity-cards-list">
+                      {currentPage.sections[activeGjennomforingPhase + 1].table.rows.map((actRow, actIdx) => (
+                        <div key={actIdx} className="activity-timeline-card glass-card animate-fade-in">
+                          <div className="activity-card-left">
+                            <div className="activity-number-badge">{actIdx + 1}</div>
+                            <div className="activity-timeline-line"></div>
+                          </div>
+                          <div className="activity-card-content">
+                            <h4>{actRow[0]}</h4>
+                            
+                            <div className="activity-meta-grid">
+                              <div className="meta-item">
+                                <Icons.HelpCircle className="w-4 h-4 text-accent" style={{ flexShrink: 0 }} />
+                                <div>
+                                  <strong>{currentPage.sections[activeGjennomforingPhase + 1].table.headers[1]}:</strong>
+                                  <span dangerouslySetInnerHTML={{ __html: actRow[1] }} />
+                                </div>
+                              </div>
+                              
+                              <div className="meta-item">
+                                <Icons.User className="w-4 h-4 text-accent" style={{ flexShrink: 0 }} />
+                                <div>
+                                  <strong>Ansvarlig:</strong>
+                                  <span>{actRow[2]}</span>
+                                </div>
+                              </div>
+
+                              <div className="meta-item">
+                                <Icons.Coins className="w-4 h-4 text-accent" style={{ flexShrink: 0 }} />
+                                <div>
+                                  <strong>Kostnad / Status:</strong>
+                                  <span className="status-badge">{actRow[3]}</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+
+                    {/* Contingency Plan (Beredskapsplan) Section */}
+                    {currentPage.sections[5] && (
+                      <div className="contingency-section mt-12">
+                        <div className="section-header" style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '16px' }}>
+                          <Icons.AlertOctagon className="w-6 h-6 text-red-500 animate-pulse" />
+                          <h2 className="m-0">{currentPage.sections[5].heading.replace(/^\d+\.\s*/, "")}</h2>
+                        </div>
+                        <p className="text-secondary mb-6">{currentPage.sections[5].text}</p>
+                        
+                        <div className="grid-2">
+                          {currentPage.sections[5].table.rows.map((bRow, bIdx) => (
+                            <div key={bIdx} className="contingency-card glass-card border-red" style={{ padding: '20px', borderRadius: '12px' }}>
+                              <div className="card-header" style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '12px' }}>
+                                <Icons.AlertTriangle className="w-5 h-5 text-amber-500" />
+                                <h3 className="m-0 text-primary" style={{ fontSize: '1.05rem' }} dangerouslySetInnerHTML={{ __html: bRow[0] }} />
+                              </div>
+                              <div className="card-body">
+                                <p style={{ fontSize: '0.9rem', lineHeight: '1.5', margin: '0 0 16px 0' }}>
+                                  <strong>Handling:</strong> {bRow[1]}
+                                </p>
+                                <div className="card-footer" style={{ borderTop: '1px solid var(--border-color)', paddingTop: '12px', marginTop: '12px' }}>
+                                  <span className="ansvarlig-tag" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontSize: '0.8rem', color: 'var(--text-muted)', fontWeight: 500 }}>
+                                    <Icons.User className="w-3.5 h-3.5" />
+                                    <span>Ansvarlig: {bRow[2]}</span>
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                          ))}
+                        </div>
                       </div>
-                    ))}
+                    )}
+
                   </div>
                 )}
 
@@ -633,11 +849,17 @@ export default function App() {
                                     <div className="box-title">
                                       📦 Produkter & Tjenester
                                     </div>
-                                    <ul>
+                                    <div className="post-it-list">
                                       {vpc.valueMap.products.map((item, iIdx) => (
-                                        <li key={iIdx}>{item}</li>
+                                        <div 
+                                          key={iIdx} 
+                                          className="post-it post-it-yellow"
+                                          onClick={() => setActivePostIt({ text: item, theme: 'yellow' })}
+                                        >
+                                          {item}
+                                        </div>
                                       ))}
-                                    </ul>
+                                    </div>
                                   </div>
 
                                   {/* Right top: Gain Creators */}
@@ -645,11 +867,17 @@ export default function App() {
                                     <div className="box-title">
                                       ⚡ Gevinstskapere (Gain Creators)
                                     </div>
-                                    <ul>
+                                    <div className="post-it-list">
                                       {vpc.valueMap.gainCreators.map((item, iIdx) => (
-                                        <li key={iIdx}>{item}</li>
+                                        <div 
+                                          key={iIdx} 
+                                          className="post-it post-it-green"
+                                          onClick={() => setActivePostIt({ text: item, theme: 'green' })}
+                                        >
+                                          {item}
+                                        </div>
                                       ))}
-                                    </ul>
+                                    </div>
                                   </div>
 
                                   {/* Right bottom: Pain Relievers */}
@@ -657,11 +885,17 @@ export default function App() {
                                     <div className="box-title">
                                       💊 Smertelindrere (Pain Relievers)
                                     </div>
-                                    <ul>
+                                    <div className="post-it-list">
                                       {vpc.valueMap.painRelievers.map((item, iIdx) => (
-                                        <li key={iIdx}>{item}</li>
+                                        <div 
+                                          key={iIdx} 
+                                          className="post-it post-it-pink"
+                                          onClick={() => setActivePostIt({ text: item, theme: 'pink' })}
+                                        >
+                                          {item}
+                                        </div>
                                       ))}
-                                    </ul>
+                                    </div>
                                   </div>
                                 </div>
 
@@ -685,11 +919,17 @@ export default function App() {
                                     <div className="box-title">
                                       💎 Gevinster (Gains)
                                     </div>
-                                    <ul>
+                                    <div className="post-it-list">
                                       {vpc.customerProfile.gains.map((item, iIdx) => (
-                                        <li key={iIdx}>{item}</li>
+                                        <div 
+                                          key={iIdx} 
+                                          className="post-it post-it-green"
+                                          onClick={() => setActivePostIt({ text: item, theme: 'green' })}
+                                        >
+                                          {item}
+                                        </div>
                                       ))}
-                                    </ul>
+                                    </div>
                                   </div>
 
                                   {/* Bottom left/mid: Pains */}
@@ -697,11 +937,17 @@ export default function App() {
                                     <div className="box-title">
                                       ⚡ Smertepunkter (Pains)
                                     </div>
-                                    <ul>
+                                    <div className="post-it-list">
                                       {vpc.customerProfile.pains.map((item, iIdx) => (
-                                        <li key={iIdx}>{item}</li>
+                                        <div 
+                                          key={iIdx} 
+                                          className="post-it post-it-pink"
+                                          onClick={() => setActivePostIt({ text: item, theme: 'pink' })}
+                                        >
+                                          {item}
+                                        </div>
                                       ))}
-                                    </ul>
+                                    </div>
                                   </div>
 
                                   {/* Right: Customer Jobs */}
@@ -709,11 +955,17 @@ export default function App() {
                                     <div className="box-title">
                                       🎯 Kundens Oppgaver (Jobs)
                                     </div>
-                                    <ul>
+                                    <div className="post-it-list">
                                       {vpc.customerProfile.jobs.map((item, iIdx) => (
-                                        <li key={iIdx}>{item}</li>
+                                        <div 
+                                          key={iIdx} 
+                                          className="post-it post-it-yellow"
+                                          onClick={() => setActivePostIt({ text: item, theme: 'yellow' })}
+                                        >
+                                          {item}
+                                        </div>
                                       ))}
-                                    </ul>
+                                    </div>
                                   </div>
                                 </div>
 
@@ -864,6 +1116,17 @@ export default function App() {
                                   <strong>💡 Forebyggende Tiltak:</strong>
                                   <p>{risk.tiltak}</p>
                                 </div>
+
+                                {risk.adjustmentId && (
+                                  <button
+                                    onClick={() => navigateToAdjustment(risk.adjustmentId)}
+                                    className="risk-redirect-btn"
+                                  >
+                                    <Icons.Compass className="w-4 h-4" />
+                                    <span>Se tilpasningsforslag (Område {risk.adjustmentId})</span>
+                                    <Icons.ChevronRight className="w-4 h-4 ml-auto" />
+                                  </button>
+                                )}
                               </div>
                             );
                           })}
@@ -1104,6 +1367,22 @@ export default function App() {
                 ))
               )}
             </div>
+          </div>
+        </div>
+      )}
+
+      {/* Post-it Zoom Modal */}
+      {activePostIt && (
+        <div className="post-it-modal-backdrop" onClick={() => setActivePostIt(null)}>
+          <div 
+            className={`post-it-zoom-card post-it-${activePostIt.theme} animate-fade-in`} 
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button className="post-it-modal-close" onClick={() => setActivePostIt(null)}>
+              <Icons.X className="w-5 h-5" />
+            </button>
+            <div className="post-it-modal-tape"></div>
+            <p className="post-it-modal-text">{activePostIt.text}</p>
           </div>
         </div>
       )}

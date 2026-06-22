@@ -36,4 +36,4 @@
 
 ### 3. Gevinstskapere (Gain Creators)
 *   **Try-before-you-buy:** Modellen gjør bedriftene 100 % sikre på sine valg før de tilbyr fast stilling til kandidaten.
-*   **Gratis verdiøkning:** Småbedrifter får utført kritiske digitaliserings- og analyseoppgaver gratis (uten SLA som standard, men med mulighet for en *Betinget SLA* dersom vi har de rette studentene tilgjengelig).
+*   **Gratis verdiøkning:** Småbedrifter får utført kritiske digitaliserings- og analyseoppgaver gratis (uten garanti som standard, men med mulighet for en *forpliktende milepælsplan* dersom vi har de rette studentene tilgjengelig).

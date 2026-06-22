@@ -1,5 +1,5 @@
 # Tjenester & Leveranser - Syntax & Flow
-> Definisjon av konsulenttjenester, den unike pro-bono prosjektmodellen, og vår betingede SLA.
+> Definisjon av konsulenttjenester, den unike pro-bono prosjektmodellen, og vår forpliktende milepælsplan.
 
 Syntax & Flow fungerer som et in-house konsulentselskap der tverrfaglige student-team utfører prosjekter for mindre, lokale bedrifter i nærområdet.
 
@@ -38,7 +38,7 @@ Siden Syntax & Flow tilbyr tjenestene helt gratis, inngår vi en spesiell avtale
 
 *   **Ingen økonomisk betaling:** Kunden betaler ingenting for arbeidet som utføres.
 *   **Kompensasjon i form av tid:** Kunden forplikter seg til å stille opp som en aktiv og tilgjengelig kunde for prosjektteamet (ukentlige statusmøter, raske tilbakemeldinger, brukertester).
-*   **Betinget SLA (Service Level Agreement):** 
-    *   *Standard:* Ingen SLA (Best-effort). Vi har ingen juridisk forpliktelse til å fullføre eller feilsøke en leveranse.
-    *   *Betinget SLA:* Dersom Syntax & Flow på tidspunktet for prosjektet har tilgjengelige studenter med den rette senior-kompetansen (f.eks. erfarne masterstudenter, 3.-års bachelorstudenter eller NAV-deltakere med solid arbeidserfaring), kan vi tilby en begrenset og skriftlig avtalt SLA på leveransen. Dette øker tilliten hos kunden for mer kritiske leveranser.
+*   **Forpliktende milepælsplan:** 
+    *   *Standard:* Ingen garanti (Best-effort). Vi har ingen juridisk forpliktelse til å fullføre eller feilsøke en leveranse.
+    *   *Forpliktende milepælsplan:* Dersom Syntax & Flow på tidspunktet for prosjektet har tilgjengelige studenter med den rette kompetansen, kan vi inngå en skriftlig forpliktende milepælsplan med konkrete leveranser og tidsfrister. Dette øker tilliten hos kunden uten å signalisere profesjonell tjenesteleveranse.
 *   **Win-Win:** Studentene får uvurderlig erfaring (de er "produktet"), og bedriften får en potensiell verdi helt gratis.
