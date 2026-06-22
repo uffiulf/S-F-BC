@@ -24,7 +24,7 @@ Syntax & Flow er et selvstendig organ in-house på Høgskolen i Østfold (HiØ) 
 - Styret — uavhengige medlemmer + HiØ-observatør
 
 ### Studenter (utfører oppdragene)
-- Tilknyttet via **ITD35014 Bedriftspraksis (10 stp)** — et valgfritt emne på HiØ, emneansvarlig Stig Henning Johansen
+- Tilknyttet via **ITD35014 Bedriftspraksis (10 stp)** — obligatorisk for Bachelor i kommunikasjon, valgfritt for 6 andre bachelorprogram. Emneansvarlig: Stig Henning Johansen (IIO/ITK)
 - Arbeider i tverrfaglige team under veiledning
 - **Mål:** Utvide ITD35014 til 15–30 stp over tid for å få mer tid med studentene
 
@@ -41,7 +41,7 @@ Syntax & Flow er et selvstendig organ in-house på Høgskolen i Østfold (HiØ) 
 Prioritet: 1) HiØ internt, 2) Ideelle organisasjoner, 3) Privatpersoner (ENK), 4) Mikrovirksomheter (1–5 ansatte) som bekrefter å ikke ha budsjett til kommersielle aktører.
 
 ### Studenter
-- **ITD35014 (10 stp)** — valgfritt emne på bachelor, emneansvarlig Stig Henning Johansen. Også obligatorisk for Bachelor i kommunikasjon.
+- **ITD35014 (10 stp)** — obligatorisk for Bachelor i kommunikasjon. Valgfritt for: Digitale medier og design, Informasjonssystemer, Informatikk - design og utvikling av IT-systemer, Dataingeniør, Internasjonal kommunikasjon (politisk kommunikasjon), BA økonomi og administrasjon (profilering økonomi og ledelse). Emneansvarlig: Stig Henning Johansen.
 - **Mål:** Utvide ITD35014 til 15–30 stp over tid for å få mer tid med studentene (det finnes ikke 5 stp-emner på HiØ som kan kombineres i dag)
 - **Lånekassen:** ITD35014 er innenfor et bachelorløp (30 stp/semester) — studenten får full støtte. Risiko gjelder kun ved enkeltemner utenom grad
 - Uavklart: Det har vært uformelle samtaler om mulighet for enkeltemner utenom full grad, men dette må bekreftes med HiØs studieadministrasjon

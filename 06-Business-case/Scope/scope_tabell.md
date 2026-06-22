@@ -44,7 +44,7 @@
 | | In Scope | Out of Scope |
 |---|---|---|
 | **Emne** | ITD35014 Bedriftspraksis (10 stp) — eksisterende emne ved HiØ | Opprettelse av nye emner før piloten er gjennomført |
-| **Spor 1** | ITD35014 (10 stp) + 5 stp valgfritt emne = 15 stp (Lånekassen) | Studenter uten minst 90 stp bestått |
+| **Spor 1** | ITD35014 (10 stp) — valgemne innenfor bachelor (30 stp/semester). Obligatorisk for Bachelor i kommunikasjon | Studenter uten minst 90 stp bestått |
 | **Spor 2** | Kun ITD35014 (10 stp) — for studenter som ikke trenger Lånekassen | Spor 2 som hovedmodell (for lavt for Lånekassen) |
 | **Spor 3 (NAV)** | Utsettes til piloten er gjennomført og modellen er bevist | NAV-deltakere i første fase |
 | **Opptakskrav** | Minimum 90 stp bestått, motivasjon, team-egnethet | Karakterbasert siling |

@@ -21,6 +21,7 @@ export default function App() {
     setOpenAccordionIdx(null);
     setActiveAdjustmentIdx(0);
     setOpenSections({});
+    window.scrollTo(0, 0);
   }, [activePage]);
 
   const toggleSection = (sectionKey) => {
@@ -394,6 +395,28 @@ export default function App() {
               </div>
             ) : (
               <>
+                {/* TL;DR Summary Card */}
+                {currentPage.tldr && (
+                  <div className="tldr-card glass-card" style={{
+                    padding: '20px',
+                    borderRadius: '12px',
+                    borderLeft: '4px solid var(--accent-color)',
+                    background: 'rgba(255, 255, 255, 0.02)',
+                    marginBottom: '28px',
+                    boxShadow: '0 4px 20px rgba(0, 0, 0, 0.05)'
+                  }}>
+                    <h3 style={{ margin: '0 0 12px 0', fontSize: '1rem', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--accent-color)' }}>
+                      <Icons.Lightbulb className="w-5 h-5 animate-pulse" />
+                      <span>Kort oppsummert (TL;DR)</span>
+                    </h3>
+                    <ul style={{ margin: 0, paddingLeft: '20px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                      {currentPage.tldr.map((point, pIdx) => (
+                        <li key={pIdx} style={{ fontSize: '0.925rem', color: 'var(--text-secondary)', lineHeight: '1.5' }} dangerouslySetInnerHTML={{ __html: point }} />
+                      ))}
+                    </ul>
+                  </div>
+                )}
+
                 {/* Standard sections */}
                 {currentPage.sections && currentPage.sections.map((sec, idx) => {
                   const isCollapsible = !!sec.isCollapsible;
@@ -403,7 +426,7 @@ export default function App() {
                   return (
                     <div
                       key={idx}
-                      className={`wiki-section ${isCollapsible ? "collapsible-section glass-card" : ""}`}
+                      className={`wiki-section ${isCollapsible ? "collapsible-section glass-card animate-fade-in" : ""}`}
                       style={isCollapsible ? { padding: "20px", marginBottom: "24px" } : {}}
                     >
                       {isCollapsible ? (
@@ -444,6 +467,21 @@ export default function App() {
                                 </ul>
                               )}
 
+                              {sec.gridCards && (
+                                <div className={sec.gridCards.length === 3 ? "grid-3" : "grid-2"}>
+                                  {sec.gridCards.map((card, cIdx) => (
+                                    <div key={cIdx} className="glass-card" style={{ padding: '20px', borderRadius: '12px' }}>
+                                      <h3 style={{ marginTop: 0, display: 'flex', alignItems: 'center', gap: '8px', fontSize: '1.05rem', color: 'var(--text-primary)' }}>
+                                        {card.icon && renderIcon(card.icon, "w-5 h-5 text-accent")}
+                                        <span>{card.title}</span>
+                                      </h3>
+                                      {card.subtitle && <h4 style={{ opacity: 0.7, fontSize: '0.875rem', fontWeight: 500, margin: '-6px 0 10px 0', color: 'var(--text-muted)' }}>{card.subtitle}</h4>}
+                                      <p dangerouslySetInnerHTML={{ __html: card.content }} style={{ marginBottom: 0, fontSize: '0.9rem', lineHeight: '1.5' }} />
+                                    </div>
+                                  ))}
+                                </div>
+                              )}
+
                               {sec.table && (
                                 <div className="table-container">
                                   <table className="wiki-table">
@@ -480,6 +518,21 @@ export default function App() {
                                 <li key={pIdx} dangerouslySetInnerHTML={{ __html: pt }} />
                               ))}
                             </ul>
+                          )}
+
+                          {sec.gridCards && (
+                            <div className={sec.gridCards.length === 3 ? "grid-3" : "grid-2"}>
+                              {sec.gridCards.map((card, cIdx) => (
+                                <div key={cIdx} className="glass-card" style={{ padding: '20px', borderRadius: '12px' }}>
+                                  <h3 style={{ marginTop: 0, display: 'flex', alignItems: 'center', gap: '8px', fontSize: '1.05rem', color: 'var(--text-primary)' }}>
+                                    {card.icon && renderIcon(card.icon, "w-5 h-5 text-accent")}
+                                    <span>{card.title}</span>
+                                  </h3>
+                                  {card.subtitle && <h4 style={{ opacity: 0.7, fontSize: '0.875rem', fontWeight: 500, margin: '-6px 0 10px 0', color: 'var(--text-muted)' }}>{card.subtitle}</h4>}
+                                  <p dangerouslySetInnerHTML={{ __html: card.content }} style={{ marginBottom: 0, fontSize: '0.9rem', lineHeight: '1.5' }} />
+                                </div>
+                              ))}
+                            </div>
                           )}
 
                           {sec.table && (

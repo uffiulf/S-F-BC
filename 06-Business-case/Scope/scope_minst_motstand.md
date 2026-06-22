@@ -43,7 +43,7 @@ HiØ har allerede emnet **ITD35014 Bedriftspraksis** (10 stp) under Fakultet for
 |----------|--------|
 | Emnekode | ITD35014 |
 | Studiepoeng | 10 stp (innenfor graden) |
-| Målgruppe | Bachelor: digitale medier, informatikk, dataingeniør, informasjonssystemer |
+| Målgruppe | **Obligatorisk** for Bachelor i kommunikasjon. **Valgfritt** for: Digitale medier og design, Informasjonssystemer, Informatikk - design og utvikling av IT-systemer, Dataingeniør, Internasjonal kommunikasjon (politisk kommunikasjon), BA økonomi og administrasjon (profilering økonomi og ledelse) |
 | Forutsetning | Minimum 90 stp bestått |
 | Omfang | Ca. 250 timer, minimum 180 timer dokumentert |
 | Vurdering | Bestått/Ikke bestått (muntlig presentasjon) |
@@ -146,7 +146,7 @@ Hvert semester:
 
 ### Hvordan ITD35014 fungerer i dag
 
-ITD35014 er et **valgfritt emne** på 10 stp for bachelorstudenter ved Institutt for IT og kommunikasjon (ITK). Studenter som har bestått minimum 90 stp kan søke. Emnet går over ett semester og krever ca. 250 timers arbeid i en bedrift (hvorav minimum 180 timer må dokumenteres). Vurderingen er Bestått/Ikke bestått basert på en muntlig presentasjon.
+ITD35014 er et **obligatorisk emne** for Bachelor i kommunikasjon og **valgfritt emne** for bachelorstudenter ved Fakultet for IT, ingeniørfag og økonomi (IIO). Studenter som har bestått minimum 90 stp kan søke. Emnet går over ett semester og krever ca. 250 timers arbeid i en bedrift (hvorav minimum 180 timer må dokumenteres). Vurderingen er Bestått/Ikke bestått basert på en muntlig presentasjon.
 
 **Problemet i dag:** Studenten må selv finne en praksisbedrift. Mange gir opp eller finner ingen, fordi bedriftene har lite insentiv til å ta inn studenter på kort sikt. Syntax & Flow løser dette ved å være den organiserende parten.
 
@@ -156,8 +156,8 @@ Syntax & Flow kobler studentene til ferdig opparbeidede oppdrag hos lokale bedri
 
 | Spor | Studiepoeng | Lånekassen | Hvordan det fungerer i praksis |
 |------|-------------|------------|-------------------------------|
-| **Spor 1 — Kombinert** | ITD35014 (10 stp) + 5 stp fra et annet valgfritt emne | ✅ **Ja** — 15 stp er minimum for gradert Lånekassestøtte | Studenten kombinerer ITD35014 med et 5 stp emne (f.eks. et nettkurs eller prosjektemne). Syntax & Flow koordinerer slik at arbeidsmengden totalt blir ca. 22–25 timer/uke. |
-| **Spor 2 — Kun ITD35014** | Kun 10 stp | ❌ **Nei** — under 15 stp-grensen | For studenter som ikke trenger Lånekassen (f.eks. deltidsjobb ved siden av, eller har andre finansieringskilder). 10 stp tilsvarer ca. 12–15 timer/uke. |
+| **ITD35014 som valgemne** | 10 stp innenfor bachelor (30 stp/semester) | ✅ **Ja** — full støtte gjennom bachelorløpet | Studenten tar ITD35014 som ett av flere emner i et ordinært bachelorsemester. |
+| **Fremtidig mål** | Utvide til 15–30 stp | ✅ **Ja** | Flere timer med studentene. Krever godkjenning fra HiØs studieutvalg. |
 | **Spor 3 — Fremtidig fulltid** | Nytt 30 stp-emne eller utvidelse av ITD35014 | ✅ **Ja** | Etter piloten. Giøres ved å søke HiØ om å opprette et nytt emne eller utvide ITD35014. |
 
 ### Hvordan Spor 1 fungerer i detalj
