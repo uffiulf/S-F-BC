@@ -1083,12 +1083,12 @@ export const wikiData = [
         "<strong>Sikker QA-struktur:</strong> Mentorer kvalitetssikrer alt før det leveres til bedrifter."
       ],
       "weaknesses": [
-        "<strong>Lånekassestøtte for enkeltemner:</strong> Støtte til emnet etter fullført grad eller som frittstående enkeltemne krever forhåndsgodkjenning.",
-        "<strong>Minstekrav for enkeltemner:</strong> Siden ITD35014 gir 10 stp, krever det at enkeltemnestudenter tar andre emner ved siden av for å nå Lånekassens minstekrav på 15 stp (programstudenter får full støtte da de tar 30 stp totalt).",
-        "<strong>Statsstøtterisiko (EØS):</strong> Skolens ressurser kan anses som ulovlig støtte til eksterne bedrifter.",
-        "<strong>Rettslig gråsone for studentene:</strong> Uklart om studentene kan anses som arbeidstakere.",
-        "<strong>Konkurranseklager:</strong> Lokale byråer kan klage på prisdumping og subsidiering.",
-        "<strong>Forsikringsansvar:</strong> Manglende ansvarsforsikring ved kritisk feil i levert kode."
+        "<strong>[R1] Lånekassestøtte for enkeltemner:</strong> Støtte til emnet etter fullført grad eller som frittstående enkeltemne krever forhåndsgodkjenning.",
+        "<strong>[R1] Minstekrav for enkeltemner:</strong> Siden ITD35014 gir 10 stp, krever det at enkeltemnestudenter tar andre emner ved siden av for å nå Lånekassens minstekrav på 15 stp (programstudenter får full støtte da de tar 30 stp totalt).",
+        "<strong>[R2] Statsstøtterisiko (EØS):</strong> Skolens ressurser kan anses som ulovlig støtte til eksterne bedrifter.",
+        "<strong>[R4] Rettslig gråsone for studentene:</strong> Uklart om studentene kan anses som arbeidstakere.",
+        "<strong>[R5] Konkurranseklager:</strong> Lokale byråer kan klage på prisdumping og subsidiering.",
+        "<strong>[R6] Forsikringsansvar:</strong> Manglende ansvarsforsikring ved kritisk feil i levert kode."
       ]
     },
     "risks": [
