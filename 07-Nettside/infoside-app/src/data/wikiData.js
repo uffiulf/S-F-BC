@@ -24,7 +24,7 @@ export const wikiData = [
       },
       {
         "heading": "Hvordan henger business casen sammen?",
-        "text": "<div class=\"info-box\" style=\"border-left-color: var(--accent-color); margin-top: 16px;\">  <p style=\"margin-bottom: 16px; color: var(--text-primary);\">    Value Proposition (VP) er ikke en separat del av prosjektet, men en <strong>integrert del av business casen</strong>.     VPC-ene (Value Proposition Canvas) under \"Forretningsmodell & VPC\" er en visualisering av VP-en for hver målgruppe (studenter, HiØ, næringsliv). Sammen utgjør alle disse elementene den helhetlige business casen for Syntax & Flow.  </p>  <div style=\"display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-top: 16px; margin-bottom: 16px; justify-content: center; background: var(--bg-secondary); padding: 16px; border-radius: 8px; border: 1px solid var(--border-color);\">    <span style=\"font-weight: 600; padding: 6px 12px; background: rgba(37, 99, 235, 0.15); color: var(--accent-color); border-radius: 6px; font-size: 0.875rem;\">1. Forretningsidé</span>    <span style=\"color: var(--text-muted); font-weight: bold;\">&rarr;</span>    <span style=\"font-weight: 600; padding: 6px 12px; background: rgba(37, 99, 235, 0.15); color: var(--accent-color); border-radius: 6px; font-size: 0.875rem; border: 1px dashed var(--accent-color);\">2. Value Proposition (VP)</span>    <span style=\"color: var(--text-muted); font-weight: bold;\">&rarr;</span>    <span style=\"font-weight: 600; padding: 6px 12px; background: rgba(37, 99, 235, 0.15); color: var(--accent-color); border-radius: 6px; font-size: 0.875rem;\">3. Forretningsmodell</span>    <span style=\"color: var(--text-muted); font-weight: bold;\">&rarr;</span>    <span style=\"font-weight: 600; padding: 6px 12px; background: rgba(37, 99, 235, 0.15); color: var(--accent-color); border-radius: 6px; font-size: 0.875rem;\">4. Marked og konkurranse</span>    <span style=\"color: var(--text-muted); font-weight: bold;\">&rarr;</span>    <span style=\"font-weight: 600; padding: 6px 12px; background: rgba(37, 99, 235, 0.15); color: var(--accent-color); border-radius: 6px; font-size: 0.875rem;\">5. Scope</span>    <span style=\"color: var(--text-muted); font-weight: bold;\">&rarr;</span>    <span style=\"font-weight: 600; padding: 6px 12px; background: rgba(37, 99, 235, 0.15); color: var(--accent-color); border-radius: 6px; font-size: 0.875rem;\">6. Risiko og juss</span>  </div>  <p style=\"font-size: 0.875rem; color: var(--text-muted); line-height: 1.6; margin-top: 12px;\">    <strong>Hvordan det henger sammen:</strong> Forretningsidéen definerer retningen. Value Proposition tydeliggjør verdiskapningen (visualisert i våre VPC-er). Forretningsmodellen beskriver hvordan denne verdien leveres (gratis samarbeidsmodell med betinget SLA). Marked og konkurranse kartlegger eksterne krefter. Scope definerer rammene for hva vi skal gjøre (og ikke gjøre), og Risiko og juss sikrer at vi navigerer innenfor lovverk som statsstøttereglene og personvern.  </p></div>"
+        "text": "<div class=\"info-box\" style=\"border-left-color: var(--accent-color); margin-top: 16px;\">  <p style=\"margin-bottom: 16px; color: var(--text-primary);\">    Value Proposition (VP) er ikke en separat del av prosjektet, men en <strong>integrert del av business casen</strong>.     VPC-ene (Value Proposition Canvas) under \"Forretningsmodell & VPC\" er en visualisering av VP-en for hver målgruppe (studenter, HiØ, næringsliv). Sammen utgjør alle disse elementene den helhetlige business casen for Syntax & Flow.  </p>  <div style=\"display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-top: 16px; margin-bottom: 16px; justify-content: center; background: var(--bg-secondary); padding: 16px; border-radius: 8px; border: 1px solid var(--border-color);\">    <span style=\"font-weight: 600; padding: 6px 12px; background: rgba(37, 99, 235, 0.15); color: var(--accent-color); border-radius: 6px; font-size: 0.875rem;\">1. Forretningsidé</span>    <span style=\"color: var(--text-muted); font-weight: bold;\">&rarr;</span>    <span style=\"font-weight: 600; padding: 6px 12px; background: rgba(37, 99, 235, 0.15); color: var(--accent-color); border-radius: 6px; font-size: 0.875rem; border: 1px dashed var(--accent-color);\">2. Value Proposition (VP)</span>    <span style=\"color: var(--text-muted); font-weight: bold;\">&rarr;</span>    <span style=\"font-weight: 600; padding: 6px 12px; background: rgba(37, 99, 235, 0.15); color: var(--accent-color); border-radius: 6px; font-size: 0.875rem;\">3. Forretningsmodell</span>    <span style=\"color: var(--text-muted); font-weight: bold;\">&rarr;</span>    <span style=\"font-weight: 600; padding: 6px 12px; background: rgba(37, 99, 235, 0.15); color: var(--accent-color); border-radius: 6px; font-size: 0.875rem;\">4. Marked og konkurranse</span>    <span style=\"color: var(--text-muted); font-weight: bold;\">&rarr;</span>    <span style=\"font-weight: 600; padding: 6px 12px; background: rgba(37, 99, 235, 0.15); color: var(--accent-color); border-radius: 6px; font-size: 0.875rem;\">5. Scope</span>    <span style=\"color: var(--text-muted); font-weight: bold;\">&rarr;</span>    <span style=\"font-weight: 600; padding: 6px 12px; background: rgba(37, 99, 235, 0.15); color: var(--accent-color); border-radius: 6px; font-size: 0.875rem;\">6. Risiko og juss</span>  </div>  <p style=\"font-size: 0.875rem; color: var(--text-muted); line-height: 1.6; margin-top: 12px;\">    <strong>Hvordan det henger sammen:</strong> Forretningsidéen definerer retningen. Value Proposition tydeliggjør verdiskapningen (visualisert i våre VPC-er). Forretningsmodellen beskriver hvordan denne verdien leveres (gratis samarbeidsmodell med en forpliktende milepælsplan). Marked og konkurranse kartlegger eksterne krefter. Scope definerer rammene for hva vi skal gjøre (og ikke gjøre), og Risiko og juss sikrer at vi navigerer innenfor lovverk som statsstøttereglene og personvern.  </p></div>"
       }
     ],
     "tldr": [
@@ -288,6 +288,10 @@ export const wikiData = [
             [
               "<strong>Executive Summary</strong>",
               "Kort sammendrag av en forretningsplan eller rapport som gir leseren rask oversikt over hele innholdet."
+            ],
+            [
+              "<strong>Forpliktende milepælsplan</strong>",
+              "En skriftlig avtale om konkrete leveranser og tidsfrister for prosjektet, som brukes i stedet for en tradisjonell SLA (Service Level Agreement) for å unngå risiko."
             ]
           ]
         }
@@ -413,10 +417,7 @@ export const wikiData = [
               "<strong>Rubric</strong>",
               "Rubric (vurderingsmatrise). Strukturerte kriterier for vurdering, f.eks. 1–5 på definerte dimensjoner."
             ],
-            [
-              "<strong>SLA</strong>",
-              "Service Level Agreement. Avtale om leveransenivå og garantier. Syntax & Flow tilbyr normalt ikke SLA."
-            ],
+
             [
               "<strong>Stakeholder</strong>",
               "Interessent. En person eller gruppe som har interesse i eller påvirkes av et prosjekt."
@@ -510,11 +511,11 @@ export const wikiData = [
         ]
       },
       {
-        "heading": "Samarbeidsavtalen & Betinget SLA",
+        "heading": "Samarbeidsavtalen & Forpliktende milepælsplan",
         "text": "Siden vi leverer gratis, inngår vi en samarbeidsavtale der kunden må kompensere med sin egen **tid**:",
         "points": [
           "<strong>Standard avtale (Best effort):</strong> Ingen formell leveransegaranti (SLA). Vi gjør vårt beste, men kunden har ingen juridisk reklamasjonsrett.",
-          "<strong>Betinget SLA:</strong> Hvis teamet har seniorer/masterstudenter eller NAV-kandidater med solid bakgrunn, kan det skriftlig avtales en begrenset SLA på kritiske leveranser.",
+          "<strong>Forpliktende milepælsplan:</strong> Hvis teamet har seniorer/masterstudenter eller NAV-kandidater med solid bakgrunn, kan det skriftlig avtales en forpliktende milepælsplan på kritiske leveranser.",
           "<strong>Kundeplikt:</strong> Kunden must delta på ukentlige statusmøter og brukertester, ellers avsluttes prosjektet umiddelbart."
         ],
         "isCollapsible": true
@@ -635,7 +636,7 @@ export const wikiData = [
           ],
           "gainCreators": [
             "Try-before-you-buy: Modellen gjør bedriftene trygge før de tilbyr fast stilling.",
-            "Gratis verdiøkning: Kritiske digitaliseringsoppgaver utført gratis (med mulighet for betinget SLA)."
+            "Gratis verdiøkning: Kritiske digitaliseringsoppgaver utført gratis (med mulighet for en forpliktende milepælsplan)."
           ]
         }
       }
@@ -883,11 +884,11 @@ export const wikiData = [
         ]
       },
       {
-        "heading": "Samarbeidsavtalen & Betinget SLA",
+        "heading": "Samarbeidsavtalen & Forpliktende milepælsplan",
         "text": "Siden vi leverer gratis, inngår vi en samarbeidsavtale der kunden må kompensere med sin egen **tid**:",
         "points": [
-          "<strong>Standard avtale (Best effort):</strong> Ingen formell leveransegaranti (SLA). Vi gjør vårt beste, men kunden har ingen juridisk reklamasjonsrett.",
-          "<strong>Betinget SLA:</strong> Hvis teamet har seniorer/masterstudenter eller NAV-kandidater med solid bakgrunn, kan det skriftlig avtales en begrenset SLA på kritiske leveranser.",
+          "<strong>Standard avtale (Best effort):</strong> Ingen formell leveransegaranti. Vi gjør vårt beste, men kunden har ingen juridisk reklamasjonsrett.",
+          "<strong>Forpliktende milepælsplan:</strong> Hvis teamet har seniorer/masterstudenter eller NAV-kandidater med solid bakgrunn, kan det skriftlig avtales en forpliktende milepælsplan på kritiske leveranser.",
           "<strong>Kundeplikt:</strong> Kunden må delta på ukentlige statusmøter og brukertester, ellers avsluttes prosjektet umiddelbart."
         ],
         "isCollapsible": true
@@ -895,7 +896,7 @@ export const wikiData = [
     ],
     "tldr": [
       "Tjenestekatalogen dekker tre områder: Økonomi (BMC/markedsanalyse), Design (Figmaskisser/profil) og IT (MVP/nettsider).",
-      "Betinget SLA kan inngås som unntak dersom teamet har tilstrekkelig erfarne studenter eller NAV-deltakere.",
+      "Forpliktende milepælsplan kan inngås som unntak dersom teamet har tilstrekkelig erfarne studenter eller NAV-deltakere.",
       "Kunden har plikt til å delta på ukentlige møter, ellers avbrytes prosjektet umiddelbart for å spare studentenes tid."
     ]
   },
@@ -985,9 +986,9 @@ export const wikiData = [
           "rows": [
             [
               "Registrering i Brønnøysund",
-              "Ca. 2 000 kr (engangs)",
+              "Ca. 6 000 kr (engangs)",
               "Fase 2",
-              "Registrering som ideell forening/stiftelse"
+              "Etablering av AS eid av ideell stiftelse (registreringsavgifter)"
             ],
             [
               "Domene og hosting av portalen",
@@ -1049,11 +1050,11 @@ export const wikiData = [
               "Kontraktsfestet tidsbruk: Dersom kunden uteblir fra ukentlige møter, avsluttes prosjektet umiddelbart."
             ],
             [
-              "<strong>Brudd på Betinget SLA</strong>",
+              "<strong>Brudd på milepælsplan</strong>",
               "2",
               "4",
               "8",
-              "Vi inngår KUN betinget SLA efter grundig screening og sikrer at en faglig mentor følger prosjektet tett."
+              "Vi inngår KUN forpliktende milepælsplan etter grundig screening og sikrer at en faglig mentor følger prosjektet tett."
             ],
             [
               "<strong>Leveransen holder ikke god kvalitet</strong>",
@@ -1339,7 +1340,7 @@ export const wikiData = [
         ]
       },
       {
-        "title": "8. Avtalerett & SLA",
+        "title": "8. Avtalerett & Milepælsplan",
         "text": "Samarbeidsavtalene må inneholde absolutte ansvarsfraskrivelser ('as-is') og et lavt erstatningstak for å beskytte stiftelsen og studentene mot økonomiske krav.",
         "sources": [
           {
@@ -1755,13 +1756,13 @@ export const wikiData = [
             ]
           },
           {
-            "title": "Tilpasning 8C — Betinget SLA kun som unntak",
+            "title": "Tilpasning 8C — Forpliktende milepælsplan kun som unntak",
             "konkret": [
               "Kun når teamet har erfaren student/NAV-deltaker. Strengt avgrenset. Aldri uten forsikringsdekning."
             ],
-            "hvorfor": "En betinget SLA gir mulighet til å ta mer avanserte oppdrag når teamet har riktig kompetanse, samtidig som standardmodellen (uten SLA) gir trygghet for de fleste prosjekter. Ved å kreve forsikringsdekning sikrer dere at SLA-en er reell.",
+            "hvorfor": "En forpliktende milepælsplan gir mulighet til å ta mer avanserte oppdrag når teamet har riktig kompetanse, uten å signalisere markedsposisjonering, samtidig som standardmodellen gir trygghet for de fleste prosjekter. Ved å kreve forsikringsdekning sikrer dere at milepælsplanen er reell.",
             "motstand": [
-              "Vanskelig å vurdere når teamet er «erfarne nok» for SLA. Løsning: sett klare kriterier (f.eks. minst én student med 2+ års relevant erfaring eller en NAV-deltaker med tidligere konsulenterfaring)."
+              "Vanskelig å vurdere når teamet er «erfarne nok» for milepælsplan. Løsning: sett klare kriterier (f.eks. minst én student med 2+ års relevant erfaring eller en NAV-deltaker med tidligere konsulenterfaring)."
             ]
           }
         ]
@@ -2124,7 +2125,7 @@ export const wikiData = [
           "rows": [
             [
               "<strong>HiØ trekker seg fra samarbeidet</strong>",
-              "Avklar om det skyldes juridisk risiko (vis frem defense pack), ressursmangel (tilby redusert mentorordning) eller politikk (involver StOr/næringsliv). Eventuelt fortsett som ren studentforening.",
+              "Avklar om det skyldes juridisk risiko (vis frem defense pack), ressursmangel (tilby redusert mentorordning) eller politikk (involver StOr/næringsliv). Eventuelt drifte videre som selvstendig prosjekt eid av en ekstern stiftelse.",
               "Styret"
             ],
             [

@@ -250,5 +250,7 @@ Hvor: Ny seksjon under "Analyser" eller "Guidelines"
 | 19.06.2026 | QC Runde 2: Rett opp feil om Lånekassen på infosiden | Utført |
 | 19.06.2026 | Omstrukturer menyen på infosiden for bedre oversikt | Utført |
 | 19.06.2026 | Forklar begreper som Blender Collective og næringshager på infosiden | Utført |
+| 22.06.2026 | Rett opp to inkonsistenser på infosiden: Selskapsform og SLA | Utført |
+
 
 

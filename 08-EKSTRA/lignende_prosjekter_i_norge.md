@@ -139,6 +139,47 @@
 
 ---
 
+## Hvorfor Syntax & Flow kan lykkes der andre har feilet
+
+Flere av de mest liknende prosjektene (TÅRNET, AppLab) er nedlagt. Her er grunnene — og hvordan Syntax & Flow løser dem:
+
+### 1. Kontinuitet — TÅRNET og AppLab ble nedlagt da nøkkelpersoner sluttet
+| Andres problem | Syntax & Flows løsning |
+|----------------|------------------------|
+| Drevet av studenter som uteksamineres — ingen kunnskapsoverføring | **Stabil kjerne** (daglig leder, fagansvarlige) som ikke er studenter. Evighetsprosjekter med overleveringsplan mellom kull. |
+
+### 2. Finansiering — TÅRNET manglet driftsmidler
+| Andres problem | Syntax & Flows løsning |
+|----------------|------------------------|
+| Ingen fast finansiering, basert på frivillighet | **AS-struktur** med mulighet for tilskudd, innovasjonsmidler og sponsorater. Lavt kostnadsbehov (120 000–310 000 kr over 2 år). |
+
+### 3. Tverrfaglighet — IT2901/TDT4290 er kun IT-studenter
+| Andres problem | Syntax & Flows løsning |
+|----------------|------------------------|
+| Kun programmering — mangler design og forretningsforståelse | **IT, design og økonomi** i samme team. Leverer helhetlige løsninger, ikke bare kode. |
+
+### 4. Rekruttering — ingen av de andre har en strukturert rekrutteringskanal
+| Andres problem | Syntax & Flows løsning |
+|----------------|------------------------|
+| Studentene får erfaring, men bedrifter har ingen enkel måte å vurdere dem på | **Verifisert referanseportal** med strukturerte vurderinger. Bedrifter kan søke etter kandidater basert på dokumentert arbeid. |
+
+### 5. In-house på HiØ — tilgang til foreleseres ekspertise
+| Andres problem | Syntax & Flows løsning |
+|----------------|------------------------|
+| Prosjektene var frittstående uten faglig forankring hos lærestedet | **Lokalisert på HiØ** med direkte tilgang til forelesere for kvalitetssikring og veiledning. |
+
+### 6. Evighetsprosjekter — ingen av de andre har prosjekter som går over flere semestre
+| Andres problem | Syntax & Flows løsning |
+|----------------|------------------------|
+| Hvert prosjekt starter og slutter med ett kull — ingen videreføring | **Evighetsprosjekter** (f.eks. ERP-system) som går over flere semestre. Hvert kull overtar der forrige slapp. |
+
+### 7. Juridisk gjennomarbeidet — de fleste studentprosjekter mangler dette
+| Andres problem | Syntax & Flows løsning |
+|----------------|------------------------|
+| Ingen vurdering av statsstøtte, GDPR, arbeidsmiljølov eller konkurranserett | **Full juridisk vurdering** på plass: statsstøtte (EØS), Lånekassen, GDPR, arbeidstakerklassifisering, ansvarsforhold. |
+
+---
+
 ## Oppsummering og lærdommer
 
 ### Fellestrekk
