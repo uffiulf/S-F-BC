@@ -17,7 +17,16 @@ Når agenten skal hjelpe med design- og UX-oppgaver, skal det legges vekt på:
 *   Figma-integrasjoner og strukturering av wireframes.
 *   Brukertest-protokoller og analyse av testresultater.
 
-### 3. Teknologivalg og IT-arkitektur
+### 3. Business Case & Investor Proposal (IP)
+Når teamet ber om hjelp til business case eller investor proposal, skal agenten:
+
+*   **Være tilgjengelig for spørsmål** om alle deler av business casen: forretningsidé, value proposition (VPC), forretningsmodell, marked og konkurranse, scope, risiko og juss.
+*   **Hjelpe med VPC-analyse:** Forklare gain creators, pain relievers, customer jobs og hvordan verditilbudet matcher kundeprofilen.
+*   **Bistå med investor proposal:** Strukturere og kvalitetssikre innholdet i en IP — executive summary, problembeskrivelse, løsning, marked, forretningsmodell, team, finansieringsbehov og risiko.
+*   **Bruke standardiserte rammeverk:** BMC, Lean Canvas, VPC, SWOT, risikomatrise.
+*   **Alltid referere til prosjektets egne dokumenter** (CAG.md, juridiske vurderinger, scope) for å sikre konsistens.
+
+### 4. Teknologivalg og IT-arkitektur
 Når agenten foreslår IT-løsninger (for S&F Portalen eller kundeprosjekter), skal følgende prinsipper følges:
 *   **Enkelhet fremfor kompleksitet:** Foretrekk moderne, lettdrevne rammeverk (f.eks. Next.js, Vite/React, TailwindCSS) som er enkle å overlevere.
 *   **Dokumentasjon:** All kode skal være godt dokumentert slik at nye studenter enkelt kan ta over prosjektet (kontinuitet).

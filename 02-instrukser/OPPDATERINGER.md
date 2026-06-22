@@ -72,6 +72,39 @@ Kilde: Ingen spesifikk fil — nytt innhold
 Hva: Nederst på Dashboard-siden, etter eksisterende seksjoner, legg til en forklarende boks med tittel "Hvordan henger business casen sammen?" som viser at Value Proposition (VP) er en integrert del av business casen, ikke noe separat. Vis rekkefølgen: Forretningsidé → Value Proposition → Forretningsmodell → Marked og konkurranse → Scope → Risiko og juss. Forklar kort at VPC-ene som finnes under "Forretningsmodell & VPC" er en visualisering av VP-en for hver målgruppe (studenter, HiØ, næringsliv). Alt dette samlet utgjør business casen.
 Hvor: Nederst på Dashboard-siden
 
+### 19.06.2026 — Omstrukturer menyen på infosiden for bedre oversikt
+Prioritet: Høy
+Kilde: Tilbakemelding fra prosjekteier
+Hva: Gå gjennom ALLE sider i wikiData.js og App.jsx og omstrukturer navigasjonsmenyen (sidebar) slik:
+
+**Oversikt & Hovedsider**
+1. Dashboard
+2. Mål & Visjon
+3. Organisasjon & Drift
+4. Ordliste (flyttes hit fra Dokumenter & Referanser)
+
+**Business Case** (ny seksjon, tidligere "Dokumenter" + deler av "GTM")
+5. Forretningsmodell & VPC
+6. Scope (in/out of scope)
+7. Tjenester & Leveranser
+8. Marked & Konkurranse
+9. Risiko & Jus
+10. Tilpasningsforslag
+11. Gjennomføringsplan (flyttes hit)
+
+**GTM & Utførelse**
+12. Prosjektplan
+13. Rekruttering
+
+**Dokumenter & Referanser**
+14. Maler og utkast (oversikt over alle filene i mal-og-utkast-mappen)
+15. Lignende prosjekter i Norge
+
+**Fjern fra menyen:** Analyser, Guidelines (innholdet er spredt på andre sider). Slå sammen overlappende innhold slik at samme informasjon ikke står flere steder.
+
+Målet er færre menypunkter og tydeligere kategorier, slik at man ser alt uten å scrolle.
+Hvor: wikiData.js + App.jsx — hele navigasjonsstrukturen
+
 ### 19.06.2026 — QC Runde 2: Rett opp feil om Lånekassen på infosiden
 Prioritet: Høy
 Kilde: Avklaring fra prosjekteier
@@ -186,5 +219,6 @@ Hvor: Ny seksjon under "Analyser" eller "Guidelines"
 | 19.06.2026 | Oppdater Dashboard med ny avklaring om ITD35014 | Utført |
 | 19.06.2026 | Kvalitetssikring (QC) av hele infosiden — rett opp flere feil | Utført |
 | 19.06.2026 | QC Runde 2: Rett opp feil om Lånekassen på infosiden | Utført |
+| 19.06.2026 | Omstrukturer menyen på infosiden for bedre oversikt | Utført |
 
 

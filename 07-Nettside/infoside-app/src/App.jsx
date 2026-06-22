@@ -237,8 +237,8 @@ export default function App() {
             </button>
           ))}
 
-          <div className="nav-section-title">GTM & Utførelse</div>
-          {wikiData.filter(page => page.category === "GTM & Utførelse").map((page) => (
+          <div className="nav-section-title">Business Case</div>
+          {wikiData.filter(page => page.category === "Business Case").map((page) => (
             <button
               key={page.id}
               onClick={() => setActivePage(page.id)}
@@ -249,8 +249,8 @@ export default function App() {
             </button>
           ))}
 
-          <div className="nav-section-title">Business Case</div>
-          {wikiData.filter(page => page.category === "Business Case").map((page) => (
+          <div className="nav-section-title">GTM & Utførelse</div>
+          {wikiData.filter(page => page.category === "GTM & Utførelse").map((page) => (
             <button
               key={page.id}
               onClick={() => setActivePage(page.id)}
@@ -320,7 +320,7 @@ export default function App() {
                   className="back-btn"
                 >
                   <Icons.ArrowLeft className="w-4 h-4" />
-                  <span>Tilbake til Juridisk & Risiko</span>
+                  <span>Tilbake til Risiko & Jus</span>
                 </button>
 
                 <div className="legal-detail-card glass-card">
@@ -693,7 +693,7 @@ export default function App() {
                 )}
 
                 {/* Custom: Juridisk & Risiko Page Visual Render */}
-                {currentPage.id === "juridisk-risiko" && (
+                {currentPage.id === "risiko-og-jus" && (
                   <div className="legal-risk-dashboard">
                     
                     {/* 1. SWOT SECTION */}

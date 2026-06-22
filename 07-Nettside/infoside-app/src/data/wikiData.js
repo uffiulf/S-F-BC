@@ -1,5 +1,4 @@
-export const wikiData = [
-  {
+export const wikiData = [  {
     id: "dashboard",
     title: "Dashboard",
     category: "Oversikt",
@@ -157,6 +156,125 @@ export const wikiData = [
           "<strong>Wiki & Dokumentasjon:</strong> Krav om at alle rutiner, kildekoder, Figma-filer og analyser lagres og dokumenteres systematisk (som denne portalen).",
           "<strong>Trainee-ordning:</strong> Første- og andreårsstudenter rekrutteres som juniorer for å vokse inn i tyngre roller senere."
         ]
+      }
+    ]
+  },
+  {
+    id: "ordliste",
+    title: "Ordliste",
+    category: "Hovedsider",
+    icon: "BookOpen",
+    lead: "Forklaring på fagbegreper og forkortelser som brukes i Syntax & Flow-prosjektet.",
+    sections: [
+      {
+        heading: "A–C",
+        table: {
+          headers: ["Begrep", "Forklaring"],
+          rows: [
+            ["<strong>Adoption & Retention</strong>", "Strategier for å få kunder til å ta i bruk et produkt (adoption) og fortsette å bruke det over tid (retention)."],
+            ["<strong>Ambassadørprogram</strong>", "Ordning der fornøyde kunder eller partnere promoterer produktet/tjenesten frivillig, ofte i bytte mot fordeler."],
+            ["<strong>AML</strong>", "Arbeidsmiljøloven. Regulerer arbeidstakeres rettigheter og arbeidsgivers plikter."],
+            ["<strong>Arbeidsmarkedstiltak</strong>", "Tiltak finansiert av NAV for å hjelpe personer inn i arbeid, f.eks. arbeidstrening."],
+            ["<strong>B2G (Business-to-Government)</strong>", "Forretningsmodell der bedrifter leverer tjenester eller produkter to offentlig sektor (f.eks. høyskoler eller kommuner)."],
+            ["<strong>Bottom-up</strong>", "Markedsførings- eller implementeringsstrategi som starter på grasrotnivå (f.eks. hos studenter eller enkelte avdelinger) og beveger seg oppover i organisasjonen."],
+            ["<strong>CAC (Customer Acquisition Cost)</strong>", "Kostnaden ved å skaffe en ny kunde, inkludert markedsføring, salg og oppfølging."],
+            ["<strong>Change Management</strong>", "Strukturert tilnærming til å hjelpe mennesker og organisasjoner gjennom endringsprosesser."],
+            ["<strong>Churn Rate</strong>", "Andel kunder som slutter å bruke tjenesten over en gitt periode. Lav churn = høy kundelojalitet."],
+            ["<strong>CLTV / Customer Lifetime Value</strong>", "Hvor mye en kunde totalt forventes å innbringe i løpet av hele kundeforholdet."],
+            ["<strong>CLV (Customer Lifetime Value)</strong>", "Samme som CLTV. Total forventet verdi av et kundeforhold over hele levetiden."],
+            ["<strong>COS (Cost of Services)</strong>", "Kostnaden ved å levere en tjeneste — inkluderer timer, verktøy og eventuelle underleverandører."]
+          ]
+        }
+      },
+      {
+        heading: "D–G",
+        table: {
+          headers: ["Begrep", "Forklaring"],
+          rows: [
+            ["<strong>De minimis</strong>", "Bagatellmessig støtte. Statsstøtte under 300 000 EUR over 3 år per kunde — så lite at det ikke regnes som ulovlig og krever ikke ESA-godkjenning."],
+            ["<strong>DPIA</strong>", "Data Protection Impact Assessment. Konsekvensvurdering for personvern som må gjøres før behandling av personopplysninger."],
+            ["<strong>DPO</strong>", "Data Protection Officer. Personvernansvarlig."],
+            ["<strong>Early adopter</strong>", "En kunde som er tidlig ute med å ta i bruk et nytt produkt eller tjeneste, ofte avgjørende for markedsvalidering."],
+            ["<strong>ESA</strong>", "EFTAs overvåkingsorgan. Overvåker at Norge følger EØS-avtalen, inkludert statsstøttereglene."],
+            ["<strong>Evighetsprosjekt</strong>", "Internt prosjekt som går over flere semestre. Hvert kull overtar der forrige slapp."],
+            ["<strong>Executive Summary</strong>", "Kort sammendrag av en forretningsplan eller rapport som gir leseren rask oversikt over hele innholdet."]
+          ]
+        }
+      },
+      {
+        heading: "G–L",
+        table: {
+          headers: ["Begrep", "Forklaring"],
+          rows: [
+            ["<strong>GDPR</strong>", "General Data Protection Regulation. EUs personvernforordning, innlemmet i norsk lov gjennom personopplysningsloven."],
+            ["<strong>GTM</strong>", "Go-To-Market. Strategi for hvordan et produkt eller tjeneste lanseres i markedet."],
+            ["<strong>IP</strong>", "Investor Proposal. Forslag eller presentasjon rettet mot investorer for å sikre finansiering."],
+            ["<strong>IPR</strong>", "Intellectual Property Rights. Åndsverk og immaterielle rettigheter (kode, design, patenter)."],
+            ["<strong>Justification</strong>", "Begrunnelse eller forsvaring av en beslutning, et prosjekt eller en investering — hvorfor noe er nødvendig eller lønnsomt."],
+            ["<strong>LOI (Letter of Intent)</strong>", "Intensjonsavtale. Et ikke-bindende dokument som bekrefter at en part har til hensikt å inngå en avtale eller samarbeid."]
+          ]
+        }
+      },
+      {
+        heading: "L–P",
+        table: {
+          headers: ["Begrep", "Forklaring"],
+          rows: [
+            ["<strong>MVA</strong>", "Merverdiavgift. Avgift på omsetning av varer og tjenester. Grense for registrering: 50 000 kr/år."],
+            ["<strong>NOKUT</strong>", "Nasjonalt organ for kvalitet i utdanningen. Fører tilsyn med høyere utdanning."],
+            ["<strong>NPS</strong>", "Net Promoter Score. Måling av kundetilfredshet på en skala fra 0–10."]
+          ]
+        }
+      },
+      {
+        heading: "O–R",
+        table: {
+          headers: ["Begrep", "Forklaring"],
+          rows: [
+            ["<strong>OTP</strong>", "Obligatorisk tjenestepensjon. Pensjonsordning som arbeidsgivere må tilby ansatte."],
+            ["<strong>Persona</strong>", "Fiktiv brukerprofil som representerer en målgruppe, brukt i design og markedsføring for å forstå behov og adferd."],
+            ["<strong>Prisstrategi</strong>", "Plan for hvordan et produkt eller tjeneste skal prises for å oppnå ønsket posisjonering og lønnsomhet."],
+            ["<strong>Pro bono</strong>", "Latin for «det godes skyld». Tjenester som leveres gratis, ofte for ideelle formål."],
+            ["<strong>Proof of Concept (PoC)</strong>", "En tidlig test eller prototype som viser at en idé eller løsning er gjennomførbar i praksis."],
+            ["<strong>Proof of Interest</strong>", "Dokumentasjon på at det finnes reell interesse eller etterspørsel fra potensielle kunder."]
+          ]
+        }
+      },
+      {
+        heading: "R–S",
+        table: {
+          headers: ["Begrep", "Forklaring"],
+          rows: [
+            ["<strong>Recovery</strong>", "Tilbakebetaling av ulovlig statsstøtte med renter. Pålegges av ESA når støtte er gitt i strid med EØS-avtalen."],
+            ["<strong>RGE (Residual Gross Earnings)</strong>", "Fortjeneste som gjenstår etter at direkte kostnader er trukket fra. Måler hvor lønnsom kjernedriften er før faste kostnader."],
+            ["<strong>Risk Management</strong>", "Prosessen med å identifisere, vurdere og håndtere risikoer i et prosjekt eller en organisasjon."],
+            ["<strong>ROI</strong>", "Return on Investment. Avkastning på investering. Måler hvor lønnsom en investering er."],
+            ["<strong>Rubric</strong>", "Rubric (vurderingsmatrise). Strukturerte kriterier for vurdering, f.eks. 1–5 på definerte dimensjoner."],
+            ["<strong>SLA</strong>", "Service Level Agreement. Avtale om leveransenivå og garantier. Syntax & Flow tilbyr normalt ikke SLA."],
+            ["<strong>Stakeholder</strong>", "Interessent. En person eller gruppe som har interesse i eller påvirkes av et prosjekt."],
+            ["<strong>Stakeholder Management</strong>", "Prosessen med å kartlegge, kommunisere med og håndtere forventningene til interessenter."],
+            ["<strong>Storyboard</strong>", "Visuell fremstilling av en brukerreise eller prosess, bilde for bilde, brukt i design og planlegging."]
+          ]
+        }
+      },
+      {
+        heading: "S–Å",
+        table: {
+          headers: ["Begrep", "Forklaring"],
+          rows: [
+            ["<strong>SiØ</strong>", "Studentsamskipnaden i Østfold. Tilbyr velferdstjenester til studenter ved HiØ."],
+            ["<strong>Spor 1</strong>", "Dagens ordning basert på det eksisterende studieemnet ITD35014 Bedriftspraksis (10 stp). Målet på sikt er å utvide emnet til 15–30 stp for å sikre rett til støtte fra Lånekassen uten krav om andre emner ved siden av."],
+            ["<strong>Spor 2</strong>", "Tidligere planlagt deltidssport (10 stp) som er fjernet fra modellen, da det ikke finnes et egnet 5 stp-emne ved HiØ å kombinere med for å nå 15 stp-grensen."],
+            ["<strong>Spor 3</strong>", "NAV-samarbeid rettet mot deltakere utenfor det ordinære studieløpet. Sporet er utsatt til etter pilotfasen (Fase 4)."],
+            ["<strong>Støtteregister</strong>", "Løpende logg over markedsverdi av tjenester per kunde. Brukes for å kontrollere de minimis-grensen."],
+            ["<strong>TAM (Total Addressable Market)</strong>", "Totalt marked for et produkt eller tjeneste, altså maksimal inntekt hvis alle potensielle kunder kjøper."],
+            ["<strong>Top-down</strong>", "Markedsføringsstrategi som starter hos ledelsen/store aktører og jobber seg nedover i organisasjonen."],
+            ["<strong>Unfair Advantage</strong>", "En varig konkurransefordel som er vanskelig for andre å kopiere."],
+            ["<strong>User Journey</strong>", "Brukerreise. En trinnvis beskrivelse eller visualisering av hvordan en bruker opplever og samhandler med et produkt eller tjeneste over tid."],
+            ["<strong>Value Proposition Canvas (VPC)</strong>", "Verktøy for å kartlegge verdien et produkt/tjeneste gir en målgruppe."],
+            ["<strong>Verdiskapning / Value Creation</strong>", "Prosessen med å skape merverdi for kunder, studenter eller samfunnet gjennom produktet eller tjenesten."]
+          ]
+        }
       }
     ]
   },
@@ -483,7 +601,7 @@ export const wikiData = [
   },
   {
     id: "markeds-og-konkurranseanalyse",
-    title: "Markeds & Konkurranse",
+    title: "Marked & Konkurranse",
     category: "Business Case",
     icon: "TrendingUp",
     lead: "Analyse av markedsbehovet i Østfold, våre målgrupper, konkurrenter og posisjonering.",
@@ -523,39 +641,11 @@ export const wikiData = [
     ]
   },
   {
-    id: "strategi-og-utforelse",
-    title: "Strategi & Utførelse",
+    id: "risiko-og-jus",
+    title: "Risiko & Jus",
     category: "Business Case",
-    icon: "Workflow",
-    lead: "Strategi for lansering, rekruttering av studenter og bedrifter, samt vår prosjektmodell.",
-    sections: [
-      {
-        heading: "1. Go-To-Market (GTM) & Rekruttering",
-        points: [
-          "<strong>Studentrekruttering:</strong> Markedsføring via stands på campus, presentasjoner i avgangsklasser, anbefalinger fra forelesere, og studentorganisasjoner. Opptakskravet er bestått minimum 90 stp for å sikre faglig modenhet.",
-          "<strong>Bedriftsrekruttering:</strong> Pitching via lokale gründerinkubatorer (Blender Collective, Smart Innovation Norway) og frokostmøter i de lokale næringsforeningene i Halden og Fredrikstad.",
-          "<strong>Referanse-loop:</strong> Portalen viser frem suksessfulle case-studier (kildekode, designskisser, analyser) som passivt tiltrekker seg nye kunder."
-        ]
-      },
-      {
-        heading: "2. De 5 Prosjektfasene",
-        text: "Siden vi som hovedregel ikke garanterer leveranser, fokuserer modellen på strukturert læring fremfor leveransepress:",
-        points: [
-          "<strong>Fase 1: Avklaring & Kontrakt (Uke 1-2):</strong> Avklare prosjektets omfang og kundens tidsforpliktelse. Det signeres en standardavtale med ansvarsfraskrivelse.",
-          "<strong>Fase 2: Innsikt & Design (Uke 3-6):</strong> Økonomistudenter kartlegger forretningsmodellen og lokaliserer flaskehalser. Designstudenter lager brukerreiser og prototyper i Figma basert på denne innsikten.",
-          "<strong>Fase 3: Utvikling & Implementering (Uke 7-12):</strong> IT-studenter programmerer nettsiden/MVPen basert på Figma-designet. Økonomistudenter implementerer skyverktøy (CRM/regnskap) eller lager prosessforbedringsplaner.",
-          "<strong>Fase 4: Kvalitetssikring (QA) & Testing (Uke 13-14):</strong> Gjennomgang av kildekode og design med faglig mentor (HiØ-foreleser) for endelig godkjenning.",
-          "<strong>Fase 5: Overlevering & Portefølje (Uke 15-16):</strong> Kunden mottar løsningen. Prosjektet dokumenteres og publiseres (med samtykke) på portalen."
-        ]
-      }
-    ]
-  },
-  {
-    id: "risiko-og-kostnadsanalyse",
-    title: "Risiko & Kostnader",
-    category: "Business Case",
-    icon: "Coins",
-    lead: "Analyse av økonomiske rammer og identifisering av operasjonelle risikoer ved drift.",
+    icon: "ShieldAlert",
+    lead: "Vurdering av konseptets juridiske holdbarhet, risikoer og styrker basert på den siste juridiske utredningen.",
     sections: [
       {
         heading: "1. Kostnadsanalyse & Budsjett",
@@ -580,269 +670,13 @@ export const wikiData = [
           rows: [
             ["<strong>Studenter faller fra underveis</strong>", "4", "2", "8", "Lav konsekvens pga. standardavtale: Kunden er informert om at det ikke foreligger noen leveransegaranti."],
             ["<strong>Kunden engasjerer seg ikke</strong>", "3", "4", "12", "Kontraktsfestet tidsbruk: Dersom kunden uteblir fra ukentlige møter, avsluttes prosjektet umiddelbart."],
-            ["<strong>Brudd på Betinget SLA</strong>", "2", "4", "8", "Vi inngår KUN betinget SLA etter grundig screening og sikrer at en faglig mentor følger prosjektet tett."],
+            ["<strong>Brudd på Betinget SLA</strong>", "2", "4", "8", "Vi inngår KUN betinget SLA efter grundig screening og sikrer at en faglig mentor følger prosjektet tett."],
             ["<strong>Leveransen holder ikke god kvalitet</strong>", "2", "3", "6", "Faglig mentor (HiØ-foreleser) går gjennom og godkjenner sluttproduktet før det kan overleveres."],
             ["<strong>Juridisk ansvar for feil i kode/råd</strong>", "1", "4", "4", "Tydelig ansvarsfraskrivelse i kontrakten som signeres før oppstart. Tjenestene leveres 'som de er'."]
           ]
         }
       }
-    ]
-  },
-  {
-    id: "gtm-og-lansering",
-    title: "GTM & Lansering",
-    category: "GTM & Utførelse",
-    icon: "Rocket",
-    lead: "Go-To-Market strategien for Syntax & Flow.",
-    sections: [
-      {
-        heading: "Rekruttering av Studenter",
-        text: "For å tiltrekke oss motiverte deltakere bruker vi følgende kanaler på HiØ:",
-        points: [
-          "<strong>Fysisk tilstedeværelse:</strong> Stands under studiestart og presentasjoner i klasserom for avgangsstudenter.",
-          "<strong>Samarbeid med forelesere:</strong> Forelesere anbefaler Syntax & Flow som praksisplass for studenter i relevante fag.",
-          "<strong>Krav til progresjon:</strong> Kun studenter som har bestått alle fag og er i sitt siste år (eller nyutdannede) kvalifiseres."
-        ]
-      },
-      {
-        heading: "Rekruttering av Bedrifter",
-        text: "Bedrifter og kunder tiltrekkes gjennom lave barrierer og strategiske partnerskap:",
-        points: [
-          "<strong>Inkubatornettverk:</strong> Vi pitcher ordningen direkte til gründere i Blender Collective og Smart Innovation Norway.",
-          "<strong>Næringsforeninger:</strong> Presentasjoner på frokostmøter i Halden og Fredrikstad næringsforening.",
-          "<strong>Ingen økonomisk risiko:</strong> Markedsføringen fokuserer på at tjenestene er gratis, mot at de investerer tid i oppfølging av studentene."
-        ]
-      }
-    ]
-  },
-  {
-    id: "prosjektplan",
-    title: "Prosjektplan",
-    category: "GTM & Utførelse",
-    icon: "Compass",
-    lead: "Prosjektets livsløp fra oppstart til overlevering.",
-    sections: [
-      {
-        heading: "Fase 1: Mobilisering & Avklaring",
-        text: "<strong>Formål:</strong> Etablere rammene for prosjektet og sikre kundens forpliktelse.",
-        points: [
-          "<strong>Analyser:</strong> Interessentanalyse (Stakeholder Mapping) for å avklare roller, og markedsanalyse for å forstå bedriftens posisjon.",
-          "<strong>Leveranser:</strong> Signert Samarbeidsavtale, prosjektskisse (Scope Document) med fremdriftsplan."
-        ]
-      },
-      {
-        heading: "Fase 2: Forretningsforståelse & Design",
-        text: "<strong>Formål:</strong> Forstå bedriftens flaskehalser og visualisere løsningen.",
-        points: [
-          "<strong>Analyser:</strong> Prosess- og flaskehalsanalyse (Økonomi) og målgruppeanalyse (Design).",
-          "<strong>Leveranser:</strong> Value Proposition Canvas (VPC) for kunden, og ferdige Figma-prototyper."
-        ]
-      },
-      {
-        heading: "Fase 3: Utvikling & Implementering",
-        text: "<strong>Formål:</strong> Bygge den digitale eller operative løsningen.",
-        points: [
-          "<strong>Analyser:</strong> Risiko- og kostnadsanalyse for implementeringen, og teknisk arkitekturvalg.",
-          "<strong>Leveranser:</strong> Fungerende kildekode/MVP på GitHub, og operasjonell effektiviseringsplan."
-        ]
-      },
-      {
-        heading: "Fase 4: Kvalitetssikring (QA) & Testing",
-        text: "<strong>Formål:</strong> Sikre at leveransen holder et profesjonelt nivå.",
-        points: [
-          "<strong>Analyser:</strong> Brukervennlighetstester med ekte sluttbrukere, og teknisk kode/design-review.",
-          "<strong>Leveranser:</strong> Signert QA-godkjenning fra faglig mentor (HiØ-foreleser), samt feillogg/testrapport."
-        ]
-      },
-      {
-        heading: "Fase 5: Overlevering & Showcase",
-        text: "<strong>Formål:</strong> Lansere løsningen og dokumentere prosjektet.",
-        points: [
-          "<strong>Analyser:</strong> Sluttevaluering og evaluering av lærdommer.",
-          "<strong>Leveranser:</strong> Overføring av kildekode og tilganger til kunden, og prosjektcase publisert på showcase-portalen."
-        ]
-      }
-    ]
-  },
-  {
-    id: "gjennomforingsplan",
-    title: "Gjennomføringsplan",
-    category: "GTM & Utførelse",
-    icon: "Milestone",
-    lead: "Trinnvis fremdriftsplan (Fase 1–4) fra planlegging til skalering, strukturert for minst mulig motstand.",
-    sections: [
-      {
-        heading: "1. Overordnet sammenheng mellom risiko og faser",
-        text: "Prosjektet etableres trinnvis for å fange opp og eliminere de største risikoene før store ressurser forpliktes:",
-        table: {
-          headers: ["Fase", "Fokusområde", "Risikoer som løses i denne fasen", "Prinsipp"],
-          rows: [
-            ["Fase 1", "Planlegging & Konsept (Mnd 1-3)", "Ingen direkte risiko. Kartlegging av emner, samtaler med nøkkelpersoner på HiØ og partnere.", "Bare prat og planer — null risiko"],
-            ["Fase 2", "Juridisk & Org. oppsett (Mnd 3-6)", "Lånekassen-avklaring, statsstøtte/EØS, arbeidstakerklassifisering, forsikring, GDPR.", "Rydde alt juridisk før første kundeleveranse"],
-            ["Fase 3", "Pilot med sikkerhetsnett (Mnd 6-12)", "Faktisk kvalitet på leveranse, kunde-engasjement, tracking av de minimis-verdier.", "Ett pilotprosjekt — test og dokumenter alt"],
-            ["Fase 4", "Skalering med åpne øyne (Mnd 12-24)", "Konkurranseklager fra kommersielle byråer, automatisering av register, oppstart NAV-spor.", "Skaler gradvis med erfaringen fra piloten"]
-          ]
-        }
-      },
-      {
-        heading: "2. Fase 1: Lavthengende frukt (Måned 1–3)",
-        text: "Aktiviteter som kan gjøres uten risiko for å bygge grunnlaget:",
-        table: {
-          headers: ["Aktivitet", "Hvorfor", "Hvem", "Kostnad / Avhengigheter"],
-          rows: [
-            ["Kartlegg eksisterende emner ved HiØ (ITD35014)", "Unngå å opprette nye emner unødvendig. Bruk eksisterende mal.", "Studenter, studieveileder", "Gratis / Ingen"],
-            ["Identifiser forkjempere ved HiØ (dekaner, programledere)", "Sikre intern akademisk forankring og mentorressurser.", "Studenter (initiativtakere)", "Gratis / Ingen"],
-            ["Kartlegg lokale næringsforeninger og Blender Collective", "Skaffe døråpnere til de første kommersielle kundene.", "Studenter", "Gratis / Ingen"],
-            ["Forbered 1-pagers konseptskisse", "Gi alle interessenter samme informasjonsgrunnlag uten forpliktelser.", "Studenter", "Gratis / Ingen"]
-          ]
-        }
-      },
-      {
-        heading: "3. Fase 2: Etablering og juridisk rydding (Måned 3–6)",
-        text: "Kritiske avklaringer som MÅ være på plass før første kundeprosjekt starter:",
-        table: {
-          headers: ["Aktivitet", "Rettslig formål", "Hvem", "Kostnad / Status"],
-          rows: [
-            ["Stift Syntax & Flow AS eid av en ideell stiftelse", "Kritisk for statsstøtte: Sikrer juridisk skille fra HiØ. AS gir ansvarsbegrensning.", "Stiftere", "30 000 kr (aksjekapital) + stiftelseskostnad"],
-            ["Utarbeid formell emnebeskrivelse for Bedriftspraksis", "Lånekassen krever reelle læringsmål, ikke bare arbeid. Avverger også arbeidstakerstatus.", "HiØ programansvarlige", "Gratis / Utkast opprettet"],
-            ["Søk forhåndsuttalelse fra Lånekassen for emne etter grad", "Sikre studentenes finansiering. Gjør-eller-dø-punkt.", "HiØ studieadmin", "Gratis / Avventer emnegodkjenning"],
-            ["Inngå skriftlig samarbeidsavtale HiØ og Syntax & Flow AS", "Kritisk for statsstøtte: HiØ prises til markedspris for mentortimer/leie av lokaler.", "HiØ-jurister, styret", "Juristbistand / Prioritert tiltak"],
-            ["Tegn yrkesansvarsforsikring for Syntax & Flow AS", "Beskytte studentene personlig mot erstatningskrav ved feil i levert kode.", "Styreleder", "5 000–15 000 kr/år"],
-            ["Utarbeid standard kundeavtale med fire lag beskyttelse", "Ansvarsfraskrivelse ('as-is'), begrensning på maks 10k, erklæring fra kunde.", "Jurist, studenter", "10 000–20 000 kr / Utkast opprettet"]
-          ]
-        }
-      },
-      {
-        heading: "4. Fase 3: Pilot med sikkerhetsnett (Måned 6–12)",
-        text: "Ett enkelt prosjekt med begrenset omfang for å verifisere modellen i praksis:",
-        table: {
-          headers: ["Aktivitet", "Hvorfor", "Hvem", "Kostnad / Avhengigheter"],
-          rows: [
-            ["Rekrutter 3–5 studenter til pilot-team", "Etablere første operative team (minst 1 IT, 1 design, 1 økonomi).", "Studentleder", "Gratis / Lånekassestøtte godkjent"],
-            ["Finn én pilotkunde (lokal mikrovirksomhet < 5 ansatte)", "Kontrollert risiko. Enkelt oppdrag (f.eks. landingpage eller logo).", "Studentleder, næringsforening", "Gratis / Ingen kommersiell konkurranse"],
-            ["Dokumenter ALT (timer, roller, mentortid, de minimis)", "Dokumentasjon er bevis i eventuell ESA- eller Lånekassen-tilsyn.", "Hele teamet", "Gratis / Løpende arbeid"],
-            ["Evaluer piloten og mål faktisk statsstøtteverdi", "Lærdom før skalering. Sikre at verdi holder seg under de minimis-grensen.", "Økonomistudent, mentor", "Gratis / Fullført prosjekt"]
-          ]
-        }
-      },
-      {
-        heading: "5. Fase 4: Skalering med åpne øyne (Måned 12–24)",
-        text: "Gradvis opptrapping etter at modellen er verifisert:",
-        table: {
-          headers: ["Aktivitet", "Hvorfor", "Hvem", "Kostnad / Avhengigheter"],
-          rows: [
-            ["Rekrutter 2–3 nye team parallelt", "Skalere kapasiteten gradvis (ikke hopp fra 1 til 10 kunder direkte).", "Studentleder", "Løpende / Erfaring fra pilot"],
-            ["Bygg og lanser referanseportalen (nettsiden)", "Sikre digital portefølje- og referansebase for studentene.", "IT- og designstudenter", "Gratis / GDPR-samtykke på plass"],
-            ["Forbered 'defense pack' mot konkurranseklager", "Når klagen fra kommersielle byråer kommer, må svaret ligge klart.", "Styret, studentleder", "Gratis / Dokumenter fra Fase 2 & 3"],
-            ["Start NAV-samarbeidet forsiktig med én deltaker", "NAV-deltakere har andre regler. Start med én for å lære systemet.", "NAV, studentleder", "Gratis / Separat avtaleverk klart"]
-          ]
-        }
-      },
-      {
-        heading: "6. Beredskapsplan: Hva gjør dere hvis...",
-        text: "Forberedte rutiner for de mest sannsynlige krisescenarioene under etableringen:",
-        table: {
-          headers: ["Scenario", "Handling", "Ansvarlig"],
-          rows: [
-            ["<strong>HiØ trekker seg fra samarbeidet</strong>", "Avklar om det skyldes juridisk risiko (vis frem defense pack), ressursmangel (tilby redusert mentorordning) eller politikk (involver StOr/næringsliv). Eventuelt fortsett som ren studentforening.", "Styret"],
-            ["<strong>ESA-klage eller granskning</strong>", "Svar innen fristen (2-4 uker). Bruk defense pack (samarbeidsavtale med markedspris, de minimis-register). Ikke kommenter offentlig uten godkjenning.", "Styret + HiØ-jurister"],
-            ["<strong>Lånekassen endrer eller avslår regler</strong>", "Vurder å flytte emnet Bedriftspraksis inn i graden som valgfag siste semester (30 stp). Alternativt rekrutter studenter med rest-støttetid.", "Studieutvalget + S&F-ledelsen"],
-            ["<strong>GDPR-brudd / datalekkasje</strong>", "Stopp lekkasjen umiddelbart. Varsle DPO innen 24 timer, og Datatilsynet innen 72 timer. Informer berørte studenter/kunder.", "DPO / Daglig leder"]
-          ]
-        }
-      }
-    ]
-  },
-  {
-    id: "analyser",
-    title: "Analyser",
-    category: "Dokumenter",
-    icon: "FileSearch",
-    lead: "Oversikt over de påkrevde analysene som skal kjøres i prosjektene.",
-    sections: [
-      {
-        heading: "1. Interessentanalyse (Stakeholder Mapping)",
-        text: "Analysen kartlegger hvem som påvirker prosjektet, og deler dem inn i fire kvadranter basert på makt og interesse:",
-        points: [
-          "<strong>Høy makt / Høy interesse (Samarbeid tett):</strong> Studieprogramledere, dekaner, aktive studenter, lokale næringsforeninger.",
-          "<strong>Høy makt / Lav interesse (Hold fornøyd):</strong> HiØ-styret, sentral ledelse og juridisk avdeling ved HiØ.",
-          "<strong>Lav makt / Høy interesse (Hold informert):</strong> Lokale gründere, SMBer, karrieresenteret ved HiØ.",
-          "<strong>Lav makt / Lav interesse (Overvåk):</strong> Generelle programvareleverandører."
-        ]
-      },
-      {
-        heading: "2. Markeds- & Konkurranseanalyse",
-        text: "Kartlegger markedets behov for studentkonsulenter. Vi posisjonerer oss spesifikt mot oppstartsbedrifter og mindre SMBer som uansett ikke har råd til kommersielle konsulenthus, for å unngå anklager om urettferdig priskonkurranse."
-      },
-      {
-        heading: "3. Risiko- & Kostnadsanalyse",
-        text: "Kartlegger mulige farer i prosjektet, spesielt knyttet til kontinuitet (at studenter slutter når de uteksamineres), MVA/skatt, ansvarsforhold ved tekniske feil, og mentors ubetalte tidsbruk. For hver risiko defineres det konkrete tiltak (f.eks. stiftelsesform, trainee-ordninger, faste veiledningstimer)."
-      }
-    ]
-  },
-  {
-    id: "guidelines",
-    title: "Guidelines",
-    category: "Dokumenter",
-    icon: "FileText",
-    lead: "Retningslinjer og instruksjoner for AI-agenter og teammedlemmer som jobber i repositoriet.",
-    sections: [
-      {
-        heading: "1. Språk og Tone",
-        points: [
-          "All dokumentasjon, commits og kommunikasjon skal foregå på <strong>norsk (bokmål)</strong>.",
-          "Tonen skal være profesjonell, løsningsorientert, rådgivende og støttende."
-        ]
-      },
-      {
-        heading: "2. Arbeidsmetodikk",
-        points: [
-          "<strong>Planlegging først:</strong> Planlegg alltid endringer sammen med brukeren før de utføres. Utfør aldri endringer, sletting eller store søk før brukeren har bekreftet skriftlig med et 'JA'.",
-          "<strong>Tverrfaglig fokus:</strong> Sørg for at løsninger reflekterer samspillet mellom Økonomi, IT og Design."
-        ]
-      },
-      {
-        heading: "3. Mappestruktur",
-        points: [
-          "<code>01-administrasjon/</code>: Regler, mål, interessentanalyse og drift.",
-          "<code>02-instrukser/</code>: Retningslinjer for agenter (som denne).",
-          "<code>03-skills/</code>: Definisjon av ferdigheter og maler.",
-          "<code>04-kilde/</code>: Kilder, referansemateriell og eksterne ressurser.",
-          "<code>05-agent-forslag/</code>: Konkrete utkast og forslag generert av agenter.",
-          "<code>06-Business-case/</code>: VPC-modeller og økonomisk/strategisk analyse.",
-          "<code>07-Nettside/</code>: Kildekode for nettsider og apper."
-        ]
-      },
-      {
-        heading: "4. Maler og utkast i referanseseksjonen",
-        text: "Følgende maler og utkast er etablert i mappen <code>05-agent-forslag/Forslag/mal-og-utkast/</code> (Sortert etter prioritet: Kritiske (K), Viktige (V), Nyttige (N)):",
-        points: [
-          "<strong>K1: Emnebeskrivelse Bedriftspraksis:</strong> Formelt utkast til studieemne på 30 stp med læringsmål og vurderingskriterier for Lånekassen-godkjenning.",
-          "<strong>K2: Pedagogisk plan:</strong> Strukturering av veiledningstimer, refleksjonsnotater og tiltak for å unngå 'billig arbeidskraft'-fellen.",
-          "<strong>K3: Finansieringsplan:</strong> Oppstartskostnader, faste driftsutgifter og en oversikt over eksterne søknadskilder (SIVA, Innovasjon Norge).",
-          "<strong>K5: Samtykkeskjemaer porteføljepublisering:</strong> Skriftlige opt-in samtykker for studenter og kunder for å overholde GDPR.",
-          "<strong>V1: Stillingsbeskrivelser:</strong> Tydelige roller og oppgaver for daglig leder, fagansvarlige og studentkonsulenter.",
-          "<strong>V2: Møtestruktur og beslutningsprosesser:</strong> Oppsett for ukentlige driftsmøter og månedlige styremøter.",
-          "<strong>V4–V5: Onboarding og offboarding-prosesser:</strong> Detaljerte sjekklister for mottak og avslutning av deltakere og kunder.",
-          "<strong>V7: Kundeonboarding og forventningsavklaring:</strong> Mal for oppstartsmøte og avklaring av kundens tidsmessige forpliktelse (møteplikt).",
-          "<strong>V9: Rettighetsavklaring (kode & design):</strong> Retningslinjer for opphavsrett og immateriell eiendom ved prosjektslutt.",
-          "<strong>V10–V11: Søknadsprosess og seleksjonskriterier:</strong> Rutiner for rekruttering, intervjuspørsmål og sammensetning av tverrfaglige team.",
-          "<strong>V13: Forpliktelsesavtale student:</strong> Skriftlig avtale som bekrefter at deltakelsen er en studieaktivitet uten ansettelsesforhold.",
-          "<strong>V14–V16: Klagebehandling og konfliktløsning:</strong> Prosedyrer for håndtering av misfornøyde kunder eller interne konflikter i teamet.",
-          "<strong>V17–V18: KPI-er og evalueringsrutiner:</strong> Måleparametere for suksess (NPS, fullføringsgrad) og læringsutbytte.",
-          "<strong>V19–V20: Beredskapsplan:</strong> Rutiner ved uforutsette kriser som ESA-klager, datalekkasjer eller at HiØ trekker seg.",
-          "<strong>V21–V25: Kommunikasjonsstrategi og kriseplan:</strong> PR, pressekontakt og krisekommunikasjon.",
-          "<strong>V26–V28: Porteføljestrategi og anonymisering:</strong> Retningslinjer for anonymisering og publisering av studentenes arbeid på portalen."
-        ]
-      }
-    ]
-  },
-  {
-    id: "juridisk-risiko",
-    title: "Juridisk & Risiko",
-    category: "Dokumenter",
-    icon: "ShieldAlert",
-    lead: "Vurdering av konseptets juridiske holdbarhet, risikoer og styrker basert på den siste juridiske utredningen.",
+    ],
     swot: {
       strengths: [
         "<strong>Reelt samfunnsproblem:</strong> Løser direkte erfaringsgapet for nyutdannede studenter.",
@@ -1131,8 +965,8 @@ export const wikiData = [
   },
   {
     id: "forslag-utforelse",
-    title: "Forslag på utførelse",
-    category: "Dokumenter",
+    title: "Tilpasningsforslag",
+    category: "Business Case",
     icon: "Lightbulb",
     lead: "Hvordan justere modellen for å unngå juridiske hindringer innenfor dagens regelverk, uten lovendringer eller politisk påvirkning. Hver tilpasning følges av en vurdering av hvorfor det vil fungere og hvilken motstand/utfordringer som kan oppstå.",
     mainMessage: "Stift et AS, betal HiØ markedspris, ha et formelt emne med læringsmål. Dette alene reduserer statsstøtterisikoen, arbeidstakerrisikoen, ansvarsrisikoen og konkurranseklagerisikoen.",
@@ -1523,9 +1357,205 @@ export const wikiData = [
     }
   },
   {
+    id: "gjennomforingsplan",
+    title: "Gjennomføringsplan",
+    category: "Business Case",
+    icon: "Milestone",
+    lead: "Trinnvis fremdriftsplan (Fase 1–4) fra planlegging til skalering, strukturert for minst mulig motstand.",
+    sections: [
+      {
+        heading: "1. Overordnet sammenheng mellom risiko og faser",
+        text: "Prosjektet etableres trinnvis for å fange opp og eliminere de største risikoene før store ressurser forpliktes:",
+        table: {
+          headers: ["Fase", "Fokusområde", "Risikoer som løses i denne fasen", "Prinsipp"],
+          rows: [
+            ["Fase 1", "Planlegging & Konsept (Mnd 1-3)", "Ingen direkte risiko. Kartlegging av emner, samtaler med nøkkelpersoner på HiØ og partnere.", "Bare prat og planer — null risiko"],
+            ["Fase 2", "Juridisk & Org. oppsett (Mnd 3-6)", "Lånekassen-avklaring, statsstøtte/EØS, arbeidstakerklassifisering, forsikring, GDPR.", "Rydde alt juridisk før første kundeleveranse"],
+            ["Fase 3", "Pilot med sikkerhetsnett (Mnd 6-12)", "Faktisk kvalitet på leveranse, kunde-engasjement, tracking av de minimis-verdier.", "Ett pilotprosjekt — test og dokumenter alt"],
+            ["Fase 4", "Skalering med åpne øyne (Mnd 12-24)", "Konkurranseklager fra kommersielle byråer, automatisering av register, oppstart NAV-spor.", "Skaler gradvis med erfaringen fra piloten"]
+          ]
+        }
+      },
+      {
+        heading: "2. Fase 1: Lavthengende frukt (Måned 1–3)",
+        text: "Aktiviteter som kan gjøres uten risiko for å bygge grunnlaget:",
+        table: {
+          headers: ["Aktivitet", "Hvorfor", "Hvem", "Kostnad / Avhengigheter"],
+          rows: [
+            ["Kartlegg eksisterende emner ved HiØ (ITD35014)", "Unngå å opprette nye emner unødvendig. Bruk eksisterende mal.", "Studenter, studieveileder", "Gratis / Ingen"],
+            ["Identifiser forkjempere ved HiØ (dekaner, programledere)", "Sikre intern akademisk forankring og mentorressurser.", "Studenter (initiativtakere)", "Gratis / Ingen"],
+            ["Kartlegg lokale næringsforeninger og Blender Collective", "Skaffe døråpnere til de første kommersielle kundene.", "Studenter", "Gratis / Ingen"],
+            ["Forbered 1-pagers konseptskisse", "Gi alle interessenter samme informasjonsgrunnlag uten forpliktelser.", "Studenter", "Gratis / Ingen"]
+          ]
+        }
+      },
+      {
+        heading: "3. Fase 2: Etablering og juridisk rydding (Måned 3–6)",
+        text: "Kritiske avklaringer som MÅ være på plass før første kundeprosjekt starter:",
+        table: {
+          headers: ["Aktivitet", "Rettslig formål", "Hvem", "Kostnad / Status"],
+          rows: [
+            ["Stift Syntax & Flow AS eid av en ideell stiftelse", "Kritisk for statsstøtte: Sikrer juridisk skille fra HiØ. AS gir ansvarsbegrensning.", "Stiftere", "30 000 kr (aksjekapital) + stiftelseskostnad"],
+            ["Utarbeid formell emnebeskrivelse for Bedriftspraksis", "Lånekassen krever reelle læringsmål, ikke bare arbeid. Avverger også arbeidstakerstatus.", "HiØ programansvarlige", "Gratis / Utkast opprettet"],
+            ["Søk forhåndsuttalelse fra Lånekassen for emne etter grad", "Sikre studentenes finansiering. Gjør-eller-dø-punkt.", "HiØ studieadmin", "Gratis / Avventer emnegodkjenning"],
+            ["Inngå skriftlig samarbeidsavtale HiØ og Syntax & Flow AS", "Kritisk for statsstøtte: HiØ prises til markedspris for mentortimer/leie av lokaler.", "HiØ-jurister, styret", "Juristbistand / Prioritert tiltak"],
+            ["Tegn yrkesansvarsforsikring for Syntax & Flow AS", "Beskytte studentene personlig mot erstatningskrav ved feil i levert kode.", "Styreleder", "5 000–15 000 kr/år"],
+            ["Utarbeid standard kundeavtale med fire lag beskyttelse", "Ansvarsfraskrivelse ('as-is'), begrensning på maks 10k, erklæring fra kunde.", "Jurist, studenter", "10 000–20 000 kr / Utkast opprettet"]
+          ]
+        }
+      },
+      {
+        heading: "4. Fase 3: Pilot med sikkerhetsnett (Måned 6–12)",
+        text: "Ett enkelt prosjekt med begrenset omfang for å verifisere modellen i praksis:",
+        table: {
+          headers: ["Aktivitet", "Hvorfor", "Hvem", "Kostnad / Avhengigheter"],
+          rows: [
+            ["Rekrutter 3–5 studenter til pilot-team", "Etablere første operative team (minst 1 IT, 1 design, 1 økonomi).", "Studentleder", "Gratis / Lånekassestøtte godkjent"],
+            ["Finn én pilotkunde (lokal mikrovirksomhet < 5 ansatte)", "Kontrollert risiko. Enkelt oppdrag (f.eks. landingpage eller logo).", "Studentleder, næringsforening", "Gratis / Ingen kommersiell konkurranse"],
+            ["Dokumenter ALT (timer, roller, mentortid, de minimis)", "Dokumentasjon er bevis i eventuell ESA- eller Lånekassen-tilsyn.", "Hele teamet", "Gratis / Løpende arbeid"],
+            ["Evaluer piloten og mål faktisk statsstøtteverdi", "Lærdom før skalering. Sikre at verdi holder seg under de minimis-grensen.", "Økonomistudent, mentor", "Gratis / Fullført prosjekt"]
+          ]
+        }
+      },
+      {
+        heading: "5. Fase 4: Skalering med åpne øyne (Måned 12–24)",
+        text: "Gradvis opptrapping etter at modellen er verifisert:",
+        table: {
+          headers: ["Aktivitet", "Hvorfor", "Hvem", "Kostnad / Avhengigheter"],
+          rows: [
+            ["Rekrutter 2–3 nye team parallelt", "Skalere kapasiteten gradvis (ikke hopp fra 1 til 10 kunder direkte).", "Studentleder", "Løpende / Erfaring fra pilot"],
+            ["Bygg og lanser referanseportalen (nettsiden)", "Sikre digital portefølje- og referansebase for studentene.", "IT- og designstudenter", "Gratis / GDPR-samtykke på plass"],
+            ["Forbered 'defense pack' mot konkurranseklager", "Når klagen fra kommersielle byråer kommer, må svaret ligge klart.", "Styret, studentleder", "Gratis / Dokumenter fra Fase 2 & 3"],
+            ["Start NAV-samarbeidet forsiktig med én deltaker", "NAV-deltakere har andre regler. Start med én for å lære systemet.", "NAV, studentleder", "Gratis / Separat avtaleverk klart"]
+          ]
+        }
+      },
+      {
+        heading: "6. Beredskapsplan: Hva gjør dere hvis...",
+        text: "Forberedte rutiner for de mest sannsynlige krisescenarioene under etableringen:",
+        table: {
+          headers: ["Scenario", "Handling", "Ansvarlig"],
+          rows: [
+            ["<strong>HiØ trekker seg fra samarbeidet</strong>", "Avklar om det skyldes juridisk risiko (vis frem defense pack), ressursmangel (tilby redusert mentorordning) eller politikk (involver StOr/næringsliv). Eventuelt fortsett som ren studentforening.", "Styret"],
+            ["<strong>ESA-klage eller granskning</strong>", "Svar innen fristen (2-4 uker). Bruk defense pack (samarbeidsavtale med markedspris, de minimis-register). Ikke kommenter offentlig uten godkjenning.", "Styret + HiØ-jurister"],
+            ["<strong>Lånekassen endrer eller avslår regler</strong>", "Vurder å flytte emnet Bedriftspraksis inn i graden som valgfag siste semester (30 stp). Alternativt rekrutter studenter med rest-støttetid.", "Studieutvalget + S&F-ledelsen"],
+            ["<strong>GDPR-brudd / datalekkasje</strong>", "Stopp lekkasjen umiddelbart. Varsle DPO innen 24 timer, og Datatilsynet innen 72 timer. Informer berørte studenter/kunder.", "DPO / Daglig leder"]
+          ]
+        }
+      }
+    ]
+  },
+  {
+    id: "prosjektplan",
+    title: "Prosjektplan",
+    category: "GTM & Utførelse",
+    icon: "Compass",
+    lead: "Prosjektets livsløp fra oppstart til overlevering.",
+    sections: [
+      {
+        heading: "Fase 1: Mobilisering & Avklaring",
+        text: "<strong>Formål:</strong> Etablere rammene for prosjektet og sikre kundens forpliktelse.",
+        points: [
+          "<strong>Analyser:</strong> Interessentanalyse (Stakeholder Mapping) for å avklare roller, og markedsanalyse for å forstå bedriftens posisjon.",
+          "<strong>Leveranser:</strong> Signert Samarbeidsavtale, prosjektskisse (Scope Document) med fremdriftsplan."
+        ]
+      },
+      {
+        heading: "Fase 2: Forretningsforståelse & Design",
+        text: "<strong>Formål:</strong> Forstå bedriftens flaskehalser og visualisere løsningen.",
+        points: [
+          "<strong>Analyser:</strong> Prosess- og flaskehalsanalyse (Økonomi) og målgruppeanalyse (Design).",
+          "<strong>Leveranser:</strong> Value Proposition Canvas (VPC) for kunden, og ferdige Figma-prototyper."
+        ]
+      },
+      {
+        heading: "Fase 3: Utvikling & Implementering",
+        text: "<strong>Formål:</strong> Bygge den digitale eller operative løsningen.",
+        points: [
+          "<strong>Analyser:</strong> Risiko- og kostnadsanalyse for implementeringen, og teknisk arkitekturvalg.",
+          "<strong>Leveranser:</strong> Fungerende kildekode/MVP på GitHub, og operasjonell effektiviseringsplan."
+        ]
+      },
+      {
+        heading: "Fase 4: Kvalitetssikring (QA) & Testing",
+        text: "<strong>Formål:</strong> Sikre at leveransen holder et profesjonelt nivå.",
+        points: [
+          "<strong>Analyser:</strong> Brukervennlighetstester med ekte sluttbrukere, og teknisk kode/design-review.",
+          "<strong>Leveranser:</strong> Signert QA-godkjenning fra faglig mentor (HiØ-foreleser), samt feillogg/testrapport."
+        ]
+      },
+      {
+        heading: "Fase 5: Overlevering & Showcase",
+        text: "<strong>Formål:</strong> Lansere løsningen og dokumentere prosjektet.",
+        points: [
+          "<strong>Analyser:</strong> Sluttevaluering og evaluering av lærdommer.",
+          "<strong>Leveranser:</strong> Overføring av kildekode og tilganger til kunden, og prosjektcase publisert på showcase-portalen."
+        ]
+      }
+    ]
+  },
+  {
+    id: "rekruttering",
+    title: "Rekruttering",
+    category: "GTM & Utførelse",
+    icon: "Rocket",
+    lead: "Go-To-Market strategien for Syntax & Flow.",
+    sections: [
+      {
+        heading: "Rekruttering av Studenter",
+        text: "For å tiltrekke oss motiverte deltakere bruker vi følgende kanaler på HiØ:",
+        points: [
+          "<strong>Fysisk tilstedeværelse:</strong> Stands under studiestart og presentasjoner i klasserom for avgangsstudenter.",
+          "<strong>Samarbeid med forelesere:</strong> Forelesere anbefaler Syntax & Flow som praksisplass for studenter i relevante fag.",
+          "<strong>Krav til progresjon:</strong> Kun studenter som har bestått alle fag og er i sitt siste år (eller nyutdannede) kvalifiseres."
+        ]
+      },
+      {
+        heading: "Rekruttering av Bedrifter",
+        text: "Bedrifter og kunder tiltrekkes gjennom lave barrierer og strategiske partnerskap:",
+        points: [
+          "<strong>Inkubatornettverk:</strong> Vi pitcher ordningen direkte til gründere i Blender Collective og Smart Innovation Norway.",
+          "<strong>Næringsforeninger:</strong> Presentasjoner på frokostmøter i Halden og Fredrikstad næringsforening.",
+          "<strong>Ingen økonomisk risiko:</strong> Markedsføringen fokuserer på at tjenestene er gratis, mot at de investerer tid i oppfølging av studentene."
+        ]
+      }
+    ]
+  },
+  {
+    id: "maler-og-utkast",
+    title: "Maler og utkast",
+    category: "Dokumenter",
+    icon: "FileText",
+    lead: "Oversikt over etablerte maler og utkast i prosjektet.",
+    sections: [
+      {
+        heading: "1. Etablerte maler og utkast",
+        text: "Følgende maler og utkast er etablert i mappen <code>05-agent-forslag/Forslag/mal-og-utkast/</code> (Sortert etter prioritet: Kritiske (K), Viktige (V), Nyttige (N)):",
+        points: [
+          "<strong>K1: Emnebeskrivelse Bedriftspraksis:</strong> Formelt utkast til studieemne på 30 stp med læringsmål og vurderingskriterier for Lånekassen-godkjenning.",
+          "<strong>K2: Pedagogisk plan:</strong> Strukturering av veiledningstimer, refleksjonsnotater og tiltak for å unngå 'billig arbeidskraft'-fellen.",
+          "<strong>K3: Finansieringsplan:</strong> Oppstartskostnader, faste driftsutgifter og en oversikt over eksterne søknadskilder (SIVA, Innovasjon Norge).",
+          "<strong>K5: Samtykkeskjemaer porteføljepublisering:</strong> Skriftlige opt-in samtykker for studenter og kunder for å overholde GDPR.",
+          "<strong>V1: Stillingsbeskrivelser:</strong> Tydelige roller og oppgaver for daglig leder, fagansvarlige og studentkonsulenter.",
+          "<strong>V2: Møtestruktur og beslutningsprosesser:</strong> Oppsett for ukentlige driftsmøter og månedlige styremøter.",
+          "<strong>V4–V5: Onboarding og offboarding-prosesser:</strong> Detaljerte sjekklister for mottak og avslutning av deltakere og kunder.",
+          "<strong>V7: Kundeonboarding og forventningsavklaring:</strong> Mal for oppstartsmøte og avklaring av kundens tidsmessige forpliktelse (møteplikt).",
+          "<strong>V9: Rettighetsavklaring (kode & design):</strong> Retningslinjer for opphavsrett og immateriell eiendom ved prosjektslutt.",
+          "<strong>V10–V11: Søknadsprosess og seleksjonskriterier:</strong> Rutiner for rekruttering, intervjuspørsmål og sammensetning av tverrfaglige team.",
+          "<strong>V13: Forpliktelsesavtale student:</strong> Skriftlig avtale som bekrefter at deltakelsen er en studieaktivitet uten ansettelsesforhold.",
+          "<strong>V14–V16: Klagebehandling og konfliktløsning:</strong> Prosedyrer for håndtering av misfornøyde kunder eller interne konflikter i teamet.",
+          "<strong>V17–V18: KPI-er og evalueringsrutiner:</strong> Måleparametere for suksess (NPS, fullføringsgrad) og læringsutbytte.",
+          "<strong>V19–V20: Beredskapsplan:</strong> Rutiner ved uforutsette kriser som ESA-klager, datalekkasjer eller at HiØ trekker seg.",
+          "<strong>V21–V25: Kommunikasjonsstrategi og kriseplan:</strong> PR, pressekontakt og krisekommunikasjon.",
+          "<strong>V26–V28: Porteføljestrategi og anonymisering:</strong> Retningslinjer for anonymisering og publisering av studentenes arbeid på portalen."
+        ]
+      }
+    ]
+  },
+  {
     id: "portal-referansebase",
     title: "Portal som referansebase",
-    category: "Dokumenter",
+    category: "Hidden",
     icon: "UserCheck",
     lead: "Hvordan Syntax & Flow-portalen fungerer som en verifisert referansebase, og de juridiske rammene for personvern, arbeidsrett, ansvar og diskriminering.",
     sections: [
@@ -1620,121 +1650,80 @@ export const wikiData = [
     ]
   },
   {
-    id: "ordliste",
-    title: "Ordliste",
+    id: "lignende-prosjekter",
+    title: "Lignende prosjekter i Norge",
     category: "Dokumenter",
-    icon: "BookOpen",
-    lead: "Forklaring på fagbegreper og forkortelser som brukes i Syntax & Flow-prosjektet.",
+    icon: "Compass",
+    lead: "Oversikt over studentdrevne konsulenthus, praksisemner og brobyggerprosjekter mellom utdanning og næringsliv i Norge.",
     sections: [
       {
-        heading: "A–C",
-        table: {
-          headers: ["Begrep", "Forklaring"],
-          rows: [
-            ["<strong>Adoption & Retention</strong>", "Strategier for å få kunder til å ta i bruk et produkt (adoption) og fortsette å bruke det over tid (retention)."],
-            ["<strong>Ambassadørprogram</strong>", "Ordning der fornøyde kunder eller partnere promoterer produktet/tjenesten frivillig, ofte i bytte mot fordeler."],
-            ["<strong>AML</strong>", "Arbeidsmiljøloven. Regulerer arbeidstakeres rettigheter og arbeidsgivers plikter."],
-            ["<strong>Arbeidsmarkedstiltak</strong>", "Tiltak finansiert av NAV for å hjelpe personer inn i arbeid, f.eks. arbeidstrening."],
-            ["<strong>B2G (Business-to-Government)</strong>", "Forretningsmodell der bedrifter leverer tjenester eller produkter to offentlig sektor (f.eks. høyskoler eller kommuner)."],
-            ["<strong>Bottom-up</strong>", "Markedsførings- eller implementeringsstrategi som starter på grasrotnivå (f.eks. hos studenter eller enkelte avdelinger) og beveger seg oppover i organisasjonen."],
-            ["<strong>CAC (Customer Acquisition Cost)</strong>", "Kostnaden ved å skaffe en ny kunde, inkludert markedsføring, salg og oppfølging."],
-            ["<strong>Change Management</strong>", "Strukturert tilnærming til å hjelpe mennesker og organisasjoner gjennom endringsprosesser."],
-            ["<strong>Churn Rate</strong>", "Andel kunder som slutter å bruke tjenesten over en gitt periode. Lav churn = høy kundelojalitet."],
-            ["<strong>CLTV / Customer Lifetime Value</strong>", "Hvor mye en kunde totalt forventes å innbringe i løpet av hele kundeforholdet."],
-            ["<strong>CLV (Customer Lifetime Value)</strong>", "Samme som CLTV. Total forventet verdi av et kundeforhold over hele levetiden."],
-            ["<strong>COS (Cost of Services)</strong>", "Kostnaden ved å levere en tjeneste — inkluderer timer, verktøy og eventuelle underleverandører."]
-          ]
-        }
+        heading: "1. Studentdrevne konsulenthus / prosjektbyråer",
+        text: "Oversikt over studentdrevne IT-konsulentvirksomheter:<br/><br/>" +
+          "<strong>TÅRNET — Universitetet i Oslo (UiO)</strong><br/>" +
+          "• Tilknytning: Institutt for Informatikk (IFI), UiO<br/>" +
+          "• Hva de gjør: Studentdrevet IT-konsulentvirksomhet der studenter utfører programvareutviklingsoppdrag for eksterne kunder som del av utdanningen<br/>" +
+          "• Organisering: Studentdrevet, forankret i instituttet. Opptak, teamarbeid, veiledning fra fagansatte<br/>" +
+          "• Status: Ikke lenger aktivt (nedlagt pga. kontinuitet og finansiering)<br/><br/>" +
+          "<strong>AppLab — Universitetet i Bergen (UiB)</strong><br/>" +
+          "• Tilknytning: Institutt for Informatikk, UiB<br/>" +
+          "• Hva de gjør: Studentdrevet app-utviklingslab der studenter designer og utvikler mobilapplikasjoner for reelle kunder<br/>" +
+          "• Organisering: Startet som prosjekt innen informatikk. Tverrfaglige team med tett veiledning<br/>" +
+          "• Status: Nedlagt<br/><br/>" +
+          "<strong>Nabla — NTNU</strong><br/>" +
+          "• Tilknytning: NTNU, sivilingeniør Fysikk og Matematikk<br/>" +
+          "• Hva de gjør: Linjeforening med bedriftskontakt (Bedkom) som formidler kontakt mellom studenter og næringsliv<br/>" +
+          "• Organisering: Studentstyrt forening<br/>" +
+          "• URL: <a href=\"https://nabla.no\" target=\"_blank\">https://nabla.no</a>"
       },
       {
-        heading: "D–G",
-        table: {
-          headers: ["Begrep", "Forklaring"],
-          rows: [
-            ["<strong>De minimis</strong>", "Bagatellmessig støtte. Statsstøtte under 300 000 EUR over 3 år per kunde — så lite at det ikke regnes som ulovlig og krever ikke ESA-godkjenning."],
-            ["<strong>DPIA</strong>", "Data Protection Impact Assessment. Konsekvensvurdering for personvern som må gjøres før behandling av personopplysninger."],
-            ["<strong>DPO</strong>", "Data Protection Officer. Personvernansvarlig."],
-            ["<strong>Early adopter</strong>", "En kunde som er tidlig ute med å ta i bruk et nytt produkt eller tjeneste, ofte avgjørende for markedsvalidering."],
-            ["<strong>ESA</strong>", "EFTAs overvåkingsorgan. Overvåker at Norge følger EØS-avtalen, inkludert statsstøttereglene."],
-            ["<strong>Evighetsprosjekt</strong>", "Internt prosjekt som går over flere semestre. Hvert kull overtar der forrige slapp."],
-            ["<strong>Executive Summary</strong>", "Kort sammendrag av en forretningsplan eller rapport som gir leseren rask oversikt over hele innholdet."]
-          ]
-        }
+        heading: "2. Praksisemner med eksterne oppdrag",
+        text: "Modeller for prosjektfag forankret i studieplanen:<br/><br/>" +
+          "<strong>IT2901 — Informatikk prosjektarbeid II (NTNU)</strong><br/>" +
+          "• Studiepoeng: 15 stp (Bachelor)<br/>" +
+          "• Hva de gjør: Grupper på 5–7 studenter utfører programvareprosjekt for ekstern kunde. Dekker hele livssyklusen<br/>" +
+          "• Organisering: Obligatorisk emne. Prosjekter tildeles av instituttet. Veiledere fra instituttet. Nærmeste parallell til Syntax & Flow<br/>" +
+          "• URL: <a href=\"https://www.ntnu.edu/studies/courses/IT2901\" target=\"_blank\">NTNU IT2901</a><br/><br/>" +
+          "<strong>TDT4290 — Kundestyrt prosjekt (NTNU)</strong><br/>" +
+          "• Studiepoeng: 15 stp (Master, 4. år)<br/>" +
+          "• Hva de gjør: Grupper på 6–8 mottar oppdrag fra eksterne kunder. Har standard IPR-avtale mellom bedrift og student<br/>" +
+          "• URL: <a href=\"https://www.ntnu.edu/studies/courses/TDT4290\" target=\"_blank\">NTNU TDT4290</a><br/><br/>" +
+          "<strong>IN2000 — Software Engineering med prosjektarbeid (UiO)</strong><br/>" +
+          "• Studiepoeng: 20 stp (Bachelor)<br/>" +
+          "• Hva de gjør: Omfattende systemutviklingsprosjekt i team. Kunder kan være eksterne. Stort volum viser skalerbarhet<br/>" +
+          "• URL: <a href=\"https://www.uio.no/studier/emner/matnat/ifi/IN2000/\" target=\"_blank\">UiO IN2000</a><br/><br/>" +
+          "<strong>IT1901 — Informatikk prosjektarbeid I (NTNU)</strong><br/>" +
+          "• Studiepoeng: 7,5 stp (Bachelor)<br/>" +
+          "• Hva de gjør: Introduksjon til smidig applikasjonsutvikling i team<br/>" +
+          "• URL: <a href=\"https://www.ntnu.edu/studies/courses/IT1901\" target=\"_blank\">NTNU IT1901</a>"
       },
       {
-        heading: "G–L",
-        table: {
-          headers: ["Begrep", "Forklaring"],
-          rows: [
-            ["<strong>GDPR</strong>", "General Data Protection Regulation. EUs personvernforordning, innlemmet i norsk lov gjennom personopplysningsloven."],
-            ["<strong>GTM</strong>", "Go-To-Market. Strategi for hvordan et produkt eller tjeneste lanseres i markedet."],
-            ["<strong>IP</strong>", "Investor Proposal. Forslag eller presentasjon rettet mot investorer for å sikre finansiering."],
-            ["<strong>IPR</strong>", "Intellectual Property Rights. Åndsverk og immaterielle rettigheter (kode, design, patenter)."],
-            ["<strong>Justification</strong>", "Begrunnelse eller forsvaring av en beslutning, et prosjekt eller en investering — hvorfor noe er nødvendig eller lønnsomt."],
-            ["<strong>LOI (Letter of Intent)</strong>", "Intensjonsavtale. Et ikke-bindende dokument som bekrefter at en part har til hensikt å inngå en avtale eller samarbeid."]
-          ]
-        }
+        heading: "3. Studentbedrifter — Ungt Entreprenørskap",
+        text: "<strong>UE Studentbedrift (nasjonalt)</strong><br/>" +
+          "• Hva de gjør: Studenter etablerer og driver reelle studentbedrifter som del av utdanningen.<br/>" +
+          "• Organisering: Ungt Entreprenørskap leverer rammeverk, maler for forretningsplan, IPR og konflikthåndtering.<br/>" +
+          "• URL: <a href=\"https://www.ue.no\" target=\"_blank\">https://www.ue.no</a>"
       },
       {
-        heading: "L–P",
-        table: {
-          headers: ["Begrep", "Forklaring"],
-          rows: [
-            ["<strong>MVA</strong>", "Merverdiavgift. Avgift på omsetning av varer og tjenester. Grense for registrering: 50 000 kr/år."],
-            ["<strong>NOKUT</strong>", "Nasjonalt organ for kvalitet i utdanningen. Fører tilsyn med høyere utdanning."],
-            ["<strong>NPS</strong>", "Net Promoter Score. Måling av kundetilfredshet på en skala fra 0–10."]
-          ]
-        }
+        heading: "4. Brobyggerprosjekter & Inkubatorer",
+        text: "<strong>Start NTNU</strong> (Brobygger)<br/>" +
+          "• Hva de gjør: Studentdrevet organisasjon for innovasjon og entreprenørskap. Workshops, konkurranser.<br/>" +
+          "• URL: <a href=\"https://startntnu.no\" target=\"_blank\">https://startntnu.no</a><br/><br/>" +
+          "<strong>UiO Growth House & NTNU Nyskaping</strong> (Inkubatorer)<br/>" +
+          "• Hva de gjør: Innovasjonssentre og inkubatorer som støtter studenter og forskere med kontorplasser, mentorskap og finansieringshjelp.<br/>" +
+          "• URL: <a href=\"https://www.ntnu.no/nyskaping\" target=\"_blank\">NTNU Nyskaping</a>"
       },
       {
-        heading: "O–R",
-        table: {
-          headers: ["Begrep", "Forklaring"],
-          rows: [
-            ["<strong>OTP</strong>", "Obligatorisk tjenestepensjon. Pensjonsordning som arbeidsgivere må tilby ansatte."],
-            ["<strong>Persona</strong>", "Fiktiv brukerprofil som representerer en målgruppe, brukt i design og markedsføring for å forstå behov og adferd."],
-            ["<strong>Prisstrategi</strong>", "Plan for hvordan et produkt eller tjeneste skal prises for å oppnå ønsket posisjonering og lønnsomhet."],
-            ["<strong>Pro bono</strong>", "Latin for «det godes skyld». Tjenester som leveres gratis, ofte for ideelle formål."],
-            ["<strong>Proof of Concept (PoC)</strong>", "En tidlig test eller prototype som viser at en idé eller løsning er gjennomførbar i praksis."],
-            ["<strong>Proof of Interest</strong>", "Dokumentasjon på at det finnes reell interesse eller etterspørsel fra potensielle kunder."]
-          ]
-        }
-      },
-      {
-        heading: "R–S",
-        table: {
-          headers: ["Begrep", "Forklaring"],
-          rows: [
-            ["<strong>Recovery</strong>", "Tilbakebetaling av ulovlig statsstøtte med renter. Pålegges av ESA når støtte er gitt i strid med EØS-avtalen."],
-            ["<strong>RGE (Residual Gross Earnings)</strong>", "Fortjeneste som gjenstår etter at direkte kostnader er trukket fra. Måler hvor lønnsom kjernedriften er før faste kostnader."],
-            ["<strong>Risk Management</strong>", "Prosessen med å identifisere, vurdere og håndtere risikoer i et prosjekt eller en organisasjon."],
-            ["<strong>ROI</strong>", "Return on Investment. Avkastning på investering. Måler hvor lønnsom en investering er."],
-            ["<strong>Rubric</strong>", "Rubric (vurderingsmatrise). Strukturerte kriterier for vurdering, f.eks. 1–5 på definerte dimensjoner."],
-            ["<strong>SLA</strong>", "Service Level Agreement. Avtale om leveransenivå og garantier. Syntax & Flow tilbyr normalt ikke SLA."],
-            ["<strong>Stakeholder</strong>", "Interessent. En person eller gruppe som har interesse i eller påvirkes av et prosjekt."],
-            ["<strong>Stakeholder Management</strong>", "Prosessen med å kartlegge, kommunisere med og håndtere forventningene til interessenter."],
-            ["<strong>Storyboard</strong>", "Visuell fremstilling av en brukerreise eller prosess, bilde for bilde, brukt i design og planlegging."]
-          ]
-        }
-      },
-      {
-        heading: "S–Å",
-        table: {
-          headers: ["Begrep", "Forklaring"],
-          rows: [
-            ["<strong>SiØ</strong>", "Studentsamskipnaden i Østfold. Tilbyr velferdstjenester til studenter ved HiØ."],
-            ["<strong>Spor 1</strong>", "Dagens ordning basert på det eksisterende studieemnet ITD35014 Bedriftspraksis (10 stp). Målet på sikt er å utvide emnet til 15–30 stp for å sikre rett til støtte fra Lånekassen uten krav om andre emner ved siden av."],
-            ["<strong>Spor 2</strong>", "Tidligere planlagt deltidssport (10 stp) som er fjernet fra modellen, da det ikke finnes et egnet 5 stp-emne ved HiØ å kombinere med for å nå 15 stp-grensen."],
-            ["<strong>Spor 3</strong>", "NAV-samarbeid rettet mot deltakere utenfor det ordinære studieløpet. Sporet er utsatt til etter pilotfasen (Fase 4)."],
-            ["<strong>Støtteregister</strong>", "Løpende logg over markedsverdi av tjenester per kunde. Brukes for å kontrollere de minimis-grensen."],
-            ["<strong>TAM (Total Addressable Market)</strong>", "Totalt marked for et produkt eller tjeneste, altså maksimal inntekt hvis alle potensielle kunder kjøper."],
-            ["<strong>Top-down</strong>", "Markedsføringsstrategi som starter hos ledelsen/store aktører og jobber seg nedover i organisasjonen."],
-            ["<strong>Unfair Advantage</strong>", "En varig konkurransefordel som er vanskelig for andre å kopiere."],
-            ["<strong>User Journey</strong>", "Brukerreise. En trinnvis beskrivelse eller visualisering av hvordan en bruker opplever og samhandler med et produkt eller tjeneste over tid."],
-            ["<strong>Value Proposition Canvas (VPC)</strong>", "Verktøy for å kartlegge verdien et produkt/tjeneste gir en målgruppe."],
-            ["<strong>Verdiskapning / Value Creation</strong>", "Prosessen med å skape merverdi for kunder, studenter eller samfunnet gjennom produktet eller tjenesten."]
-          ]
-        }
+        heading: "5. Viktigste lærdommer for Syntax & Flow",
+        points: [
+          "<strong>Emneforankring gir legitimitet og forutsigbarhet:</strong> De mest robuste prosjektene (IT2901, TDT4290, IN2000) er del av ordinære emner.",
+          "<strong>Standardavtale for IPR er avgjørende:</strong> NTNU-modellen (TDT4290) bør kopieres for ryddige rettighetsforhold.",
+          "<strong>Balanse mellom frihet og struktur:</strong> Studentdrevne organisasjoner har engasjement, men sliter ofte med kontinuitet.",
+          "<strong>Skalerbarhet krever ressurser:</strong> IN2000 håndterer 250 studenter, men krever mange veiledere.",
+          "<strong>Tverrfaglighet er en styrke:</strong> Syntax & Flow has en fordel med IT + design + økonomi.",
+          "<strong>Kvalitetssikring bygger tillit:</strong> Felles karakter + individuell vurdering motiverer studentene.",
+          "<strong>UEs rammeverk kan brukes:</strong> Maler for forretningsplan, IPR og struktur gir trygghet.",
+          "<strong>Bygg bro til inkubatormiljøene:</strong> Koble oss på lokale næringshager og Blender Collective."
+        ]
       }
     ]
   }
