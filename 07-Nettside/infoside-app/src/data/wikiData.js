@@ -544,11 +544,11 @@ export const wikiData = [
     ]
   },
   {
-    "id": "forretningsmodell-og-vpc",
-    "title": "Forretningsmodell & VPC",
+    "id": "forretningsmodell",
+    "title": "Forretningsmodell",
     "category": "Business Case",
-    "icon": "BarChart3",
-    "lead": "Hvordan Syntax & Flow skaper verdi gjennom en unik pro-bono modell.",
+    "icon": "Briefcase",
+    "lead": "Hvordan Syntax & Flow leverer verdi gjennom en unik og forpliktende pro-bono-modell.",
     "sections": [
       {
         "heading": "Win-Win-Win Forretningsmodell",
@@ -560,7 +560,7 @@ export const wikiData = [
         ]
       },
       {
-        "heading": "Samarbeidsavtalen & Forpliktende milepælsplan",
+        "heading": "Samarbeidsavtalen & Betinget SLA / forpliktende milepælsplan",
         "text": "Siden vi leverer gratis, inngår vi en samarbeidsavtale der kunden må kompensere med sin egen **tid**:",
         "points": [
           "<strong>Standard avtale (Best effort):</strong> Ingen formell leveransegaranti. Vi gjør vårt beste, men kunden har ingen juridisk reklamasjonsrett.",
@@ -568,6 +568,36 @@ export const wikiData = [
           "<strong>Kundeplikt:</strong> Kunden må delta på ukentlige statusmøter og brukertester, ellers avsluttes prosjektet umiddelbart."
         ],
         "isCollapsible": true
+      },
+      {
+        "heading": "Modell med to parallelle spor",
+        "text": "For å maksimere studentenes læringsutbytte og sikre drift gjennom hele året, opererer Syntax & Flow med to spor for prosjekter:",
+        "points": [
+          "<strong>Spor A: Eksterne oppdrag (Kortsiktige):</strong> Enkle nettsider, profiler og markedsrapporter for lokale mikrovirksomheter, lag og foreninger. Disse avsluttes og overleveres innenfor ett enkelt semester.",
+          "<strong>Spor B: Interne evighetsprosjekter (Langsiktige):</strong> Større tverrfaglige IT- og analysesystemer (f.eks. integrert timeføringsportal, ERP-system eller ressursplanlegger for campus). Disse går over flere semestre, der nye studentkull overtar og bygger videre på det forrige kullets arbeid."
+        ]
+      },
+      {
+        "heading": "Studentrekruttering / ITD35014",
+        "text": "Studentene rekrutteres primært gjennom det eksisterende faget <strong>ITD35014 Bedriftspraksis (10 stp)</strong> ved HiØ. Vår rolle er å organisere disse i tverrfaglige team og koble dem mot relevante oppdrag, noe studentene ellers måtte gjort selv. Dette sikrer en forutsigbar og strukturert praksisperiode."
+      }
+    ],
+    "tldr": [
+      "Syntax & Flow leverer gratis pro-bono-tjenester basert på en win-win-win modell mellom student, bedrift og høyskole.",
+      "Modellen kjører to parallelle spor: eksterne kortsiktige oppdrag og langsiktige interne evighetsprosjekter.",
+      "Studentene deltar og rekrutteres via det eksisterende praksisemnet ITD35014 Bedriftspraksis (10 stp)."
+    ]
+  },
+  {
+    "id": "vpc-verdiskapning",
+    "title": "VPC — Verdiskapning",
+    "category": "Business Case",
+    "icon": "Gift",
+    "lead": "Value Proposition Canvas (VPC) viser detaljert verdiskapning for studenter, høgskolen og næringslivet.",
+    "sections": [
+      {
+        "heading": "Verdiskapning for de ulike målgruppene",
+        "text": "Syntax & Flow skaper konkrete verdier for alle de tre involverte partene. Under kan du se en utdypende oppsummering av hvordan vi løser utfordringer for studenter, høyskolen og lokalt næringsliv, samt utforske Strategyzer-verdiløftene interaktivt."
       }
     ],
     "vpcs": [
@@ -585,7 +615,7 @@ export const wikiData = [
           ],
           "pains": [
             "Erfaringsparadokset: Krav om relevant arbeidserfaring for nybegynnerstillinger.",
-            "Økonomisk press: Behovet for inntekt gjør at man må ta irrelevante strøjobber.",
+            "Økonomisk pressure: Behovet for inntekt gjør at man må ta irrelevante strøjobber.",
             "Teoretisk overbelastning: Opplevelse av at teorien på høgskolen er for fjern fra praktisk hverdag.",
             "Isolasjon på studiet: Liten erfaring med å jobbe i tverrfaglige team på tvers av avdelinger."
           ],
@@ -691,9 +721,9 @@ export const wikiData = [
       }
     ],
     "tldr": [
-      "Tjenestene leveres gratis (pro-bono) til lokale mikrovirksomheter, som betaler i form av tidsinvestering i prosjektet.",
-      "Verdiskapningskartet (VPC) visualiserer matchingen av gevinster og smerter for studenter, næringsliv og HiØ.",
-      "Portalen fungerer som en verifisert referansebase som reduserer risikoen for feilansettelser i næringslivet."
+      "Value Proposition Canvas (VPC) deler målgruppene inn i studenter, høyskolen og næringslivet.",
+      "Hver målgruppe kartlegges etter arbeidsoppgaver, smerter (pains) og gevinster (gains).",
+      "Det interaktive verdikartet visualiserer hvordan produktene og smertestillerne matcher kundenes behov."
     ]
   },
   {
