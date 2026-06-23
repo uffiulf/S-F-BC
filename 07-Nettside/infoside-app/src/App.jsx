@@ -1122,7 +1122,7 @@ export default function App() {
 
                     {/* Contingency Plan (Beredskapsplan) Section */}
                     {currentPage.sections[5] && (
-                      <div className="contingency-section mt-12">
+                      <div className="contingency-section mt-12" style={{ marginTop: '72px' }}>
                         <div className="section-header" style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '16px' }}>
                           <Icons.AlertOctagon className="w-6 h-6 text-red-500 animate-pulse" />
                           <h2 className="m-0">{currentPage.sections[5].heading.replace(/^\d+\.\s*/, "")}</h2>

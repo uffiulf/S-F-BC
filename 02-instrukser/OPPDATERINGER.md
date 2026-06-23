@@ -348,3 +348,4 @@ Hvor: Ny seksjon under "Analyser" eller "Guidelines"
 | 23.06.2026 | Øk avstand mellom evighetsprosjekt-tidslinje og Spor A-tekst | Utført |
 | 23.06.2026 | Legg til interaktive koblinger fra SWOT-weaknesses til risikomatrisen | Utført |
 | 23.06.2026 | Legg til intern budsjett- og De Minimis-kalkulator under Risiko & Jus | Utført |
+| 23.06.2026 | Øk avstand over beredskapsplan på Gjennomføringsplan-siden | Utført |
