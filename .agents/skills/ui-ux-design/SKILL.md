@@ -23,12 +23,21 @@ All margins, padding, line heights, and layout gaps must follow a strict 8px (or
   - Small margin below the heading to its subtitle/text (e.g., `16px`).
   - Medium/large margin below the subtitle/text to the next interactive/layout element (e.g., `48px`).
 
-## 3. Visual Aesthetics (Premium Design)
-- **Dark Mode & HSL Tailored Colors:** Avoid plain solid colors. Use rich, harmonious color palettes, glowing gradients, subtle borders (`border: 1px solid var(--border-color)`), and translucent backdrops with glassmorphism (`backdrop-filter: blur()`).
-- **Clean Contrast:** Keep high contrast for accessibility but preserve readability.
-- **Responsiveness:** Maintain fluid, flexbox, or grid-based structures. Always test that designs scale down beautifully on mobile viewports.
+## 3. Advanced Visual Hierarchy
+- **The "Squint" Test:** Periodically check the visual layout by squinting. If the primary action or focal point does not instantly pop, simplify and adjust sizes or weights.
+- **Value Contrast:** Differentiate elements using luminosity and visual weight, not just color, to ensure accessibility and clarity (meeting WCAG contrast guidelines).
+- **F- & Z-Scan Patterns:** Layout reading paths in accordance with natural reading directions. Place core content in horizontal visual sweeps on desktop, and down-wards on mobile.
 
-## 4. Workflows for Design Changes
+## 4. Purposeful Microinteractions & Motion
+- **Instant Visual Feedback:** Interactive elements must respond immediately (0.1s to 0.3s) when hovered, clicked, or focused.
+- **Consistent Response styles:** Keep transition durations and easing curves standardized (e.g., `transition: all 0.2s ease`).
+- **Functional Animation:** Avoid purely decorative animations; only animate to indicate status, direction, or feedback.
+
+## 5. Layout Essentialism & Progressive Disclosure
+- **Avoid Noise:** If an element does not directly contribute to the user's current goal, remove or tuck it away. Keep layouts focused and clutter-free.
+- **Progressive Disclosure:** Present high-level context first, and allow users to drill down to complex details on-demand (e.g., through expandable sections, modals, or progressive navigation steps).
+
+## 6. Workflows for Design Changes
 When proposed UI adjustments are requested:
 1. **Analyze existing CSS variables and layout classes** before writing inline styles.
 2. **Harmonize spacings** across pages rather than patching single elements.
