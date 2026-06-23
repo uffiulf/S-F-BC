@@ -1028,37 +1028,47 @@ export default function App() {
                           )}
 
                           {sec.heading === "1. Kostnadsanalyse & Budsjett" && currentPage.id === "risiko-og-jus" && (
-                            <div className="de-minimis-info-box glass-card mt-6 p-6 animate-fade-in" style={{ padding: '20px', borderRadius: '12px', border: '1px solid var(--border-color)', background: 'rgba(255, 255, 255, 0.02)', marginTop: '24px' }}>
-                              <h3 style={{ marginTop: 0, marginBottom: '12px', display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--accent-color)', fontSize: '1.1rem', fontWeight: 600 }}>
+                            <div className="de-minimis-info-box glass-card mt-6 p-6 animate-fade-in" style={{ padding: '24px', borderRadius: '16px', border: '1px solid var(--border-color)', background: 'rgba(255, 255, 255, 0.02)', marginTop: '24px' }}>
+                              <h3 style={{ marginTop: 0, marginBottom: '16px', display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--accent-color)', fontSize: '1.15rem', fontWeight: 600 }}>
                                 <Icons.ShieldCheck className="w-5 h-5 text-accent animate-pulse" />
-                                <span>De Minimis Statsstøtte: Beregningsmodell</span>
+                                <span>De Minimis Statsstøtte — Beregningsmodell</span>
                               </h3>
-                              <p className="text-secondary" style={{ fontSize: '0.875rem', color: 'var(--text-muted)', lineHeight: '1.5', margin: '0 0 16px 0' }}>
-                                Siden Syntax & Flow yter gratis tjenester til bedrifter ved hjelp av offentlige ressurser, regnes verdien som <strong>de minimis-støtte</strong> (bagatellmessig statsstøtte). For å sikre full overholdelse av EØS-reglene føres et internt register og det utstedes et støtteerklæringsbrev til mottakerbedriften etter følgende edruelige markedsverdi-beregning:
+                              <p className="text-secondary" style={{ fontSize: '0.9rem', color: 'var(--text-muted)', lineHeight: '1.6', margin: '0 0 16px 0' }}>
+                                Siden Syntax & Flow yter gratis tjenester til bedrifter ved hjelp av offentlige ressurser, regnes verdien som de minimis-støtte (bagatellmessig statsstøtte). For å sikre full overholdelse av EØS-reglene føres et internt register og det utstedes et støtteerklæringsbrev til mottakerbedriften.
                               </p>
-                              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '20px', background: 'rgba(255,255,255,0.01)', padding: '16px', borderRadius: '8px', border: '1px solid var(--border-color)', marginBottom: '16px' }}>
+                              
+                              <div style={{ background: 'rgba(245, 158, 11, 0.07)', padding: '16px', borderRadius: '12px', border: '1px solid rgba(245, 158, 11, 0.2)', fontSize: '0.85rem', color: 'var(--text-secondary)', lineHeight: '1.6', marginBottom: '20px' }}>
+                                <strong>Viktig:</strong> Beløpene nedenfor er forsvarstall, ikke fakturabeløp. Ingen betaler noe. De finnes kun på papiret i registeret og i et erklæringsbrev til kunden. Formålet er å dokumentere overfor ESA eller Konkurransetilsynet at hver kunde mottar støtte under 300 000 EUR-grensen.
+                              </div>
+
+                              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '20px', background: 'rgba(255,255,255,0.01)', padding: '20px', borderRadius: '12px', border: '1px solid var(--border-color)', marginBottom: '20px' }}>
                                 <div>
                                   <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Studentenes Verdi</div>
-                                  <div style={{ fontSize: '1.2rem', fontWeight: 700, color: 'var(--text-primary)', margin: '4px 0' }}>
+                                  <div style={{ fontSize: '1.3rem', fontWeight: 700, color: 'var(--text-primary)', margin: '4px 0' }}>
                                     250 kr / time
                                   </div>
-                                  <div style={{ fontSize: '0.7rem', color: 'var(--text-muted)' }}>Trainee-basert timepris (reflekterer mangel på garantier/erfaring)</div>
+                                  <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', lineHeight: '1.5' }}>
+                                    Tilsvarer omtrent det en bedrift ville betalt en studentassistent eller trainee. Settes lavt fordi studentene er under opplæring, arbeidet leveres uten garanti, og ingen kommersiell aktør ville betalt full pris.
+                                  </div>
                                 </div>
                                 <div style={{ borderLeft: '1px solid var(--border-color)', paddingLeft: '20px' }}>
                                   <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Mentorenes Verdi</div>
-                                  <div style={{ fontSize: '1.2rem', fontWeight: 700, color: 'var(--text-primary)', margin: '4px 0' }}>
+                                  <div style={{ fontSize: '1.3rem', fontWeight: 700, color: 'var(--text-primary)', margin: '4px 0' }}>
                                     600 kr / time
                                   </div>
-                                  <div style={{ fontSize: '0.7rem', color: 'var(--text-muted)' }}>Faktisk timesats for foreleser/faglig veileder</div>
+                                  <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', lineHeight: '1.5' }}>
+                                    Faktisk timeskostnad for en HiØ-foreleser (lønn + arbeidsgiveravgift).
+                                  </div>
                                 </div>
                               </div>
-                              <div style={{ background: 'rgba(37, 99, 235, 0.05)', padding: '12px', borderRadius: '8px', border: '1px dashed rgba(37, 99, 235, 0.2)', fontSize: '0.8rem', color: 'var(--text-secondary)', lineHeight: '1.4' }}>
-                                <strong>Eksempel på prosjektverdi:</strong> Et prosjekt med et team på 4 studenter (hver jobber 150 timer) pluss 15 timer mentorveiledning gir en beregnet støtteverdi på: 
+                              
+                              <div style={{ background: 'rgba(37, 99, 235, 0.05)', padding: '16px', borderRadius: '12px', border: '1px dashed rgba(37, 99, 235, 0.2)', fontSize: '0.85rem', color: 'var(--text-secondary)', lineHeight: '1.6' }}>
+                                <strong>Eksempel:</strong> Et prosjekt med 4 studenter (150 timer hver) + 15 timer mentorveiledning gir en beregnet støtteverdi på:
                                 <br />
-                                <code style={{ display: 'block', marginTop: '6px', background: 'rgba(0,0,0,0.2)', padding: '4px 8px', borderRadius: '4px', fontFamily: 'monospace' }}>
-                                  (4 studenter × 150t × 250 kr) + (15t × 600 kr) = 159 000 kr
+                                <code style={{ display: 'block', marginTop: '8px', background: 'rgba(0,0,0,0.25)', padding: '6px 12px', borderRadius: '6px', fontFamily: 'monospace', fontSize: '0.9rem' }}>
+                                  (4 × 150t × 250 kr) + (15t × 600 kr) = 159 000 kr
                                 </code>
-                                Dette beløpet loggføres i det interne registeret og oppgis til kunden i erklæringsbrevet (grense på 300 000 EUR over en rullerende 3-årsperiode).
+                                Dette beløpet loggføres i registeret og oppgis til kunden i erklæringsbrevet. Grensen er 300 000 EUR over en rullerende 3-årsperiode.
                               </div>
                             </div>
                           )}

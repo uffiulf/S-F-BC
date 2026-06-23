@@ -145,6 +145,30 @@ Hver rad skal ha:
 Bruk eksisterende CSS-klasser og ikoner.
 Hvor: Helt nederst på Dashboard-siden
 
+### 22.06.2026 — Erstatt kalkulatoren med statisk tekst som forklarer de minimis-verdier
+Prioritet: Høy
+Kilde: `05-agent-forslag/Forslag/drofting_kalkulator.md`
+Hva: Fjern den interaktive kalkulatoren ("Intern Kalkulator: Verdi & Statsstøtte") under "Risiko & Juss" på infosiden. Erstatt den med en statisk tekstboks med følgende innhold:
+
+**Tittel:** De Minimis Statsstøtte — Beregningsmodell
+
+**Brødtekst:**
+"Siden Syntax & Flow yter gratis tjenester til bedrifter ved hjelp av offentlige ressurser, regnes verdien som de minimis-støtte (bagatellmessig statsstøtte). For å sikre full overholdelse av EØS-reglene føres et internt register og det utstedes et støtteerklæringsbrev til mottakerbedriften.
+
+Viktig: Beløpene nedenfor er forsvarstall, ikke fakturabeløp. Ingen betaler noe. De finnes kun på papiret i registeret og i et erklæringsbrev til kunden. Formålet er å dokumentere overfor ESA eller Konkurransetilsynet at hver kunde mottar støtte under 300 000 EUR-grensen.
+
+Beregningen baseres på følgende edruelige markedsverdi:
+- Studentverdi: 250 kr/time — tilsvarer omtrent det en bedrift ville betalt en studentassistent eller trainee. Settes lavt fordi studentene er under opplæring, arbeidet leveres uten garanti, og ingen kommersiell aktør ville betalt full pris.
+- Mentorverdi: 600 kr/time — faktisk timeskostnad for en HiØ-foreleser (lønn + arbeidsgiveravgift).
+
+Eksempel: Et prosjekt med 4 studenter (150 timer hver) + 15 timer mentorveiledning gir en beregnet støtteverdi på:
+(4 × 150t × 250 kr) + (15t × 600 kr) = 159 000 kr
+
+Dette beløpet loggføres i registeret og oppgis til kunden i erklæringsbrevet. Grensen er 300 000 EUR over en rullerende 3-årsperiode."
+
+Hold det statisk og informativt — ingen interaktive slidere.
+Hvor: "Risiko & Juss"-siden, under kostnadsanalyse
+
 ### 22.06.2026 — Rett opp "de minimis"-feil på infosiden — har blitt forkortet til "n"
 Prioritet: Høy
 Kilde: Gjennomgang av wikiData.js og App.jsx
@@ -425,3 +449,4 @@ Hvor: Ny seksjon under "Analyser" eller "Guidelines"
 | 22.06.2026 | Splitt "Forretningsmodell & VPC" til to separate sider | Utført |
 | 22.06.2026 | Flytt innhold på Scope-siden og oppdater kategorinavn | Utført |
 | 22.06.2026 | Legg til filter-funksjonalitet på ordlisten | Utført |
+| 22.06.2026 | Erstatt kalkulatoren med statisk tekst som forklarer de minimis-verdier | Utført |
