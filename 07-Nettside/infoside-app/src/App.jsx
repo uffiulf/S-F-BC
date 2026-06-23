@@ -1560,7 +1560,7 @@ export default function App() {
                           <Icons.AlertOctagon className="w-6 h-6 text-red-500 animate-pulse" />
                           <h2 className="m-0">{currentPage.sections[5].heading.replace(/^\d+\.\s*/, "")}</h2>
                         </div>
-                        <p className="text-secondary mb-6">{currentPage.sections[5].text}</p>
+                        <p className="text-secondary" style={{ marginBottom: '36px' }}>{currentPage.sections[5].text}</p>
                         
                         <div className="grid-2">
                           {currentPage.sections[5].table.rows.map((bRow, bIdx) => (
