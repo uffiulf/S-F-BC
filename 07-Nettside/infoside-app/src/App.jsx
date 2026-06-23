@@ -423,13 +423,27 @@ export default function App() {
                     boxShadow: '0 4px 20px rgba(0, 0, 0, 0.05)',
                     transition: 'all 0.3s ease'
                   }}>
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
+                    <div 
+                      onClick={() => setTldrExpanded(!tldrExpanded)}
+                      style={{ 
+                        display: 'flex', 
+                        alignItems: 'center', 
+                        justifyContent: 'space-between', 
+                        width: '100%',
+                        cursor: 'pointer',
+                        userSelect: 'none'
+                      }}
+                      className="tldr-header"
+                    >
                       <h3 style={{ margin: 0, fontSize: '1rem', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--accent-color)' }}>
                         <Icons.Lightbulb className="w-5 h-5 animate-pulse" />
                         <span>Kort oppsummert (TL;DR)</span>
                       </h3>
                       <button
-                        onClick={() => setTldrExpanded(!tldrExpanded)}
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          setTldrExpanded(!tldrExpanded);
+                        }}
                         style={{
                           background: 'rgba(255, 255, 255, 0.05)',
                           border: '1px solid var(--border-color)',

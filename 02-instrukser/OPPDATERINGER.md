@@ -322,4 +322,4 @@ Hvor: Ny seksjon under "Analyser" eller "Guidelines"
 | 22.06.2026 | Oppdater Trelagsmodellen på infosiden | Utført |
 | 22.06.2026 | Forbedre grafisk fremstilling på infosiden | Utført |
 | 23.06.2026 | Legg til piler og øk avstand i business case-flyt | Utført |
-| 23.06.2026 | Gjør TLDR-kortet kollapsbart og minimert som standard (Vis mer/mindre) | Utført |
+| 23.06.2026 | Gjør TLDR-kortet kollapsbart og hele overskriften klikkbar (Vis mer/mindre) | Utført |

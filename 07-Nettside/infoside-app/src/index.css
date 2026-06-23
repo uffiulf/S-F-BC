@@ -3025,3 +3025,14 @@ mark.highlight {
 .tldr-toggle-btn:active {
   transform: translateY(0);
 }
+
+.tldr-header {
+  transition: opacity 0.2s ease;
+}
+.tldr-header:hover {
+  opacity: 0.85;
+}
+.tldr-header:hover .tldr-toggle-btn {
+  border-color: var(--accent-color);
+  background: rgba(255, 255, 255, 0.08);
+}
