@@ -2623,15 +2623,15 @@ mark.highlight {
 }
 
 .post-it-modal-title {
-  font-size: 0.8rem;
-  font-weight: 800;
+  font-size: 1.35rem;
+  font-weight: 900;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.06em;
   color: #1a1a20;
-  opacity: 0.5;
-  margin-bottom: 12px;
-  border-bottom: 1px dashed rgba(0, 0, 0, 0.15);
-  padding-bottom: 6px;
+  opacity: 0.8;
+  margin-bottom: 16px;
+  border-bottom: 2px dashed rgba(0, 0, 0, 0.15);
+  padding-bottom: 8px;
   width: 100%;
 }
 
