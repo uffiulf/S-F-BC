@@ -1,9 +1,9 @@
 export const wikiData = [
   {
     "id": "dashboard",
-    "title": "Dashboard",
+    "title": "Introduksjon",
     "category": "Oversikt",
-    "icon": "LayoutDashboard",
+    "icon": "Home",
     "lead": "Velkommen til den interne kunnskapsportalen (Wiki) for Syntax & Flow. Dette verktøyet er designet for prosjektteamet som skal utføre businesscasen.",
     "sections": [
       {
