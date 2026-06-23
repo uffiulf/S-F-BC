@@ -1555,12 +1555,12 @@ export default function App() {
 
                     {/* Contingency Plan (Beredskapsplan) Section */}
                     {currentPage.sections[5] && (
-                      <div className="contingency-section mt-12" style={{ marginTop: '72px' }}>
+                      <div className="contingency-section" style={{ marginTop: '80px' }}>
                         <div className="section-header" style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '16px' }}>
                           <Icons.AlertOctagon className="w-6 h-6 text-red-500 animate-pulse" />
                           <h2 className="m-0">{currentPage.sections[5].heading.replace(/^\d+\.\s*/, "")}</h2>
                         </div>
-                        <p className="text-secondary" style={{ marginBottom: '50px' }}>{currentPage.sections[5].text}</p>
+                        <p className="text-secondary" style={{ marginBottom: '48px' }}>{currentPage.sections[5].text}</p>
                         
                         <div className="grid-2">
                           {currentPage.sections[5].table.rows.map((bRow, bIdx) => (
@@ -1588,12 +1588,12 @@ export default function App() {
 
                     {/* Suksesskriterier Section */}
                     {currentPage.sections[6] && (
-                      <div className="success-criteria-section mt-12" style={{ marginTop: '72px' }}>
+                      <div className="success-criteria-section" style={{ marginTop: '80px' }}>
                         <div className="section-header" style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '16px' }}>
                           <Icons.Award className="w-6 h-6 text-emerald-500" />
                           <h2 className="m-0">{currentPage.sections[6].heading.replace(/^\d+\.\s*/, "")}</h2>
                         </div>
-                        <p className="text-secondary mb-6">{currentPage.sections[6].text}</p>
+                        <p className="text-secondary" style={{ marginBottom: '48px' }}>{currentPage.sections[6].text}</p>
                         
                         <div className="grid-3">
                           {currentPage.sections[6].points.map((pt, ptIdx) => {
