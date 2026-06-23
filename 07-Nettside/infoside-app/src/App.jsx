@@ -1738,14 +1738,14 @@ export default function App() {
                                   {/* Left part: Products & Services */}
                                   <div className="vpc-box products full-height">
                                     <div className="box-title">
-                                      📦 Produkter & Tjenester
+                                      📦 Products & Services
                                     </div>
                                     <div className="post-it-list">
                                       {vpc.valueMap.products.map((item, iIdx) => (
                                         <div 
                                           key={iIdx} 
                                           className="post-it post-it-yellow"
-                                          onClick={() => setActivePostIt({ text: item, theme: 'yellow', title: 'Produkter & Tjenester' })}
+                                          onClick={() => setActivePostIt({ text: item, theme: 'yellow', title: 'Products & Services' })}
                                         >
                                           {item}
                                         </div>
@@ -1756,14 +1756,14 @@ export default function App() {
                                   {/* Right top: Gain Creators */}
                                   <div className="vpc-box gain-creators">
                                     <div className="box-title">
-                                      ⚡ Gevinstskapere (Gain Creators)
+                                      ⚡ Gain Creators
                                     </div>
                                     <div className="post-it-list">
                                       {vpc.valueMap.gainCreators.map((item, iIdx) => (
                                         <div 
                                           key={iIdx} 
                                           className="post-it post-it-green"
-                                          onClick={() => setActivePostIt({ text: item, theme: 'green', title: 'Gevinstskapere (Gain Creators)' })}
+                                          onClick={() => setActivePostIt({ text: item, theme: 'green', title: 'Gain Creators' })}
                                         >
                                           {item}
                                         </div>
@@ -1774,14 +1774,14 @@ export default function App() {
                                   {/* Right bottom: Pain Relievers */}
                                   <div className="vpc-box pain-relievers">
                                     <div className="box-title">
-                                      💊 Smertelindrere (Pain Relievers)
+                                      💊 Pain Relievers
                                     </div>
                                     <div className="post-it-list">
                                       {vpc.valueMap.painRelievers.map((item, iIdx) => (
                                         <div 
                                           key={iIdx} 
                                           className="post-it post-it-pink"
-                                          onClick={() => setActivePostIt({ text: item, theme: 'pink', title: 'Smertelindrere (Pain Relievers)' })}
+                                          onClick={() => setActivePostIt({ text: item, theme: 'pink', title: 'Pain Relievers' })}
                                         >
                                           {item}
                                         </div>
@@ -1797,7 +1797,7 @@ export default function App() {
                               </div>
                               <div className="vpc-canvas-caption">
                                 <Icons.Gift className="w-5 h-5" />
-                                <span>Verditilbud (Value Map)</span>
+                                <span>Value Map</span>
                               </div>
                             </div>
 
@@ -1808,14 +1808,14 @@ export default function App() {
                                   {/* Top left/mid: Gains */}
                                   <div className="vpc-box gains">
                                     <div className="box-title">
-                                      💎 Gevinster (Gains)
+                                      💎 Gains
                                     </div>
                                     <div className="post-it-list">
                                       {vpc.customerProfile.gains.map((item, iIdx) => (
                                         <div 
                                           key={iIdx} 
                                           className="post-it post-it-green"
-                                          onClick={() => setActivePostIt({ text: item, theme: 'green', title: 'Gevinster (Gains)' })}
+                                          onClick={() => setActivePostIt({ text: item, theme: 'green', title: 'Gains' })}
                                         >
                                           {item}
                                         </div>
@@ -1826,14 +1826,14 @@ export default function App() {
                                   {/* Bottom left/mid: Pains */}
                                   <div className="vpc-box pains">
                                     <div className="box-title">
-                                      ⚡ Smertepunkter (Pains)
+                                      ⚡ Pains
                                     </div>
                                     <div className="post-it-list">
                                       {vpc.customerProfile.pains.map((item, iIdx) => (
                                         <div 
                                           key={iIdx} 
                                           className="post-it post-it-pink"
-                                          onClick={() => setActivePostIt({ text: item, theme: 'pink', title: 'Smertepunkter (Pains)' })}
+                                          onClick={() => setActivePostIt({ text: item, theme: 'pink', title: 'Pains' })}
                                         >
                                           {item}
                                         </div>
@@ -1844,14 +1844,14 @@ export default function App() {
                                   {/* Right: Customer Jobs */}
                                   <div className="vpc-box jobs full-height">
                                     <div className="box-title">
-                                      🎯 Kundens Oppgaver (Jobs)
+                                      🎯 Customer Jobs
                                     </div>
                                     <div className="post-it-list">
                                       {vpc.customerProfile.jobs.map((item, iIdx) => (
                                         <div 
                                           key={iIdx} 
                                           className="post-it post-it-yellow"
-                                          onClick={() => setActivePostIt({ text: item, theme: 'yellow', title: 'Kundens Oppgaver (Jobs)' })}
+                                          onClick={() => setActivePostIt({ text: item, theme: 'yellow', title: 'Customer Jobs' })}
                                         >
                                           {item}
                                         </div>
@@ -1867,7 +1867,7 @@ export default function App() {
                               </div>
                               <div className="vpc-canvas-caption">
                                 <Icons.User className="w-5 h-5" />
-                                <span>Kundeprofil (Customer Segment)</span>
+                                <span>Customer Profile</span>
                               </div>
                             </div>
                           </div>
