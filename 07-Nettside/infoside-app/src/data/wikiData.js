@@ -204,51 +204,63 @@ export const wikiData = [
           "rows": [
             [
               "<strong>Adoption & Retention</strong>",
-              "Strategier for å få kunder til å ta i bruk et produkt (adoption) og fortsette å bruke det over tid (retention)."
+              "Strategier for å få kunder til å ta i bruk et produkt (adoption) og fortsette å bruke det over tid (retention).",
+              "Marked/Forretning"
             ],
             [
               "<strong>Ambassadørprogram</strong>",
-              "Ordning der fornøyde kunder eller partnere promoterer produktet/tjenesten frivillig, ofte i bytte mot fordeler."
+              "Ordning der fornøyde kunder eller partnere promoterer produktet/tjenesten frivillig, ofte i bytte mot fordeler.",
+              "Marked/Forretning"
             ],
             [
               "<strong>AML</strong>",
-              "Arbeidsmiljøloven. Regulerer arbeidstakeres rettigheter og arbeidsgivers plikter."
+              "Arbeidsmiljøloven. Regulerer arbeidstakeres rettigheter og arbeidsgivers plikter.",
+              "Jus/EØS"
             ],
             [
               "<strong>Arbeidsmarkedstiltak</strong>",
-              "Tiltak finansiert av NAV for å hjelpe personer inn i arbeid, f.eks. arbeidstrening."
+              "Tiltak finansiert av NAV for å hjelpe personer inn i arbeid, f.eks. arbeidstrening.",
+              "Student/Utdanning"
             ],
             [
               "<strong>B2G (Business-to-Government)</strong>",
-              "Forretningsmodell der bedrifter leverer tjenester eller produkter to offentlig sektor (f.eks. høyskoler eller kommuner)."
+              "Forretningsmodell der bedrifter leverer tjenester eller produkter to offentlig sektor (f.eks. høyskoler eller kommuner).",
+              "Marked/Forretning"
             ],
             [
               "<strong>Bottom-up</strong>",
-              "Markedsførings- eller implementeringsstrategi som starter på grasrotnivå (f.eks. hos studenter eller enkelte avdelinger) og beveger seg oppover i organisasjonen."
+              "Markedsførings- eller implementeringsstrategi som starter på grasrotnivå (f.eks. hos studenter eller enkelte avdelinger) og beveger seg oppover i organisasjonen.",
+              "Marked/Forretning"
             ],
             [
               "<strong>CAC (Customer Acquisition Cost)</strong>",
-              "Kostnaden ved å skaffe en ny kunde, inkludert markedsføring, salg og oppfølging."
+              "Kostnaden ved å skaffe en ny kunde, inkludert markedsføring, salg og oppfølging.",
+              "Marked/Forretning"
             ],
             [
               "<strong>Change Management</strong>",
-              "Strukturert tilnærming til å hjelpe mennesker og organisasjoner gjennom endringsprosesser."
+              "Strukturert tilnærming til å hjelpe mennesker og organisasjoner gjennom endringsprosesser.",
+              "Prosjektledelse"
             ],
             [
               "<strong>Churn Rate</strong>",
-              "Andel kunder som slutter å bruke tjenesten over en gitt periode. Lav churn = høy kundelojalitet."
+              "Andel kunder som slutter å bruke tjenesten over en gitt periode. Lav churn = høy kundelojalitet.",
+              "Marked/Forretning"
             ],
             [
               "<strong>CLTV / Customer Lifetime Value</strong>",
-              "Hvor mye en kunde totalt forventes å innbringe i løpet av hele kundeforholdet."
+              "Hvor mye en kunde totalt forventes å innbringe i løpet av hele kundeforholdet.",
+              "Marked/Forretning"
             ],
             [
               "<strong>CLV (Customer Lifetime Value)</strong>",
-              "Samme som CLTV. Total forventet verdi av et kundeforhold over hele levetiden."
+              "Samme som CLTV. Total forventet verdi av et kundeforhold over hele levetiden.",
+              "Marked/Forretning"
             ],
             [
               "<strong>COS (Cost of Services)</strong>",
-              "Kostnaden ved å levere en tjeneste — inkluderer timer, verktøy og eventuelle underleverandører."
+              "Kostnaden ved å levere en tjeneste — inkluderer timer, verktøy og eventuelle underleverandører.",
+              "Marked/Forretning"
             ]
           ]
         }
@@ -263,35 +275,43 @@ export const wikiData = [
           "rows": [
             [
               "<strong>De minimis</strong>",
-              "Bagatellmessig støtte. Statsstøtte under 300 000 EUR over 3 år per kunde — så lite at det ikke regnes som ulovlig og krever ikke ESA-godkjenning."
+              "Bagatellmessig støtte. Statsstøtte under 300 000 EUR over 3 år per kunde — så lite at det ikke regnes som ulovlig og krever ikke ESA-godkjenning.",
+              "Jus/EØS"
             ],
             [
               "<strong>DPIA</strong>",
-              "Data Protection Impact Assessment. Konsekvensvurdering for personvern som må gjøres før behandling av personopplysninger."
+              "Data Protection Impact Assessment. Konsekvensvurdering for personvern som må gjøres før behandling av personopplysninger.",
+              "Personvern/GDPR"
             ],
             [
               "<strong>DPO</strong>",
-              "Data Protection Officer. Personvernansvarlig."
+              "Data Protection Officer. Personvernansvarlig.",
+              "Personvern/GDPR"
             ],
             [
               "<strong>Early adopter</strong>",
-              "En kunde som er tidlig ute med å ta i bruk et nytt produkt eller tjeneste, ofte avgjørende for markedsvalidering."
+              "En kunde som er tidlig ute med å ta i bruk et nytt produkt eller tjeneste, ofte avgjørende for markedsvalidering.",
+              "Marked/Forretning"
             ],
             [
               "<strong>ESA</strong>",
-              "EFTAs overvåkingsorgan. Overvåker at Norge følger EØS-avtalen, inkludert statsstøttereglene."
+              "EFTAs overvåkingsorgan. Overvåker at Norge følger EØS-avtalen, inkludert statsstøttereglene.",
+              "Jus/EØS"
             ],
             [
               "<strong>Evighetsprosjekt</strong>",
-              "Internt prosjekt som går over flere semestre. Hvert kull overtar der forrige slapp."
+              "Internt prosjekt som går over flere semestre. Hvert kull overtar der forrige slapp.",
+              "Organisasjon"
             ],
             [
               "<strong>Executive Summary</strong>",
-              "Kort sammendrag av en forretningsplan eller rapport som gir leseren rask oversikt over hele innholdet."
+              "Kort sammendrag av en forretningsplan eller rapport som gir leseren rask oversikt over hele innholdet.",
+              "Marked/Forretning"
             ],
             [
               "<strong>Forpliktende milepælsplan</strong>",
-              "En skriftlig avtale om konkrete leveranser og tidsfrister for prosjektet, som brukes i stedet for en tradisjonell SLA (Service Level Agreement) for å unngå risiko."
+              "En skriftlig avtale om konkrete leveranser og tidsfrister for prosjektet, som brukes i stedet for en tradisjonell SLA (Service Level Agreement) for å unngå risiko.",
+              "Prosjektledelse"
             ]
           ]
         }
@@ -306,27 +326,33 @@ export const wikiData = [
           "rows": [
             [
               "<strong>GDPR</strong>",
-              "General Data Protection Regulation. EUs personvernforordning, innlemmet i norsk lov gjennom personopplysningsloven."
+              "General Data Protection Regulation. EUs personvernforordning, innlemmet i norsk lov gjennom personopplysningsloven.",
+              "Personvern/GDPR"
             ],
             [
               "<strong>GTM</strong>",
-              "Go-To-Market. Strategi for hvordan et produkt eller tjeneste lanseres i markedet."
+              "Go-To-Market. Strategi for hvordan et produkt eller tjeneste lanseres i markedet.",
+              "Marked/Forretning"
             ],
             [
               "<strong>IP</strong>",
-              "Investor Proposal. Forslag eller presentasjon rettet mot investorer for å sikre finansiering."
+              "Investor Proposal. Forslag eller presentasjon rettet mot investorer for å sikre finansiering.",
+              "Marked/Forretning"
             ],
             [
               "<strong>IPR</strong>",
-              "Intellectual Property Rights. Åndsverk og immaterielle rettigheter (kode, design, patenter)."
+              "Intellectual Property Rights. Åndsverk og immaterielle rettigheter (kode, design, patenter).",
+              "Jus/EØS"
             ],
             [
               "<strong>Justification</strong>",
-              "Begrunnelse eller forsvaring av en beslutning, et prosjekt eller en investering — hvorfor noe er nødvendig eller lønnsomt."
+              "Begrunnelse eller forsvaring av en beslutning, et prosjekt eller en investering — hvorfor noe er nødvendig eller lønnsomt.",
+              "Marked/Forretning"
             ],
             [
               "<strong>LOI (Letter of Intent)</strong>",
-              "Intensjonsavtale. Et ikke-bindende dokument som bekrefter at en part har til hensikt å inngå en avtale eller samarbeid."
+              "Intensjonsavtale. Et ikke-bindende dokument som bekrefter at en part har til hensikt å inngå en avtale eller samarbeid.",
+              "Jus/EØS"
             ]
           ]
         }
@@ -341,15 +367,18 @@ export const wikiData = [
           "rows": [
             [
               "<strong>MVA</strong>",
-              "Merverdiavgift. Avgift på omsetning av varer og tjenester. Grense for registrering: 50 000 kr/år."
+              "Merverdiavgift. Avgift på omsetning av varer og tjenester. Grense for registrering: 50 000 kr/år.",
+              "Jus/EØS"
             ],
             [
               "<strong>NOKUT</strong>",
-              "Nasjonalt organ for kvalitet i utdanningen. Fører tilsyn med høyere utdanning."
+              "Nasjonalt organ for kvalitet i utdanningen. Fører tilsyn med høyere utdanning.",
+              "Student/Utdanning"
             ],
             [
               "<strong>NPS</strong>",
-              "Net Promoter Score. Måling av kundetilfredshet på en skala fra 0–10."
+              "Net Promoter Score. Måling av kundetilfredshet på en skala fra 0–10.",
+              "Marked/Forretning"
             ]
           ]
         }
@@ -364,27 +393,33 @@ export const wikiData = [
           "rows": [
             [
               "<strong>OTP</strong>",
-              "Obligatorisk tjenestepensjon. Pensjonsordning som arbeidsgivere må tilby ansatte."
+              "Obligatorisk tjenestepensjon. Pensjonsordning som arbeidsgivere må tilby ansatte.",
+              "Jus/EØS"
             ],
             [
               "<strong>Persona</strong>",
-              "Fiktiv brukerprofil som representerer en målgruppe, brukt i design og markedsføring for å forstå behov og adferd."
+              "Fiktiv brukerprofil som representerer en målgruppe, brukt i design og markedsføring for å forstå behov og adferd.",
+              "Marked/Forretning"
             ],
             [
               "<strong>Prisstrategi</strong>",
-              "Plan for hvordan et produkt eller tjeneste skal prises for å oppnå ønsket posisjonering og lønnsomhet."
+              "Plan for hvordan et produkt eller tjeneste skal prises for å oppnå ønsket posisjonering og lønnsomhet.",
+              "Marked/Forretning"
             ],
             [
               "<strong>Pro bono</strong>",
-              "Latin for «det godes skyld». Tjenester som leveres gratis, ofte for ideelle formål."
+              "Latin for «det godes skyld». Tjenester som leveres gratis, ofte for ideelle formål.",
+              "Marked/Forretning"
             ],
             [
               "<strong>Proof of Concept (PoC)</strong>",
-              "En tidlig test eller prototype som viser at en idé eller løsning er gjennomførbar i praksis."
+              "En tidlig test eller prototype som viser at en idé eller løsning er gjennomførbar i praksis.",
+              "Prosjektledelse"
             ],
             [
               "<strong>Proof of Interest</strong>",
-              "Dokumentasjon på at det finnes reell interesse eller etterspørsel fra potensielle kunder."
+              "Dokumentasjon på at det finnes reell interesse eller etterspørsel fra potensielle kunder.",
+              "Marked/Forretning"
             ]
           ]
         }
@@ -399,36 +434,44 @@ export const wikiData = [
           "rows": [
             [
               "<strong>Recovery</strong>",
-              "Tilbakebetaling av ulovlig statsstøtte med renter. Pålegges av ESA når støtte er gitt i strid med EØS-avtalen."
+              "Tilbakebetaling av ulovlig statsstøtte med renter. Pålegges av ESA når støtte er gitt i strid med EØS-avtalen.",
+              "Jus/EØS"
             ],
             [
               "<strong>RGE (Residual Gross Earnings)</strong>",
-              "Fortjeneste som gjenstår etter at direkte kostnader er trukket fra. Måler hvor lønnsom kjernedriften er før faste kostnader."
+              "Fortjeneste som gjenstår etter at direkte kostnader er trukket fra. Måler hvor lønnsom kjernedriften er før faste kostnader.",
+              "Marked/Forretning"
             ],
             [
               "<strong>Risk Management</strong>",
-              "Prosessen med å identifisere, vurdere og håndtere risikoer i et prosjekt eller en organisasjon."
+              "Prosessen med å identifisere, vurdere og håndtere risikoer i et prosjekt eller en organisasjon.",
+              "Prosjektledelse"
             ],
             [
               "<strong>ROI</strong>",
-              "Return on Investment. Avkastning på investering. Måler hvor lønnsom en investering er."
+              "Return on Investment. Avkastning på investering. Måler hvor lønnsom en investering er.",
+              "Marked/Forretning"
             ],
             [
               "<strong>Rubric</strong>",
-              "Rubric (vurderingsmatrise). Strukturerte kriterier for vurdering, f.eks. 1–5 på definerte dimensjoner."
+              "Rubric (vurderingsmatrise). Strukturerte kriterier for vurdering, f.eks. 1–5 på definerte dimensjoner.",
+              "Student/Utdanning"
             ],
 
             [
               "<strong>Stakeholder</strong>",
-              "Interessent. En person eller gruppe som har interesse i eller påvirkes av et prosjekt."
+              "Interessent. En person eller gruppe som har interesse i eller påvirkes av et prosjekt.",
+              "Prosjektledelse"
             ],
             [
               "<strong>Stakeholder Management</strong>",
-              "Prosessen med å kartlegge, kommunisere med og håndtere forventningene til interessenter."
+              "Prosessen med å kartlegge, kommunisere med og håndtere forventningene til interessenter.",
+              "Prosjektledelse"
             ],
             [
               "<strong>Storyboard</strong>",
-              "Visuell fremstilling av en brukerreise eller prosess, bilde for bilde, brukt i design og planlegging."
+              "Visuell fremstilling av en brukerreise eller prosess, bilde for bilde, brukt i design og planlegging.",
+              "Prosjektledelse"
             ]
           ]
         }
@@ -443,43 +486,53 @@ export const wikiData = [
           "rows": [
             [
               "<strong>SiØ</strong>",
-              "Studentsamskipnaden i Østfold. Tilbyr velferdstjenester til studenter ved HiØ."
+              "Studentsamskipnaden i Østfold. Tilbyr velferdstjenester til studenter ved HiØ.",
+              "Organisasjon"
             ],
             [
               "<strong>Spor 1</strong>",
-              "Dagens ordning basert på det eksisterende studieemnet ITD35014 Bedriftspraksis (10 stp). Målet på sikt er å utvide emnet til 15–30 stp for å sikre rett til støtte fra Lånekassen uten krav om andre emner ved siden av."
+              "Dagens ordning basert på det eksisterende studieemnet ITD35014 Bedriftspraksis (10 stp). Målet på sikt er å utvide emnet til 15–30 stp for å sikre rett til støtte fra Lånekassen uten krav om andre emner ved siden av.",
+              "Student/Utdanning"
             ],
             [
               "<strong>Spor 3</strong>",
-              "NAV-samarbeid rettet mot deltakere utenfor det ordinære studieløpet. Sporet er utsatt til etter pilotfasen (Fase 4)."
+              "NAV-samarbeid rettet mot deltakere utenfor det ordinære studieløpet. Sporet er utsatt til etter pilotfasen (Fase 4).",
+              "Student/Utdanning"
             ],
             [
               "<strong>Støtteregister</strong>",
-              "Løpende logg over markedsverdi av tjenester per kunde. Brukes for å kontrollere de minimis-grensen."
+              "Løpende logg over markedsverdi av tjenester per kunde. Brukes for å kontrollere de minimis-grensen.",
+              "Jus/EØS"
             ],
             [
               "<strong>TAM (Total Addressable Market)</strong>",
-              "Totalt marked for et produkt eller tjeneste, altså maksimal inntekt hvis alle potensielle kunder kjøper."
+              "Totalt marked for et produkt eller tjeneste, altså maksimal inntekt hvis alle potensielle kunder kjøper.",
+              "Marked/Forretning"
             ],
             [
               "<strong>Top-down</strong>",
-              "Markedsføringsstrategi som starter hos ledelsen/store aktører og jobber seg nedover i organisasjonen."
+              "Markedsføringsstrategi som starter hos ledelsen/store aktører og jobber seg nedover i organisasjonen.",
+              "Marked/Forretning"
             ],
             [
               "<strong>Unfair Advantage</strong>",
-              "En varig konkurransefordel som er vanskelig for andre å kopiere."
+              "En varig konkurransefordel som er vanskelig for andre å kopiere.",
+              "Marked/Forretning"
             ],
             [
               "<strong>User Journey</strong>",
-              "Brukerreise. En trinnvis beskrivelse eller visualisering av hvordan en bruker opplever og samhandler med et produkt eller tjeneste over tid."
+              "Brukerreise. En trinnvis beskrivelse eller visualisering av hvordan en bruker opplever og samhandler med et produkt eller tjeneste over tid.",
+              "Prosjektledelse"
             ],
             [
               "<strong>Value Proposition Canvas (VPC)</strong>",
-              "Verktøy for å kartlegge verdien et produkt/tjeneste gir en målgruppe."
+              "Verktøy for å kartlegge verdien et produkt/tjeneste gir en målgruppe.",
+              "Marked/Forretning"
             ],
             [
               "<strong>Verdiskapning / Value Creation</strong>",
-              "Prosessen med å skape merverdi for kunder, studenter eller samfunnet gjennom produktet eller tjenesten."
+              "Prosessen med å skape merverdi for kunder, studenter eller samfunnet gjennom produktet eller tjenesten.",
+              "Marked/Forretning"
             ]
           ]
         }
@@ -645,7 +698,7 @@ export const wikiData = [
   },
   {
     "id": "scope",
-    "title": "Scope & Omfang",
+    "title": "Scope",
     "category": "Business Case",
     "icon": "Crosshair",
     "lead": "Hva som er definert som IN scope og OUT of scope for Syntax & Flow for å sikre minst mulig motstand.",
@@ -653,18 +706,10 @@ export const wikiData = [
       {
         "heading": "📄 Detaljert bakgrunnsdokument (scope_minst_motstand.md)",
         "isCollapsible": true,
-        "text": "Dette er det fulle innholdet fra bakgrunnsdokumentet <em>scope_minst_motstand.md</em> som definerer premissene for piloten:<br/><br/><h3>1. Organisatorisk struktur — et skille mellom drift og utførelse</h3>Syntax & Flow drives av en stabil kjerne, mens studentene utfører oppdragene. Dette er et selvstendig organ in-house på HiØ, ikke en studentforening.<br/><br/><strong>Den stabile kjernen:</strong><div class='table-container'><table class='wiki-table'><thead><tr><th>Rolle</th><th>Tilknytning</th><th>Ansvarsområde</th></tr></thead><tbody><tr><td>Daglig leder</td><td>Fast / stipendiat</td><td>Daglig drift, kundekontakt, strategi</td></tr><tr><td>Fagansvarlige</td><td>Lønnet / fagansatte</td><td>Faglig kvalitetssikring og veiledning</td></tr><tr><td>Forelesere</td><td>Trukket inn ved behov</td><td>Kvalitetssikring av komplekse leveranser</td></tr><tr><td>Styret</td><td>HiØ + uavhengige</td><td>Strategisk retning, tilsyn</td></tr></tbody></table></div><strong>Studentene (utfører oppdrag):</strong><div class='table-container'><table class='wiki-table'><thead><tr><th>Rolle</th><th>Tilknytning</th><th>Ansvarsområde</th></tr></thead><tbody><tr><td>Teammedlem</td><td>ITD35014 (10 stp)</td><td>Utfører oppgaver i tverrfaglige team</td></tr><tr><td>Teamleder</td><td>ITD35014 + erfaren</td><td>Koordinerer teamet og kundekontakt</td></tr></tbody></table></div><h3>2. Utgangspunkt: Eksisterende emne ITD35014</h3>HiØ har allerede emnet ITD35014 Bedriftspraksis (10 stp) under Fakultet for IT, ingeniørfag og økonomi (IIO). S&Fs rolle er å skaffe praksisplasser, organisere tverrfaglige team og sørge for veiledning/kvalitetssikring. Dette løser studentenes problem med å måtte skaffe praksisplass selv.<br/><br/><h3>3. Tjenester & Leveranser (Hva leveres)</h3>We skiller mellom to spor:<br/>• <strong>Spor A: Eksterne oppdrag (Kortsiktige):</strong> Enkle nettsider, logo/visuell profil, markedsanalyse, forretningsmodellering (BMC) for mikrovirksomheter.<br/>• <strong>Spor B: Interne evighetsprosjekter (Langsiktige):</strong> Tverrfaglige systemer (f.eks. internt ERP-system eller studentportal) som går over flere semestre med overlevering mellom kullene.<br/><br/><strong>Hva vi bevisst UNNGÅR i starten:</strong> Applikasjoner med sensitive databaser/personopplysninger, IT-sikkerhetsrevisjon, ekstern regnskapsføring for andre, og oppdrag som krever SLA.<br/><br/><h3>4. Kundekriterier (Hvem leverer vi til)</h3>For å unngå statsstøtteproblematikk og konkurranseklager leverer vi kun til:<br/>1. Interne avdelinger ved HiØ<br/>2. Ideelle organisasjoner, lag og foreninger<br/>3. Privatpersoner (ENK uten ansatte) og gründere i oppstartsfasen<br/>4. Mikrovirksomheter (1–5 ansatte) som bekrefter at de ikke har budsjett til kommersielle aktører.<br/><br/><h3>5. Deltakelse & Lånekassen</h3>• <strong>ITD35014 Bedriftspraksis (10 stp):</strong> Dagens eneste studieløp. Arbeidstid ca. 12–15 timer/uke. Siden programstudenter normalt tar 30 stp totalt per semester (hvor ITD35014 inngår), beholder de full basisstøtte fra Lånekassen. Lånekassens minstekrav på 15 stp gjelder kun dersom emnet tas som et frittstående enkeltemne utenom et studieprogram.<br/>• <strong>NAV-samarbeid:</strong> Utsettes til etter pilotfasen (tidligst Fase 4).<br/>• <strong>Langsiktig mål:</strong> Avklare rammene for enkeltemnestudenter vs. programstudenter for å sikre stabile rammer, samt utrede eventuell fremtidig utvidelse av ITD35014.<br/><br/><h3>6. Portalen som verifisert referansebase</h3>Portalen løser bedriftenes problem med informasjonsasymmetri ved rekruttering. I stedet for en selvrapportert CV, gir portalen dokumentert bevis på en kandidats faktiske arbeidsprestasjon over 3–6 måneder basert på rubric-vurderinger fra kunder og mentorer.<br/><br/><strong>Juridiske rammer:</strong> Fullstendig samtykkebasert (opt-in), strukturerte vurderingskriterier uten negativ fritekst, fullt innsyn og sletterett for studenten, samt begrenset tilgang for godkjente bedrifter.<br/><br/><h3>7. Organisasjon, juss & forvaltning</h3>• <strong>Organisasjonsform:</strong> AS eid av ideell stiftelse for ansvarsbegrensning og ryddig statsstøtteskille.<br/>• <strong>Samarbeid med HiØ:</strong> Betale markedspris for lokaler/mentorer (eller definere det som ordinær undervisning) for å unngå ulovlig offentlig støtte.<br/>• <strong>Kundeavtale:</strong> Standard 'as-is'-avtale med ansvarsfraskrivelse, begrenset opptil 10 000 kr.<br/>• <strong>Støtteregister:</strong> Føre de minimis-register for alle kunder (maks 300 000 EUR over 3 år).<br/><br/><h3>8. Suksesskriterier for piloten</h3>1. Ett team (3–5 studenter) gjennomfører ett prosjekt for én kunde (eller et internt evighetsprosjekt er påbegynt).<br/>2. Prosjektet fullføres innen 8–12 uker med god kundetilfredshet (NPS > 7).<br/>3. Godt rapportert læringsutbytte (> 4/5) og ingen juridiske klager eller hendelser.<br/>4. Alt er grundig dokumentert (timer, de minimis, vurderinger)."
+        "text": "Dette er det fulle innholdet fra bakgrunnsdokumentet <em>scope_minst_motstand.md</em> som definerer premissene for piloten:<br/><br/><h3>1. Organisatorisk struktur — et skille mellom drift og utførelse</h3>Syntax & Flow drives av en stabil kjerne, mens studentene utfører oppdragene. Dette er et selvstendig organ in-house på HiØ, ikke en studentforening.<br/><br/><strong>Den stabile kjernen:</strong><div class='table-container'><table class='wiki-table'><thead><tr><th>Rolle</th><th>Tilknytning</th><th>Ansvarsområde</th></tr></thead><tbody><tr><td>Daglig leder</td><td>Fast / stipendiat</td><td>Daglig drift, kundekontakt, strategi</td></tr><tr><td>Fagansvarlige</td><td>Lønnet / fagansatte</td><td>Faglig kvalitetssikring og veiledning</td></tr><tr><td>Forelesere</td><td>Trukket inn ved behov</td><td>Kvalitetssikring av komplekse leveranser</td></tr><tr><td>Styret</td><td>HiØ + uavhengige</td><td>Strategisk retning, tilsyn</td></tr></tbody></table></div><strong>Studentene (utfører oppdrag):</strong><div class='table-container'><table class='wiki-table'><thead><tr><th>Rolle</th><th>Tilknytning</th><th>Ansvarsområde</th></tr></thead><tbody><tr><td>Teammedlem</td><td>ITD35014 (10 stp)</td><td>Utfører oppgaver i tverrfaglige team</td></tr><tr><td>Teamleder</td><td>ITD35014 + erfaren</td><td>Koordinerer teamet og kundekontakt</td></tr></tbody></table></div><h3>2. Utgangspunkt: Eksisterende emne ITD35014</h3>HiØ har allerede emnet ITD35014 Bedriftspraksis (10 stp) under Fakultet for IT, ingeniørfag og økonomi (IIO). S&Fs rolle er å skaffe praksisplasser, organisere tverrfaglige team og sørge for veiledning/kvalitetssikring. Dette løser studentenes problem med å måtte skaffe praksisplass selv.<br/><br/><h3>3. Tjenester & Leveranser (Hva leveres)</h3>We skiller mellom to spor:<br/>• <strong>Spor A: Eksterne oppdrag (Kortsiktige):</strong> Enkle nettsider, logo/visuell profil, markedsanalyse, forretningsmodellering (BMC) for mikrovirksomheter.<br/>• <strong>Spor B: Interne evighetsprosjekter (Langsiktige):</strong> Tverrfaglige systemer (f.eks. internt ERP-system eller studentportal) som går over flere semestre med overlevering mellom kullene.<br/><br/><strong>Hva vi bevisst UNNGÅR i starten:</strong> Applikasjoner med sensitive databaser/personopplysninger, IT-sikkerhetsrevisjon, ekstern regnskapsføring for andre, og oppdrag som krever SLA.<br/><br/><h3>4. Kundekriterier (Hvem leverer vi to)</h3>For å unngå statsstøtteproblematikk og konkurranseklager leverer vi kun til:<br/>1. Interne avdelinger ved HiØ<br/>2. Ideelle organisasjoner, lag og foreninger<br/>3. Privatpersoner (ENK uten ansatte) og gründere i oppstartsfasen<br/>4. Mikrovirksomheter (1–5 ansatte) som bekrefter at de ikke har budsjett til kommersielle aktører.<br/><br/><h3>5. Deltakelse & Lånekassen</h3>• <strong>ITD35014 Bedriftspraksis (10 stp):</strong> Dagens eneste studieløp. Arbeidstid ca. 12–15 timer/uke. Siden programstudenter normalt tar 30 stp totalt per semester (hvor ITD35014 inngår), beholder de full basisstøtte fra Lånekassen. Lånekassens minstekrav på 15 stp gjelder kun dersom emnet tas som et frittstående enkeltemne utenom et studieprogram.<br/>• <strong>NAV-samarbeid:</strong> Utsettes til etter pilotfasen (tidligst Fase 4).<br/>• <strong>Langsiktig mål:</strong> Avklare rammene for enkeltemnestudenter vs. programstudenter for å sikre stabile rammer, samt utrede eventuell fremtidig utvidelse av ITD35014.<br/><br/><h3>6. Portalen som verifisert referansebase</h3>Portalen løser bedriftenes problem med informasjonsasymmetri ved rekruttering. I stedet for en selvrapportert CV, gir portalen dokumentert bevis på en kandidats faktiske arbeidsprestasjon over 3–6 måneder basert på rubric-vurderinger fra kunder og mentorer.<br/><br/><strong>Juridiske rammer:</strong> Fullstendig samtykkebasert (opt-in), strukturerte vurderingskriterier uten negativ fritekst, fullt innsyn og sletterett for studenten, samt begrenset tilgang for godkjente bedrifter.<br/><br/><h3>7. Organisasjon, juss & forvaltning</h3>• <strong>Organisasjonsform:</strong> AS eid av ideell stiftelse for ansvarsbegrensning og ryddig statsstøtteskille.<br/>• <strong>Samarbeid med HiØ:</strong> Betale markedspris for lokaler/mentorer (eller definere det som ordinær undervisning) for å unngå ulovlig offentlig støtte.<br/>• <strong>Kundeavtale:</strong> Standard 'as-is'-avtale med ansvarsfraskrivelse, begrenset opptil 10 000 kr.<br/>• <strong>Støtteregister:</strong> Føre de minimis-register for alle kunder (maks 300 000 EUR over 3 år).<br/><br/><h3>8. Suksesskriterier for piloten</h3>1. Ett team (3–5 studenter) gjennomfører ett prosjekt for én kunde (eller et internt evighetsprosjekt er påbegynt).<br/>2. Prosjektet fullføres innen 8–12 uker med god kundetilfredshet (NPS > 7).<br/>3. Godt rapportert læringsutbytte (> 4/5) og ingen juridiske klager eller hendelser.<br/>4. Alt er grundig dokumentert (timer, de minimis, vurderinger)."
       },
       {
-        "heading": "1. Modell med to parallelle spor",
-        "text": "For å maksimere studentenes læringsutbytte og sikre drift gjennom hele året, opererer Syntax & Flow med to spor for prosjekter:",
-        "points": [
-          "<strong>Spor A: Eksterne oppdrag (Kortsiktige):</strong> Enkle nettsider, profiler og markedsrapporter for lokale mikrovirksomheter, lag og foreninger. Disse avsluttes og overleveres innenfor ett enkelt semester.",
-          "<strong>Spor B: Interne evighetsprosjekter (Langsiktige):</strong> Større tverrfaglige IT- og analysesystemer (f.eks. integrert timeføringsportal, ERP-system eller ressursplanlegger for campus). Disse går over flere semestre, der nye studentkull overtar og bygger videre på det forrige kullets arbeid."
-        ]
-      },
-      {
-        "heading": "2. Overordnet Scope",
+        "heading": "1. Overordnet Scope",
         "table": {
           "headers": [
             "Dimensjon",
@@ -701,7 +746,7 @@ export const wikiData = [
         }
       },
       {
-        "heading": "3. Tjenester Scope",
+        "heading": "2. Tjenester Scope",
         "table": {
           "headers": [
             "Tjenesteområde",
@@ -733,7 +778,7 @@ export const wikiData = [
         }
       },
       {
-        "heading": "4. Kunder & Oppdragsgivere",
+        "heading": "3. Kunder & Oppdragsgivere",
         "table": {
           "headers": [
             "Kunde-type",
@@ -760,7 +805,7 @@ export const wikiData = [
         }
       },
       {
-        "heading": "5. Studenter & Rekruttering",
+        "heading": "4. Studenter & Rekruttering",
         "table": {
           "headers": [
             "Aspekt",
@@ -792,7 +837,7 @@ export const wikiData = [
         }
       },
       {
-        "heading": "6. Evighetsprosjekter (Detaljert)",
+        "heading": "5. Evighetsprosjekter (Detaljert)",
         "table": {
           "headers": [
             "Fagdisiplin",
@@ -822,25 +867,12 @@ export const wikiData = [
             ]
           ]
         }
-      },
-      {
-        "heading": "7. Suksesskriterier for piloten",
-        "points": [
-          "Ett tverrfaglig team (3-5 studenter) gjennomfører enten ett eksternt prosjekt for en mikrobedrift eller starter et internt evighetsprosjekt.",
-          "Prosjektet fullføres innenfor tidsrammen på 8–12 uker.",
-          "Kunden rapporterer høy tilfredshet (NPS > 7), eller intern faglig oppdragsgiver godkjenner evighetsprosjektets leveranse.",
-          "Studentene rapporterer høyt læringsutbytte (> 4/5).",
-          "Null klager fra konkurrenter eller juridiske hendelser knyttet til oppstarten.",
-          "<strong>Timeføring:</strong> Hver student må dokumentere minimum 180 arbeidstimer (krav fra ITD35014). Timene føres i et felles system (f.eks. Google Sheets eller et enkelt verktøy) og signeres av mentor. Dette er også grunnlaget for Lånekassen-dokumentasjon og vurdering (Bestått/Ikke bestått).",
-          "<strong>Overleveringsplan:</strong> Et dokument som beskriver hva som overleveres til neste kull eller kunde ved prosjektslutt: kildekode (med repo-tilgang), dokumentasjon (arkitektur, brukerveiledning), passord og tilganger, Figma-filer, åpne punkter og status. Uten overleveringsplan stopper evighetsprosjektet opp ved semesterovergang.",
-          "<strong>Støtteregister:</strong> En løpende logg over hver kunde og hvilken markedsverdi tjenestene har hatt. Dette er kritisk for å holde seg under de minimis-grensen (300 000 EUR over 3 år per kunde) og unngå ESA-tilbakebetalingskrav. Registeret føres av økonomistudentene og kontrolleres av daglig leder."
-        ]
       }
     ],
     "tldr": [
-      "Prosjektene deles inn i eksterne oppdrag (kortsiktige landingssider/analyser) og interne evighetsprosjekter (langsiktige IT-systemer).",
-      "Scope definerer strengt hva som skal gjøres (in-scope) og hva som ikke skal gjøres (out-scope) for å holde risikoen lav.",
-      "Suksesskriteriene krever timeføring (min. 180t), overleveringsplan og de minimis-registering for alle oppdrag."
+      "Scope definerer strengt hva som skal gjøres (in-scope) og hva som ikke skal gjøres (out-scope) for å sikre piloten minst mulig motstand.",
+      "Det er etablert klare grenser for prosjekter, tjenesteområder, kunder og studenters deltakelse.",
+      "Alle leveranser må godkjennes av faglige mentorer (HiØ-forelesere) før overlevering."
     ]
   },
   {
@@ -2142,6 +2174,20 @@ export const wikiData = [
           ]
         },
         "isCollapsible": true
+      },
+      {
+        "heading": "7. Suksesskriterier for piloten",
+        "text": "For at piloten skal regnes som en suksess og danne grunnlag for videre drift, må følgende kriterier oppfylles:",
+        "points": [
+          "Ett tverrfaglig team (3-5 studenter) gjennomfører enten ett eksternt prosjekt for en mikrobedrift eller starter et internt evighetsprosjekt.",
+          "Prosjektet fullføres innenfor tidsrammen på 8–12 uker.",
+          "Kunden rapporterer høy tilfredshet (NPS > 7), eller intern faglig oppdragsgiver godkjenner evighetsprosjektets leveranse.",
+          "Studentene rapporterer høyt læringsutbytte (> 4/5).",
+          "Null klager fra konkurrenter eller juridiske hendelser knyttet til oppstarten.",
+          "<strong>Timeføring:</strong> Hver student må dokumentere minimum 180 arbeidstimer (krav fra ITD35014). Timene føres i et felles system (f.eks. Google Sheets eller et enkelt verktøy) og signeres av mentor. Dette er også grunnlaget for Lånekassen-dokumentasjon og vurdering (Bestått/Ikke bestått).",
+          "<strong>Overleveringsplan:</strong> Et dokument som beskriver hva som overleveres til neste kull eller kunde ved prosjektslutt: kildekode (med repo-tilgang), dokumentasjon (arkitektur, brukerveiledning), passord og tilganger, Figma-filer, åpne punkter og status. Uten overleveringsplan stopper evighetsprosjektet opp ved semesterovergang.",
+          "<strong>Støtteregister:</strong> En løpende logg over hver kunde og hvilken markedsverdi tjenestene har hatt. Dette er kritisk for å holde seg under de minimis-grensen (300 000 EUR over 3 år per kunde) og unngå ESA-tilbakebetalingskrav. Registeret føres av økonomistudentene og kontrolleres av daglig leder."
+        ]
       }
     ],
     "tldr": [

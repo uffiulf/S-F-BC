@@ -118,27 +118,99 @@ BA økonomi og administrasjon har fagområder som samfunnsøkonomi, bedriftsøko
 Hold beskrivelsene korte og nøytrale. Tjenestekatalogen er stedet for detaljerte oppgaver.
 Hvor: "Organisasjon & Drift"-siden, trelagsmodellen
 
-### 22.06.2026 — Legg til fremdriftsindikator for Business Case på Dashboard
+### 22.06.2026 — Legg til fremdriftsindikator for Business Case nederst på Dashboard
 Prioritet: Høy
 Kilde: Prosjekteier
-Hva: På Dashboard-siden, under "Hvordan henger business casen sammen?"-seksjonen, legg til en visuell progressjonsbar for hvert av de 6 trinnene i business casen. Hvert trinn skal ha:
+Hva: Helt nederst på Dashboard-siden, legg til en ny seksjon med tittelen "Business Case Fremdrift". Seksjonen skal inneholde en tabell eller visuell liste over alle Business Case-områdene med prosent fullført, fargekode og status-tekst:
 
-- **Trinn 1: Forretningsidé** — 100 % — Grønn — Navigerer til Mål & Visjon
-- **Trinn 2: Value Proposition (VPC)** — 100 % — Grønn — Navigerer til Forretningsmodell & VPC
-- **Trinn 3: Forretningsmodell** — 90 % — Blå — Navigerer til Forretningsmodell & VPC (mangler detaljert enhetsøkonomi)
-- **Trinn 4: Marked & Konkurranse** — 80 % — Blå — Navigerer til Marked & Konkurranse (mangler TAM/SAM/SOM, kundeintervjuer)
-- **Trinn 5: Scope** — 100 % — Grønn — Navigerer til Scope-siden
-- **Trinn 6: Risiko & Juss** — 90 % — Blå — Navigerer til Risiko & Jus (mangler DPIA)
+| Område | Status | % |
+|--------|--------|---|
+| Executive Summary | ❌ Mangler | 0 % |
+| Problembeskrivelse | 🟡 Delvis (mangler kvantitativ underbygning, personas) | 60 % |
+| Value Proposition / VPC | ✅ Ferdig | 100 % |
+| Forretningsmodell | 🟡 Delvis (mangler enhetsøkonomi) | 70 % |
+| Markedsanalyse | 🟡 Delvis (mangler intervjuer med lokale bedrifter, TAM/SAM/SOM-beregning) | 50 % |
+| Scope | ✅ Ferdig | 100 % |
+| Risiko & Juss | 🟡 Delvis (mangler DPIA, forsikring) | 80 % |
+| Finansiering | 🟡 Delvis (mangler 3-års prognose, konkret søknad) | 40 % |
+| Team & Organisasjon | 🟡 Delvis (mangler navngitte personer) | 40 % |
+| Gjennomføringsplan | ✅ Ferdig (mangler Gantt-diagram) | 90 % |
+| Vedlegg | 🟡 Delvis (ikke organisert) | 40 % |
 
-Hvert trinn skal vises som en horisontal boks/bar med:
-- Trinnnummer og tittel
-- En fylt progressjonslinje som viser prosent
-- Fargekode (grønn/blå/gul/rød)
-- Status-tekst (f.eks. "Komplett", "Mangler enhetsøkonomi", "Mangler kundeintervjuer")
-- Klikkbar — navigerer til riktig side
+Hver rad skal ha:
+- En visuell progressjonsbar (fylt linje) som viser prosenten
+- Fargekode: Grønn (100%), Blå (70-99%), Gul (40-69%), Rød (under 40%)
+- Klikkbar — navigerer til aktuell side (f.eks. "Scope" → Scope-siden)
 
-Designet skal være visuelt og oversiktlig, slik at man ser ved første øyekast hvor business casen står.
-Hvor: Dashboard-siden, under "Hvordan henger business casen sammen?"
+Bruk eksisterende CSS-klasser og ikoner.
+Hvor: Helt nederst på Dashboard-siden
+
+### 22.06.2026 — Rett opp "de minimis"-feil på infosiden — har blitt forkortet til "n"
+Prioritet: Høy
+Kilde: Gjennomgang av wikiData.js og App.jsx
+Hva: Gemini har automatisk forkortet "de minimis" til bare "n" overalt på infosiden. Dette må rettes. Søk opp ALLE forekomster av "n" i wikiData.js og App.jsx som refererer til de minimis, og erstatt med fullt begrep "de minimis". 
+
+Spesielt:
+- "n-register" → "de minimis-register"
+- "n-grensen" → "de minimis-grensen"
+- "n-verdier" → "de minimis-verdier"
+- "n-støtte" → "de minimis-støtte"
+- "Intern n" → "de minimis kalkulator"
+- "n Statsstøtte" → "De minimis statsstøtte"
+- "n-registerføring" → "de minimis-registerføring"
+- "n-kontroll" → "de minimis-kontroll"
+- Forklaringer som sier "n" uten kontekst → "de minimis (bagatellmessig støtte)"
+
+Gå gjennom ALL tekst. "n" som står alene og refererer til de minimis må fikses overalt.
+Hvor: wikiData.js og App.jsx
+
+### 22.06.2026 — Splitt "Forretningsmodell & VPC" til to separate sider
+Prioritet: Høy
+Kilde: Prosjekteier
+Hva: Del den eksisterende siden "Forretningsmodell & VPC" i to separate sider under "Business Case":
+
+**Side 1: "Forretningsmodell"**
+- Kategori: Business Case
+- Ikon: BarChart3
+- Innhold:
+  - Win-Win-Win Forretningsmodell (eksisterende tekst)
+  - Samarbeidsavtalen & Betinget SLA / forpliktende milepælsplan
+  - Modell med to parallelle spor (evighetsprosjekter + eksterne oppdrag) — flyttet hit fra Scope
+  - Studentrekruttering / ITD35014
+
+**Side 2: "VPC — Verdiskapning"**
+- Kategori: Business Case
+- Ikon: Gift
+- Innhold:
+  - Den utdypende verdiskapningsteksten (fra verdiskapning_vpc_oppsummering.md)
+  - VPC-visningene (student, HiØ, næringsliv) — behold interaktiv VPC med faner
+
+Navigasjonen i sidemenyen skal vise begge som separate punkter under "Business Case".
+Hvor: wikiData.js — ny sidestruktur
+
+### 22.06.2026 — Flytt innhold på Scope-siden og oppdater kategorinavn
+Prioritet: Høy
+Kilde: Prosjekteier
+Hva: Gjør følgende endringer på infosiden:
+
+1. **Scope-siden:** Endre kategorinavn fra "Scope & Omfang" til bare "Scope"
+
+2. **Flytt "Modell med to parallelle spor"** (evighetsprosjekter og eksterne oppdrag) fra Scope-siden til "Forretningsmodell & VPC"-siden. Dette passer bedre under forretningsmodellbeskrivelsen. Plasser det som en ny seksjon under den eksisterende "Win-Win-Win Forretningsmodell".
+
+3. **Flytt "Suksesskriterier for piloten"** fra Scope-siden til "Gjennomføringsplan"-siden. Det er en naturlig del av fremdriftsplanen, ikke scopet. Plasser det som en egen seksjon mot slutten av Gjennomføringsplan-siden.
+
+Sørg for at innholdet forblir identisk — bare flyttet til nye steder.
+Hvor: Scope-siden → Forretningsmodell & VPC og Gjennomføringsplan
+
+### 22.06.2026 — Legg til filter-funksjonalitet på ordlisten
+Prioritet: Lav
+Kilde: Prosjekteier
+Hva: På Ordliste-siden, legg til en knapp/toggle øverst som lar brukeren velge mellom:
+1. "Alfabetisk" (standard — dagens visning)
+2. "Etter kategori" — gruppér ordene i kategorier som: Jus/EØS, Marked/Forretning, Prosjektledelse, Organisasjon, Personvern/GDPR, Student/Utdanning
+
+Bruk eksisterende CSS-klasser. Kategoriene kan settes manuelt på hvert ord i data-strukturen.
+Hvor: Ordliste-siden
 
 ### 22.06.2026 — Forbedre grafisk fremstilling på infosiden
 Prioritet: Middels
@@ -349,3 +421,7 @@ Hvor: Ny seksjon under "Analyser" eller "Guidelines"
 | 23.06.2026 | Legg til interaktive koblinger fra SWOT-weaknesses til risikomatrisen | Utført |
 | 23.06.2026 | Legg til intern budsjett- og De Minimis-kalkulator under Risiko & Jus | Utført |
 | 23.06.2026 | Øk avstand over beredskapsplan på Gjennomføringsplan-siden | Utført |
+| 22.06.2026 | Legg til fremdriftsindikator for Business Case nederst på Dashboard | Utført |
+| 22.06.2026 | Splitt "Forretningsmodell & VPC" til to separate sider | Utført |
+| 22.06.2026 | Flytt innhold på Scope-siden og oppdater kategorinavn | Utført |
+| 22.06.2026 | Legg til filter-funksjonalitet på ordlisten | Utført |

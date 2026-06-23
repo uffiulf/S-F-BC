@@ -71,7 +71,9 @@
 | **Risk Management** | Prosessen med å identifisere, vurdere og håndtere risikoer i et prosjekt eller en organisasjon. |
 | **ROI** | Return on Investment. Avkastning på investering. Måler hvor lønnsom en investering er. |
 | **Rubric** | Rubric (vurderingsmatrise). Strukturerte kriterier for vurdering, f.eks. 1–5 på definerte dimensjoner. |
+| **SAM (Serviceable Addressable Market)** | Den delen av TAM som dine produkter/tjenester faktisk kan nå, gitt geografiske og markedmessige begrensninger. |
 | **SLA** | Service Level Agreement. Avtale om leveransenivå og garantier. Syntax & Flow tilbyr normalt ikke SLA. |
+| **SOM (Serviceable Obtainable Market)** | Den realistiske markedsandelen du faktisk kan forvente å få i en gitt periode, innenfor SAM. |
 | **Stakeholder** | Interessent. En person eller gruppe som har interesse i eller påvirkes av et prosjekt. |
 | **Stakeholder Management** | Prosessen med å kartlegge, kommunisere med og håndtere forventningene til interessenter. |
 | **Storyboard** | Visuell fremstilling av en brukerreise eller prosess, bilde for bilde, brukt i design og planlegging. |

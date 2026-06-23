@@ -21,6 +21,7 @@ export default function App() {
   const [calcRate, setCalcRate] = useState(800);
   const [calcMentorHours, setCalcMentorHours] = useState(20);
   const [calcMentorRate, setCalcMentorRate] = useState(600);
+  const [ordlisteMode, setOrdlisteMode] = useState("alphabetical");
   const searchInputRef = useRef(null);
   const skipResetRef = useRef(false);
 
@@ -37,6 +38,7 @@ export default function App() {
     }
     setOpenSections({});
     setTldrExpanded(false);
+    setOrdlisteMode("alphabetical");
     window.scrollTo(0, 0);
   }, [activePage]);
 
@@ -517,7 +519,7 @@ export default function App() {
                 )}
 
                 {/* Standard sections */}
-                {currentPage.sections && currentPage.id !== "prosjektplan" && currentPage.id !== "gjennomforingsplan" && currentPage.sections.map((sec, idx) => {
+                {currentPage.sections && currentPage.id !== "prosjektplan" && currentPage.id !== "gjennomforingsplan" && currentPage.id !== "ordliste" && currentPage.sections.map((sec, idx) => {
                   const isCollapsible = !!sec.isCollapsible;
                   const sectionKey = `${currentPage.id}-${idx}`;
                   const isOpen = !!openSections[sectionKey];
@@ -916,6 +918,277 @@ export default function App() {
                   );
                 })}
 
+                {/* Custom: Business Case Fremdrift for Dashboard page */}
+                {currentPage.id === "dashboard" && (
+                  <div className="business-case-progress mt-12 glass-card animate-fade-in" style={{ padding: '24px', borderRadius: '16px', marginTop: '48px', border: '1px solid var(--border-color)' }}>
+                    <style dangerouslySetInnerHTML={{ __html: `
+                      .progress-row-item:hover {
+                        background: rgba(255, 255, 255, 0.03) !important;
+                        border-color: var(--border-color-active) !important;
+                        box-shadow: 0 4px 20px var(--accent-glow);
+                        transform: translateX(4px);
+                      }
+                    `}} />
+                    
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '16px' }}>
+                      <Icons.TrendingUp className="w-6 h-6 text-accent" />
+                      <h2 style={{ margin: 0, fontSize: '1.5rem', fontWeight: 700 }}>Business Case Fremdrift</h2>
+                    </div>
+                    <p className="text-secondary mb-6" style={{ fontSize: '0.9rem', color: 'var(--text-muted)', marginBottom: '24px', lineHeight: '1.6' }}>
+                      Oversikt over fremdrift og fullføringsgrad for de ulike delene av Syntax & Flows Business Case. Klikk på et område for å navigere til den tilsvarende siden.
+                    </p>
+
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+                      {[
+                        { area: "Executive Summary", status: "❌ Mangler", percentage: 0, link: "dashboard", statusText: "Mangler" },
+                        { area: "Problembeskrivelse", status: "🟡 Delvis", percentage: 60, link: "dashboard", statusText: "Mangler kvantitativ underbygning, personas" },
+                        { area: "Value Proposition / VPC", status: "✅ Ferdig", percentage: 100, link: "vpc-verdiskapning", statusText: "Ferdig" },
+                        { area: "Forretningsmodell", status: "🟡 Delvis", percentage: 70, link: "forretningsmodell", statusText: "Mangler enhetsøkonomi" },
+                        { area: "Markedsanalyse", status: "🟡 Delvis", percentage: 50, link: "markeds-og-konkurranseanalyse", statusText: "Mangler lokale bedriftsintervjuer, TAM/SAM/SOM" },
+                        { area: "Scope", status: "✅ Ferdig", percentage: 100, link: "scope", statusText: "Ferdig" },
+                        { area: "Risiko & Juss", status: "🟡 Delvis", percentage: 80, link: "risiko-og-jus", statusText: "Mangler DPIA, forsikring" },
+                        { area: "Finansiering", status: "🟡 Delvis", percentage: 40, link: "risiko-og-jus", statusText: "Mangler 3-års prognose, konkret søknad" },
+                        { area: "Team & Organisasjon", status: "🟡 Delvis", percentage: 40, link: "organisasjon-og-drift", statusText: "Mangler navngitte personer" },
+                        { area: "Gjennomføringsplan", status: "✅ Ferdig", percentage: 90, link: "gjennomforingsplan", statusText: "Mangler Gantt-diagram" },
+                        { area: "Vedlegg", status: "🟡 Delvis", percentage: 40, link: "maler-og-utkast", statusText: "Ikke organisert" },
+                      ].map((item, idx) => {
+                        let barColor = "#ef4444";
+                        let badgeBg = "rgba(239, 68, 68, 0.1)";
+                        let badgeText = "#ef4444";
+
+                        if (item.percentage === 100) {
+                          barColor = "#10b981";
+                          badgeBg = "var(--badge-bg-green)";
+                          badgeText = "var(--badge-text-green)";
+                        } else if (item.percentage >= 70) {
+                          barColor = "#3b82f6";
+                          badgeBg = "var(--badge-bg-blue)";
+                          badgeText = "var(--badge-text-blue)";
+                        } else if (item.percentage >= 40) {
+                          barColor = "#f59e0b";
+                          badgeBg = "rgba(245, 158, 11, 0.1)";
+                          badgeText = "#d97706";
+                        }
+
+                        return (
+                          <div
+                            key={idx}
+                            onClick={() => {
+                              setActivePage(item.link);
+                              window.scrollTo({ top: 0, behavior: 'smooth' });
+                            }}
+                            className="progress-row-item animate-fade-in"
+                            style={{
+                              display: 'flex',
+                              flexDirection: 'column',
+                              gap: '8px',
+                              padding: '16px',
+                              borderRadius: '12px',
+                              background: 'rgba(255, 255, 255, 0.01)',
+                              border: '1px solid var(--border-color)',
+                              cursor: 'pointer',
+                              transition: 'all 0.2s ease',
+                            }}
+                          >
+                            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '8px' }}>
+                              <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                                <span style={{ fontWeight: 600, fontSize: '0.975rem' }}>{item.area}</span>
+                                <span style={{
+                                  fontSize: '0.75rem',
+                                  padding: '2px 8px',
+                                  borderRadius: '6px',
+                                  backgroundColor: badgeBg,
+                                  color: badgeText,
+                                  fontWeight: 600
+                                }}>
+                                  {item.status}
+                                </span>
+                              </div>
+                              <span style={{ fontSize: '0.9rem', fontWeight: 700, color: barColor }}>{item.percentage} %</span>
+                            </div>
+
+                            <div style={{
+                              width: '100%',
+                              height: '8px',
+                              backgroundColor: 'rgba(255, 255, 255, 0.05)',
+                              borderRadius: '4px',
+                              overflow: 'hidden'
+                            }}>
+                              <div style={{
+                                width: `${item.percentage}%`,
+                                height: '100%',
+                                backgroundColor: barColor,
+                                borderRadius: '4px',
+                                transition: 'width 0.6s cubic-bezier(0.4, 0, 0.2, 1)'
+                              }} />
+                            </div>
+
+                            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '0.8rem', color: 'var(--text-muted)', marginTop: '2px' }}>
+                              <span>{item.statusText}</span>
+                              <span style={{ display: 'flex', alignItems: 'center', gap: '4px', color: 'var(--accent-light)' }}>
+                                Vis side <Icons.ArrowRight className="w-3 h-3" />
+                              </span>
+                            </div>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
+                )}
+
+                {/* Custom: Ordliste page rendering with Category Filter */}
+                {currentPage.id === "ordliste" && (() => {
+                  const allGlossaryTerms = [];
+                  currentPage.sections.forEach(sec => {
+                    if (sec.table && sec.table.rows) {
+                      sec.table.rows.forEach(row => {
+                        allGlossaryTerms.push({
+                          term: row[0],
+                          definition: row[1],
+                          category: row[2] || "Organisasjon"
+                        });
+                      });
+                    }
+                  });
+
+                  const cleanTermName = (html) => html.replace(/<[^>]*>/g, '').trim().toLowerCase();
+                  allGlossaryTerms.sort((a, b) => cleanTermName(a.term).localeCompare(cleanTermName(b.term)));
+
+                  const categoriesOrder = ["Jus/EØS", "Marked/Forretning", "Prosjektledelse", "Organisasjon", "Personvern/GDPR", "Student/Utdanning"];
+                  const groupedTerms = {};
+                  allGlossaryTerms.forEach(item => {
+                    if (!groupedTerms[item.category]) {
+                      groupedTerms[item.category] = [];
+                    }
+                    groupedTerms[item.category].push(item);
+                  });
+
+                  return (
+                    <div className="ordliste-container animate-fade-in">
+                      
+                      <div className="flex items-center gap-3 mb-8" style={{ display: 'flex', gap: '12px', marginBottom: '32px', borderBottom: '1px solid var(--border-color)', paddingBottom: '16px' }}>
+                        <span style={{ fontSize: '0.9rem', color: 'var(--text-muted)', fontWeight: 500 }}>Sortering:</span>
+                        <button
+                          onClick={() => setOrdlisteMode("alphabetical")}
+                          className={`btn ${ordlisteMode === "alphabetical" ? "active" : ""}`}
+                          style={{
+                            padding: '6px 16px',
+                            borderRadius: '8px',
+                            fontWeight: 600,
+                            fontSize: '0.85rem',
+                            cursor: 'pointer',
+                            border: '1px solid var(--border-color)',
+                            backgroundColor: ordlisteMode === "alphabetical" ? 'var(--accent-color)' : 'rgba(255, 255, 255, 0.02)',
+                            color: ordlisteMode === "alphabetical" ? '#ffffff' : 'var(--text-primary)',
+                            transition: 'all 0.2s ease',
+                          }}
+                        >
+                          🔤 Alfabetisk
+                        </button>
+                        <button
+                          onClick={() => setOrdlisteMode("category")}
+                          className={`btn ${ordlisteMode === "category" ? "active" : ""}`}
+                          style={{
+                            padding: '6px 16px',
+                            borderRadius: '8px',
+                            fontWeight: 600,
+                            fontSize: '0.85rem',
+                            cursor: 'pointer',
+                            border: '1px solid var(--border-color)',
+                            backgroundColor: ordlisteMode === "category" ? 'var(--accent-color)' : 'rgba(255, 255, 255, 0.02)',
+                            color: ordlisteMode === "category" ? '#ffffff' : 'var(--text-primary)',
+                            transition: 'all 0.2s ease',
+                          }}
+                        >
+                          📂 Etter kategori
+                        </button>
+                      </div>
+
+                      {ordlisteMode === "alphabetical" ? (
+                        currentPage.sections.map((sec, idx) => (
+                          <div key={idx} className="wiki-section mb-8" style={{ marginBottom: '32px' }}>
+                            <h2 style={{ fontSize: '1.25rem', marginBottom: '16px', borderBottom: '1px solid var(--border-color)', paddingBottom: '8px', color: 'var(--accent-light)' }}>{sec.heading}</h2>
+                            {sec.table && (
+                              <div className="table-container">
+                                <table className="wiki-table">
+                                  <thead>
+                                    <tr>
+                                      <th style={{ width: '30%' }}>Begrep</th>
+                                      <th>Forklaring</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    {sec.table.rows.map((row, rIdx) => (
+                                      <tr key={rIdx}>
+                                        <td dangerouslySetInnerHTML={{ __html: row[0] }} />
+                                        <td dangerouslySetInnerHTML={{ __html: row[1] }} />
+                                      </tr>
+                                    ))}
+                                  </tbody>
+                                </table>
+                              </div>
+                            )}
+                          </div>
+                        ))
+                      ) : (
+                        <div className="categories-glossary-wrapper">
+                          {categoriesOrder.map((catName) => {
+                            const terms = groupedTerms[catName] || [];
+                            if (terms.length === 0) return null;
+                            
+                            let CatIcon = Icons.BookOpen;
+                            if (catName === "Jus/EØS") CatIcon = Icons.Scale;
+                            if (catName === "Marked/Forretning") CatIcon = Icons.TrendingUp;
+                            if (catName === "Prosjektledelse") CatIcon = Icons.ClipboardList;
+                            if (catName === "Organisasjon") CatIcon = Icons.Network;
+                            if (catName === "Personvern/GDPR") CatIcon = Icons.Shield;
+                            if (catName === "Student/Utdanning") CatIcon = Icons.GraduationCap;
+
+                            return (
+                              <div key={catName} className="wiki-section mb-8" style={{ marginBottom: '36px' }}>
+                                <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '16px', borderBottom: '1px solid var(--border-color)', paddingBottom: '8px' }}>
+                                  <CatIcon className="w-5 h-5 text-accent-light" style={{ color: 'var(--accent-light)' }} />
+                                  <h2 style={{ margin: 0, fontSize: '1.25rem', display: 'flex', alignItems: 'center', gap: '10px', flex: 1 }}>
+                                    <span>{catName}</span>
+                                    <span style={{ 
+                                      fontSize: '0.75rem', 
+                                      fontWeight: 600, 
+                                      padding: '2px 8px', 
+                                      borderRadius: '9999px', 
+                                      backgroundColor: 'var(--badge-bg-blue)', 
+                                      color: 'var(--badge-text-blue)' 
+                                    }}>
+                                      {terms.length} {terms.length === 1 ? 'begrep' : 'begreper'}
+                                    </span>
+                                  </h2>
+                                </div>
+                                <div className="table-container">
+                                  <table className="wiki-table">
+                                    <thead>
+                                      <tr>
+                                        <th style={{ width: '30%' }}>Begrep</th>
+                                        <th>Forklaring</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      {terms.map((item, tIdx) => (
+                                        <tr key={tIdx}>
+                                          <td dangerouslySetInnerHTML={{ __html: item.term }} />
+                                          <td dangerouslySetInnerHTML={{ __html: item.definition }} />
+                                        </tr>
+                                      ))}
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                            );
+                          })}
+                        </div>
+                      )}
+                    </div>
+                  );
+                })()}
+
                 {/* Custom: Prosjektplan timeline rendering */}
                 {currentPage.id === "prosjektplan" && (
                   <div className="project-timeline-container animate-fade-in">
@@ -1149,6 +1422,73 @@ export default function App() {
                               </div>
                             </div>
                           ))}
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Suksesskriterier Section */}
+                    {currentPage.sections[6] && (
+                      <div className="success-criteria-section mt-12" style={{ marginTop: '72px' }}>
+                        <div className="section-header" style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '16px' }}>
+                          <Icons.Award className="w-6 h-6 text-emerald-500" />
+                          <h2 className="m-0">{currentPage.sections[6].heading.replace(/^\d+\.\s*/, "")}</h2>
+                        </div>
+                        <p className="text-secondary mb-6">{currentPage.sections[6].text}</p>
+                        
+                        <div className="grid-3">
+                          {currentPage.sections[6].points.map((pt, ptIdx) => {
+                            let title = "";
+                            let desc = pt;
+                            const match = pt.match(/^<strong>(.*?)<\/strong>:\s*(.*)/);
+                            if (match) {
+                              title = match[1];
+                              desc = match[2];
+                            } else {
+                              const match2 = pt.match(/^(.*?):\s*(.*)/);
+                              if (match2) {
+                                title = match2[1];
+                                desc = match2[2];
+                              }
+                            }
+                            
+                            const successIcons = [
+                              Icons.Users,          // 1. Ett tverrfaglig team
+                              Icons.Clock,          // 2. Tidsramme 8-12 uker
+                              Icons.Smile,          // 3. Kundetilfredshet
+                              Icons.GraduationCap,  // 4. Læringsutbytte
+                              Icons.ShieldCheck,    // 5. Ingen klager
+                              Icons.CalendarCheck,  // 6. Timeføring
+                              Icons.FileText,       // 7. Overleveringsplan
+                              Icons.BookOpen        // 8. Støtteregister
+                            ];
+                            const IconComponent = successIcons[ptIdx] || Icons.CheckCircle;
+
+                            return (
+                              <div key={ptIdx} className="success-card glass-card" style={{ padding: '20px', borderRadius: '12px' }}>
+                                <div className="card-header" style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '12px' }}>
+                                  <div className="icon-wrapper" style={{ 
+                                    background: 'var(--badge-bg-blue)', 
+                                    color: 'var(--badge-text-blue)', 
+                                    padding: '8px', 
+                                    borderRadius: '8px', 
+                                    display: 'flex', 
+                                    alignItems: 'center', 
+                                    justifyContent: 'center' 
+                                  }}>
+                                    <IconComponent className="w-5 h-5" />
+                                  </div>
+                                  {title ? (
+                                    <h3 className="m-0 text-primary" style={{ fontSize: '1rem', fontWeight: 600 }}>{title}</h3>
+                                  ) : (
+                                    <h3 className="m-0 text-primary" style={{ fontSize: '1rem', fontWeight: 600 }}>Kriterium {ptIdx + 1}</h3>
+                                  )}
+                                </div>
+                                <div className="card-body">
+                                  <p style={{ fontSize: '0.875rem', lineHeight: '1.5', color: 'var(--text-secondary)', margin: 0 }} dangerouslySetInnerHTML={{ __html: desc }} />
+                                </div>
+                              </div>
+                            );
+                          })}
                         </div>
                       </div>
                     )}
