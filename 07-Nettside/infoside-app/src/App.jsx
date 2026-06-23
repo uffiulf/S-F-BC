@@ -16,6 +16,11 @@ export default function App() {
   const [activePostIt, setActivePostIt] = useState(null);
   const [openSections, setOpenSections] = useState({});
   const [tldrExpanded, setTldrExpanded] = useState(false);
+  const [calcStudents, setCalcStudents] = useState(5);
+  const [calcHours, setCalcHours] = useState(180);
+  const [calcRate, setCalcRate] = useState(800);
+  const [calcMentorHours, setCalcMentorHours] = useState(20);
+  const [calcMentorRate, setCalcMentorRate] = useState(600);
   const searchInputRef = useRef(null);
   const skipResetRef = useRef(false);
 
@@ -39,6 +44,43 @@ export default function App() {
     skipResetRef.current = true;
     setActivePage("forslag-utforelse");
     setActiveAdjustmentIdx(adjId - 1);
+  };
+
+  const renderWeaknessText = (text) => {
+    const match = text.match(/\[(R\d+)\]/);
+    if (match) {
+      const riskIdStr = match[1];
+      const riskId = parseInt(riskIdStr.replace('R', ''), 10);
+      const parts = text.split(/(\[R\d+\])/);
+      return (
+        <>
+          {parts.map((part, i) => {
+            if (part.match(/\[R\d+\]/)) {
+              return (
+                <span
+                  key={i}
+                  onClick={() => {
+                    setSelectedRiskId(riskId);
+                    setTimeout(() => {
+                      const el = document.getElementById("selected-risk-detail");
+                      if (el) {
+                        el.scrollIntoView({ behavior: "smooth", block: "center" });
+                      }
+                    }, 50);
+                  }}
+                  className="risk-link"
+                  title={`Klikk for å se tiltak for risiko ${part}`}
+                >
+                  {part}
+                </span>
+              );
+            }
+            return <span key={i} dangerouslySetInnerHTML={{ __html: part }} />;
+          })}
+        </>
+      );
+    }
+    return <span dangerouslySetInnerHTML={{ __html: text }} />;
   };
 
   const toggleSection = (sectionKey) => {
@@ -781,6 +823,93 @@ export default function App() {
                               </table>
                             </div>
                           )}
+
+                          {sec.heading === "1. Kostnadsanalyse & Budsjett" && currentPage.id === "risiko-og-jus" && (
+                            <div className="budget-calculator-container glass-card mt-6 p-6 animate-fade-in" style={{ padding: '24px', borderRadius: '16px', border: '1px solid var(--border-color)', background: 'rgba(255, 255, 255, 0.02)', marginTop: '24px' }}>
+                              <h3 style={{ marginTop: 0, marginBottom: '16px', display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--accent-color)', fontSize: '1.15rem' }}>
+                                <Icons.Coins className="w-5 h-5 text-accent animate-pulse" />
+                                <span>Intern Kalkulator: Verdi & Statsstøtte (De Minimis)</span>
+                              </h3>
+                              <p className="text-secondary mb-6" style={{ fontSize: '0.875rem', color: 'var(--text-muted)', marginBottom: '20px', lineHeight: '1.5' }}>
+                                Regneverktøy for prosjektgruppen for å beregne fiktiv markedsverdi av levert arbeid per team, og loggføre statsstøtteverdien (De Minimis-registeret).
+                              </p>
+
+                              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '20px', marginBottom: '24px' }}>
+                                {/* Inputs column 1 */}
+                                <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                                  <div>
+                                    <label style={{ fontSize: '0.85rem', fontWeight: 600, display: 'block', marginBottom: '4px' }}>Antall studenter i teamet:</label>
+                                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                                      <input type="range" min="1" max="15" value={calcStudents} onChange={(e) => setCalcStudents(parseInt(e.target.value))} style={{ flex: 1 }} />
+                                      <span style={{ fontSize: '0.9rem', fontWeight: 'bold', width: '30px', textAlign: 'right' }}>{calcStudents}</span>
+                                    </div>
+                                  </div>
+                                  <div>
+                                    <label style={{ fontSize: '0.85rem', fontWeight: 600, display: 'block', marginBottom: '4px' }}>Arbeidstimer per student:</label>
+                                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                                      <input type="range" min="50" max="300" step="10" value={calcHours} onChange={(e) => setCalcHours(parseInt(e.target.value))} style={{ flex: 1 }} />
+                                      <span style={{ fontSize: '0.9rem', fontWeight: 'bold', width: '40px', textAlign: 'right' }}>{calcHours}t</span>
+                                    </div>
+                                  </div>
+                                  <div>
+                                    <label style={{ fontSize: '0.85rem', fontWeight: 600, display: 'block', marginBottom: '4px' }}>Kommersiell timepris (NOK):</label>
+                                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                                      <input type="range" min="400" max="1500" step="50" value={calcRate} onChange={(e) => setCalcRate(parseInt(e.target.value))} style={{ flex: 1 }} />
+                                      <span style={{ fontSize: '0.9rem', fontWeight: 'bold', width: '50px', textAlign: 'right' }}>{calcRate},-</span>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                {/* Inputs column 2 */}
+                                <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                                  <div>
+                                    <label style={{ fontSize: '0.85rem', fontWeight: 600, display: 'block', marginBottom: '4px' }}>Kvalitetssikring/Mentortimer:</label>
+                                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                                      <input type="range" min="0" max="100" step="5" value={calcMentorHours} onChange={(e) => setCalcMentorHours(parseInt(e.target.value))} style={{ flex: 1 }} />
+                                      <span style={{ fontSize: '0.9rem', fontWeight: 'bold', width: '30px', textAlign: 'right' }}>{calcMentorHours}t</span>
+                                    </div>
+                                  </div>
+                                  <div>
+                                    <label style={{ fontSize: '0.85rem', fontWeight: 600, display: 'block', marginBottom: '4px' }}>Mentortimepris (NOK):</label>
+                                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                                      <input type="range" min="300" max="1200" step="50" value={calcMentorRate} onChange={(e) => setCalcMentorRate(parseInt(e.target.value))} style={{ flex: 1 }} />
+                                      <span style={{ fontSize: '0.9rem', fontWeight: 'bold', width: '50px', textAlign: 'right' }}>{calcMentorRate},-</span>
+                                    </div>
+                                  </div>
+                                  <div style={{ background: 'rgba(255, 255, 255, 0.02)', padding: '10px', borderRadius: '8px', border: '1px solid var(--border-color)', fontSize: '0.8rem', color: 'var(--text-muted)', lineHeight: '1.4' }}>
+                                    <strong>Merknad:</strong> De minimis-støtte har en grense på 300 000 EUR over en rullerende 3-årsperiode. Dette verktøyet hjelper å kontrollere at levert verdi per bedrift holdes trygt under grensen.
+                                  </div>
+                                </div>
+                              </div>
+
+                              {/* Results grid */}
+                              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '16px', background: 'rgba(255,255,255,0.01)', padding: '16px', borderRadius: '12px', border: '1px solid var(--border-color)' }}>
+                                <div style={{ textAlign: 'center' }}>
+                                  <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Studentenes Verdi</div>
+                                  <div style={{ fontSize: '1.5rem', fontWeight: 700, color: 'var(--text-primary)', margin: '4px 0' }}>
+                                    {new Intl.NumberFormat('no-NO').format(calcStudents * calcHours * calcRate)} kr
+                                  </div>
+                                  <div style={{ fontSize: '0.7rem', color: 'var(--text-muted)' }}>{calcStudents} stud × {calcHours}t × {calcRate} kr/t</div>
+                                </div>
+
+                                <div style={{ textAlign: 'center', borderLeft: '1px solid var(--border-color)', borderRight: '1px solid var(--border-color)' }}>
+                                  <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Mentorenes Verdi</div>
+                                  <div style={{ fontSize: '1.5rem', fontWeight: 700, color: 'var(--text-primary)', margin: '4px 0' }}>
+                                    {new Intl.NumberFormat('no-NO').format(calcMentorHours * calcMentorRate)} kr
+                                  </div>
+                                  <div style={{ fontSize: '0.7rem', color: 'var(--text-muted)' }}>{calcMentorHours}t × {calcMentorRate} kr/t</div>
+                                </div>
+
+                                <div style={{ textAlign: 'center' }}>
+                                  <div style={{ fontSize: '0.75rem', color: '#10b981', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.5px' }}>De Minimis Statsstøtte</div>
+                                  <div style={{ fontSize: '1.6rem', fontWeight: 800, color: '#10b981', margin: '4px 0' }}>
+                                    {new Intl.NumberFormat('no-NO').format((calcStudents * calcHours * calcRate) + (calcMentorHours * calcMentorRate))} kr
+                                  </div>
+                                  <div style={{ fontSize: '0.7rem', color: 'var(--text-muted)' }}>Total verdi levert (fiktiv statsstøtte)</div>
+                                </div>
+                              </div>
+                            </div>
+                          )}
                         </>
                       )}
                     </div>
@@ -1240,7 +1369,9 @@ export default function App() {
                           </div>
                           <ul>
                             {currentPage.swot.weaknesses.map((weak, idx) => (
-                              <li key={idx} dangerouslySetInnerHTML={{ __html: weak }} />
+                              <li key={idx}>
+                                {renderWeaknessText(weak)}
+                              </li>
                             ))}
                           </ul>
                         </div>
@@ -1312,7 +1443,7 @@ export default function App() {
                         </div>
 
                         {/* Selected Risk Mitigation Card */}
-                        <div className="risk-details-panel">
+                        <div className="risk-details-panel" id="selected-risk-detail">
                           {currentPage.risks.map((risk) => {
                             if (risk.id !== selectedRiskId) return null;
                             return (

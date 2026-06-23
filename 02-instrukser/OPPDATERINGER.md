@@ -118,32 +118,27 @@ BA økonomi og administrasjon har fagområder som samfunnsøkonomi, bedriftsøko
 Hold beskrivelsene korte og nøytrale. Tjenestekatalogen er stedet for detaljerte oppgaver.
 Hvor: "Organisasjon & Drift"-siden, trelagsmodellen
 
-### 22.06.2026 — Legg til fremdriftsindikator på Dashboard
+### 22.06.2026 — Legg til fremdriftsindikator for Business Case på Dashboard
 Prioritet: Høy
 Kilde: Prosjekteier
-Hva: Øverst på Dashboard-siden, etter "Hva er Syntax & Flow?" og før "Driftsmodell", legg til en interaktiv fremdriftsseksjon med tittelen "Prosjektstatus" eller "Fremdrift". Seksjonen skal inneholde en horisontal progressjonsbar/layout med følgende elementer (bokser som ligger på rad):
+Hva: På Dashboard-siden, under "Hvordan henger business casen sammen?"-seksjonen, legg til en visuell progressjonsbar for hvert av de 6 trinnene i business casen. Hvert trinn skal ha:
 
-1. **Visjon & Mål** — 100 % — Navigerer til "Mål & Visjon"
-2. **VPC / Verdiskapning** — 100 % — Navigerer til "Forretningsmodell & VPC"
-3. **Scope (in/out)** — 100 % — Navigerer til Scope-siden
-4. **Risiko & Juss** — 100 % — Navigerer til Risiko & Jus-siden
-5. **Gjennomføringsplan** — 100 % — Navigerer til Gjennomføringsplan
-6. **Forretningsmodell** — 100 % — Navigerer til Forretningsmodell & VPC
-7. **Ordliste** — 100 % — Navigerer til Ordliste
-8. **Marked & Konkurranse** — 80 % — Navigerer til Marked & Konkurranse (mangler TAM/SAM/SOM og kundeintervjuer)
-9. **Finansiering** — 60 % — Navigerer til Business Case-utkastet (mangler 3-års prognose, bruk av midler)
-10. **Team & Bemanning** — 40 % — Navigerer til Organisasjon & Drift (mangler navngitte personer)
-11. **DPIA / Personvern** — 20 % — Navigerer til Juridisk & Risiko (ikke gjennomført ennå)
-12. **Pilot** — 5 % — Navigerer til Gjennomføringsplan (ikke startet)
+- **Trinn 1: Forretningsidé** — 100 % — Grønn — Navigerer til Mål & Visjon
+- **Trinn 2: Value Proposition (VPC)** — 100 % — Grønn — Navigerer til Forretningsmodell & VPC
+- **Trinn 3: Forretningsmodell** — 90 % — Blå — Navigerer til Forretningsmodell & VPC (mangler detaljert enhetsøkonomi)
+- **Trinn 4: Marked & Konkurranse** — 80 % — Blå — Navigerer til Marked & Konkurranse (mangler TAM/SAM/SOM, kundeintervjuer)
+- **Trinn 5: Scope** — 100 % — Grønn — Navigerer til Scope-siden
+- **Trinn 6: Risiko & Juss** — 90 % — Blå — Navigerer til Risiko & Jus (mangler DPIA)
 
-Hver boks skal inneholde:
-- Tittel
-- Prosent fullført (som progressjonsbar eller sirkel)
-- Fargekode: Grønn (100%), Blå (60-99%), Gul (20-59%), Rød (under 20%)
-- Klikkbar — sender brukeren til riktig side via setActivePage()
+Hvert trinn skal vises som en horisontal boks/bar med:
+- Trinnnummer og tittel
+- En fylt progressjonslinje som viser prosent
+- Fargekode (grønn/blå/gul/rød)
+- Status-tekst (f.eks. "Komplett", "Mangler enhetsøkonomi", "Mangler kundeintervjuer")
+- Klikkbar — navigerer til riktig side
 
-Bruk eksisterende CSS-klasser og ikoner (lucide-react) som allerede finnes i App.css.
-Hvor: Dashboard-siden, øverst
+Designet skal være visuelt og oversiktlig, slik at man ser ved første øyekast hvor business casen står.
+Hvor: Dashboard-siden, under "Hvordan henger business casen sammen?"
 
 ### 22.06.2026 — Forbedre grafisk fremstilling på infosiden
 Prioritet: Middels
@@ -351,3 +346,5 @@ Hvor: Ny seksjon under "Analyser" eller "Guidelines"
 | 23.06.2026 | Legg til piler og øk avstand i business case-flyt | Utført |
 | 23.06.2026 | Gjør TLDR-kortet kollapsbart og hele overskriften klikkbar (Vis mer/mindre) | Utført |
 | 23.06.2026 | Øk avstand mellom evighetsprosjekt-tidslinje og Spor A-tekst | Utført |
+| 23.06.2026 | Legg til interaktive koblinger fra SWOT-weaknesses til risikomatrisen | Utført |
+| 23.06.2026 | Legg til intern budsjett- og De Minimis-kalkulator under Risiko & Jus | Utført |

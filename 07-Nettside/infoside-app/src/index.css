@@ -3036,3 +3036,20 @@ mark.highlight {
   border-color: var(--accent-color);
   background: rgba(255, 255, 255, 0.08);
 }
+
+.risk-link {
+  color: var(--accent-color);
+  cursor: pointer;
+  font-weight: 700;
+  text-decoration: underline;
+  padding: 0 4px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  display: inline-block;
+}
+.risk-link:hover {
+  color: var(--text-primary);
+  background: var(--accent-glow);
+  text-decoration: none;
+  box-shadow: 0 0 8px rgba(37, 99, 235, 0.2);
+}
