@@ -672,12 +672,179 @@ export default function App() {
                               </p>
                             </div>
                           ) : (
-                            sec.text && <p dangerouslySetInnerHTML={{ __html: sec.text }} />
+                            <>
+                              {sec.text && <p dangerouslySetInnerHTML={{ __html: sec.text }} />}
+                              
+                              {sec.heading === "Win-Win-Win Forretningsmodell" && currentPage.id === "forretningsmodell" && (
+                                <div className="win-win-win-visualization mt-8 animate-fade-in" style={{ marginTop: '36px' }}>
+                                  <style dangerouslySetInnerHTML={{ __html: `
+                                    .win-triangle-container {
+                                      position: relative;
+                                      display: flex;
+                                      flex-direction: column;
+                                      align-items: center;
+                                      margin: 40px 0;
+                                      padding: 20px;
+                                      min-height: 420px;
+                                    }
+                                    .win-center-node {
+                                      position: absolute;
+                                      top: 50%;
+                                      left: 50%;
+                                      transform: translate(-50%, -50%);
+                                      width: 120px;
+                                      height: 120px;
+                                      border-radius: 50%;
+                                      background: var(--bg-secondary);
+                                      border: 2px solid var(--accent-color);
+                                      box-shadow: 0 0 20px var(--accent-glow);
+                                      display: flex;
+                                      flex-direction: column;
+                                      align-items: center;
+                                      justify-content: center;
+                                      z-index: 10;
+                                      text-align: center;
+                                      padding: 10px;
+                                    }
+                                    .win-node {
+                                      width: 260px;
+                                      padding: 16px;
+                                      border-radius: 12px;
+                                      background: rgba(255, 255, 255, 0.02);
+                                      border: 1px solid var(--border-color);
+                                      transition: all 0.3s ease;
+                                      z-index: 5;
+                                    }
+                                    .win-node:hover {
+                                      transform: translateY(-5px);
+                                      border-color: var(--accent-light);
+                                      box-shadow: 0 8px 30px var(--accent-glow);
+                                      background: rgba(255, 255, 255, 0.04);
+                                    }
+                                    .node-student {
+                                      position: absolute;
+                                      bottom: 0;
+                                      left: 0;
+                                      border-left: 4px solid var(--accent-color);
+                                    }
+                                    .node-bedrift {
+                                      position: absolute;
+                                      bottom: 0;
+                                      right: 0;
+                                      border-left: 4px solid #10b981;
+                                    }
+                                    .node-hio {
+                                      position: absolute;
+                                      top: 0;
+                                      border-left: 4px solid #3b82f6;
+                                    }
+                                    .win-arrows-svg {
+                                      position: absolute;
+                                      top: 0;
+                                      left: 0;
+                                      width: 100%;
+                                      height: 100%;
+                                      pointer-events: none;
+                                      z-index: 1;
+                                    }
+                                    @media (max-width: 768px) {
+                                      .win-triangle-container {
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 24px;
+                                        min-height: auto;
+                                        margin: 20px 0;
+                                      }
+                                      .win-center-node {
+                                        position: relative;
+                                        transform: none;
+                                        top: auto;
+                                        left: auto;
+                                        margin: 10px auto;
+                                      }
+                                      .win-node {
+                                        position: relative;
+                                        width: 100%;
+                                        top: auto;
+                                        bottom: auto;
+                                        left: auto;
+                                        right: auto;
+                                      }
+                                      .win-arrows-svg {
+                                        display: none;
+                                      }
+                                    }
+                                  `}} />
+
+                                  <div className="win-triangle-container">
+                                    <svg className="win-arrows-svg" viewBox="0 0 600 400">
+                                      <line x1="300" y1="200" x2="300" y2="70" stroke="var(--border-color)" strokeWidth="2" strokeDasharray="5 5" />
+                                      <line x1="300" y1="200" x2="130" y2="330" stroke="var(--border-color)" strokeWidth="2" strokeDasharray="5 5" />
+                                      <line x1="300" y1="200" x2="470" y2="330" stroke="var(--border-color)" strokeWidth="2" strokeDasharray="5 5" />
+                                      
+                                      <path d="M 260 350 L 340 350" stroke="#10b981" strokeWidth="2" fill="none" markerEnd="url(#arrow-green)" />
+                                      <path d="M 450 280 L 370 120" stroke="#3b82f6" strokeWidth="2" fill="none" markerEnd="url(#arrow-blue)" />
+                                      <path d="M 230 120 L 150 280" stroke="var(--accent-color)" strokeWidth="2" fill="none" markerEnd="url(#arrow-red)" />
+                                      
+                                      <defs>
+                                        <marker id="arrow-green" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto" markerUnits="strokeWidth">
+                                          <path d="M0,0 L0,6 L9,3 z" fill="#10b981" />
+                                        </marker>
+                                        <marker id="arrow-blue" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto" markerUnits="strokeWidth">
+                                          <path d="M0,0 L0,6 L9,3 z" fill="#3b82f6" />
+                                        </marker>
+                                        <marker id="arrow-red" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto" markerUnits="strokeWidth">
+                                          <path d="M0,0 L0,6 L9,3 z" fill="var(--accent-color)" />
+                                        </marker>
+                                      </defs>
+                                    </svg>
+
+                                    <div className="win-center-node">
+                                      <Icons.RefreshCw className="w-6 h-6 text-accent mb-1 animate-spin" style={{ animationDuration: '8s' }} />
+                                      <span style={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--text-primary)' }}>Syntax & Flow</span>
+                                      <span style={{ fontSize: '0.65rem', color: 'var(--text-muted)' }}>Verdiutveksling</span>
+                                    </div>
+
+                                    <div className="win-node node-hio">
+                                      <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px' }}>
+                                        <Icons.GraduationCap className="w-5 h-5 text-blue-500" style={{ color: '#3b82f6' }} />
+                                        <h4 style={{ margin: 0, fontSize: '0.95rem', fontWeight: 600 }}>Høgskolen i Østfold</h4>
+                                      </div>
+                                      <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>
+                                        <div style={{ marginBottom: '6px' }}><span style={{ color: '#10b981', fontWeight: 600 }}>+</span> Økt studiekvalitet & kandidatproduksjon</div>
+                                        <div><span style={{ color: '#10b981', fontWeight: 600 }}>+</span> Redusert frafall på slutten av løpet</div>
+                                      </div>
+                                    </div>
+
+                                    <div className="win-node node-student">
+                                      <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px' }}>
+                                        <Icons.Users className="w-5 h-5 text-accent" />
+                                        <h4 style={{ margin: 0, fontSize: '0.95rem', fontWeight: 600 }}>Studentene</h4>
+                                      </div>
+                                      <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>
+                                        <div style={{ marginBottom: '6px' }}><span style={{ color: '#10b981', fontWeight: 600 }}>+</span> Reell arbeidserfaring under studietiden</div>
+                                        <div><span style={{ color: '#10b981', fontWeight: 600 }}>+</span> Attraktiv CV & portefølje</div>
+                                      </div>
+                                    </div>
+
+                                    <div className="win-node node-bedrift">
+                                      <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px' }}>
+                                        <Icons.Building className="w-5 h-5 text-emerald-500" style={{ color: '#10b981' }} />
+                                        <h4 style={{ margin: 0, fontSize: '0.95rem', fontWeight: 600 }}>Lokalt Næringsliv</h4>
+                                      </div>
+                                      <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>
+                                        <div style={{ marginBottom: '6px' }}><span style={{ color: '#10b981', fontWeight: 600 }}>+</span> Risikofri løsning av IT/design/økonomi</div>
+                                        <div><span style={{ color: '#10b981', fontWeight: 600 }}>+</span> Trygg rekrutteringskanal (observasjon)</div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              )}
+                            </>
                           )}
 
                           {sec.heading === "1. Modell med to parallelle spor" && currentPage.id === "scope" && (
                             <div className="evighetsprosjekt-timeline mt-6 animate-fade-in">
-                              <h3>🔄 Livssyklus for et evighetsprosjekt (Semesterovergang)</h3>
                               <p className="text-secondary mb-4" style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '16px' }}>
                                 Hvordan prosjektene videreføres kontinuerlig uten kunnskapstap når studentkull uteksamineres:
                               </p>
@@ -942,7 +1109,7 @@ export default function App() {
                       {[
                         { area: "Executive Summary", status: "❌ Mangler", percentage: 0, link: "dashboard", statusText: "Mangler" },
                         { area: "Problembeskrivelse", status: "🟡 Delvis", percentage: 60, link: "dashboard", statusText: "Mangler kvantitativ underbygning, personas" },
-                        { area: "Value Proposition / VPC", status: "✅ Ferdig", percentage: 100, link: "vpc-verdiskapning", statusText: "Ferdig" },
+                        { area: "Value Proposition / VPC", status: "✅ Ferdig", percentage: 100, link: "vpc", statusText: "Ferdig" },
                         { area: "Forretningsmodell", status: "🟡 Delvis", percentage: 70, link: "forretningsmodell", statusText: "Mangler enhetsøkonomi" },
                         { area: "Markedsanalyse", status: "🟡 Delvis", percentage: 50, link: "markeds-og-konkurranseanalyse", statusText: "Mangler lokale bedriftsintervjuer, TAM/SAM/SOM" },
                         { area: "Scope", status: "✅ Ferdig", percentage: 100, link: "scope", statusText: "Ferdig" },

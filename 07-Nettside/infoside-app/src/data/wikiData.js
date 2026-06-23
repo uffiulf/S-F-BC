@@ -589,8 +589,8 @@ export const wikiData = [
     ]
   },
   {
-    "id": "vpc-verdiskapning",
-    "title": "VPC — Verdiskapning",
+    "id": "vpc",
+    "title": "VPC",
     "category": "Business Case",
     "icon": "Gift",
     "lead": "Value Proposition Canvas (VPC) viser detaljert verdiskapning for studenter, høgskolen og næringslivet.",
