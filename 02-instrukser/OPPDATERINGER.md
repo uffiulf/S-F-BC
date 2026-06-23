@@ -118,6 +118,33 @@ BA økonomi og administrasjon har fagområder som samfunnsøkonomi, bedriftsøko
 Hold beskrivelsene korte og nøytrale. Tjenestekatalogen er stedet for detaljerte oppgaver.
 Hvor: "Organisasjon & Drift"-siden, trelagsmodellen
 
+### 22.06.2026 — Legg til fremdriftsindikator på Dashboard
+Prioritet: Høy
+Kilde: Prosjekteier
+Hva: Øverst på Dashboard-siden, etter "Hva er Syntax & Flow?" og før "Driftsmodell", legg til en interaktiv fremdriftsseksjon med tittelen "Prosjektstatus" eller "Fremdrift". Seksjonen skal inneholde en horisontal progressjonsbar/layout med følgende elementer (bokser som ligger på rad):
+
+1. **Visjon & Mål** — 100 % — Navigerer til "Mål & Visjon"
+2. **VPC / Verdiskapning** — 100 % — Navigerer til "Forretningsmodell & VPC"
+3. **Scope (in/out)** — 100 % — Navigerer til Scope-siden
+4. **Risiko & Juss** — 100 % — Navigerer til Risiko & Jus-siden
+5. **Gjennomføringsplan** — 100 % — Navigerer til Gjennomføringsplan
+6. **Forretningsmodell** — 100 % — Navigerer til Forretningsmodell & VPC
+7. **Ordliste** — 100 % — Navigerer til Ordliste
+8. **Marked & Konkurranse** — 80 % — Navigerer til Marked & Konkurranse (mangler TAM/SAM/SOM og kundeintervjuer)
+9. **Finansiering** — 60 % — Navigerer til Business Case-utkastet (mangler 3-års prognose, bruk av midler)
+10. **Team & Bemanning** — 40 % — Navigerer til Organisasjon & Drift (mangler navngitte personer)
+11. **DPIA / Personvern** — 20 % — Navigerer til Juridisk & Risiko (ikke gjennomført ennå)
+12. **Pilot** — 5 % — Navigerer til Gjennomføringsplan (ikke startet)
+
+Hver boks skal inneholde:
+- Tittel
+- Prosent fullført (som progressjonsbar eller sirkel)
+- Fargekode: Grønn (100%), Blå (60-99%), Gul (20-59%), Rød (under 20%)
+- Klikkbar — sender brukeren til riktig side via setActivePage()
+
+Bruk eksisterende CSS-klasser og ikoner (lucide-react) som allerede finnes i App.css.
+Hvor: Dashboard-siden, øverst
+
 ### 22.06.2026 — Forbedre grafisk fremstilling på infosiden
 Prioritet: Middels
 Kilde: Tilbakemelding fra prosjekteier
@@ -323,3 +350,4 @@ Hvor: Ny seksjon under "Analyser" eller "Guidelines"
 | 22.06.2026 | Forbedre grafisk fremstilling på infosiden | Utført |
 | 23.06.2026 | Legg til piler og øk avstand i business case-flyt | Utført |
 | 23.06.2026 | Gjør TLDR-kortet kollapsbart og hele overskriften klikkbar (Vis mer/mindre) | Utført |
+| 23.06.2026 | Øk avstand mellom evighetsprosjekt-tidslinje og Spor A-tekst | Utført |

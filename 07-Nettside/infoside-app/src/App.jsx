@@ -725,7 +725,7 @@ export default function App() {
                           )}
                           
                           {sec.points && (
-                            <ul>
+                            <ul style={sec.heading === "1. Modell med to parallelle spor" && currentPage.id === "scope" ? { marginTop: '32px' } : {}}>
                               {sec.points.map((pt, pIdx) => (
                                 <li key={pIdx} dangerouslySetInnerHTML={{ __html: pt }} />
                               ))}
