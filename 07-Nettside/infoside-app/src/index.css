@@ -2570,7 +2570,7 @@ mark.highlight {
   width: 100%;
   max-width: 460px;
   min-height: 280px;
-  padding: 40px 30px;
+  padding: 36px 30px 44px;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
   border-radius: 4px;
   display: flex;
