@@ -1028,7 +1028,7 @@ export default function App() {
                           )}
 
                           {sec.heading === "1. Kostnadsanalyse & Budsjett" && currentPage.id === "risiko-og-jus" && (
-                            <div className="de-minimis-info-box glass-card mt-6 p-6 animate-fade-in" style={{ padding: '24px', borderRadius: '16px', border: '1px solid var(--border-color)', background: 'rgba(255, 255, 255, 0.02)', marginTop: '24px' }}>
+                            <div className="de-minimis-info-box glass-card p-6 animate-fade-in" style={{ padding: '24px', borderRadius: '16px', border: '1px solid var(--border-color)', background: 'rgba(255, 255, 255, 0.02)', marginTop: '48px' }}>
                               <h3 style={{ marginTop: 0, marginBottom: '16px', display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--accent-color)', fontSize: '1.15rem', fontWeight: 600 }}>
                                 <Icons.ShieldCheck className="w-5 h-5 text-accent animate-pulse" />
                                 <span>De Minimis Statsstøtte — Beregningsmodell</span>
