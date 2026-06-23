@@ -42,6 +42,45 @@ export default function App() {
     window.scrollTo(0, 0);
   }, [activePage]);
 
+  // Sync page state with URL hash and handle browser back/forward (including mouse4/mouse5)
+  useEffect(() => {
+    const handlePopState = (event) => {
+      if (event.state && event.state.page) {
+        setActivePage(event.state.page);
+      } else {
+        const hash = window.location.hash.replace("#", "");
+        if (hash && wikiData.some(p => p.id === hash)) {
+          setActivePage(hash);
+        }
+      }
+    };
+
+    // Determine initial page from URL hash if present
+    const hash = window.location.hash.replace("#", "");
+    const isValidPage = wikiData.some(p => p.id === hash);
+    const initialPage = isValidPage ? hash : "dashboard";
+
+    if (initialPage !== activePage) {
+      setActivePage(initialPage);
+    }
+
+    // Set initial history state
+    window.history.replaceState({ page: initialPage }, "", `#${initialPage}`);
+
+    window.addEventListener("popstate", handlePopState);
+    return () => {
+      window.removeEventListener("popstate", handlePopState);
+    };
+  }, []);
+
+  // Update browser history when activePage changes in-app
+  useEffect(() => {
+    const currentState = window.history.state;
+    if (!currentState || currentState.page !== activePage) {
+      window.history.pushState({ page: activePage }, "", `#${activePage}`);
+    }
+  }, [activePage]);
+
   const navigateToAdjustment = (adjId) => {
     skipResetRef.current = true;
     setActivePage("forslag-utforelse");
@@ -1706,7 +1745,7 @@ export default function App() {
                                         <div 
                                           key={iIdx} 
                                           className="post-it post-it-yellow"
-                                          onClick={() => setActivePostIt({ text: item, theme: 'yellow' })}
+                                          onClick={() => setActivePostIt({ text: item, theme: 'yellow', title: 'Produkter & Tjenester' })}
                                         >
                                           {item}
                                         </div>
@@ -1724,7 +1763,7 @@ export default function App() {
                                         <div 
                                           key={iIdx} 
                                           className="post-it post-it-green"
-                                          onClick={() => setActivePostIt({ text: item, theme: 'green' })}
+                                          onClick={() => setActivePostIt({ text: item, theme: 'green', title: 'Gevinstskapere (Gain Creators)' })}
                                         >
                                           {item}
                                         </div>
@@ -1742,7 +1781,7 @@ export default function App() {
                                         <div 
                                           key={iIdx} 
                                           className="post-it post-it-pink"
-                                          onClick={() => setActivePostIt({ text: item, theme: 'pink' })}
+                                          onClick={() => setActivePostIt({ text: item, theme: 'pink', title: 'Smertelindrere (Pain Relievers)' })}
                                         >
                                           {item}
                                         </div>
@@ -1776,7 +1815,7 @@ export default function App() {
                                         <div 
                                           key={iIdx} 
                                           className="post-it post-it-green"
-                                          onClick={() => setActivePostIt({ text: item, theme: 'green' })}
+                                          onClick={() => setActivePostIt({ text: item, theme: 'green', title: 'Gevinster (Gains)' })}
                                         >
                                           {item}
                                         </div>
@@ -1794,7 +1833,7 @@ export default function App() {
                                         <div 
                                           key={iIdx} 
                                           className="post-it post-it-pink"
-                                          onClick={() => setActivePostIt({ text: item, theme: 'pink' })}
+                                          onClick={() => setActivePostIt({ text: item, theme: 'pink', title: 'Smertepunkter (Pains)' })}
                                         >
                                           {item}
                                         </div>
@@ -1812,7 +1851,7 @@ export default function App() {
                                         <div 
                                           key={iIdx} 
                                           className="post-it post-it-yellow"
-                                          onClick={() => setActivePostIt({ text: item, theme: 'yellow' })}
+                                          onClick={() => setActivePostIt({ text: item, theme: 'yellow', title: 'Kundens Oppgaver (Jobs)' })}
                                         >
                                           {item}
                                         </div>
@@ -2236,6 +2275,9 @@ export default function App() {
               <Icons.X className="w-5 h-5" />
             </button>
             <div className="post-it-modal-tape"></div>
+            {activePostIt.title && (
+              <div className="post-it-modal-title">{activePostIt.title}</div>
+            )}
             <p className="post-it-modal-text">{activePostIt.text}</p>
           </div>
         </div>

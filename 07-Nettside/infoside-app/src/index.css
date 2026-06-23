@@ -2622,6 +2622,19 @@ mark.highlight {
   transform: scale(1.1);
 }
 
+.post-it-modal-title {
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #1a1a20;
+  opacity: 0.5;
+  margin-bottom: 12px;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.15);
+  padding-bottom: 6px;
+  width: 100%;
+}
+
 .post-it-modal-text {
   font-size: 1.15rem;
   line-height: 1.5;
