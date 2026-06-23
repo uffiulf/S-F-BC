@@ -16,7 +16,7 @@ export default function App() {
   const [activePostIt, setActivePostIt] = useState(null);
   const [openSections, setOpenSections] = useState({});
   const [tldrExpanded, setTldrExpanded] = useState(false);
-  const [ordlisteMode, setOrdlisteMode] = useState("alphabetical");
+  const [ordlisteMode, setOrdlisteMode] = useState("category");
   const searchInputRef = useRef(null);
   const skipResetRef = useRef(false);
 
@@ -33,7 +33,7 @@ export default function App() {
     }
     setOpenSections({});
     setTldrExpanded(false);
-    setOrdlisteMode("alphabetical");
+    setOrdlisteMode("category");
     window.scrollTo(0, 0);
   }, [activePage]);
 

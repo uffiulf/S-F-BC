@@ -228,8 +228,8 @@ export const wikiData = [
               "Marked/Forretning"
             ],
             [
-              "<strong>Bottom-up</strong>",
-              "Markedsførings- eller implementeringsstrategi som starter på grasrotnivå (f.eks. hos studenter eller enkelte avdelinger) og beveger seg oppover i organisasjonen.",
+              "<strong>Bottom-up / Top-down</strong>",
+              "Strategiske retninger. <strong>Bottom-up</strong> starter på grasrotnivå (f.eks. hos studentene) og beveger seg oppover. <strong>Top-down</strong> starter hos toppledelsen/store aktører og jobber seg nedover.",
               "Marked/Forretning"
             ],
             [
@@ -248,13 +248,8 @@ export const wikiData = [
               "Marked/Forretning"
             ],
             [
-              "<strong>CLTV / Customer Lifetime Value</strong>",
-              "Hvor mye en kunde totalt forventes å innbringe i løpet av hele kundeforholdet.",
-              "Marked/Forretning"
-            ],
-            [
-              "<strong>CLV (Customer Lifetime Value)</strong>",
-              "Samme som CLTV. Total forventet verdi av et kundeforhold over hele levetiden.",
+              "<strong>CLV / CLTV (Customer Lifetime Value)</strong>",
+              "Total forventet verdi av et kundeforhold over hele levetiden.",
               "Marked/Forretning"
             ],
             [
@@ -312,6 +307,11 @@ export const wikiData = [
               "<strong>Forpliktende milepælsplan</strong>",
               "En skriftlig avtale om konkrete leveranser og tidsfrister for prosjektet, som brukes i stedet for en tradisjonell SLA (Service Level Agreement) for å unngå risiko.",
               "Prosjektledelse"
+            ],
+            [
+              "<strong>GBER (Gruppeunntaksforordningen)</strong>",
+              "General Block Exemption Regulation. EØS-regler som tillater visse typer offentlig støtte (f.eks. til forskning, utvikling og innovasjon) uten forhåndsgodkjenning fra ESA.",
+              "Jus/EØS"
             ]
           ]
         }
@@ -333,6 +333,11 @@ export const wikiData = [
               "<strong>GTM</strong>",
               "Go-To-Market. Strategi for hvordan et produkt eller tjeneste lanseres i markedet.",
               "Marked/Forretning"
+            ],
+            [
+              "<strong>Humbel-doktrinen</strong>",
+              "EØS-rettslig prinsipp som slår fast at offentlig finansiert utdanning som inngår i det nasjonale utdanningssystemet ikke regnes som økonomisk aktivitet, noe som reduserer statsstøtterisikoen.",
+              "Jus/EØS"
             ],
             [
               "<strong>IP</strong>",
@@ -505,13 +510,8 @@ export const wikiData = [
               "Jus/EØS"
             ],
             [
-              "<strong>TAM (Total Addressable Market)</strong>",
-              "Totalt marked for et produkt eller tjeneste, altså maksimal inntekt hvis alle potensielle kunder kjøper.",
-              "Marked/Forretning"
-            ],
-            [
-              "<strong>Top-down</strong>",
-              "Markedsføringsstrategi som starter hos ledelsen/store aktører og jobber seg nedover i organisasjonen.",
+              "<strong>TAM / SAM / SOM</strong>",
+              "Modell for markedsstørrelse. <strong>TAM</strong> (Total Addressable Market) er det totale markedspotensialet, <strong>SAM</strong> (Serviceable Addressable Market) er den andelen av markedet du kan nå med din tjeneste, og <strong>SOM</strong> (Serviceable Obtainable Market) er den realistiske andelen du kan kapre under piloten.",
               "Marked/Forretning"
             ],
             [
