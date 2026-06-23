@@ -15,6 +15,7 @@ export default function App() {
   const [activeGjennomforingPhase, setActiveGjennomforingPhase] = useState(0);
   const [activePostIt, setActivePostIt] = useState(null);
   const [openSections, setOpenSections] = useState({});
+  const [tldrExpanded, setTldrExpanded] = useState(false);
   const searchInputRef = useRef(null);
   const skipResetRef = useRef(false);
 
@@ -30,6 +31,7 @@ export default function App() {
       skipResetRef.current = false;
     }
     setOpenSections({});
+    setTldrExpanded(false);
     window.scrollTo(0, 0);
   }, [activePage]);
 
@@ -413,22 +415,48 @@ export default function App() {
                 {/* TL;DR Summary Card */}
                 {currentPage.tldr && (
                   <div className="tldr-card glass-card" style={{
-                    padding: '20px',
+                    padding: tldrExpanded ? '20px' : '14px 20px',
                     borderRadius: '12px',
                     borderLeft: '4px solid var(--accent-color)',
                     background: 'rgba(255, 255, 255, 0.02)',
-                    marginBottom: '28px',
-                    boxShadow: '0 4px 20px rgba(0, 0, 0, 0.05)'
+                    marginBottom: tldrExpanded ? '28px' : '20px',
+                    boxShadow: '0 4px 20px rgba(0, 0, 0, 0.05)',
+                    transition: 'all 0.3s ease'
                   }}>
-                    <h3 style={{ margin: '0 0 12px 0', fontSize: '1rem', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--accent-color)' }}>
-                      <Icons.Lightbulb className="w-5 h-5 animate-pulse" />
-                      <span>Kort oppsummert (TL;DR)</span>
-                    </h3>
-                    <ul style={{ margin: 0, paddingLeft: '20px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
-                      {currentPage.tldr.map((point, pIdx) => (
-                        <li key={pIdx} style={{ fontSize: '0.925rem', color: 'var(--text-secondary)', lineHeight: '1.5' }} dangerouslySetInnerHTML={{ __html: point }} />
-                      ))}
-                    </ul>
+                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
+                      <h3 style={{ margin: 0, fontSize: '1rem', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--accent-color)' }}>
+                        <Icons.Lightbulb className="w-5 h-5 animate-pulse" />
+                        <span>Kort oppsummert (TL;DR)</span>
+                      </h3>
+                      <button
+                        onClick={() => setTldrExpanded(!tldrExpanded)}
+                        style={{
+                          background: 'rgba(255, 255, 255, 0.05)',
+                          border: '1px solid var(--border-color)',
+                          borderRadius: '6px',
+                          padding: '4px 10px',
+                          fontSize: '0.8rem',
+                          fontWeight: 500,
+                          color: 'var(--text-secondary)',
+                          cursor: 'pointer',
+                          display: 'flex',
+                          alignItems: 'center',
+                          gap: '4px',
+                          transition: 'all 0.2s ease',
+                        }}
+                        className="tldr-toggle-btn"
+                      >
+                        <span>{tldrExpanded ? "Vis mindre" : "Vis mer"}</span>
+                        {tldrExpanded ? <Icons.ChevronUp className="w-3.5 h-3.5" /> : <Icons.ChevronDown className="w-3.5 h-3.5" />}
+                      </button>
+                    </div>
+                    {tldrExpanded && (
+                      <ul style={{ margin: '14px 0 0 0', paddingLeft: '20px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                        {currentPage.tldr.map((point, pIdx) => (
+                          <li key={pIdx} style={{ fontSize: '0.925rem', color: 'var(--text-secondary)', lineHeight: '1.5' }} dangerouslySetInnerHTML={{ __html: point }} />
+                        ))}
+                      </ul>
+                    )}
                   </div>
                 )}
 
@@ -539,7 +567,7 @@ export default function App() {
                           <h2>{sec.heading}</h2>
                           {sec.heading === "Hvordan henger business casen sammen?" && currentPage.id === "dashboard" ? (
                             <div className="business-case-flow-container mt-6 animate-fade-in">
-                              <div className="flow-steps-flex">
+                              <div className="flow-steps-grid-3">
                                 {[
                                   { num: 1, title: "Forretningsidé", icon: "Lightbulb", color: "blue", desc: "Formålet og retningen for Syntax & Flow." },
                                   { num: 2, title: "Value Proposition", icon: "Compass", color: "amber", desc: "Verdien vi skaper for studenter, HiØ og bedrifter.", highlight: true },
@@ -559,9 +587,22 @@ export default function App() {
                                         <h3>{step.title}</h3>
                                         <p>{step.desc}</p>
                                       </div>
-                                      {idx < arr.length - 1 && (
+                                      {idx !== 2 && idx !== 5 && (
                                         <div className="flow-step-arrow">
                                           <Icons.ArrowRight className="w-5 h-5" />
+                                        </div>
+                                      )}
+                                      {idx === 2 && (
+                                        <div className="flow-return-arrow-row">
+                                          <div className="flow-return-arrow-vertical-mobile">
+                                            <Icons.ArrowRight className="w-5 h-5" />
+                                          </div>
+                                          <div className="flow-return-arrow-desktop">
+                                            <svg className="return-svg" viewBox="0 0 100 40" preserveAspectRatio="none">
+                                              <path d="M 83.5 0 L 83.5 20 L 16.5 20 L 16.5 40" stroke="var(--accent-color)" strokeWidth="1.5" strokeDasharray="6 4" fill="none" />
+                                              <polygon points="16.5,40 13.5,34 19.5,34" fill="var(--accent-color)" />
+                                            </svg>
+                                          </div>
                                         </div>
                                       )}
                                     </React.Fragment>
