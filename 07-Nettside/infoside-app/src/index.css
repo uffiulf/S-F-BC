@@ -471,7 +471,12 @@ body {
 }
 
 .wiki-section {
-  margin-bottom: 40px;
+  margin-bottom: 48px;
+}
+
+/* Gir lik og god avstand (80px) mellom alle flate hovedseksjoner på hele nettstedet */
+.wiki-section:not(.collapsible-section):not(:first-of-type) {
+  margin-top: 80px;
 }
 
 .wiki-section h2 {
@@ -485,7 +490,7 @@ body {
   font-size: 0.975rem;
   color: var(--text-secondary);
   line-height: 1.6;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 }
 
 /* Cards & Grids */
