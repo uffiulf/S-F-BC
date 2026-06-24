@@ -934,30 +934,73 @@ mark.highlight {
   }
 
   /* VPC Mobile Responsive Overrides */
+  .vpc-canvas {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 32px !important;
+  }
+
+  /* Vis Kundeprofil (sirkel) først på mobil, deretter Verditilbud (firkant) */
+  .vpc-canvas-card:nth-child(1) {
+    order: 2 !important;
+  }
+  .vpc-canvas-card:nth-child(2) {
+    order: 1 !important;
+  }
+
   .vpc-square-canvas, .vpc-circle-canvas {
     min-height: auto !important;
     aspect-ratio: auto !important;
     height: auto !important;
     border-radius: 16px !important;
-    padding: 8px !important;
+    padding: 0 !important;
+  }
+
+  /* Fjern diagonalene på mobil */
+  .vpc-square-canvas::before, .vpc-square-canvas::after {
+    display: none !important;
   }
 
   .vpc-square-grid, .vpc-circle-grid {
-    grid-template-columns: 1fr !important;
-    grid-template-rows: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    height: auto !important;
   }
 
-  .vpc-box {
-    grid-column: 1 / -1 !important;
-    grid-row: auto !important;
-    border-left: none !important;
-    border-right: none !important;
-    border-top: none !important;
+  /* Logisk rekkefølge for Kundeprofil: 1. Jobs, 2. Pains, 3. Gains */
+  .vpc-circle-grid .vpc-box.jobs {
+    order: 1 !important;
+    padding: 24px 20px !important;
     border-bottom: 1.5px solid var(--border-color) !important;
-    padding: 24px 16px !important;
+  }
+  .vpc-circle-grid .vpc-box.pains {
+    order: 2 !important;
+    padding: 24px 20px !important;
+    border-bottom: 1.5px solid var(--border-color) !important;
+    border-top: none !important;
+  }
+  .vpc-circle-grid .vpc-box.gains {
+    order: 3 !important;
+    padding: 24px 20px !important;
+    border-bottom: none !important;
+    border-right: none !important;
   }
 
-  .vpc-box:last-child {
+  /* Logisk rekkefølge for Verditilbud: 1. Products, 2. Pain Relievers, 3. Gain Creators */
+  .vpc-square-grid .vpc-box.products {
+    order: 1 !important;
+    padding: 24px 20px !important;
+    border-bottom: 1.5px solid var(--border-color) !important;
+    border-right: none !important;
+  }
+  .vpc-square-grid .vpc-box.pain-relievers {
+    order: 2 !important;
+    padding: 24px 20px !important;
+    border-bottom: 1.5px solid var(--border-color) !important;
+  }
+  .vpc-square-grid .vpc-box.gain-creators {
+    order: 3 !important;
+    padding: 24px 20px !important;
     border-bottom: none !important;
   }
 
