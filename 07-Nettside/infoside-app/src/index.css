@@ -925,8 +925,34 @@ mark.highlight {
     box-sizing: border-box;
   }
 
+  /* Global skrift-skalering for mobil */
   .wiki-page h1 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+  }
+
+  .wiki-section h2 {
+    font-size: 1.2rem;
+  }
+
+  .wiki-section p {
+    font-size: 0.875rem;
+    margin-bottom: 20px;
+  }
+
+  .wiki-section li {
+    font-size: 0.875rem;
+  }
+
+  .legal-detail-section h3 {
+    font-size: 1.05rem;
+  }
+
+  .legal-detail-section p {
+    font-size: 0.875rem;
+  }
+
+  .wiki-table {
+    font-size: 0.8rem;
   }
 
   .top-header {
@@ -1024,8 +1050,8 @@ mark.highlight {
     width: 100% !important;
     box-sizing: border-box !important;
     padding: 12px 14px !important;
-    font-size: 0.85rem !important;
-    line-height: 1.4 !important;
+    font-size: 0.74rem !important;
+    line-height: 1.35 !important;
     color: var(--text-primary) !important; /* Tilpasser seg lyst/mørkt tema */
     box-shadow: none !important;
     border-radius: 8px !important;
