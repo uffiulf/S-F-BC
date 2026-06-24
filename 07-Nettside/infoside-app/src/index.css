@@ -1052,12 +1052,11 @@ mark.highlight {
     padding: 12px 14px !important;
     font-size: 0.74rem !important;
     line-height: 1.35 !important;
-    color: var(--text-primary) !important; /* Tilpasser seg lyst/mørkt tema */
     box-shadow: none !important;
     border-radius: 8px !important;
     border-bottom-right-radius: 8px !important;
     transform: none !important;
-    cursor: pointer !important;
+    pointer-events: none !important;
     text-align: left !important;
     justify-content: flex-start !important;
     align-items: flex-start !important;
@@ -1069,22 +1068,46 @@ mark.highlight {
   }
 
   /* Harmonisk fargekodet venstremarg med transparent bakgrunn for mobil-kort */
-  .post-it-yellow {
+  :root[data-theme="dark"] .post-it-yellow {
+    background: rgba(234, 179, 8, 0.12) !important;
+    border: 1px solid rgba(234, 179, 8, 0.25) !important;
+    border-left: 5px solid #eab308 !important;
+    color: #fef08a !important;
+  }
+
+  :root[data-theme="light"] .post-it-yellow {
     background: rgba(234, 179, 8, 0.08) !important;
     border: 1px solid rgba(234, 179, 8, 0.15) !important;
     border-left: 5px solid #eab308 !important;
+    color: #713f12 !important;
   }
 
-  .post-it-green {
+  :root[data-theme="dark"] .post-it-green {
+    background: rgba(16, 185, 129, 0.12) !important;
+    border: 1px solid rgba(16, 185, 129, 0.25) !important;
+    border-left: 5px solid #10b981 !important;
+    color: #86efac !important;
+  }
+
+  :root[data-theme="light"] .post-it-green {
     background: rgba(16, 185, 129, 0.08) !important;
     border: 1px solid rgba(16, 185, 129, 0.15) !important;
     border-left: 5px solid #10b981 !important;
+    color: #065f46 !important;
   }
 
-  .post-it-pink {
+  :root[data-theme="dark"] .post-it-pink {
+    background: rgba(236, 72, 153, 0.12) !important;
+    border: 1px solid rgba(236, 72, 153, 0.25) !important;
+    border-left: 5px solid #ec4899 !important;
+    color: #fbcfe8 !important;
+  }
+
+  :root[data-theme="light"] .post-it-pink {
     background: rgba(236, 72, 153, 0.08) !important;
     border: 1px solid rgba(236, 72, 153, 0.15) !important;
     border-left: 5px solid #ec4899 !important;
+    color: #9d174d !important;
   }
 
   /* Kompakte SWOT-kort på mobil */
