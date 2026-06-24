@@ -145,6 +145,19 @@ Hver rad skal ha:
 Bruk eksisterende CSS-klasser og ikoner.
 Hvor: Helt nederst på Dashboard-siden
 
+### 22.06.2026 — Legg til vurderingsmodell på Tjenester & Leveranser-siden
+Prioritet: Middels
+Kilde: `05-agent-forslag/Forslag/forslag_karakter_vurdering.md`
+Hva: Legg til en ny seksjon på "Tjenester & Leveranser"-siden med tittelen "Vurderingsmodell — Karakter på utført praksis". Innhold:
+
+- ITD35014 vurderes i dag med Bestått/Ikke bestått. Forslaget er å innføre bokstavkarakter A–F der kunden (bedriften) får 60 % innflytelse basert på en strukturert rubric (faglig kompetanse, samarbeid, kommunikasjon, gjennomføringsevne, kundeforståelse).
+- Muntlig presentasjon (20 %) og refleksjonsnotat (20 %) vurderes av mentor.
+- Karakteren gir en mer rettferdig vurdering og gjør at neste arbeidsgiver kan se hvordan studenten faktisk presterte hos kunden.
+- Forslaget skal drøftes med emneansvarlig Stig Henning Johansen.
+
+Hold det kort og informativt — en oversikt, ikke hele utredningen.
+Hvor: "Tjenester & Leveranser"-siden, som ny seksjon mot slutten
+
 ### 22.06.2026 — Erstatt kalkulatoren med statisk tekst som forklarer de minimis-verdier
 Prioritet: Høy
 Kilde: `05-agent-forslag/Forslag/drofting_kalkulator.md`
@@ -450,3 +463,7 @@ Hvor: Ny seksjon under "Analyser" eller "Guidelines"
 | 22.06.2026 | Flytt innhold på Scope-siden og oppdater kategorinavn | Utført |
 | 22.06.2026 | Legg til filter-funksjonalitet på ordlisten | Utført |
 | 22.06.2026 | Erstatt kalkulatoren med statisk tekst som forklarer de minimis-verdier | Utført |
+| 22.06.2026 | Oppdater studentbeskrivelser i trelagsmodellen | Utført |
+| 22.06.2026 | Legg til vurderingsmodell på Tjenester & Leveranser-siden | Utført |
+| 22.06.2026 | Rett opp "de minimis"-feil på infosiden — har blitt forkortet til "n" | Utført |
+

@@ -950,6 +950,17 @@ export const wikiData = [
           "<strong>Kundeplikt:</strong> Kunden må delta på ukentlige statusmøter og brukertester, ellers avsluttes prosjektet umiddelbart."
         ],
         "isCollapsible": true
+      },
+      {
+        "heading": "Vurderingsmodell — Karakter på utført praksis",
+        "text": "ITD35014 Bedriftspraksis vurderes i dag som Bestått/Ikke bestått. Det foreslås en ny modell der studenten kan få bokstavkarakter (A–F) for å gi en mer rettferdig vurdering av innsatsen, der oppdragsgiver (bedriften) får en reell stemme. Forslaget skal drøftes med emneansvarlig Stig Henning Johansen.",
+        "points": [
+          "<strong>Kundevurdering (60 %):</strong> Basert på en strukturert rubric som måler faglig kompetanse, samarbeid, kommunikasjon, gjennomføringsevne og kundeforståelse.",
+          "<strong>Muntlig presentasjon (20 %):</strong> Vurderes av mentor med fokus på evne til å formidle resultater og refleksjon over læring.",
+          "<strong>Refleksjonsnotat (20 %):</strong> Vurderes av mentor med fokus på dybde i refleksjon og kobling mellom teori og praksis.",
+          "<strong>Alternativ modell:</strong> Hvis bokstavkarakter ikke innføres offisielt av HiØ, kan kundens rubric-vurdering likevel loggføres i portalen som en del av studentens profil for å gi fremtidige arbeidsgivere verdifull innsikt."
+        ],
+        "isCollapsible": true
       }
     ],
     "tldr": [

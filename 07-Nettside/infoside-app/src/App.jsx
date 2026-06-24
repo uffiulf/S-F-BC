@@ -971,7 +971,7 @@ export default function App() {
                                       <Icons.Code className="w-4 h-4" />
                                       <span>Studenter (IT)</span>
                                     </div>
-                                    <div className="text-xs text-muted" style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>Utvikler MVP, nettsider, systemer</div>
+                                    <div className="text-xs text-muted" style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>Systemutvikling, programmering, nettsider</div>
                                   </div>
                                   <div className="org-node student-node">
                                     <div className="font-semibold text-amber-500 mb-1 flex items-center justify-center gap-1.5" style={{ fontWeight: 600, color: '#f59e0b', marginBottom: '4px', display: 'flex', alignItems: 'center', justify: 'center', gap: '6px' }}>
@@ -985,7 +985,7 @@ export default function App() {
                                       <Icons.TrendingUp className="w-4 h-4" />
                                       <span>Studenter (Økonomi)</span>
                                     </div>
-                                    <div className="text-xs text-muted" style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>BMC, marked, regnskap</div>
+                                    <div className="text-xs text-muted" style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>Økonomisk analyse, regnskap, strategi</div>
                                   </div>
                                 </div>
                               </div>
