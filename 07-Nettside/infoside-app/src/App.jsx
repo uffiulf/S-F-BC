@@ -18,6 +18,7 @@ export default function App() {
   const [tldrExpanded, setTldrExpanded] = useState(false);
   const [ordlisteMode, setOrdlisteMode] = useState("category");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [activeDropdown, setActiveDropdown] = useState(null);
   const searchInputRef = useRef(null);
   const skipResetRef = useRef(false);
 
@@ -311,6 +312,101 @@ export default function App() {
         <div className="blob blob-1"></div>
         <div className="blob blob-2"></div>
       </div>
+
+      {/* Desktop Top Navbar (Browserbase-style) */}
+      <header className="desktop-navbar">
+        <div className="navbar-container">
+          <div className="navbar-left" onClick={() => setActivePage("dashboard")} style={{ cursor: 'pointer' }}>
+            <div className="logo">SF</div>
+            <div className="brand-text">
+              <span className="brand-name">Syntax & Flow</span>
+              <span className="brand-tagline">Dokumentasjon Portal</span>
+            </div>
+          </div>
+          
+          <nav className="navbar-center">
+            {[
+              {
+                name: "Oversikt",
+                id: "oversikt",
+                items: wikiData.filter(page => page.category === "Oversikt" || page.category === "Hovedsider")
+              },
+              {
+                name: "Business Case",
+                id: "business-case",
+                items: wikiData.filter(page => page.category === "Business Case")
+              },
+              {
+                name: "GTM & Utførelse",
+                id: "gtm",
+                items: wikiData.filter(page => page.category === "GTM & Utførelse")
+              },
+              {
+                name: "Dokumenter & Referanser",
+                id: "dokumenter",
+                items: wikiData.filter(page => page.category === "Dokumenter")
+              }
+            ].map(cat => (
+              <div 
+                key={cat.id} 
+                className="nav-dropdown-wrapper"
+                onMouseEnter={() => setActiveDropdown(cat.id)}
+                onMouseLeave={() => setActiveDropdown(null)}
+              >
+                <button className={`nav-link-btn ${activeDropdown === cat.id ? 'active' : ''} ${cat.items.some(item => item.id === activePage) ? 'parent-active' : ''}`}>
+                  <span>{cat.name}</span>
+                  <Icons.ChevronDown className="w-3.5 h-3.5" />
+                </button>
+                
+                {activeDropdown === cat.id && (
+                  <div className="nav-dropdown-menu glass-card animate-fade-in">
+                    <div className={`dropdown-grid ${cat.items.length > 4 ? 'grid-2' : 'grid-1'}`}>
+                      {cat.items.map(item => (
+                        <button 
+                          key={item.id} 
+                          className={`dropdown-item-link ${activePage === item.id ? 'active' : ''}`}
+                          onClick={() => {
+                            setActivePage(item.id);
+                            setActiveDropdown(null);
+                          }}
+                        >
+                          <div className="dropdown-item-icon-wrapper">
+                            {renderIcon(item.icon, "w-4 h-4")}
+                          </div>
+                          <div className="dropdown-item-content">
+                            <div className="dropdown-item-title">{item.title}</div>
+                            <div className="dropdown-item-lead">{item.lead}</div>
+                          </div>
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+            ))}
+          </nav>
+          
+          <div className="navbar-right">
+            <button className="navbar-search-btn" onClick={() => setSearchOpen(true)} aria-label="Søk">
+              <Icons.Search className="w-4 h-4" />
+              <span>Søk...</span>
+              <kbd className="navbar-search-kbd">⌘K</kbd>
+            </button>
+            
+            <button
+              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+              className="navbar-theme-btn"
+              aria-label="Toggle theme"
+            >
+              {theme === "dark" ? (
+                <Icons.Sun className="w-4 h-4 text-yellow-400" />
+              ) : (
+                <Icons.Moon className="w-4 h-4 text-blue-600" />
+              )}
+            </button>
+          </div>
+        </div>
+      </header>
 
       {/* Mobile Top Bar */}
       <div className="mobile-header">
