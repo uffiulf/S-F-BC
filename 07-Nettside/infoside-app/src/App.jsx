@@ -5,6 +5,7 @@ import { wikiData } from "./data/wikiData";
 export default function App() {
   const [activePage, setActivePage] = useState("dashboard");
   const [theme, setTheme] = useState(() => localStorage.getItem("theme") || "dark");
+  const [colorPalette, setColorPalette] = useState(() => localStorage.getItem("color-palette") || "default");
   const [searchOpen, setSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const [activeVpcTab, setActiveVpcTab] = useState(0);
@@ -134,6 +135,12 @@ export default function App() {
     document.documentElement.setAttribute("data-theme", theme);
     localStorage.setItem("theme", theme);
   }, [theme]);
+
+  // Sync color palette to <html> element
+  useEffect(() => {
+    document.documentElement.setAttribute("data-color-palette", colorPalette);
+    localStorage.setItem("color-palette", colorPalette);
+  }, [colorPalette]);
 
   // CMD+K Keyboard shortcut for search
   useEffect(() => {
@@ -393,6 +400,39 @@ export default function App() {
               <kbd className="navbar-search-kbd">⌘K</kbd>
             </button>
             
+            <div className="theme-select-wrapper" style={{ display: 'flex', alignItems: 'center', gap: '6px', background: 'var(--bg-card)', border: '1px solid var(--border-color)', borderRadius: '6px', padding: '2px 8px 2px 6px' }}>
+              <Icons.Palette className="w-4 h-4 text-muted" style={{ opacity: 0.8, color: 'var(--text-muted)' }} />
+              <select
+                value={colorPalette}
+                onChange={(e) => setColorPalette(e.target.value)}
+                style={{
+                  background: 'transparent',
+                  border: 'none',
+                  color: 'var(--text-primary)',
+                  fontSize: '0.8rem',
+                  outline: 'none',
+                  cursor: 'pointer',
+                  fontFamily: 'var(--font-sans)',
+                  padding: '4px 0',
+                  margin: 0,
+                  WebkitAppearance: 'none',
+                  MozAppearance: 'none',
+                  appearance: 'none',
+                  paddingRight: '12px',
+                  backgroundImage: `url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%239ca3af' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3E%3C/svg%3E")`,
+                  backgroundPosition: 'right center',
+                  backgroundSize: '12px',
+                  backgroundRepeat: 'no-repeat',
+                }}
+                aria-label="Velg fargetema"
+              >
+                <option value="default" style={{ background: 'var(--bg-secondary)', color: 'var(--text-primary)' }}>Standard</option>
+                <option value="deep-tech" style={{ background: 'var(--bg-secondary)', color: 'var(--text-primary)' }}>Cyber Emerald</option>
+                <option value="obsidian-indigo" style={{ background: 'var(--bg-secondary)', color: 'var(--text-primary)' }}>Obsidian Indigo</option>
+                <option value="nordic-minimal" style={{ background: 'var(--bg-secondary)', color: 'var(--text-primary)' }}>Nordic Minimal</option>
+              </select>
+            </div>
+            
             <button
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
               className="navbar-theme-btn"
@@ -481,7 +521,40 @@ export default function App() {
           ))}
         </nav>
 
-        <div className="sidebar-footer">
+        <div className="sidebar-footer" style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+          <div className="theme-select-wrapper" style={{ display: 'flex', alignItems: 'center', gap: '8px', background: 'var(--bg-card)', border: '1px solid var(--border-color)', borderRadius: '8px', padding: '8px 12px', width: '100%' }}>
+            <Icons.Palette className="w-4 h-4 text-muted" style={{ opacity: 0.8, color: 'var(--text-muted)' }} />
+            <select
+              value={colorPalette}
+              onChange={(e) => setColorPalette(e.target.value)}
+              style={{
+                background: 'transparent',
+                border: 'none',
+                color: 'var(--text-primary)',
+                fontSize: '0.85rem',
+                outline: 'none',
+                cursor: 'pointer',
+                fontFamily: 'var(--font-sans)',
+                width: '100%',
+                margin: 0,
+                WebkitAppearance: 'none',
+                MozAppearance: 'none',
+                appearance: 'none',
+                paddingRight: '16px',
+                backgroundImage: `url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%239ca3af' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3E%3C/svg%3E")`,
+                backgroundPosition: 'right center',
+                backgroundSize: '12px',
+                backgroundRepeat: 'no-repeat',
+              }}
+              aria-label="Velg fargetema"
+            >
+              <option value="default" style={{ background: 'var(--bg-sidebar)', color: 'var(--text-primary)' }}>Standard</option>
+              <option value="deep-tech" style={{ background: 'var(--bg-sidebar)', color: 'var(--text-primary)' }}>Cyber Emerald</option>
+              <option value="obsidian-indigo" style={{ background: 'var(--bg-sidebar)', color: 'var(--text-primary)' }}>Obsidian Indigo</option>
+              <option value="nordic-minimal" style={{ background: 'var(--bg-sidebar)', color: 'var(--text-primary)' }}>Nordic Minimal</option>
+            </select>
+          </div>
+          
           <button
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
             className="theme-toggle-btn"

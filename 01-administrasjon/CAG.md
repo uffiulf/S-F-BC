@@ -93,15 +93,19 @@ Prioritet: 1) HiØ internt, 2) Ideelle organisasjoner, 3) Privatpersoner (ENK), 
 
 ## Lignende prosjekter i Norge
 
-| Prosjekt | Sted | Status | Hvorfor S&F er annerledes |
-|----------|------|--------|---------------------------|
-| **IT2901** (NTNU) | Trondheim | Aktivt, 15 stp | Kun IT-studenter, ingen portal |
-| **TDT4290** (NTNU) | Trondheim | Aktivt, 15 stp | Kun IT, master-nivå |
-| **IN2000** (UiO) | Oslo | Aktivt, 20 stp | Kun IT, stort volum |
-| **TÅRNET** (UiO) | Oslo | **Nedlagt** | Manglet kontinuitet/finansiering |
-| **AppLab** (UiB) | Bergen | **Nedlagt** | Manglet langsiktig forankring |
+| Prosjekt | Sted | Status | Årsak til overlevelse/nedleggelse |
+|----------|------|--------|-----------------------------------|
+| **IT2901** (NTNU) | Trondheim | ✅ Aktivt, 15 stp | Obligatorisk bachelor-emne, instituttdrevet |
+| **TDT4290** (NTNU) | Trondheim | ✅ Aktivt, 15 stp | Obligatorisk master-emne, instituttdrevet |
+| **IN2000** (UiO) | Oslo | ✅ Aktivt, 20 stp | Obligatorisk bachelor-emne, instituttdrevet |
+| **UE Studentbedrift** | Nasjonalt | ✅ Aktivt | Nasjonal organisasjon med statlig finansiering |
+| **Start NTNU** | Trondheim | ✅ Aktivt | Studentdrevet, sterk innovasjonskultur |
+| **TÅRNET** (UiO) | Oslo | ❓ Kan ikke verifiseres | For kortvarig/uformelt til å sette spor |
+| **AppLab** | — | ❓ Kan ikke verifiseres | Sannsynligvis forveksling med NTNU AppLab |
 
-**S&Fs unike posisjon:** Tverrfaglig (IT+design+økonomi), stabil kjerne, verifisert referanseportal, in-house på HiØ.
+**Mønster:** Prosjekter som overlever er enten **obligatoriske emner** (IT2901, TDT4290, IN2000) eller **etablerte organisasjoner med bred finansiering** (UE, Start NTNU). Uformelle initiativ uten institusjonell støtte forsvinner sporløst.
+
+**S&Fs unike posisjon:** Tverrfaglig (IT+design+økonomi), stabil kjerne, verifisert referanseportal, in-house på HiØ, forankret i emnet ITD35014.
 
 Se `08-EKSTRA/lignende_prosjekter_i_norge.md` for full oversikt.
 
