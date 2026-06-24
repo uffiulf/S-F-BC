@@ -145,6 +145,36 @@ Hver rad skal ha:
 Bruk eksisterende CSS-klasser og ikoner.
 Hvor: Helt nederst på Dashboard-siden
 
+### 22.06.2026 — QC Runde 3: Rett opp 12 feil på infosiden
+Prioritet: Høy
+Kilde: Full gjennomgang av wikiData.js og App.jsx
+Hva: Gå gjennom HELE wikiData.js og App.jsx og rett opp følgende:
+
+**🔴 KRITISK (3 stk):**
+1. Linje 563: "Samarbeidsavtalen & Betinget SLA / forpliktende milepælsplan" → skal være "Samarbeidsavtalen & Forpliktende milepælsplan" (fjern "Betinget SLA")
+2. Linje 573–578 og 739: "Spor A" og "Spor B" → bytt til "Eksterne oppdrag" og "Interne evighetsprosjekter" for å unngå forvirring med student-sporene
+3. Linje 342–345: "IP" definert som "Investor Proposal" → endre til "Intellectual Property. Immaterielle rettigheter (kode, design, patenter)."
+
+**🟡 SKRIVEFEIL (6 stk):**
+4. Linje 54: "to arbeidslivet" → "til arbeidslivet"
+5. Linje 149: "forholder seg to en" → "forholder seg til en"
+6. Linje 227: "to offentlig sektor" → "til offentlig sektor"
+7. Linje 1210: "råd to kommersielle" → "råd til kommersielle"
+8. Linje 1544: "kanaliseres to næringslivet" → "kanaliseres til næringslivet"
+9. Linje 1704: "EU-domstolen has slått fast" → "har slått fast"
+10. Linje 2685: "S&F has en fordel" → "har en fordel"
+11. Linje 694 og 1190: "slutter å give tilbakemeldinger" → "slutter å gi tilbakemeldinger"
+12. Linje 618: "Økonomisk pressure" → "Økonomisk press"
+13. Linje 1856: "Gjenomføre" → "Gjennomføre"
+14. Linje 790: "Avanserte Apper" → "Avanserte apper"
+
+**🟢 KOSMETISK (3 stk):**
+15. Linje 416–417: "Pro bono"-definisjonen: "Latin for «det godes skyld»" → endre til "Latin for 'for det allmenne beste'. Brukes om tjenester som leveres gratis."
+16. Linje 1992–2011: Gjennomføringsplan — gjør "Mnd" konsekvent (alle steder)
+17. Sjekk "Finansiering" i progressbaren i App.jsx linje 1133 — den peker til risiko-siden. Vurder om den skal peke til Business Case-utkastet i stedet, eller legg til en egen finansieringsside.
+
+Hvor: Hele wikiData.js og App.jsx
+
 ### 22.06.2026 — Legg til vurderingsmodell på Tjenester & Leveranser-siden
 Prioritet: Middels
 Kilde: `05-agent-forslag/Forslag/forslag_karakter_vurdering.md`
@@ -466,4 +496,5 @@ Hvor: Ny seksjon under "Analyser" eller "Guidelines"
 | 22.06.2026 | Oppdater studentbeskrivelser i trelagsmodellen | Utført |
 | 22.06.2026 | Legg til vurderingsmodell på Tjenester & Leveranser-siden | Utført |
 | 22.06.2026 | Rett opp "de minimis"-feil på infosiden — har blitt forkortet til "n" | Utført |
+| 22.06.2026 | QC Runde 3: Rett opp 12 feil på infosiden | Utført |
 

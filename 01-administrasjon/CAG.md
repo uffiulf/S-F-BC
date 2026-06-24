@@ -79,6 +79,16 @@ Prioritet: 1) HiØ internt, 2) Ideelle organisasjoner, 3) Privatpersoner (ENK), 
 
 ---
 
+## Nye avklaringer / siste status
+
+| Område | Status |
+|--------|--------|
+| **Vurderingsmodell** | Forslag om A–F med 60 % kundepåvirkning. Skal drøftes med emneansvarlig Stig Henning Johansen |
+| **De minimis-verdier** | Studentverdi: 250 kr/t (forsvarstall). Mentorverdi: 600 kr/t. Føres i internt register |
+| **Kalkulator** | Interaktiv kalkulator fjernet fra infosiden. Erstattet med statisk forklaring |
+| **Infoside** | Gjennomgått og rensket for skrivefeil (12 stk rettet) |
+| **Kildedokumenter** | Synkronisert — ingen avvik fra infosiden |
+
 ## Viktige beslutninger tatt
 
 - ✅ Syntax & Flow er et selvstendig organ, ikke en studentforening
@@ -130,3 +140,5 @@ Prioritet: 1) HiØ internt, 2) Ideelle organisasjoner, 3) Privatpersoner (ENK), 
 | Business Case Utkast | `06-Business-case/Business-Case-Utkast.md` |
 | ESA statsstøtte forskning | `04-kilde/esa_statsstotte_universiteter.md` |
 | Interessentanalyse (oppdatert) | `01-administrasjon/interessentanalyse.md` |
+| Forslag karakter vurdering | `05-agent-forslag/Forslag/forslag_karakter_vurdering.md` |
+| Drøfting kalkulator | `05-agent-forslag/Forslag/drofting_kalkulator.md` |

@@ -1130,7 +1130,7 @@ export default function App() {
                         { area: "Markedsanalyse", status: "🟡 Delvis", percentage: 50, link: "markeds-og-konkurranseanalyse", statusText: "Mangler lokale bedriftsintervjuer, TAM/SAM/SOM" },
                         { area: "Scope", status: "✅ Ferdig", percentage: 100, link: "scope", statusText: "Ferdig" },
                         { area: "Risiko & Juss", status: "🟡 Delvis", percentage: 80, link: "risiko-og-jus", statusText: "Mangler DPIA, forsikring" },
-                        { area: "Finansiering", status: "🟡 Delvis", percentage: 40, link: "risiko-og-jus", statusText: "Mangler 3-års prognose, konkret søknad" },
+                        { area: "Finansiering", status: "🟡 Delvis", percentage: 40, link: "maler-og-utkast", statusText: "Mangler 3-års prognose, konkret søknad" },
                         { area: "Team & Organisasjon", status: "🟡 Delvis", percentage: 40, link: "organisasjon-og-drift", statusText: "Mangler navngitte personer" },
                         { area: "Gjennomføringsplan", status: "✅ Ferdig", percentage: 90, link: "gjennomforingsplan", statusText: "Mangler Gantt-diagram" },
                         { area: "Vedlegg", status: "🟡 Delvis", percentage: 40, link: "maler-og-utkast", statusText: "Ikke organisert" },

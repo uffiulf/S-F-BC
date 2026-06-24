@@ -51,7 +51,7 @@ export const wikiData = [
       {
         "heading": "Tre Hovedmål",
         "points": [
-          "<strong>For studentene:</strong> Levere praktisk erfaring, CV-referanser og nettverk som sikrer rask overgang to arbeidslivet etter fullførte studier.",
+          "<strong>For studentene:</strong> Levere praktisk erfaring, CV-referanser og nettverk som sikrer rask overgang til arbeidslivet etter fullførte studier.",
           "<strong>For bedriftene:</strong> Tilby lavterskel, kostnadsfrie IT-, design- og økonomitjenester av høy kvalitet.",
           "<strong>For Høgskolen i Østfold (HiØ):</strong> Styrke utdanningenes relevans, redusere frafall og øke samarbeidet med det regionale næringslivet."
         ]
@@ -146,7 +146,7 @@ export const wikiData = [
             ]
           ]
         },
-        "text": "<br/><strong>Viktig prinsipp:</strong> Studentene <em>utfører</em> arbeidet, men <em>driver ikke</em> Syntax & Flow. Dette er ikke en studentforening, men et selvstendig organ in-house på HiØ. Dette sikrer at bedrifter forholder seg to en profesjonell, stabil organisasjon over tid. Målet er å gi studentene en klar og strukturert bane fra utdanning til fast ansettelse ved hjelp av portalen, der bedrifter kan følge dem og verifisere deres kompetanse.",
+        "text": "<br/><strong>Viktig prinsipp:</strong> Studentene <em>utfører</em> arbeidet, men <em>driver ikke</em> Syntax & Flow. Dette er ikke en studentforening, men et selvstendig organ in-house på HiØ. Dette sikrer at bedrifter forholder seg til en profesjonell, stabil organisasjon over tid. Målet er å gi studentene en klar og strukturert bane fra utdanning til fast ansettelse ved hjelp av portalen, der bedrifter kan følge dem og verifisere deres kompetanse.",
         "isCollapsible": true
       },
       {
@@ -224,7 +224,7 @@ export const wikiData = [
             ],
             [
               "<strong>B2G (Business-to-Government)</strong>",
-              "Forretningsmodell der bedrifter leverer tjenester eller produkter to offentlig sektor (f.eks. høyskoler eller kommuner).",
+              "Forretningsmodell der bedrifter leverer tjenester eller produkter til offentlig sektor (f.eks. høyskoler eller kommuner).",
               "Marked/Forretning"
             ],
             [
@@ -341,8 +341,8 @@ export const wikiData = [
             ],
             [
               "<strong>IP</strong>",
-              "Investor Proposal. Forslag eller presentasjon rettet mot investorer for å sikre finansiering.",
-              "Marked/Forretning"
+              "Intellectual Property. Immaterielle rettigheter (kode, design, patenter).",
+              "Jus/EØS"
             ],
             [
               "<strong>IPR</strong>",
@@ -413,7 +413,7 @@ export const wikiData = [
             ],
             [
               "<strong>Pro bono</strong>",
-              "Latin for «det godes skyld». Tjenester som leveres gratis, ofte for ideelle formål.",
+              "Latin for 'for det allmenne beste'. Brukes om tjenester som leveres gratis.",
               "Marked/Forretning"
             ],
             [
@@ -560,7 +560,7 @@ export const wikiData = [
         ]
       },
       {
-        "heading": "Samarbeidsavtalen & Betinget SLA / forpliktende milepælsplan",
+        "heading": "Samarbeidsavtalen & Forpliktende milepælsplan",
         "text": "Siden vi leverer gratis, inngår vi en samarbeidsavtale der kunden må kompensere med sin egen **tid**:",
         "points": [
           "<strong>Standard avtale (Best effort):</strong> Ingen formell leveransegaranti. Vi gjør vårt beste, men kunden har ingen juridisk reklamasjonsrett.",
@@ -573,8 +573,8 @@ export const wikiData = [
         "heading": "Modell med to parallelle spor",
         "text": "For å maksimere studentenes læringsutbytte og sikre drift gjennom hele året, opererer Syntax & Flow med to spor for prosjekter:",
         "points": [
-          "<strong>Spor A: Eksterne oppdrag (Kortsiktige):</strong> Enkle nettsider, profiler og markedsrapporter for lokale mikrovirksomheter, lag og foreninger. Disse avsluttes og overleveres innenfor ett enkelt semester.",
-          "<strong>Spor B: Interne evighetsprosjekter (Langsiktige):</strong> Større tverrfaglige IT- og analysesystemer (f.eks. integrert timeføringsportal, ERP-system eller ressursplanlegger for campus). Disse går over flere semestre, der nye studentkull overtar og bygger videre på det forrige kullets arbeid."
+          "<strong>Eksterne oppdrag (Kortsiktige):</strong> Enkle nettsider, profiler og markedsrapporter for lokale mikrovirksomheter, lag og foreninger. Disse avsluttes og overleveres innenfor ett enkelt semester.",
+          "<strong>Interne evighetsprosjekter (Langsiktige):</strong> Større tverrfaglige IT- og analysesystemer (f.eks. integrert timeføringsportal, ERP-system eller ressursplanlegger for campus). Disse går over flere semestre, der nye studentkull overtar og bygger videre på det forrige kullets arbeid."
         ]
       },
       {
@@ -615,7 +615,7 @@ export const wikiData = [
           ],
           "pains": [
             "Erfaringsparadokset: Krav om relevant arbeidserfaring for nybegynnerstillinger.",
-            "Økonomisk pressure: Behovet for inntekt gjør at man må ta irrelevante strøjobber.",
+            "Økonomisk press: Behovet for inntekt gjør at man må ta irrelevante strøjobber.",
             "Teoretisk overbelastning: Opplevelse av at teorien på høgskolen er for fjern fra praktisk hverdag.",
             "Isolasjon på studiet: Liten erfaring med å jobbe i tverrfaglige team på tvers av avdelinger."
           ],
@@ -736,7 +736,7 @@ export const wikiData = [
       {
         "heading": "📄 Detaljert bakgrunnsdokument (scope_minst_motstand.md)",
         "isCollapsible": true,
-        "text": "Dette er det fulle innholdet fra bakgrunnsdokumentet <em>scope_minst_motstand.md</em> som definerer premissene for piloten:<br/><br/><h3>1. Organisatorisk struktur — et skille mellom drift og utførelse</h3>Syntax & Flow drives av en stabil kjerne, mens studentene utfører oppdragene. Dette er et selvstendig organ in-house på HiØ, ikke en studentforening.<br/><br/><strong>Den stabile kjernen:</strong><div class='table-container'><table class='wiki-table'><thead><tr><th>Rolle</th><th>Tilknytning</th><th>Ansvarsområde</th></tr></thead><tbody><tr><td>Daglig leder</td><td>Fast / stipendiat</td><td>Daglig drift, kundekontakt, strategi</td></tr><tr><td>Fagansvarlige</td><td>Lønnet / fagansatte</td><td>Faglig kvalitetssikring og veiledning</td></tr><tr><td>Forelesere</td><td>Trukket inn ved behov</td><td>Kvalitetssikring av komplekse leveranser</td></tr><tr><td>Styret</td><td>HiØ + uavhengige</td><td>Strategisk retning, tilsyn</td></tr></tbody></table></div><strong>Studentene (utfører oppdrag):</strong><div class='table-container'><table class='wiki-table'><thead><tr><th>Rolle</th><th>Tilknytning</th><th>Ansvarsområde</th></tr></thead><tbody><tr><td>Teammedlem</td><td>ITD35014 (10 stp)</td><td>Utfører oppgaver i tverrfaglige team</td></tr><tr><td>Teamleder</td><td>ITD35014 + erfaren</td><td>Koordinerer teamet og kundekontakt</td></tr></tbody></table></div><h3>2. Utgangspunkt: Eksisterende emne ITD35014</h3>HiØ har allerede emnet ITD35014 Bedriftspraksis (10 stp) under Fakultet for IT, ingeniørfag og økonomi (IIO). S&Fs rolle er å skaffe praksisplasser, organisere tverrfaglige team og sørge for veiledning/kvalitetssikring. Dette løser studentenes problem med å måtte skaffe praksisplass selv.<br/><br/><h3>3. Tjenester & Leveranser (Hva leveres)</h3>We skiller mellom to spor:<br/>• <strong>Spor A: Eksterne oppdrag (Kortsiktige):</strong> Enkle nettsider, logo/visuell profil, markedsanalyse, forretningsmodellering (BMC) for mikrovirksomheter.<br/>• <strong>Spor B: Interne evighetsprosjekter (Langsiktige):</strong> Tverrfaglige systemer (f.eks. internt ERP-system eller studentportal) som går over flere semestre med overlevering mellom kullene.<br/><br/><strong>Hva vi bevisst UNNGÅR i starten:</strong> Applikasjoner med sensitive databaser/personopplysninger, IT-sikkerhetsrevisjon, ekstern regnskapsføring for andre, og oppdrag som krever SLA.<br/><br/><h3>4. Kundekriterier (Hvem leverer vi to)</h3>For å unngå statsstøtteproblematikk og konkurranseklager leverer vi kun til:<br/>1. Interne avdelinger ved HiØ<br/>2. Ideelle organisasjoner, lag og foreninger<br/>3. Privatpersoner (ENK uten ansatte) og gründere i oppstartsfasen<br/>4. Mikrovirksomheter (1–5 ansatte) som bekrefter at de ikke har budsjett til kommersielle aktører.<br/><br/><h3>5. Deltakelse & Lånekassen</h3>• <strong>ITD35014 Bedriftspraksis (10 stp):</strong> Dagens eneste studieløp. Arbeidstid ca. 12–15 timer/uke. Siden programstudenter normalt tar 30 stp totalt per semester (hvor ITD35014 inngår), beholder de full basisstøtte fra Lånekassen. Lånekassens minstekrav på 15 stp gjelder kun dersom emnet tas som et frittstående enkeltemne utenom et studieprogram.<br/>• <strong>NAV-samarbeid:</strong> Utsettes til etter pilotfasen (tidligst Fase 4).<br/>• <strong>Langsiktig mål:</strong> Avklare rammene for enkeltemnestudenter vs. programstudenter for å sikre stabile rammer, samt utrede eventuell fremtidig utvidelse av ITD35014.<br/><br/><h3>6. Portalen som verifisert referansebase</h3>Portalen løser bedriftenes problem med informasjonsasymmetri ved rekruttering. I stedet for en selvrapportert CV, gir portalen dokumentert bevis på en kandidats faktiske arbeidsprestasjon over 3–6 måneder basert på rubric-vurderinger fra kunder og mentorer.<br/><br/><strong>Juridiske rammer:</strong> Fullstendig samtykkebasert (opt-in), strukturerte vurderingskriterier uten negativ fritekst, fullt innsyn og sletterett for studenten, samt begrenset tilgang for godkjente bedrifter.<br/><br/><h3>7. Organisasjon, juss & forvaltning</h3>• <strong>Organisasjonsform:</strong> AS eid av ideell stiftelse for ansvarsbegrensning og ryddig statsstøtteskille.<br/>• <strong>Samarbeid med HiØ:</strong> Betale markedspris for lokaler/mentorer (eller definere det som ordinær undervisning) for å unngå ulovlig offentlig støtte.<br/>• <strong>Kundeavtale:</strong> Standard 'as-is'-avtale med ansvarsfraskrivelse, begrenset opptil 10 000 kr.<br/>• <strong>Støtteregister:</strong> Føre de minimis-register for alle kunder (maks 300 000 EUR over 3 år).<br/><br/><h3>8. Suksesskriterier for piloten</h3>1. Ett team (3–5 studenter) gjennomfører ett prosjekt for én kunde (eller et internt evighetsprosjekt er påbegynt).<br/>2. Prosjektet fullføres innen 8–12 uker med god kundetilfredshet (NPS > 7).<br/>3. Godt rapportert læringsutbytte (> 4/5) og ingen juridiske klager eller hendelser.<br/>4. Alt er grundig dokumentert (timer, de minimis, vurderinger)."
+        "text": "Dette er det fulle innholdet fra bakgrunnsdokumentet <em>scope_minst_motstand.md</em> som definerer premissene for piloten:<br/><br/><h3>1. Organisatorisk struktur — et skille mellom drift og utførelse</h3>Syntax & Flow drives av en stabil kjerne, mens studentene utfører oppdragene. Dette er et selvstendig organ in-house på HiØ, ikke en studentforening.<br/><br/><strong>Den stabile kjernen:</strong><div class='table-container'><table class='wiki-table'><thead><tr><th>Rolle</th><th>Tilknytning</th><th>Ansvarsområde</th></tr></thead><tbody><tr><td>Daglig leder</td><td>Fast / stipendiat</td><td>Daglig drift, kundekontakt, strategi</td></tr><tr><td>Fagansvarlige</td><td>Lønnet / fagansatte</td><td>Faglig kvalitetssikring og veiledning</td></tr><tr><td>Forelesere</td><td>Trukket inn ved behov</td><td>Kvalitetssikring av komplekse leveranser</td></tr><tr><td>Styret</td><td>HiØ + uavhengige</td><td>Strategisk retning, tilsyn</td></tr></tbody></table></div><strong>Studentene (utfører oppdrag):</strong><div class='table-container'><table class='wiki-table'><thead><tr><th>Rolle</th><th>Tilknytning</th><th>Ansvarsområde</th></tr></thead><tbody><tr><td>Teammedlem</td><td>ITD35014 (10 stp)</td><td>Utfører oppgaver i tverrfaglige team</td></tr><tr><td>Teamleder</td><td>ITD35014 + erfaren</td><td>Koordinerer teamet og kundekontakt</td></tr></tbody></table></div><h3>2. Utgangspunkt: Eksisterende emne ITD35014</h3>HiØ har allerede emnet ITD35014 Bedriftspraksis (10 stp) under Fakultet for IT, ingeniørfag og økonomi (IIO). S&Fs rolle er å skaffe praksisplasser, organisere tverrfaglige team og sørge for veiledning/kvalitetssikring. Dette løser studentenes problem med å måtte skaffe praksisplass selv.<br/><br/><h3>3. Tjenester & Leveranser (Hva leveres)</h3>We skiller mellom to typer oppdrag:<br/>• <strong>Eksterne oppdrag (Kortsiktige):</strong> Enkle nettsider, logo/visuell profil, markedsanalyse, forretningsmodellering (BMC) for mikrovirksomheter.<br/>• <strong>Interne evighetsprosjekter (Langsiktige):</strong> Tverrfaglige systemer (f.eks. internt ERP-system eller studentportal) som går over flere semestre med overlevering mellom kullene.<br/><br/><strong>Hva vi bevisst UNNGÅR i starten:</strong> Applikasjoner med sensitive databaser/personopplysninger, IT-sikkerhetsrevisjon, ekstern regnskapsføring for andre, og oppdrag som krever SLA.<br/><br/><h3>4. Kundekriterier (Hvem leverer vi til)</h3>For å unngå statsstøtteproblematikk og konkurranseklager leverer vi kun til:<br/>1. Interne avdelinger ved HiØ<br/>2. Ideelle organisasjoner, lag og foreninger<br/>3. Privatpersoner (ENK uten ansatte) og gründere i oppstartsfasen<br/>4. Mikrovirksomheter (1–5 ansatte) som bekrefter at de ikke har budsjett til kommersielle aktører.<br/><br/><h3>5. Deltakelse & Lånekassen</h3>• <strong>ITD35014 Bedriftspraksis (10 stp):</strong> Dagens eneste studieløp. Arbeidstid ca. 12–15 timer/uke. Siden programstudenter normalt tar 30 stp totalt per semester (hvor ITD35014 inngår), beholder de full basisstøtte fra Lånekassen. Lånekassens minstekrav på 15 stp gjelder kun dersom emnet tas som et frittstående enkeltemne utenom et studieprogram.<br/>• <strong>NAV-samarbeid:</strong> Utsettes til etter pilotfasen (tidligst Fase 4).<br/>• <strong>Langsiktig mål:</strong> Avklare rammene for enkeltemnestudenter vs. programstudenter for å sikre stabile rammer, samt utrede eventuell fremtidig utvidelse av ITD35014.<br/><br/><h3>6. Portalen som verifisert referansebase</h3>Portalen løser bedriftenes problem med informasjonsasymmetri ved rekruttering. I stedet for en selvrapportert CV, gir portalen dokumentert bevis på en kandidats faktiske arbeidsprestasjon over 3–6 måneder basert på rubric-vurderinger fra kunder og mentorer.<br/><br/><strong>Juridiske rammer:</strong> Fullstendig samtykkebasert (opt-in), strukturerte vurderingskriterier uten negativ fritekst, fullt innsyn og sletterett for studenten, samt begrenset tilgang for godkjente bedrifter.<br/><br/><h3>7. Organisasjon, juss & forvaltning</h3>• <strong>Organisasjonsform:</strong> AS eid av ideell stiftelse for ansvarsbegrensning og ryddig statsstøtteskille.<br/>• <strong>Samarbeid med HiØ:</strong> Betale markedspris for lokaler/mentorer (eller definere det som ordinær undervisning) for å unngå ulovlig offentlig støtte.<br/>• <strong>Kundeavtale:</strong> Standard 'as-is'-avtale med ansvarsfraskrivelse, begrenset opptil 10 000 kr.<br/>• <strong>Støtteregister:</strong> Føre de minimis-register for alle kunder (maks 300 000 EUR over 3 år).<br/><br/><h3>8. Suksesskriterier for piloten</h3>1. Ett team (3–5 studenter) gjennomfører ett prosjekt for én kunde (eller et internt evighetsprosjekt er påbegynt).<br/>2. Prosjektet fullføres innen 8–12 uker med god kundetilfredshet (NPS > 7).<br/>3. Godt rapportert læringsutbytte (> 4/5) og ingen juridiske klager eller hendelser.<br/>4. Alt er grundig dokumentert (timer, de minimis, vurderinger)."
       },
       {
         "heading": "1. Overordnet Scope",
@@ -1187,7 +1187,7 @@ export const wikiData = [
         "sannsynlighet": 3,
         "konsekvens": 4,
         "alvorlighet": "Høy",
-        "beskrivelse": "Kunden slutter å stille på ukentlige møter eller give tilbakemeldinger, noe som ødelegger studentenes tid.",
+        "beskrivelse": "Kunden slutter å stille på ukentlige møter eller gi tilbakemeldinger, noe som ødelegger studentenes tid.",
         "tiltak": "Kontraktsfeste streng klausul: Dersom kunden uteblir fra faste møter uten gyldig grunn, avsluttes prosjektet umiddelbart.",
         "adjustmentId": 8
       },
@@ -1207,7 +1207,7 @@ export const wikiData = [
         "sannsynlighet": 4,
         "konsekvens": 2,
         "alvorlighet": "Høy",
-        "tiltak": "Posisjonere oss strengt mot mikrovirksomheter og oppstartsbedrifter som uansett ikke har råd to kommersielle priser.",
+        "tiltak": "Posisjonere oss strengt mot mikrovirksomheter og oppstartsbedrifter som uansett ikke har råd til kommersielle priser.",
         "adjustmentId": 6
       },
       {
@@ -1541,7 +1541,7 @@ export const wikiData = [
               "La en <strong>ideell stiftelse</strong> eie aksjene. Stiftelsen har utdanningsformål, kan søke skattefritak, og overskudd går til allmennyttige formål.",
               "Styret: 1 fra HiØ (observatør), 2 fra næringslivet, 2 studenter. HiØ skal <strong>ikke</strong> ha styreflertall."
             ],
-            "hvorfor": "Juridisk skille mellom HiØ og den operative virksomheten gjør det vanskeligere for ESA å påvise at HiØs ressurser er «statlige midler» som kanaliseres to næringslivet. AS gir full ansvarsbegrensning for studentene — de kan ikke tape mer enn aksjekapitalen. Aksjeloven er godt regulert og forutsigbar, i motsetning til ulovfestet foreningsrett hvor medlemmer i noen tilfeller kan holdes personlig ansvarlige. Stiftelsen som eier kan søke skattefritak (skatteloven § 2-30).",
+            "hvorfor": "Juridisk skille mellom HiØ og den operative virksomheten gjør det vanskeligere for ESA å påvise at HiØs ressurser er «statlige midler» som kanaliseres til næringslivet. AS gir full ansvarsbegrensning for studentene — de kan ikke tape mer enn aksjekapitalen. Aksjeloven er godt regulert og forutsigbar, i motsetning til ulovfestet foreningsrett hvor medlemmer i noen tilfeller kan holdes personlig ansvarlige. Stiftelsen som eier kan søke skattefritak (skatteloven § 2-30).",
             "motstand": [
               "<strong>Kapitalkravet:</strong> 30 000 kr i aksjekapital må skaffes. HiØ kan ikke skyte inn kapital uten at det oppstår statsstøtte-spørsmål. Løsning: studentsamskipnaden (SiØ), lokale næringsstiftelser eller crowd-funding.",
               "<strong>HiØ kan motsette seg å stå utenfor styret:</strong> HiØ vil trolig ønske kontroll. Løsning: gi HiØ observatørstatus med talerett, og la HiØs jurister godkjenne samarbeidsavtalen.",
@@ -1701,7 +1701,7 @@ export const wikiData = [
             "konkret": [
               "Statsstøttereglene gjelder bare for foretak. Ved å rette seg mot privatpersoner (ENK), ideelle organisasjoner og HiØs interne avdelinger, reduseres risikoen betydelig."
             ],
-            "hvorfor": "EU-domstolen (C-222/04) has slått fast at statsstøttereglene bare gjelder foretak som driver økonomisk aktivitet. Privatpersoner og rene ideelle organisasjoner uten økonomisk aktivitet faller utenfor. Dette er den enkleste måten å unngå statsstøtteproblemet helt.",
+            "hvorfor": "EU-domstolen (C-222/04) har slått fast at statsstøttereglene bare gjelder foretak som driver økonomisk aktivitet. Privatpersoner og rene ideelle organisasjoner uten økonomisk aktivitet faller utenfor. Dette er den enkleste måten å unngå statsstøtteproblemet helt.",
             "motstand": [
               "Ideelle organisasjoner og HiØs interne avdelinger har ofte mindre spennende prosjekter. Gir mindre portefølje-verdi for studentene. Løsning: bland — ha 50 % ideelle/private og 50 % mikrovirksomheter for å balansere risiko og læringsverdi."
             ]
@@ -1853,7 +1853,7 @@ export const wikiData = [
           {
             "title": "Tilpasning 9B — Gjennomfør DPIA før portalen bygges",
             "konkret": [
-              "Gjenomføre en personvernvurdering (DPIA) for portalen."
+              "Gjennomføre en personvernvurdering (DPIA) for portalen."
             ],
             "hvorfor": "DPIA er påkrevd (GDPR art. 35) når behandlingen innebærer særlige kategorier eller profilering av sårbare grupper. En DPIA beskytter også Syntax & Flow ved å dokumentere at dere har vurdert risikoene.",
             "motstand": [
@@ -1989,25 +1989,25 @@ export const wikiData = [
           "rows": [
             [
               "Fase 1",
-              "Planlegging & Konsept (Mnd 1-3)",
+              "Planlegging & Konsept (Måned 1–3)",
               "Ingen direkte risiko. Kartlegging av emner, samtaler med nøkkelpersoner på HiØ og partnere.",
               "Bare prat og planer — null risiko"
             ],
             [
               "Fase 2",
-              "Juridisk & Org. oppsett (Mnd 3-6)",
+              "Juridisk & Org. oppsett (Måned 3–6)",
               "Lånekassen-avklaring, statsstøtte/EØS, arbeidstakerklassifisering, forsikring, GDPR.",
               "Rydde alt juridisk før første kundeleveranse"
             ],
             [
               "Fase 3",
-              "Pilot med sikkerhetsnett (Mnd 6-12)",
+              "Pilot med sikkerhetsnett (Måned 6–12)",
               "Faktisk kvalitet på leveranse, kunde-engasjement, tracking av de minimis-verdier.",
               "Ett pilotprosjekt — test og dokumenter alt"
             ],
             [
               "Fase 4",
-              "Skalering med åpne øyne (Mnd 12-24)",
+              "Skalering med åpne øyne (Måned 12–24)",
               "Konkurranseklager fra kommersielle byråer, automatisering av register, oppstart NAV-spor.",
               "Skaler gradvis med erfaringen fra piloten"
             ]
@@ -2232,7 +2232,7 @@ export const wikiData = [
       }
     ],
     "tldr": [
-      "Gjennomføringen skjer i 4 faser: Fase 1 (Mnd 1-3) Plan, Fase 2 (Mnd 3-6) Juss, Fase 3 (Mnd 6-12) Pilot, Fase 4 (Mnd 12-24) Skalering.",
+      "Gjennomføringen skjer i 4 faser: Fase 1 (Måned 1–3) Plan, Fase 2 (Måned 3–6) Juss, Fase 3 (Måned 6–12) Pilot, Fase 4 (Måned 12–24) Skalering.",
       "Forutsetninger for oppstart: Godkjent emnebeskrivelse, stiftelse av AS, yrkesansvarsforsikring og samarbeidsavtale med HiØ.",
       "Beredskapsplanen har klare rutiner for krisescenarioer som ESA-klager, datalekkasjer eller Lånekassen-avslag."
     ]
@@ -2682,7 +2682,7 @@ export const wikiData = [
           "<strong>Standardavtale for IPR er avgjørende:</strong> NTNU-modellen (TDT4290) bør kopieres for ryddige rettighetsforhold.",
           "<strong>Balanse mellom frihet og struktur:</strong> Studentdrevne organisasjoner har engasjement, men sliter ofte med kontinuitet.",
           "<strong>Skalerbarhet krever ressurser:</strong> IN2000 håndterer 250 studenter, men krever mange veiledere.",
-          "<strong>Tverrfaglighet er en styrke:</strong> Syntax & Flow has en fordel med IT + design + økonomi.",
+          "<strong>Tverrfaglighet er en styrke:</strong> Syntax & Flow har en fordel med IT + design + økonomi.",
           "<strong>Kvalitetssikring bygger tillit:</strong> Felles karakter + individuell vurdering motiverer studentene.",
           "<strong>UEs rammeverk kan brukes:</strong> Maler for forretningsplan, IPR og struktur gir trygghet.",
           "<strong>Bygg bro til inkubatormiljøene (støtteprogrammer for oppstartsbedrifter):</strong> Koble oss på lokale næringshager (fysiske miljøer med kontorplass, veiledning og nettverk) og Blender Collective (gründerinkubator og kontorfellesskap)."
