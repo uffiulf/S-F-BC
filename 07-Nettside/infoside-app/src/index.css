@@ -279,6 +279,18 @@ body {
   flex-direction: column;
 }
 
+@media (min-width: 1400px) {
+  .content-area {
+    max-width: 1300px;
+  }
+}
+
+@media (min-width: 1850px) {
+  .content-area {
+    max-width: 1600px;
+  }
+}
+
 /* Header & Search Bar */
 .top-header {
   position: sticky;
@@ -1324,8 +1336,8 @@ mark.highlight {
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-  aspect-ratio: 1.1 / 1;
   width: 100%;
+  height: 520px;
   transition: border-color 0.3s ease;
 }
 
@@ -1369,9 +1381,21 @@ mark.highlight {
   border-radius: 44px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-  aspect-ratio: 1.1 / 1;
   width: 100%;
+  height: 520px;
   transition: border-color 0.3s ease;
+}
+
+@media (min-width: 1400px) {
+  .vpc-square-canvas, .vpc-circle-canvas {
+    height: 620px;
+  }
+}
+
+@media (min-width: 1850px) {
+  .vpc-square-canvas, .vpc-circle-canvas {
+    height: 760px;
+  }
 }
 
 .vpc-circle-canvas:hover {
