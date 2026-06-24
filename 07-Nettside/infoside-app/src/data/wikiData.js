@@ -57,12 +57,13 @@ export const wikiData = [
         ]
       },
       {
-        "heading": "Det Tverrfaglige Samspillet",
-        "text": "Selskapet er bygget rundt samspillet mellom tre avdelinger:",
+        "heading": "Tverrfaglig sammensetning",
+        "text": "Syntax & Flow setter sammen team på tvers av fagdisipliner. Hvilke studenter som deltar avhenger av oppdraget, men typisk vil et team bestå av:",
         "points": [
-          "<strong>IT & Utvikling:</strong> Programmering, prototyping, nettsider, skyverktøy og digitalisering.",
-          "<strong>UI/UX & Design:</strong> Visuell identitet, wireframes, klikkbare Figma-prototyper og brukertester.",
-          "<strong>Økonomi & Forretningsutvikling:</strong> Flaskehalsanalyser, markedskartlegging, regnskapsrutiner og effektiviseringsplaner."
+          "<strong>IT & Utvikling:</strong> Studenter fra informatikk, dataingeniør eller informasjonssystemer. Kan bidra med programmering, webutvikling, databasesystemer og systemarkitektur.",
+          "<strong>Design & Medier:</strong> Studenter fra digitale medier og design. Kan bidra med UX/UI-design, visuell profil, prototyping og medieproduksjon.",
+          "<strong>Økonomi & Ledelse:</strong> Studenter fra økonomi og administrasjon eller innovasjon og prosjektledelse. Kan bidra med forretningsutvikling, regnskap, budsjettering og prosjektstyring.",
+          "<strong>Kommunikasjon:</strong> Studenter fra kommunikasjon eller internasjonal kommunikasjon. Kan bidra med strategisk kommunikasjon, krisekommunikasjon og digital markedsføring."
         ]
       }
     ],

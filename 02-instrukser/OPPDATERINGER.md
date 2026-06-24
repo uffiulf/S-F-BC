@@ -145,6 +145,27 @@ Hver rad skal ha:
 Bruk eksisterende CSS-klasser og ikoner.
 Hvor: Helt nederst på Dashboard-siden
 
+### 22.06.2026 — Oppdater "Det Tverrfaglige Samspillet" på Mål & Visjon med korrekt faginnhold
+Prioritet: Høy
+Kilde: HiØs studieprogramsider (bekreftet via research)
+Hva: På "Mål & Visjon"-siden, under "Det Tverrfaglige Samspillet", oppdater teksten. Den nåværende teksten er utdatert og kaller S&F et "selskap" med "avdelinger". S&F er et selvstendig organ med en stabil kjerne. Oppdater til:
+
+**Overskrift:** "Tverrfaglig sammensetning"
+
+**Brødtekst:**
+"Syntax & Flow setter sammen team på tvers av fagdisipliner. Hvilke studenter som deltar avhenger av oppdraget, men typisk vil et team bestå av:
+
+**IT & Utvikling:** Studenter fra informatikk, dataingeniør eller informasjonssystemer. Kan bidra med programmering, webutvikling, databasesystemer og systemarkitektur.
+
+**Design & Medier:** Studenter fra digitale medier og design. Kan bidra med UX/UI-design, visuell profil, prototyping og medieproduksjon.
+
+**Økonomi & Ledelse:** Studenter fra økonomi og administrasjon eller innovasjon og prosjektledelse. Kan bidra med forretningsutvikling, regnskap, budsjettering og prosjektstyring.
+
+**Kommunikasjon:** Studenter fra kommunikasjon eller internasjonal kommunikasjon. Kan bidra med strategisk kommunikasjon, krisekommunikasjon og digital markedsføring."
+
+Fjern konkret omtale av "regnskapsrutiner" og "flaskehalsanalyser" — disse er ikke standard fagbegreper. Hold beskrivelsene nøytrale og basert på faktiske emner.
+Hvor: "Mål & Visjon"-siden, under "Det Tverrfaglige Samspillet"
+
 ### 22.06.2026 — QC Runde 3: Rett opp 12 feil på infosiden
 Prioritet: Høy
 Kilde: Full gjennomgang av wikiData.js og App.jsx
@@ -497,4 +518,5 @@ Hvor: Ny seksjon under "Analyser" eller "Guidelines"
 | 22.06.2026 | Legg til vurderingsmodell på Tjenester & Leveranser-siden | Utført |
 | 22.06.2026 | Rett opp "de minimis"-feil på infosiden — har blitt forkortet til "n" | Utført |
 | 22.06.2026 | QC Runde 3: Rett opp 12 feil på infosiden | Utført |
+| 22.06.2026 | Oppdater "Det Tverrfaglige Samspillet" på Mål & Visjon med korrekt faginnhold | Utført |
 
