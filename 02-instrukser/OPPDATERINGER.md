@@ -166,6 +166,12 @@ Hva: På "Mål & Visjon"-siden, under "Det Tverrfaglige Samspillet", oppdater te
 Fjern konkret omtale av "regnskapsrutiner" og "flaskehalsanalyser" — disse er ikke standard fagbegreper. Hold beskrivelsene nøytrale og basert på faktiske emner.
 Hvor: "Mål & Visjon"-siden, under "Det Tverrfaglige Samspillet"
 
+### 22.06.2026 — Oppdater overskrift "Utførende studenter" → "Studentteam"
+Prioritet: Lav
+Kilde: Prosjekteier
+Hva: På Dashboard-siden, under "Driftsmodell", endre overskriften "Utførende studenter" til "Studentteam". Samme innhold, bare ny overskrift.
+Hvor: Dashboard-siden
+
 ### 22.06.2026 — Presentasjon for møte — info klar i egen fil (ikke til Gemini)
 Prioritet: — (info til prosjekteier)
 Hva: Innholdet til presentasjonen ligger i `05-agent-forslag/Forslag/presentasjonsinnhold.md`. Denne filen inneholder alt en multimodal AI-agent eller LLM trenger for å lage en presentasjon (HTML, PowerPoint eller annet format). Ikke noe Gemini trenger å gjøre med dette.
@@ -545,6 +551,7 @@ Hvor: Ny seksjon under "Analyser" eller "Guidelines"
 | 24.06.2026 | Flytte 'Hvordan henger business casen sammen?' og 'Fremdrift' til egen side | Utført |
 | 24.06.2026 | Forbedre kontrast og tekstlesbarhet i mørk modus | Utført |
 | 24.06.2026 | Pakke driftsmodellen på Introduksjon inn i en visuell boks | Utført |
+| 22.06.2026 | Oppdater overskrift 'Utførende studenter' til 'Studentteam' | Utført |
 
 
 

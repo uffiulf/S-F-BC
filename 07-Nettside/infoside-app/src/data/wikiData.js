@@ -11,7 +11,7 @@ export const wikiData = [
         "text": "Syntax & Flow er et selvstendig organ lokalisert in-house på Høgskolen i Østfold (HiØ). Vi bygger broen mellom akademia og arbeidslivet. Organisasjonen drives av en stabil kjerne, mens studentene utfører reelle oppdrag for lokale bedrifter gjennom tverrfaglige team innen IT, Design og Økonomi."
       },
       {
-        "heading": "Driftsmodell: Stabil kjerne vs. Utførende studenter",
+        "heading": "Driftsmodell: Stabil kjerne vs. Studentteam",
         "text": `For å sikre kontinuitet, profesjonalitet og høy kvalitet drives Syntax & Flow etter en modell med et tydelig skille mellom drift og utførelse:<br/><br/>
 <div style="background: var(--bg-secondary); border: 1px solid var(--border-color); border-left: 4px solid var(--accent-color); border-radius: 4px 12px 12px 4px; padding: 20px; margin-top: 16px;">
   <ul style="padding-left: 20px; display: flex; flex-direction: column; gap: 12px; margin-bottom: 16px; list-style-type: disc;">
