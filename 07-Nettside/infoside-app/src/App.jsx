@@ -776,7 +776,7 @@ export default function App() {
                       ) : (
                         <>
                           <h2>{sec.heading}</h2>
-                          {sec.heading === "Hvordan henger business casen sammen?" && currentPage.id === "dashboard" ? (
+                          {sec.heading === "Hvordan henger business casen sammen?" && currentPage.id === "fremdrift" ? (
                             <div className="business-case-flow-container mt-6 animate-fade-in">
                               <div className="flow-steps-grid-3">
                                 {[
@@ -1200,8 +1200,8 @@ export default function App() {
                   );
                 })}
 
-                {/* Custom: Business Case Fremdrift for Dashboard page */}
-                {currentPage.id === "dashboard" && (
+                {/* Custom: Business Case Fremdrift for Fremdrift page */}
+                {currentPage.id === "fremdrift" && (
                   <div className="business-case-progress mt-12 glass-card animate-fade-in" style={{ padding: '24px', borderRadius: '16px', marginTop: '48px', border: '1px solid var(--border-color)' }}>
                     <style dangerouslySetInnerHTML={{ __html: `
                       .progress-row-item:hover {
