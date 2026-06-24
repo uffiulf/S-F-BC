@@ -166,6 +166,18 @@ Hva: På "Mål & Visjon"-siden, under "Det Tverrfaglige Samspillet", oppdater te
 Fjern konkret omtale av "regnskapsrutiner" og "flaskehalsanalyser" — disse er ikke standard fagbegreper. Hold beskrivelsene nøytrale og basert på faktiske emner.
 Hvor: "Mål & Visjon"-siden, under "Det Tverrfaglige Samspillet"
 
+### 22.06.2026 — QC Runde 4: Rett opp 4 nye feil på infosiden
+Prioritet: Høy
+Kilde: QC-gjennomgang av wikiData.js
+Hva: Rett opp følgende 4 feil i wikiData.js:
+
+1. Linje 1181: "statsstøtte to bedrifter" → "statsstøtte til bedrifter"
+2. Linje 1258: "Søknad to Lånekassen" → "Søknad til Lånekassen"
+3. Linje 740: "We skiller" → "Vi skiller" (norsk, ikke engelsk)
+4. Linje 1417 og 1424: "Avtalesijen § 36" → "Avtaleloven § 36" (riktig lovnavn)
+
+Hvor: wikiData.js
+
 ### 22.06.2026 — QC Runde 3: Rett opp 12 feil på infosiden
 Prioritet: Høy
 Kilde: Full gjennomgang av wikiData.js og App.jsx
@@ -520,5 +532,7 @@ Hvor: Ny seksjon under "Analyser" eller "Guidelines"
 | 22.06.2026 | QC Runde 3: Rett opp 12 feil på infosiden | Utført |
 | 22.06.2026 | Oppdater "Det Tverrfaglige Samspillet" på Mål & Visjon med korrekt faginnhold | Utført |
 | 24.06.2026 | Forbedre grafisk fremstilling på Mål & Visjon (kort, banner, utgangspunkt) | Utført |
+| 22.06.2026 | QC Runde 4: Rett opp 4 nye feil på infosiden | Utført |
+
 
 
