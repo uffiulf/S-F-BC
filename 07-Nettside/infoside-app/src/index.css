@@ -1057,7 +1057,7 @@ mark.highlight {
     border-radius: 8px !important;
     border-bottom-right-radius: 8px !important;
     transform: none !important;
-    pointer-events: none !important; /* Deaktiverer klikk og zoom på mobil */
+    cursor: pointer !important;
     text-align: left !important;
     justify-content: flex-start !important;
     align-items: flex-start !important;
@@ -1136,6 +1136,49 @@ mark.highlight {
   }
   .collapsible-section button h2 {
     font-size: 1.05rem !important;
+  }
+
+  /* Bakgrunns-overlay for mobilmeny */
+  .sidebar-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(3, 7, 18, 0.4);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    z-index: 998;
+    animation: fadeIn 0.2s ease-out;
+  }
+
+  /* Skjul tidslinjens horisontale progress-linje på mobil */
+  .phase-stepper-progress {
+    display: none !important;
+  }
+
+  /* Risikomatrise-prikker overlapping på mobil */
+  .matrix-risk-dot {
+    width: 18px !important;
+    height: 18px !important;
+    font-size: 0.65rem !important;
+    border-width: 1px !important;
+  }
+
+  .matrix-cell {
+    gap: 2px !important;
+    padding: 2px !important;
+  }
+
+  /* de-minimis-col mobil tilpasning */
+  .de-minimis-col {
+    border-left: none !important;
+    border-top: 1px solid var(--border-color);
+    padding-left: 0 !important;
+    padding-top: 20px;
+  }
+
+  /* Søk-modal luft på mobil */
+  .search-modal {
+    width: calc(100% - 32px) !important;
+    margin: 0 16px !important;
   }
 }
 
@@ -2002,6 +2045,15 @@ mark.highlight {
     grid-template-columns: 280px 1fr;
     align-items: start;
   }
+}
+
+.proposal-menu-mobile-select {
+  display: none;
+}
+
+.de-minimis-col {
+  border-left: 1px solid var(--border-color);
+  padding-left: 20px;
 }
 
 .proposal-menu {
@@ -3111,6 +3163,43 @@ mark.highlight {
     width: 20px;
     height: 20px;
     animation: arrow-pulse-vertical 2s infinite ease-in-out;
+  }
+
+  .proposal-menu {
+    display: none !important;
+  }
+
+  .proposal-menu-mobile-select {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .proposal-menu-mobile-select label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+  }
+
+  .proposal-menu-mobile-select select {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    font-size: 1rem;
+    font-weight: 600;
+    outline: none;
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%239ca3af' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    background-size: 16px;
+    padding-right: 40px;
   }
 }
 

@@ -405,6 +405,14 @@ export default function App() {
         </div>
       </aside>
 
+      {/* Bakgrunns-overlay for mobilmeny */}
+      {mobileMenuOpen && (
+        <div 
+          className="sidebar-overlay" 
+          onClick={() => setMobileMenuOpen(false)}
+        />
+      )}
+
       {/* Main Content */}
       <main className="content-area">
         {/* Top Header Search trigger */}
@@ -1066,7 +1074,7 @@ export default function App() {
                                     Tilsvarer omtrent det en bedrift ville betalt en studentassistent eller trainee. Settes lavt fordi studentene er under opplæring, arbeidet leveres uten garanti, og ingen kommersiell aktør ville betalt full pris.
                                   </div>
                                 </div>
-                                <div style={{ borderLeft: '1px solid var(--border-color)', paddingLeft: '20px' }}>
+                                <div className="de-minimis-col">
                                   <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Mentorenes Verdi</div>
                                   <div style={{ fontSize: '1.3rem', fontWeight: 700, color: 'var(--text-primary)', margin: '4px 0' }}>
                                     600 kr / time
@@ -2062,6 +2070,22 @@ export default function App() {
                       </p>
 
                       <div className="proposal-interactive-layout">
+                        {/* Mobil dropdown-velger */}
+                        <div className="proposal-menu-mobile-select">
+                          <label htmlFor="area-select">Velg tilpasningsområde:</label>
+                          <select
+                            id="area-select"
+                            value={activeAdjustmentIdx}
+                            onChange={(e) => setActiveAdjustmentIdx(Number(e.target.value))}
+                          >
+                            {currentPage.adjustments.map((adj, idx) => (
+                              <option key={adj.id} value={idx}>
+                                {adj.id}. {adj.title.replace(/^\d+\.\s*/, "")}
+                              </option>
+                            ))}
+                          </select>
+                        </div>
+
                         {/* Left sidebar with the 9 buttons */}
                         <div className="proposal-menu">
                           {currentPage.adjustments.map((adj, idx) => (
