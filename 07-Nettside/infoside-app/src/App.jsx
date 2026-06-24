@@ -17,6 +17,7 @@ export default function App() {
   const [openSections, setOpenSections] = useState({});
   const [tldrExpanded, setTldrExpanded] = useState(false);
   const [ordlisteMode, setOrdlisteMode] = useState("category");
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const searchInputRef = useRef(null);
   const skipResetRef = useRef(false);
 
@@ -34,6 +35,7 @@ export default function App() {
     setOpenSections({});
     setTldrExpanded(false);
     setOrdlisteMode("category");
+    setMobileMenuOpen(false);
     window.scrollTo(0, 0);
   }, [activePage]);
 
@@ -310,8 +312,21 @@ export default function App() {
         <div className="blob blob-2"></div>
       </div>
 
+      {/* Mobile Top Bar */}
+      <div className="mobile-header">
+        <button className="mobile-menu-toggle" onClick={() => setMobileMenuOpen(!mobileMenuOpen)} aria-label="Toggle menu">
+          {mobileMenuOpen ? <Icons.X className="w-6 h-6" /> : <Icons.Menu className="w-6 h-6" />}
+        </button>
+        <div className="mobile-brand">
+          <span className="brand-name">Syntax & Flow</span>
+        </div>
+        <button className="mobile-search-btn" onClick={() => setSearchOpen(true)} aria-label="Search">
+          <Icons.Search className="w-5 h-5" />
+        </button>
+      </div>
+
       {/* Sidebar */}
-      <aside className="sidebar">
+      <aside className={`sidebar ${mobileMenuOpen ? "mobile-open" : ""}`}>
         <div className="brand">
           <div className="logo">SF</div>
           <div className="brand-text">
