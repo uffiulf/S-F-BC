@@ -604,6 +604,8 @@ Hvor: Ny seksjon under "Analyser" eller "Guidelines"
 | 22.06.2026 | QC Runde 5: Rett opp 'Trainee-ordning' til 'Kunnskapsoverføring' | Utført |
 | 22.06.2026 | Legg til gevinst/ulempe-kartlegging for bedrifter på Marked & Konkurranse (med grafisk design) | Utført |
 | 22.06.2026 | Legg til forklaring om hvorfor tradisjonell praksis ikke lønner seg | Utført |
+| 24.06.2026 | Visualisert målgruppene som responsive kort på Marked & Konkurranse | Utført |
+
 
 
 

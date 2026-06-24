@@ -1056,11 +1056,34 @@ Syntax & Flow tar ansvaret for oppfølging av studentene — ikke bedriften. Bed
       },
       {
         "heading": "2. Målgrupper",
-        "points": [
-          "<strong>Primærmarked:</strong> Lokale gründere, oppstartsbedrifter, og mikrovirksomheter (1-5 ansatte) i Halden, Fredrikstad, Sarpsborg og Moss.",
-          "<strong>Frivillighet:</strong> Lokale idrettslag, foreninger og frivilligsentraler med digitaliseringsbehov.",
-          "<strong>Internt marked:</strong> Fakulteter og administrative avdelinger på HiØ som trenger enkle nettsider eller analyser."
-        ]
+        "text": `Her er de tre hovedsegmentene Syntax & Flow betjener for å bygge en robust, tverrfaglig portefølje:
+        <br/><br/>
+        <div class="grid-3" style="gap: 16px; margin-top: 12px;">
+          <div class="glass-card" style="border-left: 4px solid var(--badge-text-blue, #3b82f6); padding: 18px; border-radius: 4px 12px 12px 4px; display: flex; flex-direction: column; gap: 8px; background-color: var(--bg-card);">
+            <div style="font-weight: 700; color: var(--text-primary); font-size: 1rem; display: flex; align-items: center; gap: 8px;">
+              🚀 Primærmarked
+            </div>
+            <div style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5;">
+              Lokale gründere, oppstartsbedrifter, og mikrovirksomheter (1-5 ansatte) i Halden, Fredrikstad, Sarpsborg og Moss.
+            </div>
+          </div>
+          <div class="glass-card" style="border-left: 4px solid var(--badge-text-green, #10b981); padding: 18px; border-radius: 4px 12px 12px 4px; display: flex; flex-direction: column; gap: 8px; background-color: var(--bg-card);">
+            <div style="font-weight: 700; color: var(--text-primary); font-size: 1rem; display: flex; align-items: center; gap: 8px;">
+              🤝 Frivillighet
+            </div>
+            <div style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5;">
+              Lokale idrettslag, foreninger og frivilligsentraler med digitaliseringsbehov.
+            </div>
+          </div>
+          <div class="glass-card" style="border-left: 4px solid var(--badge-text-purple, #8b5cf6); padding: 18px; border-radius: 4px 12px 12px 4px; display: flex; flex-direction: column; gap: 8px; background-color: var(--bg-card);">
+            <div style="font-weight: 700; color: var(--text-primary); font-size: 1rem; display: flex; align-items: center; gap: 8px;">
+              🏛️ Internt marked
+            </div>
+            <div style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5;">
+              Fakulteter og administrative avdelinger på HiØ som trenger enkle nettsider eller analyser.
+            </div>
+          </div>
+        </div>`
       },
       {
         "heading": "3. Konkurranseanalyse",
