@@ -8,7 +8,13 @@ export const wikiData = [
     "sections": [
       {
         "heading": "Hva er Syntax & Flow?",
-        "text": "Syntax & Flow er et selvstendig organ lokalisert in-house på Høgskolen i Østfold (HiØ). Vi bygger broen mellom akademia og arbeidslivet. Organisasjonen drives av en stabil kjerne, mens studentene utfører reelle oppdrag for lokale bedrifter gjennom tverrfaglige team innen IT, Design og Økonomi."
+        "text": `Syntax & Flow er et selvstendig organ lokalisert in-house på Høgskolen i Østfold (HiØ). Vi bygger broen mellom akademia og arbeidslivet. Organisasjonen drives av en stabil kjerne, mens studentene utfører reelle oppdrag for lokale bedrifter gjennom tverrfaglige team innen IT, Design og Økonomi.
+<br/><br/>
+<strong>Problem: Alternativkostnad ved tradisjonell praksis</strong><br/>
+Tradisjonell praksis lønner seg sjelden for bedrifter. Hvis et IT-selskap har en konsulent som fakturerer 2 000 kr/timen hos kunder og får 600 kr/timen i lønn, og må bruke tid på å følge opp en student i praksis, taper selskapet 2 600 kr per time på den tiden konsulenten bruker på studenten. Ved 10 timer i uken blir det 26 000 kr i uken — tapte inntekter kombinert med lønnskostnad. Derfor unngår mange bedrifter å ta inn studenter i praksis.
+<br/><br/>
+<strong>Løsning: S&F avlaster bedriften</strong><br/>
+Syntax & Flow tar ansvaret for oppfølging av studentene — ikke bedriften. Bedrifter som ikke har kapasitet to følge opp studenter kan i stedet gi Syntax & Flow oppdrag direkte.`
       },
       {
         "heading": "Driftsmodell: Stabil kjerne vs. Studentteam",
@@ -65,6 +71,13 @@ export const wikiData = [
       {
         "heading": "Vår Visjon",
         "text": "<div class=\"vision-banner\" style=\"position: relative; overflow: hidden; background: linear-gradient(135deg, rgba(37,99,235,0.12) 0%, rgba(99,102,241,0.04) 100%); border: 1px solid rgba(37,99,235,0.2); border-radius: 16px; padding: 28px; margin-top: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); backdrop-filter: blur(4px);\"><div style=\"position: absolute; top: -40px; right: -40px; width: 120px; height: 120px; background: radial-gradient(circle, var(--accent-color) 0%, transparent 70%); opacity: 0.12; pointer-events: none;\"></div><div style=\"display: flex; gap: 20px; align-items: center; flex-wrap: wrap;\"><div style=\"padding: 14px; background: rgba(37,99,235,0.08); border-radius: 12px; border: 1px solid rgba(37,99,235,0.25); display: flex; align-items: center; justify-content: center;\"><svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"var(--accent-color)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z\"/><circle cx=\"12\" cy=\"12\" r=\"3\"/></svg></div><div style=\"flex: 1; min-width: 250px;\"><h4 style=\"margin: 0 0 6px 0; font-size: 1.1rem; font-weight: 600; color: var(--text-primary);\">Fjerne erfaringsgapet</h4><p style=\"margin: 0; font-size: 1.025rem; line-height: 1.6; color: var(--text-secondary); font-style: italic;\">«Vi ønsker å fjerne 'erfaringsgapet' for nyutdannede studenter ved å gi dem reell prosjekterfaring i et trygt, mentorstyrt miljø under studietiden. Vi forener studentenes behov for relevant erfaring med bedriftenes behov for digitalisering og forretningsutvikling.»</p></div></div></div>"
+      },
+      {
+        "heading": "Alternativkostnad ved tradisjonell praksis",
+        "text": `Tradisjonell praksis lønner seg sjelden for bedrifter. Hvis et IT-selskap har en konsulent som fakturerer 2 000 kr/timen hos kunder og får 600 kr/timen i lønn, og må bruke tid på å følge opp en student i praksis, taper selskapet 2 600 kr per time på den tiden konsulenten bruker på studenten. Ved 10 timer i uken blir det 26 000 kr i uken — tapte inntekter kombinert med lønnskostnad. Derfor unngår mange bedrifter å ta inn studenter i praksis.
+        <br/><br/>
+        <strong>Løsning: S&F avlaster bedriften</strong><br/>
+        Syntax & Flow tar ansvaret for oppfølging av studentene — ikke bedriften. Bedrifter som ikke har kapasitet til å følge opp studenter kan i stedet gi Syntax & Flow oppdrag direkte.`
       },
       {
         "heading": "Forankring i ITD35014 Bedriftspraksis",
@@ -1036,7 +1049,9 @@ export const wikiData = [
         "text": "Det eksisterer et gap i markedet som Syntax & Flow er posisjonert til å fylle:",
         "points": [
           "<strong>Studentenes behov:</strong> Studenter mangler relevant erfaring (erfaringsparadokset) og tverrfaglig trening. Studiene skiller ofte IT, design og økonomi, mens arbeidslivet krever at de jobber sammen.",
-          "<strong>Næringslivets behov:</strong> Mindre SMBer og gründere i Østfold har ofte ikke råd til kommersielle konsulenter (timepriser på 1200-2000 kr), og de sliter med å rekruttere og holde på unge HiØ-talenter som flytter til Oslo."
+          "<strong>Næringslivets behov:</strong> Mindre SMBer og gründere i Østfold har ofte ikke råd til kommersielle konsulenter (timepriser på 1200-2000 kr), og de sliter med å rekruttere og holde på unge HiØ-talenter som flytter til Oslo.",
+          "<strong>Alternativkostnad for tradisjonell praksis:</strong> Tradisjonell praksis lønner seg sjelden for bedrifter. Hvis en konsulent som fakturerer 2 000 kr/t og har 600 kr/t i lønn må bruke tid på å følge opp en student i praksis, taper selskapet 2 600 kr per time. Ved 10 timer i uken utgjør dette 26 000 kr i uken i tapte inntekter og lønn. Derfor unngår mange å ta inn studenter i praksis.",
+          "<strong>Syntax & Flow avlaster bedriften (Løsning):</strong> Vi tar hele ansvaret for oppfølging av studentene via vår stabile kjerne — ikke bedriften. Bedrifter som mangler kapasitet til oppfølging, kan i stedet gi Syntax & Flow oppdrag direkte."
         ]
       },
       {
@@ -1080,7 +1095,171 @@ export const wikiData = [
         }
       },
       {
-        "heading": "4. Unik Posisjonering",
+        "heading": "4. Gevinster og ulemper for bedrifter",
+        "text": `Her er en oversikt over hva bedrifter vinner på å delta i Syntax & Flow, samt hvordan vi håndterer de naturlige ulempene ved en studentmodell:
+        <br/><br/>
+        <h4 style="color: #10b981; display: flex; align-items: center; gap: 8px; margin-top: 12px; margin-bottom: 16px; font-size: 1.1rem; font-weight: 600;">
+          <span style="display: inline-flex; align-items: center; justify-content: center; width: 24px; height: 24px; border-radius: 50%; background: rgba(16, 185, 129, 0.15); color: #10b981; font-size: 0.85rem;">✔</span>
+          10 Store Gevinster for Bedriften
+        </h4>
+        <div class="grid-2" style="gap: 16px; margin-bottom: 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+          <div class="glass-card" style="border-left: 4px solid #10b981; padding: 18px; border-radius: 4px 12px 12px 4px; display: flex; flex-direction: column; gap: 6px; background-color: var(--bg-card);">
+            <div style="font-weight: 700; color: var(--text-primary); font-size: 0.95rem;">
+              👤 1. S&F tar oppfølgingen
+            </div>
+            <div style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5;">
+              Bedriften slipper å bruke dyr arbeidstid på studentoppfølging. S&Fs stabile kjerne organiserer teamet, kvalitetssikrer og følger opp.
+            </div>
+          </div>
+          <div class="glass-card" style="border-left: 4px solid #10b981; padding: 18px; border-radius: 4px 12px 12px 4px; display: flex; flex-direction: column; gap: 6px; background-color: var(--bg-card);">
+            <div style="font-weight: 700; color: var(--text-primary); font-size: 0.95rem;">
+              🎁 2. Gratis kompetanse
+            </div>
+            <div style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5;">
+              Tjenesten er gratis (pro bono). Bedriften betaler ingenting — kun med sin egen tid til ukentlige korte avstemninger.
+            </div>
+          </div>
+          <div class="glass-card" style="border-left: 4px solid #10b981; padding: 18px; border-radius: 4px 12px 12px 4px; display: flex; flex-direction: column; gap: 6px; background-color: var(--bg-card);">
+            <div style="font-weight: 700; color: var(--text-primary); font-size: 0.95rem;">
+              🚀 3. Risikofri rekruttering
+            </div>
+            <div style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5;">
+              Følg studenten i aksjon over 3–6 måneder før du eventuelt tilbyr fast stilling. Ingen forpliktelser eller ansettelsesrisiko underveis.
+            </div>
+          </div>
+          <div class="glass-card" style="border-left: 4px solid #10b981; padding: 18px; border-radius: 4px 12px 12px 4px; display: flex; flex-direction: column; gap: 6px; background-color: var(--bg-card);">
+            <div style="font-weight: 700; color: var(--text-primary); font-size: 0.95rem;">
+              📋 4. Dokumentert arbeidshistorikk
+            </div>
+            <div style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5;">
+              Portalen gir strukturerte vurderinger (rubric-basert) fra reelle kunder. Mer pålitelig enn CV og intervju alene.
+            </div>
+          </div>
+          <div class="glass-card" style="border-left: 4px solid #10b981; padding: 18px; border-radius: 4px 12px 12px 4px; display: flex; flex-direction: column; gap: 6px; background-color: var(--bg-card);">
+            <div style="font-weight: 700; color: var(--text-primary); font-size: 0.95rem;">
+              👥 5. Tverrfaglig team
+            </div>
+            <div style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5;">
+              Du får ikke bare én student, men et helt team med IT, design og økonomi som jobber sammen. Det leverer helhetlige løsninger.
+            </div>
+          </div>
+          <div class="glass-card" style="border-left: 4px solid #10b981; padding: 18px; border-radius: 4px 12px 12px 4px; display: flex; flex-direction: column; gap: 6px; background-color: var(--bg-card);">
+            <div style="font-weight: 700; color: var(--text-primary); font-size: 0.95rem;">
+              👌 6. Lav terskel
+            </div>
+            <div style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5;">
+              Ingen kontraktsforpliktelser, ingen binding, ingen skjulte avgifter. Det er enkelt å starte og prøve konseptet ut.
+            </div>
+          </div>
+          <div class="glass-card" style="border-left: 4px solid #10b981; padding: 18px; border-radius: 4px 12px 12px 4px; display: flex; flex-direction: column; gap: 6px; background-color: var(--bg-card);">
+            <div style="font-weight: 700; color: var(--text-primary); font-size: 0.95rem;">
+              🌟 7. Omdømmefordel
+            </div>
+            <div style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5;">
+              Bedriften posisjonerer seg som en samfunnsansvarlig aktør som støtter lokale talenter og Høgskolen i Østfold.
+            </div>
+          </div>
+          <div class="glass-card" style="border-left: 4px solid #10b981; padding: 18px; border-radius: 4px 12px 12px 4px; display: flex; flex-direction: column; gap: 6px; background-color: var(--bg-card);">
+            <div style="font-weight: 700; color: var(--text-primary); font-size: 0.95rem;">
+              🎓 8. Forankret på HiØ
+            </div>
+            <div style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5;">
+              Tilgang til faglig veiledning fra forelesere og mentorer. Leveransene holdes til en høy faglig standard.
+            </div>
+          </div>
+          <div class="glass-card" style="border-left: 4px solid #10b981; padding: 18px; border-radius: 4px 12px 12px 4px; display: flex; flex-direction: column; gap: 6px; background-color: var(--bg-card);">
+            <div style="font-weight: 700; color: var(--text-primary); font-size: 0.95rem;">
+              🔄 9. Driftskontinuitet
+            </div>
+            <div style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5;">
+              S&F har en stabil kjerne som sikrer overlevering mellom studentkullene. Bedriften kan samarbeide over flere semestre.
+            </div>
+          </div>
+          <div class="glass-card" style="border-left: 4px solid #10b981; padding: 18px; border-radius: 4px 12px 12px 4px; display: flex; flex-direction: column; gap: 6px; background-color: var(--bg-card);">
+            <div style="font-weight: 700; color: var(--text-primary); font-size: 0.95rem;">
+              📁 10. Porteføljebygging
+            </div>
+            <div style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5;">
+              Ferdige prosjekter kan brukes som case-studier og markedsføring av bedriften (etter samtykke fra studentene).
+            </div>
+          </div>
+        </div>
+        
+        <h4 style="color: #f59e0b; display: flex; align-items: center; gap: 8px; margin-top: 24px; margin-bottom: 16px; font-size: 1.1rem; font-weight: 600;">
+          <span style="display: inline-flex; align-items: center; justify-content: center; width: 24px; height: 24px; border-radius: 50%; background: rgba(245, 158, 11, 0.15); color: #f59e0b; font-size: 0.85rem;">!</span>
+          6 Ulemper & Hvordan S&F håndterer dem
+        </h4>
+        <div class="grid-2" style="gap: 16px; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+          <div class="glass-card" style="border-left: 4px solid #f59e0b; padding: 18px; border-radius: 4px 12px 12px 4px; display: flex; flex-direction: column; gap: 6px; background-color: var(--bg-card);">
+            <div style="font-weight: 700; color: var(--text-primary); font-size: 0.95rem;">
+              ⚠️ 1. Ingen leveransegaranti
+            </div>
+            <div style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5; margin-bottom: 4px;">
+              Tjenester leveres som standard "best effort" uten garanti for fullføring.
+            </div>
+            <div style="font-size: 0.8rem; color: var(--text-muted); border-top: 1px dashed var(--border-color); padding-top: 4px;">
+              <strong>Håndtering:</strong> Forpliktende milepælsplaner kan avtales for erfarne team. Kunden er alltid grundig informert på forhånd.
+            </div>
+          </div>
+          <div class="glass-card" style="border-left: 4px solid #f59e0b; padding: 18px; border-radius: 4px 12px 12px 4px; display: flex; flex-direction: column; gap: 6px; background-color: var(--bg-card);">
+            <div style="font-weight: 700; color: var(--text-primary); font-size: 0.95rem;">
+              ⏰ 2. Kunden må stille med tid
+            </div>
+            <div style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5; margin-bottom: 4px;">
+              Det kreves deltakelse på korte ukentlige statusmøter (15–30 min) og tilbakemeldinger.
+            </div>
+            <div style="font-size: 0.8rem; color: var(--text-muted); border-top: 1px dashed var(--border-color); padding-top: 4px;">
+              <strong>Håndtering:</strong> Dette avklares og kontraktfestes. Uteblir kunden gjentatte ganger, avsluttes prosjektet.
+            </div>
+          </div>
+          <div class="glass-card" style="border-left: 4px solid #f59e0b; padding: 18px; border-radius: 4px 12px 12px 4px; display: flex; flex-direction: column; gap: 6px; background-color: var(--bg-card);">
+            <div style="font-weight: 700; color: var(--text-primary); font-size: 0.95rem;">
+              🛠️ 3. Begrenset kompleksitet
+            </div>
+            <div style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5; margin-bottom: 4px;">
+              Prosjektene må være enkle i starten (nettsider, logoer, analyser) for å sikre kvalitet.
+            </div>
+            <div style="font-size: 0.8rem; color: var(--text-muted); border-top: 1px dashed var(--border-color); padding-top: 4px;">
+              <strong>Håndtering:</strong> Kompleksiteten skal økes gradvis etter hvert som organisasjonen og teamene får mer erfaring.
+            </div>
+          </div>
+          <div class="glass-card" style="border-left: 4px solid #f59e0b; padding: 18px; border-radius: 4px 12px 12px 4px; display: flex; flex-direction: column; gap: 6px; background-color: var(--bg-card);">
+            <div style="font-weight: 700; color: var(--text-primary); font-size: 0.95rem;">
+              🧑‍🎓 4. Studentenes kompetansenivå
+            </div>
+            <div style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5; margin-bottom: 4px;">
+              Studentene er under opplæring og mangler profesjonell yrkeserfaring.
+            </div>
+            <div style="font-size: 0.8rem; color: var(--text-muted); border-top: 1px dashed var(--border-color); padding-top: 4px;">
+              <strong>Håndtering:</strong> Alt arbeid kvalitetssikres og godkjennes av faglige mentorer (forelesere) før overlevering.
+            </div>
+          </div>
+          <div class="glass-card" style="border-left: 4px solid #f59e0b; padding: 18px; border-radius: 4px 12px 12px 4px; display: flex; flex-direction: column; gap: 6px; background-color: var(--bg-card);">
+            <div style="font-weight: 700; color: var(--text-primary); font-size: 0.95rem;">
+              📅 5. Tidsrammer per semester
+            </div>
+            <div style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5; margin-bottom: 4px;">
+              Oppdragene må normalt tilpasses studie-semestrene (typisk 8–16 uker).
+            </div>
+            <div style="font-size: 0.8rem; color: var(--text-muted); border-top: 1px dashed var(--border-color); padding-top: 4px;">
+              <strong>Håndtering:</strong> Langsiktige oppdrag defineres som evighetsprosjekter og overleveres strukturert til neste studentkull.
+            </div>
+          </div>
+          <div class="glass-card" style="border-left: 4px solid #f59e0b; padding: 18px; border-radius: 4px 12px 12px 4px; display: flex; flex-direction: column; gap: 6px; background-color: var(--bg-card);">
+            <div style="font-weight: 700; color: var(--text-primary); font-size: 0.95rem;">
+              🔒 6. GDPR og personvern
+            </div>
+            <div style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5; margin-bottom: 4px;">
+              Portalen og prosjektene må overholde strenge krav til personvern og samtykke.
+            </div>
+            <div style="font-size: 0.8rem; color: var(--text-muted); border-top: 1px dashed var(--border-color); padding-top: 4px;">
+              <strong>Håndtering:</strong> Prosessen er 100% opt-in og samtykkebasert. Kunder og studenter kan reservere seg mot publisering.
+            </div>
+          </div>
+        </div>`
+      },
+      {
+        "heading": "5. Unik Posisjonering",
         "text": "Syntax & Flow posisjonerer seg i skjæringspunktet mellom <strong>akademisk kvalitet</strong> (støttet av HiØ-mentorer) og <strong>praktisk utførelse</strong> til null kontantpris. Vi selger ikke bare en tjeneste, men et samfunnsbidrag der kunden er med på å bygge fremtidens arbeidstakere."
       }
     ],

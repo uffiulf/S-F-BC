@@ -89,6 +89,21 @@ Prioritet: 1) HiØ internt, 2) Ideelle organisasjoner, 3) Privatpersoner (ENK), 
 | **Infoside** | Gjennomgått og rensket for skrivefeil (16 stk rettet over 2 runder) |
 | **Kildedokumenter** | Synkronisert — ingen avvik fra infosiden |
 | **Presentasjonsinnhold** | Klart i `05-agent-forslag/Forslag/presentasjonsinnhold.md` for multimodal agent |
+| **Gevinster/ulemper bedrifter** | Kartlagt i `05-agent-forslag/Forslag/gevinster_ulemper_bedrifter.md` |
+
+## Lignende prosjekter i Norge
+
+| Prosjekt | Sted | Status | Hvorfor S&F er annerledes |
+|----------|------|--------|---------------------------|
+| **IT2901** (NTNU) | Trondheim | Aktivt, 15 stp | Kun IT-studenter, ingen portal |
+| **TDT4290** (NTNU) | Trondheim | Aktivt, 15 stp | Kun IT, master-nivå |
+| **IN2000** (UiO) | Oslo | Aktivt, 20 stp | Kun IT, stort volum |
+| **TÅRNET** (UiO) | Oslo | **Nedlagt** | Manglet kontinuitet/finansiering |
+| **AppLab** (UiB) | Bergen | **Nedlagt** | Manglet langsiktig forankring |
+
+**S&Fs unike posisjon:** Tverrfaglig (IT+design+økonomi), stabil kjerne, verifisert referanseportal, in-house på HiØ.
+
+Se `08-EKSTRA/lignende_prosjekter_i_norge.md` for full oversikt.
 
 ## Viktige beslutninger tatt
 

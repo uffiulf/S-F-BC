@@ -196,6 +196,28 @@ Hvor: Dashboard-siden
 Prioritet: — (info til prosjekteier)
 Hva: Innholdet til presentasjonen ligger i `05-agent-forslag/Forslag/presentasjonsinnhold.md`. Denne filen inneholder alt en multimodal AI-agent eller LLM trenger for å lage en presentasjon (HTML, PowerPoint eller annet format). Ikke noe Gemini trenger å gjøre med dette.
 
+### 22.06.2026 — Legg til gevinst/ulempe-kartlegging for bedrifter på Marked & Konkurranse (med grafisk design)
+Prioritet: Høy
+Kilde: `05-agent-forslag/Forslag/gevinster_ulemper_bedrifter.md`
+Hva: På "Marked & Konkurranse"-siden, legg til en ny seksjon etter konkurransetabellen med tittelen "Gevinster og ulemper for bedrifter". Design den grafisk og oversiktlig:
+
+**Gevinster (grønn/positiv stil):** Vis som 10 kort eller punkter med ikoner og korte forklaringer. Bruk farger, ikoner og god luft. Gevinstene: S&F tar oppfølgingen, gratis kompetanse, risikofri test-run, dokumentert arbeidshistorikk, tverrfaglig team, lav terskel, omdømmefordel, in-house på HiØ, kontinuitet, porteføljebygging.
+
+**Ulemper (gul/avveiende stil):** Vis som kort med ikoner+ forklaring på hvordan S&F håndterer dem. Ulempene: ingen leveransegaranti (standard), kunden må stille med tid, begrenset kompleksitet, studentkompetanse, tidsramme per semester, personvernkrav.
+
+Bruk gridCards eller en visuell layout som gjør det lett å skanne. Ikke bare en tabell. Målet er at en potensiell bedrift skal kunne se gevinstene med ett blikk.
+Hvor: "Marked & Konkurranse"-siden, etter konkurransetabellen
+
+### 22.06.2026 — Legg til forklaring om hvorfor tradisjonell praksis ikke lønner seg
+Prioritet: Høy
+Kilde: Prosjekteier
+Hva: Legg til et nytt punkt under problembeskrivelsen på flere relevante sider (Dashboard, Mål & Visjon, Marked & Konkurranse) som forklarer hvorfor tradisjonell praksis er ulønnsomt for bedrifter:
+
+"Tradisjonell praksis lønner seg ikke for bedrifter. Hvis et IT-selskap har en konsulent som fakturerer 2 000 kr/timen hos kunder og får 600 kr/timen i lønn, og må bruke tid på å følge opp en student i praksis, taper selskapet 2 600 kr per time på den tiden konsulenten bruker på studenten. Ved 10 timer i uken blir det 26 000 kr i uken — tapte inntekter kombinert med lønnskostnad. Derfor unngår mange bedrifter å ta inn studenter i praksis."
+
+Legg også til en kort setning i løsningsbeskrivelsen: "Syntax & Flow tar ansvaret for oppfølging av studentene — ikke bedriften. Bedrifter som ikke har kapasitet til å følge opp studenter kan i stedet gi Syntax & Flow oppdrag."
+Hvor: Dashboard-siden, Mål & Visjon-siden, Marked & Konkurranse-siden
+
 ### 22.06.2026 — QC Runde 5: Rett opp "Trainee-ordning" → "Kunnskapsoverføring"
 Prioritet: Høy
 Kilde: QC-gjennomgang av Organisasjon & Drift-siden
@@ -580,6 +602,9 @@ Hvor: Ny seksjon under "Analyser" eller "Guidelines"
 | 22.06.2026 | Oppdater overskrift 'Utførende studenter' til 'Studentteam' | Utført |
 | 22.06.2026 | Oppdater budsjett-tabellen på Risiko & Juss-siden med reelle kostnader | Utført |
 | 22.06.2026 | QC Runde 5: Rett opp 'Trainee-ordning' til 'Kunnskapsoverføring' | Utført |
+| 22.06.2026 | Legg til gevinst/ulempe-kartlegging for bedrifter på Marked & Konkurranse (med grafisk design) | Utført |
+| 22.06.2026 | Legg til forklaring om hvorfor tradisjonell praksis ikke lønner seg | Utført |
+
 
 
 
