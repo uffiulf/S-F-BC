@@ -534,6 +534,8 @@ Hvor: Ny seksjon under "Analyser" eller "Guidelines"
 | 24.06.2026 | Forbedre grafisk fremstilling på Mål & Visjon (kort, banner, utgangspunkt) | Utført |
 | 22.06.2026 | QC Runde 4: Rett opp 4 nye feil på infosiden | Utført |
 | 24.06.2026 | Bytte rekkefølge på ordliste-sorteringsknapper i App.jsx | Utført |
+| 24.06.2026 | Øke avstand over forretningsmodell-punkter i App.jsx | Utført |
+
 
 
 

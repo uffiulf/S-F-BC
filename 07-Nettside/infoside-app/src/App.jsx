@@ -740,7 +740,7 @@ export default function App() {
                                       display: flex;
                                       flex-direction: column;
                                       align-items: center;
-                                      margin: 40px 0;
+                                      margin: 40px 0 80px 0;
                                       padding: 20px;
                                       min-height: 420px;
                                     }
@@ -810,7 +810,7 @@ export default function App() {
                                         flex-direction: column;
                                         gap: 24px;
                                         min-height: auto;
-                                        margin: 20px 0;
+                                        margin: 20px 0 48px 0;
                                       }
                                       .win-center-node {
                                         position: relative;
@@ -993,7 +993,10 @@ export default function App() {
                           )}
                           
                           {sec.points && (
-                            <ul style={sec.heading === "1. Modell med to parallelle spor" && currentPage.id === "scope" ? { marginTop: '32px' } : {}}>
+                            <ul style={
+                              sec.heading === "1. Modell med to parallelle spor" && currentPage.id === "scope" ? { marginTop: '32px' } : 
+                              sec.heading === "Win-Win-Win Forretningsmodell" && currentPage.id === "forretningsmodell" ? { marginTop: '64px' } : {}
+                            }>
                               {sec.points.map((pt, pIdx) => (
                                 <li key={pIdx} dangerouslySetInnerHTML={{ __html: pt }} />
                               ))}
