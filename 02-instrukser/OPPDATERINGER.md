@@ -536,6 +536,9 @@ Hvor: Ny seksjon under "Analyser" eller "Guidelines"
 | 24.06.2026 | Bytte rekkefølge på ordliste-sorteringsknapper i App.jsx | Utført |
 | 24.06.2026 | Øke avstand over forretningsmodell-punkter i App.jsx | Utført |
 | 24.06.2026 | Implementere topp-navigasjon (Browserbase-stil) på desktop | Utført |
+| 24.06.2026 | Sentrere innholdsområdet (content-area) på desktop | Utført |
+| 24.06.2026 | Forbedre dropdown-menyene (mindre gjennomsiktig, tetting av hover-gap) | Utført |
+
 
 
 

@@ -3510,7 +3510,8 @@ mark.highlight {
   }
   
   .content-area {
-    margin-left: 0 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
     padding-top: 108px !important;
   }
   
@@ -3582,11 +3583,33 @@ mark.highlight {
   transform: translateX(-50%) translateY(4px);
   padding: 12px;
   border-radius: 14px;
-  background-color: var(--bg-card);
+  background-color: var(--bg-secondary) !important;
   border: 1px solid var(--border-color);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
   z-index: 1000;
   animation: dropdown-fade 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+:root[data-theme="dark"] .nav-dropdown-menu {
+  background-color: rgba(11, 15, 25, 0.95) !important;
+  backdrop-filter: blur(24px) !important;
+  -webkit-backdrop-filter: blur(24px) !important;
+}
+
+:root[data-theme="light"] .nav-dropdown-menu {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(24px) !important;
+  -webkit-backdrop-filter: blur(24px) !important;
+}
+
+.nav-dropdown-menu::before {
+  content: '';
+  position: absolute;
+  top: -12px;
+  left: 0;
+  right: 0;
+  height: 12px;
+  background: transparent;
 }
 
 @keyframes dropdown-fade {
