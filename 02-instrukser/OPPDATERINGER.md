@@ -218,6 +218,32 @@ Hva: Legg til et nytt punkt under problembeskrivelsen på flere relevante sider 
 Legg også til en kort setning i løsningsbeskrivelsen: "Syntax & Flow tar ansvaret for oppfølging av studentene — ikke bedriften. Bedrifter som ikke har kapasitet til å følge opp studenter kan i stedet gi Syntax & Flow oppdrag."
 Hvor: Dashboard-siden, Mål & Visjon-siden, Marked & Konkurranse-siden
 
+### 22.06.2026 — Forbedre søkemotoren (søk i ordliste, gridCards, tabeller, stavefeiltoleranse)
+Prioritet: Lav
+Kilde: Tilbakemelding fra prosjekteier — søk på "rubic" fant ikke ordet i ordlisten
+Hva: I App.jsx, utvid søkefunksjonen (getSearchResults) med følgende forbedringer:
+
+1. **Søk i table.rows:** Når en section inneholder en `table` med `rows`, søk gjennom alle celleverdier i hver rad. Dette fikser søk i ordlisten (rubric, de minimis osv.).
+
+2. **Søk i gridCards:** Når en section inneholder `gridCards`, søk gjennom title, subtitle og content i hvert kort.
+
+3. **Søk i tldr:** Søk gjennom `tldr`-arrayet på hver side.
+
+4. **Stavefeiltoleranse (fuzzy match):** Hvis eksakt søk ikke gir resultater, prøv å fjerne eller bytte ut vanlige stavefeil. F.eks. "rubic" → "rubric" (mangler r), "de minimi" → "de minimis" (mangler s), "forretningsmodel" → "forretningsmodell" (mangler l). Dette kan gjøres enkelt med en liste over vanlige korrigeringer eller ved å prøve å fjerne siste bokstav og søke på nytt.
+
+5. **Vis flere resultater:** Øk fra 10 til 15 resultater.
+
+Hvor: App.jsx — getSearchResults-funksjonen
+
+### 22.06.2026 — Oppdater Rubric-forklaringen i ordlisten på infosiden
+Prioritet: Lav
+Kilde: `01-administrasjon/ordliste.md`
+Hva: I ordlisten på infosiden, under "R–S", oppdater forklaringen på "Rubric". Den nåværende teksten er for kort. Erstatt med:
+
+"Vurderingsmatrise. En tabell med forhåndsdefinerte kriterier der hvert kriterium vurderes på en skala (f.eks. 1–5). I Syntax & Flow brukes rubric for å gi studentene en rettferdig og sammenlignbar vurdering fra oppdragsgivere. Eksempel på kriterier: faglig kompetanse, samarbeid, kommunikasjon, gjennomføringsevne, kundeforståelse."
+
+Hvor: Ordliste-siden
+
 ### 22.06.2026 — QC Runde 5: Rett opp "Trainee-ordning" → "Kunnskapsoverføring"
 Prioritet: Høy
 Kilde: QC-gjennomgang av Organisasjon & Drift-siden
@@ -606,6 +632,9 @@ Hvor: Ny seksjon under "Analyser" eller "Guidelines"
 | 22.06.2026 | Legg til forklaring om hvorfor tradisjonell praksis ikke lønner seg | Utført |
 | 24.06.2026 | Visualisert målgruppene som responsive kort på Marked & Konkurranse | Utført |
 | 24.06.2026 | Lagt til fargetemavelger (Default, Cyber Emerald, Obsidian Indigo, Nordic Minimal) i header og sidebar | Utført |
+| 22.06.2026 | Forbedre søkemotoren (søk i ordliste, gridCards, tabeller, stavefeiltoleranse) | Utført |
+| 22.06.2026 | Oppdater Rubric-forklaringen i ordlisten på infosiden | Utført |
+
 
 
 

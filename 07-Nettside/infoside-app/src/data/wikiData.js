@@ -527,7 +527,7 @@ Syntax & Flow tar ansvaret for oppfølging av studentene — ikke bedriften. Bed
             ],
             [
               "<strong>Rubric</strong>",
-              "Rubric (vurderingsmatrise). Strukturerte kriterier for vurdering, f.eks. 1–5 på definerte dimensjoner.",
+              "Vurderingsmatrise. En tabell med forhåndsdefinerte kriterier der hvert kriterium vurderes på en skala (f.eks. 1–5). I Syntax & Flow brukes rubric for å gi studentene en rettferdig og sammenlignbar vurdering fra oppdragsgivere. Eksempel på kriterier: faglig kompetanse, samarbeid, kommunikasjon, gjennomføringsevne, kundeforståelse.",
               "Student/Utdanning"
             ],
 

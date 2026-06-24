@@ -173,123 +173,200 @@ export default function App() {
   };
 
   // Perform global search
+  // Perform global search
   const getSearchResults = () => {
     if (!searchQuery.trim()) return [];
-    const query = searchQuery.toLowerCase();
-    const results = [];
+    
+    // Spelling correction mapping
+    const spellingCorrections = {
+      "rubic": "rubric",
+      "de minimi": "de minimis",
+      "forretningsmodel": "forretningsmodell",
+      "traine": "trainee"
+    };
 
-    wikiData.forEach((page) => {
-      // Check page title
-      const matchesTitle = page.title && page.title.toLowerCase().includes(query);
-      const matchesCategory = page.category && page.category.toLowerCase().includes(query);
-      const matchesLead = page.lead && page.lead.toLowerCase().includes(query);
-      if (matchesTitle || matchesCategory || matchesLead) {
-        results.push({
-          pageId: page.id,
-          pageTitle: page.title,
-          category: page.category,
-          icon: page.icon,
-          snippet: page.lead || page.title
-        });
+    let query = searchQuery.toLowerCase().trim();
+    Object.keys(spellingCorrections).forEach((misspelling) => {
+      if (query.includes(misspelling)) {
+        query = query.replace(misspelling, spellingCorrections[misspelling]);
       }
+    });
 
-      // Check sections
-      if (page.sections) {
-        page.sections.forEach((sec) => {
-          const hasHeading = sec.heading && sec.heading.toLowerCase().includes(query);
-          const hasText = sec.text && sec.text.toLowerCase().includes(query);
-          const hasPoints = sec.points && sec.points.some(p => p.toLowerCase().includes(query));
-          
-          if (hasHeading || hasText || hasPoints) {
+    const performSearch = (searchQueryStr) => {
+      const results = [];
+      wikiData.forEach((page) => {
+        // Check page title, category, lead
+        const matchesTitle = page.title && page.title.toLowerCase().includes(searchQueryStr);
+        const matchesCategory = page.category && page.category.toLowerCase().includes(searchQueryStr);
+        const matchesLead = page.lead && page.lead.toLowerCase().includes(searchQueryStr);
+        
+        if (matchesTitle || matchesCategory || matchesLead) {
+          results.push({
+            pageId: page.id,
+            pageTitle: page.title,
+            category: page.category,
+            icon: page.icon,
+            snippet: page.lead || page.title
+          });
+        }
+
+        // Check TL;DR
+        if (page.tldr) {
+          const matchedTldr = page.tldr.find(t => t.toLowerCase().includes(searchQueryStr));
+          if (matchedTldr) {
             results.push({
               pageId: page.id,
               pageTitle: page.title,
               category: page.category,
               icon: page.icon,
-              snippet: sec.heading || sec.text || (sec.points && sec.points[0])
+              snippet: `TL;DR: ${matchedTldr}`
             });
           }
-        });
+        }
+
+        // Check sections
+        if (page.sections) {
+          page.sections.forEach((sec) => {
+            const hasHeading = sec.heading && sec.heading.toLowerCase().includes(searchQueryStr);
+            const hasText = sec.text && sec.text.toLowerCase().includes(searchQueryStr);
+            const hasPoints = sec.points && sec.points.some(p => p.toLowerCase().includes(searchQueryStr));
+            
+            if (hasHeading || hasText || hasPoints) {
+              results.push({
+                pageId: page.id,
+                pageTitle: page.title,
+                category: page.category,
+                icon: page.icon,
+                snippet: sec.heading || sec.text || (sec.points && sec.points[0])
+              });
+            }
+
+            // Search in table rows
+            if (sec.table && sec.table.rows) {
+              sec.table.rows.forEach((row) => {
+                const matchedCell = row.find(cell => cell && typeof cell === "string" && cell.toLowerCase().includes(searchQueryStr));
+                if (matchedCell) {
+                  results.push({
+                    pageId: page.id,
+                    pageTitle: `${page.title} - ${sec.heading || "Tabell"}`,
+                    category: page.category,
+                    icon: page.icon,
+                    snippet: matchedCell.replace(/<[^>]*>/g, '') // strip HTML tags
+                  });
+                }
+              });
+            }
+
+            // Search in gridCards
+            if (sec.gridCards) {
+              sec.gridCards.forEach((card) => {
+                const hasCardTitle = card.title && card.title.toLowerCase().includes(searchQueryStr);
+                const hasCardSub = card.subtitle && card.subtitle.toLowerCase().includes(searchQueryStr);
+                const hasCardContent = card.content && card.content.toLowerCase().includes(searchQueryStr);
+                if (hasCardTitle || hasCardSub || hasCardContent) {
+                  results.push({
+                    pageId: page.id,
+                    pageTitle: `${page.title} - ${card.title || sec.heading || "Kort"}`,
+                    category: page.category,
+                    icon: page.icon,
+                    snippet: card.content || card.title
+                  });
+                }
+              });
+            }
+          });
+        }
+
+        // Check VPC data
+        if (page.vpcs) {
+          page.vpcs.forEach((vpc) => {
+            const matchedText = [
+              ...vpc.customerProfile.jobs,
+              ...vpc.customerProfile.pains,
+              ...vpc.customerProfile.gains,
+              ...vpc.valueMap.products,
+              ...vpc.valueMap.painRelievers,
+              ...vpc.valueMap.gainCreators
+            ].find(t => t.toLowerCase().includes(searchQueryStr));
+
+            if (matchedText) {
+              results.push({
+                pageId: page.id,
+                pageTitle: `${page.title} - VPC ${vpc.target}`,
+                category: page.category,
+                icon: page.icon,
+                snippet: matchedText
+              });
+            }
+          });
+        }
+
+        // Check Legal details
+        if (page.legalTopics) {
+          page.legalTopics.forEach((topic) => {
+            const hasTitle = topic.title && topic.title.toLowerCase().includes(searchQueryStr);
+            const hasText = topic.text && topic.text.toLowerCase().includes(searchQueryStr);
+            if (hasTitle || hasText) {
+              results.push({
+                pageId: page.id,
+                pageTitle: `${page.title} - ${topic.title}`,
+                category: page.category,
+                icon: page.icon,
+                snippet: topic.text || topic.title
+              });
+            }
+          });
+        }
+
+        // Check Adjustments data
+        if (page.adjustments) {
+          page.adjustments.forEach((adj) => {
+            const matchedText = [
+              adj.title,
+              ...(adj.subAdjustments ? adj.subAdjustments.flatMap(sub => [
+                sub.title,
+                ...(Array.isArray(sub.konkret) ? sub.konkret : []),
+                sub.hvorfor,
+                ...(Array.isArray(sub.motstand) ? sub.motstand : [])
+              ]) : [])
+            ].find(t => t && typeof t === "string" && t.toLowerCase().includes(searchQueryStr));
+
+            if (matchedText) {
+              results.push({
+                pageId: page.id,
+                pageTitle: `${page.title} - ${adj.title}`,
+                category: page.category,
+                icon: page.icon,
+                snippet: matchedText
+              });
+            }
+          });
+        }
+      });
+      return results;
+    };
+
+    let searchResults = performSearch(query);
+
+    // If search failed and query is longer than 4 chars, try fuzzy backup by trimming ending characters
+    if (searchResults.length === 0 && query.length > 4) {
+      searchResults = performSearch(query.slice(0, -1));
+      if (searchResults.length === 0 && query.length > 5) {
+        searchResults = performSearch(query.slice(0, -2));
       }
-
-      // Check VPC data
-      if (page.vpcs) {
-        page.vpcs.forEach((vpc) => {
-          const matchedText = [
-            ...vpc.customerProfile.jobs,
-            ...vpc.customerProfile.pains,
-            ...vpc.customerProfile.gains,
-            ...vpc.valueMap.products,
-            ...vpc.valueMap.painRelievers,
-            ...vpc.valueMap.gainCreators
-          ].find(t => t.toLowerCase().includes(query));
-
-          if (matchedText) {
-            results.push({
-              pageId: page.id,
-              pageTitle: `${page.title} - VPC ${vpc.target}`,
-              category: page.category,
-              icon: page.icon,
-              snippet: matchedText
-            });
-          }
-        });
-      }
-
-      // Check Legal details
-      if (page.legalTopics) {
-        page.legalTopics.forEach((topic) => {
-          const hasTitle = topic.title && topic.title.toLowerCase().includes(query);
-          const hasText = topic.text && topic.text.toLowerCase().includes(query);
-          if (hasTitle || hasText) {
-            results.push({
-              pageId: page.id,
-              pageTitle: `${page.title} - ${topic.title}`,
-              category: page.category,
-              icon: page.icon,
-              snippet: topic.text || topic.title
-            });
-          }
-        });
-      }
-
-      // Check Adjustments data
-      if (page.adjustments) {
-        page.adjustments.forEach((adj) => {
-          const matchedText = [
-            adj.title,
-            ...(adj.subAdjustments ? adj.subAdjustments.flatMap(sub => [
-              sub.title,
-              ...(Array.isArray(sub.konkret) ? sub.konkret : []),
-              sub.hvorfor,
-              ...(Array.isArray(sub.motstand) ? sub.motstand : [])
-            ]) : [])
-          ].find(t => t && typeof t === "string" && t.toLowerCase().includes(query));
-
-          if (matchedText) {
-            results.push({
-              pageId: page.id,
-              pageTitle: `${page.title} - ${adj.title}`,
-              category: page.category,
-              icon: page.icon,
-              snippet: matchedText
-            });
-          }
-        });
-      }
-    });
+    }
 
     // Remove duplicates by pageId to keep it clean
     const uniqueResults = [];
     const seen = new Set();
-    results.forEach(item => {
+    searchResults.forEach(item => {
       if (!seen.has(item.pageId)) {
         seen.add(item.pageId);
         uniqueResults.push(item);
       }
     });
 
-    return uniqueResults.slice(0, 10);
+    return uniqueResults.slice(0, 15);
   };
 
   const searchResults = getSearchResults();

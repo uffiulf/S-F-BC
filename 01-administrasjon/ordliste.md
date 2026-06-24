@@ -70,7 +70,7 @@
 | **RGE (Residual Gross Earnings)** | Fortjeneste som gjenstår etter at direkte kostnader er trukket fra. Måler hvor lønnsom kjernedriften er før faste kostnader. |
 | **Risk Management** | Prosessen med å identifisere, vurdere og håndtere risikoer i et prosjekt eller en organisasjon. |
 | **ROI** | Return on Investment. Avkastning på investering. Måler hvor lønnsom en investering er. |
-| **Rubric** | Rubric (vurderingsmatrise). Strukturerte kriterier for vurdering, f.eks. 1–5 på definerte dimensjoner. |
+| **Rubric** | Vurderingsmatrise. En tabell med forhåndsdefinerte kriterier der hvert kriterium vurderes på en skala (f.eks. 1–5). I Syntax & Flow brukes rubric for å gi studentene en rettferdig og sammenlignbar vurdering fra oppdragsgivere. Eksempel: faglig kompetanse (1–5), samarbeid (1–5), kommunikasjon (1–5), gjennomføringsevne (1–5), kundeforståelse (1–5). I stedet for å skrive "studenten var flink", får man en strukturert poengsum som er lettere å sammenligne på tvers av kandidater. |
 | **SAM (Serviceable Addressable Market)** | Den delen av TAM som dine produkter/tjenester faktisk kan nå, gitt geografiske og markedmessige begrensninger. |
 | **SLA** | Service Level Agreement. Avtale om leveransenivå og garantier. Syntax & Flow tilbyr normalt ikke SLA. |
 | **SOM (Serviceable Obtainable Market)** | Den realistiske markedsandelen du faktisk kan forvente å få i en gitt periode, innenfor SAM. |
