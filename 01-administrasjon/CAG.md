@@ -86,8 +86,9 @@ Prioritet: 1) HiØ internt, 2) Ideelle organisasjoner, 3) Privatpersoner (ENK), 
 | **Vurderingsmodell** | Forslag om A–F med 60 % kundepåvirkning. Skal drøftes med emneansvarlig Stig Henning Johansen |
 | **De minimis-verdier** | Studentverdi: 250 kr/t (forsvarstall). Mentorverdi: 600 kr/t. Føres i internt register |
 | **Kalkulator** | Interaktiv kalkulator fjernet fra infosiden. Erstattet med statisk forklaring |
-| **Infoside** | Gjennomgått og rensket for skrivefeil (12 stk rettet) |
+| **Infoside** | Gjennomgått og rensket for skrivefeil (16 stk rettet over 2 runder) |
 | **Kildedokumenter** | Synkronisert — ingen avvik fra infosiden |
+| **Presentasjonsinnhold** | Klart i `05-agent-forslag/Forslag/presentasjonsinnhold.md` for multimodal agent |
 
 ## Viktige beslutninger tatt
 

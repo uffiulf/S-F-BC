@@ -166,6 +166,10 @@ Hva: På "Mål & Visjon"-siden, under "Det Tverrfaglige Samspillet", oppdater te
 Fjern konkret omtale av "regnskapsrutiner" og "flaskehalsanalyser" — disse er ikke standard fagbegreper. Hold beskrivelsene nøytrale og basert på faktiske emner.
 Hvor: "Mål & Visjon"-siden, under "Det Tverrfaglige Samspillet"
 
+### 22.06.2026 — Presentasjon for møte — info klar i egen fil (ikke til Gemini)
+Prioritet: — (info til prosjekteier)
+Hva: Innholdet til presentasjonen ligger i `05-agent-forslag/Forslag/presentasjonsinnhold.md`. Denne filen inneholder alt en multimodal AI-agent eller LLM trenger for å lage en presentasjon (HTML, PowerPoint eller annet format). Ikke noe Gemini trenger å gjøre med dette.
+
 ### 22.06.2026 — QC Runde 4: Rett opp 4 nye feil på infosiden
 Prioritet: Høy
 Kilde: QC-gjennomgang av wikiData.js
