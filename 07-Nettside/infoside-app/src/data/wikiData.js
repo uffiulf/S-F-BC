@@ -12,7 +12,20 @@ export const wikiData = [
       },
       {
         "heading": "Driftsmodell: Stabil kjerne vs. Utførende studenter",
-        "text": "For å sikre kontinuitet, profesjonalitet og høy kvalitet drives Syntax & Flow etter en modell med et tydelig skille mellom drift og utførelse:<br/><br/><ul style=\"padding-left: 20px; display: flex; flex-direction: column; gap: 12px; margin-bottom: 16px; list-style-type: disc;\">  <li style=\"line-height: 1.6; color: var(--text-secondary);\">    <strong>Den stabile kjernen (Driver organisasjonen):</strong> Består av daglig leder, fagansvarlige og forelesere ved HiØ. De sikrer den faglige standarden og kontinuiteten uavhengig av studentutskifting. Forelesere trekkes inn ved behov for spisskompetanse.  </li>  <li style=\"line-height: 1.6; color: var(--text-secondary);\">    <strong>Studentene (Utfører oppdragene):</strong> Deltar gjennom emnet ITD35014 Bedriftspraksis (eller kombinerte ordninger) i tverrfaglige prosjektteam. De utfører selve oppgavene, men har ikke det administrative driftsansvaret for organisasjonen.  </li></ul>Syntax & Flow er et <strong>selvstendig organ in-house på HiØ</strong>, ikke en uforpliktende studentforening. Målet er å gi studentene en klar og forutsigbar bane fra utdanning til fast ansatt, der portalen fungerer som et verktøy for bedrifter til å følge deres arbeid og verifisere kompetanse."
+        "text": `For å sikre kontinuitet, profesjonalitet og høy kvalitet drives Syntax & Flow etter en modell med et tydelig skille mellom drift og utførelse:<br/><br/>
+<div style="background: var(--bg-secondary); border: 1px solid var(--border-color); border-left: 4px solid var(--accent-color); border-radius: 4px 12px 12px 4px; padding: 20px; margin-top: 16px;">
+  <ul style="padding-left: 20px; display: flex; flex-direction: column; gap: 12px; margin-bottom: 16px; list-style-type: disc;">
+    <li style="line-height: 1.6; color: var(--text-secondary);">
+      <strong>Den stabile kjernen (Driver organisasjonen):</strong> Består av daglig leder, fagansvarlige og forelesere ved HiØ. De sikrer den faglige standarden og kontinuiteten uavhengig av studentutskifting. Forelesere trekkes inn ved behov for spisskompetanse.
+    </li>
+    <li style="line-height: 1.6; color: var(--text-secondary);">
+      <strong>Studentene (Utfører oppdragene):</strong> Deltar gjennom emnet ITD35014 Bedriftspraksis (eller kombinerte ordninger) i tverrfaglige prosjektteam. De utfører selve oppgavene, men har ikke det administrative driftsansvaret for organisasjonen.
+    </li>
+  </ul>
+  <p style="margin: 0; line-height: 1.6; color: var(--text-secondary);">
+    Syntax & Flow er et <strong>selvstendig organ in-house på HiØ</strong>, ikke en uforpliktende studentforening. Målet er å gi studentene en klar og forutsigbar bane fra utdanning til fast ansatt, der portalen fungerer som et verktøy for bedrifter til å følge deres arbeid og verifisere kompetanse.
+  </p>
+</div>`
       },
       {
         "heading": "Utgangspunkt: ITD35014 Bedriftspraksis",
