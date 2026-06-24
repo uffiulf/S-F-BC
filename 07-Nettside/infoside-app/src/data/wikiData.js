@@ -42,28 +42,60 @@ export const wikiData = [
     "sections": [
       {
         "heading": "Vår Visjon",
-        "text": "Vi ønsker å fjerne 'erfaringsgapet' for nyutdannede studenter ved å gi dem reell prosjekterfaring i et trygt, mentorstyrt miljø under studietiden. Vi forener studentenes behov for relevant erfaring med bedriftenes behov for digitalisering og forretningsutvikling."
+        "text": "<div class=\"vision-banner\" style=\"position: relative; overflow: hidden; background: linear-gradient(135deg, rgba(37,99,235,0.12) 0%, rgba(99,102,241,0.04) 100%); border: 1px solid rgba(37,99,235,0.2); border-radius: 16px; padding: 28px; margin-top: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); backdrop-filter: blur(4px);\"><div style=\"position: absolute; top: -40px; right: -40px; width: 120px; height: 120px; background: radial-gradient(circle, var(--accent-color) 0%, transparent 70%); opacity: 0.12; pointer-events: none;\"></div><div style=\"display: flex; gap: 20px; align-items: center; flex-wrap: wrap;\"><div style=\"padding: 14px; background: rgba(37,99,235,0.08); border-radius: 12px; border: 1px solid rgba(37,99,235,0.25); display: flex; align-items: center; justify-content: center;\"><svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"var(--accent-color)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z\"/><circle cx=\"12\" cy=\"12\" r=\"3\"/></svg></div><div style=\"flex: 1; min-width: 250px;\"><h4 style=\"margin: 0 0 6px 0; font-size: 1.1rem; font-weight: 600; color: var(--text-primary);\">Fjerne erfaringsgapet</h4><p style=\"margin: 0; font-size: 1.025rem; line-height: 1.6; color: var(--text-secondary); font-style: italic;\">«Vi ønsker å fjerne 'erfaringsgapet' for nyutdannede studenter ved å gi dem reell prosjekterfaring i et trygt, mentorstyrt miljø under studietiden. Vi forener studentenes behov for relevant erfaring med bedriftenes behov for digitalisering og forretningsutvikling.»</p></div></div></div>"
       },
       {
         "heading": "Forankring i ITD35014 Bedriftspraksis",
-        "text": "Syntax & Flow bygger på det eksisterende faget <strong>ITD35014 Bedriftspraksis (10 stp)</strong> ved HiØ. Vår rolle er å fungere som den tilretteleggende parten som kobler studenter sammen i team og skaffer oppdragene, slik at rammene rundt faget blir mer attraktive og operative."
+        "text": "<p style=\"margin-bottom: 20px; line-height: 1.6; color: var(--text-secondary);\">Syntax & Flow bygger på det eksisterende faget <strong>ITD35014 Bedriftspraksis (10 stp)</strong> ved HiØ. Vår rolle er å fungere som den tilretteleggende parten som kobler studenter sammen i team og skaffer oppdragene, slik at rammene rundt faget blir mer attraktive og operative.</p><div style=\"display: flex; align-items: center; gap: 16px; background: rgba(37, 99, 235, 0.06); border-left: 4px solid var(--accent-color); padding: 16px 20px; border-radius: 4px 12px 12px 4px; border: 1px solid rgba(37, 99, 235, 0.12); border-left-width: 4px;\"><div style=\"color: var(--accent-color); display: flex; align-items: center; justify-content: center;\"><svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z\"/><path d=\"M6 6h10\"/><path d=\"M6 10h10\"/></svg></div><div><div style=\"font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted); font-weight: 600; margin-bottom: 2px;\">Utgangspunkt</div><div style=\"font-size: 0.95rem; font-weight: 600; color: var(--text-primary);\">ITD35014 — 10 stp — emneansvarlig Stig Henning Johansen</div></div></div>"
       },
       {
         "heading": "Tre Hovedmål",
-        "points": [
-          "<strong>For studentene:</strong> Levere praktisk erfaring, CV-referanser og nettverk som sikrer rask overgang til arbeidslivet etter fullførte studier.",
-          "<strong>For bedriftene:</strong> Tilby lavterskel, kostnadsfrie IT-, design- og økonomitjenester av høy kvalitet.",
-          "<strong>For Høgskolen i Østfold (HiØ):</strong> Styrke utdanningenes relevans, redusere frafall og øke samarbeidet med det regionale næringslivet."
+        "gridCards": [
+          {
+            "title": "For studentene",
+            "icon": "GraduationCap",
+            "content": "Levere praktisk erfaring, CV-referanser og nettverk som sikrer rask overgang til arbeidslivet etter fullførte studier."
+          },
+          {
+            "title": "For bedriftene",
+            "icon": "Briefcase",
+            "content": "Tilby lavterskel, kostnadsfrie IT-, design- og økonomitjenester av høy kvalitet."
+          },
+          {
+            "title": "For Høgskolen (HiØ)",
+            "icon": "School",
+            "content": "Styrke utdanningenes relevans, redusere frafall og øke samarbeidet med det regionale næringslivet."
+          }
         ]
       },
       {
         "heading": "Tverrfaglig sammensetning",
         "text": "Syntax & Flow setter sammen team på tvers av fagdisipliner. Hvilke studenter som deltar avhenger av oppdraget, men typisk vil et team bestå av:",
-        "points": [
-          "<strong>IT & Utvikling:</strong> Studenter fra informatikk, dataingeniør eller informasjonssystemer. Kan bidra med programmering, webutvikling, databasesystemer og systemarkitektur.",
-          "<strong>Design & Medier:</strong> Studenter fra digitale medier og design. Kan bidra med UX/UI-design, visuell profil, prototyping og medieproduksjon.",
-          "<strong>Økonomi & Ledelse:</strong> Studenter fra økonomi og administrasjon eller innovasjon og prosjektledelse. Kan bidra med forretningsutvikling, regnskap, budsjettering og prosjektstyring.",
-          "<strong>Kommunikasjon:</strong> Studenter fra kommunikasjon eller internasjonal kommunikasjon. Kan bidra med strategisk kommunikasjon, krisekommunikasjon og digital markedsføring."
+        "gridCards": [
+          {
+            "title": "IT & Utvikling",
+            "subtitle": "Informatikk, dataingeniør, informasjonssystemer",
+            "icon": "Code",
+            "content": "Bidrar med programmering, webutvikling, databasesystemer og systemarkitektur."
+          },
+          {
+            "title": "Design & Medier",
+            "subtitle": "Digitale medier og design",
+            "icon": "Palette",
+            "content": "Bidrar med UX/UI-design, visuell profil, prototyping og medieproduksjon."
+          },
+          {
+            "title": "Økonomi & Ledelse",
+            "subtitle": "Økonomi & adm., innovasjon & prosjektledelse",
+            "icon": "TrendingUp",
+            "content": "Bidrar med forretningsutvikling, regnskap, budsjettering og prosjektstyring."
+          },
+          {
+            "title": "Kommunikasjon",
+            "subtitle": "Kommunikasjon, internasjonal kommunikasjon",
+            "icon": "MessageSquare",
+            "content": "Bidrar med strategisk kommunikasjon, krisekommunikasjon og digital markedsføring."
+          }
         ]
       }
     ],

@@ -519,4 +519,6 @@ Hvor: Ny seksjon under "Analyser" eller "Guidelines"
 | 22.06.2026 | Rett opp "de minimis"-feil på infosiden — har blitt forkortet til "n" | Utført |
 | 22.06.2026 | QC Runde 3: Rett opp 12 feil på infosiden | Utført |
 | 22.06.2026 | Oppdater "Det Tverrfaglige Samspillet" på Mål & Visjon med korrekt faginnhold | Utført |
+| 24.06.2026 | Forbedre grafisk fremstilling på Mål & Visjon (kort, banner, utgangspunkt) | Utført |
+
 
