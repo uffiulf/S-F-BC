@@ -1007,6 +1007,59 @@ mark.highlight {
   .vpc-square-center-gift, .vpc-circle-center-head {
     display: none !important;
   }
+
+  /* Mobile-first post-it list replacements */
+  .post-it-list {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin-top: 12px !important;
+  }
+
+  .post-it {
+    flex: none !important;
+    min-height: auto !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 12px 14px !important;
+    font-size: 0.85rem !important;
+    line-height: 1.4 !important;
+    color: var(--text-primary) !important; /* Tilpasser seg lyst/mørkt tema */
+    box-shadow: none !important;
+    border-radius: 8px !important;
+    border-bottom-right-radius: 8px !important;
+    transform: none !important;
+    pointer-events: none !important; /* Deaktiverer klikk og zoom på mobil */
+    text-align: left !important;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    display: block !important;
+  }
+
+  .post-it::after {
+    display: none !important;
+  }
+
+  /* Harmonisk fargekodet venstremarg med transparent bakgrunn for mobil-kort */
+  .post-it-yellow {
+    background: rgba(234, 179, 8, 0.08) !important;
+    border: 1px solid rgba(234, 179, 8, 0.15) !important;
+    border-left: 5px solid #eab308 !important;
+  }
+
+  .post-it-green {
+    background: rgba(16, 185, 129, 0.08) !important;
+    border: 1px solid rgba(16, 185, 129, 0.15) !important;
+    border-left: 5px solid #10b981 !important;
+  }
+
+  .post-it-pink {
+    background: rgba(236, 72, 153, 0.08) !important;
+    border: 1px solid rgba(236, 72, 153, 0.15) !important;
+    border-left: 5px solid #ec4899 !important;
+  }
 }
 
 /* VPC Interactive Canvas Styles */
