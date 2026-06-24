@@ -3401,7 +3401,7 @@ mark.highlight {
 /* 5. Stepper Completed State & Progress Line */
 .phase-stepper-progress {
   position: absolute;
-  top: 36px;
+  bottom: 6px;
   left: 30px;
   right: 30px;
   height: 4px;
