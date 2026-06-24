@@ -1252,23 +1252,6 @@ export default function App() {
                       <div className="flex items-center gap-3 mb-8" style={{ display: 'flex', gap: '12px', marginBottom: '32px', borderBottom: '1px solid var(--border-color)', paddingBottom: '16px' }}>
                         <span style={{ fontSize: '0.9rem', color: 'var(--text-muted)', fontWeight: 500 }}>Sortering:</span>
                         <button
-                          onClick={() => setOrdlisteMode("alphabetical")}
-                          className={`btn ${ordlisteMode === "alphabetical" ? "active" : ""}`}
-                          style={{
-                            padding: '6px 16px',
-                            borderRadius: '8px',
-                            fontWeight: 600,
-                            fontSize: '0.85rem',
-                            cursor: 'pointer',
-                            border: '1px solid var(--border-color)',
-                            backgroundColor: ordlisteMode === "alphabetical" ? 'var(--accent-color)' : 'rgba(255, 255, 255, 0.02)',
-                            color: ordlisteMode === "alphabetical" ? '#ffffff' : 'var(--text-primary)',
-                            transition: 'all 0.2s ease',
-                          }}
-                        >
-                          🔤 Alfabetisk
-                        </button>
-                        <button
                           onClick={() => setOrdlisteMode("category")}
                           className={`btn ${ordlisteMode === "category" ? "active" : ""}`}
                           style={{
@@ -1284,6 +1267,23 @@ export default function App() {
                           }}
                         >
                           📂 Etter kategori
+                        </button>
+                        <button
+                          onClick={() => setOrdlisteMode("alphabetical")}
+                          className={`btn ${ordlisteMode === "alphabetical" ? "active" : ""}`}
+                          style={{
+                            padding: '6px 16px',
+                            borderRadius: '8px',
+                            fontWeight: 600,
+                            fontSize: '0.85rem',
+                            cursor: 'pointer',
+                            border: '1px solid var(--border-color)',
+                            backgroundColor: ordlisteMode === "alphabetical" ? 'var(--accent-color)' : 'rgba(255, 255, 255, 0.02)',
+                            color: ordlisteMode === "alphabetical" ? '#ffffff' : 'var(--text-primary)',
+                            transition: 'all 0.2s ease',
+                          }}
+                        >
+                          🔤 Alfabetisk
                         </button>
                       </div>
 

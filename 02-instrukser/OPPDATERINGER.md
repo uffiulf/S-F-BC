@@ -533,6 +533,8 @@ Hvor: Ny seksjon under "Analyser" eller "Guidelines"
 | 22.06.2026 | Oppdater "Det Tverrfaglige Samspillet" på Mål & Visjon med korrekt faginnhold | Utført |
 | 24.06.2026 | Forbedre grafisk fremstilling på Mål & Visjon (kort, banner, utgangspunkt) | Utført |
 | 22.06.2026 | QC Runde 4: Rett opp 4 nye feil på infosiden | Utført |
+| 24.06.2026 | Bytte rekkefølge på ordliste-sorteringsknapper i App.jsx | Utført |
+
 
 
 
