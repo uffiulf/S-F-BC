@@ -166,6 +166,26 @@ Hva: På "Mål & Visjon"-siden, under "Det Tverrfaglige Samspillet", oppdater te
 Fjern konkret omtale av "regnskapsrutiner" og "flaskehalsanalyser" — disse er ikke standard fagbegreper. Hold beskrivelsene nøytrale og basert på faktiske emner.
 Hvor: "Mål & Visjon"-siden, under "Det Tverrfaglige Samspillet"
 
+### 22.06.2026 — Oppdater budsjett-tabellen på Risiko & Juss-siden med reelle kostnader
+Prioritet: Høy
+Kilde: `05-agent-forslag/Forslag/mal-og-utkast/finansieringsplan.md` og `05-agent-forslag/Forslag/gjennomforingsplan_4_faser.md`
+Hva: På "Risiko & Juss"-siden, under "1. Kostnadsanalyse & Budsjett", oppdater tabellen. Dagens tabell viser kun ~15 000–20 000 kr/år, men mangler aksjekapital, juridisk bistand, forsikring og ESA-avklaring. Oppdater til:
+
+| Kostnadstype | Estimert beløp | Når | Merknad |
+|---|---|---|---|
+| Aksjekapital AS | 30 000 kr (engangs) | Fase 2 | Må være på plass før stiftelse |
+| Juridisk bistand | 20 000–50 000 kr (engangs) | Fase 2 | Stiftelse av AS, samarbeidsavtale, kundeavtale |
+| Ansvarsforsikring | 5 000–15 000 kr/år | Fase 2+ | Yrkesansvarsforsikring |
+| Domene/hosting portal | 1 000 kr/år | Fase 4 | Enkel nettside/portal |
+| Programvarelisenser | 10 000–15 000 kr/år | Fase 3+ | Figma, GitHub, Slack (utdanningslisenser først) |
+| Profilering (stands, rollups) | 3 000 kr (engangs) | Fase 2 | Rekrutteringsmateriell |
+| Regnskaps- og banksystem | 3 000 kr/år | Fase 3+ | Drift av stiftelsen |
+| ESA-avklaring (hvis nødvendig) | 50 000–200 000 kr | Fase 4 | Kun ved oppskalering |
+| **Totalt (første 2 år)** | **~120 000–310 000 kr** | | |
+
+Fjern den gamle totalen på "~15 000 - 20 000 kr/år".
+Hvor: "Risiko & Juss"-siden, under "1. Kostnadsanalyse & Budsjett"
+
 ### 22.06.2026 — Oppdater overskrift "Utførende studenter" → "Studentteam"
 Prioritet: Lav
 Kilde: Prosjekteier
@@ -175,6 +195,12 @@ Hvor: Dashboard-siden
 ### 22.06.2026 — Presentasjon for møte — info klar i egen fil (ikke til Gemini)
 Prioritet: — (info til prosjekteier)
 Hva: Innholdet til presentasjonen ligger i `05-agent-forslag/Forslag/presentasjonsinnhold.md`. Denne filen inneholder alt en multimodal AI-agent eller LLM trenger for å lage en presentasjon (HTML, PowerPoint eller annet format). Ikke noe Gemini trenger å gjøre med dette.
+
+### 22.06.2026 — QC Runde 5: Rett opp "Trainee-ordning" → "Kunnskapsoverføring"
+Prioritet: Høy
+Kilde: QC-gjennomgang av Organisasjon & Drift-siden
+Hva: På "Organisasjon & Drift"-siden, under "Tiltak for kunnskapsoverføring", punkt 3: "Trainee-ordning: Første- og andreårsstudenter rekrutteres som juniorer for å vokse inn i tyngre roller senere." — Denne er utdatert. S&F har ikke trainee-ordning. Erstatt med: "Kunnskapsoverføring mellom studentkull: Evighetsprosjekter har overleveringsplan som sikrer at neste kull kan ta over uten å starte fra bunnen."
+Hvor: Organisasjon & Drift-siden
 
 ### 22.06.2026 — QC Runde 4: Rett opp 4 nye feil på infosiden
 Prioritet: Høy
@@ -552,6 +578,8 @@ Hvor: Ny seksjon under "Analyser" eller "Guidelines"
 | 24.06.2026 | Forbedre kontrast og tekstlesbarhet i mørk modus | Utført |
 | 24.06.2026 | Pakke driftsmodellen på Introduksjon inn i en visuell boks | Utført |
 | 22.06.2026 | Oppdater overskrift 'Utførende studenter' til 'Studentteam' | Utført |
+| 22.06.2026 | Oppdater budsjett-tabellen på Risiko & Juss-siden med reelle kostnader | Utført |
+| 22.06.2026 | QC Runde 5: Rett opp 'Trainee-ordning' til 'Kunnskapsoverføring' | Utført |
 
 
 

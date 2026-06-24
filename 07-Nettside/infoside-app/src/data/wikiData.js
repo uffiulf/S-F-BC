@@ -232,7 +232,7 @@ export const wikiData = [
         "points": [
           "<strong>Overlappsperioder:</strong> Ledende roller skal ha 3-6 måneders overlapp for grundig opplæring av arvtaker.",
           "<strong>Wiki & Dokumentasjon:</strong> Krav om at alle rutiner, kildekoder, Figma-filer og analyser lagres og dokumenteres systematisk (som denne portalen).",
-          "<strong>Trainee-ordning:</strong> Første- og andreårsstudenter rekrutteres som juniorer for å vokse inn i tyngre roller senere."
+          "<strong>Kunnskapsoverføring mellom studentkull:</strong> Evighetsprosjekter har overleveringsplan som sikrer at neste kull kan ta over uten å starte fra bunnen."
         ]
       }
     ],
@@ -1109,40 +1109,58 @@ export const wikiData = [
           ],
           "rows": [
             [
-              "Registrering i Brønnøysund",
-              "Ca. 6 000 kr (engangs)",
+              "Aksjekapital AS",
+              "30 000 kr (engangs)",
               "Fase 2",
-              "Etablering av AS eid av ideell stiftelse (registreringsavgifter)"
+              "Må være på plass før stiftelse"
             ],
             [
-              "Domene og hosting av portalen",
-              "Ca. 1 000 kr/år",
+              "Juridisk bistand",
+              "20 000–50 000 kr (engangs)",
+              "Fase 2",
+              "Stiftelse av AS, samarbeidsavtale, kundeavtale"
+            ],
+            [
+              "Ansvarsforsikring",
+              "5 000–15 000 kr/år",
+              "Fase 2+",
+              "Yrkesansvarsforsikring"
+            ],
+            [
+              "Domene/hosting portal",
+              "1 000 kr/år",
               "Fase 4",
-              "Hosting for referansebasen"
+              "Enkel nettside/portal"
             ],
             [
-              "Profilering på campus (stands/rollups)",
-              "Ca. 3 000 kr (engangs)",
+              "Programvarelisenser",
+              "10 000–15 000 kr/år",
+              "Fase 3+",
+              "Figma, GitHub, Slack (utdanningslisenser først)"
+            ],
+            [
+              "Profilering (stands, rollups)",
+              "3 000 kr (engangs)",
               "Fase 2",
               "Rekrutteringsmateriell"
             ],
             [
-              "Programvarelisenser (Figma, GitHub, Slack)",
-              "Ca. 10 000 - 15 000 kr/år",
-              "Fase 3+",
-              "Søkes om gratis/utdanningslisenser"
-            ],
-            [
               "Regnskaps- og banksystem",
-              "Ca. 3 000 kr/år",
+              "3 000 kr/år",
               "Fase 3+",
               "Drift av stiftelsen"
             ],
             [
-              "<strong>Totalt behov</strong>",
-              "<strong>~15 000 - 20 000 kr/år</strong>",
-              "Løpende",
-              "Dekkes over HiØs budsjett for Bedriftspraksis"
+              "ESA-avklaring (hvis nødvendig)",
+              "50 000–200 000 kr",
+              "Fase 4",
+              "Kun ved oppskalering"
+            ],
+            [
+              "<strong>Totalt (første 2 år)</strong>",
+              "<strong>~120 000–310 000 kr</strong>",
+              "-",
+              "Dekkes over innovasjonsmidler/søknader"
             ]
           ]
         }
