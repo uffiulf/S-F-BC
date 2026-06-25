@@ -1301,68 +1301,74 @@ Syntax & Flow tar ansvaret for oppfølging av studentene — ikke bedriften. Bed
     "sections": [
       {
         "heading": "1. Kostnadsanalyse & Budsjett",
-        "text": "Siden Syntax & Flow er et gratis tilbud, holdes driftskostnadene ekstremt lave og dekkes av HiØ-innovasjonsmidler, samskipnaden (SiØ) eller lokale stiftelser.",
+        "text": "Siden Syntax & Flow er et gratis tilbud, holdes driftskostnadene ekstremt lave og dekkes av HiØ-innovasjonsmidler, samskipnaden (SiØ) eller lokale stiftelser.<br/><br/><em>Lønn til daglig leder og fagansvarlig kommer i tillegg til disse tallene.</em>",
         "table": {
           "headers": [
-            "Kostnadstype",
-            "Estimerte kostnader",
-            "Fase",
-            "Merknad"
+            "Type",
+            "Post",
+            "Estimert beløp",
+            "Når"
           ],
           "rows": [
             [
+              "Engangskostnader",
               "Aksjekapital AS",
-              "30 000 kr (engangs)",
-              "Fase 2",
-              "Må være på plass før stiftelse"
+              "30 000 kr",
+              "Fase 2"
             ],
             [
+              "",
               "Juridisk bistand",
-              "20 000–50 000 kr (engangs)",
-              "Fase 2",
-              "Stiftelse av AS, samarbeidsavtale, kundeavtale"
+              "20 000–50 000 kr",
+              "Fase 2"
             ],
             [
+              "",
+              "Profilering (stands, rollups)",
+              "3 000 kr",
+              "Fase 2"
+            ],
+            [
+              "Årlige kostnader",
               "Ansvarsforsikring",
               "5 000–15 000 kr/år",
-              "Fase 2+",
-              "Yrkesansvarsforsikring"
+              "Fase 2+"
             ],
             [
-              "Domene/hosting portal",
-              "1 000 kr/år",
-              "Fase 4",
-              "Enkel nettside/portal"
-            ],
-            [
+              "",
               "Programvarelisenser",
               "10 000–15 000 kr/år",
-              "Fase 3+",
-              "Figma, GitHub, Slack (utdanningslisenser først)"
+              "Fase 3+"
             ],
             [
-              "Profilering (stands, rollups)",
-              "3 000 kr (engangs)",
-              "Fase 2",
-              "Rekrutteringsmateriell"
+              "",
+              "Domene/hosting",
+              "1 000 kr/år",
+              "Fase 4"
             ],
             [
-              "Regnskaps- og banksystem",
-              "3 000 kr/år",
-              "Fase 3+",
-              "Drift av stiftelsen"
-            ],
-            [
-              "ESA-avklaring (hvis nødvendig)",
+              "Kun ved behov",
+              "ESA-avklaring",
               "50 000–200 000 kr",
-              "Fase 4",
-              "Kun ved oppskalering"
+              "Fase 4"
             ],
             [
-              "<strong>Totalt (første 2 år)</strong>",
+              "",
+              "<strong>Sum første 2 år</strong>",
               "<strong>~120 000–310 000 kr</strong>",
-              "-",
-              "Dekkes over innovasjonsmidler/søknader"
+              ""
+            ],
+            [
+              "",
+              "<strong>Herav engangskostnader</strong>",
+              "<strong>~53 000–83 000 kr</strong>",
+              ""
+            ],
+            [
+              "",
+              "<strong>Årlige kostnader etter år 2</strong>",
+              "<strong>~16 000–31 000 kr/år</strong>",
+              ""
             ]
           ]
         }

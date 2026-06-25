@@ -232,17 +232,23 @@ Daglig leder
 
 ## 8. Finansiering
 
-### 8.1 Kostnader (første 2 år)
+### 8.1 Kostnader ( første 2 år)
 
-| Post | Beløp |
-|------|-------|
-| Aksjekapital AS | 30 000 kr |
-| Juridisk bistand | 20 000–50 000 kr |
-| Ansvarsforsikring (årlig) | 5 000–15 000 kr |
-| Domene/hosting (årlig) | 1 000 kr |
-| Programvarelisenser (årlig) | 10 000–15 000 kr |
-| ESA-avklaring (hvis nødvendig) | 50 000–200 000 kr |
-| **Totalt** | **~120 000–310 000 kr** |
+| Type | Post | Beløp | Når |
+|------|------|-------|-----|
+| **Engangskostnader** | Aksjekapital AS | 30 000 kr | Fase 2 (ved stiftelse) |
+| | Juridisk bistand (stiftelse, avtaler) | 20 000–50 000 kr | Fase 2 |
+| | Profilering (stands, rollups) | 3 000 kr | Fase 2 |
+| **Årlige kostnader** | Ansvarsforsikring | 5 000–15 000 kr/år | Fase 2+ |
+| | Programvarelisenser (Figma, GitHub, Slack) | 10 000–15 000 kr/år | Fase 3+ |
+| | Domene/hosting portal | 1 000 kr/år | Fase 4 |
+| **Kun ved behov** | ESA-avklaring | 50 000–200 000 kr | Fase 4 |
+| | | | |
+| | **Sum første 2 år** | **~120 000–310 000 kr** | |
+| | **Herav engangskostnader** | **~53 000–83 000 kr** | |
+| | **Årlige kostnader etter år 2** | **~16 000–31 000 kr/år** | |
+
+**Merk:** Lønn til daglig leder og fagansvarlig kommer i tillegg (se pkt. 7.1). Tallene over er kun organisasjonens driftskostnader.
 
 ### 8.2 Potensielle kilder
 

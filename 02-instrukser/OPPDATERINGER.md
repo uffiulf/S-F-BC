@@ -196,6 +196,29 @@ Hvor: Dashboard-siden
 Prioritet: — (info til prosjekteier)
 Hva: Innholdet til presentasjonen ligger i `05-agent-forslag/Forslag/presentasjonsinnhold.md`. Denne filen inneholder alt en multimodal AI-agent eller LLM trenger for å lage en presentasjon (HTML, PowerPoint eller annet format). Ikke noe Gemini trenger å gjøre med dette.
 
+### 22.06.2026 — Oppdater budsjett-tabellen på Risiko & Juss med tydelig inndeling
+Prioritet: Høy
+Kilde: `06-Business-case/Business-Case-Utkast.md` §8.1
+Hva: På "Risiko & Juss"-siden, under "1. Kostnadsanalyse & Budsjett", oppdater tabellen til å skille mellom engangskostnader, årlige kostnader og kostnader kun ved behov. Legg også til en forklarende tekst nederst: "Lønn til daglig leder og fagansvarlig kommer i tillegg til disse tallene."
+
+Tabellen skal se slik ut:
+
+| Type | Post | Estimert beløp | Når |
+|---|---|---|---|
+| Engangskostnader | Aksjekapital AS | 30 000 kr | Fase 2 |
+| | Juridisk bistand | 20 000–50 000 kr | Fase 2 |
+| | Profilering (stands, rollups) | 3 000 kr | Fase 2 |
+| Årlige kostnader | Ansvarsforsikring | 5 000–15 000 kr/år | Fase 2+ |
+| | Programvarelisenser | 10 000–15 000 kr/år | Fase 3+ |
+| | Domene/hosting | 1 000 kr/år | Fase 4 |
+| Kun ved behov | ESA-avklaring | 50 000–200 000 kr | Fase 4 |
+| | **Sum første 2 år** | **~120 000–310 000 kr** | |
+| | **Herav engangskostnader** | **~53 000–83 000 kr** | |
+| | **Årlige kostnader etter år 2** | **~16 000–31 000 kr/år** | |
+
+Fjern den gamle totale summeringen. Dette gjør det tydelig hva som skjer etter år 2.
+Hvor: "Risiko & Juss"-siden, under "1. Kostnadsanalyse & Budsjett"
+
 ### 22.06.2026 — Legg til gevinst/ulempe-kartlegging for bedrifter på Marked & Konkurranse (med grafisk design)
 Prioritet: Høy
 Kilde: `05-agent-forslag/Forslag/gevinster_ulemper_bedrifter.md`
@@ -634,6 +657,8 @@ Hvor: Ny seksjon under "Analyser" eller "Guidelines"
 | 24.06.2026 | Lagt til fargetemavelger (Default, Cyber Emerald, Obsidian Indigo, Nordic Minimal) i header og sidebar | Utført |
 | 22.06.2026 | Forbedre søkemotoren (søk i ordliste, gridCards, tabeller, stavefeiltoleranse) | Utført |
 | 22.06.2026 | Oppdater Rubric-forklaringen i ordlisten på infosiden | Utført |
+| 22.06.2026 | Oppdater budsjett-tabellen på Risiko & Juss med tydelig inndeling | Utført |
+
 
 
 
