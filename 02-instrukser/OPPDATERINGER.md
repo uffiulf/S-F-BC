@@ -196,6 +196,12 @@ Hvor: Dashboard-siden
 Prioritet: — (info til prosjekteier)
 Hva: Innholdet til presentasjonen ligger i `05-agent-forslag/Forslag/presentasjonsinnhold.md`. Denne filen inneholder alt en multimodal AI-agent eller LLM trenger for å lage en presentasjon (HTML, PowerPoint eller annet format). Ikke noe Gemini trenger å gjøre med dette.
 
+### 22.06.2026 — Endre tittel på "Risiko & Juss" til "Risiko, Juss & Budsjett"
+Prioritet: Lav
+Kilde: Prosjekteier
+Hva: På Risiko & Juss-siden (id: "risiko-og-jus"), endre title fra "Risiko & Juss" til "Risiko, Juss & Budsjett". Oppdater også category lead-teksten om nødvendig.
+Hvor: wikiData.js
+
 ### 22.06.2026 — Oppdater budsjett-tabellen på Risiko & Juss med tydelig inndeling
 Prioritet: Høy
 Kilde: `06-Business-case/Business-Case-Utkast.md` §8.1
@@ -658,6 +664,8 @@ Hvor: Ny seksjon under "Analyser" eller "Guidelines"
 | 22.06.2026 | Forbedre søkemotoren (søk i ordliste, gridCards, tabeller, stavefeiltoleranse) | Utført |
 | 22.06.2026 | Oppdater Rubric-forklaringen i ordlisten på infosiden | Utført |
 | 22.06.2026 | Oppdater budsjett-tabellen på Risiko & Juss med tydelig inndeling | Utført |
+| 22.06.2026 | Endre tittel på "Risiko & Juss" til "Risiko, Juss & Budsjett" | Utført |
+
 
 
 

@@ -1294,10 +1294,10 @@ Syntax & Flow tar ansvaret for oppfølging av studentene — ikke bedriften. Bed
   },
   {
     "id": "risiko-og-jus",
-    "title": "Risiko & Jus",
+    "title": "Risiko, Juss & Budsjett",
     "category": "Business Case",
     "icon": "ShieldAlert",
-    "lead": "Vurdering av konseptets juridiske holdbarhet, risikoer og styrker basert på den siste juridiske utredningen.",
+    "lead": "Vurdering av konseptets driftskostnader, budsjett, juridiske holdbarhet, risikoer og styrker basert på den siste utredningen.",
     "sections": [
       {
         "heading": "1. Kostnadsanalyse & Budsjett",
