@@ -9,9 +9,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Syntax & Flow | Studentdrevet Konsulentselskap",
+  title: "Syntax & Flow | Tverrfaglig Prosjektorgan tilknyttet HiØ",
   description:
-    "Syntax & Flow gir nyutdannede studenter fra Høgskolen i Østfold reell arbeidserfaring gjennom tverrfaglige prosjekter innen IT, design og økonomi. Gratis for bedrifter – stor verdi for alle.",
+    "Syntax & Flow gir studenter fra Høgskolen i Østfold reell arbeidserfaring gjennom tverrfaglige prosjekter innen IT, design og økonomi. Gratis for bedrifter – stor verdi for alle.",
   keywords: [
     "studentbedrift",
     "praksis",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     "Østfold",
   ],
   openGraph: {
-    title: "Syntax & Flow | Studentdrevet Konsulentselskap",
+    title: "Syntax & Flow | Tverrfaglig Prosjektorgan tilknyttet HiØ",
     description:
       "Vi gir nyutdannede reell arbeidserfaring og næringslivet en risikofri test-run av morgendagens talenter.",
     type: "website",

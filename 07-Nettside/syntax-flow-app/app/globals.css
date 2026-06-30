@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
-@source "../components";
-@source "../app";
+@source "../components/**/*.{js,ts,jsx,tsx}";
+@source "../app/**/*.{js,ts,jsx,tsx}";
 
 @theme {
   --color-bg-primary: #050A14;
@@ -12,10 +13,11 @@
   --color-green-light: #34D399;
   --color-purple: #8B5CF6;
   --color-text-primary: #F8FAFC;
-  --color-text-secondary: #94A3B8;
-  --color-text-muted: #475569;
+  --color-text-secondary: #CBD5E1;
+  --color-text-muted: #64748B;
   --color-border: rgba(255, 255, 255, 0.08);
   --font-sans: "Inter", sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
 }
 
 /* ================================================
@@ -150,9 +152,13 @@ html {
 body {
   background-color: #050A14;
   color: #F8FAFC;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-sans);
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6, .font-display {
+  font-family: var(--font-display);
 }
 
 /* Glassmorphism */

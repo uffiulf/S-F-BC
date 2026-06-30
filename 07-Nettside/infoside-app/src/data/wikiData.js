@@ -14,7 +14,37 @@ export const wikiData = [
 Tradisjonell praksis lønner seg sjelden for bedrifter. Hvis et IT-selskap har en konsulent som fakturerer 2 000 kr/timen hos kunder og får 600 kr/timen i lønn, og må bruke tid på å følge opp en student i praksis, taper selskapet 2 600 kr per time på den tiden konsulenten bruker på studenten. Ved 10 timer i uken blir det 26 000 kr i uken — tapte inntekter kombinert med lønnskostnad. Derfor unngår mange bedrifter å ta inn studenter i praksis.
 <br/><br/>
 <strong>Løsning: S&F avlaster bedriften</strong><br/>
-Syntax & Flow tar ansvaret for oppfølging av studentene — ikke bedriften. Bedrifter som ikke har kapasitet to følge opp studenter kan i stedet gi Syntax & Flow oppdrag direkte.`
+Syntax & Flow tar ansvaret for oppfølging av studentene — ikke bedriften. Bedrifter som ikke har kapasitet til å følge opp studenter kan i stedet gi Syntax & Flow oppdrag direkte.`
+      },
+      {
+        "heading": "Nøkkelfunn fra forskning",
+        "text": `For å underbygge problemstillingen har vi gjort grundig research på praksisbarrierer og rekruttering i IT-sektoren. Her er de viktigste funnene (kilde: <a href="#lignende-prosjekter" class="nav-link">04-kilde/Research Om Praksis Og Rekruttering.md</a>):<br/><br/>
+<div style="background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 8px; padding: 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px;">
+  <div style="padding: 12px; background: var(--bg-card); border-radius: 6px; border: 1px solid var(--border-color);">
+    <strong style="color: var(--accent-color);">Alternativkostnad</strong><br/>
+    <strong>2 600 kr/time</strong> i tapt fakturering og lønn for senioroppfølging (Kode24/NHO).
+  </div>
+  <div style="padding: 12px; background: var(--bg-card); border-radius: 6px; border: 1px solid var(--border-color);">
+    <strong style="color: var(--accent-color);">Onboardingstid</strong><br/>
+    Det tar <strong>4–6 uker</strong> før en student er produktiv i komplekse IT-miljøer (Semac.no).
+  </div>
+  <div style="padding: 12px; background: var(--bg-card); border-radius: 6px; border: 1px solid var(--border-color);">
+    <strong style="color: var(--accent-color);">Feilansettelse</strong><br/>
+    En feilansettelse koster <strong>1,8–2,7 × årslønn</strong> (opptil 1,5–2 mill. kr) (Humano/SSB).
+  </div>
+  <div style="padding: 12px; background: var(--bg-card); border-radius: 6px; border: 1px solid var(--border-color);">
+    <strong style="color: var(--accent-color);">CV-validitet</strong><br/>
+    CV har kun <strong>12 % prediktiv verdi</strong> for jobbprestasjon vs. 29 % for arbeidsprøver (Schmidt & Hunter).
+  </div>
+  <div style="padding: 12px; background: var(--bg-card); border-radius: 6px; border: 1px solid var(--border-color);">
+    <strong style="color: var(--accent-color);">Hjerneflukt</strong><br/>
+    HiØ mister <strong>19 prosentpoeng</strong> av kandidatene til Oslo (HiØ Kandidatundersøkelse 2024).
+  </div>
+  <div style="padding: 12px; background: var(--bg-card); border-radius: 6px; border: 1px solid var(--border-color);">
+    <strong style="color: var(--accent-color);">Sosial skjevhet</strong><br/>
+    ITD35014 krever at studenten finner plass selv, noe som straffer studenter uten nettverk.
+  </div>
+</div>`
       },
       {
         "heading": "Driftsmodell: Stabil kjerne vs. Studentteam",
@@ -665,7 +695,7 @@ Syntax & Flow tar ansvaret for oppfølging av studentene — ikke bedriften. Bed
     "sections": [
       {
         "heading": "Verdiskapning for de ulike målgruppene",
-        "text": "Syntax & Flow skaper konkrete verdier for alle de tre involverte partene. Under kan du se en utdypende oppsummering av hvordan vi løser utfordringer for studenter, høyskolen og lokalt næringsliv, samt utforske Strategyzer-verdiløftene interaktivt."
+        "text": "Syntax & Flow skaper konkrete verdier for alle de tre involverte partene. Under kan du se en utdypende oppsummering av hvordan vi løser utfordringer for studenter, høgskolen og lokalt næringsliv, samt utforske Strategyzer-verdiløftene interaktivt."
       }
     ],
     "vpcs": [
@@ -789,7 +819,7 @@ Syntax & Flow tar ansvaret for oppfølging av studentene — ikke bedriften. Bed
       }
     ],
     "tldr": [
-      "Value Proposition Canvas (VPC) deler målgruppene inn i studenter, høyskolen og næringslivet.",
+      "Value Proposition Canvas (VPC) deler målgruppene inn i studenter, høgskolen og næringslivet.",
       "Hver målgruppe kartlegges etter arbeidsoppgaver, smerter (pains) og gevinster (gains).",
       "Det interaktive verdikartet visualiserer hvordan produktene og smertestillerne matcher kundenes behov."
     ]
@@ -1053,6 +1083,49 @@ Syntax & Flow tar ansvaret for oppfølging av studentene — ikke bedriften. Bed
           "<strong>Alternativkostnad for tradisjonell praksis:</strong> Tradisjonell praksis lønner seg sjelden for bedrifter. Hvis en konsulent som fakturerer 2 000 kr/t og har 600 kr/t i lønn må bruke tid på å følge opp en student i praksis, taper selskapet 2 600 kr per time. Ved 10 timer i uken utgjør dette 26 000 kr i uken i tapte inntekter og lønn. Derfor unngår mange å ta inn studenter i praksis.",
           "<strong>Syntax & Flow avlaster bedriften (Løsning):</strong> Vi tar hele ansvaret for oppfølging av studentene via vår stabile kjerne — ikke bedriften. Bedrifter som mangler kapasitet til oppfølging, kan i stedet gi Syntax & Flow oppdrag direkte."
         ]
+      },
+      {
+        "heading": "Dokumenterte forskningsfunn",
+        "text": `Behovet for en modell som Syntax & Flow underbygges sterkt av nasjonal og lokal research:
+        <br/><br/>
+        <div style="background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 8px; padding: 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px;">
+          <div style="padding: 16px; background: var(--bg-card); border-radius: 6px; border-left: 4px solid var(--accent-color); border-top: 1px solid var(--border-color); border-right: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+            <strong style="color: var(--text-primary); font-size: 0.95rem;">Alternativkostnad ved seniorveiledning</strong>
+            <p style="margin: 8px 0 0 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5;">
+              Bedrifter taper i snitt <strong>2 600 kr/time</strong> på tiden en erfaren seniorkonsulent bruker på veiledning, på grunn av tapt fakturerbar tid kombinert med intern timelønn (Kilde: <em>Kode24 / NHO</em>).
+            </p>
+          </div>
+          <div style="padding: 16px; background: var(--bg-card); border-radius: 6px; border-left: 4px solid var(--accent-color); border-top: 1px solid var(--border-color); border-right: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+            <strong style="color: var(--text-primary); font-size: 0.95rem;">Lange onboarding-perioder</strong>
+            <p style="margin: 8px 0 0 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5;">
+              I komplekse IT-miljøer tar det <strong>4–6 uker</strong> før en nyutdannet eller student begynner å bli autonom og produktiv (Kilde: <em>Semac.no</em>). I et 10-ukers løp spiser dette opp mesteparten av verdien.
+            </p>
+          </div>
+          <div style="padding: 16px; background: var(--bg-card); border-radius: 6px; border-left: 4px solid var(--accent-color); border-top: 1px solid var(--border-color); border-right: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+            <strong style="color: var(--text-primary); font-size: 0.95rem;">Voldsom risiko ved feilansettelser</strong>
+            <p style="margin: 8px 0 0 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5;">
+              En feilansettelse av en junior koster i snitt <strong>1,8–2,7 × årslønn</strong>, noe som tilsvarer minimum 1,5 million kr for norske bedrifter (Kilde: <em>Humano / SSB</em>). Dette gjør SMB-er ekstremt risikovendinge.
+            </p>
+          </div>
+          <div style="padding: 16px; background: var(--bg-card); border-radius: 6px; border-left: 4px solid var(--accent-color); border-top: 1px solid var(--border-color); border-right: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+            <strong style="color: var(--text-primary); font-size: 0.95rem;">Ustrukturerte rekrutteringsmetoder</strong>
+            <p style="margin: 8px 0 0 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5;">
+              Den tradisjonelle CV-screeningen har kun <strong>12 % prediktiv validitet</strong> for fremtidig jobbprestasjon, mens praktiske <strong>arbeidsprøver har 29 %</strong> (Kilde: <em>Schmidt & Hunter (1998)</em>).
+            </p>
+          </div>
+          <div style="padding: 16px; background: var(--bg-card); border-radius: 6px; border-left: 4px solid var(--accent-color); border-top: 1px solid var(--border-color); border-right: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+            <strong style="color: var(--text-primary); font-size: 0.95rem;">Hjerneflukt fra Østfold</strong>
+            <p style="margin: 8px 0 0 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5;">
+              Høgskolen i Østfold opplever en <strong>netto hjerneflukt på 19 prosentpoeng</strong> til Oslo etter endt utdanning, hovedsakelig på grunn av bedre jobbmuligheter der (Kilde: <em>HiØ Kandidatundersøkelse 2024</em>).
+            </p>
+          </div>
+          <div style="padding: 16px; background: var(--bg-card); border-radius: 6px; border-left: 4px solid var(--accent-color); border-top: 1px solid var(--border-color); border-right: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+            <strong style="color: var(--text-primary); font-size: 0.95rem;">Sosial skjevhet ved selv-sourcing</strong>
+            <p style="margin: 8px 0 0 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5;">
+              Dagens ordning i ITD35014 krever at studenten finner praksisplass selv. Dette favoriserer studenter med nettverk, og marginaliserer sårbare grupper (Kilde: <em>HiØ Emnebeskrivelse</em>).
+            </p>
+          </div>
+        </div>`
       },
       {
         "heading": "2. Målgrupper",
@@ -2869,6 +2942,47 @@ Syntax & Flow tar ansvaret for oppfølging av studentene — ikke bedriften. Bed
     "icon": "Compass",
     "lead": "Oversikt over studentdrevne konsulenthus, praksisemner og brobyggerprosjekter mellom utdanning og næringsliv i Norge.",
     "sections": [
+      {
+        "heading": "Studentdrevne konsulenthus i Norge",
+        "text": `Oversikt over kjente studentdrevne konsulenthus og hvordan de skiller seg fra Syntax & Flow-modellen:
+        <br/><br/>
+        <strong>Hva gjør Syntax & Flow annerledes?</strong><br/>
+        Ingen av de eksisterende studentkonsulentene har en tverrfaglig modell der IT, design og økonomi samarbeider i samme team, koblet til en stabil kjerne med foreleserkompetanse. I tillegg tilbyr vi en verifisert referanseportal for rekruttering og leverer våre tjenester helt gratis (pro bono) for å unngå statsstøtteproblematikk og markedsfortrengning.`,
+        "table": {
+          "headers": [
+            "Navn",
+            "Sted",
+            "Modell",
+            "S&Fs unike posisjon"
+          ],
+          "rows": [
+            [
+              "<strong>Junior Consulting (NTNU)</strong>",
+              "Trondheim",
+              "Betalte oppdrag, ca. 65 konsulenter.",
+              "Syntax & Flow er helt gratis (pro bono) for mikrovirksomheter og oppstartsbedrifter."
+            ],
+            [
+              "<strong>StudConsult (BI)</strong>",
+              "Oslo",
+              "Betalte oppdrag, ca. 28 konsulenter. Etablert i 1988.",
+              "Syntax & Flow er lokalisert in-house på HiØ og har tett kobling til forelesernes spisskompetanse."
+            ],
+            [
+              "<strong>Studentkonsulenten (UiB)</strong>",
+              "Bergen",
+              "Gratis tjenester, men retter seg utelukkende mot frivillige organisasjoner.",
+              "Syntax & Flow hjelper både frivillige organisasjoner, interne HiØ-avdelinger og lokale gründerbedrifter."
+            ],
+            [
+              "<strong>StudentConsulting</strong>",
+              "Skandinavia",
+              "Kommersielt, eksternt rekrutterings- og bemanningsbyrå.",
+              "Syntax & Flow er et ideelt utdanningstiltak, ikke en kommersiell aktør."
+            ]
+          ]
+        }
+      },
       {
         "heading": "1. Studentdrevne konsulenthus / prosjektbyråer",
         "text": "Oversikt over studentdrevne IT-konsulentvirksomheter:",

@@ -10,7 +10,7 @@ const cards = [
     title: "For studentene",
     subtitle: "Fra teorikunnskap til reell erfaring",
     description:
-      "Du er produktet vi skaper. Gjennom faget Bedriftspraksis etter fullført grad hos Syntax & Flow bygger du en portefølje og et nettverk — mens Lånekassen dekker inntekten din.",
+      "Du er produktet vi skaper. Gjennom faget Bedriftspraksis i løpet av studietiden hos Syntax & Flow bygger du en portefølje og et nettverk — mens du beholder din Lånekassen-støtte.",
     highlights: ["Finansiert av Lånekassen", "Tverrfaglige team", "Reelle kundeoppdrag", "Faglig mentorstøtte fra HiØ"],
     gradBg: "linear-gradient(135deg, rgba(59,130,246,0.12), rgba(255,255,255,0.02))",
     borderColor: "rgba(59,130,246,0.25)",
@@ -39,7 +39,7 @@ const cards = [
     subtitle: "Test-run uten risiko",
     description:
       "Studenten er produktet. Du får jobbe tett med kandidaten på et reelt prosjekt over tid — og ser nøyaktig hva du får — lenge før du vurderer en fast ansettelse.",
-    highlights: ["Gratis tjenester (no SLA)", "Betinget SLA ved erfarne team", "Risikofri rekruttering", "Ferdigstilte leveranser i portalen"],
+    highlights: ["Gratis tjenester", "Ingen formell leveransegaranti", "Risikofri rekruttering", "Ferdigstilte leveranser i portalen"],
     gradBg: "linear-gradient(135deg, rgba(16,185,129,0.12), rgba(255,255,255,0.02))",
     borderColor: "rgba(16,185,129,0.25)",
     iconGrad: "linear-gradient(135deg, #10B981, #047857)",
@@ -79,8 +79,8 @@ export default function About() {
             Studenten er{" "}
             <span className="gradient-text">produktet</span>
           </h2>
-          <p style={{ maxWidth: "36rem", margin: "0 auto", color: "#94A3B8", fontSize: "1.125rem", lineHeight: 1.7 }}>
-            Syntax & Flow skaper verdi for tre parter simultaneously —
+          <p style={{ maxWidth: "36rem", margin: "0 auto", color: "var(--color-text-secondary)", fontSize: "1.125rem", lineHeight: 1.7 }}>
+            Syntax & Flow skaper verdi for tre parter samtidig —
             på en måte ingen tradisjonell praksisordning klarer.
           </p>
         </motion.div>
@@ -124,8 +124,8 @@ export default function About() {
                 {/* Text */}
                 <div>
                   <h3 style={{ fontSize: "1.25rem", fontWeight: 700, color: "white", marginBottom: "0.25rem" }}>{card.title}</h3>
-                  <p style={{ fontSize: "0.875rem", color: "#64748B", marginBottom: "0.75rem" }}>{card.subtitle}</p>
-                  <p style={{ color: "#94A3B8", fontSize: "0.875rem", lineHeight: 1.6 }}>{card.description}</p>
+                  <p style={{ fontSize: "0.875rem", color: "var(--color-text-secondary)", marginBottom: "0.75rem" }}>{card.subtitle}</p>
+                  <p style={{ color: "var(--color-text-secondary)", fontSize: "0.875rem", lineHeight: 1.6 }}>{card.description}</p>
                 </div>
 
                 {/* Highlights */}

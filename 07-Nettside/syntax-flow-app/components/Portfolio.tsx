@@ -64,7 +64,7 @@ export default function Portfolio() {
           <h2 style={{ fontSize: "clamp(2rem,5vw,3rem)", fontWeight: 700, color: "white", marginBottom: "1rem" }}>
             Hva vi har levert
           </h2>
-          <p style={{ maxWidth: "36rem", margin: "0 auto", color: "#94A3B8", fontSize: "1.125rem" }}>
+          <p style={{ maxWidth: "36rem", margin: "0 auto", color: "var(--color-text-secondary)", fontSize: "1.125rem" }}>
             Eksempelprosjekter som illustrerer hva tverrfaglige team hos Syntax & Flow kan levere.
           </p>
           <p style={{ fontSize: "0.75rem", color: "#475569", marginTop: "0.75rem" }}>
@@ -121,7 +121,7 @@ export default function Portfolio() {
                     ))}
                   </div>
                   <h3 style={{ fontSize: "0.9375rem", fontWeight: 700, color: "white", marginBottom: "0.5rem", lineHeight: 1.4 }}>{project.title}</h3>
-                  <p style={{ fontSize: "0.75rem", color: "#94A3B8", lineHeight: 1.6, marginBottom: "1rem" }}>{project.description}</p>
+                  <p style={{ fontSize: "0.75rem", color: "var(--color-text-secondary)", lineHeight: 1.6, marginBottom: "1rem" }}>{project.description}</p>
                   <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
                     <span style={{ fontSize: "0.75rem", color: "#475569" }}>{project.category}</span>
                     <ExternalLink size={14} color="#475569" />

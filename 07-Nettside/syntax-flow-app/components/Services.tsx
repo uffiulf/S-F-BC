@@ -78,7 +78,7 @@ export default function Services() {
           <h2 style={{ fontSize: "clamp(2rem,5vw,3rem)", fontWeight: 700, color: "white", marginBottom: "1rem" }}>
             Hva vi leverer
           </h2>
-          <p style={{ maxWidth: "36rem", margin: "0 auto", color: "#94A3B8", fontSize: "1.125rem" }}>
+          <p style={{ maxWidth: "36rem", margin: "0 auto", color: "var(--color-text-secondary)", fontSize: "1.125rem" }}>
             Tverrfaglige team som dekker hele spekteret — fra idé til ferdig produkt.
           </p>
         </motion.div>
@@ -130,7 +130,7 @@ export default function Services() {
           })}
         </div>
 
-        {/* SLA note */}
+        {/* Leveransegaranti note */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -144,10 +144,9 @@ export default function Services() {
           }}
         >
           <div style={{ flex: 1 }}>
-            <h4 style={{ color: "white", fontWeight: 600, marginBottom: "0.25rem" }}>Ingen SLA som standard — men vi er ambisiøse.</h4>
-            <p style={{ color: "#94A3B8", fontSize: "0.875rem" }}>
-              Tjenestene leveres gratis og uten leveransegaranti. Dersom vi har erfarne team tilgjengelig, tilbyr vi
-              en <strong style={{ color: "white" }}>Betinget SLA</strong> med konkrete frister og krav.
+            <h4 style={{ color: "white", fontWeight: 600, marginBottom: "0.25rem" }}>Ingen formell leveransegaranti</h4>
+            <p style={{ color: "var(--color-text-secondary)", fontSize: "0.875rem" }}>
+              Tjenestene leveres gratis på en best-effort-modell som et ledd i studentenes utdanning. Vi stiller høye krav til kvaliteten, men kunden har ingen juridiske krav eller garantier.
             </p>
           </div>
           <a href="#soknader" className="btn-primary" style={{ fontSize: "0.875rem", whiteSpace: "nowrap" }}>

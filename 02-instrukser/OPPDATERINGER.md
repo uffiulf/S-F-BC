@@ -196,6 +196,27 @@ Hvor: Dashboard-siden
 Prioritet: — (info til prosjekteier)
 Hva: Innholdet til presentasjonen ligger i `05-agent-forslag/Forslag/presentasjonsinnhold.md`. Denne filen inneholder alt en multimodal AI-agent eller LLM trenger for å lage en presentasjon (HTML, PowerPoint eller annet format). Ikke noe Gemini trenger å gjøre med dette.
 
+### 22.06.2026 — Legg til forskningsfunn på Dashboard og Marked & Konkurranse
+Prioritet: Høy
+Kilde: `04-kilde/Research Om Praksis Og Rekruttering.md` og `01-administrasjon/CAG.md`
+Hva: Legg til en kort oppsummering av nøkkelfunnene fra research på Dashboard-siden (under "Hva er Syntax & Flow?") og på "Marked & Konkurranse"-siden (under behovsanalysen):
+
+- Alternativkostnad: 2 600 kr/time for senioroppfølging (Kode24)
+- Onboarding: 4–6 uker før student er produktiv (Semac)
+- Feilansettelse: 1,8–2,7 × årslønn (Humano)
+- CV prediktiv verdi: kun 12 % — arbeidsprøver 29 % (Schmidt & Hunter)
+- HiØ mister 19 prosentpoeng av kandidatene til Oslo
+- ITD35014: studenten må selv finne praksisplass — skaper sosial skjevhet
+
+Presenter som en kort liste eller boks med kilder. Målet er å underbygge problemstillingen med konkrete data.
+Hvor: Dashboard-siden og Marked & Konkurranse-siden
+
+### 22.06.2026 — Legg til studentkonsulent-oversikt på Lignende prosjekter-siden
+Prioritet: Lav
+Kilde: `01-administrasjon/CAG.md` (ny seksjon om studentdrevne konsulenthus)
+Hva: På "Lignende prosjekter"-siden, legg til en ny seksjon øverst eller som en egen del før de eksisterende seksjonene. Tittel: "Studentdrevne konsulenthus i Norge". Vis en kort tabell med Junior Consulting (NTNU), StudConsult (BI), Studentkonsulenten (UiB) og StudentConsulting — og forklar kort hvordan Syntax & Flow skiller seg ut (gratis modell, tverrfaglig, in-house på HiØ, verifisert referanseportal).
+Hvor: "Lignende prosjekter"-siden
+
 ### 22.06.2026 — Endre tittel på "Risiko & Juss" til "Risiko, Juss & Budsjett"
 Prioritet: Lav
 Kilde: Prosjekteier
@@ -665,6 +686,9 @@ Hvor: Ny seksjon under "Analyser" eller "Guidelines"
 | 22.06.2026 | Oppdater Rubric-forklaringen i ordlisten på infosiden | Utført |
 | 22.06.2026 | Oppdater budsjett-tabellen på Risiko & Juss med tydelig inndeling | Utført |
 | 22.06.2026 | Endre tittel på "Risiko & Juss" til "Risiko, Juss & Budsjett" | Utført |
+| 22.06.2026 | Legg til forskningsfunn på Dashboard og Marked & Konkurranse | Utført |
+| 22.06.2026 | Legg til studentkonsulent-oversikt på Lignende prosjekter-siden | Utført |
+
 
 
 

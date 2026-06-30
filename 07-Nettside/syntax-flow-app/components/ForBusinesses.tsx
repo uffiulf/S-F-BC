@@ -54,7 +54,7 @@ export default function ForBusinesses() {
               Ferdig levert. <br />
               <span className="gradient-text">Helt gratis.</span>
             </h2>
-            <p style={{ color: "#94A3B8", fontSize: "1.125rem", lineHeight: 1.7, marginBottom: "2rem" }}>
+            <p style={{ color: "var(--color-text-secondary)", fontSize: "1.125rem", lineHeight: 1.7, marginBottom: "2rem" }}>
               Syntax & Flow tilbyr gratis IT-, design- og økonomibistand til lokale bedrifter i Østfold.
               Bedriften betaler ingen krone — men investerer sin tid som en engasjert kunde.
             </p>
@@ -79,7 +79,7 @@ export default function ForBusinesses() {
                     </div>
                     <div>
                       <h4 style={{ color: "white", fontWeight: 600, marginBottom: "0.25rem" }}>{benefit.title}</h4>
-                      <p style={{ color: "#94A3B8", fontSize: "0.875rem", lineHeight: 1.6 }}>{benefit.description}</p>
+                      <p style={{ color: "var(--color-text-secondary)", fontSize: "0.875rem", lineHeight: 1.6 }}>{benefit.description}</p>
                     </div>
                   </motion.div>
                 );
@@ -127,9 +127,8 @@ export default function ForBusinesses() {
                   </div>
                 </div>
                 <div style={{ borderTop: "1px solid rgba(255,255,255,0.05)", paddingTop: "1rem" }}>
-                  <p style={{ color: "#64748B" }}># SLA</p>
-                  <p style={{ color: "#FDE047", fontSize: "0.75rem", marginTop: "0.25rem" }}>Standard: Best-effort (ingen juridisk plikt)</p>
-                  <p style={{ color: "#34D399", fontSize: "0.75rem" }}>Betinget: Tilgjengelig ved erfarne team</p>
+                  <p style={{ color: "#64748B" }}># Leveransegaranti</p>
+                  <p style={{ color: "#FDE047", fontSize: "0.75rem", marginTop: "0.25rem" }}>Standard: Ingen formell leveransegaranti (best-effort)</p>
                 </div>
               </div>
             </div>

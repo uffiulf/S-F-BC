@@ -38,7 +38,7 @@ export default function Hero() {
         transition={{ delay: 0.5, duration: 0.6 }}
         className="max-w-2xl text-lg md:text-xl text-slate-400 leading-relaxed mb-10"
       >
-        Syntax & Flow er en studentdrevet bedrift som gir nyutdannede fra HiØ
+        Syntax & Flow er et selvstendig prosjektorgan in-house på Høgskolen i Østfold (HiØ) som drives av en stabil kjerne, mens studentene får
         reell arbeidserfaring innen <strong className="text-white">IT, design og økonomi</strong> — og
         næringslivet en risikofri mulighet til å teste morgendagens ansatte.
       </motion.p>

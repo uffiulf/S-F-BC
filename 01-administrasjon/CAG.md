@@ -91,6 +91,32 @@ Prioritet: 1) HiØ internt, 2) Ideelle organisasjoner, 3) Privatpersoner (ENK), 
 | **Presentasjonsinnhold** | Klart i `05-agent-forslag/Forslag/presentasjonsinnhold.md` for multimodal agent |
 | **Gevinster/ulemper bedrifter** | Kartlagt i `05-agent-forslag/Forslag/gevinster_ulemper_bedrifter.md` |
 
+## Forskning — praksisbarrierer og erfaringsgap
+
+Se `04-kilde/Research Om Praksis Og Rekruttering.md` for full forskningsrapport. Nøkkelfunn:
+
+| Funn | Data | Kilde | Opprinnelse |
+|------|------|-------|-------------|
+| Alternativkostnad ved praksis | 2 600 kr/time (tapt inntekt + lønn) | Kode24 / NHO | 🇳🇴 Norsk |
+| Onboardingstid i IT-prosjekter | 4–6 uker før studenten er produktiv | Semac.no | 🇳🇴 Norsk |
+| Feilansettelse koster | 1,8–2,7 × årslønn (~1,5 mill. kr) | Humano / Ledernytt | 🇳🇴 Norsk |
+| CV har lav prediktiv verdi | Kun 12 % — arbeidsprøver 29 % | Schmidt & Hunter (1998) | 🌍 Internasjonal (brukes av norske fagmiljøer) |
+| HiØ mister talenter til Oslo | 19 prosentpoeng netto frafall | HiØ kandidatundersøkelse 2024 | 🇳🇴 Norsk / Lokal |
+| ITD35014: studenten må selv finne plass | Skaper sosial skjevhet | HiØ emnebeskrivelse | 🇳🇴 Norsk / Lokal |
+
+**Anbefaling:** Praksisperioder bør være lengre (kobles til bacheloroppgave), med ekstern kvalitetssikring og strukturert onboarding.
+
+## Studentdrevne konsulenthus i Norge
+
+| Navn | Sted | Modell | S&F er annerledes |
+|------|------|--------|-------------------|
+| **Junior Consulting** (NTNU) | Trondheim | Betalte oppdrag, ~65 konsulenter | S&F er gratis (pro bono) |
+| **StudConsult** (BI) | Oslo | Betalte oppdrag, ~28 konsulenter, etablert 1988 | S&F er in-house på HiØ med foreleserkompetanse |
+| **Studentkonsulenten** (UiB) | Bergen | Gratis, kun for frivillige org. | S&F retter seg også mot mikrovirksomheter |
+| **StudentConsulting** | Skandinavia | Kommersielt bemanningsbyrå | S&F er ikke kommersielt |
+
+**S&Fs unike posisjon:** Ingen av de andre har tverrfaglighet (IT+design+økonomi), verifisert referanseportal, eller er in-house på et universitet med foreleserkompetanse.
+
 ## Lignende prosjekter i Norge
 
 | Prosjekt | Sted | Status | Årsak til overlevelse/nedleggelse |

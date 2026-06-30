@@ -3,7 +3,87 @@
 
 ---
 
+## Sammenligning med Syntax & Flow
+
+| Prosjekt | Type | Tar betalt? | Tverrfaglig? | Forankring | Portal? | Status |
+|----------|------|:-----------:|:------------:|------------|:-------:|:------:|
+| **Syntax & Flow** (HiØ) | Studentdrevet konsulenthus | Nei (pro bono) | ✅ IT+design+økonomi | Emne ITD35014 + in-house | ✅ Ja | Planleggingsfase |
+| **Junior Consulting** (NTNU) | Studentdrevet konsulenthus | Ja | ❌ Kun strategi/IT/design | Løsrevet fra NTNU | ❌ Nei | ✅ Aktivt |
+| **StudConsult** (BI) | Studentdrevet konsulenthus | Ja | ❌ Kun strategi/analyse | Løsrevet fra BI | ❌ Nei | ✅ Aktivt (siden 1988) |
+| **Studentkonsulenten** (UiB) | Studentdrevet konsulenthus | Nei (gratis) | ❌ Kun HR/psykologi | Løsrevet fra UiB | ❌ Nei | ✅ Aktivt |
+| **IT2901** (NTNU) | Emne med eksterne kunder | Nei (emne) | ❌ Kun IT | Obligatorisk emne | ❌ Nei | ✅ Aktivt |
+| **TDT4290** (NTNU) | Emne med eksterne kunder | Nei (emne) | ❌ Kun IT | Obligatorisk emne | ❌ Nei | ✅ Aktivt |
+| **IN2000** (UiO) | Emne med eksterne kunder | Nei (emne) | ❌ Kun IT | Obligatorisk emne | ❌ Nei | ✅ Aktivt |
+
 ## 1. Studentdrevne konsulenthus / prosjektbyråer
+
+### Junior Consulting (JrC) — NTNU
+
+| Egenskap | Detaljer |
+|----------|----------|
+| Tilknytning | NTNU, Trondheim |
+| Hva de gjør | Studentdrevet konsulenthus (non-profit). Leverer betalte konsulenttjenester innen strategi, teknologi og design til eksterne kunder |
+| Organisering | ~65 aktive konsulenter, 300+ leverte prosjekter, 200+ alumni. Ansettelsesprosess for nye konsulenter |
+| Tjenester | Strategi, teknologi/IT, design |
+| Modell | Non-profit, betalte oppdrag. Studentene får betalt |
+| Relevans | Største og mest profesjonelle studentkonsulenthuset i Norge. 14+ års erfaring |
+| URL | https://www.jrc.no |
+| Hvorfor S&F er annerledes | JrC tar betalt og er løsrevet fra NTNU. S&F er gratis (pro bono) og in-house på HiØ med foreleserkompetanse |
+
+### StudConsult AS — BI Oslo
+
+| Egenskap | Detaljer |
+|----------|----------|
+| Tilknytning | Handelshøyskolen BI, Oslo |
+| Hva de gjør | Studentdrevet konsulenthus (non-profit AS). Leverer betalte konsulenttjenester innen strategi og analyse |
+| Organisering | ~28 konsulenter fra 11 studieretninger. 95 % kundetilfredshet |
+| Tjenester | Markedsanalyse, datainnsamling og analyse, strategisk analyse |
+| Modell | Non-profit AS. Overskudd reinvesteres i faglig/sosial utvikling. Betalte oppdrag |
+| Relevans | Nordens eldste studentkonsulentselskap (etablert 1988). Veldrevet og profesjonelt |
+| URL | https://www.studconsult.no |
+| Hvorfor S&F er annerledes | StudConsult tar betalt og er løsrevet fra BI. S&F er gratis og in-house på HiØ |
+
+### Studentkonsulenten — UiB
+
+| Egenskap | Detaljer |
+|----------|----------|
+| Tilknytning | Universitetet i Bergen, Psykologisk fakultet |
+| Hva de gjør | Studentorganisasjon/konsulentgruppe som gir gratis konsulenttjenester til studentorganisasjoner og frivillige organisasjoner |
+| Organisering | ~10 konsulenter innen arbeids- og organisasjonspsykologi |
+| Tjenester | HR-rådgivning, organisasjonsutvikling, arbeidspsykologi |
+| Modell | Gratis (pro bono) — kun for frivillige organisasjoner |
+| Relevans | Eneste andre som tilbyr gratis konsulenttjenester, men kun for frivillige og innen HR |
+| URL | https://www.studentkonsulenten.no |
+| Hvorfor S&F er annerledes | Studentkonsulenten er kun HR/psykologi og kun for frivillige. S&F er tverrfaglig (IT+design+økonomi) og retter seg også mot mikrovirksomheter og HiØ internt |
+
+### StudentConsulting (kommersiell formidler)
+
+| Egenskap | Detaljer |
+|----------|----------|
+| Type | Kommersielt bemannings- og rekrutteringsbyrå |
+| Eier | Svenskeid (grunnlagt 1997) |
+| I Norge | Kontorer i Oslo |
+| Størrelse | 450 000+ kandidater, 2 500+ kunder |
+| Tjenester | Rekruttering og bemanning av studenter og unge — deltid, heltid og sommerjobber |
+| Modell | Kommersiell. Formidler studenter til eksterne bedrifter som bemanningsbyrå |
+| URL | https://www.studentconsulting.com/no |
+| Relevans | Stor aktør, men helt annen modell — et bemanningsbyrå, ikke et konsulenthus |
+
+### TÅRNET — Universitetet i Oslo (UiO)
+
+| Egenskap | Detaljer |
+|----------|----------|
+| Tilknytning | Institutt for Informatikk (IFI), UiO |
+| Hva de gjør | Studentdrevet IT-konsulentvirksomhet |
+| Status | ❓ Kan ikke verifiseres — ingen digitale spor funnet |
+| Lærdom | For kortvarig/uformelt til å sette spor |
+
+### AppLab — NTNU / UiB
+
+| Egenskap | Detaljer |
+|----------|----------|
+| Hva de gjør | Studentakseleratorprogram / app-utvikling |
+| Status | ❓ Kan ikke verifiseres som UiB-prosjekt. Sannsynligvis forveksling med NTNU AppLab |
 
 ### TÅRNET — Universitetet i Oslo (UiO)
 
@@ -35,6 +115,16 @@
 | Organisering | Studentstyrt forening |
 | Relevans | Modell for hvordan en studentorganisasjon kan være brobygger |
 | URL | https://nabla.no |
+
+### Start NTNU
+
+| Egenskap | Detaljer |
+|----------|----------|
+| Tilknytning | NTNU Trondheim |
+| Hva de gjør | Studentdrevet organisasjon for innovasjon og entreprenørskap |
+| Organisering | Studentdrevet, frivillig. 50+ medlemmer |
+| Relevans | Modell for rekruttering og nettverksbygging |
+| URL | https://startntnu.no |
 
 ---
 
@@ -105,8 +195,6 @@
 
 ## 4. Brobyggerprosjekter
 
-### Start NTNU
-
 | Egenskap | Detaljer |
 |----------|----------|
 | Tilknytning | NTNU Trondheim |
@@ -139,9 +227,18 @@
 
 ---
 
-## Hvorfor Syntax & Flow kan lykkes der andre har feilet
+## Hvorfor Syntax & Flow skiller seg ut
 
-Flere av de mest liknende prosjektene (TÅRNET, AppLab) er nedlagt. Her er grunnene — og hvordan Syntax & Flow løser dem:
+| Område | Junior Consulting | StudConsult | Studentkonsulenten | IT2901/TDT4290 | **Syntax & Flow** |
+|--------|:----------------:|:-----------:|:------------------:|:--------------:|:-----------------:|
+| **Gratis for kunder** | Nei | Nei | Ja (kun frivillige) | Ja (emne) | **Ja (pro bono)** |
+| **Tverrfaglig** | Strategi/IT/design | Strategi/analyse | Kun HR | Kun IT | **IT+design+økonomi** |
+| **In-house på universitet** | Nei | Nei | Nei | Ja (emne) | **Ja + stabil kjerne** |
+| **Verifisert referanseportal** | Nei | Nei | Nei | Nei | **Ja** |
+| **Lønn til studentene** | Ja | Ja | Nei | Nei (studiepoeng) | **Nei (studiepoeng)** |
+| **Kontinuitet** | Studentavhengig | Studentavhengig | Studentavhengig | Instituttdrevet | **Stabil kjerne** |
+
+### Hvorfor Syntax & Flow kan lykkes der andre har feilet
 
 ### 1. Kontinuitet — TÅRNET og AppLab ble nedlagt da nøkkelpersoner sluttet
 | Andres problem | Syntax & Flows løsning |

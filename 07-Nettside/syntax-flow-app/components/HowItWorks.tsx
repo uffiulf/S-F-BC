@@ -68,7 +68,7 @@ export default function HowItWorks() {
           <h2 style={{ fontSize: "clamp(2rem,5vw,3rem)", fontWeight: 700, color: "white", marginBottom: "1rem" }}>
             Slik fungerer det
           </h2>
-          <p style={{ maxWidth: "32rem", margin: "0 auto", color: "#94A3B8", fontSize: "1.125rem" }}>
+          <p style={{ maxWidth: "32rem", margin: "0 auto", color: "var(--color-text-secondary)", fontSize: "1.125rem" }}>
             Hvert prosjekt følger en strukturert 5-fase modell designet for maksimal læring og forutsigbarhet.
           </p>
         </motion.div>
@@ -120,7 +120,7 @@ export default function HowItWorks() {
                         {step.tag}
                       </span>
                     </div>
-                    <p style={{ color: "#94A3B8", fontSize: "0.875rem", lineHeight: 1.6 }}>
+                    <p style={{ color: "var(--color-text-secondary)", fontSize: "0.875rem", lineHeight: 1.6 }}>
                       {step.description}
                     </p>
                   </div>

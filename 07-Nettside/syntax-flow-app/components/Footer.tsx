@@ -20,7 +20,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-slate-500 text-sm leading-relaxed">
-              Studentdrevet konsulentselskap tilknyttet Høgskolen i Østfold.
+              Selvstendig prosjektorgan tilknyttet Høgskolen i Østfold.
               Vi bygger morgendagens arbeidstakere — gjennom reelle oppdrag i dag.
             </p>
           </div>
