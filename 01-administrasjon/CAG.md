@@ -90,6 +90,11 @@ Prioritet: 1) HiØ internt, 2) Ideelle organisasjoner, 3) Privatpersoner (ENK), 
 | **Kildedokumenter** | Synkronisert — ingen avvik fra infosiden |
 | **Presentasjonsinnhold** | Klart i `05-agent-forslag/Forslag/presentasjonsinnhold.md` for multimodal agent |
 | **Gevinster/ulemper bedrifter** | Kartlagt i `05-agent-forslag/Forslag/gevinster_ulemper_bedrifter.md` |
+| **Intervjuguide Stig Henning Johansen** | Ferdig i `05-agent-forslag/Forslag/intervjuguide_stig_henning_johansen.md` |
+| **Sommerpilot 2026 (3 uker)** | Plan klar i `05-agent-forslag/Forslag/sommerpilot_2026.md` |
+| **Gjennomføring sommerpilot** | Plan for prosjekteier i `05-agent-forslag/Forslag/gjennomforing_sommerpilot.md` |
+| **00-progresjon/** | Opprettet med aktive/planlagte/lukkede mapper + CAG_STATUS.md |
+| **01-administrasjon/README.md** | Oppdatert med korrekt prosjektforståelse |
 
 ## Forskning — praksisbarrierer og erfaringsgap
 
@@ -188,3 +193,9 @@ Se `08-EKSTRA/lignende_prosjekter_i_norge.md` for full oversikt.
 | Interessentanalyse (oppdatert) | `01-administrasjon/interessentanalyse.md` |
 | Forslag karakter vurdering | `05-agent-forslag/Forslag/forslag_karakter_vurdering.md` |
 | Drøfting kalkulator | `05-agent-forslag/Forslag/drofting_kalkulator.md` |
+| Intervjuguide Stig Henning Johansen | `05-agent-forslag/Forslag/intervjuguide_stig_henning_johansen.md` |
+| Sommerpilot 2026 (3 uker) | `05-agent-forslag/Forslag/sommerpilot_2026.md` |
+| Gjennomføring sommerpilot | `05-agent-forslag/Forslag/gjennomforing_sommerpilot.md` |
+| Gevinster/ulemper bedrifter | `05-agent-forslag/Forslag/gevinster_ulemper_bedrifter.md` |
+| Presentasjonsinnhold | `05-agent-forslag/Forslag/presentasjonsinnhold.md` |
+| Progresjon CAG_STATUS | `00-progresjon/CAG_STATUS.md` |
