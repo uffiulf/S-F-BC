@@ -27,7 +27,7 @@
 
 11. Har du vurdert å øke ITD35014 fra 10 til 15 eller 30 stp?
 12. Hva skal til for at HiØs studieutvalg godkjenner en utvidelse?
-13. Hva tenker du om å koble praksisemnet sammen med bacheloroppgaven — slik at studentene får et lengre løp (høst + vår)?
+13. Har HiØ vurdert å koble praksisemnet sammen med bacheloroppgaven? For eksempel at en student tar ITD35014 hos en bedrift i høstsemesteret, og deretter skriver bacheloroppgave (20 stp) hos samme bedrift i vårsemesteret — basert på en reell problemstilling fra bedriften. Da slipper bedriften å lære opp noen på nytt, og studenten har allerede kontekst og kan gå dypere inn i problemet. Hva tenker du om en slik modell?
 14. Har HiØ vurdert å tilby enkeltemner utenom full grad? Jeg har hørt rykter om at dette kan komme.
 
 ---

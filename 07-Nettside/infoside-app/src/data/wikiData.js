@@ -70,6 +70,59 @@ Syntax & Flow tar ansvaret for oppfølging av studentene — ikke bedriften. Bed
       {
         "heading": "Hvordan bruke denne Wikien",
         "text": "Bruk sidemenyen til å navigere mellom de ulike kapitlene av prosjektet. Hvis du lurer på noe underveis i prosjektgjennomføringen – enten det gjelder retningslinjer, analyser som skal kjøres, eller hva som skal leveres til kunden – finner du det her. Trykk CMD+K (eller CTRL+K) for å søke på tvers av hele dokumentasjonen."
+      },
+      {
+        "heading": "Prosjektstatus",
+        "text": `Her er en oversikt over aktive og planlagte oppgaver, samt sentrale nøkkeltall for Syntax & Flow (hentet fra <a href="#fremdrift" class="nav-link">CAG_STATUS.md</a>):<br/><br/>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 16px;">
+  <!-- Venstre kolonne: Aktive og planlagte oppgaver -->
+  <div style="background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 12px; padding: 20px;">
+    <h4 style="margin-top: 0; margin-bottom: 12px; color: var(--accent-color); font-weight: 600; font-size: 1rem;">Aktive oppgaver</h4>
+    <ul style="padding-left: 20px; margin-bottom: 20px; line-height: 1.6; color: var(--text-secondary); display: flex; flex-direction: column; gap: 8px; list-style-type: disc;">
+      <li><strong>Intervju med Stig Henning Johansen:</strong> Juni 2026 (Høy prioritet)</li>
+      <li><strong>Sommerpilot — rekruttere deltakere:</strong> 1. juni 2026 (Høy prioritet)</li>
+      <li><strong>Lag markedsføringsstrategi for S&F:</strong> Juli 2026 (Medium prioritet)</li>
+      <li><strong>Designsystem (logo, farger, Figma):</strong> Juli 2026 (Medium prioritet)</li>
+      <li><strong>Nettside (Next.js):</strong> Juli 2026 (Medium prioritet)</li>
+    </ul>
+
+    <h4 style="margin-top: 24px; margin-bottom: 12px; color: var(--text-primary); font-weight: 600; font-size: 1rem;">Planlagte oppgaver</h4>
+    <ul style="padding-left: 20px; line-height: 1.6; color: var(--text-secondary); display: flex; flex-direction: column; gap: 8px; list-style-type: disc;">
+      <li><strong>Stifte AS (30 000 kr aksjekapital):</strong> Planlagt høst 2026</li>
+      <li><strong>Søknad / uttalelse fra Lånekassen:</strong> Planlagt høst 2026</li>
+      <li><strong>Samarbeidsavtale med HiØ:</strong> Planlagt høst 2026</li>
+      <li><strong>Ansvarsforsikring for AS:</strong> Planlagt høst 2026</li>
+    </ul>
+  </div>
+
+  <!-- Høyre kolonne: Nøkkeltall -->
+  <div style="background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 12px; padding: 20px; display: flex; flex-direction: column; gap: 16px;">
+    <h4 style="margin-top: 0; margin-bottom: 4px; color: var(--accent-color); font-weight: 600; font-size: 1rem;">Nøkkeltall</h4>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+      <div style="padding: 12px; background: var(--bg-card); border-radius: 6px; border: 1px solid var(--border-color); text-align: center;">
+        <span style="font-size: 1.4rem; font-weight: bold; color: var(--text-primary);">60+</span><br/>
+        <span style="font-size: 0.75rem; color: var(--text-muted);">Dokumenter</span>
+      </div>
+      <div style="padding: 12px; background: var(--bg-card); border-radius: 6px; border: 1px solid var(--border-color); text-align: center;">
+        <span style="font-size: 1.4rem; font-weight: bold; color: var(--text-primary);">18+</span><br/>
+        <span style="font-size: 0.75rem; color: var(--text-muted);">Forslag & maler</span>
+      </div>
+      <div style="padding: 12px; background: var(--bg-card); border-radius: 6px; border: 1px solid var(--border-color); text-align: center;">
+        <span style="font-size: 1.4rem; font-weight: bold; color: var(--text-primary);">40+</span><br/>
+        <span style="font-size: 0.75rem; color: var(--text-muted);">Forskningskilder</span>
+      </div>
+      <div style="padding: 12px; background: var(--bg-card); border-radius: 6px; border: 1px solid var(--border-color); text-align: center;">
+        <span style="font-size: 1.4rem; font-weight: bold; color: var(--text-primary);">1+5</span><br/>
+        <span style="font-size: 0.75rem; color: var(--text-muted);">Team-størrelse</span>
+      </div>
+    </div>
+    <div style="padding: 16px; background: var(--bg-card); border-radius: 8px; border: 1px solid var(--border-color); font-size: 0.85rem; line-height: 1.6; color: var(--text-secondary);">
+      <strong>Estimert driftskostnad (2 år):</strong> ~120 000–310 000 kr<br/>
+      <strong>Herav engangskostnad:</strong> ~53 000–83 000 kr<br/>
+      <strong>Årlig kostnad (etter år 2):</strong> ~16 000–31 000 kr/år
+    </div>
+  </div>
+</div>`
       }
     ],
     "tldr": [

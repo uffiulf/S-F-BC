@@ -699,6 +699,7 @@ Hvor: Ny seksjon under "Analyser" eller "Guidelines"
 | 22.06.2026 | Endre tittel på "Risiko & Juss" til "Risiko, Juss & Budsjett" | Utført |
 | 22.06.2026 | Legg til forskningsfunn på Dashboard og Marked & Konkurranse | Utført |
 | 22.06.2026 | Legg til studentkonsulent-oversikt på Lignende prosjekter-siden | Utført |
+| 25.06.2026 | Legg til fremdriftsstatus fra CAG_STATUS.md på Dashboard | Utført |
 
 
 
