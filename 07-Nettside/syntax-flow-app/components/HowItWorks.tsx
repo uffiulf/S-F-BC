@@ -49,43 +49,31 @@ const steps = [
 export default function HowItWorks() {
   return (
     <section id="prosess" className="section-padding relative">
-      <div className="sf-container" style={{ maxWidth: "56rem" }}>
+      <div className="sf-container max-w-4xl">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          style={{ textAlign: "center", marginBottom: "4rem" }}
+          className="text-center mb-24 md:mb-28"
         >
-          <span style={{
-            display: "inline-block", padding: "0.375rem 1rem", borderRadius: "9999px",
-            fontSize: "0.75rem", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase",
-            background: "rgba(16,185,129,0.1)", color: "#34D399", border: "1px solid rgba(16,185,129,0.2)",
-            marginBottom: "1rem",
-          }}>
+          <span className="inline-block px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase bg-green-500/10 text-green-400 border border-green-500/20 mb-6">
             Prosjektmodellen
           </span>
-          <h2 style={{ fontSize: "clamp(2rem,5vw,3rem)", fontWeight: 700, color: "white", marginBottom: "1rem" }}>
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
             Slik fungerer det
           </h2>
-          <p style={{ maxWidth: "32rem", margin: "0 auto", color: "var(--color-text-secondary)", fontSize: "1.125rem" }}>
+          <p className="max-w-xl mx-auto text-slate-300 text-lg leading-relaxed">
             Hvert prosjekt følger en strukturert 5-fase modell designet for maksimal læring og forutsigbarhet.
           </p>
         </motion.div>
 
         {/* Steps */}
-        <div style={{ position: "relative" }}>
+        <div className="relative">
           {/* Vertical line */}
-          <div style={{
-            position: "absolute",
-            left: "1.5rem",
-            top: 0,
-            bottom: 0,
-            width: "1px",
-            background: "linear-gradient(to bottom, transparent, rgba(59,130,246,0.3) 10%, rgba(59,130,246,0.3) 90%, transparent)",
-          }} />
+          <div className="absolute left-6 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-blue-500/30 to-transparent" />
 
-          <div style={{ display: "flex", flexDirection: "column", gap: "1.5rem" }}>
+          <div className="flex flex-col gap-8 md:gap-12">
             {steps.map((step, i) => {
               const Icon = step.icon;
               return (
@@ -95,32 +83,23 @@ export default function HowItWorks() {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.1, duration: 0.5 }}
-                  style={{ display: "flex", gap: "1.5rem", alignItems: "flex-start", position: "relative" }}
+                  className="flex gap-6 items-start relative"
                 >
                   {/* Step indicator */}
-                  <div style={{
-                    width: "3rem", height: "3rem", borderRadius: "0.75rem",
-                    background: "#050A14", border: "1px solid rgba(59,130,246,0.2)",
-                    display: "flex", alignItems: "center", justifyContent: "center",
-                    flexShrink: 0, zIndex: 10, color: "#60A5FA",
-                  }}>
+                  <div className="w-12 h-12 rounded-xl bg-bg-primary border border-blue-500/20 flex items-center justify-center flex-shrink-0 z-10 text-blue-400 shadow-md">
                     <Icon size={20} />
                   </div>
 
                   {/* Content */}
-                  <div className="sf-step-content" style={{ flex: 1 }}>
-                    <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: "0.75rem", marginBottom: "0.75rem" }}>
-                      <span style={{ fontSize: "1.5rem", fontWeight: 900, color: "#334155" }}>{step.number}</span>
-                      <h3 style={{ fontSize: "1.125rem", fontWeight: 700, color: "white" }}>{step.title}</h3>
-                      <span style={{
-                        marginLeft: "auto", padding: "0.25rem 0.625rem", borderRadius: "9999px",
-                        fontSize: "0.75rem", fontWeight: 600,
-                        background: "rgba(59,130,246,0.1)", color: "#60A5FA", border: "1px solid rgba(59,130,246,0.2)",
-                      }}>
+                  <div className="sf-step-content flex-1">
+                    <div className="flex flex-wrap items-center gap-3 mb-4">
+                      <span className="text-2xl font-black text-slate-700">{step.number}</span>
+                      <h3 className="text-lg font-bold text-white">{step.title}</h3>
+                      <span className="md:ml-auto px-3 py-1 rounded-full text-xs font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/20">
                         {step.tag}
                       </span>
                     </div>
-                    <p style={{ color: "var(--color-text-secondary)", fontSize: "0.875rem", lineHeight: 1.6 }}>
+                    <p className="text-slate-300 text-sm leading-relaxed">
                       {step.description}
                     </p>
                   </div>

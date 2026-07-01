@@ -30,20 +30,15 @@ export default function Navbar() {
       className="fixed top-0 left-0 right-0 z-50 flex justify-center px-4 pt-4"
     >
       <div
-        className={`w-full rounded-2xl transition-all duration-300`}
-        style={{
-          maxWidth: "72rem",
-          padding: "0.75rem 1.5rem",
-          background: scrolled ? "rgba(255,255,255,0.04)" : "transparent",
-          backdropFilter: scrolled ? "blur(16px)" : "none",
-          WebkitBackdropFilter: scrolled ? "blur(16px)" : "none",
-          border: scrolled ? "1px solid rgba(255,255,255,0.08)" : "1px solid transparent",
-          boxShadow: scrolled ? "0 8px 32px rgba(0,0,0,0.3)" : "none",
-        }}
+        className={`w-full max-w-6xl rounded-2xl transition-all duration-300 px-6 py-3 ${
+          scrolled
+            ? "bg-white/4 backdrop-blur-lg border border-white/8 shadow-2xl"
+            : "bg-transparent border border-transparent"
+        }`}
       >
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2 group">
+          <a href="#" className="flex items-center gap-2 group cursor-pointer">
             <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-violet-600 flex items-center justify-center glow-blue">
               <Zap size={16} className="text-white" />
             </div>
@@ -55,12 +50,12 @@ export default function Navbar() {
           </a>
 
           {/* Desktop Nav */}
-          <nav style={{ display: "flex", alignItems: "center", gap: "0.25rem" }} className="hidden md:flex">
+          <nav className="hidden md:flex items-center gap-1">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="nav-link"
+                className="nav-link cursor-pointer"
               >
                 {link.label}
               </a>
@@ -102,8 +97,7 @@ export default function Navbar() {
                     key={link.href}
                     href={link.href}
                     onClick={() => setMenuOpen(false)}
-                    className="nav-link"
-                    style={{ display: "block", padding: "0.75rem 1rem" }}
+                    className="nav-link block px-4 py-3 cursor-pointer"
                   >
                     {link.label}
                   </a>

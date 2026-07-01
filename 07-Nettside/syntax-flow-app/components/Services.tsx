@@ -3,27 +3,6 @@
 import { motion } from "framer-motion";
 import { Code2, Palette, LineChart, Globe, Pen, BarChart3, ShoppingCart, Cpu, PieChart } from "lucide-react";
 
-const sectionHeader = {
-  textAlign: "center" as const,
-  marginBottom: "4rem",
-};
-
-const badge = (color: string) => ({
-  display: "inline-block",
-  padding: "0.375rem 1rem",
-  borderRadius: "9999px",
-  fontSize: "0.75rem",
-  fontWeight: 600,
-  letterSpacing: "0.1em",
-  textTransform: "uppercase" as const,
-  marginBottom: "1rem",
-  ...{
-    blue: { background: "rgba(59,130,246,0.1)", color: "#60A5FA", border: "1px solid rgba(59,130,246,0.2)" },
-    violet: { background: "rgba(139,92,246,0.1)", color: "#A78BFA", border: "1px solid rgba(139,92,246,0.2)" },
-    emerald: { background: "rgba(16,185,129,0.1)", color: "#34D399", border: "1px solid rgba(16,185,129,0.2)" },
-  }[color],
-});
-
 const categories = [
   {
     color: "blue",
@@ -72,19 +51,21 @@ export default function Services() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          style={sectionHeader}
+          className="text-center mb-24 md:mb-28"
         >
-          <span style={badge("violet")}>Tjenestekatalog</span>
-          <h2 style={{ fontSize: "clamp(2rem,5vw,3rem)", fontWeight: 700, color: "white", marginBottom: "1rem" }}>
+          <span className="inline-block px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase bg-purple-500/10 text-purple-400 border border-purple-500/20 mb-6">
+            Tjenestekatalog
+          </span>
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
             Hva vi leverer
           </h2>
-          <p style={{ maxWidth: "36rem", margin: "0 auto", color: "var(--color-text-secondary)", fontSize: "1.125rem" }}>
+          <p className="max-w-xl mx-auto text-slate-300 text-lg leading-relaxed">
             Tverrfaglige team som dekker hele spekteret — fra idé til ferdig produkt.
           </p>
         </motion.div>
 
         {/* Category Cards */}
-        <div className="sf-grid-3">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
           {categories.map((cat, i) => {
             const CatIcon = cat.icon;
             return (
@@ -94,32 +75,31 @@ export default function Services() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.15, duration: 0.6 }}
-                className="glass glass-hover"
-                style={{ borderRadius: "1rem", padding: "1.5rem", display: "flex", flexDirection: "column", gap: "1.5rem" }}
+                className="glass glass-hover p-8 flex flex-col gap-8 rounded-2xl"
               >
                 {/* Category header */}
-                <div style={{ display: "flex", alignItems: "center", gap: "0.75rem" }}>
-                  <div style={{
-                    width: "2.5rem", height: "2.5rem", borderRadius: "0.75rem",
-                    background: cat.iconGrad, display: "flex", alignItems: "center", justifyContent: "center"
-                  }}>
+                <div className="flex items-center gap-3">
+                  <div 
+                    className="w-10 h-10 rounded-xl flex items-center justify-center shadow-md"
+                    style={{ background: cat.iconGrad }}
+                  >
                     <CatIcon size={18} color="white" />
                   </div>
-                  <h3 style={{ fontSize: "1.125rem", fontWeight: 700, color: "white" }}>{cat.title}</h3>
+                  <h3 className="text-lg font-bold text-white">{cat.title}</h3>
                 </div>
 
                 {/* Services list */}
-                <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
+                <div className="flex flex-col gap-6">
                   {cat.services.map((service) => {
                     const SIcon = service.icon;
                     return (
-                      <div key={service.name} style={{ display: "flex", alignItems: "flex-start", gap: "0.75rem" }}>
-                        <div style={{ marginTop: "2px", color: cat.iconColor, flexShrink: 0 }}>
+                      <div key={service.name} className="flex items-start gap-3">
+                        <div className="mt-0.5 flex-shrink-0" style={{ color: cat.iconColor }}>
                           <SIcon size={16} />
                         </div>
                         <div>
-                          <p style={{ fontSize: "0.875rem", fontWeight: 600, color: "white" }}>{service.name}</p>
-                          <p style={{ fontSize: "0.75rem", color: "#64748B", lineHeight: 1.5 }}>{service.desc}</p>
+                          <p className="text-sm font-semibold text-white mb-0.5">{service.name}</p>
+                          <p className="text-xs text-slate-400 leading-relaxed">{service.desc}</p>
                         </div>
                       </div>
                     );
@@ -136,20 +116,15 @@ export default function Services() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.4 }}
-          className="glass"
-          style={{
-            marginTop: "2rem", borderRadius: "1rem", padding: "1.5rem",
-            display: "flex", flexDirection: "column", gap: "1rem",
-            alignItems: "flex-start",
-          }}
+          className="glass mt-8 p-8 flex flex-col md:flex-row gap-6 items-start md:items-center justify-between rounded-2xl"
         >
-          <div style={{ flex: 1 }}>
-            <h4 style={{ color: "white", fontWeight: 600, marginBottom: "0.25rem" }}>Ingen formell leveransegaranti</h4>
-            <p style={{ color: "var(--color-text-secondary)", fontSize: "0.875rem" }}>
+          <div className="flex-1">
+            <h4 className="text-white font-semibold mb-1 text-base">Ingen formell leveransegaranti</h4>
+            <p className="text-slate-300 text-sm leading-relaxed">
               Tjenestene leveres gratis på en best-effort-modell som et ledd i studentenes utdanning. Vi stiller høye krav til kvaliteten, men kunden har ingen juridiske krav eller garantier.
             </p>
           </div>
-          <a href="#soknader" className="btn-primary" style={{ fontSize: "0.875rem", whiteSpace: "nowrap" }}>
+          <a href="#soknader" className="btn-primary text-sm whitespace-nowrap cursor-pointer">
             Start et prosjekt
           </a>
         </motion.div>

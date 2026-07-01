@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 @source "../components/**/*.{js,ts,jsx,tsx}";
 @source "../app/**/*.{js,ts,jsx,tsx}";
@@ -16,8 +15,8 @@
   --color-text-secondary: #CBD5E1;
   --color-text-muted: #64748B;
   --color-border: rgba(255, 255, 255, 0.08);
-  --font-sans: "Inter", sans-serif;
-  --font-display: "Space Grotesk", sans-serif;
+  --font-sans: var(--font-sans), sans-serif;
+  --font-display: var(--font-display), sans-serif;
 }
 
 /* ================================================
@@ -277,12 +276,12 @@ h1, h2, h3, h4, h5, h6, .font-display {
 
 /* Section spacing */
 .section-padding {
-  padding: 6rem 1.5rem;
+  padding: 8rem 1.5rem;
 }
 
 @media (min-width: 768px) {
   .section-padding {
-    padding: 8rem 2rem;
+    padding: 12rem 2rem;
   }
 }
 

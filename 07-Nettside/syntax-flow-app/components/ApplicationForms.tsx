@@ -29,7 +29,7 @@ export default function ApplicationForms() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-10"
+          className="text-center mb-16 md:mb-20"
         >
           <span className="inline-block px-4 py-1.5 rounded-full text-xs font-semibold tracking-widest uppercase text-blue-400 bg-blue-500/10 border border-blue-500/20 mb-4">
             Kom i gang
@@ -43,7 +43,7 @@ export default function ApplicationForms() {
         </motion.div>
 
         {/* Tabs */}
-        <div className="glass rounded-2xl p-1.5 flex gap-1.5 mb-8">
+        <div className="glass rounded-2xl p-1.5 flex gap-1.5 mb-12">
           {[
             { id: "student" as Tab, label: "Søk som student / NAV", icon: GraduationCap },
             { id: "bedrift" as Tab, label: "Bedrift — start et prosjekt", icon: Briefcase },

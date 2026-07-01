@@ -196,6 +196,17 @@ Hvor: Dashboard-siden
 Prioritet: — (info til prosjekteier)
 Hva: Innholdet til presentasjonen ligger i `05-agent-forslag/Forslag/presentasjonsinnhold.md`. Denne filen inneholder alt en multimodal AI-agent eller LLM trenger for å lage en presentasjon (HTML, PowerPoint eller annet format). Ikke noe Gemini trenger å gjøre med dette.
 
+### 25.06.2026 — Legg til fremdriftsstatus fra CAG_STATUS.md på Dashboard
+Prioritet: Lav
+Kilde: `00-progresjon/CAG_STATUS.md`
+Hva: Helt nederst på Dashboard-siden, etter Business Case Fremdrift, legg til en ny seksjon med tittel "Prosjektstatus". Vis en enkel tabell eller liste over:
+- **Aktive oppgaver** (hent fra CAG_STATUS.md)
+- **Planlagte oppgaver**
+- **Nøkkeltall** (antall dokumenter, team-størrelse, estimert driftskostnad)
+
+Hold det enkelt — en oversikt, ikke et fullt ticketsystem. Målet er at teamet ser status uten å forlate infosiden.
+Hvor: Dashboard-siden, nederst
+
 ### 22.06.2026 — Legg til forskningsfunn på Dashboard og Marked & Konkurranse
 Prioritet: Høy
 Kilde: `04-kilde/Research Om Praksis Og Rekruttering.md` og `01-administrasjon/CAG.md`

@@ -5,8 +5,8 @@ import { Zap, GitBranch, Mail, MapPin } from "lucide-react";
 export default function Footer() {
   return (
     <footer className="relative border-t border-white/5">
-      <div className="sf-container" style={{ padding: "4rem 1.5rem" }}>
-        <div className="sf-grid-3" style={{ marginBottom: "3rem" }}>
+      <div className="sf-container py-16 px-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">

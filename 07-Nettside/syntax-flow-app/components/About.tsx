@@ -58,35 +58,23 @@ export default function About() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          style={{ textAlign: "center", marginBottom: "4rem" }}
+          className="text-center mb-24 md:mb-28"
         >
-          <span style={{
-            display: "inline-block",
-            padding: "0.375rem 1rem",
-            borderRadius: "9999px",
-            fontSize: "0.75rem",
-            fontWeight: 600,
-            letterSpacing: "0.1em",
-            textTransform: "uppercase",
-            background: "rgba(59,130,246,0.1)",
-            color: "#60A5FA",
-            border: "1px solid rgba(59,130,246,0.2)",
-            marginBottom: "1rem",
-          }}>
+          <span className="inline-block px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase bg-blue-500/10 text-blue-400 border border-blue-500/20 mb-6">
             Om konseptet
           </span>
-          <h2 style={{ fontSize: "clamp(2rem,5vw,3rem)", fontWeight: 700, color: "white", marginBottom: "1rem", lineHeight: 1.2 }}>
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
             Studenten er{" "}
             <span className="gradient-text">produktet</span>
           </h2>
-          <p style={{ maxWidth: "36rem", margin: "0 auto", color: "var(--color-text-secondary)", fontSize: "1.125rem", lineHeight: 1.7 }}>
+          <p className="max-w-xl mx-auto text-slate-300 text-lg leading-relaxed">
             Syntax & Flow skaper verdi for tre parter samtidig —
             på en måte ingen tradisjonell praksisordning klarer.
           </p>
         </motion.div>
 
         {/* Cards */}
-        <div className="sf-grid-3">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
           {cards.map((card, i) => {
             const Icon = card.icon;
             return (
@@ -96,43 +84,35 @@ export default function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.15, duration: 0.6 }}
-                className="gradient-border glass-hover"
+                className="gradient-border glass-hover p-8 flex flex-col gap-6 cursor-default"
                 style={{
                   background: card.gradBg,
                   borderColor: card.borderColor,
-                  padding: "2rem",
-                  display: "flex",
-                  flexDirection: "column",
-                  gap: "1.5rem",
-                  cursor: "default",
                 }}
               >
                 {/* Icon */}
-                <div style={{
-                  width: "3rem",
-                  height: "3rem",
-                  borderRadius: "0.75rem",
-                  background: card.iconGrad,
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  boxShadow: "0 4px 15px rgba(0,0,0,0.3)",
-                }}>
+                <div 
+                  className="w-12 h-12 rounded-xl flex items-center justify-center shadow-lg"
+                  style={{ background: card.iconGrad }}
+                >
                   <Icon size={22} color="white" />
                 </div>
 
                 {/* Text */}
                 <div>
-                  <h3 style={{ fontSize: "1.25rem", fontWeight: 700, color: "white", marginBottom: "0.25rem" }}>{card.title}</h3>
-                  <p style={{ fontSize: "0.875rem", color: "var(--color-text-secondary)", marginBottom: "0.75rem" }}>{card.subtitle}</p>
-                  <p style={{ color: "var(--color-text-secondary)", fontSize: "0.875rem", lineHeight: 1.6 }}>{card.description}</p>
+                  <h3 className="text-xl font-bold text-white mb-1">{card.title}</h3>
+                  <p className="text-sm text-slate-400 mb-3">{card.subtitle}</p>
+                  <p className="text-slate-300 text-sm leading-relaxed">{card.description}</p>
                 </div>
 
                 {/* Highlights */}
-                <ul style={{ display: "flex", flexDirection: "column", gap: "0.5rem", marginTop: "auto", listStyle: "none", padding: 0 }}>
+                <ul className="flex flex-col gap-2 mt-auto list-none p-0">
                   {card.highlights.map((h) => (
-                    <li key={h} style={{ display: "flex", alignItems: "center", gap: "0.5rem", fontSize: "0.875rem", color: "#CBD5E1" }}>
-                      <span style={{ width: "6px", height: "6px", borderRadius: "50%", background: card.dotColor, flexShrink: 0 }} />
+                    <li key={h} className="flex items-center gap-2 text-sm text-slate-200">
+                      <span 
+                        className="w-1.5 h-1.5 rounded-full flex-shrink-0" 
+                        style={{ background: card.dotColor }} 
+                      />
                       {h}
                     </li>
                   ))}

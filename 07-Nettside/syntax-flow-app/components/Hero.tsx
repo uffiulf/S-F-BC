@@ -5,13 +5,13 @@ import { ArrowRight, ChevronDown } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center px-4 pt-28 pb-20 text-center">
+    <section className="relative min-h-screen flex flex-col items-center justify-start md:justify-center px-4 pt-36 md:pt-44 pb-20 text-center">
       {/* Badge */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2, duration: 0.6 }}
-        className="mb-8"
+        className="mb-10 hidden sm:block"
       >
         <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm font-medium text-blue-400 border border-blue-500/20">
           <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
@@ -24,7 +24,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3, duration: 0.7 }}
-        className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-none mb-6 max-w-5xl"
+        className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-none mb-12 md:mb-16 max-w-5xl"
       >
         <span className="text-white">Morgendagens talent.</span>
         <br />
@@ -36,11 +36,11 @@ export default function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5, duration: 0.6 }}
-        className="max-w-2xl text-lg md:text-xl text-slate-400 leading-relaxed mb-10"
+        className="max-w-2xl text-lg md:text-xl text-slate-400 leading-relaxed mb-16 md:mb-20"
       >
         Syntax & Flow er et selvstendig prosjektorgan in-house på Høgskolen i Østfold (HiØ) som drives av en stabil kjerne, mens studentene får
         reell arbeidserfaring innen <strong className="text-white">IT, design og økonomi</strong> — og
-        næringslivet en risikofri mulighet til å teste morgendagens ansatte.
+        næringslivet en risikofri mulighet to å teste morgendagens ansatte.
       </motion.p>
 
       {/* CTA Buttons */}
@@ -48,13 +48,13 @@ export default function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.65, duration: 0.6 }}
-        className="flex flex-col sm:flex-row gap-4 mb-16"
+        className="flex flex-col sm:flex-row gap-4 mb-24 md:mb-28"
       >
-        <a href="#soknader" className="btn-primary flex items-center gap-2 justify-center">
+        <a href="#soknader" className="btn-primary flex items-center gap-2 justify-center cursor-pointer">
           Søk som student
           <ArrowRight size={18} />
         </a>
-        <a href="#bedrifter" className="btn-secondary flex items-center gap-2 justify-center">
+        <a href="#bedrifter" className="btn-secondary flex items-center gap-2 justify-center cursor-pointer">
           Samarbeid med oss (gratis)
         </a>
       </motion.div>
@@ -64,7 +64,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.8, duration: 0.6 }}
-        className="flex flex-wrap justify-center gap-8 md:gap-16 mb-16"
+        className="grid grid-cols-1 sm:grid-cols-3 gap-10 md:gap-20 mb-20 max-w-3xl w-full px-6"
       >
         {[
           { value: "3", label: "Fagdisipliner", sub: "IT · Design · Økonomi" },

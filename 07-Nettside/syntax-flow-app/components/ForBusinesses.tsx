@@ -42,23 +42,18 @@ export default function ForBusinesses() {
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
           >
-            <span style={{
-              display: "inline-block", padding: "0.375rem 1rem", borderRadius: "9999px",
-              fontSize: "0.75rem", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase",
-              background: "rgba(16,185,129,0.1)", color: "#34D399", border: "1px solid rgba(16,185,129,0.2)",
-              marginBottom: "1.5rem",
-            }}>
+             <span className="inline-block px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase bg-green-500/10 text-green-400 border border-green-500/20 mb-6">
               For næringslivet
             </span>
-            <h2 style={{ fontSize: "clamp(2rem,4vw,3rem)", fontWeight: 700, color: "white", marginBottom: "1.5rem", lineHeight: 1.2 }}>
+            <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
               Ferdig levert. <br />
               <span className="gradient-text">Helt gratis.</span>
             </h2>
-            <p style={{ color: "var(--color-text-secondary)", fontSize: "1.125rem", lineHeight: 1.7, marginBottom: "2rem" }}>
+            <p className="text-slate-300 text-lg leading-relaxed mb-12 md:mb-16">
               Syntax & Flow tilbyr gratis IT-, design- og økonomibistand til lokale bedrifter i Østfold.
               Bedriften betaler ingen krone — men investerer sin tid som en engasjert kunde.
             </p>
-            <div style={{ display: "flex", flexDirection: "column", gap: "1rem", marginBottom: "2.5rem" }}>
+            <div className="flex flex-col gap-6 mb-10">
               {benefits.map((benefit, i) => {
                 const Icon = benefit.icon;
                 return (
@@ -68,24 +63,20 @@ export default function ForBusinesses() {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: i * 0.1 }}
-                    style={{ display: "flex", gap: "1rem", alignItems: "flex-start" }}
+                    className="flex gap-4 items-start"
                   >
-                    <div style={{
-                      width: "2.5rem", height: "2.5rem", borderRadius: "0.75rem",
-                      background: "rgba(16,185,129,0.1)", border: "1px solid rgba(16,185,129,0.2)",
-                      display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0,
-                    }}>
+                    <div className="w-10 h-10 rounded-xl bg-green-500/10 border border-green-500/20 flex items-center justify-center flex-shrink-0 shadow-sm">
                       <Icon size={18} color="#34D399" />
                     </div>
                     <div>
-                      <h4 style={{ color: "white", fontWeight: 600, marginBottom: "0.25rem" }}>{benefit.title}</h4>
-                      <p style={{ color: "var(--color-text-secondary)", fontSize: "0.875rem", lineHeight: 1.6 }}>{benefit.description}</p>
+                      <h4 className="text-white font-semibold mb-1 text-sm">{benefit.title}</h4>
+                      <p className="text-slate-400 text-xs md:text-sm leading-relaxed">{benefit.description}</p>
                     </div>
                   </motion.div>
                 );
               })}
             </div>
-            <a href="#soknader" className="btn-primary" style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem" }}>
+            <a href="#soknader" className="btn-primary inline-flex items-center gap-2 cursor-pointer">
               Send inn prosjektforespørsel
               <ArrowRight size={18} />
             </a>
@@ -98,37 +89,37 @@ export default function ForBusinesses() {
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.2 }}
           >
-            <div className="gradient-border" style={{ padding: "2rem", background: "rgba(16,185,129,0.04)" }}>
-              <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", marginBottom: "1.5rem" }}>
-                <div style={{ width: "0.75rem", height: "0.75rem", borderRadius: "50%", background: "#EF4444" }} />
-                <div style={{ width: "0.75rem", height: "0.75rem", borderRadius: "50%", background: "#EAB308" }} />
-                <div style={{ width: "0.75rem", height: "0.75rem", borderRadius: "50%", background: "#22C55E" }} />
-                <span style={{ marginLeft: "0.5rem", fontSize: "0.75rem", color: "#475569", fontFamily: "monospace" }}>win-win-avtale.md</span>
+            <div className="gradient-border p-8 bg-green-500/5">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-3 h-3 rounded-full bg-red-500" />
+                <div className="w-3 h-3 rounded-full bg-yellow-500" />
+                <div className="w-3 h-3 rounded-full bg-green-500" />
+                <span className="ml-2 text-xs text-slate-500 font-mono">win-win-avtale.md</span>
               </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "1rem", fontFamily: "monospace", fontSize: "0.875rem" }}>
+              <div className="flex flex-col gap-6 font-mono text-xs md:text-sm">
                 <div>
-                  <p style={{ color: "#64748B" }}># Betingelser</p>
-                  <p style={{ color: "#CBD5E1", marginTop: "0.25rem" }}>Kunde betaler: <span style={{ color: "#34D399", fontWeight: 700 }}>0 kr</span></p>
+                  <p className="text-slate-500 font-semibold"># Betingelser</p>
+                  <p className="text-slate-300 mt-1">Kunde betaler: <span className="text-green-400 font-bold">0 kr</span></p>
                 </div>
-                <div style={{ borderTop: "1px solid rgba(255,255,255,0.05)", paddingTop: "1rem" }}>
-                  <p style={{ color: "#64748B" }}># Kundens forpliktelser</p>
-                  <div style={{ marginTop: "0.5rem", display: "flex", flexDirection: "column", gap: "0.25rem" }}>
+                <div className="border-t border-white/5 pt-4">
+                  <p className="text-slate-500 font-semibold"># Kundens forpliktelser</p>
+                  <div className="mt-2 flex flex-col gap-1">
                     {["Ukentlige statusmøter ✓", "Raske tilbakemeldinger ✓", "Tilgjengelig for spørsmål ✓"].map(t => (
-                      <p key={t} style={{ color: "#6EE7B7", fontSize: "0.75rem" }}>→ {t}</p>
+                      <p key={t} className="text-green-300 text-xs">→ {t}</p>
                     ))}
                   </div>
                 </div>
-                <div style={{ borderTop: "1px solid rgba(255,255,255,0.05)", paddingTop: "1rem" }}>
-                  <p style={{ color: "#64748B" }}># Syntax & Flow leverer</p>
-                  <div style={{ marginTop: "0.5rem", display: "flex", flexDirection: "column", gap: "0.25rem" }}>
+                <div className="border-t border-white/5 pt-4">
+                  <p className="text-slate-500 font-semibold"># Syntax & Flow leverer</p>
+                  <div className="mt-2 flex flex-col gap-1">
                     {["Tverrfaglig team ✓", "Faglig mentorstøtte ✓", "Porteføljepublisering ✓"].map(t => (
-                      <p key={t} style={{ color: "#93C5FD", fontSize: "0.75rem" }}>→ {t}</p>
+                      <p key={t} className="text-blue-300 text-xs">→ {t}</p>
                     ))}
                   </div>
                 </div>
-                <div style={{ borderTop: "1px solid rgba(255,255,255,0.05)", paddingTop: "1rem" }}>
-                  <p style={{ color: "#64748B" }}># Leveransegaranti</p>
-                  <p style={{ color: "#FDE047", fontSize: "0.75rem", marginTop: "0.25rem" }}>Standard: Ingen formell leveransegaranti (best-effort)</p>
+                <div className="border-t border-white/5 pt-4">
+                  <p className="text-slate-500 font-semibold"># Leveransegaranti</p>
+                  <p className="text-yellow-300 text-xs mt-1">Standard: Ingen formell leveransegaranti (best-effort)</p>
                 </div>
               </div>
             </div>
